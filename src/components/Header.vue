@@ -6,9 +6,8 @@
       indicator-color="green"
       align="left"
     >
-      <q-tab name="clients" label="Clients" @click="navigateTo('clients')" />
-      <q-tab name="seo" label="SEO" @click="navigateTo('seo')" />
-      <q-tab name="dashboard" label="Dashboard" @click="navigateTo('dashboard')" />
+      <q-tab name="demo" label="demo" @click="navigateTo('demo')" />
+
     </q-tabs>
     <q-toolbar-title class="c-flex-unset q-pa-sm">
       <img src="/logo.png.jpg" alt="Logo" height="45" />
@@ -20,7 +19,7 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-const currentTab = ref('clients');
+const currentTab = ref('demo');
 const router = useRouter();
 
 const navigateTo = (page: string) => {
