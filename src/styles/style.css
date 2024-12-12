@@ -1,0 +1,80 @@
+:root {
+  --q-primary: #4caf50;
+  --q-secondary: #26A69A;
+  --q-accent: #1976D2;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-y: overlay; /* For Chrome */
+  overflow-y: auto; /* Fallback for other browsers */
+  scrollbar-gutter: stable; /* Prevents layout shift */
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.c-box-title {
+  font-size: 1.1rem;
+  color: #999999;
+}
+
+.q-btn .fa {
+  font-size: 1.4em;
+}
+
+.c-limit-text-height {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c-color-picker {
+  height: 200px;
+}
+
+.c-relative {
+  position: relative;
+}
+
+.c-dropdwn-btn .q-btn-dropdown__arrow {
+  display: none;
+}
+
+.c-no-border {
+  border: none !important;
+}
+.c-no-border .q-expansion-item__container {
+  border: none !important;
+}
+
+.fullscreen.q-drawer__backdrop {
+  background-color: unset !important;
+}
+
+.c-selected-client {
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+.c-selected-client .q-item:has(.c-expansion-header-hover) {
+  background-color: color-mix(in srgb, #4caf50 25%, #ffffff 90%);
+}
+.c-bg-primary-lighten {
+  background-color: color-mix(in srgb, #4caf50 25%, #ffffff 90%);
+}
+
+.c-global-popup .q-dialog__backdrop {
+  background: none;
+}
+
+.c-q-pa-xs {
+  padding: 4px 4px !important;
+}
+
+.c-q-pa-sm {
+  padding: 8px 8px !important;
+}/*# sourceMappingURL=style.css.map */

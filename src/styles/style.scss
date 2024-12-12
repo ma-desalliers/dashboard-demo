@@ -1,0 +1,109 @@
+$primary   : #4caf50;
+$secondary : #26A69A;
+$accent    : #1976D2;
+
+$dark      : #1D1D1D;
+$dark-page : #121212;
+
+$positive  : #21BA45;
+$negative  : #C10015;
+$info      : #31CCEC;
+$warning   : #F2C037;
+
+$primary-lighten : color-mix(in srgb, $primary 25%, #ffffff 90%);
+
+// You can also create custom CSS variables for use throughout your app
+:root {
+  --q-primary: #{$primary};
+  --q-secondary: #{$secondary};
+  --q-accent : #{$accent};
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-y: overlay;  /* For Chrome */
+  overflow-y: auto;     /* Fallback for other browsers */
+  scrollbar-gutter: stable;  /* Prevents layout shift */
+}
+
+
+.c-pointer{
+  cursor: pointer;
+
+}
+
+.c-box-title{
+  font-size: 1.1rem;
+  color:#999999;
+}
+
+.q-btn{
+  .fa{
+    font-size: 1.4em ;
+  }
+}
+
+.c-limit-text-height{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c-color-picker{
+  height:200px;
+}
+
+.c-relative{
+  position:relative;
+}
+
+
+.c-dropdwn-btn{
+  .q-btn-dropdown__arrow{
+    display: none;
+  } 
+}
+
+.c-no-border{
+  border:none !important;
+  .q-expansion-item__container{
+   border:none !important;
+
+  }
+}
+
+.fullscreen.q-drawer__backdrop{
+  background-color: unset !important;
+}
+
+
+.c-selected-client{
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+
+  .q-item:has(.c-expansion-header-hover) {
+   background-color: $primary-lighten
+  }
+  .c-title{
+  }
+}
+
+.c-bg-primary-lighten{
+  background-color: $primary-lighten;
+}
+
+.c-global-popup{
+  .q-dialog__backdrop{
+    background: none;
+  }
+}
+
+.c-q-pa-xs{
+  padding: 4px 4px !important;
+}
+.c-q-pa-sm{
+  padding: 8px 8px !important;
+}
