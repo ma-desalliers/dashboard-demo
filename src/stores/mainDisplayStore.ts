@@ -1,7 +1,6 @@
 import { defineStore } from 'pinia';
 import type { Component } from 'vue';
-import { Pages } from '../repository/pages/Page';
-import { Client } from '../repository/client/Client';
+
 
 type ViewName = 'HelloWorld' | 'ClientEditor' | string;
 interface DisplayState {
