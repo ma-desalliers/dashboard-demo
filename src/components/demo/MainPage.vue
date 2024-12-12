@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <LeftColumn></LeftColumn>
-    <div class="right-column-container">
+    <div class="right-column-container" style="width:calc(100% - 300px)">
       <CampaignViewer v-if="theCurrentPage == 'CampaignViewer'" class="full-width"></CampaignViewer>
       <SalesDisplay v-if="theCurrentPage == 'SalesDisplay'" class="full-width"></SalesDisplay>
     </div>

@@ -81,6 +81,10 @@ body {
   position:relative;
 }
 
+.clickable{
+  cursor: pointer;
+}
+
 
 .c-dropdwn-btn{
   .q-btn-dropdown__arrow{
@@ -127,6 +131,14 @@ body {
 .c-q-pa-sm{
   padding: 8px 8px !important;
 }
+.c-pa-none{
+  padding: none !important;
+}
+.c-py-none{
+  padding-top: none !important;
+  padding-bottom:none !important; 
+}
+
 .c-row{
   flex-direction:row !important ;
 }
@@ -145,4 +157,44 @@ body {
 
 .text-green{
   color:var(--q-green) !important;
+}
+
+
+/* Webkit browsers (Chrome, Safari, newer versions of Opera) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--q-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--q-primary);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--q-primary) transparent;
+}
+
+/* For Internet Explorer and Edge */
+* {
+  -ms-overflow-style: auto;
+}
+
+.scrollable-content {
+  /* Enable scrolling for the container */
+  overflow-y: auto;
+  
+  /* Optional: Add some padding to prevent content from touching scrollbar */
+  padding-right: 4px;
 }
