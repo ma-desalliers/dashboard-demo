@@ -1,4 +1,4 @@
-$primary   : #4caf50;
+$primary   : #E87554;
 $secondary : #26A69A;
 $accent    : #1976D2;
 
@@ -10,6 +10,8 @@ $negative  : #C10015;
 $info      : #31CCEC;
 $warning   : #F2C037;
 
+$green : #0DB04B;
+
 $primary-lighten : color-mix(in srgb, $primary 25%, #ffffff 90%);
 
 // You can also create custom CSS variables for use throughout your app
@@ -17,6 +19,7 @@ $primary-lighten : color-mix(in srgb, $primary 25%, #ffffff 90%);
   --q-primary: #{$primary};
   --q-secondary: #{$secondary};
   --q-accent : #{$accent};
+  --q-green: #{$green};
 }
 
 body {
@@ -26,6 +29,7 @@ body {
   overflow-y: overlay;  /* For Chrome */
   overflow-y: auto;     /* Fallback for other browsers */
   scrollbar-gutter: stable;  /* Prevents layout shift */
+  background: #f5f5f5;
 }
 
 
@@ -36,13 +40,25 @@ body {
 
 .c-box-title{
   font-size: 1.1rem;
-  color:#999999;
+  color:#666666;
+}
+
+.c-box-subtitle{
+  font-size: 1.05rem;
+  color:#666666;
+  font-weight: 600;
 }
 
 .q-btn{
+  box-shadow: none !important;
+  border-radius: 4px;
+  &:before{
+    box-shadow: none !important;
+  }
   .fa{
     font-size: 1.4em ;
   }
+
 }
 
 .c-limit-text-height{
@@ -106,4 +122,23 @@ body {
 }
 .c-q-pa-sm{
   padding: 8px 8px !important;
+}
+.c-row{
+  flex-direction:row !important ;
+}
+
+.c-img-cover{
+  object-fit: cover;
+}
+
+.bg-green{
+  background-color: var(--q-green) !important;
+}
+
+.bg-green-1{
+  background-color: color-mix(in srgb,var(--q-green) 25%, #ffffff 90%) !important;
+}
+
+.text-green{
+  color:var(--q-green) !important;
 }

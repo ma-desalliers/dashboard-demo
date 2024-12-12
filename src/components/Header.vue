@@ -1,17 +1,10 @@
 <template>
-  <q-toolbar class="items-stretch c-header justify-between">
-    <q-tabs
-      v-model="currentTab"
-      active-color="green"
-      indicator-color="green"
-      align="left"
-    >
-      <q-tab name="demo" label="demo" @click="navigateTo('demo')" />
-
-    </q-tabs>
-    <q-toolbar-title class="c-flex-unset q-pa-sm">
-      <img src="/logo.png.jpg" alt="Logo" height="45" />
-    </q-toolbar-title>
+  <q-toolbar class="c-header bg-primary">
+    <div class="full-width row justify-center">
+      <span class="text-white" style="font-size: 1.2rem">
+        New Functionality Available ! 
+      </span> 
+    </div>
   </q-toolbar>
 </template>
 
