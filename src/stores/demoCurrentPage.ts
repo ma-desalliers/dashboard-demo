@@ -2,7 +2,7 @@ import { defineStore } from 'pinia';
 
 export const useDemoCurrentPageStore = defineStore('useDemoCurrentPageStore', {
   state: () => ({
-    currentPage: 'Campaign',
+    currentPage: 'CampaignViewer',
   }),
 
   actions: {  

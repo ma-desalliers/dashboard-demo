@@ -1,5 +1,5 @@
 <template>
-  <MainPage></MainPage>
+  <MainPage class='right-column-container'></MainPage>
   </template>
   
   <script setup lang="ts">
