@@ -1,0 +1,144 @@
+<template>
+  <q-list separator class="content-list">
+    <!-- Product Items with Expansion -->
+    <q-expansion-item
+    v-for="product in filteredProducts" 
+    :key="product.uuid"
+    class="content-item"
+    @click="selectProduct(product)"
+    expand-separator
+    >
+    <template #header>
+      <q-item-section side style="width: 80px" class="q-mr-md">
+        <img :src="product.image" alt="Product Image" class="c-list-product-picture"/>
+      </q-item-section>
+      
+      <q-item-section class="clickable c-product-item" >
+        <div class="content-info">
+          <div class="text-subtitle2">{{ product.name }}</div>
+          <div class="text-caption text-grey-7 text-truncate">
+            {{ product.subcategory?.name || product.description }}
+          </div>
+        </div>
+      </q-item-section>
+      
+      <SelectedElementIndicator 
+      :rounded="false" 
+      color="bg-primary" 
+      :show="selectedProduct?.uuid === product.uuid"
+      />
+    </template>
+    
+    <!-- Expansion Content - PageList -->
+    <div class="q-pb-md">
+      <div class="c-box-title q-py-md" style="padding-left: 64px;">
+        Pages
+      </div>
+      <PageList
+      :hide-header="true"
+      :product-filter="[product.uuid]"
+      :audience-filter="audienceFilter"
+      v-model="selectedPage"
+      />
+    </div>
+  </q-expansion-item>
+</q-list>
+</template>
+
+<script setup lang="ts">
+import { computed, ref } from 'vue'
+import PageList from './PageList.vue'
+import products from '~/src/repository/product'
+interface Product {
+  uuid: string
+  clientUuid: string
+  name: string
+  description: string | null
+  image: string | null
+  score: number
+  ctaName: string | null
+  ctaLink: string | null
+  benefits: any | null
+  createdAt: number
+}
+
+const props = defineProps<{
+  modelValue?: any,
+  filter?: string
+  audienceFilter: string[]
+}>()
+
+const emit = defineEmits(['update:modelValue'])
+
+const selectedPage = computed({
+  get: () => props.modelValue,
+  set: (value) => emit('update:modelValue', value)
+})
+
+const selectedProduct = ref<any>(null)
+
+const filteredProducts = computed(() => {
+  if (!props.filter) return products
+  
+  const searchTerm = props.filter.toLowerCase()
+  return products.filter(product => 
+  product.name.toLowerCase().includes(searchTerm) ||
+  (product.description?.toLowerCase().includes(searchTerm))
+  )
+})
+
+const selectProduct = (product: Product) => {
+  selectedProduct.value = product
+}
+
+const formatDate = (timestamp: number) => {
+  return new Date(timestamp).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric'
+  })
+}
+</script>
+
+<style lang="scss">
+.content-list {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.header-row {
+  background-color: #f5f5f5;
+  min-height: 40px;
+}
+
+.content-item {
+  min-height: 60px;
+}
+
+.content-info {
+  overflow: hidden;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+}
+
+.c-list-product-picture{
+  height:75px;
+  width:75px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.q-expansion-item--expanded .q-item:has(.c-product-item) {
+  box-shadow: 0px 9px 5px -8px #8c8c8c;
+}
+
+</style>

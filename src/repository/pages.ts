@@ -2,8 +2,15 @@ const pages = [
   {
     "uuid": "41d7cab6-60f6-486a-aee3-529ee4707c27",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -17,8 +24,15 @@ const pages = [
   {
     "uuid": "3e00acb6-1edc-4638-8720-9bf6f07c88b1",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -32,8 +46,15 @@ const pages = [
   {
     "uuid": "d974ec16-cd54-4072-8b27-8177bb50110a",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -47,8 +68,15 @@ const pages = [
   {
     "uuid": "ca951d2c-0cb4-4717-bffc-c06b0c76e27c",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -62,8 +90,15 @@ const pages = [
   {
     "uuid": "5a25fc6c-b142-4610-9da8-31843c7b3231",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -77,8 +112,15 @@ const pages = [
   {
     "uuid": "51206b4f-1aa0-42f4-952f-fa01ff5381d1",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -92,8 +134,15 @@ const pages = [
   {
     "uuid": "9e2d5f2f-b6bf-44db-801e-6bb46b505628",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -107,8 +156,15 @@ const pages = [
   {
     "uuid": "c9de0640-beb4-4e35-a31a-9d03f6662e96",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -122,8 +178,15 @@ const pages = [
   {
     "uuid": "7a579998-13b9-43f8-953c-c555c4a1dbcb",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -137,8 +200,15 @@ const pages = [
   {
     "uuid": "e3f7dacd-87f4-4af4-a77b-5e5b2ba3148d",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -152,8 +222,15 @@ const pages = [
   {
     "uuid": "73619988-8aa4-4bc5-89f8-6a2e05ec4052",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -167,8 +244,15 @@ const pages = [
   {
     "uuid": "6f6a1dfe-f6c9-4a7b-b82c-b47b893a71be",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -182,8 +266,15 @@ const pages = [
   {
     "uuid": "9d3089ee-2795-49ed-b7d5-ae1330d61522",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -197,8 +288,15 @@ const pages = [
   {
     "uuid": "61016ec7-c08a-4732-9857-a87344d7b33e",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -212,8 +310,15 @@ const pages = [
   {
     "uuid": "f21a4ed7-a163-4c5c-a19d-86f6e1f0e372",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -227,8 +332,15 @@ const pages = [
   {
     "uuid": "430d831d-8541-4ee3-86f6-2fe0e8063fa9",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -242,8 +354,15 @@ const pages = [
   {
     "uuid": "7b2e4310-a7c0-4f25-9cc6-93aa178360b2",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -257,8 +376,15 @@ const pages = [
   {
     "uuid": "6ea1d463-b1db-4409-84c5-a7eae1de2c84",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -272,8 +398,15 @@ const pages = [
   {
     "uuid": "d66db82f-fd94-4c13-9e34-51504a6959f2",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -287,8 +420,15 @@ const pages = [
   {
     "uuid": "3f3400f1-a58e-4089-a365-2ea3f2eee66d",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -302,8 +442,15 @@ const pages = [
   {
     "uuid": "95390211-15e5-4414-973d-148fa872d183",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -317,8 +464,15 @@ const pages = [
   {
     "uuid": "a4a68f57-b492-4fd9-9b82-6fe73b9b5c1e",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -332,8 +486,15 @@ const pages = [
   {
     "uuid": "8c0bc019-4b5f-49ac-861c-20c75f89b42d",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -347,8 +508,15 @@ const pages = [
   {
     "uuid": "46ac9b69-56f7-4fbe-b6c6-1ac5380e8004",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -362,8 +530,15 @@ const pages = [
   {
     "uuid": "351c05b1-01aa-4ee1-a152-ffa80e5bc83a",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -377,8 +552,15 @@ const pages = [
   {
     "uuid": "665c86d5-d445-43e8-858a-0ee7f8955532",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -392,8 +574,15 @@ const pages = [
   {
     "uuid": "36492e45-3eda-4d7b-bfe3-21f5a77e3ca0",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -407,8 +596,15 @@ const pages = [
   {
     "uuid": "c3027ec8-8737-45a9-9068-ae8a80abca28",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -422,8 +618,15 @@ const pages = [
   {
     "uuid": "500e917d-3a0e-4ab3-a917-294dbcb73726",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -437,8 +640,15 @@ const pages = [
   {
     "uuid": "1eddda81-80fc-418c-8944-7ba25a128965",
     "language": "en",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -452,8 +662,15 @@ const pages = [
   {
     "uuid": "59480f71-e922-4875-a121-a5bf12efb4e4",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -467,8 +684,15 @@ const pages = [
   {
     "uuid": "639778d5-189b-4f94-944e-77e634ab99da",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -482,8 +706,15 @@ const pages = [
   {
     "uuid": "88ca316c-18e0-45d0-9371-b44b32dadfc8",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -497,8 +728,15 @@ const pages = [
   {
     "uuid": "511a4bc6-1350-4e3b-8111-8d4bf76be1d6",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -512,8 +750,15 @@ const pages = [
   {
     "uuid": "b91000ee-9ce1-47ae-875c-256b47c838d9",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -527,8 +772,15 @@ const pages = [
   {
     "uuid": "2264546a-dd49-4171-aa48-d841dc1d9aa5",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -542,8 +794,15 @@ const pages = [
   {
     "uuid": "d1f9fe8e-9ba2-4626-8119-b63eae71843f",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -557,8 +816,15 @@ const pages = [
   {
     "uuid": "613c55b3-7dda-4bd9-b4cd-83baf487b1f5",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -572,8 +838,15 @@ const pages = [
   {
     "uuid": "a56d9319-e26a-4e87-93d5-e78434f64d8f",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -587,8 +860,15 @@ const pages = [
   {
     "uuid": "b2e2ec79-8527-4b57-bb9c-7d155d28b653",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -602,8 +882,15 @@ const pages = [
   {
     "uuid": "a4f03051-1fc9-4d71-85cb-edffcce6f801",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -617,8 +904,15 @@ const pages = [
   {
     "uuid": "7646f13e-9247-4686-a11d-1841631cd921",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -632,8 +926,15 @@ const pages = [
   {
     "uuid": "2de43023-8e7b-4a44-8123-38ebb5da2b2d",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -647,8 +948,15 @@ const pages = [
   {
     "uuid": "1de89a76-420a-41fc-be25-c780d483ae16",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -662,8 +970,15 @@ const pages = [
   {
     "uuid": "4b6e2331-b516-43fe-bf40-15f102080ebd",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -677,8 +992,15 @@ const pages = [
   {
     "uuid": "133546f0-0283-4f91-9c93-2ab7aeac4521",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -692,8 +1014,15 @@ const pages = [
   {
     "uuid": "d8ccc5b4-77f2-4afb-9fbb-6f442ae3e1c9",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -707,8 +1036,15 @@ const pages = [
   {
     "uuid": "ac8ebb8f-5f1d-43f4-ad97-fd3dd4fa6b1a",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -722,8 +1058,15 @@ const pages = [
   {
     "uuid": "f85b9829-7955-4ac7-9469-63807a684a48",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -737,8 +1080,15 @@ const pages = [
   {
     "uuid": "7bf63fd1-aa1d-4101-aaeb-b4d8f490d7c1",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -752,8 +1102,15 @@ const pages = [
   {
     "uuid": "99e3ebf1-cc82-4030-87e1-b536245bee6b",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -767,8 +1124,15 @@ const pages = [
   {
     "uuid": "aac4e761-08e6-44cf-aa31-ddb167b452d2",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -782,8 +1146,15 @@ const pages = [
   {
     "uuid": "584bf59d-eb36-4a87-99b6-33228083f55e",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -797,8 +1168,15 @@ const pages = [
   {
     "uuid": "a69b5678-ee96-4b7a-bd1a-78efee4de9a7",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -812,8 +1190,15 @@ const pages = [
   {
     "uuid": "7006e61f-7819-4199-b688-3f5680620823",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -827,8 +1212,15 @@ const pages = [
   {
     "uuid": "f42fcc36-288b-4d9d-925d-3727a78f6a38",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -842,8 +1234,15 @@ const pages = [
   {
     "uuid": "6aac4118-c792-4d14-889a-320bfd5a1ec9",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -857,8 +1256,15 @@ const pages = [
   {
     "uuid": "c3af63cc-39ba-4d0c-8a3f-1859a25b101d",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -872,8 +1278,15 @@ const pages = [
   {
     "uuid": "fc897073-e18a-4599-9dbc-5ab24aec49c6",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -887,8 +1300,15 @@ const pages = [
   {
     "uuid": "e649c7fa-7f83-4e63-8850-8bba0c734e15",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -902,8 +1322,15 @@ const pages = [
   {
     "uuid": "59a825f1-1757-44b0-9480-43200780b931",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -917,8 +1344,15 @@ const pages = [
   {
     "uuid": "3e9e554f-d719-46ee-b76e-b1b3c18ad455",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -932,8 +1366,15 @@ const pages = [
   {
     "uuid": "63ef1373-c38e-410f-a9ee-d53dda80705f",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -947,8 +1388,15 @@ const pages = [
   {
     "uuid": "27ce8eb3-6437-4219-a292-21c57a78b421",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -962,8 +1410,15 @@ const pages = [
   {
     "uuid": "f36fe656-64e8-403e-a775-15c4343f5f2f",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -977,8 +1432,15 @@ const pages = [
   {
     "uuid": "4a7b4e64-32e0-48c3-bc4c-37535c248be6",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -992,8 +1454,15 @@ const pages = [
   {
     "uuid": "afbeb592-368f-4e49-94b0-eb74ae375351",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1007,8 +1476,15 @@ const pages = [
   {
     "uuid": "c91c3143-7f98-4ac3-8316-dae16ddeae71",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1022,8 +1498,15 @@ const pages = [
   {
     "uuid": "7de92050-a5ec-4849-8507-50af74599c8a",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1037,8 +1520,15 @@ const pages = [
   {
     "uuid": "5ec06ba3-6a57-4fc5-80cf-d3b0a06baca8",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1052,8 +1542,15 @@ const pages = [
   {
     "uuid": "23ac9cf9-2bb6-4e50-bdf8-4fa460276606",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1067,8 +1564,15 @@ const pages = [
   {
     "uuid": "f4764004-7f6a-4dcf-a0f5-327f10897c4f",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1082,8 +1586,15 @@ const pages = [
   {
     "uuid": "e4b96a4f-5113-4a0c-b04c-f16e7e410239",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1097,8 +1608,15 @@ const pages = [
   {
     "uuid": "3b332267-c814-4c68-be89-63454174294c",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1112,8 +1630,15 @@ const pages = [
   {
     "uuid": "d5c41541-0cbb-4c83-b199-ba2dec34e264",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1127,8 +1652,15 @@ const pages = [
   {
     "uuid": "5fec29b5-4ac2-4b8d-9f93-a383849034e9",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1142,8 +1674,15 @@ const pages = [
   {
     "uuid": "1d23a17f-0d94-4766-b798-b7297a0eefc4",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1157,8 +1696,15 @@ const pages = [
   {
     "uuid": "5a4c16c5-002c-413f-a6d8-d82abdab8da7",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1172,8 +1718,15 @@ const pages = [
   {
     "uuid": "54eff05b-aa95-4043-aa22-e5246a9103e6",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1187,8 +1740,15 @@ const pages = [
   {
     "uuid": "c51dbfc2-2c0d-408b-8a55-6c83d3fd6ad2",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1202,8 +1762,15 @@ const pages = [
   {
     "uuid": "d3d669b8-45b2-4563-a70a-253fcc5ad27b",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1217,8 +1784,15 @@ const pages = [
   {
     "uuid": "defdda84-a4e9-4730-88fd-3e2f3e92c24a",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1232,8 +1806,15 @@ const pages = [
   {
     "uuid": "cd85fdae-f9b0-494c-916c-a655d3690a0d",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1247,8 +1828,15 @@ const pages = [
   {
     "uuid": "613d174c-c159-4a73-aa32-800a6d66f487",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1262,8 +1850,15 @@ const pages = [
   {
     "uuid": "45114ffc-5a4e-4af6-b5ad-de8d6ea02715",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1277,8 +1872,15 @@ const pages = [
   {
     "uuid": "3591fd53-388f-4658-9488-40007076d6fd",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1292,8 +1894,15 @@ const pages = [
   {
     "uuid": "d86b8678-53b5-4cad-9d27-2825af6d89b4",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1307,8 +1916,15 @@ const pages = [
   {
     "uuid": "1d9e37a1-37ed-4de8-9d2e-9691746d8c4b",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1322,8 +1938,15 @@ const pages = [
   {
     "uuid": "13e65710-1f8f-463d-b7a2-0a42f87931fb",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1337,8 +1960,15 @@ const pages = [
   {
     "uuid": "a2fe3f26-202d-4559-9bfb-9b0bde1561ec",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1352,8 +1982,15 @@ const pages = [
   {
     "uuid": "b546e08d-d939-4bec-87d6-e1e9950ed284",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1367,8 +2004,15 @@ const pages = [
   {
     "uuid": "7137523b-f5b4-4297-81a9-d7f875b6376e",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1382,8 +2026,15 @@ const pages = [
   {
     "uuid": "13b13ce5-a814-4bfb-b47c-53646ea98446",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1397,8 +2048,15 @@ const pages = [
   {
     "uuid": "f15833ce-79a8-4fd6-848f-1aa612fe1cee",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1412,8 +2070,15 @@ const pages = [
   {
     "uuid": "ee92c47d-614f-4dea-97a3-7623b5bc76f0",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1427,8 +2092,15 @@ const pages = [
   {
     "uuid": "a39d9628-a05e-4549-9fcc-458db3490be0",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1442,8 +2114,15 @@ const pages = [
   {
     "uuid": "d6e16503-371e-451b-a1da-17a7acee3c3b",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1457,8 +2136,15 @@ const pages = [
   {
     "uuid": "d1eb0ef1-1f9e-433c-9741-b69a2e793d91",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1472,8 +2158,15 @@ const pages = [
   {
     "uuid": "4fe181ad-af0b-4db8-92df-125339cc08d8",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1487,8 +2180,15 @@ const pages = [
   {
     "uuid": "09a53390-1335-4636-8123-f91c754a19eb",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1502,8 +2202,15 @@ const pages = [
   {
     "uuid": "f1573be1-00b7-434b-9798-b6f118757d06",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1517,8 +2224,15 @@ const pages = [
   {
     "uuid": "2787b35b-64a1-4333-b164-4fa1408d8fdd",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1532,8 +2246,15 @@ const pages = [
   {
     "uuid": "7d40f615-e116-4557-8479-18e8cf3acfcb",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1547,8 +2268,15 @@ const pages = [
   {
     "uuid": "3914102b-8e31-4176-a524-1626ef1ed8ad",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1562,8 +2290,15 @@ const pages = [
   {
     "uuid": "3ac7c063-92c8-4f64-9501-05dad0078381",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1577,8 +2312,15 @@ const pages = [
   {
     "uuid": "c8b82e24-3a7b-4647-8af4-c5cea2b47b76",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1592,8 +2334,15 @@ const pages = [
   {
     "uuid": "74813124-ba04-4512-9908-a9359d12667f",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1607,8 +2356,15 @@ const pages = [
   {
     "uuid": "ea9c5196-d74e-4b8e-b3c7-5549ef925401",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1622,8 +2378,15 @@ const pages = [
   {
     "uuid": "cbcd4649-2df1-4860-8c9b-290f1af8d25d",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1637,8 +2400,15 @@ const pages = [
   {
     "uuid": "dd16f163-932f-4c90-b5af-b76e6592debc",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1652,8 +2422,15 @@ const pages = [
   {
     "uuid": "6eaaa7ea-ce94-479c-b4bd-695649233d77",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1667,8 +2444,15 @@ const pages = [
   {
     "uuid": "bb601b8f-fe19-4b04-a630-a12fa0b22f13",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1682,8 +2466,15 @@ const pages = [
   {
     "uuid": "a92a78fb-8301-4fb4-aa99-2a07f690a17f",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1697,8 +2488,15 @@ const pages = [
   {
     "uuid": "f3edf7a8-8b43-4d28-b316-625541b93ca7",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1712,8 +2510,15 @@ const pages = [
   {
     "uuid": "d77d7196-2b19-4a16-9a10-252c9decd19f",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1727,8 +2532,15 @@ const pages = [
   {
     "uuid": "219e6a1a-aceb-491c-80db-04ba0ebec5c9",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1742,8 +2554,15 @@ const pages = [
   {
     "uuid": "84aa61fa-8433-44ec-952b-f7ff5564e504",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1757,8 +2576,15 @@ const pages = [
   {
     "uuid": "6c30d2da-50f6-425b-b4b3-3d43b26fa807",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1772,8 +2598,15 @@ const pages = [
   {
     "uuid": "f4654335-0255-4722-a1ff-e0b581a2e510",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1787,8 +2620,15 @@ const pages = [
   {
     "uuid": "002ea23e-03b3-482a-a5af-7030a694ea7f",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "0143f2a1-f066-4dc0-87b1-25b2d4444af4",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -1802,8 +2642,15 @@ const pages = [
   {
     "uuid": "2bcd7205-0d71-4ac9-86c0-c40a6dad25b3",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -1817,8 +2664,15 @@ const pages = [
   {
     "uuid": "dd0294ca-df32-4026-9021-65229f3da373",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -1832,8 +2686,15 @@ const pages = [
   {
     "uuid": "38241b6a-73e4-4834-9bbf-9ddaf4ca1a56",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -1847,8 +2708,15 @@ const pages = [
   {
     "uuid": "041243d2-451d-405b-8107-32e226d2d5c7",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -1862,8 +2730,15 @@ const pages = [
   {
     "uuid": "a442ce32-e0be-49a3-88a9-9c4c1fa601c6",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -1877,8 +2752,15 @@ const pages = [
   {
     "uuid": "24b896c0-aa77-4d41-ab21-ff500fae2aa5",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -1892,8 +2774,15 @@ const pages = [
   {
     "uuid": "a1977d40-06c6-43bc-b3fe-db0a726145c9",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -1907,8 +2796,15 @@ const pages = [
   {
     "uuid": "f3e3542e-e787-4e09-b602-f34d0bb40fb6",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -1922,8 +2818,15 @@ const pages = [
   {
     "uuid": "66ec2d3d-cee4-4b94-8fce-6ba819510f6d",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -1937,8 +2840,15 @@ const pages = [
   {
     "uuid": "23f35399-b731-4ac4-ba69-b7a67c383137",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -1952,8 +2862,15 @@ const pages = [
   {
     "uuid": "e0603e67-65cd-403d-80f5-6c46c69cb32c",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -1967,8 +2884,15 @@ const pages = [
   {
     "uuid": "8345138a-921c-47cb-b7c9-6d59eead8aa2",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -1982,8 +2906,15 @@ const pages = [
   {
     "uuid": "e6b52354-7de1-40d9-b55f-4f72c35ad3e8",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -1997,8 +2928,15 @@ const pages = [
   {
     "uuid": "bbea3c1c-4d5a-4bbf-b107-3743c0039f25",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2012,8 +2950,15 @@ const pages = [
   {
     "uuid": "fb3fd041-9e5b-495c-a0b5-d2d7f9109fb3",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2027,8 +2972,15 @@ const pages = [
   {
     "uuid": "4562a74a-708d-457a-92ad-04fca6fd5f3c",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2042,8 +2994,15 @@ const pages = [
   {
     "uuid": "8af7575c-b8b2-4334-81f8-956e902094b5",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2057,8 +3016,15 @@ const pages = [
   {
     "uuid": "1713874e-28df-4cd1-8e9a-b5b6e0801e4e",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2072,8 +3038,15 @@ const pages = [
   {
     "uuid": "ea792c18-76cc-443d-8254-ad44a437d6a6",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2087,8 +3060,15 @@ const pages = [
   {
     "uuid": "375106bb-6b7e-4e16-b0ff-75d80d4a594e",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "5d198e92-27d0-44c9-b42f-1450b27a334d",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2102,8 +3082,8 @@ const pages = [
   {
     "uuid": "5604a911-ed27-4b6d-b0bc-fbaab8c77f75",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2117,8 +3097,8 @@ const pages = [
   {
     "uuid": "eb59e991-9dc8-41f6-8d43-d28b26383b17",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2132,8 +3112,8 @@ const pages = [
   {
     "uuid": "731a179d-82b6-4fb3-9cbb-494b5bcd9a2f",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2147,8 +3127,8 @@ const pages = [
   {
     "uuid": "8a3e875b-2ada-4aed-a759-08c26fe10c4c",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2162,8 +3142,8 @@ const pages = [
   {
     "uuid": "a9198cee-3639-4b89-985e-78e8ffe0467c",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2177,8 +3157,8 @@ const pages = [
   {
     "uuid": "d86e6f6d-538a-4b50-90e2-ef21725a2310",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2192,8 +3172,8 @@ const pages = [
   {
     "uuid": "3d528685-db9f-4012-b344-396f9102f7f9",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2207,8 +3187,8 @@ const pages = [
   {
     "uuid": "567954c3-b53f-4431-962b-b2fbb10f2c43",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2222,8 +3202,8 @@ const pages = [
   {
     "uuid": "ba78eedc-4dd3-405a-a6d5-fb20d1a5382c",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2237,8 +3217,8 @@ const pages = [
   {
     "uuid": "cec9a03b-df53-406e-b56a-6fd103a310d9",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2252,8 +3232,8 @@ const pages = [
   {
     "uuid": "5c5bba08-2ac6-45bc-bf77-7ab1b55f92ed",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2267,8 +3247,8 @@ const pages = [
   {
     "uuid": "b5cf406d-3891-41f4-91fd-61d3c3796bcf",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2282,8 +3262,8 @@ const pages = [
   {
     "uuid": "639aefca-059e-48d6-9b27-22dd3a2a29b6",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2297,8 +3277,8 @@ const pages = [
   {
     "uuid": "5b3600c6-252b-47cd-ac93-10e52d4d2975",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2312,8 +3292,8 @@ const pages = [
   {
     "uuid": "43d009f0-4aac-42ee-81b8-4cad659d4216",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2327,8 +3307,8 @@ const pages = [
   {
     "uuid": "7a4a74dc-52a0-40ba-bb2f-27708b63c990",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2342,8 +3322,8 @@ const pages = [
   {
     "uuid": "6aef54ab-c2f5-4ee9-9858-04b2874c60ad",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2357,8 +3337,8 @@ const pages = [
   {
     "uuid": "3b58d2ee-59c6-410d-9098-006ba17b2d38",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2372,8 +3352,8 @@ const pages = [
   {
     "uuid": "77010c28-a6e9-44d1-a87b-b93957c4e6e7",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2387,8 +3367,8 @@ const pages = [
   {
     "uuid": "7bd05e4c-5513-408d-8800-5149c9384879",
     "language": "fr",
-    "categoryUuid": null,
-    "subcategoryUuid": null,
+    "category": null,
+    "subcategory": null,
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "f55e77e8-f80b-4ec0-9f0a-13521af0078b",
     "personaUuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
@@ -2402,8 +3382,15 @@ const pages = [
   {
     "uuid": "ab52eb21-d3c9-47fe-83ba-0fd53e306598",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2417,8 +3404,15 @@ const pages = [
   {
     "uuid": "3c5e5b64-83d5-42de-b2f5-a620a7d000e2",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2432,8 +3426,15 @@ const pages = [
   {
     "uuid": "df097415-3caa-4ca7-8b2f-7a2a9adc8f38",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2447,8 +3448,15 @@ const pages = [
   {
     "uuid": "30f6e17f-e71f-45fc-a5ee-787ec52d8ecd",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2462,8 +3470,15 @@ const pages = [
   {
     "uuid": "97b3b565-f9f5-408a-9c38-f3fecc063b8c",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2477,8 +3492,15 @@ const pages = [
   {
     "uuid": "51542c64-1f7f-4746-ba93-09f7b7ca1679",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2492,8 +3514,15 @@ const pages = [
   {
     "uuid": "e0e7e11c-9097-42f0-aa49-4cd7720cbb9f",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2507,8 +3536,15 @@ const pages = [
   {
     "uuid": "b1afe8ea-e1f0-4695-8500-405aa1e8089c",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2522,8 +3558,15 @@ const pages = [
   {
     "uuid": "eec3caec-0d20-4f22-af58-475fd2f53398",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2537,8 +3580,15 @@ const pages = [
   {
     "uuid": "e866e24e-5b0f-4a93-b74e-7475d11ef837",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2552,8 +3602,15 @@ const pages = [
   {
     "uuid": "1e855d47-8f61-4b2b-98d3-ddaf8a5d9f95",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2567,8 +3624,15 @@ const pages = [
   {
     "uuid": "5559eb05-521d-4d32-b918-2e800728074b",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2582,8 +3646,15 @@ const pages = [
   {
     "uuid": "2fe58e8e-79e3-43d2-8fa5-05ae86d9b27a",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2597,8 +3668,15 @@ const pages = [
   {
     "uuid": "eee27443-868c-457a-8c9e-377f3412a02a",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2612,8 +3690,15 @@ const pages = [
   {
     "uuid": "3ff71fab-d8f5-499e-8a27-b4e30c9014b2",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2627,8 +3712,15 @@ const pages = [
   {
     "uuid": "57f72119-7190-4554-821a-b7b8565cef3f",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2642,8 +3734,15 @@ const pages = [
   {
     "uuid": "db9205d5-4db7-4faf-b54a-31eeddfcfd4d",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2657,8 +3756,15 @@ const pages = [
   {
     "uuid": "f42c550a-51d5-4583-ae44-54a5faf0cb30",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2672,8 +3778,15 @@ const pages = [
   {
     "uuid": "191927b1-df3b-4060-9a10-002326d7eb88",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2687,8 +3800,15 @@ const pages = [
   {
     "uuid": "595725bc-da13-4e75-b1a1-2df273e15370",
     "language": "fr",
-    "categoryUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
-    "subcategoryUuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+    "category": null,
+    "subcategory": {
+      "uuid": "8ac357ba-fc84-46ea-84ee-58edde076ae5",
+      "name": "Opportunité mot clé ",
+      "description": "",
+      "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
+      "parentUuid": "9f40d21f-3c83-4f45-a8a5-294435dba462",
+      "createdAt": 1733950698416
+    },
     "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
     "marketUuid": "570a347f-9bd3-47f2-af76-122806482840",
     "personaUuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
@@ -2700,5 +3820,4 @@ const pages = [
     "createdAt": 1733948396226
   }
 ]
-
 export default pages

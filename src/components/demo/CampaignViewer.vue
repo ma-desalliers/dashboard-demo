@@ -12,16 +12,18 @@
         <div>
         <q-btn-group unelevated class="c-btn-group">
           <q-btn
-            color="grey-1"
-            text-color="#333333"
+            :color="listView == 'products'? 'primary' : 'grey-1'"
+            :text-color="listView == 'products'? '' : '#333333'"
+            
+            @click="setListView('products')"
           >
           <i class="fa fa-tree"></i>
           </q-btn>
         
           <q-btn
-           
-            unelevated
-            color="primary"
+            :color="listView == 'pages'? 'primary' : 'grey-1'"
+            :text-color="listView == 'pages'? '' : '#333333'"
+            @click="setListView('pages')"
           >
           <i class="fa fa-list"></i>
           </q-btn>
@@ -41,51 +43,8 @@
       <!-- Content List -->
       <div class="row full-width">
         <div class="col-7">
-          <q-list separator class="content-list ">
-            <!-- Headers -->
-            <q-item class="header-row text-grey-7">
-              <q-item-section side style="width: 48px">
-                <div class="text-caption">RS</div>
-              </q-item-section>
-              <q-item-section>
-                <div class="text-caption">Title</div>
-              </q-item-section>
-              <q-item-section side style="width: 100px">
-                <div class="text-caption">Visitors</div>
-              </q-item-section>
-              <q-item-section style="width: 120px; text-align: center;">
-                <div class="text-caption">Leads</div>
-              </q-item-section>
-            </q-item>
-            
-            <!-- Content Items -->
-            <q-item v-for="page in filteredPages" :key="page.uuid" class="content-item" :class="{'bg-grey-2':page.uuid == selectedPage.uuid}">
-              <q-item-section side style="width: 48px">
-               <ScoreDisplay :score="page.score" size="18px" />
-              </q-item-section>
-              
-              <q-item-section class="clickable"  @click="selectPage(page)">
-
-                  <div class="content-info">
-                    <div class="text-subtitle2">{{ page.title }}</div>
-                    <div class="text-caption text-grey-7">
-                      Blog post • {{ [''].join(' • ') || 'Minimize Waste' }}
-                    </div>
-                  </div>
-
-              </q-item-section>
-              
-              <q-item-section side style="width: 100px">
-                <div class="text-subtitle2">{{ '15,000' }}</div>
-              </q-item-section>
-              
-              <q-item-section style="width: 120px; text-align: center;">
-                <div class="text-subtitle2">{{ 25 }}</div>
-              </q-item-section>
-              <SelectedElementIndicator :rounded="false" color="bg-primary" :show="selectedPage.uuid == page.uuid"></SelectedElementIndicator>
-            </q-item>
-          </q-list>
-          
+          <PageList v-if="listView == 'pages'" v-model="selectedPage"  :product-filter="productFilter" :audience-filter="audienceFilter"></PageList>
+          <ProductList v-if="listView == 'products'" v-model="selectedPage"  :audience-filter="audienceFilter" ></ProductList>
           <!-- Pagination 
           <div class="row justify-center q-mt-lg">
             <q-pagination
@@ -112,12 +71,14 @@ import { useMainDisplayStore } from '@/src/stores/mainDisplayStore'
 
 import { date, event } from 'quasar';
 
-import pages from '~/src/repository/pages';
 import products from '~/src/repository/product';
 import audience from '~/src/repository/audience';
 import PageViewer from './usedComponent/PageViewer.vue';
 import { mdiConsoleLine } from '@quasar/extras/mdi-v4';
 import MultiSelect from './usedComponent/MultiSelect.vue';
+import PageList from './usedComponent/PageList.vue';
+import ProductList from './usedComponent/ProductList.vue';
+import { biListCheck } from '@quasar/extras/bootstrap-icons';
 
 
 // Rest of your constants...
@@ -131,19 +92,7 @@ const hoverButtonList = computed(()=>{
   ]}) 
   
 
-  const filteredPages = computed(() =>{
 
-     return pages.filter(page =>{
-        if(productFilter.value.length){
-
-          if(audienceFilter.value.length){
-            return productFilter.value.includes(page.productUuid) && audienceFilter.value.includes(page.personaUuid)
-          }
-          return productFilter.value.includes(page.productUuid)
-        }
-        return true
-     })
-  })
   // Reactive state
   const search = ref('')
   const statusFilter = ref<typeof statusOptions[number]>('Tous')
@@ -152,7 +101,8 @@ const hoverButtonList = computed(()=>{
   const audienceFilter = ref<string[]>([])
   const mainDisplayStore = useMainDisplayStore()
   const { main} = storeToRefs(mainDisplayStore)
-  const selected = ref('first')
+  const listView = ref('pages')
+
     
     const currentPage = ref(1)
     const itemsPerPage = ref(10)
@@ -176,6 +126,10 @@ const hoverButtonList = computed(()=>{
       console.log('hello')
       selectedPage.value = page
 
+    }
+
+    const setListView = (listViewName:string) =>{
+      listView.value = listViewName
     }
     
   </script>
