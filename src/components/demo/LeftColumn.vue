@@ -24,11 +24,11 @@
       <div class="section-header q-mb-sm q-px-md">
         <div class="row items-center">
           <div class="c-box-subtitle q-pr-sm">AI Departments</div>
-          <q-icon name="fa fa-circle-info" size="xs" class="text-grey-6 c-small-text" />
+          <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip>
         </div>
       </div>
       <div class="departments c-light-border-bottom q-pb-lg">
-        <q-item v-for="dept in departments" :key="dept.name" clickable v-ripple class="q-px-md q-mb-xs" :class="dept.active? `bg-${dept.color}-1` : ''"  @click="openDept(dept)">
+        <q-item v-for="dept in departments" :key="dept.name" clickable v-ripple class="q-px-md q-mb-xs" :class="dept.active? `bg-${dept.color}-1` : `bg-${dept.color}-hover`"  @click="openDept(dept)">
           <q-item-section avatar>
             <q-avatar rounded size="32px">
               <img class="c-img-cover" :src="dept.icon" :alt="dept.name" :style="{backgroundColor: dept.color}">
@@ -52,7 +52,7 @@
       <div class="section-header q-mb-sm q-px-md">
         <div class="row items-center">
           <div class="c-box-subtitle q-pr-sm">Knowledge Base</div>
-          <q-icon name="fa fa-circle-info" size="xs" class="text-grey-6 c-small-text" />
+          <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip>
         </div>
         <div class="q-pt-md q-pb-sm" style="color:#666666">
           Enhance your AI teams with corporate knowledge

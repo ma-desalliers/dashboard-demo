@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <LeftColumn></LeftColumn>
-    <div class="right-column-container" style="width:calc(100% - 300px)">
+    <div class="right-column-container c-right-main-column"  >
       <CampaignViewer v-if="theCurrentPage == 'CampaignViewer'" class="full-width"></CampaignViewer>
       <SalesDisplay v-if="theCurrentPage == 'SalesDisplay'" class="full-width"></SalesDisplay>
     </div>
@@ -26,5 +26,9 @@ notification.showSuccess('WOW YOU CLICKED')
 
 
 <style>
-
+.c-right-main-column{
+  height:calc(100vh - 50px);
+  width:calc(100% - 300px);
+  overflow: auto;
+}
 </style>

@@ -87,7 +87,7 @@ const filteredProducts = computed(() => {
   )
 })
 
-const selectProduct = (product: Product) => {
+const selectProduct = (product: any) => {
   selectedProduct.value = product
 }
 
@@ -123,12 +123,6 @@ const formatDate = (timestamp: number) => {
   cursor: pointer;
 }
 
-.text-truncate {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 400px;
-}
 
 .c-list-product-picture{
   height:75px;
@@ -139,6 +133,10 @@ const formatDate = (timestamp: number) => {
 
 .q-expansion-item--expanded .q-item:has(.c-product-item) {
   box-shadow: 0px 9px 5px -8px #8c8c8c;
+  position: sticky;
+  top:0;
+  z-index: 10;
+  background-color: white;
 }
 
 </style>

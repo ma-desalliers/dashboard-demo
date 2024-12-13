@@ -11,7 +11,7 @@
     :option-value="selectionType === 'uuid' ? 'uuid' : value => value"
     :option-label="labelName"
     behavior="menu"
-    class="full-width"
+    class="full-width c-select"
   >
     <template #selected>
       <template v-if="displaySelected === 'number' && multiple && selectedItems?.length">
@@ -32,7 +32,7 @@
     </template>
 
     <template #option="{ itemProps, opt, selected, toggleOption }">
-      <q-item v-bind="itemProps" class="q-pa-none">
+      <q-item v-bind="itemProps" class="q-pa-none c-select-item">
         <q-item-section side v-if="multiple">
           <div class="row items-center">
             <q-checkbox
