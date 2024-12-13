@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
 $primary   : #55B948;
 $secondary : #26A69A;
 $accent    : #1976D2;
@@ -27,7 +29,8 @@ body {
   margin: 0;
   padding: 0;
   scrollbar-gutter: stable;  /* Prevents layout shift */
-  background: #f5f5f5;
+  
+  font-family: Lexend Deca;
 }
 
 
@@ -53,6 +56,10 @@ body {
   font-weight: 600;
 }
 
+.c-small-text{
+  font-size:14px !important;
+}
+
 .q-btn{
   box-shadow: none !important;
   border-radius: 4px;
@@ -62,7 +69,9 @@ body {
   .fa{
     font-size: 1.4em ;
   }
-
+  span{
+    text-transform: capitalize;
+  }
 }
 
 .c-limit-text-height{
@@ -141,6 +150,10 @@ body {
 
 .c-row{
   flex-direction:row !important ;
+}
+
+.c-btn-group{
+ 
 }
 
 .c-img-cover{

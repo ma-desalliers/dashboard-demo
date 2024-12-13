@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar-menu q-px-sm q-py-lg">
+  <div class="sidebar-menu q-px-md q-py-lg">
     <!-- Company Header -->
     <div class="row items-center justify-center q-mb-xl q-pb-md cursor-pointer c-light-border-bottom">
       <q-avatar v-if="company.logoType == 'url'" size="24px" class="q-mr-sm">
@@ -10,7 +10,7 @@
         <div v-html="company.logo"></div>
       </div>
       <div class="c-company-name">{{ company.name }}</div>
-      <q-icon name="expand_more" size="sm" class="q-ml-xs" />
+    <!--  <q-icon name="expand_more" size="sm" class="q-ml-xs" />-->
     </div>
 
     <!-- Growth Plan Section
@@ -22,15 +22,15 @@
     <!-- Departments Section -->
     <div class="section-container q-mb-lg">
       <div class="section-header q-mb-sm q-px-md">
-        <div class="row items-center justify-between">
-          <div class="c-box-subtitle">AI Department</div>
-          <q-icon name="help_outline" size="xs" class="text-grey-6" />
+        <div class="row items-center">
+          <div class="c-box-subtitle q-pr-sm">AI Departments</div>
+          <q-icon name="fa fa-circle-info" size="xs" class="text-grey-6 c-small-text" />
         </div>
       </div>
       <div class="departments c-light-border-bottom q-pb-lg">
         <q-item v-for="dept in departments" :key="dept.name" clickable v-ripple class="q-px-md q-mb-xs" :class="dept.active? `bg-${dept.color}-1` : ''"  @click="openDept(dept)">
           <q-item-section avatar>
-            <q-avatar size="32px">
+            <q-avatar rounded size="32px">
               <img class="c-img-cover" :src="dept.icon" :alt="dept.name" :style="{backgroundColor: dept.color}">
             </q-avatar>
           </q-item-section>
@@ -38,10 +38,11 @@
             {{ dept.name }}
           </q-item-section>
           <q-item-section side v-if="dept.new">
-            <q-chip :color="dept.color" text-color="white" class="text-caption" style="border-radius: 6px">
+            <q-chip :color="dept.color" text-color="white" class="text-caption" style="border-radius: 4px">
               New
             </q-chip>
           </q-item-section>
+          <selected-element-indicator rounded :color="`bg-${dept.color}`" :show="dept.active"></selected-element-indicator>
         </q-item>
       </div>
     </div>
@@ -49,9 +50,9 @@
     <!-- Knowledge Base Section -->
     <div class="section-container q-mb-lg  q-pt-md">
       <div class="section-header q-mb-sm q-px-md">
-        <div class="row items-center justify-between">
-          <div class="c-box-subtitle">Knowledge Base</div>
-          <q-icon name="help_outline" size="xs" class="text-grey-6" />
+        <div class="row items-center">
+          <div class="c-box-subtitle q-pr-sm">Knowledge Base</div>
+          <q-icon name="fa fa-circle-info" size="xs" class="text-grey-6 c-small-text" />
         </div>
         <div class="q-pt-md q-pb-sm" style="color:#666666">
           Enhance your AI teams with corporate knowledge
@@ -164,6 +165,7 @@ const openDept = (dept: any) =>{
   width: 300px;
   height:calc( 100vh - 50px);
   border-right:1px solid #e7e7e7; ;
+  background: #f5f5f5;
 }
 
 .section-header {
@@ -180,7 +182,7 @@ const openDept = (dept: any) =>{
 .progress-bar {
   width: 40px;
   margin-right: 8px;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   border-radius: 4px;;
 }
 

@@ -2,19 +2,38 @@
   <div class="c-content-marketing q-pa-md">
     <!-- Header Section -->
 
-    <div class="text-h6 q-mb-sm">Content marketing <q-icon name="info" size="xs" /></div>
+    <div class="text-h6 q-mb-sm">Content marketing <q-icon name="fa fa-circle-info" class="c-small-text" /></div>
     <div class="text-caption text-grey-7 q-mb-lg">
-      Creation de contenu à valeur ajoutée pour votre audience cible.
+      Creation of value-added content for your target audience.
     </div>
     <div>
       <!-- Filters Section-->
       <div class="row q-col-gutter-md q-mb-lg">
+        <div>
+        <q-btn-group unelevated class="c-btn-group">
+          <q-btn
+            color="grey-1"
+            text-color="#333333"
+          >
+          <i class="fa fa-tree"></i>
+          </q-btn>
+        
+          <q-btn
+           
+            unelevated
+            color="primary"
+          >
+          <i class="fa fa-list"></i>
+          </q-btn>
+        </q-btn-group>
+      </div>
+
         <div class="col-12 col-sm-3">
-          <MultiSelect rounded v-model="productFilter" :options="products" label-name="name" label="Products" :display-selected="'number'" ></MultiSelect> 
+          <MultiSelect dense  v-model="productFilter" :options="products" label-name="name" label="Products" :display-selected="'number'" ></MultiSelect> 
        
         </div>
         <div class="col-12 col-sm-3">
-          <MultiSelect rounded v-model="audienceFilter" :options="audience" label-name="title" label="Audiences" :display-selected="'number'" ></MultiSelect> 
+          <MultiSelect  v-model="audienceFilter" :options="audience" label-name="title" label="Audiences" :display-selected="'number'" ></MultiSelect> 
          
         </div>
       </div>
@@ -22,27 +41,27 @@
       <!-- Content List -->
       <div class="row full-width">
         <div class="col-7">
-          <q-list separator class="content-list "style="max-height:680px; overflow-y: auto;">
+          <q-list separator class="content-list ">
             <!-- Headers -->
             <q-item class="header-row text-grey-7">
               <q-item-section side style="width: 48px">
                 <div class="text-caption">RS</div>
               </q-item-section>
               <q-item-section>
-                <div class="text-caption">CONTENT</div>
+                <div class="text-caption">Title</div>
               </q-item-section>
               <q-item-section side style="width: 100px">
-                <div class="text-caption">VOLUME</div>
+                <div class="text-caption">Visitors</div>
               </q-item-section>
-              <q-item-section side style="width: 120px">
-                <div class="text-caption">STATUS</div>
+              <q-item-section style="width: 120px; text-align: center;">
+                <div class="text-caption">Leads</div>
               </q-item-section>
             </q-item>
             
             <!-- Content Items -->
-            <q-item v-for="page in filteredPages" :key="page.uuid" class="content-item">
+            <q-item v-for="page in filteredPages" :key="page.uuid" class="content-item" :class="{'bg-grey-2':page.uuid == selectedPage.uuid}">
               <q-item-section side style="width: 48px">
-               <!-- <ScoreDisplay :score="page.score" size="32px" />-->
+               <ScoreDisplay :score="page.score" size="18px" />
               </q-item-section>
               
               <q-item-section class="clickable"  @click="selectPage(page)">
@@ -60,15 +79,10 @@
                 <div class="text-subtitle2">{{ '15,000' }}</div>
               </q-item-section>
               
-              <q-item-section side style="width: 120px">
-                <q-btn
-                flat
-                :label="page.language || 'Programmé'"
-                class="text-primary"
-                style="text-transform: none"
-                icon-right="expand_more"
-                />
+              <q-item-section style="width: 120px; text-align: center;">
+                <div class="text-subtitle2">{{ 25 }}</div>
               </q-item-section>
+              <SelectedElementIndicator :rounded="false" color="bg-primary" :show="selectedPage.uuid == page.uuid"></SelectedElementIndicator>
             </q-item>
           </q-list>
           
@@ -138,13 +152,13 @@ const hoverButtonList = computed(()=>{
   const audienceFilter = ref<string[]>([])
   const mainDisplayStore = useMainDisplayStore()
   const { main} = storeToRefs(mainDisplayStore)
-  
+  const selected = ref('first')
     
     const currentPage = ref(1)
     const itemsPerPage = ref(10)
     const totalItems = ref(0)
     
-    const selectedPage = ref({})
+    const selectedPage = ref<any>({})
     const filter = reactive<{generatedOnly: boolean | null}>({
       generatedOnly : null
     })
@@ -170,7 +184,7 @@ const hoverButtonList = computed(()=>{
   .c-content-marketing {
     .content-list {
       border: 1px solid #e0e0e0;
-      border-radius: 8px;
+      border-radius: 4px;
       background: white;
     }
     

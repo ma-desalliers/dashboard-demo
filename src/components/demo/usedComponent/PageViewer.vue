@@ -70,6 +70,7 @@ const toggleChannel = (channel:any) => {
 
 .iframe-container {
   position: relative;
+  border:solid 1px #e7e7e7;
   iframe{
    box-shadow: none;
   }

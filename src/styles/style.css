@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 :root {
   --q-primary: #55B948;
   --q-secondary: #26A69A;
@@ -9,8 +10,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  scrollbar-gutter: stable; /* Prevents layout shift */
-  background: #f5f5f5;
+  scrollbar-gutter: stable;
+  /* Prevents layout shift */
+  font-family: Lexend Deca;
 }
 
 .c-pointer {
@@ -34,15 +36,25 @@ body {
   font-weight: 600;
 }
 
+.c-small-text {
+  font-size: 14px !important;
+}
+
 .q-btn {
   box-shadow: none !important;
   border-radius: 4px;
 }
+
 .q-btn:before {
   box-shadow: none !important;
 }
+
 .q-btn .fa {
   font-size: 1.4em;
+}
+
+.q-btn span {
+  text-transform: capitalize;
 }
 
 .c-limit-text-height {
@@ -72,6 +84,7 @@ body {
 .c-no-border {
   border: none !important;
 }
+
 .c-no-border .q-expansion-item__container {
   border: none !important;
 }
@@ -83,9 +96,11 @@ body {
 .c-selected-client {
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
+
 .c-selected-client .q-item:has(.c-expansion-header-hover) {
   background-color: color-mix(in srgb, #55B948 25%, #ffffff 90%);
 }
+
 .c-bg-primary-lighten {
   background-color: color-mix(in srgb, #55B948 25%, #ffffff 90%);
 }
@@ -116,8 +131,7 @@ body {
 }
 
 .c-img-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .bg-green {
@@ -168,4 +182,4 @@ body {
   overflow-y: auto;
   /* Optional: Add some padding to prevent content from touching scrollbar */
   padding-right: 4px;
-}/*# sourceMappingURL=style.css.map */
+}
