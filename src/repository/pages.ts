@@ -18,8 +18,2332 @@ const pages = [
     "title": "10 Common Mistakes to Avoid When Adjusting Spray Angles",
     "score": 1,
     "isPublished": false,
-    "updatedAt": 1734118828737,
+    "hasContent": true,
+    "updatedAt": 1734193917919,
     "createdAt": 1734118828737
+  },
+  {
+    "uuid": "9945d168-e6a5-45c4-b563-e93bffd49c58",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "3 Ways to Test and Validate Your Spray Angle Adjustments",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193652207,
+    "createdAt": 1734118828737
+  },
+  {
+    "uuid": "814c7a70-fe92-4523-8890-d8d6216a82d8",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "4 Key Benefits of Proper Spray Angle Adjustment in Surface Preparation",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193684655,
+    "createdAt": 1734118828737
+  },
+  {
+    "uuid": "509f91b6-d0b2-4d8c-990b-100b14bbde12",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "5 Proven Techniques to Maximize Surface Coverage with Spray Angle Adjustments",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193671525,
+    "createdAt": 1734118828737
+  },
+  {
+    "uuid": "575c394f-ceb3-4c37-96c4-8e43881919b0",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "6 Factors to Consider for Effective Spray Angle Adjustment in Blast Rooms",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193653028,
+    "createdAt": 1734118828737
+  },
+  {
+    "uuid": "ac0ce5b2-438f-400b-a46d-adead7b5cdfd",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Essential Tips for Optimizing Spray Angle in Abrasive Blasting",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193630167,
+    "createdAt": 1734118828737
+  },
+  {
+    "uuid": "7c96dd69-6869-401d-920c-47c683555c7f",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "8 Strategies for Fine-Tuning Spray Angles for Consistent Coating Results",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193958654,
+    "createdAt": 1734118828737
+  },
+  {
+    "uuid": "08c47b79-ddbc-4b87-8667-c0381a3474e6",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "9 Expert Recommendations for Achieving the Right Spray Angle in Piping Applications",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193918863,
+    "createdAt": 1734118828737
+  },
+  {
+    "uuid": "86433c74-7e96-4f7c-b0bf-895a82b06806",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "10 Ways to Reduce the Environmental Footprint of Steel Grit Blasting",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734121565087,
+    "createdAt": 1734121397596
+  },
+  {
+    "uuid": "0acf2147-2baf-4f51-9e76-7713df4ab186",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Key Cost Factors to Consider When Using Steel Grit",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734126825955,
+    "createdAt": 1734126563988
+  },
+  {
+    "uuid": "e14ba74f-5cd5-4522-a4dd-8c87082d3b09",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Essential Steps to Perfecting Pressure Settings for Steel Grit Blasting",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734126850474,
+    "createdAt": 1734126569847
+  },
+  {
+    "uuid": "27636cd2-0b8e-4683-be8b-84a0698c2680",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "10 Essential Tips for Optimizing Your Blast Equipment for Steel Grit",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734126993266,
+    "createdAt": 1734126586465
+  },
+  {
+    "uuid": "75da8a4d-fd2f-47c1-b796-61ead34bf1e1",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Essential Maintenance Tips to Extend the Life of Your Valves",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127031516,
+    "createdAt": 1734126586820
+  },
+  {
+    "uuid": "a24b31f8-71a6-46b2-9088-6b8c92317a3b",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Key Metrics to Measure Blasting Effectiveness for Valve Manufacturers",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127075151,
+    "createdAt": 1734126595534
+  },
+  {
+    "uuid": "a30dee00-f463-4cf3-92b9-34dd334ff140",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Essential Steps for Creating Effective Blasting SOPs",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127163996,
+    "createdAt": 1734126599911
+  },
+  {
+    "uuid": "f3eee0e0-48d3-46f8-bad8-0168d234e5e6",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "10 Signs Your Steel Grit is Underperforming",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127195619,
+    "createdAt": 1734126612402
+  },
+  {
+    "uuid": "fa83d88a-0ead-4814-8b6d-3ca77855d90d",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "10 Essential Metrics for Documenting Surface Treatment Success",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127195676,
+    "createdAt": 1734126620001
+  },
+  {
+    "uuid": "3353f7db-e0db-422c-ab31-a0c1aa576158",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "10 Steps to Ensure Your Steel Grit is Contamination-Free",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127296383,
+    "createdAt": 1734126627376
+  },
+  {
+    "uuid": "a602f838-2c06-4d55-a323-32d811994642",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Essential Tips for Choosing the Right Steel Grit Size for Your Equipment",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127322995,
+    "createdAt": 1734126635485
+  },
+  {
+    "uuid": "19bf5faf-a75f-4ca5-a0de-9abae3a2787e",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "10 Techniques to Track and Optimize Steel Grit Usage Effective",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127498477,
+    "createdAt": 1734126646002
+  },
+  {
+    "uuid": "ae44317f-74ad-4ef9-ac4f-5127c8a899f8",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Key Criteria for Evaluating Steel Grit Suppliers",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127456159,
+    "createdAt": 1734126660257
+  },
+  {
+    "uuid": "98381bdd-6276-4173-8356-a803edb7be4c",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Essential Steps for Streamlining Your Steel Grit Inventory Management",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127537824,
+    "createdAt": 1734126667701
+  },
+  {
+    "uuid": "137999fd-7b16-4759-a814-6eba0680ed97",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "5 Essential Maintenance Checks for Your Blasting Equipment",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127649148,
+    "createdAt": 1734126684405
+  },
+  {
+    "uuid": "b4ff6733-2af5-468a-a819-e4c2d32c25ad",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Key Factors to Consider When Choosing Steel Grit Hardness",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127727169,
+    "createdAt": 1734126690717
+  },
+  {
+    "uuid": "6e31e273-7b16-4f10-a94a-c26543894ed6",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "10 Best Practices for Streamlining Manufacturing Team Communication",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127761563,
+    "createdAt": 1734126696885
+  },
+  {
+    "uuid": "a27f5e41-f8cd-485c-96b0-64ddfa978107",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "10 Best Practices for Testing Surface Durability in Valve Manufacturing",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127884272,
+    "createdAt": 1734126712315
+  },
+  {
+    "uuid": "658a0026-371b-4abe-bea4-75db42729eee",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "10 Essential Steps for Proper Steel Grit Handling Training",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734127949785,
+    "createdAt": 1734126719652
+  },
+  {
+    "uuid": "eb163fcd-f8b0-40fa-ad5b-d4f956f454c4",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Essential Upgrades for Enhancing Equipment Safety Features",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128125220,
+    "createdAt": 1734126740590
+  },
+  {
+    "uuid": "5a90d57a-e253-430f-97ef-cfd29c7edf95",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "5 Tips for Optimizing Blast Pot Pressure for Maximum Efficiency",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128138461,
+    "createdAt": 1734126752132
+  },
+  {
+    "uuid": "1a9c903c-4235-4a23-8a26-4de23de4441e",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Essential Steps for Conducting an Eco-Friendly Blasting Operation",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128139506,
+    "createdAt": 1734126758215
+  },
+  {
+    "uuid": "3e870adc-ac6a-4400-a4c7-746716695c39",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Metrics You Should Always Track in Blasting Efficiency Reports",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128240552,
+    "createdAt": 1734126769893
+  },
+  {
+    "uuid": "32a645fe-0c5f-4c2f-928a-e583a25eee53",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Key Steps to Effectively Calibrate Your Blasting Equipment",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128310619,
+    "createdAt": 1734126776989
+  },
+  {
+    "uuid": "e1c9c45b-0120-4f30-9608-ae8fc009aa6b",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Essential Metrics to Measure Blasting Effectiveness",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128350437,
+    "createdAt": 1734126788641
+  },
+  {
+    "uuid": "ff7d6020-1c48-4664-891a-1d6fe823fccb",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Essential Steps to Conduct a Thorough Blasting Risk Assessment",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128321146,
+    "createdAt": 1734126791941
+  },
+  {
+    "uuid": "4ebf085b-f5ec-49b9-8067-4ec23b287a18",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Essential Technologies for Controlling Dust Emissions during Blasting",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128448224,
+    "createdAt": 1734126820239
+  },
+  {
+    "uuid": "f214ff5b-1c00-4b1d-aada-69e7d1132776",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "10 Essential Metrics to Track Steel Grit Performance in Surface Treatment",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128558084,
+    "createdAt": 1734126833138
+  },
+  {
+    "uuid": "7f286de6-7d66-4186-82a1-67052dc4e1bb",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "10 Strategies for Meeting Compliance Standards in Valve Manufacturing",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128587309,
+    "createdAt": 1734126840053
+  },
+  {
+    "uuid": "21575813-d135-4747-9b12-6f500adf40b9",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Types of Blasting Abrasives: Which One Fits Your Needs",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128652833,
+    "createdAt": 1734126861340
+  },
+  {
+    "uuid": "02c95ca6-ae48-4b71-b184-2eb4d7ccdcf9",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Key Factors to Assess When Choosing Grit for Surface Treatment",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128660550,
+    "createdAt": 1734126870416
+  },
+  {
+    "uuid": "a374332a-408b-4c18-ad28-ab12eaec7f8d",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "5 Essential Steps to Prevent Steel Grit Contamination in Valve Manufacturing",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128721861,
+    "createdAt": 1734126882259
+  },
+  {
+    "uuid": "1174aa32-9d99-49bd-8e68-bf7e1447de83",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "8 Essential Safety Protocols to Implement in Your Equipment Manufacturing Processes",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128808803,
+    "createdAt": 1734126894474
+  },
+  {
+    "uuid": "dd1be9ce-7f98-4ca6-adb6-70731b9916b8",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Essential Checklist Items for Surface Inspections Before Blasting",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128792798,
+    "createdAt": 1734126900350
+  },
+  {
+    "uuid": "c53c53f5-b43a-454c-8402-5b88c3475b4f",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Unexpected Factors Causing Downtime in Manufacturing Operations",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128873700,
+    "createdAt": 1734126906978
+  },
+  {
+    "uuid": "38b611af-8f3c-4a53-9dfe-6959cc8c30d1",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "10 Essential Metrics for Monitoring Steel Grit Performance",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128908114,
+    "createdAt": 1734126932605
+  },
+  {
+    "uuid": "c9075b7a-2ff1-48f1-a963-a09b4212cc94",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
+    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Essential Strategies for Efficient Abrasive Material Inventory Management",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734128938269,
+    "createdAt": 1734126945567
+  },
+  {
+    "uuid": "992f7014-0571-4c16-9f68-0526f9aaedc3",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "16cb3f3d-2ce9-4b4e-ac4c-1a2f99bfd4d4",
+    "personaUuid": "47b77bf2-bd70-4b35-8ad8-7b00fa38bb6e",
+    "productUuid": "c83b1622-1b0a-46e6-bf9a-4f823c979e69",
+    "title": "10 Tips for Customizing Cleaning Cycles for Complex Engine Components",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193511960,
+    "createdAt": 1734143361313
+  },
+  {
+    "uuid": "fc750060-c16c-4fd6-8254-6e9e8a3ed5ad",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "16cb3f3d-2ce9-4b4e-ac4c-1a2f99bfd4d4",
+    "personaUuid": "47b77bf2-bd70-4b35-8ad8-7b00fa38bb6e",
+    "productUuid": "c83b1622-1b0a-46e6-bf9a-4f823c979e69",
+    "title": "11 Best Practices for Setting Up Batch Processing Workflows with Solvent Cleaners",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193625885,
+    "createdAt": 1734143361313
+  },
+  {
+    "uuid": "952f88e5-eed1-4816-a53b-2892e22ad32b",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "16cb3f3d-2ce9-4b4e-ac4c-1a2f99bfd4d4",
+    "personaUuid": "47b77bf2-bd70-4b35-8ad8-7b00fa38bb6e",
+    "productUuid": "c83b1622-1b0a-46e6-bf9a-4f823c979e69",
+    "title": "3 Ways to Measure the Effectiveness of Your Cleaning Cycles",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193456132,
+    "createdAt": 1734143361313
+  },
+  {
+    "uuid": "47c41691-9f4f-4b65-a8c2-61451732dc89",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "16cb3f3d-2ce9-4b4e-ac4c-1a2f99bfd4d4",
+    "personaUuid": "47b77bf2-bd70-4b35-8ad8-7b00fa38bb6e",
+    "productUuid": "c83b1622-1b0a-46e6-bf9a-4f823c979e69",
+    "title": "4 Innovative Techniques to Streamline Your Cleaning Cycle Process",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193593578,
+    "createdAt": 1734143361313
+  },
+  {
+    "uuid": "d0a7b317-e614-470e-b2d5-145eaa8dc4fc",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "16cb3f3d-2ce9-4b4e-ac4c-1a2f99bfd4d4",
+    "personaUuid": "47b77bf2-bd70-4b35-8ad8-7b00fa38bb6e",
+    "productUuid": "c83b1622-1b0a-46e6-bf9a-4f823c979e69",
+    "title": "5 Key Factors to Optimize Your Cleaning Cycle Configuration",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193609426,
+    "createdAt": 1734143361313
+  },
+  {
+    "uuid": "2ccae538-d7a1-4ac4-a710-b0ef00d000c9",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "16cb3f3d-2ce9-4b4e-ac4c-1a2f99bfd4d4",
+    "personaUuid": "47b77bf2-bd70-4b35-8ad8-7b00fa38bb6e",
+    "productUuid": "c83b1622-1b0a-46e6-bf9a-4f823c979e69",
+    "title": "6 Common Mistakes in Cleaning Cycle Configuration and How to Avoid Them",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193601092,
+    "createdAt": 1734143361313
+  },
+  {
+    "uuid": "15fbdb4b-b9e8-49ab-b7ef-7bd4d1f5447a",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "16cb3f3d-2ce9-4b4e-ac4c-1a2f99bfd4d4",
+    "personaUuid": "47b77bf2-bd70-4b35-8ad8-7b00fa38bb6e",
+    "productUuid": "c83b1622-1b0a-46e6-bf9a-4f823c979e69",
+    "title": "7 Steps to Enhance Solvent Efficacy in Batch Processing",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193557026,
+    "createdAt": 1734143361313
+  },
+  {
+    "uuid": "6483f1d1-e11c-4716-a799-dce0c2d71656",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "16cb3f3d-2ce9-4b4e-ac4c-1a2f99bfd4d4",
+    "personaUuid": "47b77bf2-bd70-4b35-8ad8-7b00fa38bb6e",
+    "productUuid": "c83b1622-1b0a-46e6-bf9a-4f823c979e69",
+    "title": "8 Essential Parameters to Consider for Efficient Solvent Cleaning Cycles",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193495806,
+    "createdAt": 1734143361313
+  },
+  {
+    "uuid": "be3ba35e-6f88-4300-ae55-e615f76494b4",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "59640101-6476-47c7-b95c-858b51065c7e",
+    "personaUuid": "f0c3ed6a-dadf-4dfe-824b-aff001dd71c9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "1 tips for Ensuring Consistent Surface Preparation with Steel Grit",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193902756,
+    "createdAt": 1734149030860
+  },
+  {
+    "uuid": "a18a055b-d70d-4b7f-a251-ff0718206e14",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "59640101-6476-47c7-b95c-858b51065c7e",
+    "personaUuid": "f0c3ed6a-dadf-4dfe-824b-aff001dd71c9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "10 Common Mistakes to Avoid in Abrasive Blasting for Quality Finishes",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193682754,
+    "createdAt": 1734149030860
+  },
+  {
+    "uuid": "c0aa4d24-8050-4502-9e29-1305afa569f2",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "59640101-6476-47c7-b95c-858b51065c7e",
+    "personaUuid": "f0c3ed6a-dadf-4dfe-824b-aff001dd71c9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "3 Key Metrics to Measure Quality Control in Your Finish Operations",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193707629,
+    "createdAt": 1734149030860
+  },
+  {
+    "uuid": "8b46ec49-74e8-47c8-bf3d-0d7bdbf43e58",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "59640101-6476-47c7-b95c-858b51065c7e",
+    "personaUuid": "f0c3ed6a-dadf-4dfe-824b-aff001dd71c9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "5 Ways to Enhance the Durability of Your Surface Finishing with Steel Grit",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193909410,
+    "createdAt": 1734149030860
+  },
+  {
+    "uuid": "bbd093b1-7748-4c27-8b62-d27941f948ee",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "59640101-6476-47c7-b95c-858b51065c7e",
+    "personaUuid": "f0c3ed6a-dadf-4dfe-824b-aff001dd71c9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "6 Essential Tools for Effective Quality Control in Metal Surface Preparation",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193880368,
+    "createdAt": 1734149030860
+  },
+  {
+    "uuid": "0a2df9a2-d2d8-4d47-9bd3-3c55fbe68938",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "59640101-6476-47c7-b95c-858b51065c7e",
+    "personaUuid": "f0c3ed6a-dadf-4dfe-824b-aff001dd71c9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Best Practices for Quality Control in Metal Finishing Processes",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193666493,
+    "createdAt": 1734149030860
+  },
+  {
+    "uuid": "04dca990-8e62-4887-b2ab-cc6708662c5e",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "59640101-6476-47c7-b95c-858b51065c7e",
+    "personaUuid": "f0c3ed6a-dadf-4dfe-824b-aff001dd71c9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "8 Steps to Optimize Your Abrasive Blasting Process for Better Quality Control",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193685091,
+    "createdAt": 1734149030860
+  },
+  {
+    "uuid": "642d0241-df94-4904-9222-fd147398cee1",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "59640101-6476-47c7-b95c-858b51065c7e",
+    "personaUuid": "f0c3ed6a-dadf-4dfe-824b-aff001dd71c9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "9 Techniques for Achieving Uniformity in Surface Finishing with Steel Grit",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193768099,
+    "createdAt": 1734149030860
+  },
+  {
+    "uuid": "65e39362-018b-4378-8704-682bc8b27689",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "a8e69dc9-c6a5-4339-91b7-83c26008e205",
+      "name": "Vibratory Media",
+      "description": "The vibratory finishing process is the movement of a mass of media, parts, water, and compounds within the confinement of a machine. The machine provides a source of containment as well as the means to provide the motion required for finishing. The vibratory finishing media and compound work in conjunction to clean the surface of the workpieces providing the desired finish. Bowls and tubs are the most common configurations of vibratory equipment. Vibratory processes are often used to deburr, burnish, descale, clean, and polish.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103408224
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "e8906a60-ea2a-41b5-ab9f-a297bdcc83f7",
+    "personaUuid": "ec12c3e6-37c2-40e4-85f6-aedc4bd6c5df",
+    "productUuid": "5d80575e-1cdd-41b3-9dab-9c48b67f2257",
+    "title": "5 Common Mistakes in Compound Monitoring and How to Avoid Them",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193756879,
+    "createdAt": 1734150773542
+  },
+  {
+    "uuid": "fffcdcc9-973a-44bd-9123-cb1508242985",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "38a5fb0f-b25e-4ced-9f81-869fef12c408",
+    "personaUuid": "bc80656b-63dd-4484-ab36-a071d798c9a0",
+    "productUuid": "614fe64e-7c96-492e-9665-5c058cc6d47a",
+    "title": "10 Common Mistakes in Bead Blasting and How to Avoid Them",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193621170,
+    "createdAt": 1734156396392
+  },
+  {
+    "uuid": "26c3e1d1-f8b3-4051-a657-c1add265ee8a",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "38a5fb0f-b25e-4ced-9f81-869fef12c408",
+    "personaUuid": "bc80656b-63dd-4484-ab36-a071d798c9a0",
+    "productUuid": "614fe64e-7c96-492e-9665-5c058cc6d47a",
+    "title": "5 Key Steps to Mastering Glass Bead Blasting Operations",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193605046,
+    "createdAt": 1734156396392
+  },
+  {
+    "uuid": "5c48cae2-c7ae-4c1e-83d7-871edf6a7f42",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "38a5fb0f-b25e-4ced-9f81-869fef12c408",
+    "personaUuid": "bc80656b-63dd-4484-ab36-a071d798c9a0",
+    "productUuid": "614fe64e-7c96-492e-9665-5c058cc6d47a",
+    "title": "5 Ways to Incorporate Hands-On Training in Bead Blasting Sessions",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193646693,
+    "createdAt": 1734156396392
+  },
+  {
+    "uuid": "f7c3126c-a27e-403e-a011-0eac96988f61",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "38a5fb0f-b25e-4ced-9f81-869fef12c408",
+    "personaUuid": "bc80656b-63dd-4484-ab36-a071d798c9a0",
+    "productUuid": "614fe64e-7c96-492e-9665-5c058cc6d47a",
+    "title": "6 Steps to Developing a Bead Blasting Best Practices Guide",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193615488,
+    "createdAt": 1734156396392
+  },
+  {
+    "uuid": "82ec7e6b-e308-42a0-96d7-cf6de6d8af3f",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "38a5fb0f-b25e-4ced-9f81-869fef12c408",
+    "personaUuid": "bc80656b-63dd-4484-ab36-a071d798c9a0",
+    "productUuid": "614fe64e-7c96-492e-9665-5c058cc6d47a",
+    "title": "6 Ways to Optimize Your Glass Bead Blasting Training Programs",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193850483,
+    "createdAt": 1734156396392
+  },
+  {
+    "uuid": "efbc0623-eee9-40ed-ad04-394f7be67ab2",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "38a5fb0f-b25e-4ced-9f81-869fef12c408",
+    "personaUuid": "bc80656b-63dd-4484-ab36-a071d798c9a0",
+    "productUuid": "614fe64e-7c96-492e-9665-5c058cc6d47a",
+    "title": "7 Essential Techniques for Effective Glass Bead Blasting Training",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193645673,
+    "createdAt": 1734156396392
+  },
+  {
+    "uuid": "42dc6ae7-9f1a-4244-ad70-57f85b0b2fe2",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "38a5fb0f-b25e-4ced-9f81-869fef12c408",
+    "personaUuid": "bc80656b-63dd-4484-ab36-a071d798c9a0",
+    "productUuid": "614fe64e-7c96-492e-9665-5c058cc6d47a",
+    "title": "8 Time-Saving Strategies for Efficient Glass Bead Blasting",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193643193,
+    "createdAt": 1734156396392
+  },
+  {
+    "uuid": "1e7b9f72-c286-4765-a6a2-33a7942e7a07",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "38a5fb0f-b25e-4ced-9f81-869fef12c408",
+    "personaUuid": "bc80656b-63dd-4484-ab36-a071d798c9a0",
+    "productUuid": "614fe64e-7c96-492e-9665-5c058cc6d47a",
+    "title": "9 Must-Know Safety Practices for Bead Blasting Personnel",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193624894,
+    "createdAt": 1734156396392
+  },
+  {
+    "uuid": "23de502f-d068-4607-adc7-285f76fbea25",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "996a62f1-d436-4639-8d54-c0170953c539",
+    "personaUuid": "73522c22-be3e-4b49-bac3-327052ee30e6",
+    "productUuid": "34e78502-a3e0-410a-9535-6f39a9e35592",
+    "title": "10 Common Mistakes When Setting Polishing Speeds and How to Avoid Them",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193758726,
+    "createdAt": 1734162420788
+  },
+  {
+    "uuid": "26daf4df-d6d1-4539-893f-0b1350e6c4f8",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "996a62f1-d436-4639-8d54-c0170953c539",
+    "personaUuid": "73522c22-be3e-4b49-bac3-327052ee30e6",
+    "productUuid": "34e78502-a3e0-410a-9535-6f39a9e35592",
+    "title": "11 Signs Your Polishing Speed is Affecting Finish Quality",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193840440,
+    "createdAt": 1734162420788
+  },
+  {
+    "uuid": "449bf519-6388-4b66-a01c-0bc562035152",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "996a62f1-d436-4639-8d54-c0170953c539",
+    "personaUuid": "73522c22-be3e-4b49-bac3-327052ee30e6",
+    "productUuid": "34e78502-a3e0-410a-9535-6f39a9e35592",
+    "title": "12 Guidelines for Balancing Speed and Finish Quality in Polishing",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193713320,
+    "createdAt": 1734162420788
+  },
+  {
+    "uuid": "8a665d3e-3e98-4a66-b159-716a8f032799",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "996a62f1-d436-4639-8d54-c0170953c539",
+    "personaUuid": "73522c22-be3e-4b49-bac3-327052ee30e6",
+    "productUuid": "34e78502-a3e0-410a-9535-6f39a9e35592",
+    "title": "3 Innovative Tools for Monitoring RPM in Buffing Applications",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193705332,
+    "createdAt": 1734162420788
+  },
+  {
+    "uuid": "b1a1f7f5-6817-4f43-b3dd-653546d0b400",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "996a62f1-d436-4639-8d54-c0170953c539",
+    "personaUuid": "73522c22-be3e-4b49-bac3-327052ee30e6",
+    "productUuid": "34e78502-a3e0-410a-9535-6f39a9e35592",
+    "title": "5 Speed Adjustment Strategies to Enhance Your Buffing Process",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193843758,
+    "createdAt": 1734162420788
+  },
+  {
+    "uuid": "a0899981-ffcb-477e-9e9a-f53c66cbd881",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "996a62f1-d436-4639-8d54-c0170953c539",
+    "personaUuid": "73522c22-be3e-4b49-bac3-327052ee30e6",
+    "productUuid": "34e78502-a3e0-410a-9535-6f39a9e35592",
+    "title": "6 Ways to Perfect Your Polishing Technique with the Right Speed Settings",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193823129,
+    "createdAt": 1734162420788
+  },
+  {
+    "uuid": "766bbd12-995f-4a5b-8ee3-d8aecd46c859",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "996a62f1-d436-4639-8d54-c0170953c539",
+    "personaUuid": "73522c22-be3e-4b49-bac3-327052ee30e6",
+    "productUuid": "34e78502-a3e0-410a-9535-6f39a9e35592",
+    "title": "7 Essential Tips for Choosing the Right RPM for Polishing",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193838307,
+    "createdAt": 1734162420788
+  },
+  {
+    "uuid": "aedd7314-0252-4df1-9351-7067f9438a3d",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "ad7e87b8-08c6-4f3f-8073-1d4f1b037edb",
+      "name": "Chemistry & Compounds",
+      "description": "Chemistry plays a large role in manufacturing processes, from cleaning to providing decorative finishes to corrosion protection. A lot of the chemistries used every day have undergone many transformations over the years, to comply with federal, state, and local regulations without changing their effectiveness.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "createdAt": 1734103892359
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "996a62f1-d436-4639-8d54-c0170953c539",
+    "personaUuid": "73522c22-be3e-4b49-bac3-327052ee30e6",
+    "productUuid": "34e78502-a3e0-410a-9535-6f39a9e35592",
+    "title": "9 Indicators That Your Polishing Speed is Off: Troubleshooting Guide",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193814296,
+    "createdAt": 1734162420788
+  },
+  {
+    "uuid": "11905599-4824-4419-898c-23bc1888651d",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "name": "Equipment & Parts",
+      "description": "Using the correct equipment is essential to achieving both an efficient and effective surface finishing process. With our technical knowledge and unmatched family of equipment vendors, the SurfacePrep team is ready to deliver the optimal equipment for any surface finishing project. Our consultative approach focuses on finding the best, all-around solution, and we remain available for support throughout the project and beyond.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103528726
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "b5bfd691-5eb0-4f06-a46e-c6f19820f6af",
+    "personaUuid": "563957e0-9bd6-4a84-aefd-297d08309661",
+    "productUuid": "60305edd-54e0-462d-8e72-07e7ae0da5cf",
+    "title": "10 Key Steps to Develop Effective Powder Coating Training Manuals",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193824950,
+    "createdAt": 1734168741322
+  },
+  {
+    "uuid": "1a3492fe-bc7a-4dae-bedb-270168e10c61",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "name": "Equipment & Parts",
+      "description": "Using the correct equipment is essential to achieving both an efficient and effective surface finishing process. With our technical knowledge and unmatched family of equipment vendors, the SurfacePrep team is ready to deliver the optimal equipment for any surface finishing project. Our consultative approach focuses on finding the best, all-around solution, and we remain available for support throughout the project and beyond.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103528726
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "b5bfd691-5eb0-4f06-a46e-c6f19820f6af",
+    "personaUuid": "563957e0-9bd6-4a84-aefd-297d08309661",
+    "productUuid": "60305edd-54e0-462d-8e72-07e7ae0da5cf",
+    "title": "11 Industry Standards to Incorporate in Powder Coating Training Manuals",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193784877,
+    "createdAt": 1734168741322
+  },
+  {
+    "uuid": "e91e5dee-0a3a-4bba-90a5-e5dba761ce2d",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "name": "Equipment & Parts",
+      "description": "Using the correct equipment is essential to achieving both an efficient and effective surface finishing process. With our technical knowledge and unmatched family of equipment vendors, the SurfacePrep team is ready to deliver the optimal equipment for any surface finishing project. Our consultative approach focuses on finding the best, all-around solution, and we remain available for support throughout the project and beyond.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103528726
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "b5bfd691-5eb0-4f06-a46e-c6f19820f6af",
+    "personaUuid": "563957e0-9bd6-4a84-aefd-297d08309661",
+    "productUuid": "60305edd-54e0-462d-8e72-07e7ae0da5cf",
+    "title": "12 Pro Tips for Evaluating New Staff in Powder Coating Operations",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193797650,
+    "createdAt": 1734168741322
+  },
+  {
+    "uuid": "5298a468-4d4e-4cac-9c64-e410e4593889",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "name": "Equipment & Parts",
+      "description": "Using the correct equipment is essential to achieving both an efficient and effective surface finishing process. With our technical knowledge and unmatched family of equipment vendors, the SurfacePrep team is ready to deliver the optimal equipment for any surface finishing project. Our consultative approach focuses on finding the best, all-around solution, and we remain available for support throughout the project and beyond.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103528726
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "b5bfd691-5eb0-4f06-a46e-c6f19820f6af",
+    "personaUuid": "563957e0-9bd6-4a84-aefd-297d08309661",
+    "productUuid": "60305edd-54e0-462d-8e72-07e7ae0da5cf",
+    "title": "5 Equipment-Specific Training Elements for New Powder Coating Staff",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193814765,
+    "createdAt": 1734168741322
+  },
+  {
+    "uuid": "c76aa9e0-d802-4fe5-899a-8cfb52aef8de",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "name": "Equipment & Parts",
+      "description": "Using the correct equipment is essential to achieving both an efficient and effective surface finishing process. With our technical knowledge and unmatched family of equipment vendors, the SurfacePrep team is ready to deliver the optimal equipment for any surface finishing project. Our consultative approach focuses on finding the best, all-around solution, and we remain available for support throughout the project and beyond.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103528726
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "b5bfd691-5eb0-4f06-a46e-c6f19820f6af",
+    "personaUuid": "563957e0-9bd6-4a84-aefd-297d08309661",
+    "productUuid": "60305edd-54e0-462d-8e72-07e7ae0da5cf",
+    "title": "6 Mistakes to Avoid When Creating Powder Coating Training Content",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193819405,
+    "createdAt": 1734168741322
+  },
+  {
+    "uuid": "1cc5aea6-4c5e-43b6-80c2-440e1eedd023",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "name": "Equipment & Parts",
+      "description": "Using the correct equipment is essential to achieving both an efficient and effective surface finishing process. With our technical knowledge and unmatched family of equipment vendors, the SurfacePrep team is ready to deliver the optimal equipment for any surface finishing project. Our consultative approach focuses on finding the best, all-around solution, and we remain available for support throughout the project and beyond.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103528726
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "b5bfd691-5eb0-4f06-a46e-c6f19820f6af",
+    "personaUuid": "563957e0-9bd6-4a84-aefd-297d08309661",
+    "productUuid": "60305edd-54e0-462d-8e72-07e7ae0da5cf",
+    "title": "7 Essential Safety Protocols for Powder Coating Training Materials",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193706833,
+    "createdAt": 1734168741322
+  },
+  {
+    "uuid": "c4e4d626-1c16-4e8d-900a-590a866d050b",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "name": "Equipment & Parts",
+      "description": "Using the correct equipment is essential to achieving both an efficient and effective surface finishing process. With our technical knowledge and unmatched family of equipment vendors, the SurfacePrep team is ready to deliver the optimal equipment for any surface finishing project. Our consultative approach focuses on finding the best, all-around solution, and we remain available for support throughout the project and beyond.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103528726
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "b5bfd691-5eb0-4f06-a46e-c6f19820f6af",
+    "personaUuid": "563957e0-9bd6-4a84-aefd-297d08309661",
+    "productUuid": "60305edd-54e0-462d-8e72-07e7ae0da5cf",
+    "title": "8 Techniques for Engaging Powder Coating Training Sessions",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193733157,
+    "createdAt": 1734168741322
+  },
+  {
+    "uuid": "fe4755e3-6d0d-4120-8e98-7e5e07e57d8d",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "d640f4b9-54fe-4cb7-8b3a-f3ca6409737c",
+      "name": "Equipment & Parts",
+      "description": "Using the correct equipment is essential to achieving both an efficient and effective surface finishing process. With our technical knowledge and unmatched family of equipment vendors, the SurfacePrep team is ready to deliver the optimal equipment for any surface finishing project. Our consultative approach focuses on finding the best, all-around solution, and we remain available for support throughout the project and beyond.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103528726
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "b5bfd691-5eb0-4f06-a46e-c6f19820f6af",
+    "personaUuid": "563957e0-9bd6-4a84-aefd-297d08309661",
+    "productUuid": "60305edd-54e0-462d-8e72-07e7ae0da5cf",
+    "title": "9 Must-Have Resources for Powder Coating Staff Training Programs",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193789216,
+    "createdAt": 1734168741322
+  },
+  {
+    "uuid": "21e8efd5-04a0-4208-8d79-ae435c09d347",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "c54cb42b-1ec4-4c44-ae94-069180f1039a",
+    "personaUuid": "c91297e9-8e12-4e8d-907c-7fce6197c7e9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "10 tips for Effective Calibration of Your Blasting Equipment",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193743070,
+    "createdAt": 1734170156058
+  },
+  {
+    "uuid": "433809b9-c070-45e6-b8d9-284a81643b31",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "c54cb42b-1ec4-4c44-ae94-069180f1039a",
+    "personaUuid": "c91297e9-8e12-4e8d-907c-7fce6197c7e9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "3 Techniques to Optimize Blasting Velocity and Impact",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193761511,
+    "createdAt": 1734170156058
+  },
+  {
+    "uuid": "a68e727f-3eb6-4b64-894b-1cba04c4426d",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "c54cb42b-1ec4-4c44-ae94-069180f1039a",
+    "personaUuid": "c91297e9-8e12-4e8d-907c-7fce6197c7e9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "4 Key Metrics to Track During Blasting Equipment Calibration",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193799267,
+    "createdAt": 1734170156058
+  },
+  {
+    "uuid": "4664de76-f993-4472-9889-e93f481556c9",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "c54cb42b-1ec4-4c44-ae94-069180f1039a",
+    "personaUuid": "c91297e9-8e12-4e8d-907c-7fce6197c7e9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "5 Essential Factors to Consider When Setting Up Blasting Equipment",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193934560,
+    "createdAt": 1734170156058
+  },
+  {
+    "uuid": "7ae0f501-fe94-4f1b-9272-57e32ba08543",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "c54cb42b-1ec4-4c44-ae94-069180f1039a",
+    "personaUuid": "c91297e9-8e12-4e8d-907c-7fce6197c7e9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "6 Common Mistakes to Avoid When Calibrating Blasting Equipment",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193735574,
+    "createdAt": 1734170156058
+  },
+  {
+    "uuid": "d0074306-3475-4032-8aad-7ca16a40c155",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "c54cb42b-1ec4-4c44-ae94-069180f1039a",
+    "personaUuid": "c91297e9-8e12-4e8d-907c-7fce6197c7e9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "7 Best Practices for Maintaining Optimal Blasting Equipment Performance",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193794168,
+    "createdAt": 1734170156058
+  },
+  {
+    "uuid": "4779592e-8a3e-414d-98e8-5d9da9254148",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "c54cb42b-1ec4-4c44-ae94-069180f1039a",
+    "personaUuid": "c91297e9-8e12-4e8d-907c-7fce6197c7e9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "8 Tools You Need for Precise Blasting Equipment Calibration",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193735363,
+    "createdAt": 1734170156058
+  },
+  {
+    "uuid": "2f72194a-b5fb-484c-af7a-fe4f12611174",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
+      "name": "Blast Media",
+      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "createdAt": 1734103185976
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "c54cb42b-1ec4-4c44-ae94-069180f1039a",
+    "personaUuid": "c91297e9-8e12-4e8d-907c-7fce6197c7e9",
+    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
+    "title": "9 Steps to Achieve Consistent Results in Blasting Operations",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193773325,
+    "createdAt": 1734170156058
+  },
+  {
+    "uuid": "58d0c4d5-d52a-429b-90fd-2621b3dbbb40",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "name": "Abrasives & Media",
+      "description": "SurfacePrep is a leading supplier of abrasive blasting and vibratory media. Abrasive media encompasses a wide range of abrasives for blasting and mass finishing applications, such as cleaning, rust removal, polishing, deburring, and eliminating machining lines. We offer a vast array of abrasives, including blast media, vibratory finishing media, and coated, non-woven and bonded abrasives.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103174049
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "613d25fc-c5fc-4e21-9740-5e5dfab9f0d1",
+    "personaUuid": "d6dec823-d63f-4f6e-b61c-e1f4048780f5",
+    "productUuid": "a40b011f-cf75-4408-b135-afa463ce5d37",
+    "title": "10 Tips for Optimizing Quality Assurance Tests in Decorative Stone Manufacturing",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193897413,
+    "createdAt": 1734181227398
+  },
+  {
+    "uuid": "fa9fccc1-2343-4d18-ac32-f81b6d5b86a0",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "name": "Abrasives & Media",
+      "description": "SurfacePrep is a leading supplier of abrasive blasting and vibratory media. Abrasive media encompasses a wide range of abrasives for blasting and mass finishing applications, such as cleaning, rust removal, polishing, deburring, and eliminating machining lines. We offer a vast array of abrasives, including blast media, vibratory finishing media, and coated, non-woven and bonded abrasives.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103174049
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "613d25fc-c5fc-4e21-9740-5e5dfab9f0d1",
+    "personaUuid": "d6dec823-d63f-4f6e-b61c-e1f4048780f5",
+    "productUuid": "a40b011f-cf75-4408-b135-afa463ce5d37",
+    "title": "3 Essential Tools for Streamlining Quality Assurance in Stone Production",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193874806,
+    "createdAt": 1734181227398
+  },
+  {
+    "uuid": "b7bb0148-8eab-4386-bdfd-80aad9315dca",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "name": "Abrasives & Media",
+      "description": "SurfacePrep is a leading supplier of abrasive blasting and vibratory media. Abrasive media encompasses a wide range of abrasives for blasting and mass finishing applications, such as cleaning, rust removal, polishing, deburring, and eliminating machining lines. We offer a vast array of abrasives, including blast media, vibratory finishing media, and coated, non-woven and bonded abrasives.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103174049
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "613d25fc-c5fc-4e21-9740-5e5dfab9f0d1",
+    "personaUuid": "d6dec823-d63f-4f6e-b61c-e1f4048780f5",
+    "productUuid": "a40b011f-cf75-4408-b135-afa463ce5d37",
+    "title": "4 Ways to Leverage Technology for Improved Test Run Analysis in Tile Manufacturing",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193891162,
+    "createdAt": 1734181227398
+  },
+  {
+    "uuid": "b95d9d8d-9091-4ff8-8285-278ac59c35cf",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "name": "Abrasives & Media",
+      "description": "SurfacePrep is a leading supplier of abrasive blasting and vibratory media. Abrasive media encompasses a wide range of abrasives for blasting and mass finishing applications, such as cleaning, rust removal, polishing, deburring, and eliminating machining lines. We offer a vast array of abrasives, including blast media, vibratory finishing media, and coated, non-woven and bonded abrasives.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103174049
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "613d25fc-c5fc-4e21-9740-5e5dfab9f0d1",
+    "personaUuid": "d6dec823-d63f-4f6e-b61c-e1f4048780f5",
+    "productUuid": "a40b011f-cf75-4408-b135-afa463ce5d37",
+    "title": "5 Key Metrics to Monitor During Test Runs for Tile and Stone Products",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193865125,
+    "createdAt": 1734181227398
+  },
+  {
+    "uuid": "db6c4542-8dbc-41d8-ad63-86cd41b7d6bf",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "name": "Abrasives & Media",
+      "description": "SurfacePrep is a leading supplier of abrasive blasting and vibratory media. Abrasive media encompasses a wide range of abrasives for blasting and mass finishing applications, such as cleaning, rust removal, polishing, deburring, and eliminating machining lines. We offer a vast array of abrasives, including blast media, vibratory finishing media, and coated, non-woven and bonded abrasives.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103174049
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "613d25fc-c5fc-4e21-9740-5e5dfab9f0d1",
+    "personaUuid": "d6dec823-d63f-4f6e-b61c-e1f4048780f5",
+    "productUuid": "a40b011f-cf75-4408-b135-afa463ce5d37",
+    "title": "6 Innovative Techniques for Enhancing Test Run Outcomes in Vibratory Finishing",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193847827,
+    "createdAt": 1734181227398
+  },
+  {
+    "uuid": "e5750a41-32fa-48d8-8b3d-6e80f3de3d88",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "name": "Abrasives & Media",
+      "description": "SurfacePrep is a leading supplier of abrasive blasting and vibratory media. Abrasive media encompasses a wide range of abrasives for blasting and mass finishing applications, such as cleaning, rust removal, polishing, deburring, and eliminating machining lines. We offer a vast array of abrasives, including blast media, vibratory finishing media, and coated, non-woven and bonded abrasives.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103174049
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "613d25fc-c5fc-4e21-9740-5e5dfab9f0d1",
+    "personaUuid": "d6dec823-d63f-4f6e-b61c-e1f4048780f5",
+    "productUuid": "a40b011f-cf75-4408-b135-afa463ce5d37",
+    "title": "7 Essential Steps for Conducting Effective Test Runs in Tile Production",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193870750,
+    "createdAt": 1734181227398
+  },
+  {
+    "uuid": "1a1a0104-979a-4ae5-b148-f4038e23018f",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "name": "Abrasives & Media",
+      "description": "SurfacePrep is a leading supplier of abrasive blasting and vibratory media. Abrasive media encompasses a wide range of abrasives for blasting and mass finishing applications, such as cleaning, rust removal, polishing, deburring, and eliminating machining lines. We offer a vast array of abrasives, including blast media, vibratory finishing media, and coated, non-woven and bonded abrasives.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103174049
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "613d25fc-c5fc-4e21-9740-5e5dfab9f0d1",
+    "personaUuid": "d6dec823-d63f-4f6e-b61c-e1f4048780f5",
+    "productUuid": "a40b011f-cf75-4408-b135-afa463ce5d37",
+    "title": "8 Common Pitfalls in Quality Assurance Testing and How to Avoid Them",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193869245,
+    "createdAt": 1734181227398
+  },
+  {
+    "uuid": "5175e095-6f69-4a47-8dfd-fad8e2ad9978",
+    "language": "en",
+    "category": null,
+    "subcategory": {
+      "uuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
+      "name": "Abrasives & Media",
+      "description": "SurfacePrep is a leading supplier of abrasive blasting and vibratory media. Abrasive media encompasses a wide range of abrasives for blasting and mass finishing applications, such as cleaning, rust removal, polishing, deburring, and eliminating machining lines. We offer a vast array of abrasives, including blast media, vibratory finishing media, and coated, non-woven and bonded abrasives.",
+      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+      "parentUuid": null,
+      "createdAt": 1734103174049
+    },
+    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
+    "marketUuid": "613d25fc-c5fc-4e21-9740-5e5dfab9f0d1",
+    "personaUuid": "d6dec823-d63f-4f6e-b61c-e1f4048780f5",
+    "productUuid": "a40b011f-cf75-4408-b135-afa463ce5d37",
+    "title": "9 Best Practices for Ensuring Consistency in Test Runs for Stonemasonry",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734193899636,
+    "createdAt": 1734181227398
   },
   {
     "uuid": "99fab2dd-3893-44ab-be6f-fc1e53bcd66e",
@@ -40,6 +2364,7 @@ const pages = [
     "title": "10 Frequently Asked Questions About Spray Angle Adjustment in Abrasive Blasting",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734118828737,
     "createdAt": 1734118828737
   },
@@ -62,28 +2387,7 @@ const pages = [
     "title": "10 Tools You Need for Accurate Spray Angle Adjustment",
     "score": 2,
     "isPublished": false,
-    "updatedAt": 1734118828737,
-    "createdAt": 1734118828737
-  },
-  {
-    "uuid": "9945d168-e6a5-45c4-b563-e93bffd49c58",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "3 Ways to Test and Validate Your Spray Angle Adjustments",
-    "score": 1,
-    "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734118828737,
     "createdAt": 1734118828737
   },
@@ -106,28 +2410,7 @@ const pages = [
     "title": "4 Essential Training Tips for Staff on Spray Angle Adjustments",
     "score": 2,
     "isPublished": false,
-    "updatedAt": 1734118828737,
-    "createdAt": 1734118828737
-  },
-  {
-    "uuid": "814c7a70-fe92-4523-8890-d8d6216a82d8",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "4 Key Benefits of Proper Spray Angle Adjustment in Surface Preparation",
-    "score": 1,
-    "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734118828737,
     "createdAt": 1734118828737
   },
@@ -150,6 +2433,7 @@ const pages = [
     "title": "5 Industry Trends Impacting Spray Angle Adjustments in Abrasive Blasting",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734118828737,
     "createdAt": 1734118828737
   },
@@ -172,28 +2456,7 @@ const pages = [
     "title": "5 Innovations in Spray Angle Adjustment Techniques that Improve Efficiency",
     "score": 2,
     "isPublished": false,
-    "updatedAt": 1734118828737,
-    "createdAt": 1734118828737
-  },
-  {
-    "uuid": "509f91b6-d0b2-4d8c-990b-100b14bbde12",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "5 Proven Techniques to Maximize Surface Coverage with Spray Angle Adjustments",
-    "score": 1,
-    "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734118828737,
     "createdAt": 1734118828737
   },
@@ -216,6 +2479,7 @@ const pages = [
     "title": "5 Ways to Utilize Technology for Precise Spray Angle Control",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734118828737,
     "createdAt": 1734118828737
   },
@@ -238,28 +2502,7 @@ const pages = [
     "title": "6 Common Challenges in Spray Angle Adjustment and How to Overcome Them",
     "score": 1,
     "isPublished": false,
-    "updatedAt": 1734118828737,
-    "createdAt": 1734118828737
-  },
-  {
-    "uuid": "575c394f-ceb3-4c37-96c4-8e43881919b0",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "6 Factors to Consider for Effective Spray Angle Adjustment in Blast Rooms",
-    "score": 1,
-    "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734118828737,
     "createdAt": 1734118828737
   },
@@ -282,29 +2525,8 @@ const pages = [
     "title": "6 Industry Case Studies on the Impact of Spray Angle Adjustment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734118828737,
-    "createdAt": 1734118828737
-  },
-  {
-    "uuid": "ac0ce5b2-438f-400b-a46d-adead7b5cdfd",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Essential Tips for Optimizing Spray Angle in Abrasive Blasting",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734119289305,
     "createdAt": 1734118828737
   },
   {
@@ -326,6 +2548,7 @@ const pages = [
     "title": "7 Guidelines for Selecting the Correct Spray Angle Based on Material Type",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734118828737,
     "createdAt": 1734118828737
   },
@@ -348,28 +2571,7 @@ const pages = [
     "title": "8 Key Measurements to Monitor When Adjusting Spray Angles",
     "score": 2,
     "isPublished": false,
-    "updatedAt": 1734118828737,
-    "createdAt": 1734118828737
-  },
-  {
-    "uuid": "7c96dd69-6869-401d-920c-47c683555c7f",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "8 Strategies for Fine-Tuning Spray Angles for Consistent Coating Results",
-    "score": 1,
-    "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734118828737,
     "createdAt": 1734118828737
   },
@@ -392,28 +2594,7 @@ const pages = [
     "title": "8 Ways Spray Angle Impacts Surface Treatment Quality",
     "score": 2,
     "isPublished": false,
-    "updatedAt": 1734118828737,
-    "createdAt": 1734118828737
-  },
-  {
-    "uuid": "08c47b79-ddbc-4b87-8667-c0381a3474e6",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "9 Expert Recommendations for Achieving the Right Spray Angle in Piping Applications",
-    "score": 1,
-    "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734118828737,
     "createdAt": 1734118828737
   },
@@ -436,30 +2617,9 @@ const pages = [
     "title": "9 Signs Your Spray Angle Needs Adjusting for Optimal Performance",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734118828737,
     "createdAt": 1734118828737
-  },
-  {
-    "uuid": "86433c74-7e96-4f7c-b0bf-895a82b06806",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Ways to Reduce the Environmental Footprint of Steel Grit Blasting",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734121565087,
-    "createdAt": 1734121397596
   },
   {
     "uuid": "50398c00-89ff-4f3b-aa34-9a5ff978b91a",
@@ -480,6 +2640,7 @@ const pages = [
     "title": "5 Practices for Eco-Friendly Steel Grit Waste Management",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734121397596,
     "createdAt": 1734121397596
   },
@@ -502,6 +2663,7 @@ const pages = [
     "title": "7 Key Factors Influencing the Sustainability of Grit Use in Surface Treatment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734121397596,
     "createdAt": 1734121397596
   },
@@ -524,6 +2686,7 @@ const pages = [
     "title": "11 Environmental Benefits of Switching from Steel Grit to Sustainable Abrasives",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734121397597,
     "createdAt": 1734121397597
   },
@@ -546,6 +2709,7 @@ const pages = [
     "title": "12 Myths and Facts About Steel Grit and Environmental Impact",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734121397597,
     "createdAt": 1734121397597
   },
@@ -568,6 +2732,7 @@ const pages = [
     "title": "3 Strategies for Measuring the Environmental Impact of Your Blasting Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734121397597,
     "createdAt": 1734121397597
   },
@@ -590,6 +2755,7 @@ const pages = [
     "title": "4 Regulatory Standards Affecting Steel Grit Use and Environmental Compliance",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734121397597,
     "createdAt": 1734121397597
   },
@@ -612,6 +2778,7 @@ const pages = [
     "title": "6 Steps to Conduct an Environmental Impact Assessment for Steel Grit Use",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734121397597,
     "createdAt": 1734121397597
   },
@@ -634,6 +2801,7 @@ const pages = [
     "title": "8 Essential Considerations for Choosing Environmentally Responsible Grit Alternatives",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734121397597,
     "createdAt": 1734121397597
   },
@@ -656,6 +2824,7 @@ const pages = [
     "title": "9 Innovations in Steel Grit Production for Lower Environmental Impact",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734121397597,
     "createdAt": 1734121397597
   },
@@ -678,6 +2847,7 @@ const pages = [
     "title": "10 Ways to Optimize Steel Grit Usage for Maximum Cost Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126563988,
     "createdAt": 1734126563988
   },
@@ -700,6 +2870,7 @@ const pages = [
     "title": "4 Cost-Benefit Analysis Strategies for Steel Grit Usage",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126563988,
     "createdAt": 1734126563988
   },
@@ -722,6 +2893,7 @@ const pages = [
     "title": "5 Factors That Influence Steel Grit Pricing and Availability",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126563988,
     "createdAt": 1734126563988
   },
@@ -744,6 +2916,7 @@ const pages = [
     "title": "5 Surprising Hidden Costs of Steel Grit You Need to Know About",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126563988,
     "createdAt": 1734126563988
   },
@@ -766,6 +2939,7 @@ const pages = [
     "title": "6 Steps to Calculate Your Total Cost of Ownership for Steel Grit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126563988,
     "createdAt": 1734126563988
   },
@@ -788,6 +2962,7 @@ const pages = [
     "title": "6 Tips for Reducing Waste and Cost in Steel Grit Blasting",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126563988,
     "createdAt": 1734126563988
   },
@@ -810,29 +2985,8 @@ const pages = [
     "title": "7 Essential Metrics to Track Your Steel Grit Expenses",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126563988,
-    "createdAt": 1734126563988
-  },
-  {
-    "uuid": "0acf2147-2baf-4f51-9e76-7713df4ab186",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Key Cost Factors to Consider When Using Steel Grit",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734126825955,
     "createdAt": 1734126563988
   },
   {
@@ -854,6 +3008,7 @@ const pages = [
     "title": "8 Budgeting Tips for Steel Grit Usage in Equipment Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126563988,
     "createdAt": 1734126563988
   },
@@ -876,6 +3031,7 @@ const pages = [
     "title": "9 Common Cost Mistakes Companies Make With Steel Grit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126563988,
     "createdAt": 1734126563988
   },
@@ -898,6 +3054,7 @@ const pages = [
     "title": "10 Common Mistakes in Pressure Calibration for Blasting and How to Avoid Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126569847,
     "createdAt": 1734126569847
   },
@@ -920,6 +3077,7 @@ const pages = [
     "title": "11 Factors That Impact Your Blasting Pressure and How to Adjust for Each",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126569847,
     "createdAt": 1734126569847
   },
@@ -942,6 +3100,7 @@ const pages = [
     "title": "3 Myths About Pressure Settings in Blasting That You Should Stop Believing",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126569847,
     "createdAt": 1734126569847
   },
@@ -964,6 +3123,7 @@ const pages = [
     "title": "4 Industry Standards for Pressure Settings You Should Be Following in Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126569847,
     "createdAt": 1734126569847
   },
@@ -986,6 +3146,7 @@ const pages = [
     "title": "5 Key Factors to Consider When Setting Blast Pressure for Optimal Surface Treatment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126569847,
     "createdAt": 1734126569847
   },
@@ -1008,6 +3169,7 @@ const pages = [
     "title": "5 Tips for Training Your Team on Effective Pressure Calibration for Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126569847,
     "createdAt": 1734126569847
   },
@@ -1030,29 +3192,8 @@ const pages = [
     "title": "6 Tools You Need for Accurate Pressure Calibration in Blasting Applications",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126569847,
-    "createdAt": 1734126569847
-  },
-  {
-    "uuid": "e14ba74f-5cd5-4522-a4dd-8c87082d3b09",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Essential Steps to Perfecting Pressure Settings for Steel Grit Blasting",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734126850474,
     "createdAt": 1734126569847
   },
   {
@@ -1074,6 +3215,7 @@ const pages = [
     "title": "8 Signs Your Pressure Settings Are Off and What It Means for Surface Quality",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126569847,
     "createdAt": 1734126569847
   },
@@ -1096,30 +3238,9 @@ const pages = [
     "title": "9 Techniques to Improve Consistency in Your Blasting Pressure Settings",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126569847,
     "createdAt": 1734126569847
-  },
-  {
-    "uuid": "27636cd2-0b8e-4683-be8b-84a0698c2680",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Essential Tips for Optimizing Your Blast Equipment for Steel Grit",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734126993266,
-    "createdAt": 1734126586465
   },
   {
     "uuid": "d764cee9-4395-424e-bf3b-f3b537c2e2e2",
@@ -1140,6 +3261,7 @@ const pages = [
     "title": "11 Innovations in Blast Equipment Technology for Enhanced Steel Grit Performance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586465,
     "createdAt": 1734126586465
   },
@@ -1162,6 +3284,7 @@ const pages = [
     "title": "12 Maintenance Practices to Extend the Life of Steel Grit Blast Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586465,
     "createdAt": 1734126586465
   },
@@ -1184,6 +3307,7 @@ const pages = [
     "title": "3 Ways to Ensure Safety When Using Steel Grit in Blast Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586465,
     "createdAt": 1734126586465
   },
@@ -1206,6 +3330,7 @@ const pages = [
     "title": "4 Guidelines for Achieving Optimal Blast Patterns with Steel Grit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586465,
     "createdAt": 1734126586465
   },
@@ -1228,6 +3353,7 @@ const pages = [
     "title": "5 Mistakes to Avoid When Configuring Equipment for Steel Grit Usage",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586465,
     "createdAt": 1734126586465
   },
@@ -1250,6 +3376,7 @@ const pages = [
     "title": "6 Signs Your Blast Equipment Needs Upgrading for Steel Grit Compatibility",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586465,
     "createdAt": 1734126586465
   },
@@ -1272,6 +3399,7 @@ const pages = [
     "title": "7 Key Factors to Consider When Selecting Blast Equipment for Steel Grit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586465,
     "createdAt": 1734126586465
   },
@@ -1294,6 +3422,7 @@ const pages = [
     "title": "8 Advantages of Properly Configured Equipment for Steel Grit Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586465,
     "createdAt": 1734126586465
   },
@@ -1316,6 +3445,7 @@ const pages = [
     "title": "9 Effective Techniques for Balancing Power and Efficiency in Steel Grit Blasting",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586465,
     "createdAt": 1734126586465
   },
@@ -1338,6 +3468,7 @@ const pages = [
     "title": "10 Myths About Steel Grit and Equipment Maintenance",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1360,6 +3491,7 @@ const pages = [
     "title": "10 Signs Your Equipment Needs Immediate Cleaning",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1382,6 +3514,7 @@ const pages = [
     "title": "10 Tips for Training Your Team on Equipment Maintenance Best Practices",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1404,6 +3537,7 @@ const pages = [
     "title": "11 Effective Cleaning Solutions for High-Performance Equipment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1426,6 +3560,7 @@ const pages = [
     "title": "11 Reasons to Invest in Automated Cleaning Systems for Valves",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1448,6 +3583,7 @@ const pages = [
     "title": "12 Ways to Improve the Frequency of Your Equipment Maintenance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1470,6 +3606,7 @@ const pages = [
     "title": "3 Steps to Implement a Sustainable Cleaning Schedule for Your Facility",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1492,6 +3629,7 @@ const pages = [
     "title": "4 Essential Cleaning Products for Maintaining Valve Precision",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1514,6 +3652,7 @@ const pages = [
     "title": "4 Innovative Cleaning Tools Every Valve Manufacturer Should Consider",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1536,6 +3675,7 @@ const pages = [
     "title": "5 Eco-Friendly Cleaning Methods for Industrial Equipment",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1558,6 +3698,7 @@ const pages = [
     "title": "5 Myths About Equipment Cleaning in the Oil and Gas Industry",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1580,6 +3721,7 @@ const pages = [
     "title": "5 Time-Saving Techniques for Cleaning Industrial Equipment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1602,6 +3744,7 @@ const pages = [
     "title": "6 Common Mistakes in Equipment Cleaning and How to Avoid Them",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1624,29 +3767,8 @@ const pages = [
     "title": "6 Ways to Reduce Downtime with Regular Maintenance Checks",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
-    "createdAt": 1734126586820
-  },
-  {
-    "uuid": "75da8a4d-fd2f-47c1-b796-61ead34bf1e1",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Essential Maintenance Tips to Extend the Life of Your Valves",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127031516,
     "createdAt": 1734126586820
   },
   {
@@ -1668,6 +3790,7 @@ const pages = [
     "title": "7 Factors That Affect the Lifespan of Blasting Abrasives",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1690,6 +3813,7 @@ const pages = [
     "title": "8 Key Performance Indicators to Measure Equipment Cleanliness",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1712,6 +3836,7 @@ const pages = [
     "title": "8 Proven Strategies to Prevent Corrosion in Oil and Gas Machinery",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1734,6 +3859,7 @@ const pages = [
     "title": "9 Best Practices for Cleaning Sump Pumps in Harsh Environments",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1756,6 +3882,7 @@ const pages = [
     "title": "9 Cost-Effective Solutions for Regular Equipment Sanitation",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126586820,
     "createdAt": 1734126586820
   },
@@ -1778,6 +3905,7 @@ const pages = [
     "title": "10 Best Practices for Evaluating Your Blasting Process Performance",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -1800,6 +3928,7 @@ const pages = [
     "title": "10 Insights from Top Performers in Industrial Blasting",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -1822,6 +3951,7 @@ const pages = [
     "title": "11 Critical Factors Influencing the Success of Your Blasting Operations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -1844,6 +3974,7 @@ const pages = [
     "title": "12 Common Mistakes in Blasting Evaluation and How to Avoid Them",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -1866,6 +3997,7 @@ const pages = [
     "title": "12 Industry Standards to Reference When Evaluating Blasting Effectiveness",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -1888,6 +4020,7 @@ const pages = [
     "title": "2 Approaches to Benchmark Your Blasting Effectiveness",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -1910,6 +4043,7 @@ const pages = [
     "title": "3 Effective Methods for Collecting Stakeholder Feedback on Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -1932,6 +4066,7 @@ const pages = [
     "title": "3 Techniques to Ensure Consistency in Blasting Results",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -1954,6 +4089,7 @@ const pages = [
     "title": "4 Advanced Strategies for Analyzing Blasting Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -1976,6 +4112,7 @@ const pages = [
     "title": "5 Tools Every Manufacturer Needs to Assess Blasting Quality",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -1998,6 +4135,7 @@ const pages = [
     "title": "5 Ways to Ensure Accurate Reporting of Blasting Results",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -2020,6 +4158,7 @@ const pages = [
     "title": "5 Ways to Implement Feedback Loops in Your Blasting Process",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -2042,6 +4181,7 @@ const pages = [
     "title": "6 Tips for Engaging Your Team in Blasting Evaluation Processes",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -2064,6 +4204,7 @@ const pages = [
     "title": "6 Ways to Use Customer Feedback to Improve Blasting Techniques",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -2086,29 +4227,8 @@ const pages = [
     "title": "7 Important Questions to Ask After Each Blasting Session",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
-    "createdAt": 1734126595534
-  },
-  {
-    "uuid": "a24b31f8-71a6-46b2-9088-6b8c92317a3b",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Key Metrics to Measure Blasting Effectiveness for Valve Manufacturers",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127075151,
     "createdAt": 1734126595534
   },
   {
@@ -2130,6 +4250,7 @@ const pages = [
     "title": "8 Benefits of Routine Blasting Performance Reviews for Manufacturers",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -2152,6 +4273,7 @@ const pages = [
     "title": "8 Essential Steps to Collect Data on Blasting Outcomes",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -2174,6 +4296,7 @@ const pages = [
     "title": "9 Signs Your Blasting Process Needs Optimization",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -2196,6 +4319,7 @@ const pages = [
     "title": "9 Technologies Revolutionizing Blasting Feedback Collection",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126595534,
     "createdAt": 1734126595534
   },
@@ -2218,6 +4342,7 @@ const pages = [
     "title": "10 Common Mistakes to Avoid When Developing Blasting Procedures",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2240,6 +4365,7 @@ const pages = [
     "title": "10 Ways to Reduce Risks in Blasting Operations via SOPs",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2262,6 +4388,7 @@ const pages = [
     "title": "11 Must-Have Elements in Your Blasting Standard Operating Procedures",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2284,6 +4411,7 @@ const pages = [
     "title": "12 Industry Standards to Incorporate into Your Blasting SOPs",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2306,6 +4434,7 @@ const pages = [
     "title": "3 Methods for Evaluating the Effectiveness of Your Blasting Procedures",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2328,6 +4457,7 @@ const pages = [
     "title": "4 Elements of a Successful Blasting SOP Communication Plan",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2350,6 +4480,7 @@ const pages = [
     "title": "4 Strategies to Ensure Compliance in Blasting Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2372,6 +4503,7 @@ const pages = [
     "title": "5 Benefits of Automating Your Blasting SOPs",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2394,6 +4526,7 @@ const pages = [
     "title": "5 Key Factors to Consider When Standardizing Blasting Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2416,6 +4549,7 @@ const pages = [
     "title": "5 Tools to Streamline Blasting SOP Maintenance and Updates",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2438,6 +4572,7 @@ const pages = [
     "title": "5 Trends Shaping the Future of Blasting Procedures",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2460,6 +4595,7 @@ const pages = [
     "title": "6 Checklists Every Blasting SOP Should Include",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2482,6 +4618,7 @@ const pages = [
     "title": "6 Ways to Foster a Safety Culture Around Blasting Procedures",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2504,29 +4641,8 @@ const pages = [
     "title": "6 Ways to Optimize Your Blasting Process for Maximum Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
-    "createdAt": 1734126599911
-  },
-  {
-    "uuid": "a30dee00-f463-4cf3-92b9-34dd334ff140",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Essential Steps for Creating Effective Blasting SOPs",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127163996,
     "createdAt": 1734126599911
   },
   {
@@ -2548,6 +4664,7 @@ const pages = [
     "title": "7 Innovative Technologies to Enhance Your Blasting Process",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2570,6 +4687,7 @@ const pages = [
     "title": "8 Best Practices for Training Employees on Blasting SOPs",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2592,6 +4710,7 @@ const pages = [
     "title": "8 Tips for Involving Stakeholders in SOP Development for Blasting",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2614,6 +4733,7 @@ const pages = [
     "title": "9 Techniques for Assessing Hazardous Materials in Blasting Practices",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
   },
@@ -2636,30 +4756,9 @@ const pages = [
     "title": "9 Tips for Documenting and Reviewing Your Blasting Procedures",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126599911,
     "createdAt": 1734126599911
-  },
-  {
-    "uuid": "f3eee0e0-48d3-46f8-bad8-0168d234e5e6",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Signs Your Steel Grit is Underperforming",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127195619,
-    "createdAt": 1734126612402
   },
   {
     "uuid": "2432ca40-dbe6-4038-b13d-2d3fedea176c",
@@ -2680,6 +4779,7 @@ const pages = [
     "title": "11 Best Practices for Grit Usage in Precision Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126612402,
     "createdAt": 1734126612402
   },
@@ -2702,6 +4802,7 @@ const pages = [
     "title": "12 Maintenance Practices for Enhanced Grit Performance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126612402,
     "createdAt": 1734126612402
   },
@@ -2724,6 +4825,7 @@ const pages = [
     "title": "3 Key Comparisons: Steel Grit Vs. Alternative Abrasives",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126612402,
     "createdAt": 1734126612402
   },
@@ -2746,6 +4848,7 @@ const pages = [
     "title": "4 Ways to Optimize Your Blasting Process Based on Grit Performance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126612402,
     "createdAt": 1734126612402
   },
@@ -2768,6 +4871,7 @@ const pages = [
     "title": "5 Common Misconceptions About Steel Grit Durability",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126612402,
     "createdAt": 1734126612402
   },
@@ -2790,6 +4894,7 @@ const pages = [
     "title": "6 Steps to Analyze Steel Grit Wear and Tear Effectively",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126612402,
     "createdAt": 1734126612402
   },
@@ -2812,6 +4917,7 @@ const pages = [
     "title": "7 Essential Metrics to Measure Grit Performance After Usage",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126612402,
     "createdAt": 1734126612402
   },
@@ -2834,6 +4940,7 @@ const pages = [
     "title": "8 Factors That Influence Steel Grit Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126612402,
     "createdAt": 1734126612402
   },
@@ -2856,6 +4963,7 @@ const pages = [
     "title": "9 Tips to Maximize the Lifespan of Your Steel Grit",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126612402,
     "createdAt": 1734126612402
   },
@@ -2878,6 +4986,7 @@ const pages = [
     "title": "10 Case Types to Document During Surface Treatment Analysis",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -2900,29 +5009,8 @@ const pages = [
     "title": "10 Data-Driven Approaches to Assessing Surface Treatment Effectiveness",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
-    "createdAt": 1734126620001
-  },
-  {
-    "uuid": "fa83d88a-0ead-4814-8b6d-3ca77855d90d",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Essential Metrics for Documenting Surface Treatment Success",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127195676,
     "createdAt": 1734126620001
   },
   {
@@ -2944,6 +5032,7 @@ const pages = [
     "title": "12 Must-Have Elements for an Effective Surface Treatment Analysis Template",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -2966,6 +5055,7 @@ const pages = [
     "title": "15 Compliance Standards to Consider in Surface Treatment Documentation",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -2988,6 +5078,7 @@ const pages = [
     "title": "3 Technologies That Enhance Surface Treatment Outcome Documentation",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3010,6 +5101,7 @@ const pages = [
     "title": "4 Key Auditing Techniques for Surface Treatment Documentation",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3032,6 +5124,7 @@ const pages = [
     "title": "4 Ways to Streamline Your Surface Treatment Documentation Process",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3054,6 +5147,7 @@ const pages = [
     "title": "5 Best Practices for Recording and Analyzing Surface Treatment Results",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3076,6 +5170,7 @@ const pages = [
     "title": "5 Ways to Train Your Team on Surface Treatment Documentation Best Practices",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3098,6 +5193,7 @@ const pages = [
     "title": "5 Ways to Use Historical Data to Improve Your Surface Treatment Documentation",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3120,6 +5216,7 @@ const pages = [
     "title": "6 Guidelines for Ensuring Accurate Surface Treatment Result Documentation",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3142,6 +5239,7 @@ const pages = [
     "title": "6 Step-by-Step Guidelines for Preparing Surface Treatment Reports",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3164,6 +5262,7 @@ const pages = [
     "title": "7 Advantages of Regularly Updating your Surface Treatment Documentation Process",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3186,6 +5285,7 @@ const pages = [
     "title": "7 Innovative Tools for Tracking Surface Treatment Outcomes",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3208,6 +5308,7 @@ const pages = [
     "title": "7 Strategies to Visualize Your Surface Treatment Outcomes Effectively",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3230,6 +5331,7 @@ const pages = [
     "title": "8 Key Factors to Consider When Documenting Surface Treatment Processes",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3252,6 +5354,7 @@ const pages = [
     "title": "8 Tips for Creating Clear and actionable Surface Treatment Reports",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3274,6 +5377,7 @@ const pages = [
     "title": "9 Benefits of Integrating Software for Surface Treatment Documentation",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3296,6 +5400,7 @@ const pages = [
     "title": "9 Common Pitfalls in Documenting Surface Treatment and How to Avoid Them",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126620001,
     "createdAt": 1734126620001
   },
@@ -3318,29 +5423,8 @@ const pages = [
     "title": "10 Common Misconceptions About Steel Grit Contamination",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
-    "createdAt": 1734126627376
-  },
-  {
-    "uuid": "3353f7db-e0db-422c-ab31-a0c1aa576158",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Steps to Ensure Your Steel Grit is Contamination-Free",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127296383,
     "createdAt": 1734126627376
   },
   {
@@ -3362,6 +5446,7 @@ const pages = [
     "title": "11 Best Practices for Storing Steel Grit to Avoid Contamination",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3384,6 +5469,7 @@ const pages = [
     "title": "12 Tips for Choosing High-Quality Steel Grit Without Contaminants",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3406,6 +5492,7 @@ const pages = [
     "title": "15 Quick Ways to Revitalize Contaminated Steel Grit",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3428,6 +5515,7 @@ const pages = [
     "title": "3 Case Studies on Effective Steel Grit Contamination Management",
     "score": 4,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3450,6 +5538,7 @@ const pages = [
     "title": "3 Simple Tests to Check Steel Grit for Hidden Contaminants",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3472,6 +5561,7 @@ const pages = [
     "title": "4 Innovative Technologies for Detecting Contaminants in Steel Grit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3494,6 +5584,7 @@ const pages = [
     "title": "4 Reasons Why Steel Grit Contamination Can Impact Your Production",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3516,6 +5607,7 @@ const pages = [
     "title": "5 Environmental Factors That Impact Steel Grit Contamination",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3538,6 +5630,7 @@ const pages = [
     "title": "5 Essential Tools for Inspecting Steel Grit Quality",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3560,6 +5653,7 @@ const pages = [
     "title": "5 Standards to Ensure the Cleanliness of Your Steel Grit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3582,6 +5676,7 @@ const pages = [
     "title": "6 Signs Your Steel Grit Needs to Be Replaced Immediately",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3604,6 +5699,7 @@ const pages = [
     "title": "6 Ways to Monitor Contamination Levels in Steel Grit Over Time",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3626,6 +5722,7 @@ const pages = [
     "title": "7 Common Contaminants in Steel Grit and How to Identify Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3648,6 +5745,7 @@ const pages = [
     "title": "7 Reasons to Regularly Inspect Your Steel Grit Supplies",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3670,6 +5768,7 @@ const pages = [
     "title": "8 Metrics to Track Steel Grit Cleanliness During Production",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3692,6 +5791,7 @@ const pages = [
     "title": "8 Techniques for Testing Steel Grit Cleanliness Before Use",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3714,6 +5814,7 @@ const pages = [
     "title": "9 Best Practices for Maintaining Steel Grit Integrity",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3736,6 +5837,7 @@ const pages = [
     "title": "9 Strategies for Training Staff on Steel Grit Inspection",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126627376,
     "createdAt": 1734126627376
   },
@@ -3758,6 +5860,7 @@ const pages = [
     "title": "10 Consequences of Incorrect Grit Sizing in Surface Treatment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126635485,
     "createdAt": 1734126635485
   },
@@ -3780,6 +5883,7 @@ const pages = [
     "title": "4 Key Advantages of Using Properly Sized Steel Grit in Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126635485,
     "createdAt": 1734126635485
   },
@@ -3802,6 +5906,7 @@ const pages = [
     "title": "5 Simple Steps to Optimize Grit Sizing for Maximum Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126635485,
     "createdAt": 1734126635485
   },
@@ -3824,6 +5929,7 @@ const pages = [
     "title": "5 Ways to Monitor Grit Size Effectively During Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126635485,
     "createdAt": 1734126635485
   },
@@ -3846,6 +5952,7 @@ const pages = [
     "title": "6 Factors to Consider When Sizing Steel Grit for Your Blasting Needs",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126635485,
     "createdAt": 1734126635485
   },
@@ -3868,29 +5975,8 @@ const pages = [
     "title": "6 Technologies to Help Ensure Optimal Grit Sizing for Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126635485,
-    "createdAt": 1734126635485
-  },
-  {
-    "uuid": "a602f838-2c06-4d55-a323-32d811994642",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Essential Tips for Choosing the Right Steel Grit Size for Your Equipment",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127322995,
     "createdAt": 1734126635485
   },
   {
@@ -3912,6 +5998,7 @@ const pages = [
     "title": "8 Common Mistakes in Grit Sizing and How to Avoid Them",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126635485,
     "createdAt": 1734126635485
   },
@@ -3934,6 +6021,7 @@ const pages = [
     "title": "8 Ways to Train Your Team on Proper Grit Sizing Techniques",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126635485,
     "createdAt": 1734126635485
   },
@@ -3956,30 +6044,9 @@ const pages = [
     "title": "9 Best Practices for Maintaining Consistent Grit Sizes in Blast Rooms",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126635485,
     "createdAt": 1734126635485
-  },
-  {
-    "uuid": "19bf5faf-a75f-4ca5-a0de-9abae3a2787e",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Techniques to Track and Optimize Steel Grit Usage Effective",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127498477,
-    "createdAt": 1734126646002
   },
   {
     "uuid": "ec92dd59-0e9b-4c03-936f-3d0b519b38e2",
@@ -4000,6 +6067,7 @@ const pages = [
     "title": "11 Ways to Ensure Consistent Steel Grit Performance in Operations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126646002,
     "createdAt": 1734126646002
   },
@@ -4022,6 +6090,7 @@ const pages = [
     "title": "12 Signs Your Grit Consumption Tracking Needs an Upgrade",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126646002,
     "createdAt": 1734126646002
   },
@@ -4044,6 +6113,7 @@ const pages = [
     "title": "3 Methods to Reduce Grit Waste and Improve Operational Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126646002,
     "createdAt": 1734126646002
   },
@@ -4066,6 +6136,7 @@ const pages = [
     "title": "4 Essential Tips for Analyzing Grit Consumption Data for Better Outcomes",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126646002,
     "createdAt": 1734126646002
   },
@@ -4088,6 +6159,7 @@ const pages = [
     "title": "5 Innovative Tools for Real-Time Tracking of Steel Grit Consumption",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126646002,
     "createdAt": 1734126646002
   },
@@ -4110,6 +6182,7 @@ const pages = [
     "title": "6 Common Mistakes in Monitoring Grit Usage and How to Avoid Them",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126646002,
     "createdAt": 1734126646002
   },
@@ -4132,6 +6205,7 @@ const pages = [
     "title": "7 Key Metrics to Monitor Grit Consumption in Industrial Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126646002,
     "createdAt": 1734126646002
   },
@@ -4154,6 +6228,7 @@ const pages = [
     "title": "8 Steps to Achieve Efficient Grit Management During Surface Treatment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126646002,
     "createdAt": 1734126646002
   },
@@ -4176,6 +6251,7 @@ const pages = [
     "title": "9 Best Practices for Measuring Steel Grit Consumption Accurately",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126646002,
     "createdAt": 1734126646002
   },
@@ -4198,6 +6274,7 @@ const pages = [
     "title": "10 Questions to Ask Your Steel Grit Supplier Before Committing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126660257,
     "createdAt": 1734126660257
   },
@@ -4220,6 +6297,7 @@ const pages = [
     "title": "11 Best Practices for Managing Supplier Relationships in Steel Grit Procurement",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126660257,
     "createdAt": 1734126660257
   },
@@ -4242,6 +6320,7 @@ const pages = [
     "title": "12 Features to Compare Among Steel Grit Suppliers",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126660257,
     "createdAt": 1734126660257
   },
@@ -4264,6 +6343,7 @@ const pages = [
     "title": "3 Types of Testing for Quality Assurance in Steel Grit Supplies",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126660257,
     "createdAt": 1734126660257
   },
@@ -4286,6 +6366,7 @@ const pages = [
     "title": "4 Steps to Verify the Quality Control Processes of Your Steel Grit Supplier",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126660257,
     "createdAt": 1734126660257
   },
@@ -4308,6 +6389,7 @@ const pages = [
     "title": "5 Essential Certifications to Look for in Steel Grit Manufacturers",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126660257,
     "createdAt": 1734126660257
   },
@@ -4330,29 +6412,8 @@ const pages = [
     "title": "6 Ways to Assess the Quality of Steel Grit for Surface Treatment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126660257,
-    "createdAt": 1734126660257
-  },
-  {
-    "uuid": "ae44317f-74ad-4ef9-ac4f-5127c8a899f8",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Key Criteria for Evaluating Steel Grit Suppliers",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127456159,
     "createdAt": 1734126660257
   },
   {
@@ -4374,6 +6435,7 @@ const pages = [
     "title": "8 Pitfalls to Avoid When Choosing a Steel Grit Supplier",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126660257,
     "createdAt": 1734126660257
   },
@@ -4396,6 +6458,7 @@ const pages = [
     "title": "9 Indicators of a Reliable Steel Grit Supplier",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126660257,
     "createdAt": 1734126660257
   },
@@ -4418,6 +6481,7 @@ const pages = [
     "title": "10 Inventory Management Best Practices for Steel Grit Suppliers",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126667701,
     "createdAt": 1734126667701
   },
@@ -4440,6 +6504,7 @@ const pages = [
     "title": "3 Innovative Strategies for Boosting Steel Grit Supply Chain Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126667701,
     "createdAt": 1734126667701
   },
@@ -4462,6 +6527,7 @@ const pages = [
     "title": "4 Common Inventory Management Mistakes and How to Avoid Them in Grit Supply",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126667701,
     "createdAt": 1734126667701
   },
@@ -4484,6 +6550,7 @@ const pages = [
     "title": "5 Key Metrics to Monitor for Effective Grit Supply Management",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126667701,
     "createdAt": 1734126667701
   },
@@ -4506,6 +6573,7 @@ const pages = [
     "title": "5 Reasons Why Automated Inventory Management is a Game Changer for Grit Supply",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126667701,
     "createdAt": 1734126667701
   },
@@ -4528,29 +6596,8 @@ const pages = [
     "title": "6 Tools Every Valve Manufacturer Needs for Grit Inventory Oversight",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126667701,
-    "createdAt": 1734126667701
-  },
-  {
-    "uuid": "98381bdd-6276-4173-8356-a803edb7be4c",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Essential Steps for Streamlining Your Steel Grit Inventory Management",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127537824,
     "createdAt": 1734126667701
   },
   {
@@ -4572,6 +6619,7 @@ const pages = [
     "title": "7 Ideas for Training Your Team on Effective Grit Inventory Practices",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126667701,
     "createdAt": 1734126667701
   },
@@ -4594,6 +6642,7 @@ const pages = [
     "title": "8 Tips for Accurate Forecasting in Steel Grit Inventory Management",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126667701,
     "createdAt": 1734126667701
   },
@@ -4616,6 +6665,7 @@ const pages = [
     "title": "9 Ways to Optimize Your Blast Room Grit Inventory for Better Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126667701,
     "createdAt": 1734126667701
   },
@@ -4638,6 +6688,7 @@ const pages = [
     "title": "10 Benefits of Having a Solid Maintenance Schedule for Your Blasting Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -4660,6 +6711,7 @@ const pages = [
     "title": "10 Key Metrics to Track for Effective Blasting Equipment Maintenance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -4682,6 +6734,7 @@ const pages = [
     "title": "10 Signs Your Blasting Equipment Is Due for Maintenance This Quarter",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -4704,6 +6757,7 @@ const pages = [
     "title": "10 Tips for Maximizing the Lifespan of Your Steel Grit Blasting Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -4726,6 +6780,7 @@ const pages = [
     "title": "11 Tools You Need for Effective Blasting Equipment Maintenance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -4748,6 +6803,7 @@ const pages = [
     "title": "12 Important Considerations for Scheduling Routine Maintenance on Blast Rooms",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -4770,6 +6826,7 @@ const pages = [
     "title": "3 Checklists for Safe and Efficient Blasting Equipment Maintenance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -4792,6 +6849,7 @@ const pages = [
     "title": "4 Reasons to Invest in Regular Maintenance for Your Blasting Equipment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -4814,29 +6872,8 @@ const pages = [
     "title": "5 Best Practices for Documenting Blasting Equipment Maintenance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
-    "createdAt": 1734126684405
-  },
-  {
-    "uuid": "137999fd-7b16-4759-a814-6eba0680ed97",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "5 Essential Maintenance Checks for Your Blasting Equipment",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127649148,
     "createdAt": 1734126684405
   },
   {
@@ -4858,6 +6895,7 @@ const pages = [
     "title": "5 Maintenance Myths About Blasting Equipment Debunked",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -4880,6 +6918,7 @@ const pages = [
     "title": "5 Strategies for Preventing Downtime Through Proactive Blasting Equipment Maintenance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -4902,6 +6941,7 @@ const pages = [
     "title": "6 Cost-Saving Strategies for Maintaining Your Blasting Equipment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -4924,6 +6964,7 @@ const pages = [
     "title": "6 Steps to Create a Blasting Equipment Maintenance Schedule",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -4946,6 +6987,7 @@ const pages = [
     "title": "7 Innovative Solutions to Improve Blasting Equipment Maintenance Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -4968,6 +7010,7 @@ const pages = [
     "title": "7 Signs It’s Time to Schedule Maintenance for Your Blasting Equipment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -4990,6 +7033,7 @@ const pages = [
     "title": "7 Things to Consider When Choosing a Maintenance Service for Blasting Equipment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -5012,6 +7056,7 @@ const pages = [
     "title": "8 Common Mistakes to Avoid When Maintaining Blasting Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -5034,6 +7079,7 @@ const pages = [
     "title": "8 Ways to Train Your Team on Best Practices for Equipment Maintenance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -5056,6 +7102,7 @@ const pages = [
     "title": "9 Maintenance Procedures to Extend the Life of Your Steel Grit System",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126684405,
     "createdAt": 1734126684405
   },
@@ -5078,6 +7125,7 @@ const pages = [
     "title": "10 Expert Tips for Matching Steel Grit Hardness with Your Equipment Needs",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126690717,
     "createdAt": 1734126690717
   },
@@ -5100,6 +7148,7 @@ const pages = [
     "title": "11 Factors Influencing the Performance of Steel Grit Based on Hardness",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126690717,
     "createdAt": 1734126690717
   },
@@ -5122,6 +7171,7 @@ const pages = [
     "title": "12 Common Misconceptions About Hardness Levels in Steel Grit Selection",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126690717,
     "createdAt": 1734126690717
   },
@@ -5144,6 +7194,7 @@ const pages = [
     "title": "3 Key Benefits of Using the Correct Hardness in Steel Grit for Oil and Gas Components",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126690717,
     "createdAt": 1734126690717
   },
@@ -5166,6 +7217,7 @@ const pages = [
     "title": "4 Applications Where Hardness Selection of Steel Grit Makes All the Difference",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126690717,
     "createdAt": 1734126690717
   },
@@ -5188,6 +7240,7 @@ const pages = [
     "title": "5 Essential Guidelines for Selecting the Right Grit Hardness for Valve Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126690717,
     "createdAt": 1734126690717
   },
@@ -5210,29 +7263,8 @@ const pages = [
     "title": "6 Steps to Optimize Your Surface Treatment Process by Choosing the Right Grit Hardness",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126690717,
-    "createdAt": 1734126690717
-  },
-  {
-    "uuid": "b4ff6733-2af5-468a-a819-e4c2d32c25ad",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Key Factors to Consider When Choosing Steel Grit Hardness",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127727169,
     "createdAt": 1734126690717
   },
   {
@@ -5254,6 +7286,7 @@ const pages = [
     "title": "8 Highlights of Different Hardness Levels of Steel Grit and Their Applications",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126690717,
     "createdAt": 1734126690717
   },
@@ -5276,6 +7309,7 @@ const pages = [
     "title": "9 Mistakes to Avoid When Determining Steel Grit Hardness for Surface Treatment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126690717,
     "createdAt": 1734126690717
   },
@@ -5298,29 +7332,8 @@ const pages = [
     "title": "1 Checklist for Evaluating Vendor Performance in Manufacturing",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
-    "createdAt": 1734126696885
-  },
-  {
-    "uuid": "6e31e273-7b16-4f10-a94a-c26543894ed6",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Best Practices for Streamlining Manufacturing Team Communication",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127761563,
     "createdAt": 1734126696885
   },
   {
@@ -5342,6 +7355,7 @@ const pages = [
     "title": "11 Tools for Enhancing Project Management in Manufacturing Teams",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5364,6 +7378,7 @@ const pages = [
     "title": "12 Insights on Maintaining Equipment to Boost Manufacturing Productivity",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5386,6 +7401,7 @@ const pages = [
     "title": "13 Best Practices for Implementing New Manufacturing Technologies Successfully",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5408,6 +7424,7 @@ const pages = [
     "title": "14 Essentials for Effective Supply Chain Management in Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5430,6 +7447,7 @@ const pages = [
     "title": "15 Ways to Overcome Common Manufacturing Challenges with Team Collaboration",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5452,6 +7470,7 @@ const pages = [
     "title": "16 Ways to Align Manufacturing Goals with Business Objectives",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5474,6 +7493,7 @@ const pages = [
     "title": "17 Steps to Create a Sustainable Manufacturing Process",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5496,6 +7516,7 @@ const pages = [
     "title": "18 Guidelines for Managing Change Within Manufacturing Teams",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5518,6 +7539,7 @@ const pages = [
     "title": "19 Tips for Enhancing Employee Engagement on the Manufacturing Floor",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5540,6 +7562,7 @@ const pages = [
     "title": "2 Innovative Approaches to Upgrade Manufacturing Safety Practices",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5562,6 +7585,7 @@ const pages = [
     "title": "20 Practices for Encouraging Feedback Among Manufacturing Employees",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5584,6 +7608,7 @@ const pages = [
     "title": "3 Proven Methods for Training Manufacturing Personnel Efficiently",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5606,6 +7631,7 @@ const pages = [
     "title": "4 Key Factors to Consider When Implementing Lean Manufacturing Principles",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5628,6 +7654,7 @@ const pages = [
     "title": "5 Ways to Foster a Culture of Continuous Improvement in Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5650,6 +7677,7 @@ const pages = [
     "title": "6 Essential Metrics for Measuring Manufacturing Team Performance",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5672,6 +7700,7 @@ const pages = [
     "title": "7 Strategies to Improve Quality Control in Manufacturing Processes",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5694,6 +7723,7 @@ const pages = [
     "title": "8 Techniques for Enhancing Collaboration Among Manufacturing Teams",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
   },
@@ -5716,30 +7746,9 @@ const pages = [
     "title": "9 Tips for Effective Cross-Departmental Coordination in Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126696885,
     "createdAt": 1734126696885
-  },
-  {
-    "uuid": "a27f5e41-f8cd-485c-96b0-64ddfa978107",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Best Practices for Testing Surface Durability in Valve Manufacturing",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127884272,
-    "createdAt": 1734126712315
   },
   {
     "uuid": "c3d90ab6-07e0-4942-af83-33efa9f7639b",
@@ -5760,6 +7769,7 @@ const pages = [
     "title": "11 Ways to Increase the Effectiveness of Surface Treatments for Valves",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126712315,
     "createdAt": 1734126712315
   },
@@ -5782,6 +7792,7 @@ const pages = [
     "title": "12 Factors Influencing the Durability of Treated Surfaces in Valves",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126712315,
     "createdAt": 1734126712315
   },
@@ -5804,6 +7815,7 @@ const pages = [
     "title": "3 Critical Tests for Assessing the Longevity of Blasted Surfaces",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126712315,
     "createdAt": 1734126712315
   },
@@ -5826,6 +7838,7 @@ const pages = [
     "title": "4 Effective Techniques for Enhancing Surface Durability Testing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126712315,
     "createdAt": 1734126712315
   },
@@ -5848,6 +7861,7 @@ const pages = [
     "title": "5 Innovative Tools for Evaluating Treated Surface Durability",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126712315,
     "createdAt": 1734126712315
   },
@@ -5870,6 +7884,7 @@ const pages = [
     "title": "6 Types of Wear Tests Your Equipment Should Undergo",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126712315,
     "createdAt": 1734126712315
   },
@@ -5892,6 +7907,7 @@ const pages = [
     "title": "7 Key Metrics to Monitor for Surface Durability in Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126712315,
     "createdAt": 1734126712315
   },
@@ -5914,6 +7930,7 @@ const pages = [
     "title": "8 Common Mistakes to Avoid When Testing Coated Surfaces",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126712315,
     "createdAt": 1734126712315
   },
@@ -5936,30 +7953,9 @@ const pages = [
     "title": "9 Essential Steps for Implementing a Surface Durability Testing Protocol",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126712315,
     "createdAt": 1734126712315
-  },
-  {
-    "uuid": "658a0026-371b-4abe-bea4-75db42729eee",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Essential Steps for Proper Steel Grit Handling Training",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127949785,
-    "createdAt": 1734126719652
   },
   {
     "uuid": "2456b4f5-cea0-42d7-8894-e7732d1e926b",
@@ -5980,6 +7976,7 @@ const pages = [
     "title": "11 Tips for Creating a Comprehensive Grit Handling Standard Operating Procedure",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126719652,
     "createdAt": 1734126719652
   },
@@ -6002,6 +7999,7 @@ const pages = [
     "title": "12 Signs Your Employees Need More Training on Grit Handling Procedures",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126719652,
     "createdAt": 1734126719652
   },
@@ -6024,6 +8022,7 @@ const pages = [
     "title": "3 Training Modules Every Employee Needs for Safe Grit Handling",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126719652,
     "createdAt": 1734126719652
   },
@@ -6046,6 +8045,7 @@ const pages = [
     "title": "4 Critical Factors to Consider in Your Grit Handling Training Program",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126719652,
     "createdAt": 1734126719652
   },
@@ -6068,6 +8068,7 @@ const pages = [
     "title": "5 Best Practices for Efficient Steel Grit Management in the Workplace",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126719652,
     "createdAt": 1734126719652
   },
@@ -6090,6 +8091,7 @@ const pages = [
     "title": "6 Innovative Techniques to Enhance Employee Training on Grit Handling",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126719652,
     "createdAt": 1734126719652
   },
@@ -6112,6 +8114,7 @@ const pages = [
     "title": "7 Key Safety Practices When Working with Steel Grit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126719652,
     "createdAt": 1734126719652
   },
@@ -6134,6 +8137,7 @@ const pages = [
     "title": "8 Common Misconceptions About Steel Grit Handling Debunked",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126719652,
     "createdAt": 1734126719652
   },
@@ -6156,6 +8160,7 @@ const pages = [
     "title": "9 Effective Tools for Monitoring Steel Grit Usage and Safety",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126719652,
     "createdAt": 1734126719652
   },
@@ -6178,6 +8183,7 @@ const pages = [
     "title": "1 Comprehensive Guide to Assessing the Safety of Your Manufacturing Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6200,6 +8206,7 @@ const pages = [
     "title": "10 Effective Ways to Retrofit Safety Features on Industrial Blasting Equipment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6222,6 +8229,7 @@ const pages = [
     "title": "10 Upgrades That Will Reduce Workplace Accidents in Valve Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6244,6 +8252,7 @@ const pages = [
     "title": "11 Strategies for Cultivating a Safety-First Culture in Manufacturing Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6266,6 +8275,7 @@ const pages = [
     "title": "12 Tools and Equipment Upgrades for Boosting Industrial Safety",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6288,6 +8298,7 @@ const pages = [
     "title": "13 Safety Performance Metrics You Should Monitor in Your Operations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6310,6 +8321,7 @@ const pages = [
     "title": "14 Insights into the Future of Safety Equipment in Manufacturing",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6332,6 +8344,7 @@ const pages = [
     "title": "15 Ways to Train Your Team on New Safety Equipment Features",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6354,6 +8367,7 @@ const pages = [
     "title": "2 Significant Regulatory Changes Impacting Equipment Safety Standards",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6376,6 +8390,7 @@ const pages = [
     "title": "3 Common Mistakes to Avoid When Upgrading Equipment Safety Features",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6398,6 +8413,7 @@ const pages = [
     "title": "3 Safety Certifications Every Valve Manufacturer Should Consider",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6420,6 +8436,7 @@ const pages = [
     "title": "4 Critical Areas to Address for Improved Equipment Safety in Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6442,6 +8459,7 @@ const pages = [
     "title": "5 Must-Have Safety Compliance Standards for Valve Manufacturing Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6464,6 +8482,7 @@ const pages = [
     "title": "5 Signs Your Equipment Needs a Safety Feature Upgrade Now",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6486,6 +8505,7 @@ const pages = [
     "title": "6 Key Maintenance Practices to Ensure Safety in Equipment Operations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6508,29 +8528,8 @@ const pages = [
     "title": "6 Ways to Leverage Technology for Enhanced Equipment Safety",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
-    "createdAt": 1734126740590
-  },
-  {
-    "uuid": "eb163fcd-f8b0-40fa-ad5b-d4f956f454c4",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Essential Upgrades for Enhancing Equipment Safety Features",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128125220,
     "createdAt": 1734126740590
   },
   {
@@ -6552,6 +8551,7 @@ const pages = [
     "title": "8 Innovative Safety Technologies to Incorporate into Your Manufacturing Process",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6574,6 +8574,7 @@ const pages = [
     "title": "9 Pitfalls in Equipment Safety Features and How to Avoid Them",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6596,6 +8597,7 @@ const pages = [
     "title": "9 Safety Inspection Checklists for Valve Production Facilities",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126740590,
     "createdAt": 1734126740590
   },
@@ -6618,6 +8620,7 @@ const pages = [
     "title": "10 Key Factors to Consider When Choosing Steel Grit for Your Blasting Process",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126752132,
     "createdAt": 1734126752132
   },
@@ -6640,6 +8643,7 @@ const pages = [
     "title": "11 Techniques for Preventing Equipment Wear from Blasting Media",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126752132,
     "createdAt": 1734126752132
   },
@@ -6662,6 +8666,7 @@ const pages = [
     "title": "12 Ways to Monitor and Improve Blast Room Environment Control",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126752132,
     "createdAt": 1734126752132
   },
@@ -6684,6 +8689,7 @@ const pages = [
     "title": "3 Hidden Costs of Incorrect Blasting Parameters You Can’t Afford to Ignore",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126752132,
     "createdAt": 1734126752132
   },
@@ -6706,29 +8712,8 @@ const pages = [
     "title": "4 Advanced Strategies to Balance Blast Time and Surface Quality",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126752132,
-    "createdAt": 1734126752132
-  },
-  {
-    "uuid": "5a90d57a-e253-430f-97ef-cfd29c7edf95",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "5 Tips for Optimizing Blast Pot Pressure for Maximum Efficiency",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128138461,
     "createdAt": 1734126752132
   },
   {
@@ -6750,6 +8735,7 @@ const pages = [
     "title": "6 Steps to Adjusting Your Nozzle Size for Better Surface Finish",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126752132,
     "createdAt": 1734126752132
   },
@@ -6772,6 +8758,7 @@ const pages = [
     "title": "7 Common Mistakes in Blast Parameter Calibration and How to Avoid Them",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126752132,
     "createdAt": 1734126752132
   },
@@ -6794,6 +8781,7 @@ const pages = [
     "title": "8 Essential Techniques to Fine-Tune Your Abrasive Flow Rate",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126752132,
     "createdAt": 1734126752132
   },
@@ -6816,6 +8804,7 @@ const pages = [
     "title": "9 Insights on Abrasive Recycling Efficiency for Higher Throughput",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126752132,
     "createdAt": 1734126752132
   },
@@ -6838,6 +8827,7 @@ const pages = [
     "title": "10 Best Practices for Reducing Blasting Emissions in Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126758215,
     "createdAt": 1734126758215
   },
@@ -6860,6 +8850,7 @@ const pages = [
     "title": "10 Strategies to Enhance Sustainability in Your Blasting Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126758215,
     "createdAt": 1734126758215
   },
@@ -6882,6 +8873,7 @@ const pages = [
     "title": "11 Tips for Selecting Eco-Friendly Abrasive Materials",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126758215,
     "createdAt": 1734126758215
   },
@@ -6904,6 +8896,7 @@ const pages = [
     "title": "3 Impactful Ways to Assess Water Contamination from Blasting Processes",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126758215,
     "createdAt": 1734126758215
   },
@@ -6926,6 +8919,7 @@ const pages = [
     "title": "4 Environmental Certifications Every Blasting Company Should Pursue",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126758215,
     "createdAt": 1734126758215
   },
@@ -6948,6 +8942,7 @@ const pages = [
     "title": "5 Key Regulations Impacting Blasting Waste Disposal",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126758215,
     "createdAt": 1734126758215
   },
@@ -6970,29 +8965,8 @@ const pages = [
     "title": "6 Innovative Technologies to Minimize Environmental Impact of Blasting",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126758215,
-    "createdAt": 1734126758215
-  },
-  {
-    "uuid": "1a9c903c-4235-4a23-8a26-4de23de4441e",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Essential Steps for Conducting an Eco-Friendly Blasting Operation",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128139506,
     "createdAt": 1734126758215
   },
   {
@@ -7014,6 +8988,7 @@ const pages = [
     "title": "8 Ways to Measure the Environmental Footprint of Your Blasting Media",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126758215,
     "createdAt": 1734126758215
   },
@@ -7036,6 +9011,7 @@ const pages = [
     "title": "9 Common Environmental Risks in Blasting and How to Avoid Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126758215,
     "createdAt": 1734126758215
   },
@@ -7058,6 +9034,7 @@ const pages = [
     "title": "10 Tips for Interpreting Blasting Efficiency Data Like a Pro",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7080,6 +9057,7 @@ const pages = [
     "title": "10 Ways to Improve Your Steel Grit Usage for Efficient Blasting",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7102,6 +9080,7 @@ const pages = [
     "title": "11 Essential Elements to Include in Your Blasting Efficiency Reports",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7124,6 +9103,7 @@ const pages = [
     "title": "12 Indicators of Blasting Performance That Every Manufacturer Should Know",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7146,6 +9126,7 @@ const pages = [
     "title": "3 Key Benefits of Regularly Reviewing Your Blasting Efficiency Reports",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7168,6 +9149,7 @@ const pages = [
     "title": "3 Ways to Use Blasting Efficiency Reports for Continuous Improvement",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7190,6 +9172,7 @@ const pages = [
     "title": "4 Essential Tools for Analyzing Blasting Efficiency Reports",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7212,6 +9195,7 @@ const pages = [
     "title": "4 Myths About Blasting Efficiency Reports Debunked",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7234,6 +9218,7 @@ const pages = [
     "title": "4 Reasons Why Regular Efficiency Analyses Can Save You Money",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7256,6 +9241,7 @@ const pages = [
     "title": "5 Common Blasting Mistakes and How to Avoid Them",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7278,6 +9264,7 @@ const pages = [
     "title": "5 Insights from Blasting Efficiency Reports that Improve Product Quality",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7300,6 +9287,7 @@ const pages = [
     "title": "5 Steps to Create an Effective Blasting Efficiency Report Template",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7322,6 +9310,7 @@ const pages = [
     "title": "5 Strategies for Reducing Waste During the Blasting Process",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7344,6 +9333,7 @@ const pages = [
     "title": "6 Best Practices for Conducting a Blasting Efficiency Review",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7366,29 +9356,8 @@ const pages = [
     "title": "6 Factors Influencing Surface Finish Quality in Blasting Operations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
-    "createdAt": 1734126769893
-  },
-  {
-    "uuid": "3e870adc-ac6a-4400-a4c7-746716695c39",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Metrics You Should Always Track in Blasting Efficiency Reports",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128240552,
     "createdAt": 1734126769893
   },
   {
@@ -7410,6 +9379,7 @@ const pages = [
     "title": "7 Questions to Ask Before Analyzing Your Blasting Efficiency Reports",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7432,6 +9402,7 @@ const pages = [
     "title": "8 Innovations in Blasting Technology That Impact Efficiency Reports",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7454,6 +9425,7 @@ const pages = [
     "title": "8 Tips to Optimize Your Blasting Process and Reporting Accuracy",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7476,6 +9448,7 @@ const pages = [
     "title": "9 Things to Consider When Choosing Blasting Equipment for Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7498,6 +9471,7 @@ const pages = [
     "title": "9 Ways to Leverage Data from Blasting Efficiency Reports for Better Decision Making",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126769893,
     "createdAt": 1734126769893
   },
@@ -7520,6 +9494,7 @@ const pages = [
     "title": "10 Common Mistakes in Blasting Equipment Calibration and How to Avoid Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7542,6 +9517,7 @@ const pages = [
     "title": "10 Essential Calibration Metrics for Optimal Surface Treatment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7564,6 +9540,7 @@ const pages = [
     "title": "10 Pro Tips for Streamlining Your Blasting Equipment Calibration Process",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7586,6 +9563,7 @@ const pages = [
     "title": "11 Industry Standards for Blasting Equipment Calibration You Should Know",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7608,6 +9586,7 @@ const pages = [
     "title": "12 Frequently Asked Questions About Blasting Equipment Calibration",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7630,6 +9609,7 @@ const pages = [
     "title": "3 Advanced Calibration Techniques for Enhanced Blasting Accuracy",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7652,6 +9632,7 @@ const pages = [
     "title": "4 Cost-Effective Solutions for Regular Blasting Equipment Calibration",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7674,6 +9655,7 @@ const pages = [
     "title": "4 Key Metrics to Monitor During Blasting Equipment Calibration",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7696,6 +9678,7 @@ const pages = [
     "title": "5 Best Practices for Creating a Calibration Schedule for Blasting Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7718,6 +9701,7 @@ const pages = [
     "title": "5 Essential Tools for Accurate Blasting Equipment Calibration",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7740,6 +9724,7 @@ const pages = [
     "title": "5 Ways to Train Your Team on Proper Blasting Equipment Calibration",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7762,6 +9747,7 @@ const pages = [
     "title": "6 Indicators Your Blasting Equipment Needs Calibration",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7784,6 +9770,7 @@ const pages = [
     "title": "6 Safety Protocols for Blasting Equipment Calibration Sessions",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7806,29 +9793,8 @@ const pages = [
     "title": "7 Benefits of Automated Calibration for Blasting Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
-    "createdAt": 1734126776989
-  },
-  {
-    "uuid": "32a645fe-0c5f-4c2f-928a-e583a25eee53",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Key Steps to Effectively Calibrate Your Blasting Equipment",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128310619,
     "createdAt": 1734126776989
   },
   {
@@ -7850,6 +9816,7 @@ const pages = [
     "title": "8 Benefits of Regular Blasting Equipment Calibration for Valve Manufacturers",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7872,6 +9839,7 @@ const pages = [
     "title": "8 Innovations in Blasting Equipment Calibration Technology",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7894,6 +9862,7 @@ const pages = [
     "title": "8 Signs Your Blasting Equipment Calibration Process Needs a Revamp",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7916,6 +9885,7 @@ const pages = [
     "title": "9 Factors Impacting the Calibration of Your Blasting Equipment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7938,6 +9908,7 @@ const pages = [
     "title": "9 Tips for Maintaining Optimal Performance in Your Blasting Equipment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126776989,
     "createdAt": 1734126776989
   },
@@ -7960,6 +9931,7 @@ const pages = [
     "title": "10 Common Feedback Themes on Blasting Practices to Analyze",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -7982,6 +9954,7 @@ const pages = [
     "title": "10 Practical Ways to Solicit and Analyze Feedback on Blasting Outcomes",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8004,6 +9977,7 @@ const pages = [
     "title": "10 Strategies for Improving Stakeholder Engagement in Blasting Feedback",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8026,6 +10000,7 @@ const pages = [
     "title": "11 Indicators of Successful Blasting Processes You Should Track",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8048,6 +10023,7 @@ const pages = [
     "title": "12 Questions to Ask When Gathering Feedback on Your Blasting Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8070,6 +10046,7 @@ const pages = [
     "title": "3 Ways Digital Solutions Can Enhance Feedback Collection on Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8092,6 +10069,7 @@ const pages = [
     "title": "4 Innovative Survey Techniques to Gather Blasting Outcome Data",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8114,6 +10092,7 @@ const pages = [
     "title": "4 Ways to Leverage Customer Feedback for Better Blasting Results",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8136,6 +10115,7 @@ const pages = [
     "title": "5 Best Practices for Conducting Blasting Evaluations with Stakeholders",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8158,6 +10138,7 @@ const pages = [
     "title": "5 Case Scenarios to Understand Blasting Outcome Feedback",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8180,6 +10161,7 @@ const pages = [
     "title": "5 Essential Follow-Up Actions After Receiving Blasting Outcome Feedback",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8202,6 +10184,7 @@ const pages = [
     "title": "5 Tools to Record and Evaluate Your Blasting Results",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8224,6 +10207,7 @@ const pages = [
     "title": "6 Checklist Items for Analyzing Blasting Outcomes Effectively",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8246,29 +10230,8 @@ const pages = [
     "title": "6 Steps to Establish a Feedback Loop for Continuous Improvement in Blasting",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
-    "createdAt": 1734126788641
-  },
-  {
-    "uuid": "e1c9c45b-0120-4f30-9608-ae8fc009aa6b",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Essential Metrics to Measure Blasting Effectiveness",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128350437,
     "createdAt": 1734126788641
   },
   {
@@ -8290,6 +10253,7 @@ const pages = [
     "title": "7 Indicators of Quality in Your Blasting Feedback Collection Process",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8312,6 +10276,7 @@ const pages = [
     "title": "8 Key Factors to Consider When Evaluating Your Blasting Processes",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8334,6 +10299,7 @@ const pages = [
     "title": "8 Tips for Training Your Team to Gather Blasting Outcome Feedback",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8356,6 +10322,7 @@ const pages = [
     "title": "9 Common Missteps in Collecting Feedback on Blasting Techniques",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8378,6 +10345,7 @@ const pages = [
     "title": "9 Techniques for Visualizing Blasting Feedback Data",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126788641,
     "createdAt": 1734126788641
   },
@@ -8400,6 +10368,7 @@ const pages = [
     "title": "10 Common Blasting Risks and How to Mitigate Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8422,6 +10391,7 @@ const pages = [
     "title": "10 Innovations in Blasting Safety Technology You Need to Know",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8444,6 +10414,7 @@ const pages = [
     "title": "11 Best Practices for Risk Assessment in Industrial Blasting",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8466,6 +10437,7 @@ const pages = [
     "title": "12 Resources for Enhancing Your Blasting Risk Management Practices",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8488,6 +10460,7 @@ const pages = [
     "title": "15 Questions to Ask Before Starting a Blasting Project",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8510,6 +10483,7 @@ const pages = [
     "title": "20 Lessons Learned from Blasting Risk Management Failures",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8532,6 +10506,7 @@ const pages = [
     "title": "3 Methods for Evaluating Blasting Equipment Risks",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8554,6 +10529,7 @@ const pages = [
     "title": "4 Critical Areas to Address in Your Blasting Safety Protocols",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8576,6 +10552,7 @@ const pages = [
     "title": "4 Strategies for Communicating Blasting Risks to Stakeholders",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8598,6 +10575,7 @@ const pages = [
     "title": "5 Industry Standards for Blasting Safety and Risk Assessment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8620,6 +10598,7 @@ const pages = [
     "title": "5 Key Factors to Consider When Assessing Blasting Risks",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8642,6 +10621,7 @@ const pages = [
     "title": "5 Metrics to Track the Effectiveness of Your Blasting Risk Assessments",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8664,6 +10644,7 @@ const pages = [
     "title": "6 Blasting Risk Assessment Checklists for Manufacturers",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8686,29 +10667,8 @@ const pages = [
     "title": "6 Regulatory Considerations for Blasting Risk Assessments in Oil and Gas",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
-    "createdAt": 1734126791941
-  },
-  {
-    "uuid": "ff7d6020-1c48-4664-891a-1d6fe823fccb",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Essential Steps to Conduct a Thorough Blasting Risk Assessment",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128321146,
     "createdAt": 1734126791941
   },
   {
@@ -8730,6 +10690,7 @@ const pages = [
     "title": "7 Steps to Train Your Team on Blasting Risk Awareness",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8752,6 +10713,7 @@ const pages = [
     "title": "8 Frequently Overlooked Blasting Risks and How to Address Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8774,6 +10736,7 @@ const pages = [
     "title": "8 Tools Every Manufacturer Needs for Effective Blasting Risk Assessments",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8796,6 +10759,7 @@ const pages = [
     "title": "9 Safety Precautions to Implement Before Blasting Operations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8818,6 +10782,7 @@ const pages = [
     "title": "9 Ways to Involve Your Team in Blasting Risk Assessments",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126791941,
     "createdAt": 1734126791941
   },
@@ -8840,6 +10805,7 @@ const pages = [
     "title": "1 Proven Method to Reduce Dust from Steel Grit Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -8862,6 +10828,7 @@ const pages = [
     "title": "10 Best Practices for Minimizing Dust in Metal Blasting Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -8884,6 +10851,7 @@ const pages = [
     "title": "10 Signage and Communication Strategies for Dust Control Awareness",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -8906,6 +10874,7 @@ const pages = [
     "title": "11 Smart Tools for Monitoring Dust Levels in Blasting Environments",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -8928,6 +10897,7 @@ const pages = [
     "title": "12 Ways to Enhance Worker Safety By Controlling Dust Emissions",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -8950,6 +10920,7 @@ const pages = [
     "title": "13 Key Factors Influencing Dust Emissions in Blasting Operations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -8972,6 +10943,7 @@ const pages = [
     "title": "14 Benefits of Utilizing Dust Control Systems in Manufacturing Facilities",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -8994,6 +10966,7 @@ const pages = [
     "title": "15 Myths Debunked About Dust Control in Industrial Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -9016,6 +10989,7 @@ const pages = [
     "title": "16 Popular Misconceptions About Dust Control in Surface Treatment",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -9038,6 +11012,7 @@ const pages = [
     "title": "2 Case Studies on Successful Dust Control Implementation",
     "score": 4,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -9060,6 +11035,7 @@ const pages = [
     "title": "3 Common Mistakes to Avoid When Managing Dust in Blasting Processes",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -9082,6 +11058,7 @@ const pages = [
     "title": "3 Steps to Create a Comprehensive Dust Management Plan",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -9104,6 +11081,7 @@ const pages = [
     "title": "4 Advantages of Using Water in Dust Control during Blasting",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -9126,6 +11104,7 @@ const pages = [
     "title": "4 Natural Agents for Effective Dust Suppression",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -9148,6 +11127,7 @@ const pages = [
     "title": "5 Essential Equipment Upgrades for Improved Dust Control",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -9170,6 +11150,7 @@ const pages = [
     "title": "5 Innovative Solutions to Reduce Dust Emissions in Surface Preparation",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -9192,29 +11173,8 @@ const pages = [
     "title": "6 Dust Suppression Techniques You Need to Implement Now",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
-    "createdAt": 1734126820239
-  },
-  {
-    "uuid": "4ebf085b-f5ec-49b9-8067-4ec23b287a18",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Essential Technologies for Controlling Dust Emissions during Blasting",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128448224,
     "createdAt": 1734126820239
   },
   {
@@ -9236,6 +11196,7 @@ const pages = [
     "title": "8 Key Components of an Effective Dust Control System for Blasting",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
   },
@@ -9258,30 +11219,9 @@ const pages = [
     "title": "9 Environmental Regulations Every Blasting Operation Should Follow",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126820239,
     "createdAt": 1734126820239
-  },
-  {
-    "uuid": "f214ff5b-1c00-4b1d-aada-69e7d1132776",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Essential Metrics to Track Steel Grit Performance in Surface Treatment",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128558084,
-    "createdAt": 1734126833138
   },
   {
     "uuid": "0f59a06b-6e7d-4967-b75d-8c9f233cb9fd",
@@ -9302,6 +11242,7 @@ const pages = [
     "title": "11 Benefits of Detailed Grit Usage Reporting for Quality Assurance",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126833138,
     "createdAt": 1734126833138
   },
@@ -9324,6 +11265,7 @@ const pages = [
     "title": "12 Metrics Every Valve Manufacturer Should Track for Grit Performance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126833138,
     "createdAt": 1734126833138
   },
@@ -9346,6 +11288,7 @@ const pages = [
     "title": "3 Innovative Technologies for Measuring Grit Performance in Real-Time",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126833138,
     "createdAt": 1734126833138
   },
@@ -9368,6 +11311,7 @@ const pages = [
     "title": "4 Critical Steps to Standardizing Grit Documentation for Equipment Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126833138,
     "createdAt": 1734126833138
   },
@@ -9390,6 +11334,7 @@ const pages = [
     "title": "5 Ways to Optimize Steel Grit Efficiency in Your Blast Rooms",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126833138,
     "createdAt": 1734126833138
   },
@@ -9412,6 +11357,7 @@ const pages = [
     "title": "6 Tools to Accurately Record Grit Usage Data",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126833138,
     "createdAt": 1734126833138
   },
@@ -9434,6 +11380,7 @@ const pages = [
     "title": "7 Key Factors Influencing Steel Grit Usage for Valve Manufacturers",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126833138,
     "createdAt": 1734126833138
   },
@@ -9456,6 +11403,7 @@ const pages = [
     "title": "8 Best Practices for Monitoring Steel Grit Wear Rates",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126833138,
     "createdAt": 1734126833138
   },
@@ -9478,30 +11426,9 @@ const pages = [
     "title": "9 Common Mistakes in Grit Documentation and How to Avoid Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126833138,
     "createdAt": 1734126833138
-  },
-  {
-    "uuid": "7f286de6-7d66-4186-82a1-67052dc4e1bb",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Strategies for Meeting Compliance Standards in Valve Manufacturing",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128587309,
-    "createdAt": 1734126840053
   },
   {
     "uuid": "24a41291-a6b4-4668-9a0b-ae28aa809243",
@@ -9522,6 +11449,7 @@ const pages = [
     "title": "11 Tips for Training Your Team on Compliance Regulations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126840053,
     "createdAt": 1734126840053
   },
@@ -9544,6 +11472,7 @@ const pages = [
     "title": "15 Compliance Tools and Technologies for Valve and Equipment Manufacturers",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126840053,
     "createdAt": 1734126840053
   },
@@ -9566,6 +11495,7 @@ const pages = [
     "title": "3 Critical Areas of Compliance in the Surface Treatment Sector",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126840053,
     "createdAt": 1734126840053
   },
@@ -9588,6 +11518,7 @@ const pages = [
     "title": "4 Ways to Stay Ahead of Changing Industry Regulations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126840053,
     "createdAt": 1734126840053
   },
@@ -9610,6 +11541,7 @@ const pages = [
     "title": "5 Best Practices for Documenting Compliance in Surface Treatment Processes",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126840053,
     "createdAt": 1734126840053
   },
@@ -9632,6 +11564,7 @@ const pages = [
     "title": "6 Common Compliance Pitfalls for Equipment Manufacturers and How to Avoid Them",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126840053,
     "createdAt": 1734126840053
   },
@@ -9654,6 +11587,7 @@ const pages = [
     "title": "7 Essential Certifications Every Valve Manufacturer Should Obtain",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126840053,
     "createdAt": 1734126840053
   },
@@ -9676,6 +11610,7 @@ const pages = [
     "title": "8 Key Regulations Affecting the Oil and Gas Valve Industry",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126840053,
     "createdAt": 1734126840053
   },
@@ -9698,6 +11633,7 @@ const pages = [
     "title": "9 Steps to Implement an Internal Compliance Audit for Manufacturing Firms",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126840053,
     "createdAt": 1734126840053
   },
@@ -9720,6 +11656,7 @@ const pages = [
     "title": "10 Benefits of Using Steel Grit Over Other Abrasives",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -9742,6 +11679,7 @@ const pages = [
     "title": "10 Industry Standards You Should Know About Blasting Abrasives",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -9764,6 +11702,7 @@ const pages = [
     "title": "10 Questions to Ask When Sourcing Blasting Abrasives",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -9786,6 +11725,7 @@ const pages = [
     "title": "11 Innovations in Blasting Abrasives: What You Need to Know",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -9808,6 +11748,7 @@ const pages = [
     "title": "12 Tips for Maximizing the Efficiency of Your Blasting Abrasives",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -9830,6 +11771,7 @@ const pages = [
     "title": "3 Common Mistakes When Evaluating Blasting Abrasives",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -9852,6 +11794,7 @@ const pages = [
     "title": "4 Environmental Considerations When Selecting Blasting Abrasives",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -9874,6 +11817,7 @@ const pages = [
     "title": "4 Steps to Properly Test Abrasives for Your Manufacturing Needs",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -9896,6 +11840,7 @@ const pages = [
     "title": "5 Competitive Advantages of Different Blasting Abrasives",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -9918,6 +11863,7 @@ const pages = [
     "title": "5 Cost Considerations When Selecting Blasting Abrasives",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -9940,6 +11886,7 @@ const pages = [
     "title": "5 Key Factors to Consider When Choosing a Blasting Abrasive",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -9962,6 +11909,7 @@ const pages = [
     "title": "6 Comparisons of Traditional vs. Modern Blasting Abrasives",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -9984,6 +11932,7 @@ const pages = [
     "title": "6 Myths About Steel Grit and Its Alternatives",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -10006,6 +11955,7 @@ const pages = [
     "title": "6 Properties of Blasting Abrasives That Affect Performance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -10028,29 +11978,8 @@ const pages = [
     "title": "7 Safety Regulations Impacting Blasting Abrasives Selection",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
-    "createdAt": 1734126861340
-  },
-  {
-    "uuid": "21575813-d135-4747-9b12-6f500adf40b9",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Types of Blasting Abrasives: Which One Fits Your Needs",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128652833,
     "createdAt": 1734126861340
   },
   {
@@ -10072,6 +12001,7 @@ const pages = [
     "title": "8 Checklist Items for Evaluating Blasting Abrasives",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -10094,6 +12024,7 @@ const pages = [
     "title": "8 Ways Blasting Abrasives Impact Surface Durability",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -10116,6 +12047,7 @@ const pages = [
     "title": "9 Myths About Abrasive Blasting Debunked",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -10138,6 +12070,7 @@ const pages = [
     "title": "9 Trends in Blasting Abrasive Technology for 2024",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126861340,
     "createdAt": 1734126861340
   },
@@ -10160,6 +12093,7 @@ const pages = [
     "title": "10 Common Misconceptions About Steel Grit Usage in Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10182,6 +12116,7 @@ const pages = [
     "title": "10 Industry Trends Shaping Grit Compatibility Solutions in Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10204,6 +12139,7 @@ const pages = [
     "title": "10 Steps to Optimize Your Surface Treatment with Steel Grit",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10226,6 +12162,7 @@ const pages = [
     "title": "11 Factors Affecting Grit Performance in Valve and Equipment Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10248,6 +12185,7 @@ const pages = [
     "title": "12 Must-Know Facts About Steel Grit for Precision Component Manufacturers",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10270,6 +12208,7 @@ const pages = [
     "title": "3 Ways to Test Grit Compatibility with Your Surface Treatment Processes",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10292,6 +12231,7 @@ const pages = [
     "title": "4 Maintenance Tips to Ensure Equipment Durability When Using Steel Grit",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10314,6 +12254,7 @@ const pages = [
     "title": "4 Ways to Enhance Your Grit Assessment Process for Better Equipment Fit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10336,6 +12277,7 @@ const pages = [
     "title": "5 Essential Guidelines for Optimizing Grit Compatibility with Your Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10358,6 +12300,7 @@ const pages = [
     "title": "5 Innovative Technologies for Enhancing Grit Compatibility in Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10380,6 +12323,7 @@ const pages = [
     "title": "5 Reasons to Consider Steel Grit for Your Equipment Compatibility Needs",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10402,6 +12346,7 @@ const pages = [
     "title": "6 Best Practices for Selecting Grit Sizes for Equipment Compatibility",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10424,6 +12369,7 @@ const pages = [
     "title": "6 Industry Standards to Consider for Grit Compatibility in Blast Rooms",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10446,6 +12392,7 @@ const pages = [
     "title": "6 Questions to Ask Your Supplier About Grit Compatibility",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10468,29 +12415,8 @@ const pages = [
     "title": "7 Important Metrics to Measure Grit Performance in Your Workshop",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
-    "createdAt": 1734126870416
-  },
-  {
-    "uuid": "02c95ca6-ae48-4b71-b184-2eb4d7ccdcf9",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Key Factors to Assess When Choosing Grit for Surface Treatment",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128660550,
     "createdAt": 1734126870416
   },
   {
@@ -10512,6 +12438,7 @@ const pages = [
     "title": "8 Steps to Analyze Your Surface Preparation Needs with Grit Applications",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10534,6 +12461,7 @@ const pages = [
     "title": "8 Ways to Maximize Efficiency with the Right Grit in Your Process",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10556,6 +12484,7 @@ const pages = [
     "title": "9 Tips for Reducing Equipment Wear When Using Steel Grit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10578,6 +12507,7 @@ const pages = [
     "title": "9 Warning Signs That Your Equipment Isn’t Compatible with Steel Grit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126870416,
     "createdAt": 1734126870416
   },
@@ -10600,6 +12530,7 @@ const pages = [
     "title": "10 Best Practices for Grit Recycling to Minimize Contamination Risks",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10622,6 +12553,7 @@ const pages = [
     "title": "10 Myths About Grit Usage You Need to Stop Believing",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10644,6 +12576,7 @@ const pages = [
     "title": "10 Recommendations for Safer Grit Handling Practices",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10666,6 +12599,7 @@ const pages = [
     "title": "11 Environmental Factors That Influence Grit Contamination Risks",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10688,6 +12622,7 @@ const pages = [
     "title": "12 Industry Standards to Follow for Grit Management",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10710,6 +12645,7 @@ const pages = [
     "title": "3 Innovative Technologies to Combat Grit Contamination",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10732,6 +12668,7 @@ const pages = [
     "title": "4 Essential Items for Your Grit Contamination Prevention Toolkit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10754,29 +12691,8 @@ const pages = [
     "title": "4 Key Factors to Consider in Your Grit Management Plan",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
-    "createdAt": 1734126882259
-  },
-  {
-    "uuid": "a374332a-408b-4c18-ad28-ab12eaec7f8d",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "5 Essential Steps to Prevent Steel Grit Contamination in Valve Manufacturing",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128721861,
     "createdAt": 1734126882259
   },
   {
@@ -10798,6 +12714,7 @@ const pages = [
     "title": "5 Key Metrics for Assessing Grit Contamination in Your Facility",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10820,6 +12737,7 @@ const pages = [
     "title": "5 Maintenance Tips for Your Blast Equipment to Minimize Contamination",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10842,6 +12760,7 @@ const pages = [
     "title": "6 Lessons Learned from Major Grit Contamination Failures",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10864,6 +12783,7 @@ const pages = [
     "title": "6 Reasons to Conduct Regular Grit Quality Assessments",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10886,6 +12806,7 @@ const pages = [
     "title": "6 Signs of Grit Contamination and How to Address Them Quickly",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10908,6 +12829,7 @@ const pages = [
     "title": "7 Common Misconceptions About Steel Grit and Contamination",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10930,6 +12852,7 @@ const pages = [
     "title": "7 Strategies to Train Your Staff on Grit Contamination Prevention",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10952,6 +12875,7 @@ const pages = [
     "title": "8 Common Sources of Grit Contamination and How to Mitigate Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10974,6 +12898,7 @@ const pages = [
     "title": "8 Ways to Optimize Your Surface Treatment Process for Contamination Control",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -10996,6 +12921,7 @@ const pages = [
     "title": "9 Benefits of an Effective Grit Management Program",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -11018,6 +12944,7 @@ const pages = [
     "title": "9 Tips for Selecting the Right Equipment to Reduce Grit Contamination",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126882259,
     "createdAt": 1734126882259
   },
@@ -11040,6 +12967,7 @@ const pages = [
     "title": "10 Steps to Creating a Robust Safety Culture in Manufacturing Facilities",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126894474,
     "createdAt": 1734126894474
   },
@@ -11062,6 +12990,7 @@ const pages = [
     "title": "11 Strategies for Conducting Effective Safety Audits",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126894474,
     "createdAt": 1734126894474
   },
@@ -11084,6 +13013,7 @@ const pages = [
     "title": "12 Innovative Safety Technologies Shaping the Future of Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126894474,
     "createdAt": 1734126894474
   },
@@ -11106,6 +13036,7 @@ const pages = [
     "title": "3 Compliance Regulations You Must Know to Enhance Safety Protocols",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126894474,
     "createdAt": 1734126894474
   },
@@ -11128,6 +13059,7 @@ const pages = [
     "title": "4 Ways to Foster a Safe Work Environment for Manufacturing Teams",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126894474,
     "createdAt": 1734126894474
   },
@@ -11150,6 +13082,7 @@ const pages = [
     "title": "5 Key Safety Training Programs for Valve and Pump Manufacturers",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126894474,
     "createdAt": 1734126894474
   },
@@ -11172,6 +13105,7 @@ const pages = [
     "title": "6 Tools Every Engineer Needs to Ensure Safety in Equipment Operations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126894474,
     "createdAt": 1734126894474
   },
@@ -11194,29 +13128,8 @@ const pages = [
     "title": "7 Common Safety Hazards in Valve and Equipment Manufacturing and How to Address Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126894474,
-    "createdAt": 1734126894474
-  },
-  {
-    "uuid": "1174aa32-9d99-49bd-8e68-bf7e1447de83",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "8 Essential Safety Protocols to Implement in Your Equipment Manufacturing Processes",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128808803,
     "createdAt": 1734126894474
   },
   {
@@ -11238,6 +13151,7 @@ const pages = [
     "title": "9 Best Practices for Safety Equipment Maintenance in the Manufacturing Industry",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126894474,
     "createdAt": 1734126894474
   },
@@ -11260,6 +13174,7 @@ const pages = [
     "title": "10 Tips for Ensuring Consistent Surface Quality Before Blasting",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126900350,
     "createdAt": 1734126900350
   },
@@ -11282,6 +13197,7 @@ const pages = [
     "title": "10 Tools Every Manufacturer Needs for Effective Surface Inspection",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126900350,
     "createdAt": 1734126900350
   },
@@ -11304,6 +13220,7 @@ const pages = [
     "title": "3 Critical Safety Checks for Inspecting Surfaces Before Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126900350,
     "createdAt": 1734126900350
   },
@@ -11326,6 +13243,7 @@ const pages = [
     "title": "4 Best Practices for Documenting Surface Conditions Pre-Blasting",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126900350,
     "createdAt": 1734126900350
   },
@@ -11348,6 +13266,7 @@ const pages = [
     "title": "5 Common Surface Defects to Look for Before the Blasting Process",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126900350,
     "createdAt": 1734126900350
   },
@@ -11370,6 +13289,7 @@ const pages = [
     "title": "5 Important Benefits of Thorough Surface Inspection Before Blasting",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126900350,
     "createdAt": 1734126900350
   },
@@ -11392,29 +13312,8 @@ const pages = [
     "title": "6 Simple Steps to Prepare Surfaces for Optimal Blasting Performance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126900350,
-    "createdAt": 1734126900350
-  },
-  {
-    "uuid": "dd1be9ce-7f98-4ca6-adb6-70731b9916b8",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Essential Checklist Items for Surface Inspections Before Blasting",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128792798,
     "createdAt": 1734126900350
   },
   {
@@ -11436,6 +13335,7 @@ const pages = [
     "title": "8 Key Factors Affecting Surface Quality Prior to Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126900350,
     "createdAt": 1734126900350
   },
@@ -11458,6 +13358,7 @@ const pages = [
     "title": "9 Visual Cues to Maximize Surface Readiness Ahead of Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126900350,
     "createdAt": 1734126900350
   },
@@ -11480,6 +13381,7 @@ const pages = [
     "title": "10 Common Misconceptions About Downtime in Valve Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126906978,
     "createdAt": 1734126906978
   },
@@ -11502,6 +13404,7 @@ const pages = [
     "title": "3 Technological Shortcomings That Contribute to Downtime in Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126906978,
     "createdAt": 1734126906978
   },
@@ -11524,6 +13427,7 @@ const pages = [
     "title": "4 Environmental Factors That Can Lead to Unexpected Downtime",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126906978,
     "createdAt": 1734126906978
   },
@@ -11546,6 +13450,7 @@ const pages = [
     "title": "5 Maintenance Practices That Lead to Increased Operational Downtime",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126906978,
     "createdAt": 1734126906978
   },
@@ -11568,6 +13473,7 @@ const pages = [
     "title": "5 Ways Employee Training Gaps Lead to Increased Downtime",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126906978,
     "createdAt": 1734126906978
   },
@@ -11590,6 +13496,7 @@ const pages = [
     "title": "6 Tips for Identifying Hidden Causes of Production Downtime",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126906978,
     "createdAt": 1734126906978
   },
@@ -11612,29 +13519,8 @@ const pages = [
     "title": "7 Best Practices for Continuous Improvement to Minimize Downtime",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126906978,
-    "createdAt": 1734126906978
-  },
-  {
-    "uuid": "c53c53f5-b43a-454c-8402-5b88c3475b4f",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Unexpected Factors Causing Downtime in Manufacturing Operations",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128873700,
     "createdAt": 1734126906978
   },
   {
@@ -11656,6 +13542,7 @@ const pages = [
     "title": "8 Ways Poor Communication Can Cause Downtime in Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126906978,
     "createdAt": 1734126906978
   },
@@ -11678,30 +13565,9 @@ const pages = [
     "title": "9 Strategies to Reduce Downtime Related to Equipment Failure",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126906978,
     "createdAt": 1734126906978
-  },
-  {
-    "uuid": "38b611af-8f3c-4a53-9dfe-6959cc8c30d1",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Essential Metrics for Monitoring Steel Grit Performance",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128908114,
-    "createdAt": 1734126932605
   },
   {
     "uuid": "b25fa7ea-25c8-446b-bc0c-47e3da4ff826",
@@ -11722,6 +13588,7 @@ const pages = [
     "title": "11 Ways to Evaluate the Efficiency of Your Grit Recycling Process",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126932605,
     "createdAt": 1734126932605
   },
@@ -11744,6 +13611,7 @@ const pages = [
     "title": "12 Steps to Create a Grit Monitoring System for Your Blast Room",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126932605,
     "createdAt": 1734126932605
   },
@@ -11766,6 +13634,7 @@ const pages = [
     "title": "3 Strategies for Reducing Grit Waste in Your Operations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126932605,
     "createdAt": 1734126932605
   },
@@ -11788,6 +13657,7 @@ const pages = [
     "title": "4 Critical Factors Affecting the Longevity of Steel Grit in Production",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126932605,
     "createdAt": 1734126932605
   },
@@ -11810,6 +13680,7 @@ const pages = [
     "title": "5 Signs It's Time to Replace Your Steel Grit: A Quick Guide",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126932605,
     "createdAt": 1734126932605
   },
@@ -11832,6 +13703,7 @@ const pages = [
     "title": "6 Best Practices for Tracking Steel Grit Quality Over Time",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126932605,
     "createdAt": 1734126932605
   },
@@ -11854,6 +13726,7 @@ const pages = [
     "title": "7 Tips for Optimizing Your Steel Grit Usage in Surface Treatment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126932605,
     "createdAt": 1734126932605
   },
@@ -11876,6 +13749,7 @@ const pages = [
     "title": "8 Common Mistakes in Managing Steel Grit Wear and How to Avoid Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126932605,
     "createdAt": 1734126932605
   },
@@ -11898,6 +13772,7 @@ const pages = [
     "title": "9 Innovative Technologies for Monitoring Grit Performance Effectively",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126932605,
     "createdAt": 1734126932605
   },
@@ -11920,6 +13795,7 @@ const pages = [
     "title": "10 Common Mistakes in Managing Abrasive Inventories and How to Avoid Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -11942,6 +13818,7 @@ const pages = [
     "title": "10 Steps to Create a Visual Management System for Abrasive Inventory",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -11964,6 +13841,7 @@ const pages = [
     "title": "10 Ways to Educate Your Staff on Abrasive Material Management",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -11986,6 +13864,7 @@ const pages = [
     "title": "11 Factors to Consider When Choosing an Abrasive Material Supplier",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12008,6 +13887,7 @@ const pages = [
     "title": "12 Quick Actions to Improve Your Abrasive Inventory Accuracy",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12030,6 +13910,7 @@ const pages = [
     "title": "3 Simple Steps to Conduct a Thorough Abrasive Inventory Audit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12052,6 +13933,7 @@ const pages = [
     "title": "3 Ways to Analyze Your Abrasive Usage for Better Inventory Control",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12074,6 +13956,7 @@ const pages = [
     "title": "4 Critical Elements of an Abrasive Inventory Management Plan",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12096,6 +13979,7 @@ const pages = [
     "title": "4 Proven Techniques for Forecasting Abrasive Material Needs",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12118,6 +14002,7 @@ const pages = [
     "title": "5 Approaches to Building Stronger Supplier Relationships for Abrasives",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12140,6 +14025,7 @@ const pages = [
     "title": "5 Techniques for Effective Communication with Abrasive Suppliers",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12162,6 +14048,7 @@ const pages = [
     "title": "5 Ways to Utilize Technology for Better Abrasive Inventory Management",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12184,6 +14071,7 @@ const pages = [
     "title": "6 Key Metrics to Track for Optimal Abrasive Material Inventory Control",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12206,29 +14094,8 @@ const pages = [
     "title": "6 Ways to Optimize Storage Solutions for Abrasive Materials",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
-    "createdAt": 1734126945567
-  },
-  {
-    "uuid": "c9075b7a-2ff1-48f1-a963-a09b4212cc94",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Essential Strategies for Efficient Abrasive Material Inventory Management",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734128938269,
     "createdAt": 1734126945567
   },
   {
@@ -12250,6 +14117,7 @@ const pages = [
     "title": "7 Innovations in Abrasive Material Management Tools You Should Know",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12272,6 +14140,7 @@ const pages = [
     "title": "8 Strategies for Minimizing Abrasive Contamination in Inventory",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12294,6 +14163,7 @@ const pages = [
     "title": "8 Tips for Streamlining Your Abrasive Supply Chain Process",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12316,6 +14186,7 @@ const pages = [
     "title": "9 Best Practices for Reducing Waste in Abrasive Material Inventory",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12338,6 +14209,7 @@ const pages = [
     "title": "9 Tips for Navigating Abrasive Material Price Fluctuations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126945567,
     "createdAt": 1734126945567
   },
@@ -12360,6 +14232,7 @@ const pages = [
     "title": "10 Impactful Ways Grit Size Affects Product Quality and Durability",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12382,6 +14255,7 @@ const pages = [
     "title": "10 Key Benefits of Optimizing Grit Size for Surface Treatment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12404,6 +14278,7 @@ const pages = [
     "title": "10 Practical Applications of Steel Grit and Its Optimal Sizes",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12426,6 +14301,7 @@ const pages = [
     "title": "11 Tips for Finding the Perfect Grit Size for Different Applications",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12448,6 +14324,7 @@ const pages = [
     "title": "12 Factors Influencing Grit Size Selection in Metal Abrasive Processes",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12470,6 +14347,7 @@ const pages = [
     "title": "3 Innovative Technologies for Accurately Measuring Grit Size",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12492,6 +14370,7 @@ const pages = [
     "title": "4 Critical Comparisons of Grit Sizes for Valves and Equipment Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12514,6 +14393,7 @@ const pages = [
     "title": "4 Signs You Need to Reassess Your Grit Size Choices",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12536,6 +14416,7 @@ const pages = [
     "title": "5 Common Mistakes to Avoid When Selecting Grit Sizes for Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12558,6 +14439,7 @@ const pages = [
     "title": "5 Latest Trends in Grit Size Technology for Better Surface Results",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12580,6 +14462,7 @@ const pages = [
     "title": "5 Methods to Test the Effectiveness of Different Grit Sizes",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12602,6 +14485,7 @@ const pages = [
     "title": "6 Guidelines for Adjusting Grit Size Based on Material Type",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12624,6 +14508,7 @@ const pages = [
     "title": "6 Steps to Create a Grit Size Optimization Strategy for Your Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12646,6 +14531,7 @@ const pages = [
     "title": "7 Considerations for Balancing Grit Size and Equipment Longevity",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12668,6 +14554,7 @@ const pages = [
     "title": "7 Essential Factors to Consider When Choosing Steel Grit Size",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12690,6 +14577,7 @@ const pages = [
     "title": "8 Easy Steps to Calibrate Your Blasting Media for Ideal Grit Size",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12712,6 +14600,7 @@ const pages = [
     "title": "8 Industry Standards for Steel Grit Size and Performance",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12734,6 +14623,7 @@ const pages = [
     "title": "8 Techniques for Analyzing the Impact of Grit Size on Surface Finish",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12756,6 +14646,7 @@ const pages = [
     "title": "9 Advantages of Tailoring Grit Size for Specific Surface Treatments",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12778,6 +14669,7 @@ const pages = [
     "title": "9 Ways to Improve Efficiency by Optimizing Grit Size",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126966923,
     "createdAt": 1734126966923
   },
@@ -12800,6 +14692,7 @@ const pages = [
     "title": "10 Proven Strategies to Extend the Lifespan of Your Equipment Components",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126972026,
     "createdAt": 1734126972026
   },
@@ -12822,6 +14715,7 @@ const pages = [
     "title": "12 Tips for Streamlining the Component Replacement Process",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126972026,
     "createdAt": 1734126972026
   },
@@ -12844,6 +14738,7 @@ const pages = [
     "title": "4 Types of Abrasives That Can Enhance Your Replacement Parts' Durability",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126972026,
     "createdAt": 1734126972026
   },
@@ -12866,6 +14761,7 @@ const pages = [
     "title": "5 Essential Factors to Consider When Selecting Replacement Parts for Valves",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126972026,
     "createdAt": 1734126972026
   },
@@ -12888,6 +14784,7 @@ const pages = [
     "title": "5 Ways to Identify Quality Replacement Components for Valve Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126972026,
     "createdAt": 1734126972026
   },
@@ -12910,6 +14807,7 @@ const pages = [
     "title": "6 Benefits of Using Steel Grit for Component Surface Treatment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126972026,
     "createdAt": 1734126972026
   },
@@ -12932,6 +14830,7 @@ const pages = [
     "title": "7 Innovations in Surface Treatment Technology for Equipment Longevity",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126972026,
     "createdAt": 1734126972026
   },
@@ -12954,6 +14853,7 @@ const pages = [
     "title": "7 Key Signs It's Time to Replace Worn Components in Your Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126972026,
     "createdAt": 1734126972026
   },
@@ -12976,6 +14876,7 @@ const pages = [
     "title": "8 Common Mistakes to Avoid When Replacing Equipment Components",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126972026,
     "createdAt": 1734126972026
   },
@@ -12998,6 +14899,7 @@ const pages = [
     "title": "9 Steps to Properly Maintaining Your Equipment for Optimal Performance",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126972026,
     "createdAt": 1734126972026
   },
@@ -13020,6 +14922,7 @@ const pages = [
     "title": "1 Maintenance Checklist Every Valve and Equipment Manufacturer Should Use",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13042,6 +14945,7 @@ const pages = [
     "title": "10 Cost-Effective Solutions for Enhancing Equipment Reliability",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13064,6 +14968,7 @@ const pages = [
     "title": "10 Signs It's Time to Update Your Maintenance Protocols",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13086,6 +14991,7 @@ const pages = [
     "title": "11 Recommended Tools for Streamlining Your Maintenance Process",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13108,6 +15014,7 @@ const pages = [
     "title": "12 Myths About Equipment Maintenance Debunked",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13130,6 +15037,7 @@ const pages = [
     "title": "13 Reasons to Adopt a Proactive Approach to Equipment Maintenance",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13152,6 +15060,7 @@ const pages = [
     "title": "14 Maintenance Innovations to Look Out for in 2024",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13174,6 +15083,7 @@ const pages = [
     "title": "15 Tips for Prioritizing Maintenance Tasks in a Busy Production Environment",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13196,6 +15106,7 @@ const pages = [
     "title": "16 Factors Impacting the Frequency of Your Equipment Maintenance",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13218,6 +15129,7 @@ const pages = [
     "title": "2 Cost-Saving Techniques for Regular Maintenance Checks",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13240,6 +15152,7 @@ const pages = [
     "title": "3 Game-Changing Technologies for Efficient Equipment Maintenance",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13262,6 +15175,7 @@ const pages = [
     "title": "3 Ways to Train Your Team on Effective Equipment Maintenance Practices",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13284,6 +15198,7 @@ const pages = [
     "title": "4 Key Performance Indicators to Track for Your Equipment Maintenance",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13306,6 +15221,7 @@ const pages = [
     "title": "5 Essential Steps to Optimize Your Equipment Maintenance Schedule",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13328,6 +15244,7 @@ const pages = [
     "title": "5 Ways to Align Your Maintenance Schedule With Production Goals",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13350,6 +15267,7 @@ const pages = [
     "title": "6 Common Maintenance Mistakes That Could Cost You Equipment Life",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13372,6 +15290,7 @@ const pages = [
     "title": "7 Maintenance Strategies to Extend the Life of Your Blasting Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13394,6 +15313,7 @@ const pages = [
     "title": "7 Secrets to Maximizing Equipment Downtime Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13416,6 +15336,7 @@ const pages = [
     "title": "8 Tips for Efficiently Scheduling Preventive Maintenance in Your Facility",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13438,6 +15359,7 @@ const pages = [
     "title": "9 Benefits of Implementing a Digital Maintenance Management System",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126983837,
     "createdAt": 1734126983837
   },
@@ -13460,6 +15382,7 @@ const pages = [
     "title": "10 Essential Factors to Consider When Adjusting Blasting Parameters",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126985480,
     "createdAt": 1734126985480
   },
@@ -13482,6 +15405,7 @@ const pages = [
     "title": "5 Common Mistakes in Blasting Parameter Adjustments and How to Avoid Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126985480,
     "createdAt": 1734126985480
   },
@@ -13504,6 +15428,7 @@ const pages = [
     "title": "6 Best Practices for Evaluating and Modifying Your Blasting Equipment Settings",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126985480,
     "createdAt": 1734126985480
   },
@@ -13526,6 +15451,7 @@ const pages = [
     "title": "7 Ways to Optimize Your Steel Grit Blasting Process for Precision Components",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126985480,
     "createdAt": 1734126985480
   },
@@ -13548,6 +15474,7 @@ const pages = [
     "title": "9 Techniques for Achieving Consistent Surface Quality in Blasting Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126985480,
     "createdAt": 1734126985480
   },
@@ -13570,6 +15497,7 @@ const pages = [
     "title": "10 Essential Safety Tips for Blasting Practices",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126991244,
     "createdAt": 1734126991244
   },
@@ -13592,6 +15520,7 @@ const pages = [
     "title": "11 Regulatory Compliance Tips for Blasting Operations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126991244,
     "createdAt": 1734126991244
   },
@@ -13614,6 +15543,7 @@ const pages = [
     "title": "12 Safety Equipment Every Blasting Operation Should Have",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126991244,
     "createdAt": 1734126991244
   },
@@ -13636,6 +15566,7 @@ const pages = [
     "title": "3 Tips for Conducting Effective Safety Drills for Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126991244,
     "createdAt": 1734126991244
   },
@@ -13658,6 +15589,7 @@ const pages = [
     "title": "4 Steps to Evaluate Your Blasting Safety Training Effectiveness",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126991244,
     "createdAt": 1734126991244
   },
@@ -13680,6 +15612,7 @@ const pages = [
     "title": "5 Key Elements of a Safe Blasting Training Program",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126991244,
     "createdAt": 1734126991244
   },
@@ -13702,6 +15635,7 @@ const pages = [
     "title": "6 Ways to Foster a Culture of Safety in Blasting Environments",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126991244,
     "createdAt": 1734126991244
   },
@@ -13724,6 +15658,7 @@ const pages = [
     "title": "7 Best Practices for Training Staff on Surface Treatment Safety",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126991244,
     "createdAt": 1734126991244
   },
@@ -13746,6 +15681,7 @@ const pages = [
     "title": "8 Common Mistakes to Avoid During Blasting Operations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126991244,
     "createdAt": 1734126991244
   },
@@ -13768,6 +15704,7 @@ const pages = [
     "title": "9 Critical Safety Measures for Handling Steel Grit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734126991244,
     "createdAt": 1734126991244
   },
@@ -13790,6 +15727,7 @@ const pages = [
     "title": "10 Common Mistakes to Avoid When Analyzing Customer Feedback",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127001590,
     "createdAt": 1734127001590
   },
@@ -13812,6 +15750,7 @@ const pages = [
     "title": "11 Ways to Turn Customer Feedback into Actionable Insights",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127001590,
     "createdAt": 1734127001590
   },
@@ -13834,6 +15773,7 @@ const pages = [
     "title": "12 Tips for Communicating Customer Satisfaction Insights with Your Team",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127001590,
     "createdAt": 1734127001590
   },
@@ -13856,6 +15796,7 @@ const pages = [
     "title": "3 Best Practices for Interpreting Customer Satisfaction Metrics",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127001590,
     "createdAt": 1734127001590
   },
@@ -13878,6 +15819,7 @@ const pages = [
     "title": "4 Innovative Tools for Streamlining Customer Feedback Analysis",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127001590,
     "createdAt": 1734127001590
   },
@@ -13900,6 +15842,7 @@ const pages = [
     "title": "5 Key Metrics for Evaluating Customer Satisfaction in Equipment Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127001590,
     "createdAt": 1734127001590
   },
@@ -13922,6 +15865,7 @@ const pages = [
     "title": "6 Effective Techniques for Gathering Customer Feedback in the Oil and Gas Industry",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127001590,
     "createdAt": 1734127001590
   },
@@ -13944,6 +15888,7 @@ const pages = [
     "title": "7 Strategies to Enhance Customer Satisfaction Analysis in Valve Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127001590,
     "createdAt": 1734127001590
   },
@@ -13966,6 +15911,7 @@ const pages = [
     "title": "8 Ways to Leverage Customer Satisfaction Data for Better Product Design",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127001590,
     "createdAt": 1734127001590
   },
@@ -13988,6 +15934,7 @@ const pages = [
     "title": "9 Steps to Implement an Effective Customer Satisfaction Survey",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127001590,
     "createdAt": 1734127001590
   },
@@ -14010,6 +15957,7 @@ const pages = [
     "title": "10 Essential Tips for Setting Up Your Blasting Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127007840,
     "createdAt": 1734127007840
   },
@@ -14032,6 +15980,7 @@ const pages = [
     "title": "11 Safety Protocols to Follow During Abrasive Blasting Calibration",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127007840,
     "createdAt": 1734127007840
   },
@@ -14054,6 +16003,7 @@ const pages = [
     "title": "12 Maintenance Practices to Enhance the Longevity of Your Blasting Equipment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127007840,
     "createdAt": 1734127007840
   },
@@ -14076,6 +16026,7 @@ const pages = [
     "title": "3 Performance Metrics to Track Your Blasting Equipment Calibration",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127007840,
     "createdAt": 1734127007840
   },
@@ -14098,6 +16049,7 @@ const pages = [
     "title": "4 Essential Calibration Measurements for Maximum Blasting Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127007840,
     "createdAt": 1734127007840
   },
@@ -14120,6 +16072,7 @@ const pages = [
     "title": "5 Steps to Optimize Your Steel Grit Blasting Process",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127007840,
     "createdAt": 1734127007840
   },
@@ -14142,6 +16095,7 @@ const pages = [
     "title": "6 Tools Every Technician Needs for Effective Blasting Calibration",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127007840,
     "createdAt": 1734127007840
   },
@@ -14164,6 +16118,7 @@ const pages = [
     "title": "7 Key Factors to Consider When Calibrating Your Blasting Settings",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127007840,
     "createdAt": 1734127007840
   },
@@ -14186,6 +16141,7 @@ const pages = [
     "title": "8 Common Mistakes in Blasting Equipment Calibration and How to Avoid Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127007840,
     "createdAt": 1734127007840
   },
@@ -14208,6 +16164,7 @@ const pages = [
     "title": "9 Advanced Techniques for Fine-Tuning Your Abrasive Blasting Settings",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127007840,
     "createdAt": 1734127007840
   },
@@ -14230,6 +16187,7 @@ const pages = [
     "title": "10 Common Surface Preparation Mistakes to Avoid During Assessments",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127026984,
     "createdAt": 1734127026984
   },
@@ -14252,6 +16210,7 @@ const pages = [
     "title": "11 Factors to Consider When Choosing Surface Preparation Services",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127026984,
     "createdAt": 1734127026984
   },
@@ -14274,6 +16233,7 @@ const pages = [
     "title": "12 Essential Tools for Accurate Surface Preparation Assessments",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127026984,
     "createdAt": 1734127026984
   },
@@ -14296,6 +16256,7 @@ const pages = [
     "title": "3 Critical Assessments for Ensuring Surface Durability in Oil and Gas Components",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127026984,
     "createdAt": 1734127026984
   },
@@ -14318,6 +16279,7 @@ const pages = [
     "title": "4 Must-Know Techniques for Optimizing Your Surface Preparation Assessments",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127026984,
     "createdAt": 1734127026984
   },
@@ -14340,6 +16302,7 @@ const pages = [
     "title": "5 Essential Factors for Evaluating Surface Preparation Methods",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127026984,
     "createdAt": 1734127026984
   },
@@ -14362,6 +16325,7 @@ const pages = [
     "title": "6 Key Metrics for Measuring Surface Preparation Effectiveness",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127026984,
     "createdAt": 1734127026984
   },
@@ -14384,6 +16348,7 @@ const pages = [
     "title": "7 Steps to Establish a Comprehensive Surface Preparation Assessment Checklist",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127026984,
     "createdAt": 1734127026984
   },
@@ -14406,6 +16371,7 @@ const pages = [
     "title": "8 Best Practices for Conducting Surface Preparation Assessments in Valve Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127026984,
     "createdAt": 1734127026984
   },
@@ -14428,6 +16394,7 @@ const pages = [
     "title": "9 Innovative Technologies Transforming Surface Preparation Assessments",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127026984,
     "createdAt": 1734127026984
   },
@@ -14450,6 +16417,7 @@ const pages = [
     "title": "10 Essential Tools for Effective Maintenance Team Collaboration",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127040384,
     "createdAt": 1734127040384
   },
@@ -14472,6 +16440,7 @@ const pages = [
     "title": "11 Techniques to Prioritize Maintenance Tasks Effectively",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127040384,
     "createdAt": 1734127040384
   },
@@ -14494,6 +16463,7 @@ const pages = [
     "title": "12 Best Practices for Documenting Maintenance Procedures and Decisions",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127040384,
     "createdAt": 1734127040384
   },
@@ -14516,6 +16486,7 @@ const pages = [
     "title": "3 Ways to Foster Trust and Communication Between Teams",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127040384,
     "createdAt": 1734127040384
   },
@@ -14538,6 +16509,7 @@ const pages = [
     "title": "4 Must-Have Checklists for Maintenance Coordination Success",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127040384,
     "createdAt": 1734127040384
   },
@@ -14560,6 +16532,7 @@ const pages = [
     "title": "5 Key Performance Indicators for Monitoring Maintenance Team Efficiency",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127040384,
     "createdAt": 1734127040384
   },
@@ -14582,6 +16555,7 @@ const pages = [
     "title": "6 Steps to Creating a Maintenance-First Culture in Your Organization",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127040384,
     "createdAt": 1734127040384
   },
@@ -14604,6 +16578,7 @@ const pages = [
     "title": "7 Strategies for Seamless Coordination with Maintenance Teams",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127040384,
     "createdAt": 1734127040384
   },
@@ -14626,6 +16601,7 @@ const pages = [
     "title": "8 Common Miscommunications with Maintenance Teams and How to Avoid Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127040384,
     "createdAt": 1734127040384
   },
@@ -14648,6 +16624,7 @@ const pages = [
     "title": "9 Actionable Tips for Scheduling Maintenance Without Interrupting Production",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127040384,
     "createdAt": 1734127040384
   },
@@ -14670,6 +16647,7 @@ const pages = [
     "title": "10 Common Mistakes to Avoid When Developing Maintenance Plans for Industrial Equipment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -14692,6 +16670,7 @@ const pages = [
     "title": "10 Resources to Enhance Knowledge of Preventive Maintenance in Equipment Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -14714,6 +16693,7 @@ const pages = [
     "title": "10 Ways Preventive Maintenance Can Increase the Lifetime of Your Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -14736,6 +16716,7 @@ const pages = [
     "title": "11 Time-Saving Techniques for Developing Maintenance Schedules in Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -14758,6 +16739,7 @@ const pages = [
     "title": "12 Practical Tips for Training Your Team on Preventive Maintenance Procedures",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -14780,6 +16762,7 @@ const pages = [
     "title": "3 Critical Compliance Considerations for Maintenance Schedules in the Oil and Gas Industry",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -14802,6 +16785,7 @@ const pages = [
     "title": "4 Key Elements of a Comprehensive Preventive Maintenance Checklist",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -14824,6 +16808,7 @@ const pages = [
     "title": "4 Key Performance Indicators for Effective Maintenance Scheduling in Valve Production",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -14846,6 +16831,7 @@ const pages = [
     "title": "5 Advanced Software Solutions for Managing Preventive Maintenance in Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -14868,6 +16854,7 @@ const pages = [
     "title": "5 Key Factors Influencing the Effectiveness of Preventive Maintenance in Equipment Production",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -14890,6 +16877,7 @@ const pages = [
     "title": "5 Tips for Balancing Preventive and Predictive Maintenance Scheduling",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -14912,6 +16900,7 @@ const pages = [
     "title": "6 Innovative Tools to Streamline Your Preventive Maintenance Scheduling Process",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -14934,6 +16923,7 @@ const pages = [
     "title": "6 Signs It's Time to Revise Your Preventive Maintenance Schedule",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -14956,6 +16946,7 @@ const pages = [
     "title": "7 Essential Steps to Create a Preventive Maintenance Schedule for Valve Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -14978,6 +16969,7 @@ const pages = [
     "title": "7 Strategies for Implementing a Proactive Maintenance Culture in Your Organization",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -15000,6 +16992,7 @@ const pages = [
     "title": "7 Ways to Incorporate Condition Monitoring into Your Maintenance Schedule",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -15022,6 +17015,7 @@ const pages = [
     "title": "8 Historical Trends in Preventive Maintenance That Could Impact Your Current Scheduling",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -15044,6 +17038,7 @@ const pages = [
     "title": "8 Ways to Measure the Success of Your Preventive Maintenance Program",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -15066,6 +17061,7 @@ const pages = [
     "title": "9 Best Practices for Documenting Maintenance Activities and Schedules",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -15088,6 +17084,7 @@ const pages = [
     "title": "9 Maintenance Best Practices for Enhancing the Longevity of Oil and Gas Valves",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127054169,
     "createdAt": 1734127054169
   },
@@ -15110,6 +17107,7 @@ const pages = [
     "title": "10 Common Mistakes in Ventilation Setup and How to Avoid Them",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127075754,
     "createdAt": 1734127075754
   },
@@ -15132,6 +17130,7 @@ const pages = [
     "title": "11 Benefits of Using Smart Ventilation Technologies in Manufacturing Facilities",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127075754,
     "createdAt": 1734127075754
   },
@@ -15154,6 +17153,7 @@ const pages = [
     "title": "12 Ways to Maintain Optimal Airflow in Blast Rooms and Workspaces",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127075754,
     "createdAt": 1734127075754
   },
@@ -15176,6 +17176,7 @@ const pages = [
     "title": "3 Tips on Integrating Environmental Controls with Ventilation in Equipment Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127075754,
     "createdAt": 1734127075754
   },
@@ -15198,6 +17199,7 @@ const pages = [
     "title": "4 Types of Ventilation Systems and Their Impact on Manufacturing Operations",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127075754,
     "createdAt": 1734127075754
   },
@@ -15220,6 +17222,7 @@ const pages = [
     "title": "5 Innovative Ventilation Solutions for Improved Air Quality in Valve Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127075754,
     "createdAt": 1734127075754
   },
@@ -15242,6 +17245,7 @@ const pages = [
     "title": "6 Key Factors to Consider for Effective Ventilation in Equipment Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127075754,
     "createdAt": 1734127075754
   },
@@ -15264,6 +17268,7 @@ const pages = [
     "title": "7 Essential Steps to Optimize Ventilation in Your Manufacturing Facility",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127075754,
     "createdAt": 1734127075754
   },
@@ -15286,6 +17291,7 @@ const pages = [
     "title": "8 Ways to Enhance Ventilation Efficiency for Surface Treatment Processes",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127075754,
     "createdAt": 1734127075754
   },
@@ -15308,6 +17314,7 @@ const pages = [
     "title": "9 Guidelines for Complying with Ventilation Standards in Industrial Settings",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127075754,
     "createdAt": 1734127075754
   },
@@ -15330,6 +17337,7 @@ const pages = [
     "title": "10 Essential Metrics for Evaluating Steel Grit Performance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15352,6 +17360,7 @@ const pages = [
     "title": "10 Signs Your Grit Performance Metrics Need a Review",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15374,6 +17383,7 @@ const pages = [
     "title": "10 Tips for Creating Effective Reports on Steel Grit Usage",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15396,6 +17406,7 @@ const pages = [
     "title": "11 Tips for Developing a Steel Grit Performance Evaluation Strategy",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15418,6 +17429,7 @@ const pages = [
     "title": "12 Common Mistakes in Measuring Steel Grit Performance and How to Avoid Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15440,6 +17452,7 @@ const pages = [
     "title": "3 Innovative Approaches to Assessing Steel Grit Impact on Surface Quality",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15462,6 +17475,7 @@ const pages = [
     "title": "4 Best Practices for Documenting Grit Performance in Blast Rooms",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15484,6 +17498,7 @@ const pages = [
     "title": "4 Examples of Grit Performance Optimization in Equipment Maintenance",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15506,6 +17521,7 @@ const pages = [
     "title": "5 Industry Standards for Reporting Steel Grit Performance Data",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15528,6 +17544,7 @@ const pages = [
     "title": "5 Steps to Optimize Steel Grit Usage in Valve Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15550,6 +17567,7 @@ const pages = [
     "title": "5 Strategies for Integrating Grit Performance Metrics into Quality Control Processes",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15572,6 +17590,7 @@ const pages = [
     "title": "6 Important Considerations for Tracking Grit Performance Metrics",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15594,6 +17613,7 @@ const pages = [
     "title": "6 Metrics to Compare Different Abrasives: Steel Grit Edition",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15616,6 +17636,7 @@ const pages = [
     "title": "6 Tools for Accurately Measuring Steel Grit Performance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15638,6 +17659,7 @@ const pages = [
     "title": "7 Comprehensive Techniques for Analyzing Grit Erosion Rates",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15660,6 +17682,7 @@ const pages = [
     "title": "7 Key Factors Affecting Steel Grit Efficiency in Surface Treatments",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15682,6 +17705,7 @@ const pages = [
     "title": "8 Key Performance Indicators for Steel Grit in Oil and Gas Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15704,6 +17728,7 @@ const pages = [
     "title": "8 Ways to Measure the Impact of Steel Grit on Equipment Longevity",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15726,6 +17751,7 @@ const pages = [
     "title": "9 Metrics Every Business Should Track to Improve Grit Performance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15748,6 +17774,7 @@ const pages = [
     "title": "9 Ways to Streamline Grit Documentation Processes in Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127077750,
     "createdAt": 1734127077750
   },
@@ -15770,6 +17797,7 @@ const pages = [
     "title": "10 Ways Steel Grit Can Enhance Sustainability in Surface Treatment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127084030,
     "createdAt": 1734127084030
   },
@@ -15792,6 +17820,7 @@ const pages = [
     "title": "11 Strategies for Minimizing Waste and Contamination in Your Blasting Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127084030,
     "createdAt": 1734127084030
   },
@@ -15814,6 +17843,7 @@ const pages = [
     "title": "12 Essential Tools for Measuring the Environmental Impact of Your Abrasives",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127084030,
     "createdAt": 1734127084030
   },
@@ -15836,6 +17866,7 @@ const pages = [
     "title": "3 Ways to Optimize Your Steel Grit Process for Better Environmental Compliance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127084030,
     "createdAt": 1734127084030
   },
@@ -15858,6 +17889,7 @@ const pages = [
     "title": "4 Indicators of Sustainable Manufacturing Practices in Valve Production",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127084030,
     "createdAt": 1734127084030
   },
@@ -15880,6 +17912,7 @@ const pages = [
     "title": "5 Best Practices for Reducing Environmental Footprint When Using Steel Grit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127084030,
     "createdAt": 1734127084030
   },
@@ -15902,6 +17935,7 @@ const pages = [
     "title": "6 Myths About the Environmental Effects of Steel Grit in Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127084030,
     "createdAt": 1734127084030
   },
@@ -15924,6 +17958,7 @@ const pages = [
     "title": "7 Environmental Impact Factors to Consider for Steel Grit Usage",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127084030,
     "createdAt": 1734127084030
   },
@@ -15946,6 +17981,7 @@ const pages = [
     "title": "8 Key Legislation Changes Impacting Steel Grit and Waste Management",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127084030,
     "createdAt": 1734127084030
   },
@@ -15968,6 +18004,7 @@ const pages = [
     "title": "9 Tips for Selecting Eco-Friendly Blasting Media Alternatives to Steel Grit",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127084030,
     "createdAt": 1734127084030
   },
@@ -15990,6 +18027,7 @@ const pages = [
     "title": "10 Best Practices for Operating Equipment with Steel Grit",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16012,6 +18050,7 @@ const pages = [
     "title": "10 Essential Factors for Choosing Your Steel Grit Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16034,6 +18073,7 @@ const pages = [
     "title": "10 Questions to Guide Equipment Selection for Steel Grit Applications",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16056,6 +18096,7 @@ const pages = [
     "title": "11 Tips for Matching Steel Grit to Your Blasting Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16078,6 +18119,7 @@ const pages = [
     "title": "4 Key Variables to Monitor with Steel Grit in Your Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16100,6 +18142,7 @@ const pages = [
     "title": "4 Steps to Assess Your Equipment for Steel Grit Use",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16122,6 +18165,7 @@ const pages = [
     "title": "5 Benefits of Properly Outfitting Equipment for Steel Grit Use",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16144,6 +18188,7 @@ const pages = [
     "title": "5 Calculations to Determine Equipment Suitability for Steel Grit",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16166,6 +18211,7 @@ const pages = [
     "title": "5 Common Equipment Issues Linked to Steel Grit Usage",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16188,6 +18234,7 @@ const pages = [
     "title": "5 Equipment Features That Optimize Steel Grit Performance",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16210,6 +18257,7 @@ const pages = [
     "title": "5 Ways to Ensure Your Equipment Can Handle Steel Grit's Wear and Tear",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16232,6 +18280,7 @@ const pages = [
     "title": "6 Common Misconceptions About Steel Grit and Equipment Selection",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16254,6 +18303,7 @@ const pages = [
     "title": "6 Different Applications of Steel Grit and Their Equipment Requirements",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16276,6 +18326,7 @@ const pages = [
     "title": "7 Emerging Technologies Influencing Steel Grit Equipment,",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16298,6 +18349,7 @@ const pages = [
     "title": "7 Key Compatibility Considerations for Steel Grit in Surface Treatment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16320,6 +18372,7 @@ const pages = [
     "title": "7 Signs Your Equipment Is Incompatible with Steel Grit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16342,6 +18395,7 @@ const pages = [
     "title": "8 Must-Ask Questions When Evaluating Steel Grit Equipment Compatibility",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16364,6 +18418,7 @@ const pages = [
     "title": "8 Ways Steel Grit Can Enhance Your Surface Treatment Equipment's Performance",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16386,6 +18441,7 @@ const pages = [
     "title": "9 Industry Standards for Steel Grit Equipment Compatibility",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16408,6 +18464,7 @@ const pages = [
     "title": "9 Technical Specifications to Review for Steel Grit Compatibility",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127099528,
     "createdAt": 1734127099528
   },
@@ -16430,6 +18487,7 @@ const pages = [
     "title": "10 Common Mistakes in Contamination Control and How to Avoid Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127106517,
     "createdAt": 1734127106517
   },
@@ -16452,6 +18510,7 @@ const pages = [
     "title": "11 Tips for Selecting the Right Abrasives to Minimize Contamination",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127106517,
     "createdAt": 1734127106517
   },
@@ -16474,6 +18533,7 @@ const pages = [
     "title": "4 Effective Maintenance Strategies for Reducing Contamination Risks",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127106517,
     "createdAt": 1734127106517
   },
@@ -16496,6 +18556,7 @@ const pages = [
     "title": "5 Essential Tools for Monitoring Surface Contamination in Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127106517,
     "createdAt": 1734127106517
   },
@@ -16518,6 +18579,7 @@ const pages = [
     "title": "5 Techniques for Inspecting and Testing Abrasives for Cleanliness",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127106517,
     "createdAt": 1734127106517
   },
@@ -16540,6 +18602,7 @@ const pages = [
     "title": "6 Best Practices for Managing Abrasive Contamination in Valve Production",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127106517,
     "createdAt": 1734127106517
   },
@@ -16562,6 +18625,7 @@ const pages = [
     "title": "7 Key Steps to Establish Effective Contamination Control Procedures",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127106517,
     "createdAt": 1734127106517
   },
@@ -16584,6 +18648,7 @@ const pages = [
     "title": "7 Ways to Integrate Contamination Control into Your Quality Assurance Process",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127106517,
     "createdAt": 1734127106517
   },
@@ -16606,6 +18671,7 @@ const pages = [
     "title": "8 Factors to Consider When Developing a Contamination Control Plan",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127106517,
     "createdAt": 1734127106517
   },
@@ -16628,6 +18694,7 @@ const pages = [
     "title": "9 Ways to Educate Your Team on Contamination Control Procedures",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127106517,
     "createdAt": 1734127106517
   },
@@ -16650,6 +18717,7 @@ const pages = [
     "title": "1 Comprehensive Guide to Identifying Wear Patterns in Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16672,6 +18740,7 @@ const pages = [
     "title": "10 Maintenance Tips to Prevent Equipment Wear in Surface Preparation",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16694,6 +18763,7 @@ const pages = [
     "title": "10 Warning Signs That Your Equipment Needs Immediate Attention",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16716,6 +18786,7 @@ const pages = [
     "title": "11 Myths about Equipment Wear Patterns and Surface Treatments",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16738,6 +18809,7 @@ const pages = [
     "title": "12 Ways Surface Treatment Can Affect Equipment Longevity",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16760,6 +18832,7 @@ const pages = [
     "title": "13 Impactful Changes to Make for Reducing Equipment Abrasion",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16782,6 +18855,7 @@ const pages = [
     "title": "14 Factors That Influence Equipment Lifespan in Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16804,6 +18878,7 @@ const pages = [
     "title": "15 Common Missteps in Managing Surface Treatment Machinery Wear",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16826,6 +18901,7 @@ const pages = [
     "title": "2 Best Practices for Creating a Wear Monitoring Schedule",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16848,6 +18924,7 @@ const pages = [
     "title": "3 Proven Methods for Evaluating Equipment Wear during Inspections",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16870,6 +18947,7 @@ const pages = [
     "title": "4 Critical Areas to Assess for Early Signs of Wear in Blast Rooms",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16892,6 +18970,7 @@ const pages = [
     "title": "5 Key Indicators of Abrasive Wear on Blasting Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16914,6 +18993,7 @@ const pages = [
     "title": "5 Ways to Leverage Technology for Tracking Equipment Wear Patterns",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16936,6 +19016,7 @@ const pages = [
     "title": "6 Common Oversights in Equipment Wear Analysis and How to Avoid Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16958,6 +19039,7 @@ const pages = [
     "title": "6 Essential Tools for Monitoring Equipment Wear Patterns",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -16980,6 +19062,7 @@ const pages = [
     "title": "7 Signs Your Surface Treatment Equipment is Wearing Out",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -17002,6 +19085,7 @@ const pages = [
     "title": "8 Common Equipment Failures Linked to Abrasive Misuse",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -17024,6 +19108,7 @@ const pages = [
     "title": "8 Essential Training Topics for Understanding Equipment Wear Patterns",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -17046,6 +19131,7 @@ const pages = [
     "title": "9 Steps to Analyze Wear Patterns for Optimal Equipment Performance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -17068,6 +19154,7 @@ const pages = [
     "title": "9 Tips to Maximize Equipment Efficiency While Minimizing Wear",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127122533,
     "createdAt": 1734127122533
   },
@@ -17090,6 +19177,7 @@ const pages = [
     "title": "10 Essential Checks for Optimal Grit Storage Conditions",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17112,6 +19200,7 @@ const pages = [
     "title": "10 Questions to Assess Your Grit Storage Readiness",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17134,6 +19223,7 @@ const pages = [
     "title": "10 Ways to Monitor Grit Storage Moisture Levels Effectively",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17156,6 +19246,7 @@ const pages = [
     "title": "11 Cost-Effective Approaches to Improve Grit Storage Efficiency",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17178,6 +19269,7 @@ const pages = [
     "title": "11 Storage Solutions for Maximizing Steel Grit Longevity",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17200,6 +19292,7 @@ const pages = [
     "title": "12 Key Steps to Ensure Proper Grit Condition Before Use",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17222,6 +19315,7 @@ const pages = [
     "title": "3 Industry Standards to Follow for Grit Storage Practices",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17244,6 +19338,7 @@ const pages = [
     "title": "4 Factors to Consider When Designing Grit Storage Facilities",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17266,6 +19361,7 @@ const pages = [
     "title": "5 Common Grit Storage Mistakes and How to Avoid Them",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17288,6 +19384,7 @@ const pages = [
     "title": "5 Reasons to Regularly Audit Your Grit Storage Conditions",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17310,6 +19407,7 @@ const pages = [
     "title": "5 Strategies to Prevent Grit Degradation During Storage",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17332,6 +19430,7 @@ const pages = [
     "title": "5 Techniques for Securing Grit Storage Against Environmental Damage",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17354,6 +19453,7 @@ const pages = [
     "title": "6 Factors Impacting the Shelf Life of Stored Steel Grit",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17376,6 +19476,7 @@ const pages = [
     "title": "6 Ways to Protect Your Steel Grit from Contamination",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17398,6 +19499,7 @@ const pages = [
     "title": "7 Best Practices for Storing Steel Grit Safely",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17420,6 +19522,7 @@ const pages = [
     "title": "7 Myths About Steel Grit Storage Debunked",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17442,6 +19545,7 @@ const pages = [
     "title": "8 Guidelines for Organizing Grit Storage Areas Effectively",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17464,6 +19568,7 @@ const pages = [
     "title": "8 Signs You Need to Upgrade Your Grit Storage Solutions",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17486,6 +19591,7 @@ const pages = [
     "title": "9 Essential Tools for Inspecting Grit Storage Conditions",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17508,6 +19614,7 @@ const pages = [
     "title": "9 Tips for Maintaining the Integrity of Your Grit Supply",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127135852,
     "createdAt": 1734127135852
   },
@@ -17530,6 +19637,7 @@ const pages = [
     "title": "10 Common Misconceptions About Steel Grit and Particle Size Optimization",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127143837,
     "createdAt": 1734127143837
   },
@@ -17552,6 +19660,7 @@ const pages = [
     "title": "11 Signs It's Time to Reassess Your Grit Particle Size Strategy",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127143837,
     "createdAt": 1734127143837
   },
@@ -17574,6 +19683,7 @@ const pages = [
     "title": "12 Industries That Benefit from Optimized Steel Grit Particle Sizing",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127143837,
     "createdAt": 1734127143837
   },
@@ -17596,6 +19706,7 @@ const pages = [
     "title": "3 Techniques for Accurately Measuring Grit Particle Size in the Lab",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127143837,
     "createdAt": 1734127143837
   },
@@ -17618,6 +19729,7 @@ const pages = [
     "title": "4 Considerations for Customizing Grit Sizes in Valve Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127143837,
     "createdAt": 1734127143837
   },
@@ -17640,6 +19752,7 @@ const pages = [
     "title": "5 Key Benefits of Matching Steel Grit Size to Your Equipment Specifications",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127143837,
     "createdAt": 1734127143837
   },
@@ -17662,6 +19775,7 @@ const pages = [
     "title": "6 Ways Particle Size Variability Affects Surface Treatment Outcomes",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127143837,
     "createdAt": 1734127143837
   },
@@ -17684,6 +19798,7 @@ const pages = [
     "title": "7 Factors Influencing the Ideal Steel Grit Particle Size for Industrial Applications",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127143837,
     "createdAt": 1734127143837
   },
@@ -17706,6 +19821,7 @@ const pages = [
     "title": "8 Steps to Finding the Perfect Grit Particle Size for Your Blasting Needs",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127143837,
     "createdAt": 1734127143837
   },
@@ -17728,6 +19844,7 @@ const pages = [
     "title": "9 Tips for Adjusting Steel Grit Sizes Based on Different Material Surfaces",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127143837,
     "createdAt": 1734127143837
   },
@@ -17750,6 +19867,7 @@ const pages = [
     "title": "10 Effective Ways to Track Steel Grit Consumption for Optimal Performance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127144829,
     "createdAt": 1734127144829
   },
@@ -17772,6 +19890,7 @@ const pages = [
     "title": "3 Advanced Techniques for Calculating Grit Consumption in Blasting Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127144829,
     "createdAt": 1734127144829
   },
@@ -17794,6 +19913,7 @@ const pages = [
     "title": "4 Essential Tips for Analyzing Grit Consumption Data Successfully",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127144829,
     "createdAt": 1734127144829
   },
@@ -17816,6 +19936,7 @@ const pages = [
     "title": "5 Innovative Tools to Measure Steel Grit Usage in Your Facility",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127144829,
     "createdAt": 1734127144829
   },
@@ -17838,6 +19959,7 @@ const pages = [
     "title": "5 Metrics Every Valve Manufacturer Should Track for Grit Consumption Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127144829,
     "createdAt": 1734127144829
   },
@@ -17860,6 +19982,7 @@ const pages = [
     "title": "6 Best Practices for Keeping Accurate Records of Grit Usage",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127144829,
     "createdAt": 1734127144829
   },
@@ -17882,6 +20005,7 @@ const pages = [
     "title": "7 Key Indicators of Grit Consumption You Should Monitor Regularly",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127144829,
     "createdAt": 1734127144829
   },
@@ -17904,6 +20028,7 @@ const pages = [
     "title": "7 Ways to Optimize Equipment for Better Grit Consumption Tracking",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127144829,
     "createdAt": 1734127144829
   },
@@ -17926,6 +20051,7 @@ const pages = [
     "title": "8 Common Mistakes to Avoid When Monitoring Grit Consumption Rates",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127144829,
     "createdAt": 1734127144829
   },
@@ -17948,6 +20074,7 @@ const pages = [
     "title": "9 Signs Your Steel Grit Consumption Monitoring Needs an Upgrade",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127144829,
     "createdAt": 1734127144829
   },
@@ -17970,6 +20097,7 @@ const pages = [
     "title": "10 Advantages of Using Automation for Consistent Surface Treatment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -17992,6 +20120,7 @@ const pages = [
     "title": "10 Features to Look for in Automated Blasting Solutions",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18014,6 +20143,7 @@ const pages = [
     "title": "10 Steps to Implement Automation in Your Blasting Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18036,6 +20166,7 @@ const pages = [
     "title": "11 Best Practices for Maintaining Automated Blasting Systems",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18058,6 +20189,7 @@ const pages = [
     "title": "12 Tips for Choosing the Right Automated Blasting Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18080,6 +20212,7 @@ const pages = [
     "title": "3 Future Trends in Blasting Automation to Watch",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18102,6 +20235,7 @@ const pages = [
     "title": "4 Key Factors Influencing the Success of Blasting Automation Projects",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18124,6 +20258,7 @@ const pages = [
     "title": "4 Ways Automation Can Enhance Safety in Blasting Processes",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18146,6 +20281,7 @@ const pages = [
     "title": "5 Innovative Technologies to Streamline Surface Preparation Automation",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18168,6 +20304,7 @@ const pages = [
     "title": "5 Insights from the Industry on Blasting Process Automation",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18190,6 +20327,7 @@ const pages = [
     "title": "5 Steps to Train Staff for a Smooth Transition to Blasting Automation",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18212,6 +20350,7 @@ const pages = [
     "title": "6 Common Pitfalls to Avoid When Automating Blasting Systems",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18234,6 +20373,7 @@ const pages = [
     "title": "6 FAQs About Integrating Automation into Blasting Workflows",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18256,6 +20396,7 @@ const pages = [
     "title": "7 Case Studies of Successful Blasting Automation Implementation",
     "score": 4,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18278,6 +20419,7 @@ const pages = [
     "title": "7 Essential Tools for Automating Your Blasting Process",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18300,6 +20442,7 @@ const pages = [
     "title": "7 Industry Standards to Consider When Automating Blasting Processes",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18322,6 +20465,7 @@ const pages = [
     "title": "8 Benefits of Automating Your Blasting Processes for Valve Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18344,6 +20488,7 @@ const pages = [
     "title": "8 Checklist Items for Planning Your Blasting Automation Strategy",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18366,6 +20511,7 @@ const pages = [
     "title": "8 Ways to Maximize ROI on Your Blasting Automation Investment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18388,6 +20534,7 @@ const pages = [
     "title": "9 Key Metrics for Evaluating Blasting Automation Efficiency",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18410,6 +20557,7 @@ const pages = [
     "title": "9 Myths About Blasting Automation Debunked",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127157466,
     "createdAt": 1734127157466
   },
@@ -18432,6 +20580,7 @@ const pages = [
     "title": "10 Key Indicators That Your Steel Grit Needs Replacing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18454,6 +20603,7 @@ const pages = [
     "title": "10 Tips for Choosing the Right Blast Room for Steel Grit Applications",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18476,6 +20626,7 @@ const pages = [
     "title": "3 Strategies for Reducing Ferrous Contamination in Blasting Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18498,6 +20649,7 @@ const pages = [
     "title": "4 Benefits of Using Steel Grit Over Other Abrasives in Valve Production",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18520,6 +20672,7 @@ const pages = [
     "title": "4 Maintenance Hacks for Your Wheel Blast Equipment When Using Steel Grit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18542,6 +20695,7 @@ const pages = [
     "title": "5 Essential Tips for Optimizing Steel Grit Performance in Valve Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18564,6 +20718,7 @@ const pages = [
     "title": "5 Methods to Calculate Steel Grit Consumption in Your Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18586,6 +20741,7 @@ const pages = [
     "title": "5 Signs of Inefficient Blasting: How to Diagnose and Fix the Issue",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18608,6 +20764,7 @@ const pages = [
     "title": "5 Ways to Assess the Effectiveness of Your Surface Treatment Process",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18630,6 +20787,7 @@ const pages = [
     "title": "6 Best Practices for Monitoring Your Steel Grit Quality Over Time",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18652,6 +20810,7 @@ const pages = [
     "title": "6 Steps to Ensure Safe Handling of Steel Grit in Your Facility",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18674,6 +20833,7 @@ const pages = [
     "title": "6 Ways to Train Staff on Proper Steel Grit Usage for Optimal Results",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18696,6 +20856,7 @@ const pages = [
     "title": "7 Common Misconceptions About Steel Grit in Surface Treatment",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18718,6 +20879,7 @@ const pages = [
     "title": "7 Innovations in Steel Grit Technology That Can Change Your Operations",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18740,6 +20902,7 @@ const pages = [
     "title": "7 Pitfalls to Avoid When Switching to Steel Grit as an Abrasive",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18762,6 +20925,7 @@ const pages = [
     "title": "7 Techniques for Maintaining Consistent Surface Finish with Steel Grit",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18784,6 +20948,7 @@ const pages = [
     "title": "8 Questions to Ask Your Steel Grit Supplier for Better Outcomes",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18806,6 +20971,7 @@ const pages = [
     "title": "8 Ways to Enhance Equipment Longevity When Using Steel Grit",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18828,6 +20994,7 @@ const pages = [
     "title": "9 Critical Factors to Consider When Selecting Steel Grit Sizes",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18850,6 +21017,7 @@ const pages = [
     "title": "9 Industry Standards for Using Steel Grit in Surface Treatment Processes",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169054,
     "createdAt": 1734127169054
   },
@@ -18872,6 +21040,7 @@ const pages = [
     "title": "10 Factors to Consider When Choosing the Right Abrasive Solution for Your Applications",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169435,
     "createdAt": 1734127169435
   },
@@ -18894,6 +21063,7 @@ const pages = [
     "title": "11 Newest Trends in Abrasive Technology You Can't Afford to Ignore",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169435,
     "createdAt": 1734127169435
   },
@@ -18916,6 +21086,7 @@ const pages = [
     "title": "12 Cost-effective Abrasive Media Options for Valve and Equipment Manufacturers",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169435,
     "createdAt": 1734127169435
   },
@@ -18938,6 +21109,7 @@ const pages = [
     "title": "3 Unique Approaches to Abrasive Selection for Oil and Gas Components",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169435,
     "createdAt": 1734127169435
   },
@@ -18960,6 +21132,7 @@ const pages = [
     "title": "4 Key Differences Between Steel Grit and Alternative Abrasives You Should Know",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169435,
     "createdAt": 1734127169435
   },
@@ -18982,6 +21155,7 @@ const pages = [
     "title": "5 Unexpected Benefits of Using Non-Metallic Abrasives in Manufacturing",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169435,
     "createdAt": 1734127169435
   },
@@ -19004,6 +21178,7 @@ const pages = [
     "title": "6 Environmentally-Friendly Abrasives to Enhance Your Cleaning Processes",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169435,
     "createdAt": 1734127169435
   },
@@ -19026,6 +21201,7 @@ const pages = [
     "title": "7 Lesser-Known Abrasive Alternatives to Steel Grit for Surface Treatment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169435,
     "createdAt": 1734127169435
   },
@@ -19048,6 +21224,7 @@ const pages = [
     "title": "8 Comparative Analysis of Steel Grit vs. Alternative Abrasive Media",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169435,
     "createdAt": 1734127169435
   },
@@ -19070,6 +21247,7 @@ const pages = [
     "title": "9 Innovative Abrasive Solutions for Enhanced Surface Quality and Performance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127169435,
     "createdAt": 1734127169435
   },
@@ -19092,6 +21270,7 @@ const pages = [
     "title": "10 Common Safety Hazards in Surface Treatment and How to Mitigate Them",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19114,6 +21293,7 @@ const pages = [
     "title": "10 Essential Elements of a Safety Manual for Abrasive Blasting Teams",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19136,6 +21316,7 @@ const pages = [
     "title": "11 Safety Compliance Metrics Every Equipment Manufacturer Should Track",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19158,6 +21339,7 @@ const pages = [
     "title": "11 Ways to Foster a Safety Culture in Manufacturing Environments",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19180,6 +21362,7 @@ const pages = [
     "title": "12 Safety Compliance Challenges Faced by Valve and Equipment Manufacturers",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19202,6 +21385,7 @@ const pages = [
     "title": "3 Important PPE Requirements for Blast Room Operators",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19224,6 +21408,7 @@ const pages = [
     "title": "3 Innovative Technologies Enhancing Safety in Surface Treatment Facilities",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19246,6 +21431,7 @@ const pages = [
     "title": "4 Tips for Conducting Effective Safety Audits in Abrasive Blasting Operations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19268,6 +21454,7 @@ const pages = [
     "title": "5 Key Components of a Safety Management System in Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19290,6 +21477,7 @@ const pages = [
     "title": "5 Key Regulatory Standards Every Valve Manufacturer Should Know",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19312,6 +21500,7 @@ const pages = [
     "title": "5 Steps for Integrating Safety Compliance into Your Operational Workflow",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19334,6 +21523,7 @@ const pages = [
     "title": "6 Effective Emergency Response Plans for Abrasive Blast Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19356,6 +21546,7 @@ const pages = [
     "title": "6 Steps to Creating a Comprehensive Safety Compliance Checklist for Your Facility",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19378,6 +21569,7 @@ const pages = [
     "title": "7 Challenges in Meeting Environmental Safety Compliance in Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19400,6 +21592,7 @@ const pages = [
     "title": "7 Essential Safety Compliance Measures for Abrasive Blasting Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19422,6 +21615,7 @@ const pages = [
     "title": "7 Tips for Maintaining Compliance with OSHA Regulations in Your Facility",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19444,6 +21638,7 @@ const pages = [
     "title": "8 Critical Aspects of Fire Safety Compliance in Abrasive Blasting Process",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19466,6 +21661,7 @@ const pages = [
     "title": "8 Ways to Ensure Safe Handling of Steel Grit in Manufacturing Processes",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19488,6 +21684,7 @@ const pages = [
     "title": "9 Best Practices for Training Employees on Safety Compliance in Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19510,6 +21707,7 @@ const pages = [
     "title": "9 Safety Compliance Training Programs That Benefit Equipment Manufacturers",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127191621,
     "createdAt": 1734127191621
   },
@@ -19532,6 +21730,7 @@ const pages = [
     "title": "10 Steps to Create an Effective Maintenance Schedule for Your Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19554,6 +21753,7 @@ const pages = [
     "title": "10 Warning Signs Your Maintenance Protocols Need an Overhaul",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19576,6 +21776,7 @@ const pages = [
     "title": "11 Reasons Regular Maintenance Checks Are Essential for Your Equipment",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19598,6 +21799,7 @@ const pages = [
     "title": "12 Components of a Successful Equipment Maintenance Checklist",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19620,6 +21822,7 @@ const pages = [
     "title": "3 Effective Maintenance Management Software Tools for Equipment Manufacturers",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19642,6 +21845,7 @@ const pages = [
     "title": "4 Cost-Saving Techniques for Effective Maintenance Planning",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19664,6 +21868,7 @@ const pages = [
     "title": "4 Types of Inspection Techniques Every Valve Manufacturer Should Know",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19686,6 +21891,7 @@ const pages = [
     "title": "5 Common Maintenance Mistakes That Could Cost Your Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19708,6 +21914,7 @@ const pages = [
     "title": "5 Critical Elements to Include in Your Equipment Maintenance Policy",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19730,6 +21937,7 @@ const pages = [
     "title": "5 Ways to Educate Your Team on Maintenance Best Practices",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19752,6 +21960,7 @@ const pages = [
     "title": "6 Benefits of Implementing a Predictive Maintenance Program",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19774,6 +21983,7 @@ const pages = [
     "title": "6 Key Indicators Your Valves and Pumps Need Maintenance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19796,6 +22006,7 @@ const pages = [
     "title": "6 Signs Your Maintenance Strategy Needs a Refresh",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19818,6 +22029,7 @@ const pages = [
     "title": "7 Essential Maintenance Tools for Valve and Equipment Manufacturers",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19840,6 +22052,7 @@ const pages = [
     "title": "7 Myths About Equipment Maintenance That Could Hurt Your Operations",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19862,6 +22075,7 @@ const pages = [
     "title": "7 Strategies for Reducing Downtime Through Better Maintenance",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19884,6 +22098,7 @@ const pages = [
     "title": "8 Industry Standards for Maintenance and Safety Compliance",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19906,6 +22121,7 @@ const pages = [
     "title": "8 Tips for Keeping Your Blasting Equipment in Top Condition",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19928,6 +22144,7 @@ const pages = [
     "title": "9 Best Practices for Conducting Routine Maintenance Checks",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19950,6 +22167,7 @@ const pages = [
     "title": "9 Metrics You Should Track to Improve Maintenance Efficiency",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127201621,
     "createdAt": 1734127201621
   },
@@ -19972,6 +22190,7 @@ const pages = [
     "title": "1 Comprehensive Checklist for Steel Grit Training Sessions",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -19994,6 +22213,7 @@ const pages = [
     "title": "10 Essential Steps for Training Staff on Steel Grit Usage",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20016,6 +22236,7 @@ const pages = [
     "title": "11 Key Features to Include in Your Steel Grit User Manual",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20038,6 +22259,7 @@ const pages = [
     "title": "12 Frequently Overlooked Aspects of Steel Grit Safety Training",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20060,6 +22282,7 @@ const pages = [
     "title": "13 Tools and Resources to Aid in Staff Training for Abrasive Materials",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20082,6 +22305,7 @@ const pages = [
     "title": "14 Tips for Assessing Staff Competency in Steel Grit Use",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20104,6 +22328,7 @@ const pages = [
     "title": "15 FAQs About Steel Grit Training and Usage",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20126,6 +22351,7 @@ const pages = [
     "title": "16 Essential Onboarding Resources for New Employees in Blasting Operations",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20148,6 +22374,7 @@ const pages = [
     "title": "17 Inexpensive Solutions for Training Staff in Abrasive Techniques",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20170,6 +22397,7 @@ const pages = [
     "title": "18 Ways to Measure the Effectiveness of Your Steel Grit Training",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20192,6 +22420,7 @@ const pages = [
     "title": "19 Strategies to Foster a Culture of Safety During Steel Grit Training",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20214,6 +22443,7 @@ const pages = [
     "title": "2 Steps to Personalize Steel Grit Training for Your Team",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20236,6 +22466,7 @@ const pages = [
     "title": "20 Creative Approaches to Engage Teams in Steel Grit Training",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20258,6 +22489,7 @@ const pages = [
     "title": "3 Guidelines for Implementing a Steel Grit Training Program",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20280,6 +22512,7 @@ const pages = [
     "title": "4 Innovative Training Methods for Metal Abrasive Technology",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20302,6 +22535,7 @@ const pages = [
     "title": "5 Must-Know Safety Protocols for Steel Grit Handling",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20324,6 +22558,7 @@ const pages = [
     "title": "6 Ways to Enhance Training Efficiency for Surface Treatment Processes",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20346,6 +22581,7 @@ const pages = [
     "title": "7 Common Mistakes to Avoid When Training on Metallic Abrasives",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20368,6 +22604,7 @@ const pages = [
     "title": "8 Best Practices for Maintaining Equipment During Steel Grit Blasting",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20390,6 +22627,7 @@ const pages = [
     "title": "9 Practical Tips for Conducting Effective Staff Training Sessions",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127215844,
     "createdAt": 1734127215844
   },
@@ -20412,6 +22650,7 @@ const pages = [
     "title": "10 Ways to Compare Steel Grit vs. Other Abrasives for Cost Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127219789,
     "createdAt": 1734127219789
   },
@@ -20434,6 +22673,7 @@ const pages = [
     "title": "11 Ways Steel Grit Can Save Your Operations Money Over Time",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127219789,
     "createdAt": 1734127219789
   },
@@ -20456,6 +22696,7 @@ const pages = [
     "title": "12 Best Practices for Managing Grit Expenses in Valve Manufacturing",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127219789,
     "createdAt": 1734127219789
   },
@@ -20478,6 +22719,7 @@ const pages = [
     "title": "3 Essential Comparisons: Steel Grit vs. Other Media in Terms of ROI",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127219789,
     "createdAt": 1734127219789
   },
@@ -20500,6 +22742,7 @@ const pages = [
     "title": "4 Hidden Costs of Using Low-Quality Grit That Impact Your Bottom Line",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127219789,
     "createdAt": 1734127219789
   },
@@ -20522,6 +22765,7 @@ const pages = [
     "title": "5 Key Metrics to Analyze Grit Expense for Manufacturing Efficiency",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127219789,
     "createdAt": 1734127219789
   },
@@ -20544,6 +22788,7 @@ const pages = [
     "title": "6 Steps to Calculate the Total Cost of Ownership for Steel Grit",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127219789,
     "createdAt": 1734127219789
   },
@@ -20566,6 +22811,7 @@ const pages = [
     "title": "7 Factors to Consider When Choosing Cost-Effective Steel Grit",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127219789,
     "createdAt": 1734127219789
   },
@@ -20588,6 +22834,7 @@ const pages = [
     "title": "8 Myths About Steel Grit Costs Debunked",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127219789,
     "createdAt": 1734127219789
   },
@@ -20610,6 +22857,7 @@ const pages = [
     "title": "9 Tips for Optimizing Your Steel Grit Budget",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127219789,
     "createdAt": 1734127219789
   },
@@ -20632,6 +22880,7 @@ const pages = [
     "title": "10 Essential Safety Protocols for Blast Rooms",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127226610,
     "createdAt": 1734127226610
   },
@@ -20654,6 +22903,7 @@ const pages = [
     "title": "10 Insights on Steel Grit Usage and Safety Concerns",
     "score": 2,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127226610,
     "createdAt": 1734127226610
   },
@@ -20676,6 +22926,7 @@ const pages = [
     "title": "10 Techniques for Effective Risk Assessment in Blast Rooms",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127226610,
     "createdAt": 1734127226610
   },
@@ -20698,6 +22949,7 @@ const pages = [
     "title": "11 Tips for Designing a Hazard-Free Blast Room Layout",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127226610,
     "createdAt": 1734127226610
   },
@@ -20720,6 +22972,7 @@ const pages = [
     "title": "12 Signs Your Blast Room Needs a Safety Upgrade",
     "score": 1,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127226610,
     "createdAt": 1734127226610
   },
@@ -20742,1262 +22995,9 @@ const pages = [
     "title": "3 Regulations Every Blast Room Operator Should Know",
     "score": 3,
     "isPublished": false,
+    "hasContent": false,
     "updatedAt": 1734127226610,
     "createdAt": 1734127226610
-  },
-  {
-    "uuid": "d268869d-fdbb-4232-8ded-d3de1e250e7d",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "4 Crucial Training Practices for Ensuring Blast Room Safety",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127226610,
-    "createdAt": 1734127226610
-  },
-  {
-    "uuid": "7a195789-7e7e-4bb3-bb53-86c387521f6d",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "4 Innovations in Blast Room Safety Technology",
-    "score": 3,
-    "isPublished": false,
-    "updatedAt": 1734127226610,
-    "createdAt": 1734127226610
-  },
-  {
-    "uuid": "97312c18-ce68-4c1e-ad07-b58e2170589f",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "5 Best Practices for Handling Steel Grit Safely in Blast Rooms",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127226610,
-    "createdAt": 1734127226610
-  },
-  {
-    "uuid": "32fa7367-d677-419b-aaee-61443e52d087",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "5 Common Hazards in Blast Rooms and How to Mitigate Them",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127226610,
-    "createdAt": 1734127226610
-  },
-  {
-    "uuid": "0bb07beb-6c25-4749-a95d-8f0b2c8d2534",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "5 Myths About Blast Room Safety Debunked",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127226610,
-    "createdAt": 1734127226610
-  },
-  {
-    "uuid": "137b95cb-993f-496f-b604-443c7c672045",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "5 Ways to Foster a Safety-First Culture in Your Blast Room Team",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127226610,
-    "createdAt": 1734127226610
-  },
-  {
-    "uuid": "8ea7ffae-9fbb-4915-b8c1-82a630ca2f5a",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "6 Key Components of a Safe Blast Room Environment",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127226610,
-    "createdAt": 1734127226610
-  },
-  {
-    "uuid": "f4f7620e-abcd-4c41-be55-34839eff39a7",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "6 Maintenance Practices That Enhance Blast Room Safety",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127226610,
-    "createdAt": 1734127226610
-  },
-  {
-    "uuid": "5ac027f1-5fbe-4c93-82e8-ca130e940f1b",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Emergency Preparedness Tips for Blast Room Operations",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127226610,
-    "createdAt": 1734127226610
-  },
-  {
-    "uuid": "0ba48007-2d41-409c-ba27-047d53abcadc",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Ways to Optimize Air Quality in Your Blast Room",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127226610,
-    "createdAt": 1734127226610
-  },
-  {
-    "uuid": "1d1a2814-fa59-4daa-9aef-cf5a09fe511a",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "8 Must-Have Safety Equipment for Blast Room Operations",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127226610,
-    "createdAt": 1734127226610
-  },
-  {
-    "uuid": "c86e211a-ad56-46b0-af4a-f6dee9d40f9f",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "8 Steps for Implementing a Blast Room Safety Management System",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127226610,
-    "createdAt": 1734127226610
-  },
-  {
-    "uuid": "eb39bffb-92ef-48f8-bc61-102317822ca2",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "9 Checkpoints for Ensuring Personal Protective Equipment (PPE) Compliance",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127226610,
-    "createdAt": 1734127226610
-  },
-  {
-    "uuid": "50b4adcf-49b3-4446-9e98-d30d719cf772",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "9 Steps to Conduct a Safety Audit in Your Blast Room",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127226610,
-    "createdAt": 1734127226610
-  },
-  {
-    "uuid": "0e2bd391-1565-4f11-bddc-e3444baf0106",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Best Practices for Adjusting Grit Size Based on Material Type",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127226753,
-    "createdAt": 1734127226753
-  },
-  {
-    "uuid": "7b0b11e4-8109-4856-8638-820edb53784b",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "11 Guidelines to Ensure the Right Grit Size for Optimal Performance",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127226753,
-    "createdAt": 1734127226753
-  },
-  {
-    "uuid": "1f7d1ff8-2760-4a69-8517-1be1665f6d8f",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "12 Trade-offs to Consider When Adjusting Grit Size for Specific Tasks",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127226753,
-    "createdAt": 1734127226753
-  },
-  {
-    "uuid": "25f097a7-b18c-4eea-8009-8064db701b80",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "3 Essential Tips for Fine-tuning Grit Size in Industrial Applications",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127226753,
-    "createdAt": 1734127226753
-  },
-  {
-    "uuid": "a28a5a2a-1351-43e5-a4d5-ff88c3bb69ff",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "4 Reasons Why Grit Size Matters for Surface Finish Quality",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127226753,
-    "createdAt": 1734127226753
-  },
-  {
-    "uuid": "24660740-1b6f-4607-b61e-22892f7e0dd8",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "5 Common Mistakes When Choosing Grit Size for Blasting Applications",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127226753,
-    "createdAt": 1734127226753
-  },
-  {
-    "uuid": "429e45e1-00eb-4821-984e-80d816e94929",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "6 Key Factors Influencing Grit Size Adjustment for Pump Durability",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127226753,
-    "createdAt": 1734127226753
-  },
-  {
-    "uuid": "7c117539-8984-4cea-bf5c-e06483fa6b49",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Steps to Selecting the Right Grit Size for Valve Manufacturing",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127226753,
-    "createdAt": 1734127226753
-  },
-  {
-    "uuid": "de6330d6-a362-4217-a33a-03ca79b3dce5",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "8 Strategies for Optimizing Grit Size in Surface Treatment Processes",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127226753,
-    "createdAt": 1734127226753
-  },
-  {
-    "uuid": "af077de0-3c4f-4de1-acc1-a45f0f89a274",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "9 Trade Secrets for Mastering Grit Size Adjustments in Metalwork",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127226753,
-    "createdAt": 1734127226753
-  },
-  {
-    "uuid": "73fb3c80-5963-4668-bba1-0b6d1c606f96",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Essential Tools for Accurate Pressure Calibration in Valve Production",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127230287,
-    "createdAt": 1734127230287
-  },
-  {
-    "uuid": "cb8e8cc8-6c53-4ce6-b832-9412cf0391e3",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "11 Ways to Enhance Pressure Calibration Accuracy for Oil and Gas Equipment",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127230287,
-    "createdAt": 1734127230287
-  },
-  {
-    "uuid": "ce15c7f7-4f87-4a3a-b0cb-3723621fdf29",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "3 Proven Strategies for Streamlining Pressure Calibration Processes in Your Facility",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127230287,
-    "createdAt": 1734127230287
-  },
-  {
-    "uuid": "07e3140e-9fdf-4391-b076-2527bc425b7a",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "4 Innovative Technologies Transforming Pressure Calibration in Valve Manufacturing",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127230287,
-    "createdAt": 1734127230287
-  },
-  {
-    "uuid": "c396af5c-b2da-4391-bfe2-49044ac42468",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "5 Best Practices for Maintaining Consistent Pressure Settings During Equipment Testing",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127230287,
-    "createdAt": 1734127230287
-  },
-  {
-    "uuid": "7ef7e575-5a3d-4cdd-bc3d-443ffd4ab666",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "5 Reasons Your Pressure Calibration Could Be Failing and How to Fix It",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127230287,
-    "createdAt": 1734127230287
-  },
-  {
-    "uuid": "f419ea2c-8e1c-4810-b2b5-a4abc8787155",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "6 Key Factors Influencing Accurate Pressure Calibration in Precision Component Production",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127230287,
-    "createdAt": 1734127230287
-  },
-  {
-    "uuid": "146fc2c0-c18e-40b1-b78d-f995defb8331",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Steps to Perfectly Calibrate Pressure Settings in Your Manufacturing Process",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127230287,
-    "createdAt": 1734127230287
-  },
-  {
-    "uuid": "785eb379-3a9d-4293-874c-ffc617cf59cd",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "8 Common Mistakes to Avoid When Calibrating Pressure in Manufacturing",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127230287,
-    "createdAt": 1734127230287
-  },
-  {
-    "uuid": "98f2ef2f-bc00-4caa-a72f-2b194837e00e",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "9 Techniques to Improve Pressure Setting Accuracy in High-Stakes Environments",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127230287,
-    "createdAt": 1734127230287
-  },
-  {
-    "uuid": "561f0142-83ed-4aab-b0bf-5a3f37c22375",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Key Metrics to Evaluate for Operator Feedback in Surface Treatment",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127245304,
-    "createdAt": 1734127245304
-  },
-  {
-    "uuid": "defc11ab-9ee6-43df-9590-c48cd6966070",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "11 Questions to Ask Operators for Meaningful Insights on Surface Treatment",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127245304,
-    "createdAt": 1734127245304
-  },
-  {
-    "uuid": "39f334ab-1952-41cc-8cf6-21925a86e775",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "12 Techniques for Documenting Operator Feedback for Continuous Improvement",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127245304,
-    "createdAt": 1734127245304
-  },
-  {
-    "uuid": "cabc55d6-5acf-4bdf-9910-572acd2c951a",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "3 Benefits of Regular Operator Feedback in Enhancing Steel Grit Performance",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127245304,
-    "createdAt": 1734127245304
-  },
-  {
-    "uuid": "ea86628b-5662-4376-bc40-4a14cde3bb87",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "4 Strategies for Engaging Operators to Share Performance Feedback",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127245304,
-    "createdAt": 1734127245304
-  },
-  {
-    "uuid": "cbe1c7de-9125-4f2d-8a41-dc98ec6098be",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "5 Tips for Effectively Collecting Operator Feedback on Abrasive Performance",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127245304,
-    "createdAt": 1734127245304
-  },
-  {
-    "uuid": "331e0385-7631-4e6a-84d7-318fdba660f0",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "6 Innovative Tools for Gathering Operator Insights on Steel Grit Usage",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127245304,
-    "createdAt": 1734127245304
-  },
-  {
-    "uuid": "d1854fd2-d41c-40ec-8a51-c956a39ef678",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Best Practices for Creating Operator Feedback Surveys in Valve Manufacturing",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127245304,
-    "createdAt": 1734127245304
-  },
-  {
-    "uuid": "1b0555b4-4358-4ca0-b81a-122967aebef3",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "8 Ways to Analyze Operator Feedback to Improve Your Abrasive Blast Processes",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127245304,
-    "createdAt": 1734127245304
-  },
-  {
-    "uuid": "41cfc642-0cac-4b82-9cf2-58fbb0bb3e44",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "9 Common Mistakes in Collecting Operator Feedback and How to Avoid Them",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127245304,
-    "createdAt": 1734127245304
-  },
-  {
-    "uuid": "0631000f-f70e-4793-aafe-5729e99099dc",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Common Mistakes in Grit Consumption Audits and How to Avoid Them",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127249069,
-    "createdAt": 1734127249069
-  },
-  {
-    "uuid": "23911aa6-0360-41bb-9f34-ae204943226f",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "12 Ways to Enhance Surface Finishing with Optimal Grit Use",
-    "score": 3,
-    "isPublished": false,
-    "updatedAt": 1734127249069,
-    "createdAt": 1734127249069
-  },
-  {
-    "uuid": "596019b1-b6bb-4f4e-9a83-2e4827619910",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "3 Effective Strategies to Analyze Grit Consumption Patterns",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127249069,
-    "createdAt": 1734127249069
-  },
-  {
-    "uuid": "3107f077-4441-4a62-bd14-459df64151ab",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "4 Critical Factors Impacting Your Steel Grit Usage Rates",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127249069,
-    "createdAt": 1734127249069
-  },
-  {
-    "uuid": "6f3b6d73-11df-493e-9e43-3fcf0739ca1d",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "5 Benefits of Conducting Regular Grit Consumption Audits",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127249069,
-    "createdAt": 1734127249069
-  },
-  {
-    "uuid": "d6290bbe-b3db-4e37-9a77-cebf59bb79e5",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "5 Steps to Optimize Your Grit Usage in Surface Treatments",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127249069,
-    "createdAt": 1734127249069
-  },
-  {
-    "uuid": "39e6a598-1470-4dbc-9a6d-291b47b3dde1",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "6 Essential Tools for Conducting Grit Consumption Audits",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127249069,
-    "createdAt": 1734127249069
-  },
-  {
-    "uuid": "9de2cdd6-02a2-4abf-9b73-f5525506534d",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "7 Key Metrics to Measure Grit Consumption Effectively",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127249069,
-    "createdAt": 1734127249069
-  },
-  {
-    "uuid": "fb386dca-85a5-404a-a0f5-a1ab37ce3a04",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "8 Ways to Reduce Grit Waste in Valve Manufacturing",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127249069,
-    "createdAt": 1734127249069
-  },
-  {
-    "uuid": "713401de-380b-496f-9756-228ef4117d59",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "9 Best Practices for Tracking Grit Consumption Over Time",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127249069,
-    "createdAt": 1734127249069
-  },
-  {
-    "uuid": "69196dbb-13a6-4fe8-9de5-d9bd1d9010f5",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "10 Key Factors to Consider When Configuring Your Blasting Equipment for Steel Grit",
-    "score": 1,
-    "isPublished": false,
-    "updatedAt": 1734127260875,
-    "createdAt": 1734127260875
-  },
-  {
-    "uuid": "4bce54e4-cb83-401a-a8fd-ac5a42328751",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "11 Best Practices for Mixing Steel Grit with Other Abrasives in Your Blasting Process",
-    "score": 3,
-    "isPublished": false,
-    "updatedAt": 1734127260875,
-    "createdAt": 1734127260875
-  },
-  {
-    "uuid": "2d6d9d75-1660-4c1b-8999-825d3951e0ea",
-    "language": "en",
-    "category": null,
-    "subcategory": {
-      "uuid": "9bc77309-d031-461d-b867-fcd8b0e31159",
-      "name": "Blast Media",
-      "description": "Blast media can be defined as any abrasive that cleans, removes, finishes, or prepares a surface. The media is propelled with the use of compressed air or via centrifugal force by a bladed wheel. The media impacts the surface to be finished to erode any unwanted materials, to prepare a surface for a coating to be applied, or to provide a desired surface finish. Blast media is often referred to, incorrectly, as “sandblasting media”. Silica sand should never be used in blasting processes. Learn more about the dangers of working or blasting with silica sand on OSHA's website.",
-      "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-      "parentUuid": "8bc4fad6-4cb4-4b4a-b421-3ccbf283708d",
-      "createdAt": 1734103185976
-    },
-    "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
-    "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
-    "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
-    "title": "12 Maintenance Tips for Ensuring Optimal Performance of Steel Grit Blasting Equipment",
-    "score": 2,
-    "isPublished": false,
-    "updatedAt": 1734127260875,
-    "createdAt": 1734127260875
   }
 ]
 export default pages

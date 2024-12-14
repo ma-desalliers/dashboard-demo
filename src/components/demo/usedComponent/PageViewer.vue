@@ -47,7 +47,7 @@
         <div class="keywords-analysis q-pa-md">
           <!-- Header with title and search info -->
           <div class="row items-center q-mb-lg">
-            <div class="text-h5 q-mr-md">{{ pageData.title }}</div>
+            <div class="c-section-title q-mr-md">{{ pageData.title }}</div>
             <div class="text-subtitle1 text-grey-8">
               {{ pageData.searches }} searches • <a href="#" class="text-primary">/{{ pageData.slug }}</a>
             </div>
@@ -59,25 +59,49 @@
               <div class="country-list">
                 <div class="row items-center q-mb-sm">
                   <q-avatar size="20px">
-                    <q-icon name="fa fa-flag" alt="France" />
+                    <span class="fi fi-us" alt="usa" ></span>  
                   </q-avatar>
-                  <div class="q-ml-sm">France</div>
+                  <div class="q-ml-sm country-name" style="min-width:100px">USA
+                    <q-linear-progress
+                      :value="0.27"
+                      size="xs"
+                      color="blue"
+                      track-color="grey1"
+                      class="progress-bar"
+                    />
+                  </div>
                   <div class="q-ml-auto">5.5K</div>
                   <div class="text-grey-6 q-ml-sm">27%</div>
                 </div>
                 <div class="row items-center q-mb-sm">
                   <q-avatar size="20px">
-                    <q-icon name="fa fa-flag" alt="Russian Federation" />
+                    <span class="fi fi-ca" alt="canada" ></span>  
                   </q-avatar>
-                  <div class="q-ml-sm">Russian Fed.</div>
+                  <div class="q-ml-sm country-name">Canada
+                    <q-linear-progress
+                      :value="0.14"
+                      size="xs"
+                      color="blue"
+                      track-color="grey1"
+                      class="progress-bar"
+                    />
+                  </div>
                   <div class="q-ml-auto">2.8K</div>
                   <div class="text-grey-6 q-ml-sm">14%</div>
                 </div>
                 <div class="row items-center">
                   <q-avatar size="20px">
-                    <q-icon name="fa fa-flag" alt="Korea" />
+                    <span class="fi fi-fr" alt="France" ></span>  
                   </q-avatar>
-                  <div class="q-ml-sm">Korea</div>
+                  <div class="q-ml-sm country-name">France
+                    <q-linear-progress
+                      :value="0.01"
+                      size="xs"
+                      color="blue"
+                      track-color="grey1"
+                      class="progress-bar"
+                    />
+                  </div>
                   <div class="q-ml-auto">1.7K</div>
                   <div class="text-grey-6 q-ml-sm">8%</div>
                 </div>
@@ -422,12 +446,6 @@ const pageData = reactive({
       icon: "https://www.google.com/s2/favicons?domain=semrush.com",
       path: "/blog/what-is-seo/",
       url: "https://semrush.com/blog/what-is-seo/"
-    },
-    {
-      domain: "techtarget.com",
-      icon: "https://www.google.com/s2/favicons?domain=techtarget.com",
-      path: "/whatis/definition/search-engine-optimization-SEO",
-      url: "https://www.techtarget.com/whatis/definition/search-engine-optimization-SEO"
     }
   ]
 })
@@ -455,7 +473,7 @@ const getTagColor = (tag: string) => {
 const showLoader = (page: any) => {
   isLoading.value = true
   console.log('showing loader')
-  iframeLink.value = `https://ai.cameleonmedia.com/content/${page.uuid}`
+  iframeLink.value = `https://ai.cameleonmedia.com/page/${page.uuid}`
 
   window.setTimeout(() => {
     isLoading.value = false
@@ -560,5 +578,9 @@ watch(activeTab, (newValue) => {
     background-color: white;
     padding: 0 16px;
   }
+}
+
+.country-name{
+  min-width:100px;
 }
 </style>

@@ -6,7 +6,15 @@
                 <div class="text-caption">RS</div>
               </q-item-section>
               <q-item-section>
-                <div class="text-caption c-text-truncate">Title</div>
+                <div class="text-caption c-text-truncate">Title
+                  <i class="fa fa-sort clickable-icon" 
+                    :class="{
+                      'fa-sort-up': sortDirection === 'asc',
+                      'fa-sort-down': sortDirection === 'desc',
+                      'fa-sort': sortDirection === null
+                    }"
+                    @click="orderByTitle()"></i>
+                </div>
               </q-item-section>
               <q-item-section side style="width: 200px; text-align: center">
                 <div class="text-caption">Visitors</div>
@@ -19,7 +27,7 @@
             <!-- Content Items -->
             <q-item v-for="page in filteredPages" :key="page.uuid" class="c-list-row clickable q-pa-md" :class="{'c-bg-primary-lighten':page.uuid == selectedPage.uuid}">
               <q-item-section side style="width: 48px"  @click="selectPage(page)">
-               <ScoreDisplay :score="page.score" size="24px" />
+                <ScoreDisplay :score="page.score" size="24px" />
               </q-item-section>
               
               <q-item-section class="clickable"  @click="selectPage(page)"  >
@@ -46,36 +54,83 @@
     
 </template>
 <script lang="ts" setup>
-
-import pages from '~/src/repository/pages';
+import { ref, computed } from 'vue'
+import pages from '~/src/repository/pages'
 
 const props = defineProps<{
-    modelValue?:any,
-    productFilter:Array<any>,
-    audienceFilter:Array<any>,
-    hideHeader?:Boolean
+    modelValue?: any,
+    productFilter: Array<any>,
+    audienceFilter: Array<any>,
+    hideHeader?: Boolean
 }>()
 
 const emit = defineEmits(['update:modelValue'])
-const selectedPage = computed({get:()=>{ return props.modelValue }, set:(value)=>{ emit('update:modelValue', value)}})
 
-const filteredPages = computed(() =>{
+// Add sort state
+const sortDirection = ref<'asc' | 'desc' | null>(null)
 
-return pages.filter(page =>{
-   if(props.productFilter.length){
-
-     if(props.audienceFilter.length){
-       return props.productFilter.includes(page.productUuid) && props.audienceFilter.includes(page.personaUuid)
-     }
-     return props.productFilter.includes(page.productUuid)
-   }
-   return true
-})
+const selectedPage = computed({
+    get: () => props.modelValue,
+    set: (value) => emit('update:modelValue', value)
 })
 
+const filteredPages = computed(() => {
+    let filtered = pages.filter(page => {
+        if (props.productFilter.length) {
+            if (props.audienceFilter.length) {
+                return props.productFilter.includes(page.productUuid) && 
+                       props.audienceFilter.includes(page.personaUuid)
+            }
+            return props.productFilter.includes(page.productUuid)
+        }
+        return true
+    })
 
-const selectPage = (page : any)=>{
+    // Apply sorting if direction is set
+    if (sortDirection.value) {
+        filtered = [...filtered].sort((a, b) => {
+            const titleA = (a.title || '').toLowerCase()
+            const titleB = (b.title || '').toLowerCase()
+            
+            if (sortDirection.value === 'asc') {
+                return titleA.localeCompare(titleB)
+            } else {
+                return titleB.localeCompare(titleA)
+            }
+        })
+    }
+
+    return filtered
+})
+
+const selectPage = (page: any) => {
     selectedPage.value = page
 }
 
-</script>  
+const orderByTitle = () => {
+    // Cycle through sort states: null -> asc -> desc -> null
+    if (sortDirection.value === null) {
+        sortDirection.value = 'asc'
+    } else if (sortDirection.value === 'asc') {
+        sortDirection.value = 'desc'
+    } else {
+        sortDirection.value = null
+    }
+}
+</script>
+
+<style scoped>
+.clickable-icon {
+    cursor: pointer;
+    margin-left: 4px;
+    transition: color 0.3s ease;
+}
+
+.clickable-icon:hover {
+    color: var(--q-primary);
+}
+
+.fa-sort-up, .fa-sort-down {
+    color: var(--q-primary);
+}
+</style>

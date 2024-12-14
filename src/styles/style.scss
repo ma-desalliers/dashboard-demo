@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
+
 $primary   : #55B948;
 $secondary : #26A69A;
 $accent    : #1976D2;
@@ -49,6 +50,11 @@ body {
 .c-box-title{
   font-size: 1.1rem;
   color:#666666;
+}
+
+.c-section-title{
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .c-box-subtitle{
@@ -227,10 +233,17 @@ body {
   &:hover{
     background-color: color-mix(in srgb,var(--q-green) 25%, #ffffff 90%) !important;
   }
+
+  .q-focus-helper{
+    display: none;
+  }
 }
 .bg-blue-hover{
   &:hover{
     background-color: #e3f2fd !important
+  }
+  .q-focus-helper{
+    display: none;
   }
 }
 
@@ -238,11 +251,17 @@ body {
   &:hover{
     background-color: #f3e5f5 !important;
   }
+  .q-focus-helper{
+    display: none;
+  }
 }
 
 .bg-yellow-hover{
   &:hover{
     background-color: #fffde7 !important;
+  }
+  .q-focus-helper{
+    display: none;
   }
 }
 

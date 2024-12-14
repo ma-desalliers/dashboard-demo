@@ -9,7 +9,7 @@
     expand-separator
     >
     <template #header>
-      <q-item-section side style="width: 80px" class="q-mr-md">
+      <q-item-section side style="width: 40px" class="q-mr-md">
         <img :src="product.image || '' " alt="Product Image" class="c-list-product-picture"/>
       </q-item-section>
       
@@ -23,9 +23,9 @@
       </q-item-section>
       
       <SelectedElementIndicator 
-      :rounded="false" 
-      color="bg-primary" 
-      :show="selectedProduct?.uuid === product.uuid"
+        :rounded="false" 
+        color="bg-primary" 
+        :show="selectedProduct?.uuid === product.uuid"
       />
     </template>
     

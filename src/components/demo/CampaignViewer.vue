@@ -102,7 +102,7 @@ const productFilter = ref<string[]>([])
 const audienceFilter = ref<string[]>([])
 const mainDisplayStore = useMainDisplayStore()
 const { main} = storeToRefs(mainDisplayStore)
-const listView = ref('pages')
+const listView = ref('products')
 
 
 const currentPage = ref(1)

@@ -31,6 +31,11 @@ body {
   color: #666666;
 }
 
+.c-section-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .c-box-subtitle {
   font-size: 1.05rem;
   color: #666666;
@@ -193,16 +198,32 @@ body {
   background-color: color-mix(in srgb, var(--q-green) 25%, #ffffff 90%) !important;
 }
 
+.bg-green-hover .q-focus-helper {
+  display: none;
+}
+
 .bg-blue-hover:hover {
   background-color: #e3f2fd !important;
+}
+
+.bg-blue-hover .q-focus-helper {
+  display: none;
 }
 
 .bg-purple-hover:hover {
   background-color: #f3e5f5 !important;
 }
 
+.bg-purple-hover .q-focus-helper {
+  display: none;
+}
+
 .bg-yellow-hover:hover {
   background-color: #fffde7 !important;
+}
+
+.bg-yellow-hover .q-focus-helper {
+  display: none;
 }
 
 /* Webkit browsers (Chrome, Safari, newer versions of Opera) */

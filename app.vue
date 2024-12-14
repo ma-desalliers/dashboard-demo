@@ -30,4 +30,5 @@ onMounted(() => {
 
 <style lang="scss">
 @import url('src/styles/style.css');
+@import "/node_modules/flag-icons/css/flag-icons.min.css";
 </style>

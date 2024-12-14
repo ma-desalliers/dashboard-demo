@@ -6,12 +6,54 @@
         <img :src="company.logo" alt="Company logo">
 
       </q-avatar>
-      <div v-if="company.logoType == 'svg'" style="height:25px; width:25px" class="q-mr-sm">
-        <div v-html="company.logo"></div>
-      </div>
-      <div class="c-company-name">{{ company.name }}</div>
-    <!--  <q-icon name="expand_more" size="sm" class="q-ml-xs" />-->
+      <div  name="expand_more"  class="row items-center cursor-pointer">
+    <!-- Current company display -->
+    <div v-if="company.logoType == 'svg'" style="height:25px; width:25px" class="q-mr-sm">
+      <div v-html="company.logo"></div>
     </div>
+    <div class="c-company-name">{{ company.name }}</div>
+    
+    <!-- Menu trigger icon with menu -->
+    <q-icon 
+      name="expand_more" 
+      size="sm" 
+      class="q-ml-xs cursor-pointer"
+    >
+
+    </q-icon>
+    <q-menu
+        transition-show="jump-down"
+        transition-hide="jump-up"
+        class="company-menu"
+      >
+        <q-list style="min-width: 200px">
+          <q-item 
+            v-for="item in company.subCompany" 
+            :key="item.name"
+            clickable
+            v-close-popup
+          >
+            <q-item-section avatar v-if="item.logoType === 'svg'" style="max-width: 40px">
+              <div style="height:25px; width:25px">
+                <div v-html="item.logo"></div>
+              </div>
+            </q-item-section>
+            <q-item-section v-else  style="max-width: 40px">
+              <q-avatar rounded size="24px" class="q-mr-sm">
+                <img :src="item.logo" alt="Company logo">
+
+              </q-avatar>
+            </q-item-section>
+            
+            <q-item-section>
+              <q-item-label>{{ item.name }}</q-item-label>
+            </q-item-section>
+
+          </q-item>
+        </q-list>
+      </q-menu>
+  </div>
+  </div>  
 
     <!-- Growth Plan Section
     <div class="row items-center q-mb-md cursor-pointer">
