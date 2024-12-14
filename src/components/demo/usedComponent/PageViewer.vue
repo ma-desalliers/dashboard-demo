@@ -1,28 +1,28 @@
 <template>
   <div class="tabbed-viewer c-pl-32">
     <div class="content-info">
-      <div class="text-subtitle2 ">{{ page.title }}</div>
-      <div class="text-caption text-grey-7">
+      <div class="c-section-title">{{ page.title }}</div>
+      <div class="c-font-16 text-grey">
         Blog post • {{ [''].join(' • ') || 'Minimize Waste' }}
       </div>
     </div>
     <q-tabs
+      align="left"
       v-model="activeTab"
-      class="text-grey row justift-start"
+      class="text-grey q-tabs__content--align-left"
       active-color="primary"
       indicator-color="primary"
-      a dense
-        align="justify"
+      dense
     >
-      <q-tab name="preview" label="Content" />
-      <q-tab name="details" label="Campaign" />
-      <q-tab name="keywords" label="Seo" />
+      <q-tab name="preview" label="Content" class="c-tab-padding" style="flex:unset" />
+      <q-tab name="details" label="Campaign" class="c-tab-padding q-mx-md" style="flex:unset" />
+      <q-tab name="keywords" label="Seo" class="c-tab-padding" style="flex:unset" />
     </q-tabs>
 
-    <q-tab-panels v-model="activeTab" :class="{'c-scroll': activeTab == 'keywords'}" >
+    <q-tab-panels v-model="activeTab" :class="{'c-scroll': activeTab == 'keywords'}"  >
       <!-- Preview Panel -->
       <q-tab-panel name="preview">
-        <div v-show="!isLoading" class="iframe-container">
+        <div class="iframe-container">
           <iframe
             :src="iframeLink"
             title="content"
@@ -32,14 +32,14 @@
           ></iframe>
         </div>
 
-        <div v-show="isLoading" class="c-loader-container column justify-center items-center">
+        <div v-show="isLoading" class="c-loader-container">
           <Loader color="#55B948" size="75px"></Loader>
         </div>
       </q-tab-panel>
 
       <!-- Details Panel -->
       <q-tab-panel name="details">
-        <div class="text-h6">Hello from Details Panel</div>
+        <div class="c-section-title">Campaign information coming soon ! </div>
       </q-tab-panel>
 
       <!-- Keywords Panel -->
@@ -55,13 +55,13 @@
 
           <!-- Country Distribution -->
           <div class="row q-mb-lg">
-            <div class="col-12 col-md-5 c-border-right q-pr-md">
+            <div class="col-12 col-md-5 c-border-right q-pr-sm">
               <div class="country-list">
-                <div class="row items-center q-mb-sm">
+                <div class="row items-center q-mb-sm" style="min-width: 195px;">
                   <q-avatar size="20px">
                     <span class="fi fi-us" alt="usa" ></span>  
                   </q-avatar>
-                  <div class="q-ml-sm country-name" style="min-width:100px">USA
+                  <div class="q-ml-sm country-name">USA
                     <q-linear-progress
                       :value="0.27"
                       size="xs"
@@ -70,10 +70,10 @@
                       class="progress-bar"
                     />
                   </div>
-                  <div class="q-ml-auto">5.5K</div>
-                  <div class="text-grey-6 q-ml-sm">27%</div>
+                  <div class="q-ml-auto" style="min-width:30px">5.5K</div>
+                  <div class="text-grey-6 text-right" style="min-width:30px">27%</div>
                 </div>
-                <div class="row items-center q-mb-sm">
+                <div class="row items-center q-pt-xs q-mb-sm" style="min-width: 195px;">
                   <q-avatar size="20px">
                     <span class="fi fi-ca" alt="canada" ></span>  
                   </q-avatar>
@@ -86,10 +86,10 @@
                       class="progress-bar"
                     />
                   </div>
-                  <div class="q-ml-auto">2.8K</div>
-                  <div class="text-grey-6 q-ml-sm">14%</div>
+                  <div class="q-ml-auto" style="min-width:30px">2.8K</div>
+                  <div class="text-grey-6 text-right" style="min-width:30px">14%</div>
                 </div>
-                <div class="row items-center">
+                <div class="row items-center q-pt-xs" style="min-width: 195px;">
                   <q-avatar size="20px">
                     <span class="fi fi-fr" alt="France" ></span>  
                   </q-avatar>
@@ -102,15 +102,15 @@
                       class="progress-bar"
                     />
                   </div>
-                  <div class="q-ml-auto">1.7K</div>
-                  <div class="text-grey-6 q-ml-sm">8%</div>
+                  <div class="q-ml-auto text-right" style="min-width:30px">1.7K</div>
+                  <div class="text-grey-6 text-right" style="min-width:30px">8%</div>
                 </div>
               </div>
             </div>
 
             <!-- Page Format Info -->
-            <div class="col-12 col-md-7">
-              <div class="format-info q-pl-md">
+            <div class="col-12 col-md-7 ">
+              <div class="format-info q-pl-sm">
                 <div class="row justify-between q-mb-sm">
                   <div class="col-6">Page format <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
                   <div class="col-6">Product category</div>
@@ -134,6 +134,7 @@
           <!-- Keywords Section -->
           <div class="keywords-section q-mb-lg">
             <q-expansion-item
+              default-opened
               group="keywords"
               icon="search"
               :label="`${keywords.length} keywords`"
@@ -164,24 +165,23 @@
                         <q-tr :props="props">
                           <q-td key="keyword" :props="props">
                             {{ props.row.keyword }}
-                            <q-badge v-if="props.row.tag" color="grey-8" class="q-ml-sm">
-                              {{ props.row.tag }}
-                            </q-badge>
                           </q-td>
-                          <q-td key="intent" :props="props">
-                            <div class="row q-gutter-x-xs q-px-none q-mx-none">
+                          <q-td key="intent" :props="props" >
+                            <div class="row q-gutter-x-xs q-pr-md q-mx-none justify-end">
                               <q-badge
-                                v-for="badge in props.row.intent"
+                                v-for="badge in props.row.tag"
                                 :key="badge"
                                 :color="getIntentColor(badge)"
-                                rounded
+                                square
+                                size="24px"
+                                class="q-pa-sm"
                               >
                                 {{ badge }}
                               </q-badge>
                             </div>
                           </q-td>
-                          <q-td key="kd" :props="props">{{ props.row.kd }}</q-td>
                           <q-td key="volume" :props="props">{{ props.row.volume }}</q-td>
+                          <q-td key="kd" :props="props">{{ props.row.kd }}</q-td>
                         </q-tr>
                       </template>
                     </q-table>
@@ -285,15 +285,15 @@ const iframeLink = ref('')
 // Keywords table configuration
 const columns = [
   { name: 'keyword', align: 'left', label: 'Keywords', field: 'keyword' },
-  { name: 'intent', align: 'left', label: 'Intent', field: 'intent' },
-  { name: 'volume', align: 'right', label: 'Vol.', field: 'volume' },
-  { name: 'kd', align: 'right', label: 'KD', field: 'kd' },
+  { name: 'intent', align: 'center', label: 'Intent', field: 'intent' },
+  { name: 'volume', align: 'center', label: 'Vol.', field: 'volume' },
+  { name: 'kd', align: 'center', label: 'KD', field: 'kd' },
 ]
 
 const keywords = ref([
-  { keyword: 'seo optimization for google', tag: 'MAIN', kd: 83, volume: '1,900' },
-  { keyword: 'google seo', tag: 'I', kd: 73, volume: '1,900' },
-  { keyword: 'google seo marketing', tag: 'T', kd: 86, volume: '1,900' },
+  { keyword: 'seo optimization for google', tag: ['C', 'I'], kd: 83, volume: '1,900' },
+  { keyword: 'google seo', tag: ['N'], kd: 73, volume: '1,900' },
+  { keyword: 'google seo marketing', tag: ['T'], kd: 86, volume: '1,900' },
   { keyword: 'google seo optimization', kd: 88, volume: '1,900' },
   { keyword: 'search engine optimisation google', kd: 91, volume: '1,900' }
 ])
@@ -453,9 +453,9 @@ const pageData = reactive({
 // Helper function for intent badge colors
 const getIntentColor = (intent: string) => {
   const colors: Record<string, string> = {
-    N: 'green-2',
+    N: 'blue-8',
     C: 'green-8',
-    I: 'light-green-2',
+    I: 'green-6',
     T: 'blue-8'
   }
   return colors[intent] || 'grey-5'
@@ -464,7 +464,7 @@ const getIntentColor = (intent: string) => {
 const getTagColor = (tag: string) => {
   const colors = {
     MAIN: 'primary',
-    I: 'green',
+    I: '#f9f9f9',
     T: 'blue'
   }
   return colors[tag as keyof typeof colors] || 'grey'
@@ -477,7 +477,7 @@ const showLoader = (page: any) => {
 
   window.setTimeout(() => {
     isLoading.value = false
-  }, 2500)
+  }, 6200)
 }
 
 watch(page, (newValue) => {
@@ -530,7 +530,7 @@ watch(activeTab, (newValue) => {
 
 .c-scroll{
   max-height:calc(100% - 100px);
-  overflow:auto;
+  overflow:overlay !important;
 }
 
 :deep(.q-tab-panel) {
@@ -540,8 +540,8 @@ watch(activeTab, (newValue) => {
 
 :deep(.q-tabs) {
   .q-tab {
-    padding: 8px 16px;
-    min-height: 40px;
+    padding: 8px 8px;
+    min-height: 25px;
     
     &--active {
       font-weight: 600;
@@ -559,7 +559,12 @@ watch(activeTab, (newValue) => {
 }
 
 .c-loader-container{
-  min-height:500px
+  position:absolute;
+  inset:0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .keywords-analysis{

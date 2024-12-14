@@ -16,6 +16,11 @@ body {
   color: #213343;
 }
 
+html {
+  overflow-y: scroll;
+  overflow-y: overlay;
+}
+
 .c-pointer {
   cursor: pointer;
 }
@@ -160,6 +165,11 @@ body {
   padding-bottom: none !important;
 }
 
+.c-px-lg {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
 .c-row {
   flex-direction: row !important;
 }
@@ -230,6 +240,8 @@ body {
 ::-webkit-scrollbar {
   width: 2px;
   height: 4px;
+  position: absolute;
+  transform: translateX(-5px);
 }
 
 ::-webkit-scrollbar-track {

@@ -62,7 +62,7 @@ const containerStyle = computed(() => ({
     left: 10%;
     border-top-color: color-mix(in srgb, var(--loader-color) 50%, white);
     border-right-color: color-mix(in srgb, var(--loader-color) 50%, white);
-    animation: spin 0.8s linear infinite;
+    animation: despin 0.8s linear infinite;
   }
   
   &.c-circle-medium {
@@ -84,7 +84,7 @@ const containerStyle = computed(() => ({
     border-width: 3px;
     border-top-color: color-mix(in srgb, var(--loader-color) 70%, black);
     border-right-color: color-mix(in srgb, var(--loader-color) 70%, black);
-    animation: spin 1.6s linear infinite;
+    animation: despin 1.6s linear infinite;
   }
 
   &.c-circle-xl{
@@ -95,7 +95,7 @@ const containerStyle = computed(() => ({
     border-width: 3px;
     border-top-color: color-mix(in srgb, var(--loader-color) 50%, black);
     border-right-color: color-mix(in srgb, var(--loader-color) 50%, black);
-    animation: spin 2s linear infinite;
+    animation: spin 1.8s linear infinite;
   }
 }
 
@@ -105,6 +105,15 @@ const containerStyle = computed(() => ({
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes despin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }
 </style>

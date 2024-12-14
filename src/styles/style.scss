@@ -35,6 +35,11 @@ body {
   color: #213343;
 }
 
+html {
+  overflow-y: scroll;
+  overflow-y: overlay;
+}
+
 
 .c-pointer{
   cursor: pointer;
@@ -66,6 +71,10 @@ body {
 .c-small-text{
   font-size:14px !important;
 }
+.c-font-16{
+  font-size: 16px;
+} 
+
 
 .c-list-row{
   &:hover{
@@ -89,6 +98,10 @@ body {
   span{
     text-transform: capitalize;
   }
+}
+
+.c-tab-padding{
+  padding: 12px 8px !important
 }
 
 .c-limit-text-height{
@@ -187,6 +200,11 @@ body {
   padding-top: none !important;
   padding-bottom:none !important; 
 }
+.c-px-lg{
+  padding-left: 24px !important;
+  padding-right: 24px !;
+}
+
 
 .c-row{
   flex-direction:row !important ;
@@ -270,6 +288,9 @@ body {
 ::-webkit-scrollbar {
   width: 2px;
   height: 4px;
+  position: absolute;
+transform: translateX(-5px);
+
 }
 
 ::-webkit-scrollbar-track {

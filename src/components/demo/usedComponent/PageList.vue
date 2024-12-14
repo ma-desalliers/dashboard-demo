@@ -75,32 +75,38 @@ const selectedPage = computed({
 })
 
 const filteredPages = computed(() => {
-    let filtered = pages.filter(page => {
-        if (props.productFilter.length) {
-            if (props.audienceFilter.length) {
-                return props.productFilter.includes(page.productUuid) && 
-                       props.audienceFilter.includes(page.personaUuid)
-            }
-            return props.productFilter.includes(page.productUuid)
-        }
-        return true
-    })
-
-    // Apply sorting if direction is set
-    if (sortDirection.value) {
-        filtered = [...filtered].sort((a, b) => {
-            const titleA = (a.title || '').toLowerCase()
-            const titleB = (b.title || '').toLowerCase()
-            
-            if (sortDirection.value === 'asc') {
-                return titleA.localeCompare(titleB)
-            } else {
-                return titleB.localeCompare(titleA)
-            }
-        })
+  // First apply filters
+  let filtered = pages.filter(page => {
+    if (props.productFilter.length) {
+      if (props.audienceFilter.length) {
+        return props.productFilter.includes(page.productUuid) && 
+          props.audienceFilter.includes(page.personaUuid)
+      }
+      return props.productFilter.includes(page.productUuid)
     }
+    return true
+  })
 
-    return filtered
+  // Sort by hasContent first
+  filtered = [...filtered].sort((a, b) => {
+    // Push pages with hasContent true to the top
+    if (a.hasContent && !b.hasContent) return -1
+    if (!a.hasContent && b.hasContent) return 1
+    
+    // If hasContent is the same for both pages, apply title sorting if direction is set
+    if (sortDirection.value) {
+      const titleA = (a.title || '').toLowerCase()
+      const titleB = (b.title || '').toLowerCase()
+      
+      return sortDirection.value === 'asc' 
+          ? titleA.localeCompare(titleB)
+          : titleB.localeCompare(titleA)
+    }
+    
+    return 0
+  })
+
+  return filtered
 })
 
 const selectPage = (page: any) => {
