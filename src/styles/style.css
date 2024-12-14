@@ -115,11 +115,11 @@ body {
 }
 
 .c-selected-client .q-item:has(.c-expansion-header-hover) {
-  background-color: color-mix(in srgb, #55B948 25%, #ffffff 90%);
+  background-color: color-mix(in srgb, #55B948 16%, #ffffff);
 }
 
 .c-bg-primary-lighten {
-  background-color: color-mix(in srgb, #55B948 25%, #ffffff 90%);
+  background-color: color-mix(in srgb, #55B948 16%, #ffffff);
 }
 
 .c-global-popup .q-dialog__backdrop {
@@ -128,6 +128,10 @@ body {
 
 .c-pa-32 {
   padding: 32px;
+}
+
+.c-pl-32 {
+  padding-left: 32px;
 }
 
 .c-q-pa-xs {
@@ -155,7 +159,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 .c-sticky {

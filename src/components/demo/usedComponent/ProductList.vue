@@ -10,7 +10,7 @@
     >
     <template #header>
       <q-item-section side style="width: 80px" class="q-mr-md">
-        <img :src="product.image" alt="Product Image" class="c-list-product-picture"/>
+        <img :src="product.image || '' " alt="Product Image" class="c-list-product-picture"/>
       </q-item-section>
       
       <q-item-section class="clickable c-product-item" >
@@ -31,15 +31,45 @@
     
     <!-- Expansion Content - PageList -->
     <div class="q-pb-md">
-      <div class="c-box-title q-py-md" style="padding-left: 64px;">
-        Pages
-      </div>
-      <PageList
-      :hide-header="true"
-      :product-filter="[product.uuid]"
-      :audience-filter="audienceFilter"
-      v-model="selectedPage"
-      />
+
+      <q-tabs
+        v-model="activeTab"
+        class="text-grey row justift-start"
+        active-color="primary"
+        indicator-color="primary"
+        dense
+        align="left"
+      >
+      <q-tab name="content" label="Content" />
+      <q-tab name="audience" label="Audience" />
+      <q-tab name="knowledge" label="Knowledge" />
+    </q-tabs>
+    <q-tab-panels v-model="activeTab">
+      <q-tab-panel name="content">
+        <PageList
+        :hide-header="true"
+        :product-filter="[product.uuid]"
+        :audience-filter="audienceFilter"
+        v-model="selectedPage"
+        />
+      </q-tab-panel>
+      <q-tab-panel name="audience">
+        <PageList
+        :hide-header="true"
+        :product-filter="[product.uuid]"
+        :audience-filter="audienceFilter"
+        v-model="selectedPage"
+        />
+      </q-tab-panel>
+      <q-tab-panel name="knowledge">
+        <PageList
+        :hide-header="true"
+        :product-filter="[product.uuid]"
+        :audience-filter="audienceFilter"
+        v-model="selectedPage"
+        />
+      </q-tab-panel>
+    </q-tab-panels>
     </div>
   </q-expansion-item>
 </q-list>
@@ -76,6 +106,8 @@ const selectedPage = computed({
 })
 
 const selectedProduct = ref<any>(null)
+
+const activeTab= ref('content')
 
 const filteredProducts = computed(() => {
   if (!props.filter) return products
@@ -125,14 +157,14 @@ const formatDate = (timestamp: number) => {
 
 
 .c-list-product-picture{
-  height:75px;
-  width:75px;
+  height:40px;
+  width:40px;
   object-fit: cover;
   border-radius: 4px;
 }
 
 .q-expansion-item--expanded .q-item:has(.c-product-item) {
-  box-shadow: 0px 9px 5px -8px #8c8c8c;
+  //box-shadow: 0px 9px 5px -8px #8c8c8c;
   position: sticky;
   top:0;
   z-index: 10;

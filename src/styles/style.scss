@@ -14,7 +14,7 @@ $warning   : #F2C037;
 
 $green : #0DB04B;
 
-$primary-lighten : color-mix(in srgb, $primary 25%, #ffffff 90%);
+$primary-lighten : color-mix(in srgb, $primary 16%, #ffffff);
 
 // You can also create custom CSS variables for use throughout your app
 :root {
@@ -157,6 +157,10 @@ body {
 .c-pa-32{
   padding:32px;
 }
+
+.c-pl-32{
+  padding-left:32px;
+}
 .c-q-pa-xs{
   padding: 4px 4px !important;
 }
@@ -180,7 +184,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 

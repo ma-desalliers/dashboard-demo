@@ -8,16 +8,16 @@
               <q-item-section>
                 <div class="text-caption c-text-truncate">Title</div>
               </q-item-section>
-              <q-item-section side style="width: 100px">
+              <q-item-section side style="width: 200px; text-align: center">
                 <div class="text-caption">Visitors</div>
               </q-item-section>
-              <q-item-section style="width: 120px; text-align: center;">
+              <q-item-section side style="width: 200px; text-align: center; align-items: center">
                 <div class="text-caption">Leads</div>
               </q-item-section>
             </q-item>
             
             <!-- Content Items -->
-            <q-item v-for="page in filteredPages" :key="page.uuid" class="c-list-row clickable" :class="{'bg-grey-2':page.uuid == selectedPage.uuid}">
+            <q-item v-for="page in filteredPages" :key="page.uuid" class="c-list-row clickable q-pa-md" :class="{'c-bg-primary-lighten':page.uuid == selectedPage.uuid}">
               <q-item-section side style="width: 48px"  @click="selectPage(page)">
                <ScoreDisplay :score="page.score" size="24px" />
               </q-item-section>
@@ -26,19 +26,19 @@
 
                   <div class="content-info">
                     <div class="text-subtitle2 c-text-truncate">{{ page.title }}</div>
-                    <div class="text-caption text-grey-7">
+                    <!--<div class="text-caption text-grey-7">
                       Blog post • {{ [''].join(' • ') || 'Minimize Waste' }}
-                    </div>
+                    </div>-->
                   </div>
 
               </q-item-section>
               
-              <q-item-section side style="width: 100px"  @click="selectPage(page)">
+              <q-item-section side style="width: 200px; text-align: center"  @click="selectPage(page)">
                 <div class="text-subtitle2">{{ '15,000' }}</div>
               </q-item-section>
               
-              <q-item-section style="width: 120px; text-align: center;"  @click="selectPage(page)">
-                <div class="text-subtitle2">{{ 25 }}</div>
+              <q-item-section side style="width: 200px; text-align: center; align-items: center"  @click="selectPage(page)">
+                <div class="text-subtitle2 text-grey-7">{{ '25' }}</div>
               </q-item-section>
               <SelectedElementIndicator :rounded="false" color="bg-primary" :show="selectedPage.uuid == page.uuid"></SelectedElementIndicator>
             </q-item>

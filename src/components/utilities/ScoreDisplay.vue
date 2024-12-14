@@ -3,6 +3,7 @@
     :size="size"
     :class="colorClass"
     :text-color="textColor"
+    rounded
     class="score-avatar"
   >
     <span>{{ score }}</span>

@@ -62,14 +62,14 @@
       <div class="knowledge-items">
         <q-item v-for="item in knowledgeItems" :key="item.name" clickable v-ripple class="q-px-md">
           <q-item-section avatar>
-            <q-avatar size="32px" class="bg-purple-1">
+            <q-avatar rounded size="32px" class="bg-purple-1">
               <q-icon :name="item.icon" color="purple" />
             </q-avatar>
           </q-item-section>
           <q-item-section>
             {{ item.name }}
           </q-item-section>
-          <q-item-section side class="c-row">
+          <q-item-section side class="c-row c-linear-container">
             <div>
               <q-linear-progress
                 :value="item.progress"
@@ -210,5 +210,10 @@ const openDept = (dept: any) =>{
 
 :deep(.q-item__section--avatar) {
   min-width: 40px;
+}
+
+.c-linear-container{
+  align-items: center;
+  margin-top:4px;
 }
 </style>
