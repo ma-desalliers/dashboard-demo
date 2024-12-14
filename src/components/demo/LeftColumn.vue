@@ -70,7 +70,7 @@
         </div>
       </div>
       <div class="departments c-light-border-bottom q-pb-lg">
-        <q-item v-for="dept in departments" :key="dept.name" clickable v-ripple class="q-px-md q-mb-xs" :class="dept.active? `bg-${dept.color}-1` : `bg-${dept.color}-hover`"  @click="openDept(dept)">
+        <q-item v-for="dept in departments" :key="dept.name" clickable v-ripple class="q-px-md q-mb-xs" :class="dept.active ? `bg-${dept.color}-1 text-${dept.color}` : `bg-${dept.color}-hover`" @click="openDept(dept)">
           <q-item-section avatar>
             <q-avatar rounded size="32px">
               <img class="c-img-cover" :src="dept.icon" :alt="dept.name" :style="{backgroundColor: dept.color}">
