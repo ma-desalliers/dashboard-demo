@@ -128,6 +128,13 @@ body {
    border:none !important;
 
   }
+
+  
+
+}
+
+.c-border-right{
+  border-right: 1px solid #e7e7e7;
 }
 
 .fullscreen.q-drawer__backdrop{
@@ -242,8 +249,8 @@ body {
 
 /* Webkit browsers (Chrome, Safari, newer versions of Opera) */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 2px;
+  height: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -276,5 +283,5 @@ body {
   overflow-y: auto;
   
   /* Optional: Add some padding to prevent content from touching scrollbar */
-  padding-right: 4px;
+  padding-right: 2px;
 }

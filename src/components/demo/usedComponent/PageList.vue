@@ -1,7 +1,7 @@
 <template>
               <q-list separator >
             <!-- Headers -->
-            <q-item v-if="!hideHeader" class="header-row text-grey-7 bg-grey-1 c-sticky" >
+            <q-item v-if="!hideHeader" class="header-row text-grey-7 c-sticky" >
               <q-item-section side style="width: 48px">
                 <div class="text-caption">RS</div>
               </q-item-section>

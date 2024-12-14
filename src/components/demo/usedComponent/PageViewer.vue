@@ -1,11 +1,11 @@
 <template>
   <div class="tabbed-viewer c-pl-32">
     <div class="content-info">
-                    <div class="text-subtitle2 ">{{ page.title }}</div>
-                    <div class="text-caption text-grey-7">
-                      Blog post • {{ [''].join(' • ') || 'Minimize Waste' }}
-                    </div>
-                  </div>
+      <div class="text-subtitle2 ">{{ page.title }}</div>
+      <div class="text-caption text-grey-7">
+        Blog post • {{ [''].join(' • ') || 'Minimize Waste' }}
+      </div>
+    </div>
     <q-tabs
       v-model="activeTab"
       class="text-grey row justift-start"
@@ -19,7 +19,7 @@
       <q-tab name="keywords" label="Seo" />
     </q-tabs>
 
-    <q-tab-panels v-model="activeTab" animated>
+    <q-tab-panels v-model="activeTab" :class="{'c-scroll': activeTab == 'keywords'}" >
       <!-- Preview Panel -->
       <q-tab-panel name="preview">
         <div v-show="!isLoading" class="iframe-container">
@@ -55,7 +55,7 @@
 
           <!-- Country Distribution -->
           <div class="row q-mb-lg">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-5 c-border-right q-pr-md">
               <div class="country-list">
                 <div class="row items-center q-mb-sm">
                   <q-avatar size="20px">
@@ -69,7 +69,7 @@
                   <q-avatar size="20px">
                     <q-icon name="fa fa-flag" alt="Russian Federation" />
                   </q-avatar>
-                  <div class="q-ml-sm">Russian Federation</div>
+                  <div class="q-ml-sm">Russian Fed.</div>
                   <div class="q-ml-auto">2.8K</div>
                   <div class="text-grey-6 q-ml-sm">14%</div>
                 </div>
@@ -85,23 +85,23 @@
             </div>
 
             <!-- Page Format Info -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-7">
               <div class="format-info q-pl-md">
                 <div class="row justify-between q-mb-sm">
-                  <div>Page format <q-icon name="info" size="xs" /></div>
-                  <div>Product category</div>
+                  <div class="col-6">Page format <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
+                  <div class="col-6">Product category</div>
                 </div>
                 <div class="row justify-between q-mb-sm">
-                  <div>Words <q-icon name="info" size="xs" /></div>
-                  <div>450-650 words</div>
+                  <div class="col-6">Words <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
+                  <div class="col-6">450-650 words</div>
                 </div>
                 <div class="row justify-between q-mb-sm">
-                  <div>Headings <q-icon name="info" size="xs" /></div>
-                  <div>8-16</div>
+                  <div class="col-6">Headings <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
+                  <div class="col-6">8-16</div>
                 </div>
                 <div class="row justify-between">
-                  <div>Images <q-icon name="info" size="xs" /></div>
-                  <div>4-16</div>
+                  <div class="col-6">Images <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
+                  <div class="col-6">4-16</div>
                 </div>
               </div>
             </div>
@@ -109,78 +109,119 @@
 
           <!-- Keywords Section -->
           <div class="keywords-section q-mb-lg">
-            <div class="text-subtitle1 q-mb-md">13 keywords</div>
-            <q-table
-              flat
-              :rows="keywords"
-              :columns="[
-                { name: 'keyword', align: 'left', label: 'Keywords', field: 'keyword' },
-                { name: 'intent', align: 'left', label: 'Intent', field: 'intent' },
-                { name: 'kd', align: 'right', label: 'KD', field: 'kd' },
-                { name: 'volume', align: 'right', label: 'Vol.', field: 'volume' }
-              ]"
-              :pagination="{ rowsPerPage: 0 }"
-              row-key="keyword"
-              hide-bottom
+            <q-expansion-item
+              group="keywords"
+              icon="search"
+              :label="`${keywords.length} keywords`"
+              header-class="text-subtitle1"
+              expand-separator
+              :class="{ 'custom-expansion': true }"
+              :style="{ '--expansion-bg-color': '#f5f5f5' }"
             >
-              <template v-slot:body="props">
-                <q-tr :props="props">
-                  <q-td key="keyword" :props="props">
-                    {{ props.row.keyword }}
-                    <q-badge v-if="props.row.tag" color="grey-8" class="q-ml-sm">
-                      {{ props.row.tag }}
-                    </q-badge>
-                  </q-td>
-                  <q-td key="intent" :props="props">
-                    <div class="row q-gutter-x-xs">
-                      <q-badge v-for="badge in props.row.intent" 
-                              :key="badge"
-                              :color="getIntentColor(badge)"
-                              rounded>
-                        {{ badge }}
-                      </q-badge>
-                    </div>
-                  </q-td>
-                  <q-td key="kd" :props="props">{{ props.row.kd }}</q-td>
-                  <q-td key="volume" :props="props">{{ props.row.volume }}</q-td>
-                </q-tr>
+              <template v-slot:header>
+                <q-item-section>
+                  <q-item-label class="text-subtitle1">{{ keywords.length }} keywords</q-item-label>
+                </q-item-section>
               </template>
-            </q-table>
+
+              <div class="content-wrapper c-pa-none">
+                <q-card flat>
+                  <q-card-section class="q-pa-none bg-white">
+                    <q-table
+                      flat
+                      :rows="keywords"
+                      :columns="columns"
+                      :pagination="{ rowsPerPage: 0 }"
+                      row-key="keyword"
+                      hide-bottom
+                      class='c-no-border'
+                    >
+                      <template v-slot:body="props">
+                        <q-tr :props="props">
+                          <q-td key="keyword" :props="props">
+                            {{ props.row.keyword }}
+                            <q-badge v-if="props.row.tag" color="grey-8" class="q-ml-sm">
+                              {{ props.row.tag }}
+                            </q-badge>
+                          </q-td>
+                          <q-td key="intent" :props="props">
+                            <div class="row q-gutter-x-xs q-px-none q-mx-none">
+                              <q-badge
+                                v-for="badge in props.row.intent"
+                                :key="badge"
+                                :color="getIntentColor(badge)"
+                                rounded
+                              >
+                                {{ badge }}
+                              </q-badge>
+                            </div>
+                          </q-td>
+                          <q-td key="kd" :props="props">{{ props.row.kd }}</q-td>
+                          <q-td key="volume" :props="props">{{ props.row.volume }}</q-td>
+                        </q-tr>
+                      </template>
+                    </q-table>
+                  </q-card-section>
+                </q-card>
+              </div>
+            </q-expansion-item>
           </div>
 
           <!-- Competitors Section -->
           <div class="competitors-section">
-            <div class="text-subtitle1 q-mb-md">Top 10 competitors</div>
-            <q-table
-              flat
-              :rows="pageData.competitors"
-              :columns="[
-                { name: 'domain', align: 'left', label: 'Domain', field: 'domain' },
-                { name: 'url', align: 'left', label: 'URL', field: 'url' }
-              ]"
-              :pagination="{ rowsPerPage: 0 }"
-              row-key="domain"
-              hide-bottom
+            <q-expansion-item
+              group="competitors"
+              icon="public"
+              :label="`Top ${pageData.competitors.length} competitors`"
+              header-class="text-subtitle1"
+              expand-separator
+              :class="{ 'custom-expansion': true }"
+              :style="{ '--expansion-bg-color': '#f5f5f5' }"
             >
-              <template v-slot:body="props">
-                <q-tr :props="props">
-                  <q-td key="domain" :props="props">
-                    <div class="row items-center">
-                      <q-avatar size="20px" class="q-mr-sm">
-                        <img :src="props.row.icon" :alt="props.row.domain" />
-                      </q-avatar>
-                      {{ props.row.domain }}
-                    </div>
-                  </q-td>
-                  <q-td key="url" :props="props">
-                    <a :href="props.row.url" class="text-primary" target="_blank">
-                      {{ props.row.path }}
-                      <q-icon name="launch" size="xs" />
-                    </a>
-                  </q-td>
-                </q-tr>
+              <template v-slot:header>
+                <q-item-section>
+                  <q-item-label class="text-subtitle1">Top {{ pageData.competitors.length }} competitors</q-item-label>
+                </q-item-section>
               </template>
-            </q-table>
+
+              <div class="content-wrapper c-pa-none">
+                <q-card flat>
+                  <q-card-section class="q-pa-none bg-white">
+                    <q-table
+                      flat
+                      :rows="pageData.competitors"
+                      :columns="[
+                        { name: 'domain', align: 'left', label: 'Domain', field: 'domain' },
+                        { name: 'url', align: 'left', label: 'URL', field: 'url' }
+                      ]"
+                      :pagination="{ rowsPerPage: 0 }"
+                      row-key="domain"
+                      hide-bottom
+                      class="c-no-border"
+                    >
+                      <template v-slot:body="props">
+                        <q-tr :props="props">
+                          <q-td key="domain" :props="props">
+                            <div class="row items-center">
+                              <q-avatar size="20px" class="q-mr-sm">
+                                <img :src="props.row.icon" :alt="props.row.domain" />
+                              </q-avatar>
+                              {{ props.row.domain }}
+                            </div>
+                          </q-td>
+                          <q-td key="url" :props="props">
+                            <a :href="props.row.url" class="text-primary" target="_blank">
+                              {{ props.row.path }}
+                              <q-icon name="launch" size="xs" />
+                            </a>
+                          </q-td>
+                        </q-tr>
+                      </template>
+                    </q-table>
+                  </q-card-section>
+                </q-card>
+              </div>
+            </q-expansion-item>
           </div>
         </div>
       </q-tab-panel>
@@ -220,8 +261,9 @@ const iframeLink = ref('')
 // Keywords table configuration
 const columns = [
   { name: 'keyword', align: 'left', label: 'Keywords', field: 'keyword' },
-  { name: 'kd', align: 'center', label: 'KD', field: 'kd' },
-  { name: 'volume', align: 'center', label: 'Volume', field: 'volume' }
+  { name: 'intent', align: 'left', label: 'Intent', field: 'intent' },
+  { name: 'volume', align: 'right', label: 'Vol.', field: 'volume' },
+  { name: 'kd', align: 'right', label: 'KD', field: 'kd' },
 ]
 
 const keywords = ref([
@@ -425,6 +467,13 @@ watch(page, (newValue) => {
     showLoader(newValue)
   }
 }, { deep: true })
+
+
+watch(activeTab, (newValue) => {
+  if (newValue == 'preview') {
+    showLoader(props.page)
+  }
+})
 </script>
 
 <style scoped lang="scss">
@@ -461,8 +510,13 @@ watch(page, (newValue) => {
   }
 }
 
+.c-scroll{
+  max-height:calc(100% - 100px);
+  overflow:auto;
+}
+
 :deep(.q-tab-panel) {
-  padding: 16px 0;
+  padding: 0 0;
   min-height: 400px;
 }
 
@@ -477,7 +531,34 @@ watch(page, (newValue) => {
   }
 }
 
+:deep(.q-table th, .q-table td) {
+  padding: 7px 0px;
+}
+
+:deep(.q-table td){
+  padding: 7px 0px;
+
+}
+
 .c-loader-container{
   min-height:500px
+}
+
+.keywords-analysis{
+  height:calc(100% - 50px);
+  overflow:auto
+}
+
+.custom-expansion {
+  background-color: var(--expansion-bg-color, transparent);
+
+  :deep(.q-expansion-item__container) {
+    background-color: var(--expansion-bg-color, transparent);
+  }
+
+  .content-wrapper {
+    background-color: white;
+    padding: 0 16px;
+  }
 }
 </style>
