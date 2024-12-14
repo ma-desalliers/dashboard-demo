@@ -1,16 +1,28 @@
 <template>
-  <q-toolbar class="c-header bg-primary">
-    <div class="full-width row justify-center">
-      <span class="text-white" style="font-size: 1.2rem">
-        New Functionality Available ! 
-      </span> 
-    </div>
+  <q-toolbar v-if="isVisible" class="c-header bg-primary relative-position">
+    <span class="text-white absolute-center" style="font-size: 1.1rem">
+      New Functionality Available!
+    </span>
+    <q-btn
+      flat
+      dense
+      icon="close"
+      class="text-white absolute-right q-mr-md"
+      @click="closeBar"
+    />
   </q-toolbar>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+
+const isVisible = ref(true)
+
+const closeBar = () => {
+  isVisible.value = false
+}
+
 
 const currentTab = ref('demo');
 const router = useRouter();
