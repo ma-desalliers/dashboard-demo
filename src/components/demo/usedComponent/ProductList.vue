@@ -93,7 +93,7 @@ interface Product {
 
 const props = defineProps<{
   modelValue?: any,
-  filter?: string
+  filter?: string[]
   audienceFilter: string[]
 }>()
 
@@ -109,13 +109,9 @@ const selectedProduct = ref<any>(null)
 const activeTab= ref('content')
 
 const filteredProducts = computed(() => {
-  if (!props.filter) return products
+  if (!props.filter || !props.filter.length) return products
   
-  const searchTerm = props.filter.toLowerCase()
-  return products.filter(product => 
-  product.name.toLowerCase().includes(searchTerm) ||
-  (product.description?.toLowerCase().includes(searchTerm))
-  )
+  return products.filter(product => props.filter?.includes(product.uuid))
 })
 
 const selectProduct = (product: any) => {

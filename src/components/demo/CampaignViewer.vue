@@ -35,7 +35,13 @@
         </div>
         
         <div class="col-12 col-sm-3">
-          <MultiSelect dense  v-model="productFilter" :options="products" label-name="name" label="Products" :display-selected="'number'" ></MultiSelect> 
+          <MultiSelect dense
+          v-model="productFilter"
+          :options="products"
+          label-name="name"
+          label="Products"
+          :display-selected="'number'"
+          :use-search="true" ></MultiSelect> 
           
         </div>
         <div class="col-12 col-sm-3">
@@ -51,7 +57,7 @@
       <!-- Content List -->
       
       <PageList v-if="listView == 'pages'" v-model="selectedPage"  :product-filter="productFilter" :audience-filter="audienceFilter"></PageList>
-      <ProductList v-if="listView == 'products'" v-model="selectedPage"  :audience-filter="audienceFilter" ></ProductList>
+      <ProductList v-if="listView == 'products'" v-model="selectedPage"  :filter="productFilter"  :audience-filter="audienceFilter" ></ProductList>
       <!-- Pagination 
       <div class="row justify-center q-mt-lg">
         <q-pagination

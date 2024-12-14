@@ -12,6 +12,11 @@
     :option-label="labelName"
     behavior="menu"
     class="full-width c-select"
+    :use-input="useSearch"
+    input-debounce="300"
+    @filter="filterOptions"
+    :hide-selected="false"
+    :fill-input="false"
   >
     <template #selected>
       <template v-if="displaySelected === 'number' && multiple && selectedItems?.length">
@@ -79,7 +84,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 
 interface Props {
   modelValue: any | any[]
@@ -92,13 +97,15 @@ interface Props {
   label?: string
   multiple?: boolean
   displaySelected?: 'number' | 'list'
+  useSearch?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
   selectionType: 'uuid',
   selectedFirst: true,
   multiple: true,
-  displaySelected: 'list'
+  displaySelected: 'list',
+  useSearch: false
 })
 
 const emit = defineEmits(['update:modelValue'])
@@ -108,17 +115,17 @@ const selectedItems = computed({
   set: (value) => emit('update:modelValue', value)
 })
 
-const computedOptions = computed(() => {
-  if (!props.selectedFirst) return props.options
-  
-  if (!props.multiple) {
-    return props.options
-  }
+const filteredOptions = ref<any[]>([])
 
-  const selected = props.options.filter(opt => 
+const computedOptions = computed(() => {
+  const options = filteredOptions.value.length > 0 ? filteredOptions.value : props.options
+  
+  if (!props.selectedFirst || !props.multiple) return options
+  
+  const selected = options.filter(opt => 
     props.modelValue.includes(props.selectionType === 'uuid' ? opt.uuid : opt)
   )
-  const unselected = props.options.filter(opt => 
+  const unselected = options.filter(opt => 
     !props.modelValue.includes(props.selectionType === 'uuid' ? opt.uuid : opt)
   )
   
@@ -141,4 +148,35 @@ const removeItem = (item: any) => {
     null
   emit('update:modelValue', newValue)
 }
+
+const filterOptions = (val: string, update: (callback: () => void) => void) => {
+  if (val === '') {
+    filteredOptions.value = props.options
+  } else {
+    const needle = val.toLowerCase()
+    filteredOptions.value = props.options.filter(
+      v => v[props.labelName].toLowerCase().indexOf(needle) > -1
+    )
+  }
+
+  update(() => {
+    // Required for filtering to work
+  })
+}
 </script>
+
+<style scoped>
+.q-select__input {
+  border: none;
+  outline: none;
+  padding: 0;
+  max-width: 100%;
+  width: auto;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+.row {
+  flex-wrap: wrap;
+}
+</style>
