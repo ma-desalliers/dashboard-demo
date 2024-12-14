@@ -19,8 +19,8 @@
         <div class="features-list q-mb-lg">
           <div v-for="(feature, index) in features" :key="index" class="feature-item q-mb-sm">
             <q-item dense class="q-pa-none">
-              <q-item-section avatar>
-                <q-icon name="check_circle" color="blue" />
+              <q-item-section avatar style="min-width: 23px;">
+                <q-icon name="check_circle" color="blue" size="18px" />
               </q-item-section>
               <q-item-section>
                 <div class="row items-center">
@@ -156,6 +156,11 @@ const playVideo = () => {
       transform: scale(1.02);
     }
   }
+}
+
+.feature-item .q-item-section[avatar] {
+  padding-right: 0;
+  min-width: none;
 }
 
 .integration-logo {
