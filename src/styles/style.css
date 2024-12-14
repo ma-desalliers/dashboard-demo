@@ -51,6 +51,10 @@ html {
   font-size: 14px !important;
 }
 
+.c-font-16 {
+  font-size: 16px;
+}
+
 .c-list-row:hover {
   background-color: #f5f5f5;
 }
@@ -74,6 +78,10 @@ html {
 
 .q-btn span {
   text-transform: capitalize;
+}
+
+.c-tab-padding {
+  padding: 12px 8px !important;
 }
 
 .c-limit-text-height {
@@ -104,6 +112,10 @@ html {
   min-height: unset;
 }
 
+.c-select:hover .q-field__control:before {
+  border-color: #55B948;
+}
+
 .c-select-item {
   min-height: unset;
 }
@@ -118,6 +130,14 @@ html {
 
 .c-border-right {
   border-right: 1px solid #e7e7e7;
+}
+
+.c-border-orange {
+  border: solid 1px orange;
+}
+
+.c-indicator-chip {
+  position: absolute;
 }
 
 .fullscreen.q-drawer__backdrop {

@@ -17,7 +17,13 @@
                 </div>
               </q-item-section>
               <q-item-section side style="width: 200px; text-align: center">
-                <div class="text-caption">Visitors</div>
+                <div class="text-caption">Visitors
+                  <q-chip squared class="c-indicator-chip bg-orange-1 c-border-orange" text-color="orange" size="sm">
+                    <i class="fa fa-arrow-up"></i>
+                    <span style="font-size:14px"> 1 </span>
+                  </q-chip>
+                </div>
+                
               </q-item-section>
               <q-item-section side style="width: 200px; text-align: center; align-items: center">
                 <div class="text-caption">Leads</div>
@@ -25,7 +31,7 @@
             </q-item>
             
             <!-- Content Items -->
-            <q-item v-for="page in filteredPages" :key="page.uuid" class="c-list-row clickable q-pa-md" :class="{'c-bg-primary-lighten':page.uuid == selectedPage.uuid}">
+            <q-item v-for="page in filteredPages" :key="page.uuid" class="c-list-row clickable q-pa-md" :class="{'c-bg-primary-lighten':page.uuid == selectedPage.uuid, 'bg-grey-2':page.hasContent != true}">
               <q-item-section side style="width: 48px"  @click="selectPage(page)">
                 <ScoreDisplay :score="page.score" size="24px" />
               </q-item-section>
@@ -138,5 +144,9 @@ const orderByTitle = () => {
 
 .fa-sort-up, .fa-sort-down {
     color: var(--q-primary);
+}
+
+.c-indicator-chip{
+  margin-top:-0px;
 }
 </style>

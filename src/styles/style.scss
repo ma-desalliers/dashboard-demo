@@ -135,7 +135,15 @@ html {
   .q-item{
     min-height: unset;
   }
+  &:hover{
+    .q-field__control{
+      &:before{
+        border-color: $primary;
+      }
+    }
+  }
 }
+
 
 .c-select-item{
   min-height: unset;
@@ -154,6 +162,14 @@ html {
 
 .c-border-right{
   border-right: 1px solid #e7e7e7;
+}
+
+.c-border-orange{
+  border:solid 1px orange
+}
+
+.c-indicator-chip{
+  position:absolute;
 }
 
 .fullscreen.q-drawer__backdrop{
@@ -202,7 +218,7 @@ html {
 }
 .c-px-lg{
   padding-left: 24px !important;
-  padding-right: 24px !;
+  padding-right: 24px !important;
 }
 
 

@@ -31,8 +31,12 @@
     
     <!-- Expansion Content - PageList -->
     <div class="q-pb-md">
-
-      <q-tabs
+      <PageList
+        :product-filter="[product.uuid]"
+        :audience-filter="audienceFilter"
+        v-model="selectedPage"
+        />
+     <!-- <q-tabs
         v-model="activeTab"
         class="text-grey row justift-start"
         active-color="primary"
@@ -46,12 +50,7 @@
     </q-tabs>
     <q-tab-panels v-model="activeTab">
       <q-tab-panel name="content">
-        <PageList
-        :hide-header="true"
-        :product-filter="[product.uuid]"
-        :audience-filter="audienceFilter"
-        v-model="selectedPage"
-        />
+  
       </q-tab-panel>
       <q-tab-panel name="audience">
         <PageList
@@ -69,7 +68,7 @@
         v-model="selectedPage"
         />
       </q-tab-panel>
-    </q-tab-panels>
+    </q-tab-panels>-->
     </div>
   </q-expansion-item>
 </q-list>
@@ -167,7 +166,7 @@ const formatDate = (timestamp: number) => {
   //box-shadow: 0px 9px 5px -8px #8c8c8c;
   position: sticky;
   top:0;
-  z-index: 10;
+  z-index: 12;
   background-color: white;
 }
 

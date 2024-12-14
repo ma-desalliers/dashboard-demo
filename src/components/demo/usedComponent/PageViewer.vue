@@ -73,7 +73,7 @@
                   <div class="q-ml-auto" style="min-width:30px">5.5K</div>
                   <div class="text-grey-6 text-right" style="min-width:30px">27%</div>
                 </div>
-                <div class="row items-center q-pt-xs q-mb-sm" style="min-width: 195px;">
+                <div class="row items-center q-mb-sm" style="min-width: 195px;padding-top:1px">
                   <q-avatar size="20px">
                     <span class="fi fi-ca" alt="canada" ></span>  
                   </q-avatar>
@@ -89,7 +89,7 @@
                   <div class="q-ml-auto" style="min-width:30px">2.8K</div>
                   <div class="text-grey-6 text-right" style="min-width:30px">14%</div>
                 </div>
-                <div class="row items-center q-pt-xs" style="min-width: 195px;">
+                <div class="row items-center" style="min-width: 195px;padding-top:1px">
                   <q-avatar size="20px">
                     <span class="fi fi-fr" alt="France" ></span>  
                   </q-avatar>

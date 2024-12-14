@@ -20,7 +20,7 @@
                 class="q-px-md"
                 @click="setListView('products')"
                 >
-                <i class="fa fa-tree"></i>
+                <i class="fa-solid fa-boxes-stacked"></i>
               </q-btn>
               
               <q-btn
