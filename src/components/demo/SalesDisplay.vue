@@ -1,14 +1,14 @@
 <template>
-  <q-card flat bordered class="module-card q-pa-lg">
+  <q-card flat class="module-card q-pa-lg">
     <div class="row q-col-gutter-xl">
       <!-- Left Section -->
       <div class="col-12 col-md-6">
         <div class="text-overline q-mb-sm">
-          <q-chip class="text-blue bg-blue-1">  Module en développement</q-chip>
+          <q-chip class="less-round text-blue bg-blue-1">  Module en développement</q-chip>
         </div>
         
-        <div class="text-h4 text-bold text-blue q-mb-md">
-          Développement des affaires propulsé par l'IA
+        <div class="text-h4 text-bold q-mb-md">
+          <span class="text-blue">Développement des affaires</span> propulsé par l'IA
         </div>
         
         <div class="text-subtitle1 q-mb-lg text-grey-8">
@@ -61,19 +61,18 @@
                 @click="playVideo"
               />
             </div>
-          </q-img>
+          </q-img>  
         </q-card>
 
         <!-- Integrations -->
         <div class="q-mt-lg">
-          <div class="text-overline q-mb-sm">INTÉGRATIONS PRÉVUES</div>
-          <div class="row q-col-gutter-md items-center">
+          <div class="text-center text-overline q-mb-sm">INTÉGRATIONS PRÉVUES</div>
+          <div class="row q-col-gutter-md items-center justify-evenly">
             <div v-for="(integration, index) in integrations" :key="index" class="col-auto">
               <q-img
-                :src="`/api/placeholder/100/40`"
-                :ratio="16/9"
+                :src="`/images/${integration.name.toLowerCase()}.png`"
                 class="integration-logo"
-                width="100px"
+                :width="`${integration.width}px`"
               />
             </div>
           </div>
@@ -104,11 +103,26 @@ const features: Feature[] = [
 ]
 
 const integrations = [
-  'Zoho',
-  'Salesforce',
-  'HubSpot',
-  'Pipedrive',
-  'SAP'
+  {
+    name: 'Wordpress',
+    width: 174
+  },
+  {
+    name: 'Zoho',
+    width: 87
+  },
+  {
+    name: 'Sage',
+    width: 70
+  },
+  {
+    name: 'Xero',
+    width: 45
+  },
+  {
+    name: 'Sap',
+    width: 82
+  }
 ]
 
 const handleSubscribe = () => {
@@ -123,13 +137,16 @@ const playVideo = () => {
 </script>
 
 <style scoped lang="scss">
+.less-round {
+  border-radius: 6px;
+}
 .module-card {
   background: white;
 }
 
 .video-preview {
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 6px;
   
   .video-thumbnail {
     transition: transform 0.3s ease;
