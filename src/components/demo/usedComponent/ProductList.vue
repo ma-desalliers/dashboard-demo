@@ -134,7 +134,7 @@ const formatDate = (timestamp: number) => {
 }
 
 .header-row {
-  background-color: #f5f5f5;
+  background-color: var(--main-gray);
   min-height: 40px;
 }
 

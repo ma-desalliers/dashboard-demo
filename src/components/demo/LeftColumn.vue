@@ -207,7 +207,7 @@ const openDept = (dept: any) =>{
   width: 300px;
   height:calc( 100vh - 50px);
   border-right:1px solid #e7e7e7; ;
-  background: #f5f5f5;
+  background: var(--main-gray);
 }
 
 .section-header {

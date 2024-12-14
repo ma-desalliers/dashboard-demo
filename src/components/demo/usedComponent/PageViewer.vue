@@ -141,7 +141,7 @@
               header-class="text-subtitle1"
               expand-separator
               :class="{ 'custom-expansion': true }"
-              :style="{ '--expansion-bg-color': '#f5f5f5' }"
+              :style="{ '--expansion-bg-color': 'var(--main-gray)' }"
             >
               <template v-slot:header>
                 <q-item-section>
@@ -200,7 +200,7 @@
               header-class="text-subtitle1"
               expand-separator
               :class="{ 'custom-expansion': true }"
-              :style="{ '--expansion-bg-color': '#f5f5f5' }"
+              :style="{ '--expansion-bg-color': 'var(--main-gray)' }"
             >
               <template v-slot:header>
                 <q-item-section>

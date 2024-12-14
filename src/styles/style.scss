@@ -23,6 +23,7 @@ $primary-lighten : color-mix(in srgb, $primary 16%, #ffffff);
   --q-secondary: #{$secondary};
   --q-accent : #{$accent};
   --q-green: #{$green};
+  --main-gray : #F6F9FC;
 }
 
 body {
@@ -78,7 +79,7 @@ html {
 
 .c-list-row{
   &:hover{
-    background-color: #f5f5f5;
+    background-color: var(--main-gray);
   }
 }
 
