@@ -9,7 +9,7 @@
       indicator-color="primary"
       >
         <q-tab active name="products" label="Products" @click="setListView('products')" />
-        <q-tab  name="pages" label="Posts" @click="setListView('pages')"/>
+        <q-tab  name="pages" label="Content" @click="setListView('pages')"/>
       </q-tabs>
     </div>
     <div class="c-content-marketing row  col-12">
@@ -184,12 +184,8 @@ watch(selectedPage, (newValue)=>{
   }
 }
 
-.c-page-detail-container{
-  
-  overflow:hidden;
+.c-page-detail-container{  
+  //overflow-x:hidden;
   transition: 0.25s;
-  position:sticky;
-  top:10px;
-  
 }
 </style>

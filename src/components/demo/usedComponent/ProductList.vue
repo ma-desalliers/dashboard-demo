@@ -35,6 +35,7 @@
         :product-filter="[product.uuid]"
         :audience-filter="audienceFilter"
         v-model="selectedPage"
+        :small-version="true"
         />
      <!-- <q-tabs
         v-model="activeTab"

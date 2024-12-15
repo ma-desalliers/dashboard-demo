@@ -44,7 +44,7 @@
           <div class="row items-center q-mb-lg">
             <div class="c-section-title q-mr-md">{{ pageData?.pageTitle }}</div>
             <div class="text-subtitle1 text-grey-8">
-              {{ pageData?.primaryKeyword?.keyword }} searches • <a href="#" class="text-primary">/{{ pageData?.pageTitle }}</a>
+              {{ pageData?.primaryKeyword?.keyword }} searches • <a href="#" class="text-primary slug-text">/{{ pageData?.primaryKeyword?.keyword.replaceAll(' ','-')}}</a>
             </div>
           </div>
 
@@ -452,6 +452,11 @@ watch(activeTab, (newValue) => {
       height: 100%;
     }
   }
+}
+
+.slug-text{
+  text-transform: lowercase;
+
 }
 
 .c-scroll{

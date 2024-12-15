@@ -1,5 +1,5 @@
 <template>
-    <div class="q-" style="padding-left:32px">
+    <div class="page-detail" style="padding-left:32px">
     <div class="content-info">
       <div class="c-section-bigtitle q-pb-sm">{{ page.title }}</div>
       <div class="c-font-16 text-grey q-pb-md">
@@ -216,5 +216,13 @@ const theProduct = computed(()=>{
     :deep(.q-expansion-item__content) {
       background-color: #fff;
     }
+  }
+
+  .page-detail{
+    position:sticky;
+    top:20px;
+    z-index:12;
+    max-height:calc(100vh - 50px);
+    overflow-y: auto;
   }
   </style>
