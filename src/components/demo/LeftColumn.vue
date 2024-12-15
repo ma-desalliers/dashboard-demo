@@ -89,15 +89,16 @@
       </div>
     </div>
 
-    <div class="section-container q-mb-md">
+    <div class="section-container q-mb-sm   q-pt-md  ">
     <div class="section-header q-mb-sm q-px-md">
       <div class="row items-center">
         <div class="c-box-subtitle q-pr-sm">Knowledge center</div>
+        <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip>
         
       </div>
     </div>
     
-    <div class="c-light-border-bottom departments q-pb-md">
+    <div class="c-light-border-bottom departments  q-pb-lg ">
       <q-item 
         v-for="question in questions" 
         :key="question.id"
@@ -107,7 +108,7 @@
         @click="handleQuestionClick(question)"
       >
         <q-item-section avatar>
-          <q-avatar rounded size="32px" :class="question.answered? 'bg-green-1': 'bg-grey-2'">
+          <q-avatar rounded size="24px" :class="question.answered? 'bg-green-1': 'bg-grey-2'">
               <q-icon v-if="question.answered" name="check" color="green" />
               <q-icon v-if="!question.answered" name="add" color="" />
 
@@ -124,14 +125,14 @@
   </div>
 
     <!-- Knowledge Base Section -->
-    <div class="section-container q-mb-md  q-pt-sm">
+    <div class="section-container q-mb-md  q-pt-md">
       <div class="section-header q-mb-sm q-px-md">
         <div class="row items-center">
           <div class="c-box-subtitle q-pr-sm">Company</div>
           <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip>
         </div>
       </div>
-      <div class="knowledge-items">
+      <div class="knowledge-items departments">
         <q-item v-for="item in knowledgeItems" :key="item.name" clickable v-ripple class="q-px-md">
           <q-item-section avatar>
             <q-avatar rounded size="32px" class="bg-purple-1">
@@ -157,7 +158,7 @@
           </q-item-section>
         </q-item>
       </div>
-      <div v-if="false" class="q-px-sm q-pt-sm">
+      <div v-if="false" class="q-px-sm">
       <q-btn
         class="full-width q-mt-md "
         color="primary"
