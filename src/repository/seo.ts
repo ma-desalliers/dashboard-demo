@@ -1,4 +1,4 @@
-const seo =[
+const seo = [
   {
     "pageTitle": "3 Ways to Measure the Effectiveness of Your Cleaning Cycles",
     "primaryKeyword": {

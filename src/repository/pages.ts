@@ -29999,5 +29999,5 @@ const pages = [
     "updatedAt": 1734127260875,
     "createdAt": 1734127260875
   }
-]
+];
 export default pages
