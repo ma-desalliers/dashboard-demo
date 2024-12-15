@@ -1,11 +1,6 @@
 <template>
   <div class="tabbed-viewer c-pl-32">
-    <div class="content-info">
-      <div class="c-section-title">{{ page.title }}</div>
-      <div class="c-font-16 text-grey">
-        Blog post • {{ [''].join(' • ') || 'Minimize Waste' }}
-      </div>
-    </div>
+
     <q-tabs
       align="left"
       v-model="activeTab"
@@ -47,9 +42,9 @@
         <div class="keywords-analysis q-pa-md">
           <!-- Header with title and search info -->
           <div class="row items-center q-mb-lg">
-            <div class="c-section-title q-mr-md">{{ pageData.title }}</div>
+            <div class="c-section-title q-mr-md">{{ pageData?.pageTitle }}</div>
             <div class="text-subtitle1 text-grey-8">
-              {{ pageData.searches }} searches • <a href="#" class="text-primary">/{{ pageData.slug }}</a>
+              {{ pageData?.primaryKeyword.keyword }} searches • <a href="#" class="text-primary">/{{ pageData?.pageTitle }}</a>
             </div>
           </div>
 
@@ -97,7 +92,7 @@
                     <q-linear-progress
                       :value="0.01"
                       size="xs"
-                      color="blue"
+                      color="primary"
                       track-color="grey1"
                       class="progress-bar"
                     />
@@ -154,7 +149,7 @@
                   <q-card-section class="q-pa-none bg-white">
                     <q-table
                       flat
-                      :rows="keywords"
+                      :rows="pageKeywords"
                       :columns="columns"
                       :pagination="{ rowsPerPage: 0 }"
                       row-key="keyword"
@@ -180,8 +175,8 @@
                               </q-badge>
                             </div>
                           </q-td>
-                          <q-td key="volume" :props="props">{{ props.row.volume }}</q-td>
-                          <q-td key="kd" :props="props">{{ props.row.kd }}</q-td>
+                          <q-td key="volume" :props="props">{{ props.row.globalSearchVolume }}</q-td>
+                          <q-td key="kd" :props="props">{{ props.row.keywordDifficulty }}</q-td>
                         </q-tr>
                       </template>
                     </q-table>
@@ -196,7 +191,7 @@
             <q-expansion-item
               group="competitors"
               icon="public"
-              :label="`Top ${pageData.competitors.length} competitors`"
+              :label="`Top ${pageData?.primaryKeyword} competitors`"
               header-class="text-subtitle1"
               expand-separator
               :class="{ 'custom-expansion': true }"
@@ -204,7 +199,7 @@
             >
               <template v-slot:header>
                 <q-item-section>
-                  <q-item-label class="text-subtitle1">Top {{ pageData.competitors.length }} competitors</q-item-label>
+                  <q-item-label class="text-subtitle1">Top {{ pageDatas.competitors.length }} competitors</q-item-label>
                 </q-item-section>
               </template>
 
@@ -213,7 +208,7 @@
                   <q-card-section class="q-pa-none bg-white">
                     <q-table
                       flat
-                      :rows="pageData.competitors"
+                      :rows="pageDatas.competitors"
                       :columns="[
                         { name: 'domain', align: 'left', label: 'Domain', field: 'domain' },
                         { name: 'url', align: 'left', label: 'URL', field: 'url' }
@@ -255,6 +250,8 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import seo from '~/src/repository/seo';
+
 
 const emit = defineEmits<{
   (e: 'update:channels', selectedChannels: string[]): void
@@ -298,94 +295,15 @@ const keywords = ref([
   { keyword: 'search engine optimisation google', kd: 91, volume: '1,900' }
 ])
 
-const pageData = reactive({
-  title: "sandblasting equipements",
-  searches: 15000,
-  slug: "sandblasting-equipment",
-  countries: [
-    { 
-      name: "France", 
-      searches: "5.5K", 
-      percentage: "27%", 
-      code: "fr" 
-    },
-    { 
-      name: "Russian Federation", 
-      searches: "2.8K", 
-      percentage: "14%", 
-      code: "ru" 
-    },
-    { 
-      name: "Korea", 
-      searches: "1.7K", 
-      percentage: "8%", 
-      code: "kr" 
-    }
-  ],
-  format: {
-    type: "Product category",
-    words: "450-650 words",
-    headings: "8-16",
-    images: "4-16"
-  },
-  keywords: [
-    { 
-      keyword: "seo optimization for google",
-      tag: "MAIN",
-      intent: ["N", "C"],
-      kd: 83,
-      volume: "1,900"
-    },
-    { 
-      keyword: "google seo",
-      intent: ["I"],
-      kd: 73,
-      volume: "1,900"
-    },
-    { 
-      keyword: "google seo marketing",
-      intent: ["T"],
-      kd: 86,
-      volume: "1,900"
-    },
-    { 
-      keyword: "google seo optimization",
-      kd: 88,
-      volume: "1,900"
-    },
-    { 
-      keyword: "google seo search engine optimization",
-      kd: 88,
-      volume: "1,900"
-    },
-    { 
-      keyword: "search engine optimisation google",
-      kd: 91,
-      volume: "1,900"
-    },
-    { 
-      keyword: "search engine optimization on google",
-      kd: 87,
-      volume: "1,900"
-    },
-    { 
-      keyword: "search optimization google",
-      tag: "+1",
-      kd: 79,
-      volume: "1,900"
-    },
-    { 
-      keyword: "seo and google",
-      tag: "+1",
-      kd: 88,
-      volume: "1,900"
-    },
-    { 
-      keyword: "seo in google",
-      kd: 88,
-      volume: "1,900"
-    }
-  ],
+const pageData = computed(()=>{
+  return seo.find(s => s.pageUuid == page.value.uuid)
+})
+
+const pageKeywords = computed(()=>{
+  return [pageData.value?.primaryKeyword, ...(pageData.value? pageData.value?.secondaryKeywords: [])]
+})
+
+const pageDatas = reactive({
   competitors: [
     {
       domain: "blog.hubspot.com",
@@ -447,8 +365,8 @@ const pageData = reactive({
       path: "/blog/what-is-seo/",
       url: "https://semrush.com/blog/what-is-seo/"
     }
-  ]
-})
+  ]}
+)
 
 // Helper function for intent badge colors
 const getIntentColor = (intent: string) => {
@@ -501,7 +419,7 @@ watch(activeTab, (newValue) => {
   max-height: 90vh;
   height:90vh;
   position: sticky;
-  top: 32px;
+  top: 25px;
 }
 
 .iframe-container {

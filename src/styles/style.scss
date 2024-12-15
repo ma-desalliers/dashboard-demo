@@ -58,15 +58,29 @@ html {
   color:#666666;
 }
 
+.c-section-bigtitle{
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .c-section-title{
   font-size: 18px;
   font-weight: 500;
+}
+
+.c-section-subtitle{
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .c-box-subtitle{
   font-size: 1.05rem;
   color:#666666;
   font-weight: 600;
+
+  &.c-smaller{
+    font-size: 0.8rem;
+  }
 }
 
 .c-small-text{
@@ -232,7 +246,7 @@ html {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 400px;
+  max-width: 375px;
 }
 
 

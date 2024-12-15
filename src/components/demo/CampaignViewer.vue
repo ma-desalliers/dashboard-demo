@@ -1,81 +1,86 @@
 <template>
-  <div class="c-content-marketing c-pa-32">
-    <!-- Header Section -->
-    <div class="row full-width">
-      
-      <div class="col-7">
-        <div class="text-h6 q-mb-sm">Content marketing <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
-        <div class="text-caption text-grey-7 q-mb-lg">
-          Creation of value-added content for your target audience.
-        </div>
+  <div class="row c-pa-32 full-width">
+    <div class="c-content-marketing row  col-12">
+      <!-- Header Section -->
+      <div class="row full-width col-12">
         
-        <div class="col-3">
-          <!-- Filters Section-->
-          <div class="row q-col-gutter-md q-mb-lg">
-            <div>
-              <q-btn-group unelevated class="c-btn-group">
-                <q-btn
-                :color="listView == 'products'? 'primary' : 'grey-1'"
-                :text-color="listView == 'products'? '' : '#333333'"
-                class="q-px-md"
-                @click="setListView('products')"
-                >
-                <i class="fa-solid fa-boxes-stacked"></i>
-              </q-btn>
+        <div :class="showDetail? 'col-4' :'col-6' ">
+              <div class="text-h6 q-mb-sm">Content marketing <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
+              <div class="text-caption text-grey-7 q-mb-lg">
+                Creation of value-added content for your target audience.
+              </div>
               
-              <q-btn
-              :color="listView == 'pages'? 'primary' : 'grey-1'"
-              :text-color="listView == 'pages'? '' : '#333333'"
-              class="q-px-md"
-              @click="setListView('pages')"
-              >
-              <i class="fa fa-list"></i>
-            </q-btn>
-          </q-btn-group>
+              <div class="col-3">
+                <!-- Filter Section-->
+                <div class="row q-col-gutter-md q-mb-lg">
+                  <div class="col-4">
+                    <q-btn-group unelevated class="c-btn-group">
+                      <q-btn
+                      :color="listView == 'products'? 'primary' : 'grey-1'"
+                      :text-color="listView == 'products'? '' : '#333333'"
+                      class="q-px-md"
+                      @click="setListView('products')"
+                      >
+                      <i class="fa-solid fa-boxes-stacked"></i>
+                    </q-btn>
+                    
+                    <q-btn
+                    :color="listView == 'pages'? 'primary' : 'grey-1'"
+                    :text-color="listView == 'pages'? '' : '#333333'"
+                    class="q-px-md"
+                    @click="setListView('pages')"
+                    >
+                    <i class="fa fa-list"></i>
+                  </q-btn>
+                </q-btn-group>
+              </div>
+              
+              <div class="col-12 col-sm-4">
+                <MultiSelect dense
+                v-model="productFilter"
+                :options="products"
+                label-name="name"
+                label="Products"
+                :display-selected="'number'"
+                :use-search="true" ></MultiSelect> 
+                
+              </div>
+             <!-- <div class="col-12 col-sm-3">
+                <MultiSelect  v-model="audienceFilter" :options="audience" label-name="title" label="Brands" :display-selected="'number'" ></MultiSelect> 
+                
+              </div>-->
+              <div class="col-12 col-sm-4">
+                <MultiSelect  v-model="audienceFilter" :options="audience" label-name="title" label="Audiences" :display-selected="'number'" ></MultiSelect> 
+                
+              </div>
+            </div>
+            
+            <!-- Content List -->
+            
+            <PageList v-if="listView == 'pages'" v-model="selectedPage"  :product-filter="productFilter" :audience-filter="audienceFilter" :small-version="showDetail"></PageList>
+            <ProductList v-if="listView == 'products'" v-model="selectedPage"  :filter="productFilter"  :audience-filter="audienceFilter" ></ProductList>
+            <!-- Pagination 
+            <div class="row justify-center q-mt-lg">
+              <q-pagination
+              v-model="currentPage"
+              :max="totalPages"
+              :max-pages="6"
+              boundary-numbers
+              direction-links
+              />
+            </div>-->
+          </div>
         </div>
-        
-        <div class="col-12 col-sm-3">
-          <MultiSelect dense
-          v-model="productFilter"
-          :options="products"
-          label-name="name"
-          label="Products"
-          :display-selected="'number'"
-          :use-search="true" ></MultiSelect> 
-          
+        <div class="c-page-detail-container" :class="{'col-3': showDetail}">
+          <PageDetail :page="selectedPage"></PageDetail>
         </div>
-        <div class="col-12 col-sm-3">
-          <MultiSelect  v-model="audienceFilter" :options="audience" label-name="title" label="Brands" :display-selected="'number'" ></MultiSelect> 
-          
-        </div>
-        <div class="col-12 col-sm-3">
-          <MultiSelect  v-model="audienceFilter" :options="audience" label-name="title" label="Audiences" :display-selected="'number'" ></MultiSelect> 
-          
+        <div :class="showDetail? 'col-5' : 'col-6'">
+          <PageViewer :page="selectedPage"></PageViewer>
         </div>
       </div>
-      
-      <!-- Content List -->
-      
-      <PageList v-if="listView == 'pages'" v-model="selectedPage"  :product-filter="productFilter" :audience-filter="audienceFilter"></PageList>
-      <ProductList v-if="listView == 'products'" v-model="selectedPage"  :filter="productFilter"  :audience-filter="audienceFilter" ></ProductList>
-      <!-- Pagination 
-      <div class="row justify-center q-mt-lg">
-        <q-pagination
-        v-model="currentPage"
-        :max="totalPages"
-        :max-pages="6"
-        boundary-numbers
-        direction-links
-        />
-      </div>-->
+  
     </div>
   </div>
-  <div class="col-5">
-    <PageViewer :page="selectedPage"></PageViewer>
-  </div>
-</div>
-
-</div>
 </template>
 <script lang="ts" setup>
 import { storeToRefs } from 'pinia';
@@ -92,6 +97,7 @@ import MultiSelect from './usedComponent/MultiSelect.vue';
 import PageList from './usedComponent/PageList.vue';
 import ProductList from './usedComponent/ProductList.vue';
 import pages from '~/src/repository/pages';
+import PageDetail from './usedComponent/PageDetail.vue';
 
 
 
@@ -109,7 +115,7 @@ const audienceFilter = ref<string[]>([])
 const mainDisplayStore = useMainDisplayStore()
 const { main} = storeToRefs(mainDisplayStore)
 const listView = ref('products')
-
+const showDetail = ref(false)
 
 const currentPage = ref(1)
 const itemsPerPage = ref(10)
@@ -139,6 +145,12 @@ const selectPage = (page:any)=>{
 const setListView = (listViewName:string) =>{
   listView.value = listViewName
 }
+
+watch(selectedPage, (newValue)=>{
+  if(newValue.uuid){
+    showDetail.value = true
+  }
+}, {deep:true})
 
 </script>
 
@@ -179,5 +191,14 @@ const setListView = (listViewName:string) =>{
   .q-item {
     padding: 8px 16px;
   }
+}
+
+.c-page-detail-container{
+  
+  overflow:hidden;
+  transition: 0.25s;
+  position:sticky;
+  top:10px;
+  
 }
 </style>

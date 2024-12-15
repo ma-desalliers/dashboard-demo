@@ -16,7 +16,7 @@
                     @click="orderByTitle()"></i>
                 </div>
               </q-item-section>
-              <q-item-section side style="width: 200px; text-align: center">
+              <q-item-section side style="width: 200px; text-align: center" v-if="!smallVersion">
                 <div class="text-caption">Visitors
                   <q-chip squared class="c-indicator-chip bg-orange-1 c-border-orange" text-color="orange" size="sm">
                     <i class="fa fa-arrow-up"></i>
@@ -25,7 +25,7 @@
                 </div>
                 
               </q-item-section>
-              <q-item-section side style="width: 200px; text-align: center; align-items: center">
+              <q-item-section side style="width: 200px; text-align: center; align-items: center" v-if="!smallVersion">
                 <div class="text-caption">Leads</div>
               </q-item-section>
             </q-item>
@@ -47,11 +47,11 @@
 
               </q-item-section>
               
-              <q-item-section side style="width: 200px; text-align: center"  @click="selectPage(page)">
+              <q-item-section side style="width: 200px; text-align: center"  @click="selectPage(page)" v-if="!smallVersion">
                 <div class="text-subtitle2">{{ '15,000' }}</div>
               </q-item-section>
               
-              <q-item-section side style="width: 200px; text-align: center; align-items: center"  @click="selectPage(page)">
+              <q-item-section side style="width: 200px; text-align: center; align-items: center"  @click="selectPage(page)" v-if="!smallVersion">
                 <div class="text-subtitle2 text-grey-7">{{ '25' }}</div>
               </q-item-section>
               <SelectedElementIndicator :rounded="false" color="bg-primary" :show="selectedPage.uuid == page.uuid"></SelectedElementIndicator>
@@ -67,7 +67,8 @@ const props = defineProps<{
     modelValue?: any,
     productFilter: Array<any>,
     audienceFilter: Array<any>,
-    hideHeader?: Boolean
+    hideHeader?: Boolean,
+    smallVersion?:Boolean
 }>()
 
 const emit = defineEmits(['update:modelValue'])

@@ -13,7 +13,7 @@ const pages = [
     },
     "clientUuid": "75b211f3-0b75-4bd6-8423-bd1526fea9c0",
     "marketUuid": "4798158f-02f8-41ce-b5e7-4ed8f9de45ce",
-    "personaUuid": "daeab466-ad38-45fc-be21-f656f10e4dff",
+    "c": "daeab466-ad38-45fc-be21-f656f10e4dff",
     "productUuid": "6b0fc750-b125-467b-8c33-e4af96f53986",
     "title": "10 Common Mistakes to Avoid When Adjusting Spray Angles",
     "score": 1,
