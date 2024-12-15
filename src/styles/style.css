@@ -11,8 +11,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  scrollbar-gutter: stable;
-  /* Prevents layout shift */
+  scrollbar-gutter: stable; /* Prevents layout shift */
   font-family: Lexend Deca;
   color: #213343;
 }
@@ -57,7 +56,6 @@ html {
   color: #666666;
   font-weight: 600;
 }
-
 .c-box-subtitle.c-smaller {
   font-size: 0.8rem;
 }
@@ -82,15 +80,12 @@ html {
   box-shadow: none !important;
   border-radius: 4px;
 }
-
 .q-btn:before {
   box-shadow: none !important;
 }
-
 .q-btn .fa {
   font-size: 1.4em;
 }
-
 .q-btn span {
   text-transform: capitalize;
 }
@@ -126,7 +121,6 @@ html {
 .c-select .q-item {
   min-height: unset;
 }
-
 .c-select:hover .q-field__control:before {
   border-color: #55B948;
 }
@@ -138,13 +132,16 @@ html {
 .c-no-border {
   border: none !important;
 }
-
 .c-no-border .q-expansion-item__container {
   border: none !important;
 }
 
 .c-border-right {
   border-right: 1px solid #e7e7e7;
+}
+
+.c-border-bottom {
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .c-border-orange {
@@ -162,11 +159,9 @@ html {
 .c-selected-client {
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
-
 .c-selected-client .q-item:has(.c-expansion-header-hover) {
   background-color: color-mix(in srgb, #55B948 16%, #ffffff);
 }
-
 .c-bg-primary-lighten {
   background-color: color-mix(in srgb, #55B948 16%, #ffffff);
 }
@@ -232,18 +227,17 @@ html {
   background-color: var(--expansion-bg-color, transparent);
   border-radius: 4px;
 }
-
 .custom-expansion :deep(.q-expansion-item__container) {
   background-color: var(--expansion-bg-color, transparent);
 }
-
 .custom-expansion .content-wrapper {
   background-color: white;
   padding: 0 16px;
 }
 
 .c-img-cover {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .bg-green {
@@ -261,7 +255,6 @@ html {
 .bg-green-hover:hover {
   background-color: color-mix(in srgb, var(--q-green) 25%, #ffffff 90%) !important;
 }
-
 .bg-green-hover .q-focus-helper {
   display: none;
 }
@@ -269,7 +262,6 @@ html {
 .bg-blue-hover:hover {
   background-color: #e3f2fd !important;
 }
-
 .bg-blue-hover .q-focus-helper {
   display: none;
 }
@@ -277,7 +269,6 @@ html {
 .bg-purple-hover:hover {
   background-color: #f3e5f5 !important;
 }
-
 .bg-purple-hover .q-focus-helper {
   display: none;
 }
@@ -285,7 +276,6 @@ html {
 .bg-yellow-hover:hover {
   background-color: #fffde7 !important;
 }
-
 .bg-yellow-hover .q-focus-helper {
   display: none;
 }
@@ -328,4 +318,4 @@ html {
   overflow-y: auto;
   /* Optional: Add some padding to prevent content from touching scrollbar */
   padding-right: 2px;
-}
+}/*# sourceMappingURL=style.css.map */

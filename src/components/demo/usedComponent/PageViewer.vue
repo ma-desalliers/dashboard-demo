@@ -1,16 +1,15 @@
 <template>
-  <div class="tabbed-viewer c-pl-32">
+  <div class="tabbed-viewer">
 
     <q-tabs
       align="left"
       v-model="activeTab"
-      class="text-grey q-tabs__content--align-left"
+      class="text-grey q-tabs__content--align-left c-border-bottom q-pl-lg" 
       active-color="primary"
       indicator-color="primary"
       dense
     >
-      <q-tab name="preview" label="Content" class="c-tab-padding" style="flex:unset" />
-      <q-tab name="details" label="Campaign" class="c-tab-padding q-mx-md" style="flex:unset" />
+      <q-tab name="preview" label="Content" class="c-tab-padding" style="flex:unset;margin-right:16px" />
       <q-tab name="keywords" label="Seo" class="c-tab-padding" style="flex:unset" />
     </q-tabs>
 
@@ -432,8 +431,7 @@ watch(activeTab, (newValue) => {
 
 .iframe-container {
   position: relative;
-  border: solid 1px #e7e7e7;
-  border-radius: 4px;
+  border: solid 0px #e7e7e7;
   iframe {
     box-shadow: none;
   }

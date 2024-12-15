@@ -39,7 +39,7 @@
               <q-item-section class="clickable"  @click="selectPage(page)"  >
 
                   <div class="content-info">
-                    <div class="text-subtitle2 c-text-truncate">{{ page.title }}</div>
+                    <div class="text-subtitle2 c-text-truncate" style="font-weight: 400;">{{ page.title }}</div>
                     <!--<div class="text-caption text-grey-7">
                       Blog post • {{ [''].join(' • ') || 'Minimize Waste' }}
                     </div>-->

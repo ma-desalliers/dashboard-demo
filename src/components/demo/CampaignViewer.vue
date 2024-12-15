@@ -1,14 +1,15 @@
 <template>
-  <div class="row c-px-32 full-width">
-    <div class="col-12 q-pb-md">
+  <div class="row full-width">
+    <div class="col-12  c-border-bottom">
       <q-tabs
       v-model="listView"
         color="primary"
         :align="'left'"  
               active-color="primary"
       indicator-color="primary"
+      class="q-pl-lg"
       >
-        <q-tab active name="products" label="Products" @click="setListView('products')" />
+        <q-tab active name="products" label="Products" @click="setListView('products')"  class="q-mr-lg"/>
         <q-tab  name="pages" label="Content" @click="setListView('pages')"/>
       </q-tabs>
     </div>
@@ -16,15 +17,15 @@
       <!-- Header Section -->
       <div class="row full-width col-12">
         
-        <div :class="showDetail? 'col-3' :'col-6' ">
-              <div class="text-h6 q-mb-sm">Content marketing <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
-              <div class="text-caption text-grey-7 q-mb-lg">
+        <div :class="showDetail? 'col-3' :'col-6' " class="c-border-right q-pt-md">
+              <div class="text-h6 q-mb-sm q-px-md">Content marketing <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
+              <div class="text-caption text-grey-7 q-mb-lg q-px-md">
                 Creation of value-added content for your target audience.
               </div>
               
-              <div class="col-3">
+              <div class="col-3 ">
                 <!-- Filter Section-->
-                <div class="row q-col-gutter-md q-mb-lg">
+                <div class="row q-col-gutter-md q-mb-lg q-px-md">
               
               <div class="col-12 col-sm-6">
                 <MultiSelect dense
@@ -62,7 +63,7 @@
             </div>-->
           </div>
         </div>
-        <div class="c-page-detail-container" :class="{'col-3': showDetail}">
+        <div class="c-page-detail-container c-border-right q-pt-md" :class="{'col-3': showDetail}">
           <PageDetail :page="selectedPage"></PageDetail>
         </div>
         <div :class="showDetail? 'col-6' : 'col-6'">
@@ -148,8 +149,8 @@ watch(selectedPage, (newValue)=>{
 <style lang="scss" scoped>
 .c-content-marketing {
   .content-list {
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
+    border: 0px solid #e0e0e0;
+   // border-radius: 4px;
     background: white;
   }
   

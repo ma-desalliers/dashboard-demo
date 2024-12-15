@@ -94,11 +94,22 @@
       <div class="row items-center">
         <div class="c-box-subtitle q-pr-sm">Knowledge center</div>
         <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip>
-        
+        <div class="row c-linear-container"> 
+          <div></div>
+        <q-linear-progress
+                :value="0.4"
+                size="xl"
+                color="green"
+                track-color="green"
+                class="progress-bar"
+                label=""
+              />
+              <span>2/5 question</span>
+            </div>
       </div>
     </div>
     
-    <div class="c-light-border-bottom departments  q-pb-lg ">
+    <div class="c-light-border-bottom departments  q-pb-lg q-pt-sm">
       <q-item 
         v-for="question in questions" 
         :key="question.id"
@@ -108,9 +119,8 @@
         @click="handleQuestionClick(question)"
       >
         <q-item-section avatar>
-          <q-avatar rounded size="24px" :class="question.answered? 'bg-green-1': 'bg-grey-2'">
-              <q-icon v-if="question.answered" name="check" color="green" />
-              <q-icon v-if="!question.answered" name="add" color="" />
+          <q-avatar rounded size="24px" class="bg-green-1">
+              <q-icon  name="add" color="green" />
 
             </q-avatar>
         </q-item-section>
@@ -118,9 +128,7 @@
           {{ question.text }}
         </q-item-section>
       </q-item>
-      <div class="text-grey-6 q-pl-md">
-          <span class="text-caption">2/5 questions answered</span>
-        </div>
+
     </div>
   </div>
 
@@ -239,8 +247,9 @@ interface Question {
 }
 
 const questions = ref<Question[]>([
-  { id: 1, text: "Who are your competitors?", answered: true },
   { id: 2, text: "What is your best product?", answered: false },
+  { id: 1, text: "Who are your competitors?", answered: true },
+  
   { id: 3, text: "What's your target market?", answered: true }
 ]);
 

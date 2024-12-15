@@ -1,6 +1,6 @@
 <template>
   <q-toolbar v-if="isVisible" class="c-header bg-primary relative-position">
-    <span class="text-white absolute-center" style="font-size: 1.1rem">
+    <span class="text-white absolute-center" style="font-size: 1rem; font-weight: 300">
       New Functionality Available!
     </span>
     <q-btn

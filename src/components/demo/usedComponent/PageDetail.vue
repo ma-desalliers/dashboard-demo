@@ -1,13 +1,13 @@
 <template>
-    <div class="page-detail" style="padding-left:32px">
-    <div class="content-info">
+    <div class="page-detail">
+    <div class="content-info q-px-md">
       <div class="c-section-bigtitle q-pb-sm">{{ page.title }}</div>
       <div class="c-font-16 text-grey q-pb-md">
         Blog post • {{ [''].join(' • ') || 'Minimize Waste' }}
       </div>
     </div>
-    <div class="business-profile ">
-      <div class="header q-pb-md q-mb-md">
+    <div class="business-profile  ">
+      <div class="header q-pb-md q-mb-md q-px-md">
         <div class="row items-center q-gutter-x-sm">
 
             <q-btn rounded dense class="bg-green-1 br-green" text-color="primary" icon="edit" />
@@ -35,7 +35,7 @@
           />
         </template>
   
-        <div class="content-wrapper q-pa-sm">
+        <div class="content-wrapper q-pa-lg">
          
   
           <div class="business-details">
@@ -95,6 +95,7 @@
         header-class="c-section-subtitle"
         :class="{ 'custom-expansion': true }"
         :style="{ '--expansion-bg-color': 'var(--main-gray)' }"
+        :default-opened="true"
       >
         <template #header-right>
           <q-chip
@@ -106,10 +107,10 @@
           />
         </template>
   
-        <div class="content-wrapper">
+        <div class="content-wrapper q-pa-lg">
           <q-img
             :src="theProduct?.image || ''"
-            height="200px"
+            height="160px"
             class="rounded-borders q-mb-md"
           />
   
@@ -196,6 +197,7 @@ const theProduct = computed(()=>{
   
     .content-wrapper {
       background-color: #fff;
+      padding:24px;
     }
   
     .business-details {
@@ -218,6 +220,10 @@ const theProduct = computed(()=>{
     }
   }
 
+
+  .text-h6{
+    font-size: 16px;
+  }
   .page-detail{
     position:sticky;
     top:20px;
