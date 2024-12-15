@@ -58,7 +58,7 @@
                   </q-avatar>
                   <div class="q-ml-sm country-name">{{ pageData?.primaryKeyword?.countryRepartition[0].country }}
                     <q-linear-progress
-                      :value="0.27"
+                      :value="Math.round(pageData?.primaryKeyword?.countryRepartition[0].searchVolume * 100 / totalVolume) /100"
                       size="xs"
                       color="blue"
                       track-color="grey1"
@@ -74,7 +74,7 @@
                   </q-avatar>
                   <div class="q-ml-sm country-name">{{ pageData?.primaryKeyword?.countryRepartition[1].country }}
                     <q-linear-progress
-                      :value="0.14"
+                      :value="Math.round(pageData?.primaryKeyword?.countryRepartition[1].searchVolume * 100 / totalVolume) /100"
                       size="xs"
                       color="blue"
                       track-color="grey1"
@@ -164,14 +164,14 @@
                           <q-td key="intent" :props="props" >
                             <div class="row q-gutter-x-xs q-pr-md q-mx-none justify-end">
                               <q-badge
-                                v-for="badge in props.row.tag"
+                                v-for="badge in props.row.intent"
                                 :key="badge"
-                                :color="getIntentColor(badge)"
+                                :color="getIntentColor(badge[0])"
                                 square
                                 size="24px"
                                 class="q-pa-sm"
                               >
-                                {{ badge }}
+                                {{ badge[0] }}
                               </q-badge>
                             </div>
                           </q-td>
