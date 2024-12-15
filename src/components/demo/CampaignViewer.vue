@@ -1,5 +1,16 @@
 <template>
-  <div class="row c-pa-32 full-width">
+  <div class="row c-px-32 full-width">
+    <div class="col-12 q-pb-md">
+      <q-tabs
+        color="primary"
+        :align="'left'"  
+              active-color="primary"
+      indicator-color="primary"
+      >
+        <q-tab  name="products" label="Products" @click="setListView('products')" />
+        <q-tab  name="pages" label="Posts" @click="setListView('pages')"/>
+      </q-tabs>
+    </div>
     <div class="c-content-marketing row  col-12">
       <!-- Header Section -->
       <div class="row full-width col-12">
@@ -13,29 +24,8 @@
               <div class="col-3">
                 <!-- Filter Section-->
                 <div class="row q-col-gutter-md q-mb-lg">
-                  <div class="col-4">
-                    <q-btn-group unelevated class="c-btn-group">
-                      <q-btn
-                      :color="listView == 'products'? 'primary' : 'grey-1'"
-                      :text-color="listView == 'products'? '' : '#333333'"
-                      class="q-px-md"
-                      @click="setListView('products')"
-                      >
-                      <i class="fa-solid fa-boxes-stacked"></i>
-                    </q-btn>
-                    
-                    <q-btn
-                    :color="listView == 'pages'? 'primary' : 'grey-1'"
-                    :text-color="listView == 'pages'? '' : '#333333'"
-                    class="q-px-md"
-                    @click="setListView('pages')"
-                    >
-                    <i class="fa fa-list"></i>
-                  </q-btn>
-                </q-btn-group>
-              </div>
               
-              <div class="col-12 col-sm-4">
+              <div class="col-12 col-sm-6">
                 <MultiSelect dense
                 v-model="productFilter"
                 :options="products"
@@ -49,7 +39,7 @@
                 <MultiSelect  v-model="audienceFilter" :options="audience" label-name="title" label="Brands" :display-selected="'number'" ></MultiSelect> 
                 
               </div>-->
-              <div class="col-12 col-sm-4">
+              <div class="col-12 col-sm-6">
                 <MultiSelect  v-model="audienceFilter" :options="audience" label-name="title" label="Audiences" :display-selected="'number'" ></MultiSelect> 
                 
               </div>

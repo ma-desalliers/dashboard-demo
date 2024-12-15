@@ -20,7 +20,8 @@
       <q-expansion-item
         label="Audience"
         header-class="c-section-subtitle"
-
+        :class="{ 'custom-expansion': true }"
+        :style="{ '--expansion-bg-color': 'var(--main-gray)' }"
         class="q-mb-md"
         :default-opened="true"
       >
@@ -92,7 +93,8 @@
       <q-expansion-item
         label="Product"
         header-class="c-section-subtitle"
-
+        :class="{ 'custom-expansion': true }"
+        :style="{ '--expansion-bg-color': 'var(--main-gray)' }"
       >
         <template #header-right>
           <q-chip

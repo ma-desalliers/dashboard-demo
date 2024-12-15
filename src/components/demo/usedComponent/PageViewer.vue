@@ -490,18 +490,7 @@ watch(activeTab, (newValue) => {
   overflow:auto
 }
 
-.custom-expansion {
-  background-color: var(--expansion-bg-color, transparent);
 
-  :deep(.q-expansion-item__container) {
-    background-color: var(--expansion-bg-color, transparent);
-  }
-
-  .content-wrapper {
-    background-color: white;
-    padding: 0 16px;
-  }
-}
 
 .country-name{
   min-width:100px;

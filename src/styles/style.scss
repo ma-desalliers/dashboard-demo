@@ -214,6 +214,10 @@ html {
 .c-pa-32{
   padding:32px;
 }
+.c-px-32{
+  padding-left:32px;
+  padding-right:32px;
+}
 
 .c-pl-32{
   padding-left:32px;
@@ -257,6 +261,19 @@ html {
   z-index: 10;
 }
 
+
+.custom-expansion {
+  background-color: var(--expansion-bg-color, transparent);
+  border-radius: 4px;
+  :deep(.q-expansion-item__container) {
+    background-color: var(--expansion-bg-color, transparent);
+  }
+
+  .content-wrapper {
+    background-color: white;
+    padding: 0 16px;
+  }
+}
 
 .c-btn-group{
  
