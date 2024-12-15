@@ -2,7 +2,7 @@
               <q-list separator >
             <!-- Headers -->
             <q-item v-if="!hideHeader" class="header-row text-grey-7 c-sticky" >
-              <q-item-section side style="width: 48px">
+              <q-item-section side style="width: 48px"v-if="!smallVersion" >
                 <div class="text-caption">RS</div>
               </q-item-section>
               <q-item-section>
@@ -32,7 +32,7 @@
             
             <!-- Content Items -->
             <q-item v-for="page in filteredPages" :key="page.uuid" class="c-list-row clickable q-pa-md" :class="{'c-bg-primary-lighten':page.uuid == selectedPage.uuid, 'bg-grey-2':page.hasContent != true}">
-              <q-item-section side style="width: 48px"  @click="selectPage(page)">
+              <q-item-section side style="width: 48px"  @click="selectPage(page)" v-if="!smallVersion">
                 <ScoreDisplay :score="page.score" size="24px" />
               </q-item-section>
               

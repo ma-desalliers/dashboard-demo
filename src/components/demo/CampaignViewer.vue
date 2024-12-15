@@ -4,7 +4,7 @@
       <!-- Header Section -->
       <div class="row full-width col-12">
         
-        <div :class="showDetail? 'col-4' :'col-6' ">
+        <div :class="showDetail? 'col-3' :'col-6' ">
               <div class="text-h6 q-mb-sm">Content marketing <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
               <div class="text-caption text-grey-7 q-mb-lg">
                 Creation of value-added content for your target audience.
@@ -74,7 +74,7 @@
         <div class="c-page-detail-container" :class="{'col-3': showDetail}">
           <PageDetail :page="selectedPage"></PageDetail>
         </div>
-        <div :class="showDetail? 'col-5' : 'col-6'">
+        <div :class="showDetail? 'col-6' : 'col-6'">
           <PageViewer :page="selectedPage"></PageViewer>
         </div>
       </div>
