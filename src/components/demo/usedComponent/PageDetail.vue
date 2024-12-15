@@ -46,28 +46,28 @@
               <div class="row">
                 <span>
                   <span class="c-box-subtitle c-smaller">Sector&nbsp;:&nbsp;</span>
-                  {{ theAudience?.subIndustryId }}
+                  {{ theAudience?.sectorName }}
                 </span>
               </div>
 
               <div class="row">
                 <span>
                   <span class="c-box-subtitle c-smaller">Industry&nbsp;:&nbsp;</span>
-                  {{ industry }}
+                  {{ theAudience?.subIndustryName }}
                 </span>
               </div>
 
               <div class="row">
                 <span>
                   <span class="c-box-subtitle c-smaller">Sub-industry&nbsp;:&nbsp;</span>
-                  {{ subIndustry }}
+                  {{ theAudience?.subIndustryName }}
                 </span>
               </div>
 
               <div class="row">
                 <span>
                   <span class="c-box-subtitle c-smaller">Location&nbsp;:&nbsp;</span>
-                  {{ location }}
+                  {{theAudience?.countryName}} - {{theAudience?.cityName }} 
                 </span>
               </div>
 
@@ -120,7 +120,7 @@
               <div class="col-12 col-md-6">
                 <div class="detail-item q-mb-sm">
                   <div class="c-box-subtitle c-smaller">Category</div>
-                  <div>{{ theProduct?.subcategory.name }}</div>
+                  <div>{{ theProduct?.subcategory?.name }}</div>
                 </div>
                 
                 <div class="detail-item q-mb-sm">

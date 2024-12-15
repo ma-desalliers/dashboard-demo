@@ -44,7 +44,7 @@
           <div class="row items-center q-mb-lg">
             <div class="c-section-title q-mr-md">{{ pageData?.pageTitle }}</div>
             <div class="text-subtitle1 text-grey-8">
-              {{ pageData?.primaryKeyword.keyword }} searches • <a href="#" class="text-primary">/{{ pageData?.pageTitle }}</a>
+              {{ pageData?.primaryKeyword?.keyword }} searches • <a href="#" class="text-primary">/{{ pageData?.pageTitle }}</a>
             </div>
           </div>
 
@@ -52,11 +52,11 @@
           <div class="row q-mb-lg">
             <div class="col-12 col-md-5 c-border-right q-pr-sm">
               <div class="country-list">
-                <div class="row items-center q-mb-sm" style="min-width: 195px;">
+                <div v-if="pageData?.primaryKeyword?.countryRepartition[0]" class="row items-center q-mb-sm" style="min-width: 195px;">
                   <q-avatar size="20px">
                     <span class="fi fi-us" alt="usa" ></span>  
                   </q-avatar>
-                  <div class="q-ml-sm country-name">USA
+                  <div class="q-ml-sm country-name">{{ pageData?.primaryKeyword?.countryRepartition[0].country }}
                     <q-linear-progress
                       :value="0.27"
                       size="xs"
@@ -65,14 +65,14 @@
                       class="progress-bar"
                     />
                   </div>
-                  <div class="q-ml-auto" style="min-width:30px">5.5K</div>
-                  <div class="text-grey-6 text-right" style="min-width:30px">27%</div>
+                  <div class="q-ml-auto" style="min-width:30px">{{ pageData?.primaryKeyword?.countryRepartition[0].searchVolume }}</div>
+                  <div class="text-grey-6 text-right" style="min-width:30px">{{Math.round(pageData?.primaryKeyword?.countryRepartition[0].searchVolume * 100 / totalVolume)}}%</div>
                 </div>
-                <div class="row items-center q-mb-sm" style="min-width: 195px;padding-top:1px">
+                <div v-if="pageData?.primaryKeyword?.countryRepartition[1]" class="row items-center q-mb-sm" style="min-width: 195px;padding-top:1px">
                   <q-avatar size="20px">
                     <span class="fi fi-ca" alt="canada" ></span>  
                   </q-avatar>
-                  <div class="q-ml-sm country-name">Canada
+                  <div class="q-ml-sm country-name">{{ pageData?.primaryKeyword?.countryRepartition[1].country }}
                     <q-linear-progress
                       :value="0.14"
                       size="xs"
@@ -81,14 +81,14 @@
                       class="progress-bar"
                     />
                   </div>
-                  <div class="q-ml-auto" style="min-width:30px">2.8K</div>
-                  <div class="text-grey-6 text-right" style="min-width:30px">14%</div>
+                  <div class="q-ml-auto" style="min-width:30px">{{ pageData?.primaryKeyword?.countryRepartition[1].searchVolume }}</div>
+                  <div class="text-grey-6 text-right" style="min-width:30px">{{Math.round(pageData?.primaryKeyword?.countryRepartition[1].searchVolume * 100 / totalVolume)}}%</div>
                 </div>
-                <div class="row items-center" style="min-width: 195px;padding-top:1px">
+                <div v-if="pageData?.primaryKeyword?.countryRepartition[2]" class="row items-center" style="min-width: 195px;padding-top:1px">
                   <q-avatar size="20px">
                     <span class="fi fi-fr" alt="France" ></span>  
                   </q-avatar>
-                  <div class="q-ml-sm country-name">France
+                  <div class="q-ml-sm country-name">{{ pageData?.primaryKeyword?.countryRepartition[2].country }}
                     <q-linear-progress
                       :value="0.01"
                       size="xs"
@@ -132,7 +132,7 @@
               default-opened
               group="keywords"
               icon="search"
-              :label="`${keywords.length} keywords`"
+              :label="`${pageKeywords.length} keywords`"
               header-class="text-subtitle1"
               expand-separator
               :class="{ 'custom-expansion': true }"
@@ -140,12 +140,12 @@
             >
               <template v-slot:header>
                 <q-item-section>
-                  <q-item-label class="text-subtitle1">{{ keywords.length }} keywords</q-item-label>
+                  <q-item-label class="text-subtitle1">{{ pageKeywords.length }} keywords</q-item-label>
                 </q-item-section>
               </template>
 
               <div class="content-wrapper c-pa-none">
-                <q-card flat>
+                <q-card flat v-if="pageData">
                   <q-card-section class="q-pa-none bg-white">
                     <q-table
                       flat
@@ -159,7 +159,7 @@
                       <template v-slot:body="props">
                         <q-tr :props="props">
                           <q-td key="keyword" :props="props">
-                            {{ props.row.keyword }}
+                            {{ props.row?.keyword }}
                           </q-td>
                           <q-td key="intent" :props="props" >
                             <div class="row q-gutter-x-xs q-pr-md q-mx-none justify-end">
@@ -300,7 +300,11 @@ const pageData = computed(()=>{
 })
 
 const pageKeywords = computed(()=>{
-  return [pageData.value?.primaryKeyword, ...(pageData.value? pageData.value?.secondaryKeywords: [])]
+  const  value = [pageData.value?.primaryKeyword, ...(pageData.value? pageData.value?.secondaryKeywords: [])]
+  console.log(value)
+  if(value[0] == undefined) return []
+
+  return value
 })
 
 const pageDatas = reactive({
@@ -367,6 +371,10 @@ const pageDatas = reactive({
     }
   ]}
 )
+
+const totalVolume = computed(()=>{
+  return pageData.value?.primaryKeyword.countryRepartition.reduce((aug, country)=>{ return aug + country.searchVolume},0) || 1
+})
 
 // Helper function for intent badge colors
 const getIntentColor = (intent: string) => {

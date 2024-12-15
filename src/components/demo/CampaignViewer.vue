@@ -2,12 +2,13 @@
   <div class="row c-px-32 full-width">
     <div class="col-12 q-pb-md">
       <q-tabs
+      v-model="listView"
         color="primary"
         :align="'left'"  
               active-color="primary"
       indicator-color="primary"
       >
-        <q-tab  name="products" label="Products" @click="setListView('products')" />
+        <q-tab active name="products" label="Products" @click="setListView('products')" />
         <q-tab  name="pages" label="Posts" @click="setListView('pages')"/>
       </q-tabs>
     </div>
