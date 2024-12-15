@@ -1,7 +1,7 @@
 <template>
   <div class="sidebar-menu q-px-md q-py-lg">
     <!-- Company Header -->
-    <div class="row items-center justify-center q-mb-xl q-pb-md cursor-pointer c-light-border-bottom">
+    <div class="row items-center justify-center q-mb-md q-pb-md cursor-pointer c-light-border-bottom">
       <q-avatar v-if="company.logoType == 'url'" size="24px" class="q-mr-sm">
         <img :src="company.logo" alt="Company logo">
 
@@ -62,15 +62,15 @@
     </div> -->
 
     <!-- Departments Section -->
-    <div class="section-container q-mb-lg">
+    <div class="section-container q-mb-md">
       <div class="section-header q-mb-sm q-px-md">
         <div class="row items-center">
           <div class="c-box-subtitle q-pr-sm">AI Departments</div>
           <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip>
         </div>
       </div>
-      <div class="departments c-light-border-bottom q-pb-lg">
-        <q-item v-for="dept in departments" :key="dept.name" clickable v-ripple class="q-px-md q-mb-xs" :class="dept.active ? `bg-${dept.color}-1 text-${dept.color}` : `bg-${dept.color}-hover`" @click="openDept(dept)">
+      <div class="departments c-light-border-bottom q-pb-md">
+        <q-item v-for="dept in departments" :key="dept.name" clickable v-ripple class="q-px-md q-mb-xs q-py-xs" :class="dept.active ? `bg-${dept.color}-1 text-${dept.color}` : `bg-${dept.color}-hover`" @click="openDept(dept)">
           <q-item-section avatar>
             <q-avatar rounded size="32px">
               <img class="c-img-cover" :src="dept.icon" :alt="dept.name" :style="{backgroundColor: dept.color}">
@@ -89,16 +89,46 @@
       </div>
     </div>
 
+    <div class="section-container q-mb-md">
+    <div class="section-header q-mb-sm q-px-md">
+      <div class="row items-center">
+        <div class="c-box-subtitle q-pr-sm">Knowledge center</div>
+        
+      </div>
+    </div>
+    
+    <div class="c-light-border-bottom departments q-pb-md">
+      <q-item 
+        v-for="question in questions" 
+        :key="question.id"
+        clickable 
+        v-ripple 
+        class="q-px-md q-mb-xs q-py-xs"
+        @click="handleQuestionClick(question)"
+      >
+        <q-item-section avatar>
+          <q-avatar rounded size="32px" :class="question.answered? 'bg-green-1': 'bg-grey-2'">
+              <q-icon v-if="question.answered" name="check" color="green" />
+              <q-icon v-if="!question.answered" name="add" color="" />
+
+            </q-avatar>
+        </q-item-section>
+        <q-item-section>
+          {{ question.text }}
+        </q-item-section>
+      </q-item>
+      <div class="text-grey-6 q-pl-md">
+          <span class="text-caption">2/5 questions answered</span>
+        </div>
+    </div>
+  </div>
+
     <!-- Knowledge Base Section -->
-    <div class="section-container q-mb-lg  q-pt-md">
+    <div class="section-container q-mb-md  q-pt-sm">
       <div class="section-header q-mb-sm q-px-md">
         <div class="row items-center">
-          <div class="c-box-subtitle q-pr-sm">Knowledge Base</div>
+          <div class="c-box-subtitle q-pr-sm">Company</div>
           <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip>
-        </div>
-        <div class="q-pt-md q-pb-sm" style="color:#666666">
-          Enhance your AI teams with corporate knowledge
-
         </div>
       </div>
       <div class="knowledge-items">
@@ -127,12 +157,12 @@
           </q-item-section>
         </q-item>
       </div>
-      <div class="q-px-sm q-pt-sm">
+      <div v-if="false" class="q-px-sm q-pt-sm">
       <q-btn
         class="full-width q-mt-md "
         color="primary"
         text-color="white"
-        label="Add Knowledge"
+        label="Enhance Knowledge"
       />
     </div>
     </div>
@@ -164,6 +194,7 @@
 <script setup lang="ts">
 
 import company from '@/src/repository/client'
+import { biQuestionCircle } from '@quasar/extras/bootstrap-icons';
 import { useDemoCurrentPageStore } from '~/src/stores/demoCurrentPage';
 
 const demoStore = useDemoCurrentPageStore()
@@ -200,6 +231,22 @@ const openDept = (dept: any) =>{
   demoStore.setCurrentPage(dept.page)
 }
 
+interface Question {
+  id: number;
+  text: string;
+  answered: boolean;
+}
+
+const questions = ref<Question[]>([
+  { id: 1, text: "Who are your competitors?", answered: true },
+  { id: 2, text: "What makes your product unique?", answered: false },
+  { id: 3, text: "What's your target market?", answered: true }
+]);
+
+const handleQuestionClick = (question: Question) => {
+  // Handle question click
+};
+
 </script>
 
 <style scoped lang="scss">
@@ -208,6 +255,7 @@ const openDept = (dept: any) =>{
   height:calc( 100vh - 50px);
   border-right:1px solid #e7e7e7; ;
   background: var(--main-gray);
+  overflow:hidden
 }
 
 .section-header {
@@ -218,7 +266,12 @@ const openDept = (dept: any) =>{
 }
 
 .departments{
-
+  .q-item{
+    padding-top:4px!important;
+    padding-bottom:4px !important;
+    min-height: unset;
+    border-radius: 4px;
+  }
 }
 
 .progress-bar {

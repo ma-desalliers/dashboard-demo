@@ -50,7 +50,7 @@
 
           <!-- Country Distribution -->
           <div class="row q-mb-lg">
-            <div class="col-12 col-md-5 c-border-right q-pr-sm">
+            <div class="col-12 col-lg-5 c-border-right q-pr-sm">
               <div class="country-list">
                 <div v-if="pageData?.primaryKeyword?.countryRepartition[0]" class="row items-center q-mb-sm" style="min-width: 195px;">
                   <q-avatar size="20px">
@@ -104,7 +104,7 @@
             </div>
 
             <!-- Page Format Info -->
-            <div class="col-12 col-md-7 ">
+            <div class="col-12 col-lg-7 ">
               <div class="format-info q-pl-sm">
                 <div class="row justify-between q-mb-sm">
                   <div class="col-6">Page format <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>

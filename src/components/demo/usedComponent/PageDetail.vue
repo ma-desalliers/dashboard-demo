@@ -67,7 +67,7 @@
               <div class="row">
                 <span>
                   <span class="c-box-subtitle c-smaller">Location&nbsp;:&nbsp;</span>
-                  {{theAudience?.countryName}} - {{theAudience?.cityName }} 
+                  {{theAudience?.countryName}} - {{theAudience?.stateName}} - {{theAudience?.cityName }} 
                 </span>
               </div>
 
