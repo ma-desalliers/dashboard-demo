@@ -240,7 +240,7 @@ interface Question {
 
 const questions = ref<Question[]>([
   { id: 1, text: "Who are your competitors?", answered: true },
-  { id: 2, text: "What makes your product unique?", answered: false },
+  { id: 2, text: "What is your best product?", answered: false },
   { id: 3, text: "What's your target market?", answered: true }
 ]);
 
