@@ -10,6 +10,11 @@ export const useNotificationStore = defineStore('notification', {
         message,
       });
     },
+
+    showBasic(message: any) {
+      console.log(`sup`)
+      Notify.create(message);
+    },
     showError(message: string) {
       console.log(`sup`)
       Notify.create({

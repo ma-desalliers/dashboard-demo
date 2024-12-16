@@ -239,7 +239,7 @@ const theProduct = computed(()=>{
     position:sticky;
     top:20px;
     z-index:12;
-    max-height:calc(100vh - 50px);
+    max-height:calc(100vh - 70px);
     overflow-y: auto;
   }
 

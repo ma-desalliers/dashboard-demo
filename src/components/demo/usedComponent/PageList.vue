@@ -31,12 +31,12 @@
             </q-item>
             
             <!-- Content Items -->
-            <q-item v-for="page in filteredPages" :key="page.uuid" class="c-list-row clickable q-pa-md" :class="{'c-bg-primary-lighten':page.uuid == selectedPage.uuid, 'bg-grey-2':page.hasContent != true}">
-              <q-item-section side style="width: 48px"  @click="selectPage(page)" v-if="!smallVersion">
+            <q-item v-for="page in filteredPages"@click="selectPage(page)" clickable :key="page.uuid" class="c-list-row clickable q-pa-md" :class="{'c-bg-primary-lighten':page.uuid == selectedPage.uuid, 'bg-grey-2':page.hasContent != true}">
+              <q-item-section side style="width: 48px"  v-if="!smallVersion">
                 <ScoreDisplay :score="page.score" size="24px" />
               </q-item-section>
               
-              <q-item-section class="clickable"  @click="selectPage(page)"  >
+              <q-item-section class="clickable"    >
 
                   <div class="content-info">
                     <div class="text-subtitle2 c-text-truncate" style="font-weight: 400;">{{ page.title }}</div>
@@ -47,11 +47,11 @@
 
               </q-item-section>
               
-              <q-item-section side style="width: 200px; text-align: center"  @click="selectPage(page)" v-if="!smallVersion">
+              <q-item-section side style="width: 200px; text-align: center"  v-if="!smallVersion">
                 <div class="text-subtitle2">{{ '15,000' }}</div>
               </q-item-section>
               
-              <q-item-section side style="width: 200px; text-align: center; align-items: center"  @click="selectPage(page)" v-if="!smallVersion">
+              <q-item-section side style="width: 200px; text-align: center; align-items: center"   v-if="!smallVersion">
                 <div class="text-subtitle2 text-grey-7">{{ '25' }}</div>
               </q-item-section>
               <SelectedElementIndicator :rounded="false" color="bg-primary" :show="selectedPage.uuid == page.uuid"></SelectedElementIndicator>

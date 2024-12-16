@@ -5,7 +5,7 @@ export const useDemoCurrentPageStore = defineStore('useDemoCurrentPageStore', {
     currentPage: 'CampaignViewer',
   }),
 
-  actions: {  
+  actions: {
     setCurrentPage(value: string) {
       this.currentPage = value;
     },

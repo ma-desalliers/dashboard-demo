@@ -1,5 +1,5 @@
 <template>
-  <Pricing></Pricing>
+  <Pricing class="full-width"></Pricing>
   </template>
   
   <script setup lang="ts">

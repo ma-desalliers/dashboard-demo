@@ -121,14 +121,12 @@
         <q-item-section avatar>
           <q-avatar rounded size="24px" class="bg-green-1">
               <q-icon  name="add" color="green" />
-
             </q-avatar>
         </q-item-section>
         <q-item-section>
           {{ question.text }}
         </q-item-section>
       </q-item>
-
     </div>
   </div>
 
@@ -202,16 +200,12 @@
 </template>
 
 <script setup lang="ts">
-
 import company from '@/src/repository/client'
-import { biQuestionCircle } from '@quasar/extras/bootstrap-icons';
-import { RouterView } from 'vue-router';
 import { useDemoCurrentPageStore } from '~/src/stores/demoCurrentPage';
-
-const demoStore = useDemoCurrentPageStore()
-
+import { useNotificationStore } from '../stores/notificationStore';
 const route = useRoute()
 const router = useRouter()
+const notificationStore = useNotificationStore()
 
 interface KnowledgeItem {
   name: string;
@@ -237,13 +231,21 @@ const knowledgeItems: KnowledgeItem[] = [
   { name: 'Product', icon: 'inventory_2', progress: 0.1 }
 ];
 
-const openDept = async (dept: any) =>{
-  departments.forEach(dep => dep.active = false)
-
-  dept.active = true;
-
-  await router.push(`/${dept.page}`)
-}
+const openDept = async (dept: any) => {
+  if (dept.name === 'Marketing') {
+    departments.forEach(dep => dep.active = false);
+    dept.active = true;
+    await router.push(`/${dept.page}`);
+  } else {
+    // Show notification instead of navigating for unavailable departments
+    notificationStore.showBasic({
+      message: `${dept.name} agents available soon!`,
+      color: 'info',
+      position: 'top-left',
+      timeout: 2000
+    });
+  }
+};
 
 interface Question {
   id: number;

@@ -121,6 +121,9 @@
                   <div class="col-6">Images <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
                   <div class="col-6">4-16</div>
                 </div>
+                <div>
+                  <img src="/public/seo-score.png"/>
+                </div>
               </div>
             </div>
           </div>

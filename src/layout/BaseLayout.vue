@@ -61,6 +61,7 @@ const headerState = ref(true)
   top:50px;
   bottom:0;
   left:300px;
+  right:0;
   height: 100%;
   overflow-y: auto;
 }

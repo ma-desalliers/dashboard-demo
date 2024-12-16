@@ -15,9 +15,10 @@
         <div class="content-info">
           <div >
             <span class="text-subtitle2"> {{ audience.title }} &nbsp;</span>
-            <span class="text-grey"> {{ audience.pageCount }} <i class="fa-regular fa-file"></i></span>
           </div>
           <div class="text-caption text-grey-7 text-truncate">
+            
+            <span class="" v-if="audience.pageCount"><i class="fa-regular fa-file"></i> {{ audience.pageCount }} •  </span>
             {{ audience.subIndustryName || audience.description }}
           </div>
         </div>

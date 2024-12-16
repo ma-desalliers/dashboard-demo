@@ -7,10 +7,10 @@
         :align="'left'"  
         active-color="primary"
         indicator-color="primary"
-        class="q-pl-lg"
+        class="q-pl-md"
       >
-        <q-tab active name="products" label="Products" @click="setListView('products')"  class="q-mr-lg"/>
-        <q-tab  name="audiences" label="Audiences" @click="setListView('audiences')" class="q-mr-lg"/>
+        <q-tab active name="products" label="Products" @click="setListView('products')"  class="q-mr-md"/>
+        <q-tab  name="audiences" label="Audiences" @click="setListView('audiences')" class="q-mr-md"/>
         <q-tab  name="pages" label="Contents" @click="setListView('pages')"/>
       </q-tabs>
     </div>

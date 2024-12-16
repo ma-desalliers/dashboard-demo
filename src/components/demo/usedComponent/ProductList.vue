@@ -17,9 +17,10 @@
         <div class="content-info">
           <div >
             <span class="text-subtitle2"> {{ product.name }} &nbsp;</span>
-            <span class="text-grey"> {{ product.pageCount }} <i class="fa-regular fa-file"></i></span>
           </div>
           <div class="text-caption text-grey-7 text-truncate">
+            
+            <span class="" v-if="product.pageCount"><i class="fa-regular fa-file"></i> {{ product.pageCount }} • </span>
             {{ product.subcategory?.name || product.description }}
           </div>
         </div>
