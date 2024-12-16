@@ -14,6 +14,11 @@ body {
   scrollbar-gutter: stable; /* Prevents layout shift */
   font-family: Lexend Deca;
   color: #213343;
+  background-color: white;
+}
+
+.text-black {
+  color: #213343;
 }
 
 html {
@@ -148,6 +153,10 @@ html {
   border: solid 1px orange;
 }
 
+.c-border-primary {
+  border: solid 1px var(--q-primary);
+}
+
 .c-indicator-chip {
   position: absolute;
 }
@@ -203,6 +212,14 @@ html {
 .c-px-lg {
   padding-left: 24px !important;
   padding-right: 24px !important;
+}
+
+.c-col-30 {
+  width: 30%;
+}
+
+.c-col-45 {
+  width: 45%;
 }
 
 .c-row {

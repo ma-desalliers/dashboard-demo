@@ -91,6 +91,11 @@ const filteredPages = computed(() => {
       }
       return props.productFilter.includes(page.productUuid)
     }
+
+    if (props.audienceFilter.length) {
+      return props.audienceFilter.includes(page.personaUuid)
+    }
+
     return true
   })
 

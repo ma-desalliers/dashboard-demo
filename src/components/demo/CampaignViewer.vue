@@ -2,15 +2,16 @@
   <div class="row full-width">
     <div class="col-12  c-border-bottom">
       <q-tabs
-      v-model="listView"
+        v-model="listView"
         color="primary"
         :align="'left'"  
-              active-color="primary"
-      indicator-color="primary"
-      class="q-pl-lg"
+        active-color="primary"
+        indicator-color="primary"
+        class="q-pl-lg"
       >
         <q-tab active name="products" label="Products" @click="setListView('products')"  class="q-mr-lg"/>
-        <q-tab  name="pages" label="Content" @click="setListView('pages')"/>
+        <q-tab  name="audiences" label="Audiences" @click="setListView('audiences')" class="q-mr-lg"/>
+        <q-tab  name="pages" label="Contents" @click="setListView('pages')"/>
       </q-tabs>
     </div>
     <div class="c-content-marketing row  col-12">
@@ -51,6 +52,8 @@
             
             <PageList v-if="listView == 'pages'" v-model="selectedPage"  :product-filter="productFilter" :audience-filter="audienceFilter" :small-version="showDetail"></PageList>
             <ProductList v-if="listView == 'products'" v-model="selectedPage"  :filter="productFilter"  :audience-filter="audienceFilter" ></ProductList>
+            <AudienceList v-if="listView == 'audiences'" v-model="selectedPage"  :filter="audienceFilter"  :product-filter="productFilter" ></AudienceList>
+
             <!-- Pagination 
             <div class="row justify-center q-mt-lg">
               <q-pagination
@@ -63,10 +66,10 @@
             </div>-->
           </div>
         </div>
-        <div class="c-page-detail-container c-border-right q-pt-md" :class="{'col-3': showDetail}">
+        <div class="c-page-detail-container c-border-right q-pt-md" :class="{'c-col-30': showDetail}">
           <PageDetail :page="selectedPage"></PageDetail>
         </div>
-        <div :class="showDetail? 'col-6' : 'col-6'">
+        <div class="c-col-45">
           <PageViewer :page="selectedPage"></PageViewer>
         </div>
       </div>
@@ -84,10 +87,11 @@ import { date, event } from 'quasar';
 import products from '~/src/repository/product';
 import audience from '~/src/repository/audience';
 import PageViewer from './usedComponent/PageViewer.vue';
-import { mdiConsoleLine } from '@quasar/extras/mdi-v4';
 import MultiSelect from './usedComponent/MultiSelect.vue';
 import PageList from './usedComponent/PageList.vue';
 import ProductList from './usedComponent/ProductList.vue';
+import AudienceList from './usedComponent/AudienceList.vue';
+
 import pages from '~/src/repository/pages';
 import PageDetail from './usedComponent/PageDetail.vue';
 

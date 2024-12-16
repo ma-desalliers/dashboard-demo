@@ -24,16 +24,23 @@
         :style="{ '--expansion-bg-color': 'var(--main-gray)' }"
         class="q-mb-md"
         :default-opened="true"
+        hide-expand-icon
       >
-        <template #header-right>
-          <q-chip
-            dense
-            color="primary"
-            text-color="white"
-            icon="smart_toy"
-            label="AI"
-          />
-        </template>
+      <template v-slot:header>
+        <div class="row items-center justify-between q-gutter-sm full-width c-expansion-header-hover">
+          <div class="row items-center" >
+            <span class="c-section-subtitle">Audiences</span>
+          </div>
+          <div>
+            <q-btn size="12px" bordered class="c-border-primary c-ai-btn" color="white">
+              <i class="fa-solid fa-wand-magic-sparkles text-black c-btn-text-sm"></i>
+              <span class="q-pl-sm text-primary c-btn-text-sm">AI</span>
+            </q-btn>
+          </div>
+        </div>
+        
+
+    </template>
   
         <div class="content-wrapper q-pa-lg">
          
@@ -96,17 +103,21 @@
         :class="{ 'custom-expansion': true }"
         :style="{ '--expansion-bg-color': 'var(--main-gray)' }"
         :default-opened="true"
+        hide-expand-icon
       >
-        <template #header-right>
-          <q-chip
-            dense
-            color="primary"
-            text-color="white"
-            icon="smart_toy"
-            label="AI"
-          />
+      <template v-slot:header>
+        <div class="row items-center justify-between q-gutter-sm full-width c-expansion-header-hover">
+          <div class="row items-center" >
+            <span class="c-section-subtitle">Products</span>
+          </div>
+          <div>
+            <q-btn size="12px" bordered class="c-border-primary c-ai-btn" color="white">
+              <i class="fa-solid fa-wand-magic-sparkles text-black c-btn-text-sm"></i>
+              <span class="q-pl-sm text-primary c-btn-text-sm">AI</span>
+            </q-btn>
+          </div>
+        </div>
         </template>
-  
         <div class="content-wrapper q-pa-lg">
           <q-img
             :src="theProduct?.image || ''"
@@ -161,8 +172,8 @@
   
   <script setup lang="ts">
   import { ref } from 'vue'
-  import products from '~/src/repository/product';
-  import audience from '~/src/repository/audience';
+  import products from '@/src/repository/product';
+  import audience from '@/src/repository/audience';
   
   // Sample data - replace with actual data from your application
   const businessName = ref('Heavy Equipment Resellers')
@@ -230,5 +241,14 @@ const theProduct = computed(()=>{
     z-index:12;
     max-height:calc(100vh - 50px);
     overflow-y: auto;
+  }
+
+  .c-btn-text-sm{
+    font-size: 14px;
+
+  }
+
+  .c-ai-btn{
+    padding:4px 8px;
   }
   </style>

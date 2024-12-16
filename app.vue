@@ -1,20 +1,16 @@
 <template>
-  <div>
-    <Header></Header> 
-    <div>
-      <NuxtPage />
-    </div>
+  <BaseLayout>
+    <NuxtPage />
     <GlobalPopup></GlobalPopup>
-  </div>
+  </BaseLayout>
 </template>
 
-<script setup>
-import Header from './src/components/Header.vue';
+<script setup>    
 import { useQuasar } from 'quasar'
 import { useNotificationStore } from '@/src/stores/notificationStore';
 import { onMounted } from 'vue';
 import 'perfect-scrollbar/css/perfect-scrollbar.css'
-
+import BaseLayout from '@/src/layout/BaseLayout.vue';
 const $q = useQuasar();
 const notifyUser = (message) => {
   $q.notify({
