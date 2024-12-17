@@ -30,6 +30,7 @@
             class="custom-iframe"
             frameborder="0"
             allowfullscreen
+            @load="onIframeLoad"
           ></iframe>
         </div>
 
@@ -294,6 +295,12 @@ const props = defineProps<{
 const activeTab = ref('preview')
 const isLoading = ref(false)
 
+const onIframeLoad = () => {
+  setTimeout(() => {
+    isLoading.value = false
+  }, 500);
+};
+
 const page = toRef(props, 'page')
 const iframeLink = ref('')
 
@@ -421,21 +428,9 @@ const closeContent = () =>{
 const timeoutId = ref<number | null>(null)
 
 const showLoader = (page: any) => {
-  // Clear any existing timeout
-  if (timeoutId.value) {
-    window.clearTimeout(timeoutId.value)
-  }
-
-  isLoading.value = true
-  console.log('showing loader')
-  iframeLink.value = `https://ai.cameleonmedia.com/page/${page.uuid}`
-
-  // Store the new timeout ID
-  timeoutId.value = window.setTimeout(() => {
-    isLoading.value = false
-    timeoutId.value = null
-  }, 6200)
-}
+  isLoading.value = true;
+  iframeLink.value = `https://pcania.cameleonmedia.com/page/${page.uuid}`;
+};
 
 // Clean up on component unmount
 onBeforeUnmount(() => {
