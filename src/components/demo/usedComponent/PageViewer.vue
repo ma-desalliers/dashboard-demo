@@ -25,12 +25,15 @@
       <q-tab-panel name="preview">
         <div class="iframe-container">
           <iframe
-            :src="iframeLink"
-            title="content"
-            class="custom-iframe"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+      :src="iframeLink"
+      title="content"
+      class="custom-iframe"
+      frameborder="0"
+      allowfullscreen
+      ref="iframeRef"
+      @load="handleIframeLoad"
+      :class="{ 'invisible': isLoading }"
+    ></iframe>
         </div>
 
         <div v-if="isLoading" class="c-loader-container">
@@ -418,24 +421,46 @@ const closeContent = () =>{
   mainDisplayStore.setShowContent(false)
 }
 
+const iframeRef = ref<HTMLIFrameElement | null>(null)
 const timeoutId = ref<number | null>(null)
+const minimumLoadTime = 4000
+const loadStartTime = ref<number>(0)
 
 const showLoader = (page: any) => {
-  // Clear any existing timeout
+  // Reset loading state and clear any existing timeout
   if (timeoutId.value) {
     window.clearTimeout(timeoutId.value)
+    timeoutId.value = null
   }
-
+  
   isLoading.value = true
-  console.log('showing loader')
-  iframeLink.value = `https://ai.cameleonmedia.com/page/${page.uuid}`
+  loadStartTime.value = Date.now()
+  
+  // Update iframe source
+  iframeLink.value = `https://pcania.cameleonmedia.com/page/${page.uuid}`
+}
 
-  // Store the new timeout ID
+const handleIframeLoad = () => {
+  // Calculate how much time has passed since loading started
+  const elapsedTime = Date.now() - loadStartTime.value
+  const remainingTime = Math.max(0, minimumLoadTime - elapsedTime)
+  
+  // Wait for the remaining time before hiding the loader
   timeoutId.value = window.setTimeout(() => {
     isLoading.value = false
     timeoutId.value = null
-  }, 6200)
+  }, remainingTime)
+  
+  try {
+    const iframeDocument = iframeRef.value?.contentDocument
+    if (iframeDocument) {
+      console.log('Iframe document loaded')
+    }
+  } catch (error) {
+    console.warn('Cannot access iframe content due to same-origin policy')
+  }
 }
+
 
 // Clean up on component unmount
 onBeforeUnmount(() => {
@@ -444,6 +469,7 @@ onBeforeUnmount(() => {
   }
 })
 
+// Watch for page changes
 watch(page, (newValue) => {
   if (newValue) {
     showLoader(newValue)
