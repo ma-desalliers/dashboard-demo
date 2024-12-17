@@ -33,7 +33,7 @@
           ></iframe>
         </div>
 
-        <div v-show="isLoading" class="c-loader-container">
+        <div v-if="isLoading" class="c-loader-container">
           <Loader color="#55B948" size="75px"></Loader>
         </div>
       </q-tab-panel>
@@ -414,27 +414,41 @@ const getTagColor = (tag: string) => {
   return colors[tag as keyof typeof colors] || 'grey'
 }
 
+const closeContent = () =>{
+  mainDisplayStore.setShowContent(false)
+}
+
+const timeoutId = ref<number | null>(null)
+
 const showLoader = (page: any) => {
+  // Clear any existing timeout
+  if (timeoutId.value) {
+    window.clearTimeout(timeoutId.value)
+  }
+
   isLoading.value = true
   console.log('showing loader')
   iframeLink.value = `https://ai.cameleonmedia.com/page/${page.uuid}`
 
-  window.setTimeout(() => {
+  // Store the new timeout ID
+  timeoutId.value = window.setTimeout(() => {
     isLoading.value = false
+    timeoutId.value = null
   }, 6200)
 }
 
-const closeContent = () =>{
-  mainDisplayStore.setShowContent(false)
-}
+// Clean up on component unmount
+onBeforeUnmount(() => {
+  if (timeoutId.value) {
+    window.clearTimeout(timeoutId.value)
+  }
+})
 
 watch(page, (newValue) => {
   if (newValue) {
     showLoader(newValue)
   }
 }, { deep: true })
-
-
 watch(activeTab, (newValue) => {
   if (newValue == 'preview') {
     showLoader(props.page)
