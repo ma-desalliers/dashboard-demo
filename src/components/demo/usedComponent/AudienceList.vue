@@ -14,11 +14,11 @@
       <q-item-section class="clickable c-audience-item" >
         <div class="content-info">
           <div >
-            <span class="text-subtitle2"> {{ audience.title }} &nbsp;</span>
+            <span class="text-subtitle2 c-text-truncate"> {{ audience.title }} &nbsp;</span>
           </div>
           <div class="text-caption text-grey-7 text-truncate">
             
-            <span class="" v-if="audience.pageCount"><i class="fa-regular fa-file"></i> {{ audience.pageCount }} •  </span>
+            <span class="text-primary" v-if="audience.pageCount"><i class="fa-regular fa-file"></i> {{ audience.pageCount }} •  </span>
             {{ audience.subIndustryName || audience.description }}
           </div>
         </div>

@@ -9,7 +9,7 @@
     expand-separator
     >
     <template #header>
-      <q-item-section side style="width: 40px" class="q-mr-md">
+      <q-item-section v-if="false" side style="width: 40px" class="q-mr-md">
         <img :src="product.image || '' " alt="Product Image" class="c-list-product-picture"/>
       </q-item-section>
       
@@ -20,7 +20,7 @@
           </div>
           <div class="text-caption text-grey-7 text-truncate">
             
-            <span class="" v-if="product.pageCount"><i class="fa-regular fa-file"></i> {{ product.pageCount }} • </span>
+            <span  class="text-primary"  v-if="product.pageCount"><i class="fa-regular fa-file"></i> {{ product.pageCount }} • </span>
             {{ product.subcategory?.name || product.description }}
           </div>
         </div>

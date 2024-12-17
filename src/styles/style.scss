@@ -231,7 +231,9 @@ html {
   padding-left:32px;
   padding-right:32px;
 }
-
+.c-pt-32{
+  padding-top:32px !important;
+}
 .c-pl-32{
   padding-left:32px;
 }
@@ -293,6 +295,19 @@ html {
   .content-wrapper {
     background-color: white;
     padding: 0 16px;
+  }
+}
+
+.q-expansion-item__toggle-icon{
+  transform:rotate(180deg);
+  &.q-expansion-item__toggle-icon--rotated{
+    transform: unset;
+  }
+}
+
+.custom-expansion{
+  .q-item__section--main{
+    flex:unset;
   }
 }
 
@@ -367,6 +382,8 @@ transform: translateX(-5px);
   border-radius: 4px;
 }
 
+
+/*
 ::-webkit-scrollbar-thumb {
   background: var(--q-primary);
   border-radius: 4px;
@@ -375,10 +392,20 @@ transform: translateX(-5px);
 ::-webkit-scrollbar-thumb:hover {
   background: var(--q-primary);
 }
+*/
+.page-detail::-webkit-scrollbar-thumb {
+  background: #eeeeee !important;
+  border-radius: 4px;
+}
+
+  
+.page-detail::-webkit-scrollbar-thumb:hover {
+    background: #eeeeee;
+  }
 
 /* Firefox */
 * {
-  scrollbar-width: thin;
+  scrollbar-width: none;
   scrollbar-color: var(--q-primary) transparent;
 }
 

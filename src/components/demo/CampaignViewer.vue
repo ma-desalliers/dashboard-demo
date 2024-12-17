@@ -6,8 +6,9 @@
         color="primary"
         :align="'left'"  
         active-color="primary"
+        active-class="c-bg-primary-lighten"
         indicator-color="primary"
-        class="q-pl-md"
+        :class="{'q-pl-md' :  !isMobile}"
       >
         <q-tab active name="products" label="Products" @click="setListView('products')"  class="q-mr-md"/>
         <q-tab  name="audiences" label="Audiences" @click="setListView('audiences')" class="q-mr-md"/>
@@ -18,12 +19,14 @@
       <!-- Header Section -->
       <div class="row full-width col-12">
         
-        <div :class="showDetail? 'col-3' :'col-6' " class="c-border-right q-pt-md">
-              <div class="text-h6 q-mb-sm q-px-md">Content marketing <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
-              <div class="text-caption text-grey-7 q-mb-lg q-px-md">
-                Creation of value-added content for your target audience.
-              </div>
-              
+        <div :class="isMobile? 'col-12' :'col-3' " class="c-border-right q-pt-md">
+              <div class="text-h6 q-mb-sm q-px-md">
+               <span v-if="listView == 'pages'"> Content marketing</span>
+               <span v-if="listView == 'products'"> Products</span>
+               <span v-if="listView == 'audiences'"> Audiences</span>
+
+              <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
+             
               <div class="col-3 ">
                 <!-- Filter Section-->
                 <div class="row q-col-gutter-md q-mb-lg q-px-md">
@@ -66,10 +69,10 @@
             </div>-->
           </div>
         </div>
-        <div class="c-page-detail-container c-border-right q-pt-md" :class="{'c-col-30': showDetail}">
+        <div v-if="!isMobile" class="c-page-detail-container c-border-right" :class="{'c-col-30': showDetail}">
           <PageDetail :page="selectedPage"></PageDetail>
         </div>
-        <div class="c-col-45">
+        <div class="c-col-45" >
           <PageViewer :page="selectedPage"></PageViewer>
         </div>
       </div>
@@ -96,7 +99,6 @@ import pages from '~/src/repository/pages';
 import PageDetail from './usedComponent/PageDetail.vue';
 
 
-
 // Rest of your constants...
 const statusOptions = ['Tous', 'Generated', 'Idea'] as const
 const publishOptions = ['Tous', 'Publié'] as const
@@ -110,6 +112,7 @@ const productFilter = ref<string[]>([])
 const audienceFilter = ref<string[]>([])
 const mainDisplayStore = useMainDisplayStore()
 const { main} = storeToRefs(mainDisplayStore)
+const isMobile = computed(()=>mainDisplayStore.isMobile)
 const listView = ref('products')
 const showDetail = ref(false)
 
@@ -125,7 +128,7 @@ const filter = reactive<{generatedOnly: boolean | null}>({
 const totalPages = computed(() => Math.ceil(totalItems.value / itemsPerPage.value))
 
 onMounted(async () => {
-  selectedPage.value = pages[0]
+  selectedPage.value = pages.find(page=> page.uuid == 'a27f5e41-f8cd-485c-96b0-64ddfa978107' )
 })
 
 const formatDate = (dateString:string) => {

@@ -38,8 +38,11 @@
               
               <q-item-section class="clickable"    >
 
-                  <div class="content-info">
-                    <div class="text-subtitle2 c-text-truncate" style="font-weight: 400;">{{ page.title }}</div>
+                  <div class="content-info row q-col-gutter-sm">
+                    <span class="text-primary">
+                      <i class="fa-regular fa-file"></i>
+                    </span>
+                    <span class="text-subtitle2 c-text-truncate" style="font-weight: 400;">{{ page.title }}</span>
                     <!--<div class="text-caption text-grey-7">
                       Blog post • {{ [''].join(' • ') || 'Minimize Waste' }}
                     </div>-->
@@ -63,6 +66,7 @@
 import { ref, computed } from 'vue'
 import pages from '~/src/repository/pages'
 
+import { useMainDisplayStore } from '~/src/stores/mainDisplayStore';
 const props = defineProps<{
     modelValue?: any,
     productFilter: Array<any>,
@@ -72,6 +76,9 @@ const props = defineProps<{
 }>()
 
 const emit = defineEmits(['update:modelValue'])
+
+const mainDisplayStore = useMainDisplayStore()
+const isMobile = computed( ()=> mainDisplayStore.isMobile)
 
 // Add sort state
 const sortDirection = ref<'asc' | 'desc' | null>(null)
@@ -123,6 +130,10 @@ const filteredPages = computed(() => {
 
 const selectPage = (page: any) => {
     selectedPage.value = page
+
+    if(isMobile.value){
+      mainDisplayStore.setShowContent(true)
+    }
 }
 
 const orderByTitle = () => {

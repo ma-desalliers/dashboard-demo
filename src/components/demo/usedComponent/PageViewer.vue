@@ -1,6 +1,11 @@
 <template>
-  <div class="tabbed-viewer">
-
+  <div class="tabbed-viewer" :class="{'isMobile': isMobile, 'isOpen': showContent}">
+    <div class="row q-pa-sm" style="background-color: white;" @click="closeContent" v-if="isMobile">
+      <q-icon size="20px" class="q-pt-xs q-pr-sm">
+        <i class="fa fa-arrow-left"></i>
+      </q-icon>
+      <span  style="font-size:16px;padding-top:2px">Back to content</span>
+  </div>
     <q-tabs
       align="left"
       v-model="activeTab"
@@ -10,7 +15,9 @@
       dense
     >
       <q-tab name="preview" label="Content" class="c-tab-padding" style="flex:unset;margin-right:16px" />
-      <q-tab name="keywords" label="Seo" class="c-tab-padding" style="flex:unset" />
+      <q-tab v-if="isMobile" name="detail" label="Campaign" class="c-tab-padding" style="flex:unset" />
+      <q-tab name="keywords" label="Seo" class="c-tab-padding" style="flex:unset; margin-right:16px" />
+     
     </q-tabs>
 
     <q-tab-panels v-model="activeTab" :class="{'c-scroll': activeTab == 'keywords'}"  >
@@ -32,13 +39,10 @@
       </q-tab-panel>
 
       <!-- Details Panel -->
-      <q-tab-panel name="details">
-        <div class="c-section-title">Campaign information coming soon ! </div>
-      </q-tab-panel>
-
+    
       <!-- Keywords Panel -->
       <q-tab-panel name="keywords">
-        <div class="keywords-analysis q-pa-md">
+        <div class="keywords-analysis q-pa-md c-pt-32">
           <!-- Header with title and search info -->
           <div class="row items-center q-mb-lg">
             <div class="c-section-title q-mr-md">{{ pageData?.pageTitle }}</div>
@@ -49,7 +53,10 @@
 
           <!-- Country Distribution -->
           <div class="row q-mb-lg">
-            <div class="col-12 col-lg-5 c-border-right q-pr-sm">
+            <div class="col-10 col-sm-5  q-pr-sm" :class="{'c-border-right': !isMobile}">
+              <div class="q-pb-sm">
+                  <img src="/public/seo-score.png"/>
+                </div>
               <div class="country-list">
                 <div v-if="pageData?.primaryKeyword?.countryRepartition[0]" class="row items-center q-mb-sm" style="min-width: 195px;">
                   <q-avatar size="20px">
@@ -59,7 +66,7 @@
                     <q-linear-progress
                       :value="Math.round(pageData?.primaryKeyword?.countryRepartition[0].searchVolume * 100 / totalVolume) /100"
                       size="xs"
-                      color="blue"
+                      color="primary"
                       track-color="grey1"
                       class="progress-bar"
                     />
@@ -75,7 +82,7 @@
                     <q-linear-progress
                       :value="Math.round(pageData?.primaryKeyword?.countryRepartition[1].searchVolume * 100 / totalVolume) /100"
                       size="xs"
-                      color="blue"
+                      color="primary"
                       track-color="grey1"
                       class="progress-bar"
                     />
@@ -103,8 +110,8 @@
             </div>
 
             <!-- Page Format Info -->
-            <div class="col-12 col-lg-7 ">
-              <div class="format-info q-pl-sm">
+            <div class="col-12 col-sm-7 " >
+              <div class="format-info " :class="{'q-pl-sm':!isMobile,'q-pt-sm': isMobile}">
                 <div class="row justify-between q-mb-sm">
                   <div class="col-6">Page format <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
                   <div class="col-6">Product category</div>
@@ -121,9 +128,7 @@
                   <div class="col-6">Images <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip></div>
                   <div class="col-6">4-16</div>
                 </div>
-                <div>
-                  <img src="/public/seo-score.png"/>
-                </div>
+               
               </div>
             </div>
           </div>
@@ -191,6 +196,7 @@
           <!-- Competitors Section -->
           <div class="competitors-section">
             <q-expansion-item
+              default-opened
               group="competitors"
               icon="public"
               :label="`Top ${pageData?.primaryKeyword} competitors`"
@@ -246,6 +252,11 @@
           </div>
         </div>
       </q-tab-panel>
+
+      <q-tab-panel name="detail">
+        <PageDetail :page="page"></PageDetail>
+      </q-tab-panel>
+
     </q-tab-panels>
   </div>
 </template>
@@ -253,8 +264,13 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import seo from '~/src/repository/seo';
+import { useMainDisplayStore } from '~/src/stores/mainDisplayStore';
+import PageDetail from './PageDetail.vue';
 
+const mainDisplayStore = useMainDisplayStore()
 
+const isMobile = computed(()=>mainDisplayStore.isMobile)
+const showContent = computed(()=> mainDisplayStore.showContent)
 const emit = defineEmits<{
   (e: 'update:channels', selectedChannels: string[]): void
 }>()
@@ -408,6 +424,10 @@ const showLoader = (page: any) => {
   }, 6200)
 }
 
+const closeContent = () =>{
+  mainDisplayStore.setShowContent(false)
+}
+
 watch(page, (newValue) => {
   if (newValue) {
     showLoader(newValue)
@@ -430,11 +450,39 @@ watch(activeTab, (newValue) => {
   height:90vh;
   position: sticky;
   top: 25px;
+  background-color: white;
+  &.isMobile{
+    position:fixed;
+    top:0;
+    bottom:0;
+    width:100vw;
+    height:100vh;
+    max-height: 100vh;
+    right:-100%;
+    z-index:100;
+
+    .c-scroll{
+      height:100vh
+    }
+
+    .keywords-analysis{
+      height:100vh
+    }
+    &.isOpen{
+      right: 0;
+
+    }
+
+    .custom-iframe{
+      height:100vh
+    }
+  }
 }
 
 .iframe-container {
   position: relative;
   border: solid 0px #e7e7e7;
+  height:100%;
   iframe {
     box-shadow: none;
   }
@@ -442,7 +490,7 @@ watch(activeTab, (newValue) => {
 
 .custom-iframe {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 130px);
   background: white;
   transition: box-shadow 0.3s ease;
 }
@@ -509,4 +557,6 @@ watch(activeTab, (newValue) => {
 .country-name{
   min-width:100px;
 }
+
+
 </style>

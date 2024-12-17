@@ -1,18 +1,20 @@
 <template>
   <div class="sidebar-menu q-px-md q-py-lg">
     <!-- Company Header -->
-    <div class="row items-center justify-center q-mb-md q-pb-md cursor-pointer c-light-border-bottom">
+    <div class="row justify-between q-px-md q-mb-md q-pb-md cursor-pointer c-light-border-bottom full-width">
+      <div>
       <q-avatar v-if="company.logoType == 'url'" size="24px" class="q-mr-sm">
         <img :src="company.logo" alt="Company logo">
 
       </q-avatar>
+      
       <div  name="expand_more"  class="row items-center cursor-pointer">
     <!-- Current company display -->
     <div v-if="company.logoType == 'svg'" style="height:25px; width:25px" class="q-mr-sm">
       <div v-html="company.logo"></div>
     </div>
     <div class="c-company-name">{{ company.name }}</div>
-    
+  
     <!-- Menu trigger icon with menu -->
     <q-icon 
       name="expand_more" 
@@ -21,6 +23,7 @@
     >
 
     </q-icon>
+    
     <q-menu
         transition-show="jump-down"
         transition-hide="jump-up"
@@ -53,6 +56,10 @@
         </q-list>
       </q-menu>
   </div>
+</div>
+  <div style="align-self: flex-end;" v-if="isMobile">
+       <q-icon name="close" size="24px" @click="closeMenu"> </q-icon>
+    </div>
   </div>  
 
     <!-- Growth Plan Section
@@ -94,17 +101,17 @@
       <div class="row items-center">
         <div class="c-box-subtitle q-pr-sm">Knowledge center</div>
         <Tooltip :title="'Content Marketing'" :description="'this is a description '" ></Tooltip>
-        <div class="row c-linear-container"> 
+        <div class="row c-linear-container q-pt-sm"> 
           <div></div>
         <q-linear-progress
                 :value="0.4"
-                size="xl"
+                size="11px"
                 color="green"
                 track-color="green"
                 class="progress-bar"
                 label=""
               />
-              <span>2/5 question</span>
+              <span class="question-label-container">2/5 question</span>
             </div>
       </div>
     </div>
@@ -166,6 +173,7 @@
       </div>
       <div  class="q-px-md q-pt-sm">        
           <q-btn
+          v-if="false"
           class="full-width q-mt-md"
           :class="{ 'shine-effect': !isPricingRoute }"
           color="primary"
@@ -203,9 +211,17 @@
 import company from '@/src/repository/client'
 import { useDemoCurrentPageStore } from '~/src/stores/demoCurrentPage';
 import { useNotificationStore } from '../stores/notificationStore';
+import { useMainDisplayStore } from '../stores/mainDisplayStore';
 const route = useRoute()
 const router = useRouter()
 const notificationStore = useNotificationStore()
+const mainDisplayStore = useMainDisplayStore()
+
+const isMobile = computed(() => mainDisplayStore.isMobile)
+
+const closeMenu = () =>{
+  mainDisplayStore.setShowMenu(false)
+}
 
 interface KnowledgeItem {
   name: string;
@@ -366,6 +382,10 @@ const handleButtonClick = async () => {
     transform: skewX(-25deg);
     animation: shine 4s infinite;
   }
+}
+
+.question-label-container{
+  margin-bottom: 3px;
 }
 
 @keyframes shine {

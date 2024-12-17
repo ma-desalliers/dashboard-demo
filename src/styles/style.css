@@ -14,7 +14,6 @@ body {
   scrollbar-gutter: stable; /* Prevents layout shift */
   font-family: Lexend Deca;
   color: #213343;
-  background-color: white;
 }
 
 .text-black {
@@ -188,6 +187,10 @@ html {
   padding-right: 32px;
 }
 
+.c-pt-32 {
+  padding-top: 32px !important;
+}
+
 .c-pl-32 {
   padding-left: 32px;
 }
@@ -252,6 +255,17 @@ html {
   padding: 0 16px;
 }
 
+.q-expansion-item__toggle-icon {
+  transform: rotate(180deg);
+}
+.q-expansion-item__toggle-icon.q-expansion-item__toggle-icon--rotated {
+  transform: unset;
+}
+
+.custom-expansion .q-item__section--main {
+  flex: unset;
+}
+
 .c-img-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -310,6 +324,7 @@ html {
   border-radius: 4px;
 }
 
+/*
 ::-webkit-scrollbar-thumb {
   background: var(--q-primary);
   border-radius: 4px;
@@ -318,10 +333,19 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--q-primary);
 }
+*/
+.page-detail::-webkit-scrollbar-thumb {
+  background: #eeeeee !important;
+  border-radius: 4px;
+}
+
+.page-detail::-webkit-scrollbar-thumb:hover {
+  background: #eeeeee;
+}
 
 /* Firefox */
 * {
-  scrollbar-width: thin;
+  scrollbar-width: none;
   scrollbar-color: var(--q-primary) transparent;
 }
 

@@ -1,14 +1,13 @@
 <template>
-  <div class="c-base-layout">
+  <div class="c-base-layout" :class="{'isMobile': isMobile}">
     <!-- Header Section -->
-    <Header class="c-header-container" @state="(currentState : boolean  ) =>  headerState = currentState" />
+    <Header class="c-header-container" v-if="!showContent"  @state="(currentState : boolean  ) =>  headerState = currentState" />
     
     <!-- Main Content Section -->
     <div class="c-main-content">
       <div class="row no-wrap">
         <!-- Left Column -->
-        <LeftColumn class="c-left-column " />
-        
+        <LeftColumn class="c-left-column ":class="{'isOpen': showMenu}" />
         <!-- Right Content Area -->
         <div class="c-right-column">
           <slot></slot>
@@ -22,17 +21,19 @@
 import Header from './Header.vue'
 import LeftColumn from './LeftColumn.vue'
 
+import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
+
+const mainDisplayStore = useMainDisplayStore();
+
+const isMobile = computed(()=>mainDisplayStore.isMobile )
+const showMenu = computed(()=>mainDisplayStore.showMenu )
+const showContent = computed(()=> mainDisplayStore.showContent)
 const headerState = ref(true)
 
 </script>
 
 <style lang="scss" >
-.c-base-layout {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
-}
+
 
 .c-header-container {
   flex: none;
@@ -76,6 +77,38 @@ const headerState = ref(true)
 @media (max-width: 768px) {
   .c-left-column {
     width: 250px;
+  }
+}
+
+
+.c-base-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+
+  &.isMobile{
+
+    .c-left-column{
+      top:0px;
+      bottom:0;
+      left:-100%;
+      width: 100vw;
+      z-index:10;
+      &.isOpen{
+        left:0
+      }
+    }
+
+    .c-right-column {
+      position:fixed;
+      top:50px;
+      bottom:0;
+      left:0;
+      right:0;
+      height: 100%;
+      overflow-y: auto;
+    }
   }
 }
 </style>
