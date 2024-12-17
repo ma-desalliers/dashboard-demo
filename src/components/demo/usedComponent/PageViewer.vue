@@ -297,6 +297,12 @@ const props = defineProps<{
 const activeTab = ref('preview')
 const isLoading = ref(false)
 
+const onIframeLoad = () => {
+  setTimeout(() => {
+    isLoading.value = false
+  }, 500);
+};
+
 const page = toRef(props, 'page')
 const iframeLink = ref('')
 
