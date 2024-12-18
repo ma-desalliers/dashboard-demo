@@ -266,7 +266,7 @@ const openDept = async (dept: any) => {
 };
 
 const openCompany = async( company:any) =>{
-  window.location.href = company.link
+  window.location.replace(company.link)
 }
 
 interface Question {
