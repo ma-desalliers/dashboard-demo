@@ -7,7 +7,7 @@ const company = {
     logo:`https://abratech.ca/wp-content/uploads/2019/07/abratech-favicon.png`,
       logoType:'img',
     name: 'Abratech',
-    link:'https://beta.cameleonmedia.com/Abratech/'
+    link:'https://beta.cameleonmedia.com/abratech/'
   }] 
 }
 
