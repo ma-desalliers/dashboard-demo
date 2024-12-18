@@ -128,7 +128,14 @@ const filter = reactive<{generatedOnly: boolean | null}>({
 const totalPages = computed(() => Math.ceil(totalItems.value / itemsPerPage.value))
 
 onMounted(async () => {
-  selectedPage.value = pages.find(page=> page.uuid == 'a27f5e41-f8cd-485c-96b0-64ddfa978107' )
+  const page = pages.find(page=> page.uuid == 'a27f5e41-f8cd-485c-96b0-64ddfa978107' )
+
+  if(page){
+    selectedPage.value = page
+  }
+  else{
+    selectedPage.value = pages[0]
+  }
 })
 
 const formatDate = (dateString:string) => {

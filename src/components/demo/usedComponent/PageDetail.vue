@@ -18,9 +18,9 @@
     <div class="business-profile  ">
       <div class="header q-pb-md  ">
         <div class="row items-center q-gutter-x-sm">
-            <q-btn rounded dense class="bg-green-1 br-green" text-color="primary" icon="edit" />
-            <q-btn rounded dense class="bg-green-1 br-green" text-color="primary" icon="publish" />
-            <q-btn rounded dense class="bg-green-1 br-green" text-color="primary" icon="tune"  />
+            <q-btn rounded dense class="bg-green-1 br-green" text-color="green" icon="edit" />
+            <q-btn rounded dense class="bg-green-1 br-green" text-color="green" icon="publish" />
+            <q-btn rounded dense class="bg-green-1 br-green" text-color="green" icon="tune"  />
         </div>
       </div>
   

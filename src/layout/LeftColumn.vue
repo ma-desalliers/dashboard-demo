@@ -3,16 +3,17 @@
     <!-- Company Header -->
     <div class="row justify-between q-px-md q-mb-md q-pb-md cursor-pointer c-light-border-bottom full-width">
       <div>
-      <q-avatar v-if="company.logoType == 'url'" size="24px" class="q-mr-sm">
-        <img :src="company.logo" alt="Company logo">
-
-      </q-avatar>
+      
       
       <div  name="expand_more"  class="row items-center cursor-pointer">
     <!-- Current company display -->
     <div v-if="company.logoType == 'svg'" style="height:25px; width:25px" class="q-mr-sm">
       <div v-html="company.logo"></div>
     </div>
+    <q-avatar rounded v-if="company.logoType == 'img'" size="24px" class="q-mr-sm">
+        <img :src="company.logo" alt="Company logo">
+
+      </q-avatar>
     <div class="c-company-name">{{ company.name }}</div>
   
     <!-- Menu trigger icon with menu -->

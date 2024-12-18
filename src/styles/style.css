@@ -168,10 +168,10 @@ html {
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
 .c-selected-client .q-item:has(.c-expansion-header-hover) {
-  background-color: color-mix(in srgb, #55B948 16%, #ffffff);
+  background-color: color-mix(in srgb, var(--q-primary) 16%, #ffffff);
 }
 .c-bg-primary-lighten {
-  background-color: color-mix(in srgb, #55B948 16%, #ffffff);
+  background-color: color-mix(in srgb, var(--q-primary) 16%, #ffffff);
 }
 
 .c-global-popup .q-dialog__backdrop {

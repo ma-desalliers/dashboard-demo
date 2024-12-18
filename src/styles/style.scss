@@ -24,6 +24,8 @@ $primary-lighten : color-mix(in srgb, $primary 16%, #ffffff);
   --q-accent : #{$accent};
   --q-green: #{$green};
   --main-gray : #F6F9FC;
+
+  $primary-lighten: color-mix(in srgb, var(--q-primary) 16%, #ffffff);
 }
 
 body {
@@ -209,14 +211,15 @@ html {
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 
   .q-item:has(.c-expansion-header-hover) {
-   background-color: $primary-lighten
+    
+   background-color: color-mix(in srgb, var(--q-primary) 16%, #ffffff);
   }
   .c-title{
   }
 }
 
 .c-bg-primary-lighten{
-  background-color: $primary-lighten;
+  background-color: color-mix(in srgb, var(--q-primary) 16%, #ffffff);
 }
 
 .c-global-popup{

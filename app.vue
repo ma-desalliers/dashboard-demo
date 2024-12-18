@@ -1,5 +1,5 @@
 <template>
-  <BaseLayout>
+  <BaseLayout :style="`--q-primary:${company.primaryColor}`">
     <NuxtPage />
     <GlobalPopup></GlobalPopup>
   </BaseLayout>
@@ -11,7 +11,7 @@ import { useNotificationStore } from '@/src/stores/notificationStore';
 import { onMounted, onBeforeUnmount } from 'vue';
 import 'perfect-scrollbar/css/perfect-scrollbar.css'
 import BaseLayout from '@/src/layout/BaseLayout.vue';
-
+import company from './src/repository/client';
 import { useMainDisplayStore } from './src/stores/mainDisplayStore';
 const $q = useQuasar();
 const mainDisplayStore = useMainDisplayStore();
