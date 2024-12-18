@@ -36,6 +36,7 @@
             :key="item.name"
             clickable
             v-close-popup
+            @click="openCompany(item)"
           >
             <q-item-section avatar v-if="item.logoType === 'svg'" style="max-width: 40px">
               <div style="height:25px; width:25px">
@@ -263,6 +264,10 @@ const openDept = async (dept: any) => {
     });
   }
 };
+
+const openCompany = async( company:any) =>{
+  window.location.href = company.link
+}
 
 interface Question {
   id: number;
