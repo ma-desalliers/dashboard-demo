@@ -2,8 +2,17 @@
     <div class="page-detail q-pa-lg" :class="{'isMobile': isMobile}">
     <div >
       <div class="c-section-bigtitle q-pb-sm">{{ page.title }}</div>
-      <div class="c-font-16 text-grey q-pb-md">
-        Blog post • {{ [''].join(' • ') || 'Minimize Waste' }}
+      <div class="column">
+        <div class="q-pb-md" v-if="page.subjob">
+          <span class="c-box-subtitle c-smaller">Sub-job&nbsp;:&nbsp;</span><span>{{ page.subjob?.title }}</span>
+        </div>
+        <div class="q-pb-md" v-if="page.job">
+          <span class="c-box-subtitle c-smaller">Job&nbsp;:&nbsp;</span><span>{{ page.job?.title }}</span>
+        </div>
+        <div class="q-pb-md" v-if="page.job">
+          <span class="c-box-subtitle c-smaller">Type&nbsp;:&nbsp;</span><span>{{ page.job?.type }}</span>
+        </div>
+       
       </div>
     </div>
     <div class="business-profile  ">
@@ -32,7 +41,7 @@
           <div>
             <q-btn size="12px" bordered class="c-border-primary c-ai-btn" color="white">
               <div class="row q-pr-sm" style="max-width:33px;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 20 220 180" class="col-6" style="transform:scale(1.4)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 20 220 180" class="col-6" style="transform:scale(1.5)">
                   <!-- Large star - left (moved up) -->
                   <path d="M40 40 L60 100 L120 120 L60 140 L40 200 L20 140 L-40 120 L20 100 Z" 
                         fill="#213343"/>
