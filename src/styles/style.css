@@ -29,12 +29,6 @@ html {
   cursor: pointer;
 }
 
-.right-column-container {
-  max-height: calc(100% - 30px);
-  height: calc(100% - 30px);
-  overflow-y: auto;
-}
-
 .c-box-title {
   font-size: 1.1rem;
   color: #666666;
