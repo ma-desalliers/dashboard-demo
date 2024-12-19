@@ -18,6 +18,7 @@
   
     <!-- Menu trigger icon with menu -->
     <q-icon 
+		v-if="company.subCompany.length >0"
       name="expand_more" 
       size="sm" 
       class="q-ml-xs cursor-pointer"
@@ -26,6 +27,7 @@
     </q-icon>
     
     <q-menu
+		
         transition-show="jump-down"
         transition-hide="jump-up"
         class="company-menu"
