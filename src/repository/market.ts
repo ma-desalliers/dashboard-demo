@@ -1,12 +1,5 @@
 const markets = [
   {
-    "uuid": "ccff088d-4b35-4926-9927-dcca91d460db",
-    "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
-    "productUuid": "901b581b-fd8c-4853-a86d-4a163e996ba2",
-    "personaUuid": "33e7f1fc-5245-40e7-a6a8-5944339351b1",
-    "createdAt": 1734106720801
-  },
-  {
     "uuid": "e86339a9-b237-4c15-b1ee-463dcce3f8ed",
     "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
     "productUuid": "68e11029-8ebe-4509-92f8-eef0140cf855",
@@ -75,6 +68,13 @@ const markets = [
     "productUuid": "9f048be1-93b5-4074-a127-79f25a097c35",
     "personaUuid": "1feb4724-6b82-4540-8c6a-5f7c6b5749fc",
     "createdAt": 1734535163449
+  },
+  {
+    "uuid": "ccff088d-4b35-4926-9927-dcca91d460db",
+    "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
+    "productUuid": "901b581b-fd8c-4853-a86d-4a163e996ba2",
+    "personaUuid": "33e7f1fc-5245-40e7-a6a8-5944339351b1",
+    "createdAt": 1734106720801
   }
 ];
 
