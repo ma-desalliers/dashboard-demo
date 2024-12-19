@@ -219,8 +219,10 @@ watch(selectedPage, (newValue)=>{
 
 	.page-scroll{
 		position:absolute;
-		inset:0;
-		padding-top:8px;
+		top:8px;
+		left:0;
+		right:0;
+		bottom:0;
 		overflow-y: auto;
 	}
 }
