@@ -132,7 +132,7 @@ const filter = reactive<{generatedOnly: boolean | null}>({
 const totalPages = computed(() => Math.ceil(totalItems.value / itemsPerPage.value))
 
 onMounted(async () => {
-	const page = pages.find(page=> page.uuid == 'a27f5e41-f8cd-485c-96b0-64ddfa978107' )
+	const page = pages.find(page=> page.uuid == '67b38da6-ccbf-4aaf-b4b8-613328197d7d' )
 	
 	if(page){
 		selectedPage.value = page
@@ -213,8 +213,8 @@ watch(selectedPage, (newValue)=>{
 }
 
 .pages-container{
-	height:100%;
-	min-height: 100%;
+	height:calc(100% - 40px);
+	min-height: calc(100% - 40px);;
 	position: relative;
 
 	.page-scroll{
