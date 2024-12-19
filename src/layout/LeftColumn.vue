@@ -228,7 +228,7 @@ const handleButtonClick = async () => {
 .sidebar-menu {
 	width: 300px;
 	height:100%;
-	border-right:1px solid #e7e7e7; ;
+	border-right:1px solid #e7e7e7; 
 	background: var(--main-gray);
 	overflow:hidden
 }

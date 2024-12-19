@@ -69,7 +69,7 @@ const navigateTo = (page: string) => {
 	}
 	
 	&.isMobile{
-		background-color: var(--main-gray) !important;
+		background-color: white !important;
 		box-shadow: none;
 	}
 }
