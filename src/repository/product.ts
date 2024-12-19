@@ -46,7 +46,7 @@ const products = [
   {
     "uuid": "9f048be1-93b5-4074-a127-79f25a097c35",
     "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
-    "name": "Pompes résidentielles à  et environs",
+    "name": "Pompes résidentielles",
     "description": "Large selection of residential pumps including submersible, drainage, septic, and circulation pumps, with responsive technical support.",
     "image": "https://lirp.cdn-website.com/e3c7e386/dms3rep/multi/opt/footer-pompe-residentielle1-1920w.jpeg",
     "score": null,
