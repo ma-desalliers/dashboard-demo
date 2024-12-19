@@ -7,13 +7,6 @@ const markets = [
     "createdAt": 1734535163449
   },
   {
-    "uuid": "5e573d1e-427f-431f-9bc4-36716b33b816",
-    "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
-    "productUuid": "9f048be1-93b5-4074-a127-79f25a097c35",
-    "personaUuid": "33e7f1fc-5245-40e7-a6a8-5944339351b1",
-    "createdAt": 1734535163449
-  },
-  {
     "uuid": "9ee66a29-d51c-4ea8-aa0e-841846ba7db4",
     "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
     "productUuid": "df3927de-ae4a-4850-89a2-fc95dd7a207d",
@@ -49,23 +42,9 @@ const markets = [
     "createdAt": 1734535163449
   },
   {
-    "uuid": "9c2986e7-2561-4f7f-a914-bc30da7c387b",
-    "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
-    "productUuid": "9f048be1-93b5-4074-a127-79f25a097c35",
-    "personaUuid": "d9e5e3aa-0200-4917-bbe1-ceb845676dde",
-    "createdAt": 1734535163449
-  },
-  {
     "uuid": "a1fdc4cf-1801-4209-a50a-4b5691590809",
     "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
     "productUuid": "68e11029-8ebe-4509-92f8-eef0140cf855",
-    "personaUuid": "1feb4724-6b82-4540-8c6a-5f7c6b5749fc",
-    "createdAt": 1734535163449
-  },
-  {
-    "uuid": "6cf09aec-5a7e-47cf-a317-327f2f255418",
-    "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
-    "productUuid": "9f048be1-93b5-4074-a127-79f25a097c35",
     "personaUuid": "1feb4724-6b82-4540-8c6a-5f7c6b5749fc",
     "createdAt": 1734535163449
   },

@@ -44,28 +44,6 @@ const products = [
     "pageCount": 12
   },
   {
-    "uuid": "9f048be1-93b5-4074-a127-79f25a097c35",
-    "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
-    "name": "Pompes résidentielles",
-    "description": "Large selection of residential pumps including submersible, drainage, septic, and circulation pumps, with responsive technical support.",
-    "image": "https://lirp.cdn-website.com/e3c7e386/dms3rep/multi/opt/footer-pompe-residentielle1-1920w.jpeg",
-    "score": null,
-    "ctaName": null,
-    "ctaUrl": "https://www.pompesgarand.ca/pompes-residentielles",
-    "benefits": null,
-    "createdAt": 1734383403964,
-    "category": null,
-    "subcategory": {
-      "uuid": "61a14bf1-3cb5-4be9-8368-53b3ad110f6c",
-      "name": "Pompes résidentielles",
-      "description": "",
-      "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
-      "parentUuid": "688f0d4e-501d-45a7-859d-ca05ccf5df3e",
-      "createdAt": 1734470749748
-    },
-    "pageCount": 12
-  },
-  {
     "uuid": "df3927de-ae4a-4850-89a2-fc95dd7a207d",
     "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
     "name": "Lampes UV (désinfection d'eau)",
