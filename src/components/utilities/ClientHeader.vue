@@ -14,7 +14,7 @@
       <div class="c-company-name">{{ company.name }}</div>
 
       <!-- Menu trigger icon with menu -->
-      <q-icon name="expand_more" size="sm" class="q-ml-xs cursor-pointer">
+      <q-icon v-if="company.subCompany.length" name="expand_more" size="sm" class="q-ml-xs cursor-pointer">
 
       </q-icon>
 
