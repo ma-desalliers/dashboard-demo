@@ -56,9 +56,7 @@ html {
 }
 
 .right-column-container{
-  max-height: calc(100% - 30px);
-  height: calc(100% - 30px);
-  overflow-y: auto;
+
 }
 
 .c-box-title{
@@ -325,6 +323,10 @@ html {
   object-fit: contain;
 }
 
+
+.c-img-contain{
+  object-fit: contain;
+}
 
 .bg-green{
   background-color: var(--q-green) !important;

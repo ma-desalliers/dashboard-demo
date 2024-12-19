@@ -46,7 +46,7 @@
             </q-item-section>
             <q-item-section v-else  style="max-width: 40px">
               <q-avatar rounded size="24px" class="q-mr-sm">
-                <img :src="item.logo" alt="Company logo">
+                <img :src="item.logo" alt="Company logo" class="c-img-contain">
 
               </q-avatar>
             </q-item-section>
