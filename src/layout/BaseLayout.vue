@@ -111,7 +111,7 @@ const headerState = ref(true)
 
     .c-right-column {
       position:fixed;
-      top:50px;
+      top:70px;
       bottom:0;
       left:0;
       right:0;

@@ -15,8 +15,8 @@
       dense
     >
       <q-tab name="preview" label="Content" class="c-tab-padding" style="flex:unset;margin-right:16px" />
-      <q-tab v-if="isMobile" name="detail" label="Campaign" class="c-tab-padding" style="flex:unset" />
-      <q-tab name="keywords" label="Seo" class="c-tab-padding" style="flex:unset; margin-right:16px" />
+      <q-tab v-if="isMobile" name="detail" label="Campaign" class="c-tab-padding" style="flex:unset;margin-right:16px" />
+      <q-tab name="keywords" label="Seo" class="c-tab-padding" style="flex:unset;"/>
      
     </q-tabs>
 
@@ -536,7 +536,7 @@ watch(activeTab, (newValue) => {
 
 .custom-iframe {
   width: 100%;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 150px);
   background: white;
   transition: box-shadow 0.3s ease;
 }
