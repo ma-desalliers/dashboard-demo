@@ -121,6 +121,15 @@ html {
   }
 }
 
+.text-first-uppercase {
+  text-transform: lowercase;
+	display:block !important;
+}
+
+.text-first-uppercase::first-letter {
+  text-transform: capitalize;
+}
+
 .c-tab-padding{
   padding: 12px 8px !important
 }

@@ -16,7 +16,7 @@
       <q-item-section class="clickable c-product-item" >
         <div class="content-info">
           <div >
-            <span class="text-subtitle2"> {{ product.name }} &nbsp;</span>
+            <span class="text-subtitle2 text-first-uppercase"> {{ product.name }} &nbsp;</span>
           </div>
           <div class="text-caption text-grey-7 text-truncate">
             
