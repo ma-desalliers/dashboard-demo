@@ -268,7 +268,7 @@ const isMobile = computed(()=> mainDisplayStore.isMobile)
   }
 
 .page-detail::-webkit-scrollbar-thumb {
-  background: #eeeeee !important;
+ // background: #eeeeee !important;
   border-radius: 4px;
 }
 
