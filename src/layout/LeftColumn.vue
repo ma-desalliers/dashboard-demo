@@ -18,6 +18,7 @@
   
     <!-- Menu trigger icon with menu -->
     <q-icon 
+		v-if="company.subCompany.length"
       name="expand_more" 
       size="sm" 
       class="q-ml-xs cursor-pointer"
