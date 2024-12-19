@@ -536,7 +536,7 @@ watch(activeTab, (newValue) => {
 
 .custom-iframe {
   width: 100%;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 150px);
   background: white;
   transition: box-shadow 0.3s ease;
 }

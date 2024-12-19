@@ -213,8 +213,8 @@ watch(selectedPage, (newValue)=>{
 }
 
 .pages-container{
-	height:100%;
-	min-height: 100%;
+	height:calc(100% - 30px);
+	min-height: calc(100% - 30px);
 	position: relative;
 
 	.page-scroll{
