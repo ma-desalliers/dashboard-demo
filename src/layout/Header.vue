@@ -1,39 +1,32 @@
 <template>
-	<q-toolbar v-if="isVisible" class="c-header bg-primary relative-position" :class="{'isMobile':isMobile}"       @click="showMenu">
-		<span class="absolute-center" style="font-size: 1rem; font-weight: 300">
-			<span v-if="!isMobile" class='text-white' >New Functionality Available!</span>
-			
-			<div v-if="isMobile" class=row>
-				<q-avatar v-if="company.logoType == 'url'" size="24px" class="q-mr-sm">
-					<img :src="company.logo" alt="Company logo">
-					
-				</q-avatar>
+	<q-toolbar v-if="isVisible" class="c-header bg-primary relative-position" :class="{'isMobile':isMobile}">
+		<div v-if="!isMobile">
+			<span :class="isMobile?'':'absolute-center'" style="font-size: 1rem; font-weight: 300">
+				<span v-if="!isMobile" class='text-white' >New Functionality Available!</span>
 				
-				
-				<!-- Current company display -->
-				<div v-if="company.logoType == 'svg'" style="height:25px; width:25px" class="q-mr-sm">
-					<div v-html="company.logo"></div>
+				<div v-if="isMobile" class=row>
+					<q-avatar v-if="company.logoType == 'url'" size="24px" class="q-mr-sm">
+						<img :src="company.logo" alt="Company logo">
+					</q-avatar>
+					<!-- Current company display -->
+					<div v-if="company.logoType == 'svg'" style="height:25px; width:25px" class="q-mr-sm">
+						<div v-html="company.logo"></div>
+					</div>
+					<div class="c-company-name">{{ company.name }}</div>
 				</div>
-				<div class="c-company-name">{{ company.name }}</div>
-			</div>
-		</span>
-		 <q-btn
-		v-if="!isMobile"
-		flat
-		dense
-		icon="close"
-		class="text-white absolute-right q-mr-md"
-		@click="closeBar"
-		/>
-		
-		<q-btn
-		v-if="isMobile"
-		flat
-		dense
-		icon="menu"
-		class="text-black absolute-right q-mr-md"
-		
-		/>
+			</span>
+			<q-btn
+			v-if="!isMobile"
+			flat
+			dense
+			icon="close"
+			class="text-white absolute-right q-mr-md"
+			@click="closeBar"
+			/>
+		</div>
+		<div v-if=isMobile class="q-px-xs q-py-md full-width" style="padding-top:24px;">
+			<client-header></client-header>
+		</div>
 	</q-toolbar>
 </template>
 
@@ -62,10 +55,7 @@ const navigateTo = (page: string) => {
 	router.push(`/${page}`);
 };
 
-const showMenu = () =>{
-	
-	mainDisplayStore.setShowMenu(true)
-}
+
 </script>
 
 <style lang="scss">
@@ -80,6 +70,7 @@ const showMenu = () =>{
 	
 	&.isMobile{
 		background-color: var(--main-gray) !important;
+		box-shadow: none;
 	}
 }
 

@@ -1,6 +1,6 @@
 <template>
 	<div class="row full-width ">
-		<div class="col-12  c-border-bottom" >
+		<div class="col-12  c-border-bottom" :class="{'c-bottom-shadow': isMobile}" >
 			<q-tabs
 			v-model="listView"
 			color="primary"
@@ -225,5 +225,9 @@ watch(selectedPage, (newValue)=>{
 		bottom:0;
 		overflow-y: auto;
 	}
+}
+
+.c-bottom-shadow{
+	box-shadow: 1px 1px 5px #e0e0e0;
 }
 </style>
