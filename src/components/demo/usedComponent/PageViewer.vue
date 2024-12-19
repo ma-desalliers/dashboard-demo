@@ -15,8 +15,8 @@
       dense
     >
       <q-tab name="preview" label="Content" class="c-tab-padding" style="flex:unset;margin-right:16px" />
-      <q-tab v-if="isMobile" name="detail" label="Campaign" class="c-tab-padding" style="flex:unset" />
-      <q-tab name="keywords" label="Seo" class="c-tab-padding" style="flex:unset; margin-right:16px" />
+      <q-tab v-if="isMobile" name="detail" label="Campaign" class="c-tab-padding" style="flex:unset;margin-right:16px" />
+      <q-tab name="keywords" label="Seo" class="c-tab-padding" style="flex:unset;"/>
      
     </q-tabs>
 
