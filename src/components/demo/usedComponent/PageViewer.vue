@@ -15,8 +15,8 @@
       dense
     >
       <q-tab name="preview" label="Content" class="c-tab-padding" style="flex:unset;margin-right:16px" />
-      <q-tab v-if="isMobile" name="detail" label="Campaign" class="c-tab-padding" style="flex:unset" />
-      <q-tab name="keywords" label="Seo" class="c-tab-padding" style="flex:unset; margin-right:16px" />
+      <q-tab v-if="isMobile" name="detail" label="Campaign" class="c-tab-padding" style="flex:unset;margin-right:16px" />
+      <q-tab name="keywords" label="Seo" class="c-tab-padding" style="flex:unset;"/>
      
     </q-tabs>
 
@@ -37,7 +37,7 @@
         </div>
 
         <div v-if="isLoading" class="c-loader-container">
-          <Loader color="#55B948" size="75px"></Loader>
+          <Loader size="75px"></Loader>
         </div>
       </q-tab-panel>
 
@@ -490,12 +490,12 @@ watch(activeTab, (newValue) => {
 
 <style scoped lang="scss">
 .tabbed-viewer {
+	position:relative;
   max-width: 1200px;
   margin: 0 auto;
-  max-height: 90vh;
-  height:90vh;
+  min-height: 100%;
+  height:100%;
   position: sticky;
-  top: 25px;
   background-color: white;
   &.isMobile{
     position:fixed;
@@ -508,7 +508,7 @@ watch(activeTab, (newValue) => {
     z-index:100;
 
     .c-scroll{
-      height:100vh
+      height:100
     }
 
     .keywords-analysis{
@@ -536,7 +536,7 @@ watch(activeTab, (newValue) => {
 
 .custom-iframe {
   width: 100%;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 150px);
   background: white;
   transition: box-shadow 0.3s ease;
 }
@@ -544,7 +544,7 @@ watch(activeTab, (newValue) => {
 .keywords-panel {
   .stats-section {
     .q-card {
-      height: 100%;
+      height:calc(100% - 100px);
     }
   }
 }
@@ -555,7 +555,7 @@ watch(activeTab, (newValue) => {
 }
 
 .c-scroll{
-  max-height:calc(100% - 100px);
+  height:calc(100% - 100px);
   overflow:overlay !important;
 }
 
@@ -594,8 +594,10 @@ watch(activeTab, (newValue) => {
 }
 
 .keywords-analysis{
-  height:calc(100% - 50px);
-  overflow:auto
+	position:absolute;
+	inset:0;
+
+  overflow:auto;
 }
 
 

@@ -19,7 +19,7 @@
           <div class="text-caption text-grey-7 text-truncate">
             
             <span class="text-primary" v-if="audience.pageCount"><i class="fa-regular fa-file"></i> {{ audience.pageCount }} •  </span>
-            {{ audience.subIndustryName || audience.description }}
+            {{ audience.subIndustryName }}
           </div>
         </div>
       </q-item-section>
