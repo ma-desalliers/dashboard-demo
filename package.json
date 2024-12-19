@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev --port 3001 --host",
+    "dev": "nuxt dev --port 3002 --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "start": "npm install && nuxt build && pm2 start ecosystem.config.cjs",
