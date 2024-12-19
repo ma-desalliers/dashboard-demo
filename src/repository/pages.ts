@@ -165,6 +165,72 @@ const pages = [
     "createdAt": 1734363056439
   },
   {
+    "uuid": "45b17883-d0af-44f9-86a1-d3544eaeb8cc",
+    "language": "en",
+    "category": {
+      "uuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "name": "Clinical Management",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": null,
+      "createdAt": 1734632949720
+    },
+    "subcategory": {
+      "uuid": "1ba09de2-75dd-42d3-bb93-31289a4664a8",
+      "name": "Patient Services",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "createdAt": 1734632949720
+    },
+    "job": null,
+    "subjob": null,
+    "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+    "marketUuid": "4d929307-4945-4030-98e9-9d2fd5b44350",
+    "personaUuid": "5cb002a2-7a9f-43d0-9e2e-ce4aa7af601c",
+    "productUuid": "b0c145b0-ea86-468c-984d-dc973526cd89",
+    "subjobUuid": null,
+    "title": "5 Signs Your Clinic Is Struggling with Appointments",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734639522453,
+    "createdAt": 1734363056439
+  },
+  {
+    "uuid": "d7152a2e-9b42-46a8-b9c2-eb117570fea1",
+    "language": "en",
+    "category": {
+      "uuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "name": "Clinical Management",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": null,
+      "createdAt": 1734632949720
+    },
+    "subcategory": {
+      "uuid": "1ba09de2-75dd-42d3-bb93-31289a4664a8",
+      "name": "Patient Services",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "createdAt": 1734632949720
+    },
+    "job": null,
+    "subjob": null,
+    "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+    "marketUuid": "4d929307-4945-4030-98e9-9d2fd5b44350",
+    "personaUuid": "5cb002a2-7a9f-43d0-9e2e-ce4aa7af601c",
+    "productUuid": "b0c145b0-ea86-468c-984d-dc973526cd89",
+    "subjobUuid": null,
+    "title": "5 Signs Your Clinic Needs a Better Booking Strategy",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734639522453,
+    "createdAt": 1734363056439
+  },
+  {
     "uuid": "a671ec7f-f1d6-48c8-9612-2fa8747cd3a6",
     "language": "en",
     "category": {
@@ -396,6 +462,72 @@ const pages = [
     "createdAt": 1734634857100
   },
   {
+    "uuid": "f191d85f-600d-48b0-ba51-21ebecc92c51",
+    "language": "en",
+    "category": {
+      "uuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "name": "Clinical Management",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": null,
+      "createdAt": 1734632949720
+    },
+    "subcategory": {
+      "uuid": "1ba09de2-75dd-42d3-bb93-31289a4664a8",
+      "name": "Patient Services",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "createdAt": 1734632949720
+    },
+    "job": null,
+    "subjob": null,
+    "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+    "marketUuid": "e1b31266-bc5a-4c07-bab1-d6698a2372f0",
+    "personaUuid": "6544235d-1aa1-41ee-a040-613381586a23",
+    "productUuid": "31125392-512d-4d0a-b30a-bd965e61590b",
+    "subjobUuid": null,
+    "title": "5 Reasons Why Your Clinic Loses Patients",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734639529330,
+    "createdAt": 1734634857100
+  },
+  {
+    "uuid": "41b36d78-efa4-49b9-9479-b3858d5c743b",
+    "language": "en",
+    "category": {
+      "uuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "name": "Clinical Management",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": null,
+      "createdAt": 1734632949720
+    },
+    "subcategory": {
+      "uuid": "1ba09de2-75dd-42d3-bb93-31289a4664a8",
+      "name": "Patient Services",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "createdAt": 1734632949720
+    },
+    "job": null,
+    "subjob": null,
+    "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+    "marketUuid": "e1b31266-bc5a-4c07-bab1-d6698a2372f0",
+    "personaUuid": "6544235d-1aa1-41ee-a040-613381586a23",
+    "productUuid": "31125392-512d-4d0a-b30a-bd965e61590b",
+    "subjobUuid": null,
+    "title": "5 Red Flags for Poor Patient Communication in Scheduling",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734639529330,
+    "createdAt": 1734634857100
+  },
+  {
     "uuid": "4071cd40-e258-40da-88ee-afe17faa7350",
     "language": "en",
     "category": {
@@ -529,6 +661,106 @@ const pages = [
     "createdAt": 1734636844895
   },
   {
+    "uuid": "fb4c5452-b36f-49e0-8c4a-8b0c6dc4e983",
+    "language": "en",
+    "category": {
+      "uuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "name": "Clinical Management",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": null,
+      "createdAt": 1734632949720
+    },
+    "subcategory": {
+      "uuid": "1ba09de2-75dd-42d3-bb93-31289a4664a8",
+      "name": "Patient Services",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "createdAt": 1734632949720
+    },
+    "job": {
+      "uuid": "4fffbc82-3cc4-49fd-9b2f-c11c6ed1cb06",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "marketUuid": "87177d5d-486f-47e5-af17-1356b92b3d27",
+      "title": "Enhance patient satisfaction with booking",
+      "relevancyScore": 1,
+      "type": "functional-job",
+      "createdAt": 1734634435195
+    },
+    "subjob": {
+      "uuid": "7fcae798-b4a2-4ba8-9bcb-63d1dad4cb7a",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "marketUuid": "87177d5d-486f-47e5-af17-1356b92b3d27",
+      "parentUuid": "4fffbc82-3cc4-49fd-9b2f-c11c6ed1cb06",
+      "title": "Configure appointment reminders for patients",
+      "relevancyScore": 1,
+      "type": "functional-subjob",
+      "createdAt": 1734634513999
+    },
+    "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+    "marketUuid": "87177d5d-486f-47e5-af17-1356b92b3d27",
+    "personaUuid": "f0b64e14-a730-41c0-9d08-74a8d3427262",
+    "productUuid": "b0c145b0-ea86-468c-984d-dc973526cd89",
+    "subjobUuid": "7fcae798-b4a2-4ba8-9bcb-63d1dad4cb7a",
+    "title": "2 Innovative Technologies Transforming Appointment Reminders in Health Care",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734639510039,
+    "createdAt": 1734636844895
+  },
+  {
+    "uuid": "6b52395f-e01d-4a42-abbb-01ce5876df63",
+    "language": "en",
+    "category": {
+      "uuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "name": "Clinical Management",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": null,
+      "createdAt": 1734632949720
+    },
+    "subcategory": {
+      "uuid": "1ba09de2-75dd-42d3-bb93-31289a4664a8",
+      "name": "Patient Services",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "createdAt": 1734632949720
+    },
+    "job": {
+      "uuid": "4fffbc82-3cc4-49fd-9b2f-c11c6ed1cb06",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "marketUuid": "87177d5d-486f-47e5-af17-1356b92b3d27",
+      "title": "Enhance patient satisfaction with booking",
+      "relevancyScore": 1,
+      "type": "functional-job",
+      "createdAt": 1734634435195
+    },
+    "subjob": {
+      "uuid": "7fcae798-b4a2-4ba8-9bcb-63d1dad4cb7a",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "marketUuid": "87177d5d-486f-47e5-af17-1356b92b3d27",
+      "parentUuid": "4fffbc82-3cc4-49fd-9b2f-c11c6ed1cb06",
+      "title": "Configure appointment reminders for patients",
+      "relevancyScore": 1,
+      "type": "functional-subjob",
+      "createdAt": 1734634513999
+    },
+    "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+    "marketUuid": "87177d5d-486f-47e5-af17-1356b92b3d27",
+    "personaUuid": "f0b64e14-a730-41c0-9d08-74a8d3427262",
+    "productUuid": "b0c145b0-ea86-468c-984d-dc973526cd89",
+    "subjobUuid": "7fcae798-b4a2-4ba8-9bcb-63d1dad4cb7a",
+    "title": "3 Common Mistakes to Avoid When Setting Up Patient Appointment Reminders",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734639510039,
+    "createdAt": 1734636844895
+  },
+  {
     "uuid": "c1258e98-0b33-4861-b66e-16ff1d0c1933",
     "language": "en",
     "category": {
@@ -629,6 +861,106 @@ const pages = [
     "createdAt": 1734636847167
   },
   {
+    "uuid": "3bd702da-5489-4512-9eb3-6a2ec0efe51e",
+    "language": "en",
+    "category": {
+      "uuid": "9537780b-e613-4b39-97b4-b6b78c103937",
+      "name": "Professional Services",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": null,
+      "createdAt": 1734632949720
+    },
+    "subcategory": {
+      "uuid": "cd205714-30c6-4589-ac82-5093a87c7207",
+      "name": "Capacity management",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": "9537780b-e613-4b39-97b4-b6b78c103937",
+      "createdAt": 1734637376045
+    },
+    "job": {
+      "uuid": "addd38cd-27cc-4e60-8cfb-7e22ee9e2385",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "marketUuid": "ccc63a0d-e99e-4579-b9ab-3fc8ebafd234",
+      "title": "Enhance operational efficiency during transitions",
+      "relevancyScore": 2,
+      "type": "functional-job",
+      "createdAt": 1734634378358
+    },
+    "subjob": {
+      "uuid": "d21e28c6-3085-4125-951f-386a934a0e4f",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "marketUuid": "ccc63a0d-e99e-4579-b9ab-3fc8ebafd234",
+      "parentUuid": "addd38cd-27cc-4e60-8cfb-7e22ee9e2385",
+      "title": "Implement new solutions effectively",
+      "relevancyScore": 1,
+      "type": "functional-subjob",
+      "createdAt": 1734634426900
+    },
+    "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+    "marketUuid": "ccc63a0d-e99e-4579-b9ab-3fc8ebafd234",
+    "personaUuid": "5cb002a2-7a9f-43d0-9e2e-ce4aa7af601c",
+    "productUuid": "1f5a9813-b4fb-418a-a362-5e873ccfb5f8",
+    "subjobUuid": "d21e28c6-3085-4125-951f-386a934a0e4f",
+    "title": "2 Critical Components of a Successful New Solution Rollout in Clinics",
+    "score": 1,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734639550957,
+    "createdAt": 1734636847167
+  },
+  {
+    "uuid": "203c7200-a1a7-4722-875d-a4c194eba109",
+    "language": "en",
+    "category": {
+      "uuid": "9537780b-e613-4b39-97b4-b6b78c103937",
+      "name": "Professional Services",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": null,
+      "createdAt": 1734632949720
+    },
+    "subcategory": {
+      "uuid": "cd205714-30c6-4589-ac82-5093a87c7207",
+      "name": "Capacity management",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": "9537780b-e613-4b39-97b4-b6b78c103937",
+      "createdAt": 1734637376045
+    },
+    "job": {
+      "uuid": "addd38cd-27cc-4e60-8cfb-7e22ee9e2385",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "marketUuid": "ccc63a0d-e99e-4579-b9ab-3fc8ebafd234",
+      "title": "Enhance operational efficiency during transitions",
+      "relevancyScore": 2,
+      "type": "functional-job",
+      "createdAt": 1734634378358
+    },
+    "subjob": {
+      "uuid": "d21e28c6-3085-4125-951f-386a934a0e4f",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "marketUuid": "ccc63a0d-e99e-4579-b9ab-3fc8ebafd234",
+      "parentUuid": "addd38cd-27cc-4e60-8cfb-7e22ee9e2385",
+      "title": "Implement new solutions effectively",
+      "relevancyScore": 1,
+      "type": "functional-subjob",
+      "createdAt": 1734634426900
+    },
+    "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+    "marketUuid": "ccc63a0d-e99e-4579-b9ab-3fc8ebafd234",
+    "personaUuid": "5cb002a2-7a9f-43d0-9e2e-ce4aa7af601c",
+    "productUuid": "1f5a9813-b4fb-418a-a362-5e873ccfb5f8",
+    "subjobUuid": "d21e28c6-3085-4125-951f-386a934a0e4f",
+    "title": "3 Strategies to Minimize Scheduling Conflicts with New Solutions",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734639550957,
+    "createdAt": 1734636847167
+  },
+  {
     "uuid": "5ec0469e-5a2f-4631-8fc5-7049bf6ded6d",
     "language": "en",
     "category": {
@@ -726,6 +1058,106 @@ const pages = [
     "isPublished": false,
     "hasContent": true,
     "updatedAt": 1734637904561,
+    "createdAt": 1734637321304
+  },
+  {
+    "uuid": "157843e8-9b9b-4fb3-a524-91dcb5b2e0c0",
+    "language": "en",
+    "category": {
+      "uuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "name": "Clinical Management",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": null,
+      "createdAt": 1734632949720
+    },
+    "subcategory": {
+      "uuid": "9aeccead-1765-4534-8f97-abc6c9eedfed",
+      "name": "Operational Services",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "createdAt": 1734632949720
+    },
+    "job": {
+      "uuid": "33a2c269-a258-462a-80da-05842e809b46",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "marketUuid": "733e2c4a-9651-4cb3-a407-88fe8b0e0e67",
+      "title": "Streamline patient access to services",
+      "relevancyScore": 2,
+      "type": "functional-job",
+      "createdAt": 1734634367460
+    },
+    "subjob": {
+      "uuid": "6e3a37ee-aea9-4a81-8f60-345a84a9edbb",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "marketUuid": "733e2c4a-9651-4cb3-a407-88fe8b0e0e67",
+      "parentUuid": "33a2c269-a258-462a-80da-05842e809b46",
+      "title": "Configure shift reminders for personnel",
+      "relevancyScore": 1,
+      "type": "functional-subjob",
+      "createdAt": 1734634395944
+    },
+    "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+    "marketUuid": "733e2c4a-9651-4cb3-a407-88fe8b0e0e67",
+    "personaUuid": "5cb002a2-7a9f-43d0-9e2e-ce4aa7af601c",
+    "productUuid": "e2f63a74-7799-470a-a498-2b835e61604a",
+    "subjobUuid": "6e3a37ee-aea9-4a81-8f60-345a84a9edbb",
+    "title": "3 Key Metrics to Evaluate the Effectiveness of Your Shift Reminder Configuration",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734639520105,
+    "createdAt": 1734637321304
+  },
+  {
+    "uuid": "13b0812c-5c8f-4e03-ad8b-38008e7b2512",
+    "language": "en",
+    "category": {
+      "uuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "name": "Clinical Management",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": null,
+      "createdAt": 1734632949720
+    },
+    "subcategory": {
+      "uuid": "9aeccead-1765-4534-8f97-abc6c9eedfed",
+      "name": "Operational Services",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "createdAt": 1734632949720
+    },
+    "job": {
+      "uuid": "33a2c269-a258-462a-80da-05842e809b46",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "marketUuid": "733e2c4a-9651-4cb3-a407-88fe8b0e0e67",
+      "title": "Streamline patient access to services",
+      "relevancyScore": 2,
+      "type": "functional-job",
+      "createdAt": 1734634367460
+    },
+    "subjob": {
+      "uuid": "6e3a37ee-aea9-4a81-8f60-345a84a9edbb",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "marketUuid": "733e2c4a-9651-4cb3-a407-88fe8b0e0e67",
+      "parentUuid": "33a2c269-a258-462a-80da-05842e809b46",
+      "title": "Configure shift reminders for personnel",
+      "relevancyScore": 1,
+      "type": "functional-subjob",
+      "createdAt": 1734634395944
+    },
+    "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+    "marketUuid": "733e2c4a-9651-4cb3-a407-88fe8b0e0e67",
+    "personaUuid": "5cb002a2-7a9f-43d0-9e2e-ce4aa7af601c",
+    "productUuid": "e2f63a74-7799-470a-a498-2b835e61604a",
+    "subjobUuid": "6e3a37ee-aea9-4a81-8f60-345a84a9edbb",
+    "title": "4 Innovative Approaches to Integrate Shift Reminders with Existing Systems",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1734639520105,
     "createdAt": 1734637321304
   }
 ]

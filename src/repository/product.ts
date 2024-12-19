@@ -4,7 +4,7 @@ const products = [
     "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
     "name": "Patient Booking",
     "description": "Petal's patient booking system offers an online platform that allows patients to schedule appointments easily, reduces no-shows with automated reminders, and optimizes clinic workflows through real-time scheduling updates.",
-    "image": null,
+    "image": "https://www.petal-health.com/hs-fs/hubfs/_Petal/Website/Product%20page/Nurse%20Scheduling%20-%20Automated%20Nurse%20Callout/FR/Image%20Publish%20-%20Scheduling%20-%20FR.png?width=1600&height=900&name=Image%20Publish%20-%20Scheduling%20-%20FR.png",
     "score": null,
     "ctaName": null,
     "ctaUrl": null,
@@ -26,14 +26,14 @@ const products = [
       "parentUuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
       "createdAt": 1734632949720
     },
-    "pageCount": 9
+    "pageCount": 13
   },
   {
     "uuid": "31125392-512d-4d0a-b30a-bd965e61590b",
     "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
     "name": "Patient Booking",
     "description": "Petal's patient booking system offers an online platform that allows patients to schedule appointments easily, reduces no-shows with automated reminders, and optimizes clinic workflows through real-time scheduling updates.",
-    "image": null,
+    "image": "https://www.petal-health.com/hs-fs/hubfs/_Petal/Website/Product%20page/Nurse%20Scheduling%20-%20Automated%20Nurse%20Callout/FR/Image%20Publish%20-%20Scheduling%20-%20FR.png?width=1600&height=900&name=Image%20Publish%20-%20Scheduling%20-%20FR.png",
     "score": null,
     "ctaName": null,
     "ctaUrl": null,
@@ -55,7 +55,7 @@ const products = [
       "parentUuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
       "createdAt": 1734632949720
     },
-    "pageCount": 6
+    "pageCount": 8
   },
   {
     "uuid": "1f5a9813-b4fb-418a-a362-5e873ccfb5f8",
@@ -84,7 +84,7 @@ const products = [
       "parentUuid": "9537780b-e613-4b39-97b4-b6b78c103937",
       "createdAt": 1734637376045
     },
-    "pageCount": 2
+    "pageCount": 4
   },
   {
     "uuid": "e2f63a74-7799-470a-a498-2b835e61604a",
@@ -113,7 +113,7 @@ const products = [
       "parentUuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
       "createdAt": 1734632949720
     },
-    "pageCount": 2
+    "pageCount": 4
   },
   {
     "uuid": "2e62ba8d-8b21-47f8-8982-319d3f3e95ca",
