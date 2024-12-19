@@ -10,14 +10,15 @@
     <div v-if="company.logoType == 'svg'" style="height:25px; width:25px" class="q-mr-sm">
       <div v-html="company.logo"></div>
     </div>
-    <q-avatar rounded v-if="company.logoType == 'img'" size="24px" class="q-mr-sm">
-        <img :src="company.logo" alt="Company logo">
+    <q-avatar rounded v-if="company.logoType == 'img'" size="60px" class="q-mr-sm">
+        <img :src="company.logo" alt="Company logo" class="c-img-contain">
 
       </q-avatar>
     <div class="c-company-name">{{ company.name }}</div>
   
     <!-- Menu trigger icon with menu -->
     <q-icon 
+		v-if="false"
       name="expand_more" 
       size="sm" 
       class="q-ml-xs cursor-pointer"

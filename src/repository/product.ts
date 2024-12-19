@@ -48,7 +48,7 @@ const products = [
     "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
     "name": "Pompes agricoles",
     "description": "\nNous avons tous les types de pompes pour répondre à vos besoins en milieu agricole. De la pompe à purin, jusqu’à la pompe pour l’irrigation de vos champs, nous pouvons vous conseiller des produits de qualité pour des résultats assurés.\n\nNous possédons un atelier de réparation pouvant procéder aux tests de pompes de grandes dimensions",
-    "image": null,
+    "image": 'https://irp.cdn-website.com/e3c7e386/dms3rep/multi/footer-pompe-agricole1.jpeg',
     "score": 1,
     "ctaName": null,
     "ctaUrl": "https://www.pompesgarand.ca/pompes-agricoles",
@@ -105,50 +105,6 @@ const products = [
       "description": "",
       "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
       "parentUuid": "86cdca17-7f90-498d-9d4c-5a0ce5672f3f",
-      "createdAt": 1734470749748
-    },
-    "pageCount": 4
-  },
-  {
-    "uuid": "192fddd3-0ec9-4ac1-b3d9-89f4019f2fae",
-    "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
-    "name": "Pompes à Drummondville",
-    "description": "A trusted supplier of a wide selection of pumps, offering advanced technology for residential, industrial, agricultural, and municipal needs.",
-    "image": "https://lirp.cdn-website.com/e3c7e386/dms3rep/multi/opt/LOGO_new_pompegarand5FINAL-01-e2e5e15c-1920w.jpg",
-    "score": null,
-    "ctaName": null,
-    "ctaUrl": "https://www.pompesgarand.ca/pompes-drummondville",
-    "benefits": null,
-    "createdAt": 1734383403965,
-    "category": null,
-    "subcategory": {
-      "uuid": "61a14bf1-3cb5-4be9-8368-53b3ad110f6c",
-      "name": "Pompes résidentielles",
-      "description": "",
-      "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
-      "parentUuid": "688f0d4e-501d-45a7-859d-ca05ccf5df3e",
-      "createdAt": 1734470749748
-    },
-    "pageCount": 4
-  },
-  {
-    "uuid": "087eecf6-fd5e-41e9-9c73-1f7f47f48ff5",
-    "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
-    "name": "Pompes Saint-Hyacinthe",
-    "description": "Expert in the supply and maintenance of pumps for residential, industrial, agricultural, and municipal water needs.",
-    "image": null,
-    "score": null,
-    "ctaName": null,
-    "ctaUrl": "https://www.pompesgarand.ca/pompes-saint-hyacinthe",
-    "benefits": null,
-    "createdAt": 1734383403965,
-    "category": null,
-    "subcategory": {
-      "uuid": "61a14bf1-3cb5-4be9-8368-53b3ad110f6c",
-      "name": "Pompes résidentielles",
-      "description": "",
-      "clientUuid": "7f2c4577-a0bf-43ce-85d6-68e826bbb83e",
-      "parentUuid": "688f0d4e-501d-45a7-859d-ca05ccf5df3e",
       "createdAt": 1734470749748
     },
     "pageCount": 4

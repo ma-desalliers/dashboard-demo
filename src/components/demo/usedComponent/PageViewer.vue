@@ -37,7 +37,7 @@
         </div>
 
         <div v-if="isLoading" class="c-loader-container">
-          <Loader color="#55B948" size="75px"></Loader>
+          <Loader  size="75px"></Loader>
         </div>
       </q-tab-panel>
 
