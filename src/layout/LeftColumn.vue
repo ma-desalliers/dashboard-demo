@@ -11,7 +11,7 @@
       <div v-html="company.logo"></div>
     </div>
     <q-avatar rounded v-if="company.logoType == 'img'" size="24px" class="q-mr-sm">
-        <img :src="company.logo" alt="Company logo">
+        <img :src="company.logo" alt="Company logo" class="c-img-contain">
 
       </q-avatar>
     <div class="c-company-name">{{ company.name }}</div>
@@ -45,7 +45,7 @@
             </q-item-section>
             <q-item-section v-else  style="max-width: 40px">
               <q-avatar rounded size="24px" class="q-mr-sm">
-                <img :src="item.logo" alt="Company logo">
+                <img :src="item.logo" alt="Company logo" class="c-img-contain">
 
               </q-avatar>
             </q-item-section>

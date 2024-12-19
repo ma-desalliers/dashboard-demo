@@ -322,6 +322,10 @@ html {
   object-fit: cover;
 }
 
+.c-img-contain{
+  object-fit: contain;
+}
+
 .bg-green{
   background-color: var(--q-green) !important;
 }
