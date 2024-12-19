@@ -26,7 +26,7 @@ const products = [
       "parentUuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
       "createdAt": 1734632949720
     },
-    "pageCount": 5
+    "pageCount": 9
   },
   {
     "uuid": "31125392-512d-4d0a-b30a-bd965e61590b",
@@ -39,9 +39,23 @@ const products = [
     "ctaUrl": null,
     "benefits": null,
     "createdAt": 1734634813681,
-    "category": null,
-    "subcategory": null,
-    "pageCount": 4
+    "category": {
+      "uuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "name": "Clinical Management",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": null,
+      "createdAt": 1734632949720
+    },
+    "subcategory": {
+      "uuid": "1ba09de2-75dd-42d3-bb93-31289a4664a8",
+      "name": "Patient Services",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
+      "createdAt": 1734632949720
+    },
+    "pageCount": 6
   },
   {
     "uuid": "1f5a9813-b4fb-418a-a362-5e873ccfb5f8",
@@ -54,24 +68,23 @@ const products = [
     "ctaUrl": "https://www.petal-health.com/fr-ca/succes-client/services-professionnels",
     "benefits": "<ul><li>Expert support for first-time tool implementation</li><li>Guidance on new feature application</li><li>Assistance with integrating additional solutions</li><li>Training and certification for your team</li><li>Smooth transition process</li></ul>",
     "createdAt": 1734631677862,
-    "category": null,
-    "subcategory": null,
-    "pageCount": 0
-  },
-  {
-    "uuid": "2e62ba8d-8b21-47f8-8982-319d3f3e95ca",
-    "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
-    "name": "Manage Clinical Capacity in Real Time",
-    "description": "Provides real-time insights into clinical activities, enabling organizations to optimize resources and enhance care delivery.",
-    "image": "https://www.petal-health.com/hs-fs/hubfs/_Petal/Website/ClinicalCapacityMgmt-Hero-1920x1080.jpg?width=1920&height=1080&name=ClinicalCapacityMgmt-Hero-1920x1080.jpg",
-    "score": null,
-    "ctaName": null,
-    "ctaUrl": "https://www.petal-health.com/capacity-management",
-    "benefits": "<ul><li>Real-time overview of clinical activities</li><li>Reduction in operating and administrative costs</li><li>Enhanced visibility of healthcare coverage</li><li>Improved staff satisfaction and autonomy</li><li>Centralized data management for clinical operations</li></ul>",
-    "createdAt": 1734627280496,
-    "category": null,
-    "subcategory": null,
-    "pageCount": 0
+    "category": {
+      "uuid": "9537780b-e613-4b39-97b4-b6b78c103937",
+      "name": "Professional Services",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": null,
+      "createdAt": 1734632949720
+    },
+    "subcategory": {
+      "uuid": "cd205714-30c6-4589-ac82-5093a87c7207",
+      "name": "Capacity management",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": "9537780b-e613-4b39-97b4-b6b78c103937",
+      "createdAt": 1734637376045
+    },
+    "pageCount": 2
   },
   {
     "uuid": "e2f63a74-7799-470a-a498-2b835e61604a",
@@ -99,6 +112,35 @@ const products = [
       "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
       "parentUuid": "b5184d0d-2e42-45cc-bac0-4f2be4b8fc82",
       "createdAt": 1734632949720
+    },
+    "pageCount": 2
+  },
+  {
+    "uuid": "2e62ba8d-8b21-47f8-8982-319d3f3e95ca",
+    "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+    "name": "Manage Clinical Capacity in Real Time",
+    "description": "Provides real-time insights into clinical activities, enabling organizations to optimize resources and enhance care delivery.",
+    "image": "https://www.petal-health.com/hs-fs/hubfs/_Petal/Website/ClinicalCapacityMgmt-Hero-1920x1080.jpg?width=1920&height=1080&name=ClinicalCapacityMgmt-Hero-1920x1080.jpg",
+    "score": null,
+    "ctaName": null,
+    "ctaUrl": "https://www.petal-health.com/capacity-management",
+    "benefits": "<ul><li>Real-time overview of clinical activities</li><li>Reduction in operating and administrative costs</li><li>Enhanced visibility of healthcare coverage</li><li>Improved staff satisfaction and autonomy</li><li>Centralized data management for clinical operations</li></ul>",
+    "createdAt": 1734627280496,
+    "category": {
+      "uuid": "9537780b-e613-4b39-97b4-b6b78c103937",
+      "name": "Professional Services",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": null,
+      "createdAt": 1734632949720
+    },
+    "subcategory": {
+      "uuid": "cd205714-30c6-4589-ac82-5093a87c7207",
+      "name": "Capacity management",
+      "description": "",
+      "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
+      "parentUuid": "9537780b-e613-4b39-97b4-b6b78c103937",
+      "createdAt": 1734637376045
     },
     "pageCount": 0
   }

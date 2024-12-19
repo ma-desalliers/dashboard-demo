@@ -4,7 +4,7 @@ const audience = [
     "clientUuid": "d09b914b-451d-4949-a9b2-eb2f8559809d",
     "title": "Medical Clinics",
     "description": "Medical clinics engage Petal's patient booking solutions to: provide patients with convenient access to care, reduce administrative burdens through automated processes, and enhance clinic efficiency by minimizing scheduling conflicts and maximizing resource utilization.",
-    "subIndustryId": null,
+    "subIndustryId": 35102020,
     "countryId": null,
     "stateId": null,
     "cityId": null,
@@ -12,7 +12,15 @@ const audience = [
     "image": null,
     "score": null,
     "createdAt": 1734363006149,
-    "pageCount": 5
+    "subIndustryName": "Health Care Facilities",
+    "subIndustryDescription": "Owners and operators of health care facilities, including hospitals, nursing homes, rehabilitation centers and animal hospitals.",
+    "industryId": 351020,
+    "industryName": "Health Care Providers & Services",
+    "industryGroupId": 3510,
+    "industryGroupName": "Health Care Equipment & Services",
+    "sectorId": 35,
+    "sectorName": "Health Care",
+    "pageCount": 11
   },
   {
     "uuid": "6544235d-1aa1-41ee-a040-613381586a23",
@@ -27,7 +35,7 @@ const audience = [
     "image": null,
     "score": null,
     "createdAt": 1734634813760,
-    "pageCount": 4
+    "pageCount": 6
   },
   {
     "uuid": "f0b64e14-a730-41c0-9d08-74a8d3427262",
@@ -50,7 +58,7 @@ const audience = [
     "industryGroupName": "Health Care Equipment & Services",
     "sectorId": 35,
     "sectorName": "Health Care",
-    "pageCount": 0
+    "pageCount": 2
   },
   {
     "uuid": "abc6c80e-4a25-46cb-9724-d89b36bf35c2",

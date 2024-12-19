@@ -83,6 +83,6 @@ const markets = [
     "personaUuid": "6544235d-1aa1-41ee-a040-613381586a23",
     "createdAt": 1734634813845
   }
-];
+]
 
 export default markets;
