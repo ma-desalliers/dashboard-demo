@@ -1,5 +1,6 @@
 const company = {
   name:'CommonWealth',
+  folder:'commonwealth',
   logo:`https://www.google.com/s2/favicons?domain=commonwealthplywood.com&sz=256`,
   logoType:'img',
   primaryColor:'#db281c',

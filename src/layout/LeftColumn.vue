@@ -157,10 +157,10 @@ interface PilotItem {
 }
 
 const departments = reactive( [
-{ name: 'Marketing',active:true, page:"demo", color:"green", new:true ,  icon: '/user/marketing.png'},
-{ name: 'Sales', color:"blue" ,page:"sales", icon: '/user/sale.png' },
-{ name: 'Support', color:'purple',page:"SupportDisplay", icon: '/user/support.png' },
-{ name: 'HR', color:'yellow',page:"HrDisplay", icon: '/user/hr.png' }
+{ name: 'Marketing',active:true, page:"demo", color:"green", new:true ,  icon: `/${company.folder}/user/marketing.png`},
+{ name: 'Sales', color:"blue" ,page:"sales", icon: `/${company.folder}/user/sale.png` },
+{ name: 'Support', color:'purple',page:"SupportDisplay", icon: `/${company.folder}/user/support.png` },
+{ name: 'HR', color:'yellow',page:"HrDisplay", icon: `/${company.folder}/user/hr.png` }
 ]);
 
 const knowledgeItems: KnowledgeItem[] = [
