@@ -258,17 +258,21 @@ html {
 
 
 .c-col-30{
-  width:30%
+  max-width:30%
 }
 
 .c-col-45{
-  width:45%
+  min-width:45%
 }
 
 .c-row{
   flex-direction:row !important ;
 }
 
+
+.c-rounded{
+  border-radius: 4px;
+}
 
 .c-text-truncate {
   white-space: nowrap;

@@ -174,9 +174,7 @@
                   <span>{{ theProduct?.subcategory?.name }}</span>
                 </span>
               </div>
-                
-              
-             
+
             </div>
           </div>
         </div>

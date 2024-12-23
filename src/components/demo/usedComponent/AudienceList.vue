@@ -5,13 +5,12 @@
     v-for="audience in filteredAudiences" 
     :key="audience.uuid"
     class="content-item"
-    @click="selectAudience(audience)"
     expand-separator
     >
     <template #header>
     
       
-      <q-item-section class="clickable c-audience-item" >
+      <q-item-section class="clickable c-audience-item" @click="selectAudience(audience, $event)">
         <div class="content-info">
           <div >
             <span class="text-subtitle2 c-text-truncate"> {{ audience.title }} &nbsp;</span>
@@ -81,6 +80,9 @@
 import { computed, ref } from 'vue'
 import PageList from './PageList.vue'
 import Audiences from '@/src/repository/audience'
+import { useAudienceStore } from '~/src/stores/audienceStore';
+
+const audienceStore = useAudienceStore()
 interface audience {
   uuid: string
   clientUuid: string
@@ -117,8 +119,13 @@ const filteredAudiences = computed(() => {
   return Audiences.filter(audience => props.filter?.includes(audience.uuid))
 })
 
-const selectAudience = (audience: any) => {
+const selectAudience = (audience: any, event: Event) => {
+	event.stopImmediatePropagation()
+	event.preventDefault()
+	event.stopPropagation()
   selectedAudience.value = audience
+
+	audienceStore.setAudience(audience)
 }
 
 const formatDate = (timestamp: number) => {
@@ -162,6 +169,8 @@ const formatDate = (timestamp: number) => {
 
 .q-expansion-item--expanded .q-item:has(.c-audience-item) {
   //box-shadow: 0px 9px 5px -8px #8c8c8c;
+	height:100%;
+	width:100%;
   position: sticky;
   top:0;
   z-index: 12;
