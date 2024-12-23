@@ -1,5 +1,6 @@
 const company = {
   name:'Abratech',
+  folder:'abratech',
   logo:`https://abratech.ca/wp-content/uploads/2019/07/abratech-favicon.png`,
   logoType:'img',
   primaryColor: '#555555',
