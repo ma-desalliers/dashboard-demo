@@ -4,7 +4,7 @@
     <Header class="c-header-container" v-if="!showContent"  @state="(currentState : boolean  ) =>  headerState = currentState" />
     
     <!-- Main Content Section -->
-    <div class="c-main-content">
+    <div class="c-main-content" :class="{'header-openned' : headerState}">
       <div class="row no-wrap">
         <!-- Left Column -->
         <LeftColumn class="c-left-column ":class="{'isOpen': showMenu}" />
@@ -43,11 +43,20 @@ const headerState = ref(true)
 .c-main-content {
   flex: 1;
   overflow: hidden;
+
+	&.header-openned{
+		.c-left-column{
+			top:50px;
+		}
+		.c-right-column{
+			top:50px;
+		}
+	}
 }
 
 .c-left-column {
   position:fixed;
-  top:50px;
+  top:0;
   bottom:0;
   left:0;
   width: 300px;
@@ -59,12 +68,12 @@ const headerState = ref(true)
 
 .c-right-column {
   position:fixed;
-  top:50px;
+  top:0;
   bottom:0;
   left:300px;
   right:0;
   height: 100%;
-  overflow-y: auto;
+  //overflow-y: auto;
 }
 
 // Ensure clean scrolling on iOS devices
@@ -102,13 +111,17 @@ const headerState = ref(true)
 
     .c-right-column {
       position:fixed;
-      top:50px;
+      top:70px;
       bottom:0;
       left:0;
       right:0;
       height: 100%;
       overflow-y: auto;
     }
+
+		.right-column-container{
+			height:100%;
+		}
   }
 }
 </style>

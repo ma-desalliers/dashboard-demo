@@ -24,7 +24,6 @@ notification.showSuccess('WOW YOU CLICKED')
 
 <style>
 .c-right-main-column{
-  height:calc(100vh - 50px);
   width:calc(100% - 300px);
   overflow: auto;
 }
