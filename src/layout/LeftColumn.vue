@@ -157,11 +157,12 @@ interface PilotItem {
 }
 
 const departments = reactive( [
-{ name: 'Marketing',active:true, page:"demo", color:"green", new:true ,  icon: 'https://s3-alpha-sig.figma.com/img/6681/9b78/606aa85d62ea6621249bbab802a3b6c3?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NBqOUgYA7ZAkAdER6TPWwdDcPvLHjijT8wy1n0YyDARJx9TS9mE9qgb5cFGaF836JC8vZA~Wnz4PVrr-jGnH1SOIZGVkMjvtxmyawC94-5vOZZ5Cztq~kHrmQFDuAi8Q36FeHcc8Jxlk~z8IxhPAuUD-Z0USNmNmcT0UD-NTYRD2zb2WUiuiK3x9pfU2FGvG9uk5Pw5budjN37ihuTMZvHhJ~7W~lKu~HPqkuiQFr8-SGs0WNvrLyC8pPPdXEAliDUJFLoEYqxwPbkZ0tgicLDuWmRyv1SBrYcYkv-oSIM4AkID-hSNelyw5OK23EIUMeWjFpM9LkHfz6JrlPu6LaQ__'},
-{ name: 'Sales', color:"blue" ,page:"sales", icon: 'https://s3-alpha-sig.figma.com/img/ca22/0be1/0900c3512764d10cb323649cee99e036?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pUpWY0WYxPxqt1s9sRy80Ha4lCBY8erHWK26t9eQGcS~7Dhk21DpQB-~nlNniYhdzCoRSzRGZV0PkFkz8-yMZV1sP3JhzTo0wZp-ZFllJzhk4so1IGxVq1wLju3l5wZbUdw7ZA8QBvqJe0sc8BG56dbmL4-k17XMQTp6lbU6wwwGQ~dVypQb6NcFtEz0N4lFoR1dWFquJ90iSHssiiDJ3OVtvWTCkJrue1cdkL-upf7Jjr34tNMJsiNuWgsSCOqpSMXJIikg-ZARR1NoSoC494hSKqZijVQxORfBmdl3WbKNhhgXVbN2BE~jtEi4onuU-cQOoVhuXuHHaPq6D5uXKQ__' },
-{ name: 'Support', color:'purple',page:"SupportDisplay", icon: 'https://s3-alpha-sig.figma.com/img/cc65/eef8/a13492f5ddf5a8d78627e4b69abe8d9a?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iS~F9tOgeJX75do25JMrjg7dSs8XJR8WRWPfpxV4wFFFkqWsdr2GSDx75P1Oh0OGru~o5qq5EeSCF9r-J1uOGSh~Lxf-aEY2q~XaBkX6WfIbaTFcOGt51FTIPPrij78zflDaytPEI4S3aXWFuMKW8vXalPVevhHVFxfWIG9J99gmtrPPuHMVnMDi7k2bJm-qpNm7LVzDnqk88R7Ae9cVHFiXxe5jV9FAFeU5leF4LZ54OiWg~xZR4wQGeP-Y17jSKwLqE6akGFIcSAt6BChGEoE-n8Oua6FOxOZMQ0PzfjH-I6OdGMTGPyVRTZjYrqHHOv~vwSvMbXbms-gkqrx00w__' },
-{ name: 'HR', color:'yellow',page:"HrDisplay", icon: 'https://s3-alpha-sig.figma.com/img/f531/4bcb/20508d8057ddd872ef028224431117df?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTR0onY04aw1tVH-17Rh7LDB9ncPeUWpjcMaLWQoq6yDM2a42t6QYvoGCJmATu1cci-v-07yMJn9b82krhnYgr72MQ0ls3neF2DxvXgDygEITK6M95ryPlKoBbw4A3-cvdfm4b7MjyiSAjs3SIykkyP-GlOyQ7PvBuoc-cCj7w-ik4gzuYzqUcDGwQgr8Mit1srA415xDw4JHW-UUy8IL-XctXhGybivtrPNwd5HqB0kMKBSXxQgnosebbCOWmiM5LlJ09bKVBE2710cjgOfBEYx2hjftSiC9MVH1Ky0lgu7vzd5CQTrLU~vZ1QyTc80qu3F-bGRoKuUzlzE1Rf1Nw__' }
+{ name: 'Marketing',active:true, page:"demo", color:"green", new:true ,  icon: `/${company.folder}/user/marketing.png`},
+{ name: 'Sales', color:"blue" ,page:"sales", icon: `/${company.folder}/user/sale.png` },
+{ name: 'Support', color:'purple',page:"SupportDisplay", icon: `/${company.folder}/user/support.png` },
+{ name: 'HR', color:'yellow',page:"HrDisplay", icon: `/${company.folder}/user/hr.png` }
 ]);
+
 
 const knowledgeItems: KnowledgeItem[] = [
 { name: 'Company', icon: 'business', progress: 0.8 },
