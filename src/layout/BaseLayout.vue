@@ -95,6 +95,9 @@ const headerState = ref(true)
   flex-direction: column;
   height: 100vh;
   width: 100%;
+	.right-column-container{
+			height:100%;
+		}
 
   &.isMobile{
 
@@ -119,9 +122,7 @@ const headerState = ref(true)
       overflow-y: auto;
     }
 
-		.right-column-container{
-			height:100%;
-		}
+		
   }
 }
 </style>

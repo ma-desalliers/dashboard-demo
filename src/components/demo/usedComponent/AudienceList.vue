@@ -5,6 +5,7 @@
     v-for="audience in filteredAudiences" 
     :key="audience.uuid"
     class="content-item"
+		:class="{'c-bg-primary-lighten':audience.uuid == theAudience?.uuid}"
     expand-separator
     >
     <template #header>
@@ -26,7 +27,7 @@
       <SelectedElementIndicator 
         :rounded="false" 
         color="bg-primary" 
-        :show="selectedAudience?.uuid === audience.uuid"
+        :show="theAudience?.uuid === audience.uuid"
       />
     </template>
     
@@ -83,6 +84,8 @@ import Audiences from '@/src/repository/audience'
 import { useAudienceStore } from '~/src/stores/audienceStore';
 
 const audienceStore = useAudienceStore()
+
+const theAudience = computed(()=> audienceStore.currentAudience) 
 interface audience {
   uuid: string
   clientUuid: string
@@ -176,5 +179,7 @@ const formatDate = (timestamp: number) => {
   z-index: 12;
   background-color: white;
 }
+
+
 
 </style>

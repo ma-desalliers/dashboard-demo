@@ -164,6 +164,10 @@ html {
 .c-selected-client .q-item:has(.c-expansion-header-hover) {
   background-color: color-mix(in srgb, var(--q-primary) 16%, #ffffff);
 }
+.c-font-sise-1 {
+  font-size: 1rem;
+}
+
 .c-bg-primary-lighten {
   background-color: color-mix(in srgb, var(--q-primary) 16%, #ffffff);
 }
@@ -239,6 +243,10 @@ html {
   top: 0px;
   opacity: 1;
   z-index: 10;
+}
+
+.c-display-content {
+  display: contents;
 }
 
 .custom-expansion {

@@ -1,5 +1,5 @@
 <template>
-	<div class="content-wrapper q-pa-lg">
+	<div class="content-wrapper q-pa-lg page-detail">
 
 
 		<div class="business-details">
@@ -103,4 +103,15 @@ const handleSubmit = () => {
 		width:100%
 	}
 }
+
+.page-detail{
+    position:sticky;
+    top:20px;
+    z-index:12;
+    max-height:calc(100vh - 70px);
+    overflow-y: auto;
+    &.isMobile{
+      position:unset
+    }
+  }
 </style>

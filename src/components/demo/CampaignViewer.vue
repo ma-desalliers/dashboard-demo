@@ -71,8 +71,6 @@
 								/>
 							</div>-->
 						</div>
-
-
 					</div>
 				</div>
 				<div v-if="!isMobile" class="c-page-detail-container c-border-right" :class="{'c-col-30': showDetail}" style="flex:1">
@@ -81,21 +79,18 @@
 				</div>
 				<div class="c-col-45" style="flex:1">
 					<PageViewer v-if="listView != 'audiences'" :page="selectedPage"></PageViewer>
-
 					<PageCards v-if="listView == 'audiences'"></PageCards>
-
 				</div>
 			</div>
-
 		</div>
 	</div>
 </template>
 <script lang="ts" setup>
 import { storeToRefs } from 'pinia';
-import {  ref, type Reactive  } from 'vue';
+import {  ref } from 'vue';
 import { useMainDisplayStore } from '@/src/stores/mainDisplayStore'
 import { useAudienceStore } from '~/src/stores/audienceStore';
-import { date, event } from 'quasar';
+import { date } from 'quasar';
 
 import products from '~/src/repository/product';
 import audience from '~/src/repository/audience';
@@ -194,6 +189,7 @@ watch(selectedPage, (newValue)=>{
 <style lang="scss" scoped>
 .c-content-marketing {
 	min-height:calc(100% - 50px);
+	height:calc(100% - 50px);
 	
 	&.isMobile{
 		height:calc(100% - 50px);
