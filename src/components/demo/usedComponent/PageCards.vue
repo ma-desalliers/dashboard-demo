@@ -2,6 +2,7 @@
 	<div class="full-height q-pa-md page-cards">
 		<div class="row justify-between q-mb-md">
 			<div class="col-4">
+				<div></div>
 				<q-input v-model="search" outlined dense placeholder="Search pages">
 					<template v-slot:append>
 						<q-icon name="search" />
