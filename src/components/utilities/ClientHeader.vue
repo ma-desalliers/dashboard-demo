@@ -1,5 +1,5 @@
 <template>
-<div class="row justify-between q-px-md full-width client-header" :class="{'isMobile': isMobile}">
+<div class="row justify-between q-px-md full-width">
   <div>
 
     <div name="expand_more" class="row items-center cursor-pointer">
