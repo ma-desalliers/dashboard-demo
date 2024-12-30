@@ -1,5 +1,5 @@
 <template>
-<div class="row justify-between q-px-md full-width">
+<div class="row justify-between q-px-md full-width client-header" :class="{'isMobile': isMobile}">
   <div>
 
     <div name="expand_more" class="row items-center cursor-pointer">
@@ -7,7 +7,7 @@
       <div v-if="company.logoType == 'svg'" style="height:25px; width:25px" class="q-mr-sm">
         <div v-html="company.logo"></div>
       </div>
-      <q-avatar rounded v-if="company.logoType == 'img'" size="60px" class="q-mr-sm">
+      <q-avatar rounded v-if="company.logoType == 'img'" :size="isMobile? '24px' : '60px'" class="q-mr-sm">
         <img :src="company.logo" alt="Company logo" class="c-img-contain">
 
       </q-avatar>
