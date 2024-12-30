@@ -163,6 +163,7 @@ const departments = reactive( [
 { name: 'HR', color:'yellow',page:"HrDisplay", icon: `/${company.folder}/user/hr.png` }
 ]);
 
+
 const knowledgeItems: KnowledgeItem[] = [
 { name: 'Company', icon: 'business', progress: 0.8 },
 { name: 'Audience', icon: 'groups', progress: 0.3},
