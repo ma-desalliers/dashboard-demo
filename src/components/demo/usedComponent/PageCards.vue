@@ -1,7 +1,10 @@
 <template>
-	<div class="full-height q-pa-md page-cards">
+	<div class="full-height q-pa-md page-cards" :class="{'is-mobile': isMobile, 'is-open':theAudience?.uuid}">
+		<div v-if="isMobile" class="c-border-bottom q-mb-md">
+			<AudienceDetail></AudienceDetail>
+		</div>
 		<div class="row justify-between q-mb-md">
-			<div class="col-4">
+			<div class="col-10 col-sm-4" >
 				<div></div>
 				<q-input v-model="search" outlined dense placeholder="Search pages">
 					<template v-slot:append>
@@ -9,18 +12,18 @@
 					</template>
 				</q-input>
 			</div>
-			<div class="row q-col-gutter-md col-8 justify-end">
+			<Filters class="col-2 col-sm-8 justify-end" :classList="`row q-col-gutter-md ${isMobile || 'col-8'}`">
 				<div class="col-12 col-sm-5">
 					<MultiSelect v-model="selectedJob" :options="uniqueJobs" :hover-buttons="[]" label-name="optionTitle"
 						:multiple="false" numberSelectedLabel="Motivation: Job" :display-selected="'string'" @update:model-value="selectedJobUpdated()" />
 				</div>
-				<div class="col-12 col-sm-5">
+				<div class="col-12 col-sm-6">
 					<MultiSelect v-model="selectedSubJob" :options="uniqueSubjobs" :hover-buttons="[]" label-name="optionTitle"
 						:multiple="true" numberSelectedLabel="Groups: Sub job" />
 				</div>
-			</div>
+			</Filters>
 		</div>
-		<div class="column q-pt-sm q-pb-xl">
+		<div class="column q-pt-sm q-pb-xl" v-if="selectedJobTitle">
 			<span class="c-box-title">Motivation</span>
 			<span class="text-h6">{{ selectedJobTitle }}</span>
 		</div>
@@ -29,9 +32,9 @@
 			<div v-for="(group, groupIndex) in filteredGroups" :key="group.jobId" class="q-pb-xl">
 				<div class="row justify-between">
 					<div class="c-section-title q-mb-md">{{ group.jobTitle }}</div>
-					<div class="text-primary c-font-sise-1">
+					<!--<div class="text-primary c-font-sise-1">
 						Selected ({{ group.pages.filter((page :any)=> isPageSelected(page)).length }})
-					</div>
+					</div>-->
 				</div>
 				<div class="relative-position">
 					<div :ref="el => { if (el) scrollContainers[groupIndex] = el }" class="row no-wrap q-gutter-md scroll-x">
@@ -68,10 +71,16 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { useAudienceStore } from '~/src/stores/audienceStore'
+import { useMainDisplayStore } from '~/src/stores/mainDisplayStore';
 import pages from '~/src/repository/pages';
-import { mdiConsoleNetworkOutline } from '@quasar/extras/mdi-v6';
+import AudienceDetail from './AudienceDetail.vue';
+
+const emit = defineEmits(['select-page'])
 
 const audienceStore = useAudienceStore()
+const mainDisplayStore = useMainDisplayStore()
+
+const isMobile = computed(()=> mainDisplayStore.isMobile)
 const theAudience = computed(() => audienceStore.currentAudience)
 
 const search = ref('')
@@ -136,7 +145,7 @@ const filteredGroups = computed(() => {
 
 const uniqueJobs = computed(() => {
   // First, get all pages with jobs
-  const pagesWithJobs = pages.filter(page => page.personaUuid == theAudience.value.uuid && page.job !== null && page.job !== undefined);
+  const pagesWithJobs = pages.filter(page => page.personaUuid == theAudience.value?.uuid && page.job !== null && page.job !== undefined);
   
   // Create a Map to store jobs and their page counts
   const jobMap = new Map();
@@ -166,7 +175,7 @@ const uniqueJobs = computed(() => {
 
 const uniqueSubjobs = computed(() => {
   // First, get all pages with subjobs
-  const pagesWithsubJobs = pages.filter(page => page.personaUuid == theAudience.value.uuid && selectedJob.value == page.job.uuid  && page.subjob !== null && page.subjob !== undefined);
+  const pagesWithsubJobs = pages.filter(page => page.personaUuid == theAudience.value?.uuid && selectedJob.value == page.job.uuid  && page.subjob !== null && page.subjob !== undefined);
   
   // Create a Map to store subjobs and their page counts
   const subjobMap = new Map();
@@ -222,11 +231,14 @@ const selectedJobUpdated = () => {
 
 const selectedPages = ref<string[]>([])
 const isPageSelected = (page:any) =>{
- return selectedPages.value.some(selectedPage => selectedPage == page.uuid)
+  return selectedPages.value.some(selectedPage => selectedPage == page.uuid)
 }
 
 const selectPage = (page:any): void => {
-  const index = selectedPages.value.findIndex(uuid => uuid === page.uuid)
+	mainDisplayStore.setShowContent(true)
+	emit('select-page', page)
+
+  /*const index = selectedPages.value.findIndex(uuid => uuid === page.uuid)
   
   if (index === -1) {
     // Page not selected, add it
@@ -234,10 +246,10 @@ const selectPage = (page:any): void => {
   } else {
     // Page already selected, remove it
     selectedPages.value.splice(index, 1)
-  }
+  }*/
 }
 
-watch(() => theAudience.value.uuid, () => {
+watch(() => theAudience.value?.uuid, () => {
   selectedJob.value = null;
   selectedSubJob.value = []
 })
@@ -332,12 +344,24 @@ watch(() => theAudience.value.uuid, () => {
 
 	position: sticky;
 	top: 20px;
-	z-index: 12;
+	z-index:0;
 	max-height: calc(100vh - 70px);
 	overflow-y: auto;
+	background: white;
+	&.is-mobile {
+		position: fixed;
+		top:120px;
+		bottom:0;
+		right:-100%;
+		.groups-container{
+			overflow-x: unset;
+			flex:unset;
+			overflow-y: unset;
+		}
+	}
 
-	&.isMobile {
-		position: unset
+	&.is-open{
+		right:0;
 	}
 }
 

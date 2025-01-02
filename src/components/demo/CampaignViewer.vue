@@ -77,9 +77,9 @@
 					<PageDetail v-if="listView != 'audiences'" :page="selectedPage"></PageDetail>
 					<AudienceDetail v-if="listView == 'audiences'"></AudienceDetail>
 				</div>
-				<div class="c-col-45" style="flex:1">
-					<PageViewer v-if="listView != 'audiences'" :page="selectedPage"></PageViewer>
-					<PageCards v-if="listView == 'audiences'"></PageCards>
+				<div :class="{'c-flex-1 c-col-45': !isMobile}">
+					<PageViewer  :page="selectedPage"  :list-view="listView"></PageViewer>
+					<PageCards v-if="listView == 'audiences'" @select-page="(page:any)=> selectPage(page)"></PageCards>
 				</div>
 			</div>
 		</div>
@@ -162,7 +162,7 @@ const selectPage = (page:any)=>{
 const setListView = (listViewName:string) =>{
 	listView.value = listViewName
 
-	if(listView.value == 'audiences'){
+	if(listView.value == 'audiences' && !isMobile){
 		if(!theAudience.value && !theAudience.value?.uuid){
 			console.log('sup', audience[0])
 			audienceStore.setAudience(audience[0])

@@ -2,11 +2,12 @@
   <q-list separator class="content-list">
     <!-- audience Items with Expansion -->
     <q-expansion-item
-    v-for="audience in filteredAudiences" 
-    :key="audience.uuid"
-    class="content-item"
-		:class="{'c-bg-primary-lighten':audience.uuid == theAudience?.uuid}"
-    expand-separator
+			v-for="audience in filteredAudiences" 
+			:key="audience.uuid"
+			class="content-item"
+			:class="{'c-bg-primary-lighten':audience.uuid == theAudience?.uuid}"
+			expand-separator
+			expand-icon-class="c-display-none"
     >
     <template #header>
     
@@ -32,7 +33,7 @@
     </template>
     
     <!-- Expansion Content - PageList -->
-    <div class="q-pb-md">
+    <div class="q-pb-md" v-if="false">
       <PageList
         :product-filter="productFilter"
         :audience-filter="[audience.uuid]"

@@ -249,7 +249,7 @@ html {
   padding: 8px 8px !important;
 }
 .c-pa-none{
-  padding: none !important;
+  padding: 0px !important;
 }
 .c-py-none{
   padding-top: none !important;
@@ -259,6 +259,11 @@ html {
   padding-left: 24px !important;
   padding-right: 24px !important;
 }
+.c-pa-md{
+  padding:8px !important;
+}
+
+
 
 
 .c-col-30{
@@ -271,6 +276,10 @@ html {
 
 .c-row{
   flex-direction:row !important ;
+}
+
+.c-flex-1{
+ flex:1;
 }
 
 
@@ -295,6 +304,10 @@ html {
 
 .c-display-content{
   display:contents;
+}
+
+.c-display-none{
+  display: none;
 }
 
 
@@ -382,6 +395,12 @@ html {
   .q-focus-helper{
     display: none;
   }
+}
+
+
+.rorate-180{
+  transition: 0.25s;
+transform:rotate(180deg) ;
 }
 
 

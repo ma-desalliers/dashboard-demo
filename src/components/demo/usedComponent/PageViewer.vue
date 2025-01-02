@@ -1,10 +1,11 @@
-<template>
-  <div class="tabbed-viewer" :class="{'isMobile': isMobile, 'isOpen': showContent}">
-    <div class="row q-pa-sm" style="background-color: white;" @click="closeContent" v-if="isMobile">
+<template> 
+<teleport to="body" :disabled="!isMobile" >
+  <div class="tabbed-viewer" :class="{'isFixed': isMobile, 'isOpen': showContent}">
+    <div class="row q-pa-sm clickable" style="background-color: white;" @click="closeContent" v-if="isMobile">
       <q-icon size="20px" class="q-pt-xs q-pr-sm">
-        <i class="fa fa-arrow-left"></i>
+        <i class="fa fa-times"></i>
       </q-icon>
-      <span  style="font-size:16px;padding-top:2px">Back to content</span>
+      <span  style="font-size:16px;padding-top:2px">Close</span>
   </div>
     <q-tabs
       align="left"
@@ -17,13 +18,12 @@
       <q-tab name="preview" label="Content" class="c-tab-padding" style="flex:unset;margin-right:16px" />
       <q-tab v-if="isMobile" name="detail" label="Campaign" class="c-tab-padding" style="flex:unset;margin-right:16px" />
       <q-tab name="keywords" label="Seo" class="c-tab-padding" style="flex:unset;"/>
-     
     </q-tabs>
 
     <q-tab-panels v-model="activeTab" :class="{'c-scroll': activeTab == 'keywords'}"  >
       <!-- Preview Panel -->
       <q-tab-panel name="preview">
-        <div class="iframe-container">
+        <div class="iframe-container q-pl-md">
           <iframe
       :src="iframeLink"
       title="content"
@@ -262,6 +262,10 @@
 
     </q-tab-panels>
   </div>
+	<div class="overlay" :class="{'isFixed': isMobile, 'isOpen': showContent}" @click="closeContent">
+
+	</div>
+	</teleport>
 </template>
 
 <script setup lang="ts">
@@ -272,7 +276,8 @@ import PageDetail from './PageDetail.vue';
 
 const mainDisplayStore = useMainDisplayStore()
 
-const isMobile = computed(()=>mainDisplayStore.isMobile)
+const isMobile = computed(()=>mainDisplayStore.isMobile || props.listView == 'audiences')
+
 const showContent = computed(()=> mainDisplayStore.showContent)
 const emit = defineEmits<{
   (e: 'update:channels', selectedChannels: string[]): void
@@ -291,7 +296,8 @@ interface TargetAudience {
 }
 
 const props = defineProps<{
-  page?: any
+  page?: any,
+	listView:string
 }>()
 
 const activeTab = ref('preview')
@@ -497,7 +503,8 @@ watch(activeTab, (newValue) => {
   height:100%;
   position: sticky;
   background-color: white;
-  &.isMobile{
+	box-shadow: none;
+  &.isFixed{
     position:fixed;
     top:0;
     bottom:0;
@@ -506,22 +513,28 @@ watch(activeTab, (newValue) => {
     max-height: 100vh;
     right:-100%;
     z-index:100;
-
+		transition: all 0.25s, box-shadow 0s;
     .c-scroll{
       height:100
     }
-
     .keywords-analysis{
       height:100vh
     }
     &.isOpen{
       right: 0;
-
+			//box-shadow: -1000px 0 0px 1000px rgba(0,0,0,0.3)
     }
 
     .custom-iframe{
       height:100vh
     }
+
+		@media screen and (min-width: 1200px){
+			max-width:650px;
+			padding:16px;
+			z-index:60;
+
+		}
   }
 }
 
@@ -600,7 +613,14 @@ watch(activeTab, (newValue) => {
   overflow:auto;
 }
 
-
+.overlay{
+	&.isOpen{
+		background: rgba(0,0,0,0.3);
+		position:fixed;
+		inset:0;
+		z-index: 50;
+	}
+}
 
 .country-name{
   min-width:100px;
