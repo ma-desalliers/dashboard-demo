@@ -2,14 +2,14 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  ssr: false,
+  ssr: true,
   modules: [
     'nuxt-quasar-ui',
     '@pinia/nuxt'
   ],
   app: {
     head: {
-      title: 'Protech', // Set the global title here
+      title: 'Protechs', // Set the global title here
       link: [
         { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' }
       ]

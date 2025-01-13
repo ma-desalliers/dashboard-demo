@@ -1,6 +1,7 @@
 const company = {
   name:'Protech Peinture',
-  logo:`https://protechpeinture.ca/wp-content/uploads/2023/06/Design-sans-titre-8.png`,
+  folder: 'protech',
+  logo:`https://www.google.com/s2/favicons?domain=protechpeinture.ca&sz=256`,
   logoType:'img',
   primaryColor:'#111111',
   subCompany:[] 
