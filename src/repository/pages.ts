@@ -126,6 +126,56 @@ const pages = [
     "createdAt": 1736786725758
   },
   {
+    "uuid": "64c9c78d-87fe-4039-baec-9bdc9fe37e56",
+    "language": "en",
+    "category": {
+      "uuid": "baf09ee0-fa45-4e42-b7c0-55df5cb797e4",
+      "name": "Chain Hoists",
+      "description": "",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "parentUuid": null,
+      "createdAt": 1736781925697
+    },
+    "subcategory": {
+      "uuid": "5bd96762-241c-4014-a5ea-ef1ceef23a5c",
+      "name": "R&M LR Chain Hoists",
+      "description": "",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "parentUuid": "baf09ee0-fa45-4e42-b7c0-55df5cb797e4",
+      "createdAt": 1736781941116
+    },
+    "job": {
+      "uuid": "25adca3b-2c55-4cf4-857d-b23a66c2f01c",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "marketUuid": "12266983-74fb-4aea-9b5e-a6fff8989402",
+      "title": "Ensure safe operation of chain hoist",
+      "relevancyScore": 1,
+      "type": "functional-job",
+      "createdAt": 1736785643189
+    },
+    "subjob": {
+      "uuid": "a6040670-5093-47f3-b663-7c4a2f389622",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "marketUuid": "12266983-74fb-4aea-9b5e-a6fff8989402",
+      "parentUuid": "25adca3b-2c55-4cf4-857d-b23a66c2f01c",
+      "title": "Inspect hoist for safety compliance",
+      "relevancyScore": 1,
+      "type": "functional-subjob",
+      "createdAt": 1736785795564
+    },
+    "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+    "marketUuid": "12266983-74fb-4aea-9b5e-a6fff8989402",
+    "personaUuid": "46ce2837-e775-46b0-aae1-a224dad1d533",
+    "productUuid": "fec704e2-ba1a-456c-a5ea-fdb430fd43e8",
+    "subjobUuid": "a6040670-5093-47f3-b663-7c4a2f389622",
+    "title": "11 Frequently Overlooked Safety Measures for Hoists",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1736791035491,
+    "createdAt": 1736786725758
+  },
+  {
     "uuid": "bec38779-861a-4b15-a5e3-3766d4bb3476",
     "language": "en",
     "category": {
@@ -173,6 +223,56 @@ const pages = [
     "isPublished": false,
     "hasContent": true,
     "updatedAt": 1736787106061,
+    "createdAt": 1736786785627
+  },
+  {
+    "uuid": "1f72e46d-cb1b-4249-887c-7e1fdade3360",
+    "language": "en",
+    "category": {
+      "uuid": "baf09ee0-fa45-4e42-b7c0-55df5cb797e4",
+      "name": "Chain Hoists",
+      "description": "",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "parentUuid": null,
+      "createdAt": 1736781925697
+    },
+    "subcategory": {
+      "uuid": "5bd96762-241c-4014-a5ea-ef1ceef23a5c",
+      "name": "R&M LR Chain Hoists",
+      "description": "",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "parentUuid": "baf09ee0-fa45-4e42-b7c0-55df5cb797e4",
+      "createdAt": 1736781941116
+    },
+    "job": {
+      "uuid": "8d1e65a4-83bf-44eb-8812-b4b5e52390cd",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "marketUuid": "5f228c0f-f6cb-4790-b99f-c3006e664186",
+      "title": "Implement user training for safety",
+      "relevancyScore": 1,
+      "type": "functional-job",
+      "createdAt": 1736785754133
+    },
+    "subjob": {
+      "uuid": "2f857f63-940e-4bc0-aff7-f3b8c689260d",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "marketUuid": "5f228c0f-f6cb-4790-b99f-c3006e664186",
+      "parentUuid": "8d1e65a4-83bf-44eb-8812-b4b5e52390cd",
+      "title": "conduct troubleshooting for common issues",
+      "relevancyScore": 1,
+      "type": "functional-subjob",
+      "createdAt": 1736785917778
+    },
+    "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+    "marketUuid": "5f228c0f-f6cb-4790-b99f-c3006e664186",
+    "personaUuid": "46ce2837-e775-46b0-aae1-a224dad1d533",
+    "productUuid": "009c5a5a-1ba1-42cb-a6b7-ef206ed597ac",
+    "subjobUuid": "2f857f63-940e-4bc0-aff7-f3b8c689260d",
+    "title": "3 common misconceptions about chain hoists and how to address them",
+    "score": 3,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1736791014638,
     "createdAt": 1736786785627
   },
   {
@@ -226,6 +326,56 @@ const pages = [
     "createdAt": 1736786785714
   },
   {
+    "uuid": "d9471554-321f-4327-9614-41b1c12db245",
+    "language": "en",
+    "category": {
+      "uuid": "baf09ee0-fa45-4e42-b7c0-55df5cb797e4",
+      "name": "Chain Hoists",
+      "description": "",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "parentUuid": null,
+      "createdAt": 1736781925697
+    },
+    "subcategory": {
+      "uuid": "5bd96762-241c-4014-a5ea-ef1ceef23a5c",
+      "name": "R&M LR Chain Hoists",
+      "description": "",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "parentUuid": "baf09ee0-fa45-4e42-b7c0-55df5cb797e4",
+      "createdAt": 1736781941116
+    },
+    "job": {
+      "uuid": "75e1329e-8a84-4660-999e-b1ccda31d05d",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "marketUuid": "a32ce370-5893-43c2-8394-0f7a74e042af",
+      "title": "Streamline installation process for equipment",
+      "relevancyScore": 2,
+      "type": "functional-job",
+      "createdAt": 1736785747437
+    },
+    "subjob": {
+      "uuid": "e2f4c5a8-9eaf-4690-a025-d00d97648162",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "marketUuid": "a32ce370-5893-43c2-8394-0f7a74e042af",
+      "parentUuid": "75e1329e-8a84-4660-999e-b1ccda31d05d",
+      "title": "Monitor the hoist performance regularly",
+      "relevancyScore": 1,
+      "type": "functional-subjob",
+      "createdAt": 1736785968250
+    },
+    "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+    "marketUuid": "a32ce370-5893-43c2-8394-0f7a74e042af",
+    "personaUuid": "46ce2837-e775-46b0-aae1-a224dad1d533",
+    "productUuid": "1959d5a4-c8cd-4a81-bf2f-4eee31501ffe",
+    "subjobUuid": "e2f4c5a8-9eaf-4690-a025-d00d97648162",
+    "title": "11 FAQs About Monitoring Hoist Performance and Maintenance",
+    "score": 3,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1736791048831,
+    "createdAt": 1736786785714
+  },
+  {
     "uuid": "69439646-8c91-4497-be9a-f3fea020b7ce",
     "language": "en",
     "category": {
@@ -273,6 +423,56 @@ const pages = [
     "isPublished": false,
     "hasContent": true,
     "updatedAt": 1736787176985,
+    "createdAt": 1736786790793
+  },
+  {
+    "uuid": "a5ec72d2-3a5a-4ad5-93b4-f198ca9ae579",
+    "language": "en",
+    "category": {
+      "uuid": "baf09ee0-fa45-4e42-b7c0-55df5cb797e4",
+      "name": "Chain Hoists",
+      "description": "",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "parentUuid": null,
+      "createdAt": 1736781925697
+    },
+    "subcategory": {
+      "uuid": "5bd96762-241c-4014-a5ea-ef1ceef23a5c",
+      "name": "R&M LR Chain Hoists",
+      "description": "",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "parentUuid": "baf09ee0-fa45-4e42-b7c0-55df5cb797e4",
+      "createdAt": 1736781941116
+    },
+    "job": {
+      "uuid": "9d96fd03-2a01-4bc5-985b-b3723a66fd8c",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "marketUuid": "e8b63ce5-deca-46a2-962b-135a9ffb80a7",
+      "title": "Enhance hoist functionality for operations",
+      "relevancyScore": 2,
+      "type": "functional-job",
+      "createdAt": 1736785623464
+    },
+    "subjob": {
+      "uuid": "2e8c783b-d66a-4d89-ae08-4ccd075cfc05",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "marketUuid": "e8b63ce5-deca-46a2-962b-135a9ffb80a7",
+      "parentUuid": "9d96fd03-2a01-4bc5-985b-b3723a66fd8c",
+      "title": "install and secure the hoist",
+      "relevancyScore": 1,
+      "type": "functional-subjob",
+      "createdAt": 1736785721905
+    },
+    "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+    "marketUuid": "e8b63ce5-deca-46a2-962b-135a9ffb80a7",
+    "personaUuid": "46ce2837-e775-46b0-aae1-a224dad1d533",
+    "productUuid": "afe2e7d6-7cba-4ae8-a1ec-d31d7c47ee4e",
+    "subjobUuid": "2e8c783b-d66a-4d89-ae08-4ccd075cfc05",
+    "title": "11 ways to optimize your workspace for hoist use",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1736791048311,
     "createdAt": 1736786790793
   },
   {
@@ -326,6 +526,56 @@ const pages = [
     "createdAt": 1736786793026
   },
   {
+    "uuid": "5be22c09-acae-4c3d-8d1d-4f93fb175641",
+    "language": "en",
+    "category": {
+      "uuid": "baf09ee0-fa45-4e42-b7c0-55df5cb797e4",
+      "name": "Chain Hoists",
+      "description": "",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "parentUuid": null,
+      "createdAt": 1736781925697
+    },
+    "subcategory": {
+      "uuid": "5bd96762-241c-4014-a5ea-ef1ceef23a5c",
+      "name": "R&M LR Chain Hoists",
+      "description": "",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "parentUuid": "baf09ee0-fa45-4e42-b7c0-55df5cb797e4",
+      "createdAt": 1736781941116
+    },
+    "job": {
+      "uuid": "9fced3ad-797a-481b-8782-2b88a76438ef",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "marketUuid": "5e220222-f29f-4e82-b565-a588a72b01a3",
+      "title": "Facilitate efficient load handling processes",
+      "relevancyScore": 1,
+      "type": "functional-job",
+      "createdAt": 1736785723358
+    },
+    "subjob": {
+      "uuid": "b9a16670-d238-4e08-8bc2-a10bf9972415",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "marketUuid": "5e220222-f29f-4e82-b565-a588a72b01a3",
+      "parentUuid": "9fced3ad-797a-481b-8782-2b88a76438ef",
+      "title": "Calibrate hoist for optimal performance",
+      "relevancyScore": 1,
+      "type": "functional-subjob",
+      "createdAt": 1736785906689
+    },
+    "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+    "marketUuid": "5e220222-f29f-4e82-b565-a588a72b01a3",
+    "personaUuid": "46ce2837-e775-46b0-aae1-a224dad1d533",
+    "productUuid": "531af9b9-d59d-4079-9573-3e6a254bae7a",
+    "subjobUuid": "b9a16670-d238-4e08-8bc2-a10bf9972415",
+    "title": "10 Common Calibration Mistakes When Using Chain Hoists and How to Avoid Them",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1736791056784,
+    "createdAt": 1736786793026
+  },
+  {
     "uuid": "fde89f38-5ab8-4383-9555-adcfda529877",
     "language": "en",
     "category": {
@@ -373,6 +623,56 @@ const pages = [
     "isPublished": false,
     "hasContent": true,
     "updatedAt": 1736787125234,
+    "createdAt": 1736786843742
+  },
+  {
+    "uuid": "fa0d3a29-441f-4ca2-8d20-3c56b342bc91",
+    "language": "en",
+    "category": {
+      "uuid": "baf09ee0-fa45-4e42-b7c0-55df5cb797e4",
+      "name": "Chain Hoists",
+      "description": "",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "parentUuid": null,
+      "createdAt": 1736781925697
+    },
+    "subcategory": {
+      "uuid": "5bd96762-241c-4014-a5ea-ef1ceef23a5c",
+      "name": "R&M LR Chain Hoists",
+      "description": "",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "parentUuid": "baf09ee0-fa45-4e42-b7c0-55df5cb797e4",
+      "createdAt": 1736781941116
+    },
+    "job": {
+      "uuid": "911fd9da-9765-45d0-b07e-cc3101fb4b3a",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "marketUuid": "dd99419b-2d50-43c5-b67f-73b9fe33d0ef",
+      "title": "Minimize risks while operating hoists",
+      "relevancyScore": 1,
+      "type": "functional-job",
+      "createdAt": 1736785821037
+    },
+    "subjob": {
+      "uuid": "d29e1df9-a8c5-4f33-bbf1-10f1c87f367f",
+      "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+      "marketUuid": "dd99419b-2d50-43c5-b67f-73b9fe33d0ef",
+      "parentUuid": "911fd9da-9765-45d0-b07e-cc3101fb4b3a",
+      "title": "configure hoist for optimal performance",
+      "relevancyScore": 1,
+      "type": "functional-subjob",
+      "createdAt": 1736785984380
+    },
+    "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
+    "marketUuid": "dd99419b-2d50-43c5-b67f-73b9fe33d0ef",
+    "personaUuid": "46ce2837-e775-46b0-aae1-a224dad1d533",
+    "productUuid": "0319fce7-1262-40e8-b72c-20d11e11065d",
+    "subjobUuid": "d29e1df9-a8c5-4f33-bbf1-10f1c87f367f",
+    "title": "10 Tips for Safely Setting Up Your Hoist for Optimal Use",
+    "score": 2,
+    "isPublished": false,
+    "hasContent": true,
+    "updatedAt": 1736791034841,
     "createdAt": 1736786843742
   }
 ]

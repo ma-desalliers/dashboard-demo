@@ -927,6 +927,704 @@ const seo = [
     ],
     "pageTemplateFormat": "Product Guide",
     "pageUuid": "fde89f38-5ab8-4383-9555-adcfda529877"
+  },
+  {
+    "pageTitle": "11 Frequently Overlooked Safety Measures for Hoists",
+    "primaryKeyword": {
+      "keyword": "Safety Measures for Hoists",
+      "position": "1",
+      "intents": [
+        "Informational",
+        "Commercial",
+        "Transactional"
+      ],
+      "globalSearchVolume": 1500,
+      "keywordDifficulty": 35,
+      "countryRepartition": [
+        {
+          "country": "US",
+          "searchVolume": 1000
+        },
+        {
+          "country": "CA",
+          "searchVolume": 500
+        }
+      ]
+    },
+    "secondaryKeywords": [
+      {
+        "keyword": "Hoist Safety Procedures",
+        "position": "2",
+        "intents": [
+          "Informational",
+          "Commercial",
+          "Navigation"
+        ],
+        "globalSearchVolume": 800,
+        "keywordDifficulty": 25,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 500
+          },
+          {
+            "country": "CA",
+            "searchVolume": 300
+          }
+        ]
+      },
+      {
+        "keyword": "Electric Chain Hoists",
+        "position": "3",
+        "intents": [
+          "Informational",
+          "Commercial",
+          "Navigation"
+        ],
+        "globalSearchVolume": 600,
+        "keywordDifficulty": 30,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 400
+          },
+          {
+            "country": "CA",
+            "searchVolume": 200
+          }
+        ]
+      },
+      {
+        "keyword": "R&M Chain Hoists",
+        "position": "4",
+        "intents": [
+          "Informational",
+          "Commercial",
+          "Transaction"
+        ],
+        "globalSearchVolume": 900,
+        "keywordDifficulty": 40,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 300
+          },
+          {
+            "country": "CA",
+            "searchVolume": 200
+          }
+        ]
+      },
+      {
+        "keyword": "Safety for Heavy Lifting Equipment",
+        "position": "5",
+        "intents": [
+          "Informational",
+          "Commercial",
+          "Transactional"
+        ],
+        "globalSearchVolume": 700,
+        "keywordDifficulty": 20,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 200
+          },
+          {
+            "country": "CA",
+            "searchVolume": 200
+          }
+        ]
+      },
+      {
+        "keyword": "Types of Hoists",
+        "position": "6",
+        "intents": [
+          "Informational",
+          "Commercial",
+          "Transactional"
+        ],
+        "globalSearchVolume": 500,
+        "keywordDifficulty": 15,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 100
+          },
+          {
+            "country": "CA",
+            "searchVolume": 100
+          }
+        ]
+      }
+    ],
+    "pageTemplateFormat": "Product Details and Safety Guidelines",
+    "pageUuid": "64c9c78d-87fe-4039-baec-9bdc9fe37e56"
+  },
+  {
+    "pageTitle": "3 common misconceptions about chain hoists and how to address them",
+    "primaryKeyword": {
+      "keyword": "chain hoists misconceptions",
+      "position": "1",
+      "intents": [
+        "Informational",
+        "Navigational",
+        "Commercial"
+      ],
+      "globalSearchVolume": 1500,
+      "keywordDifficulty": 45,
+      "countryRepartition": [
+        {
+          "country": "US",
+          "searchVolume": 1000
+        },
+        {
+          "country": "CA",
+          "searchVolume": 300
+        }
+      ]
+    },
+    "secondaryKeywords": [
+      {
+        "keyword": "chain hoists FAQ",
+        "position": "2",
+        "intents": [
+          "Informational",
+          "Navigational",
+          "Commercial"
+        ],
+        "globalSearchVolume": 1500,
+        "keywordDifficulty": 45,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 1000
+          },
+          {
+            "country": "CA",
+            "searchVolume": 300
+          }
+        ]
+      },
+      {
+        "keyword": "R&M chain hoists",
+        "position": "2",
+        "intents": [
+          "Informational",
+          "Navigational",
+          "Commercial"
+        ],
+        "globalSearchVolume": 1500,
+        "keywordDifficulty": 45,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 1000
+          },
+          {
+            "country": "CA",
+            "searchVolume": 300
+          }
+        ]
+      },
+      {
+        "keyword": "common issues chain hoists",
+        "position": "2",
+        "intents": [
+          "Informational",
+          "Navigational",
+          "Commercial"
+        ],
+        "globalSearchVolume": 1500,
+        "keywordDifficulty": 45,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 1000
+          },
+          {
+            "country": "CA",
+            "searchVolume": 300
+          }
+        ]
+      },
+      {
+        "keyword": "chain hoist safety",
+        "position": "2",
+        "intents": [
+          "Informational",
+          "Navigational",
+          "Commercial"
+        ],
+        "globalSearchVolume": 1500,
+        "keywordDifficulty": 45,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 1000
+          },
+          {
+            "country": "CA",
+            "searchVolume": 300
+          }
+        ]
+      },
+      {
+        "keyword": "chain hoist specifications",
+        "position": "2",
+        "intents": [
+          "Informational",
+          "Navigational",
+          "Commercial"
+        ],
+        "globalSearchVolume": 1500,
+        "keywordDifficulty": 45,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 1000
+          },
+          {
+            "country": "CA",
+            "searchVolume": 300
+          }
+        ]
+      }
+    ],
+    "pageTemplateFormat": "Article",
+    "pageUuid": "1f72e46d-cb1b-4249-887c-7e1fdade3360"
+  },
+  {
+    "pageTitle": "11 FAQs About Monitoring Hoist Performance and Maintenance",
+    "primaryKeyword": {
+      "keyword": "Monitoring Hoist Performance",
+      "position": 1,
+      "intents": [
+        "Informational",
+        "Commercial",
+        "Transactional"
+      ],
+      "globalSearchVolume": 1500,
+      "keywordDifficulty": 40,
+      "countryRepartition": [
+        {
+          "country": "US",
+          "searchVolume": 1200
+        },
+        {
+          "country": "CA",
+          "searchVolume": 300
+        }
+      ]
+    },
+    "secondaryKeywords": [
+      {
+        "keyword": "Chain Hoist FAQs",
+        "position": 2,
+        "intents": [
+          "Informational",
+          "Navigational",
+          "Commercial"
+        ],
+        "globalSearchVolume": 800,
+        "keywordDifficulty": 35,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 650
+          },
+          {
+            "country": "CA",
+            "searchVolume": 150
+          }
+        ]
+      },
+      {
+        "keyword": "R&M LR Chain Hoists",
+        "position": 3,
+        "intents": [
+          "Commercial",
+          "Informational",
+          "Transactional"
+        ],
+        "globalSearchVolume": 500,
+        "keywordDifficulty": 45,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 400
+          },
+          {
+            "country": "CA",
+            "searchVolume": 100
+          }
+        ]
+      },
+      {
+        "keyword": "Performance Monitoring of Hoists",
+        "position": 4,
+        "intents": [
+          "Informational",
+          "Commercial",
+          "Transactional"
+        ],
+        "globalSearchVolume": 700,
+        "keywordDifficulty": 50,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 550
+          },
+          {
+            "country": "CA",
+            "searchVolume": 150
+          }
+        ]
+      },
+      {
+        "keyword": "Hoist Maintenance Tips",
+        "position": 5,
+        "intents": [
+          "Informational",
+          "Transactional"
+        ],
+        "globalSearchVolume": 600,
+        "keywordDifficulty": 30,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 480
+          },
+          {
+            "country": "CA",
+            "searchVolume": 120
+          }
+        ]
+      },
+      {
+        "keyword": "Hoist Performance Metrics",
+        "position": 6,
+        "intents": [
+          "Informational",
+          "Commercial"
+        ],
+        "globalSearchVolume": 400,
+        "keywordDifficulty": 20,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 340
+          },
+          {
+            "country": "CA",
+            "searchVolume": 60
+          }
+        ]
+      }
+    ],
+    "pageTemplateFormat": "FAQ Page",
+    "pageUuid": "d9471554-321f-4327-9614-41b1c12db245"
+  },
+  {
+    "pageTitle": "11 ways to optimize your workspace for hoist use",
+    "primaryKeyword": {
+      "keyword": "optimize workspace for hoist use",
+      "position": "1",
+      "intents": [
+        "Informational",
+        "Commercial"
+      ],
+      "globalSearchVolume": 300,
+      "keywordDifficulty": 45,
+      "countryRepartition": [
+        {
+          "country": "US",
+          "searchVolume": 200
+        },
+        {
+          "country": "CA",
+          "searchVolume": 100
+        }
+      ]
+    },
+    "secondaryKeywords": [
+      {
+        "keyword": "R&M chain hoist",
+        "position": "2",
+        "intents": [
+          "Informational",
+          "Commercial"
+        ],
+        "globalSearchVolume": 250,
+        "keywordDifficulty": 40,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 150
+          },
+          {
+            "country": "CA",
+            "searchVolume": 100
+          }
+        ]
+      },
+      {
+        "keyword": "chain hoist optimization",
+        "position": "3",
+        "intents": [
+          "Informational"
+        ],
+        "globalSearchVolume": 150,
+        "keywordDifficulty": 35,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 100
+          },
+          {
+            "country": "CA",
+            "searchVolume": 50
+          }
+        ]
+      },
+      {
+        "keyword": "hoist safety tips",
+        "position": "4",
+        "intents": [
+          "Informational",
+          "Commercial"
+        ],
+        "globalSearchVolume": 200,
+        "keywordDifficulty": 30,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 120
+          },
+          {
+            "country": "CA",
+            "searchVolume": 80
+          }
+        ]
+      }
+    ],
+    "pageTemplateFormat": "Blog post",
+    "pageUuid": "a5ec72d2-3a5a-4ad5-93b4-f198ca9ae579"
+  },
+  {
+    "pageTitle": "10 Common Calibration Mistakes When Using Chain Hoists and How to Avoid Them",
+    "primaryKeyword": {
+      "keyword": "Calibration Mistakes Chain Hoists",
+      "position": "1",
+      "intents": [
+        "Informational",
+        "Commercial"
+      ],
+      "globalSearchVolume": 500,
+      "keywordDifficulty": 45,
+      "countryRepartition": [
+        {
+          "country": "US",
+          "searchVolume": 400
+        },
+        {
+          "country": "CA",
+          "searchVolume": 100
+        }
+      ]
+    },
+    "secondaryKeywords": [
+      {
+        "keyword": "Common Calibration Mistakes",
+        "position": "2",
+        "intents": [
+          "Informational"
+        ],
+        "globalSearchVolume": 300,
+        "keywordDifficulty": 30,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 250
+          },
+          {
+            "country": "CA",
+            "searchVolume": 50
+          }
+        ]
+      },
+      {
+        "keyword": "How to Avoid Calibration Mistakes",
+        "position": "3",
+        "intents": [
+          "Informational",
+          "Navigational"
+        ],
+        "globalSearchVolume": 200,
+        "keywordDifficulty": 25,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 180
+          },
+          {
+            "country": "CA",
+            "searchVolume": 20
+          }
+        ]
+      },
+      {
+        "keyword": "Chain Hoist Calibration Techniques",
+        "position": "4",
+        "intents": [
+          "Informational"
+        ],
+        "globalSearchVolume": 150,
+        "keywordDifficulty": 35,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 120
+          },
+          {
+            "country": "CA",
+            "searchVolume": 30
+          }
+        ]
+      },
+      {
+        "keyword": "R&M Chain Hoists",
+        "position": "5",
+        "intents": [
+          "Commercial",
+          "Transactional"
+        ],
+        "globalSearchVolume": 400,
+        "keywordDifficulty": 40,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 350
+          },
+          {
+            "country": "CA",
+            "searchVolume": 50
+          }
+        ]
+      },
+      {
+        "keyword": "Calibration Best Practices for Chain Hoists",
+        "position": "6",
+        "intents": [
+          "Informational"
+        ],
+        "globalSearchVolume": 100,
+        "keywordDifficulty": 20,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 80
+          },
+          {
+            "country": "CA",
+            "searchVolume": 20
+          }
+        ]
+      }
+    ],
+    "pageTemplateFormat": "standard",
+    "pageUuid": "5be22c09-acae-4c3d-8d1d-4f93fb175641"
+  },
+  {
+    "pageTitle": "10 Tips for Safely Setting Up Your Hoist for Optimal Use",
+    "primaryKeyword": {
+      "keyword": "setting up hoist safely",
+      "position": "1",
+      "intents": [
+        "Informational",
+        "Commercial",
+        "Transactional"
+      ],
+      "globalSearchVolume": 800,
+      "keywordDifficulty": 45,
+      "countryRepartition": [
+        {
+          "country": "US",
+          "searchVolume": 600
+        },
+        {
+          "country": "CA",
+          "searchVolume": 200
+        }
+      ]
+    },
+    "secondaryKeywords": [
+      {
+        "keyword": "hoist safety tips",
+        "position": "2",
+        "intents": [
+          "Informational",
+          "Navigational",
+          "Commercial"
+        ],
+        "globalSearchVolume": 500,
+        "keywordDifficulty": 35,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 400
+          },
+          {
+            "country": "CA",
+            "searchVolume": 100
+          }
+        ]
+      },
+      {
+        "keyword": "R&M chain hoists",
+        "position": "3",
+        "intents": [
+          "Commercial",
+          "Transactional",
+          "Informational"
+        ],
+        "globalSearchVolume": 300,
+        "keywordDifficulty": 50,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 220
+          },
+          {
+            "country": "CA",
+            "searchVolume": 80
+          }
+        ]
+      },
+      {
+        "keyword": "chain hoist setup",
+        "position": "4",
+        "intents": [
+          "Informational",
+          "Transactional",
+          "Commercial"
+        ],
+        "globalSearchVolume": 400,
+        "keywordDifficulty": 40,
+        "countryRepartition": [
+          {
+            "country": "US",
+            "searchVolume": 350
+          },
+          {
+            "country": "CA",
+            "searchVolume": 50
+          }
+        ]
+      }
+    ],
+    "pageTemplateFormat": "blog",
+    "pageUuid": "fa0d3a29-441f-4ca2-8d20-3c56b342bc91"
   }
 ]
 
