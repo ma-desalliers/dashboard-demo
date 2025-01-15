@@ -10,8 +10,6 @@
 			expand-icon-class="c-display-none"
     >
     <template #header>
-    
-      
       <q-item-section class="clickable c-audience-item" @click="selectAudience(audience, $event)">
         <div class="content-info">
           <div >
@@ -80,7 +78,7 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import PageList from './PageList.vue'
+import PageList from '../PageList.vue'
 import Audiences from '@/src/repository/audience'
 import { useAudienceStore } from '~/src/stores/audienceStore';
 

@@ -19,7 +19,6 @@
             <span class="text-subtitle2"> {{ product.name }} &nbsp;</span>
           </div>
           <div class="text-caption text-grey-7 text-truncate">
-            
             <span  class="text-primary"  v-if="product.pageCount"><i class="fa-regular fa-file"></i> {{ product.pageCount }} • </span>
             {{ product.subcategory?.name }}
           </div>

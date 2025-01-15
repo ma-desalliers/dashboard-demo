@@ -269,35 +269,22 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-import seo from '~/src/repository/seo';
-import { useMainDisplayStore } from '~/src/stores/mainDisplayStore';
+import { ref, computed, inject, onMounted } from 'vue'
+import seo from '@/src/repository/seo';
+import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
 import PageDetail from './PageDetail.vue';
 
 const mainDisplayStore = useMainDisplayStore()
 
-const isMobile = computed(()=>mainDisplayStore.isMobile || props.listView == 'audiences')
+const isMobile = computed(()=>mainDisplayStore.isMobile || props.isSidePanel)
 
 const showContent = computed(()=> mainDisplayStore.showContent)
 const emit = defineEmits<{
   (e: 'update:channels', selectedChannels: string[]): void
 }>()
 
-interface Product {
-  audience: string
-  responsibility: string
-  tasks: string
-}
-
-interface TargetAudience {
-  audience: string
-  desiredOutcome: string
-  tasks: string
-}
-
 const props = defineProps<{
-  page?: any,
-	listView:string
+  isSidePanel:boolean
 }>()
 
 const activeTab = ref('preview')
@@ -309,7 +296,7 @@ const onIframeLoad = () => {
   }, 500);
 };
 
-const page = toRef(props, 'page')
+const page:any = inject('selectedPage')
 const iframeLink = ref('')
 
 // Keywords table configuration
@@ -473,12 +460,18 @@ const handleIframeLoad = () => {
   }
 }
 
-
+onMounted(()=>{
+  if(page.value){
+    showLoader(page.value)
+  }
+})
 // Clean up on component unmount
 onBeforeUnmount(() => {
   if (timeoutId.value) {
     window.clearTimeout(timeoutId.value)
   }
+
+
 })
 
 // Watch for page changes
@@ -489,7 +482,7 @@ watch(page, (newValue) => {
 }, { deep: true })
 watch(activeTab, (newValue) => {
   if (newValue == 'preview') {
-    showLoader(props.page)
+    showLoader(page.value)
   }
 })
 </script>

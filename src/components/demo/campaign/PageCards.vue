@@ -57,7 +57,6 @@
 							</q-card-section>
 						</q-card>
 					</div>
-
 					<q-btn v-if="group.pages.length > 3" round outline color="primary" icon="chevron_left"
 						class="scroll-button scroll-left" @click="scroll(groupIndex, 'left')" />
 					<q-btn v-if="group.pages.length > 3" round outline color="primary" icon="chevron_right"
@@ -67,13 +66,12 @@
 		</div>
 	</div>
 </template>
-
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { useAudienceStore } from '~/src/stores/audienceStore'
 import { useMainDisplayStore } from '~/src/stores/mainDisplayStore';
 import pages from '~/src/repository/pages';
-import AudienceDetail from './AudienceDetail.vue';
+import AudienceDetail from './audience/AudienceDetail.vue';
 
 const emit = defineEmits(['select-page'])
 

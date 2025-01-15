@@ -12,15 +12,14 @@
         <div class="q-pb-md" v-if="page.job">
           <span class="c-box-subtitle c-smaller">Type&nbsp;:&nbsp;</span><span>{{ page.job?.type }}</span>
         </div>
-       
       </div>
     </div>
     <div class="business-profile  ">
       <div class="header q-pb-md  ">
         <div class="row items-center q-gutter-x-sm">
-            <q-btn rounded dense class="bg-green-1 br-green" text-color="green" icon="edit" />
-            <q-btn rounded dense class="bg-green-1 br-green" text-color="green" icon="publish" />
-            <q-btn rounded dense class="bg-green-1 br-green" text-color="green" icon="tune"  />
+          <q-btn rounded dense class="bg-green-1 br-green" text-color="green" icon="edit" />
+          <q-btn rounded dense class="bg-green-1 br-green" text-color="green" icon="publish" />
+          <q-btn rounded dense class="bg-green-1 br-green" text-color="green" icon="tune"  />
         </div>
       </div>
   
@@ -183,33 +182,23 @@
 </div>
   </template>
   
-  <script setup lang="ts">
-  import { ref } from 'vue'
-  import products from '@/src/repository/product';
-  import audience from '@/src/repository/audience';
-  import { useMainDisplayStore } from '~/src/stores/mainDisplayStore';
-  
-  // Sample data - replace with actual data from your application
-  const businessName = ref('Heavy Equipment Resellers')
-  const sector = ref('Material')
-  const industry = ref('Material')
-  const subIndustry = ref('Industrial Machinery & Supplies & Components')
-  const location = ref('United-States • English')
-  const model = ref('B2B, B2G')
-  const revenue = ref('2M to 50M')
+<script setup lang="ts">
+import { ref } from 'vue'
+import products from '@/src/repository/product';
+import audience from '@/src/repository/audience';
+import { useMainDisplayStore } from '~/src/stores/mainDisplayStore';
+
+const model = ref('B2B, B2G')
 const mainDisplayStore = useMainDisplayStore()
 
-const props = defineProps<{
-  page?: any
-}>()
-
+const page:any = inject('selectedPage')
 
 const theAudience = computed(()=>{
-  return audience.find(a => a.uuid == props.page?.personaUuid)
+  return audience.find(a => a.uuid ==  page?.value.personaUuid)
 })
 
 const theProduct = computed(()=>{
-  return products.find(a => a.uuid == props.page?.productUuid)
+  return products.find(a => a.uuid ==  page?.value.productUuid)
 })
 
 const isMobile = computed(()=> mainDisplayStore.isMobile)

@@ -64,7 +64,7 @@
 </template>
 <script lang="ts" setup>
 import { ref, computed } from 'vue'
-import pages from '~/src/repository/pages'
+import pages from '@/src/repository/pages.ts'
 
 import { useMainDisplayStore } from '~/src/stores/mainDisplayStore';
 const props = defineProps<{
