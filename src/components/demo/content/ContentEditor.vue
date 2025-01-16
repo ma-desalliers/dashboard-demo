@@ -26,13 +26,30 @@
   </div>
   <side-panel v-model="showSidePanel" :width="550" title="Edit Content">
     <div class="q-pa-md column q-col-gutter-md">
-      <div>
+      <div class="row justify-between">
         <span class="c-box-title">
           Selected Content:  
         </span>
+        <q-btn-group>
+          <q-btn ><i class="fa fa-edit"></i></q-btn>
+          <q-btn @click="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 20 220 180" style="width:26px">
+                  <!-- Large star - left (moved up) -->
+                  <path d="M40 40 L60 100 L120 120 L60 140 L40 200 L20 140 L-40 120 L20 100 Z" 
+                        fill="#213343"/>
+                  <!-- Smaller star - top right (moved left) -->
+                  <path d="M120 20 L130 50 L160 60 L130 70 L120 100 L110 70 L80 60 L110 50 Z" 
+                        fill="#213343"/>
+                  <!-- Smaller star - bottom right -->
+                  <path d="M140 120 L150 150 L180 160 L150 170 L140 200 L130 170 L100 160 L130 150 Z" 
+                        fill="#213343"/>
+                </svg>
+             
+          </q-btn>
+        </q-btn-group>
       </div>
-      <div class="">
-        {{ currentValue }}
+      <div class="" v-html="currentValue"> 
+        
       </div>
       <div class="">
         <q-input

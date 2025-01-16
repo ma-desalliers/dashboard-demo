@@ -3,7 +3,7 @@
   </template>
   
   <script setup lang="ts">
-import SalesDisplay from '~/src/components/demo/SalesDisplay.vue';
+import SalesDisplay from '~/src/components/pricing/SalesDisplay.vue';
   
   </script>
   
