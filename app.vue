@@ -1,5 +1,5 @@
 <template>
-  <BaseLayout :style="`--q-primary:${company.primaryColor}`">
+  <BaseLayout :style="`--q-primary:${theCompany.primaryColor}`">
     <ContextMenu></ContextMenu>
     <NuxtPage />
     <GlobalPopup />
@@ -14,11 +14,12 @@ import 'perfect-scrollbar/css/perfect-scrollbar.css'
 import BaseLayout from '@/src/layout/BaseLayout.vue';
 import ContextMenu from '@/src/layout/ContextMenu.vue';
 
-import company from './src/repository/client';
-import { useMainDisplayStore } from './src/stores/mainDisplayStore';
+import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
+import { useCompanyStore } from '@/src/stores/companyStore';
 
 const $q = useQuasar();
 const mainDisplayStore = useMainDisplayStore();
+const companyStore = useCompanyStore();
 const router = useRouter();
 const route = useRoute();
 
@@ -42,6 +43,8 @@ const currentTabs = computed(() => {
   const config = tabConfigurations.find(config => config.route === baseRoute);
   return config?.tabs || [];
 });
+
+const theCompany = computed(() => companyStore.theCompany);
 
 const handleTabClick = async (tabName: string) => {
   const tab = currentTabs.value.find(t => t.name === tabName);
@@ -72,7 +75,7 @@ const handleResize = () => {
 const { $i18n } = useNuxtApp()
 $i18n.setLocale('fr')
 
-onMounted(() => {
+onMounted(async () => {
   checkMobileState();
   window.addEventListener('resize', handleResize);
   
@@ -81,6 +84,8 @@ onMounted(() => {
   if (pathParts.length >= 3) {
     currentTab.value = pathParts[2];
   }
+
+  await companyStore.init();
 });
 
 onBeforeUnmount(() => {

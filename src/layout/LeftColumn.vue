@@ -90,7 +90,6 @@
 </template>
 
 <script setup lang="ts">
-import company from "@/src/repository/client";
 import { useNotificationStore } from "../stores/notificationStore";
 import { useMainDisplayStore } from "../stores/mainDisplayStore";
 const route = useRoute();
@@ -108,7 +107,7 @@ const departments = reactive([
     page: "demo",
     color: "green",
     new: false,
-    icon: `/${company.folder}/user/marketing.png`,
+    icon: `/user/marketing.png`,
     subItems: [
       { name: "SEO", active: true, path: '/marketing/seo/keywords' },
       { name: "Email", active: false },

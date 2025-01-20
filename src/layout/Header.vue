@@ -5,14 +5,10 @@
 				<span v-if="!isMobile" class='text-white' >New Functionality Available!</span>
 				
 				<div v-if="isMobile" class=row>
-					<q-avatar v-if="company.logoType == 'url'" size="24px" class="q-mr-sm">
-						<img :src="company.logo" alt="Company logo">
+					<q-avatar v-if="theCompany.favicon != null" size="24px" class="q-mr-sm">
+						<img :src="theCompany.favicon" alt="Company logo">
 					</q-avatar>
-					<!-- Current company display -->
-					<div v-if="company.logoType == 'svg'" style="height:25px; width:25px" class="q-mr-sm">
-						<div v-html="company.logo"></div>
-					</div>
-					<div class="c-company-name">{{ company.name }}</div>
+					<div class="c-company-name">{{ theCompany.name }}</div>
 				</div>
 			</span>
 			<q-btn
@@ -36,9 +32,11 @@
 import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
+import { useCompanyStore } from '@/src/stores/companyStore';
 
-import company from '@/src/repository/client'
 const isVisible = ref(true)
+const companyStore = useCompanyStore();
+const theCompany = computed(() => companyStore.theCompany);
 
 const emit = defineEmits(['state'])
 
@@ -50,6 +48,9 @@ const mainDisplayStore = useMainDisplayStore()
 
 const isMobile = computed(()=> mainDisplayStore.isMobile)
 
+onMounted( async () => {
+  await useCompanyStore().init();
+});
 
 </script>
 

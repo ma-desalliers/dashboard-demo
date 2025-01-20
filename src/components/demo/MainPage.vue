@@ -11,6 +11,7 @@ import {useNotificationStore} from '../../stores/notificationStore';
 import CampaignViewer from './CampaignViewer.vue';
 import SalesDisplay from './SalesDisplay.vue';
 import Pricing from './Pricing.vue'
+
 const notification = useNotificationStore()
 
 

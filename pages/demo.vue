@@ -7,6 +7,10 @@
 
 <script setup lang="ts">
 import MainPage from '~/src/components/demo/MainPage.vue';
+
+definePageMeta({
+  middleware: 'auth',
+});
 </script>
 
 <style scoped>
