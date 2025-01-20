@@ -1,6 +1,6 @@
 <template>
   <q-tabs
-      v-if="currentTabs.length > 0"
+      v-if="tabConfigurations"
       v-model="currentTab"
       color="primary"
       :align="'left'"
@@ -10,7 +10,7 @@
       class="c-border-bottom"
       :class="{ 'q-pl-md': !isMobile }">
       <q-tab
-        v-for="tab in currentTabs"
+        v-for="tab in tabConfigurations"
         :key="tab.name"
         :name="tab.name"
         :label="tab.label"
@@ -22,33 +22,22 @@
   <script lang="ts" setup>    
 import { useQuasar } from 'quasar'
 import { onMounted, onBeforeUnmount, ref, computed } from 'vue';
-import 'perfect-scrollbar/css/perfect-scrollbar.css'
 
 import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
 
 const $q = useQuasar();
 const mainDisplayStore = useMainDisplayStore();
-const router = useRouter();
 const route = useRoute();
 
 const currentTab = ref('products');
 const isMobile = computed(() => mainDisplayStore.isMobile);
 
-const tabConfigurations = [
-  {
-    route: 'marketing',
-    tabs: [
-      { name: 'products', label: 'Products', path: '/marketing/products' },
-      { name: 'audiences', label: 'Audiences', path: '/marketing/audiences' },
-      { name: 'pages', label: 'Contents', path: '/marketing/pages' },
-      { name: 'landing', label: 'Landing Page', path: '/marketing/landing' }
-    ]
-  }
-];
+const tabConfigurations = computed(()=> mainDisplayStore.contextMenu)
+
 
 const currentTabs = computed(() => {
   const baseRoute = route.path.split('/')[1];
-  const config = tabConfigurations.find(config => config.route === baseRoute);
+  const config = tabConfigurations.value?.find(config => config.route === baseRoute);
   return config?.tabs || [];
 });
 

@@ -17,5 +17,7 @@
   "product": "Produit",
   "audience": "Audience",
   "branding": "Image de marque",
-  "channels": "Canaux"
+  "channels": "Canaux",
+  "dashboard": "Tableau de bord",
+  "pages": "Pages"
 }

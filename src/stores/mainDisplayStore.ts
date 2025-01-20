@@ -21,7 +21,8 @@ interface MainDisplayState {
   popupStack: PopupState[];
   isMobile:Boolean,
   showContent:Boolean,
-  showMenu:Boolean
+  showMenu:Boolean,
+  contextMenu:any[] | null
 }
 
 type DisplayUpdatePayload = Partial<DisplayState>;
@@ -38,7 +39,8 @@ export const useMainDisplayStore = defineStore('mainDisplayStore', {
     popupStack: [],
     isMobile: false,
     showContent:false,
-    showMenu:false
+    showMenu:false,
+    contextMenu: null
   }),
 
   actions: {
@@ -52,7 +54,9 @@ export const useMainDisplayStore = defineStore('mainDisplayStore', {
     setShowMenu(value:boolean){
       this.showMenu = value
     },
-    
+    setContextMenu(value : any){
+      this.contextMenu = value
+    },
     updateMainDisplay(payload: DisplayUpdatePayload) {
       this.main = { ...this.main, ...payload };
     },
