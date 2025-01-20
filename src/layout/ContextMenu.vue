@@ -1,5 +1,5 @@
 <template>
-   <q-tabs
+  <q-tabs
       v-if="currentTabs.length > 0"
       v-model="currentTab"
       color="primary"
@@ -7,8 +7,8 @@
       active-color="primary"
       active-class="c-bg-primary-lighten"
       indicator-color="primary"
-      :class="{ 'q-pl-md': !isMobile }"
-    >
+      class="c-border-bottom"
+      :class="{ 'q-pl-md': !isMobile }">
       <q-tab
         v-for="tab in currentTabs"
         :key="tab.name"

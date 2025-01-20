@@ -5,7 +5,8 @@ export default defineNuxtConfig({
   ssr: false,
   modules: [
     'nuxt-quasar-ui',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    '@nuxtjs/i18n',
   ],
   app: {
     head: {
@@ -51,5 +52,11 @@ export default defineNuxtConfig({
     rules: {
       '/': { redirect: '/default-page-path' }
     }
+  },
+  i18n: {
+    vueI18n: '@/src/translation/config.ts',
+    locales: ['en', 'fr'],
+    strategy: 'no_prefix',
+    defaultLocale: 'en',
   }
 })

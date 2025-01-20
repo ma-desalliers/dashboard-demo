@@ -2,10 +2,10 @@
   <div class="row c-full-height">
     <div v-if="!isMobile"
       class="c-page-detail-container c-border-right">
-      <PageDetail></PageDetail>
+<PageDetail :translations="$t"></PageDetail>
     </div>
     <div class="c-page-container">
-      <PageViewer :is-side-panel="isMobile"></PageViewer>
+<PageViewer :is-side-panel="isMobile" :translations="$t"></PageViewer>
     </div>
   </div>
 </template>

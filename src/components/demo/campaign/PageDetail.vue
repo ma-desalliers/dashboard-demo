@@ -4,7 +4,7 @@
       <div class="c-section-bigtitle q-pb-sm">{{ page.title }}</div>
       <div class="column">
         <div class="q-pb-md" v-if="page.subjob">
-          <span class="c-box-subtitle c-smaller">Sub-job&nbsp;:&nbsp;</span><span>{{ page.subjob?.title }}</span>
+          <span class="c-box-subtitle c-smaller">{{$t('sub-job')}}&nbsp;:&nbsp;</span><span>{{ page.subjob?.title }}</span>
         </div>
         <div class="q-pb-md" v-if="page.job">
           <span class="c-box-subtitle c-smaller">Job&nbsp;:&nbsp;</span><span>{{ page.job?.title }}</span>

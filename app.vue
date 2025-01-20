@@ -69,6 +69,9 @@ const handleResize = () => {
   checkMobileState();
 };
 
+const { $i18n } = useNuxtApp()
+$i18n.setLocale('fr')
+
 onMounted(() => {
   checkMobileState();
   window.addEventListener('resize', handleResize);
