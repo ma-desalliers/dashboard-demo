@@ -4,33 +4,24 @@
 
     <div name="expand_more" class="row items-center cursor-pointer">
       <!-- Current company display -->
-      <div v-if="company.logoType == 'svg'" style="height:25px; width:25px" class="q-mr-sm">
-        <div v-html="company.logo"></div>
-      </div>
-      <q-avatar rounded v-if="company.logoType == 'img'" size="24px" class="q-mr-sm">
-        <img :src="company.logo" alt="Company logo" class="c-img-contain">
+      <q-avatar rounded v-if="theCompany.favicon != null" size="24px" class="q-mr-sm">
+        <img :src="theCompany.favicon" alt="Company logo" class="c-img-contain">
 
       </q-avatar>
-      <div class="c-company-name">{{ company.name }}</div>
+      <div class="c-company-name">{{ theCompany.name }}</div>
 
       <!-- Menu trigger icon with menu -->
-      <q-icon v-if="company.subCompany.length" name="expand_more" size="sm" class="q-ml-xs cursor-pointer">
+      <q-icon v-if="companies.length" name="expand_more" size="sm" class="q-ml-xs cursor-pointer">
 
       </q-icon>
 
       <q-menu transition-show="jump-down" transition-hide="jump-up" class="company-menu">
         <q-list style="min-width: 200px">
-          <q-item v-for="item in company.subCompany" :key="item.name" clickable v-close-popup
+          <q-item v-for="item in companies" :key="item.name" clickable v-close-popup
             @click="openCompany(item)">
-            <q-item-section avatar v-if="item.logoType === 'svg'" style="max-width: 40px">
-              <div style="height:25px; width:25px">
-                <div v-html="item.logo"></div>
-              </div>
-            </q-item-section>
-            <q-item-section v-else style="max-width: 40px">
+            <q-item-section v-if="item.favicon != null" style="max-width: 40px">
               <q-avatar rounded size="24px" class="q-mr-sm">
-                <img :src="item.logo" alt="Company logo" class="c-img-contain">
-
+                <img :src="item.favicon" alt="Company logo" class="c-img-contain">
               </q-avatar>
             </q-item-section>
 
@@ -52,17 +43,21 @@
 </template>
 
 <script setup lang="ts">
-import company from '@/src/repository/client'
-import { useDemoCurrentPageStore } from '~/src/stores/demoCurrentPage';
+import { useDemoCurrentPageStore } from '@/src/stores/demoCurrentPage';
 import { useNotificationStore } from '@/src/stores/notificationStore';
 import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
+import { useCompanyStore } from '@/src/stores/companyStore';
 
 const route = useRoute()
-
 const mainDisplayStore = useMainDisplayStore()
 
 const isMobile = computed(() => mainDisplayStore.isMobile)
 const menuVisible = computed(() => mainDisplayStore.showMenu)
+
+const companyStore = useCompanyStore();
+
+const theCompany = computed(() => companyStore.theCompany);
+const companies = computed(() => companyStore.companies);
 
 const closeMenu = () =>{
 	mainDisplayStore.setShowMenu(false)

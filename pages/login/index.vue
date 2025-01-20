@@ -92,10 +92,19 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import { useQuasar } from 'quasar'
+import { ref } from 'vue';
+import { useQuasar } from 'quasar';
+import { useRouter } from 'vue-router';
+import { useAuthStore } from '@/src/stores/authStore';
 
-const $q = useQuasar()
+definePageMeta({
+  middleware: 'guest',
+});
+
+const $q = useQuasar();
+const router = useRouter();
+const store = useAuthStore();
+const config = useRuntimeConfig();
 
 // Carousel data
 const slide = ref(0)
@@ -134,19 +143,53 @@ const isValidEmail = (val: string) => {
 const onSubmit = async () => {
   loading.value = true
   try {
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    
+    // Prepare the request payload
+    const payload = {
+      email: email.value,
+      password: password.value,
+      rememberMe: rememberMe.value
+    }
+
+    // Make the login API call using Fetch
+    const response = await fetch(`${config.public.apiBase}/login`, { // Replace with your API URL
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      credentials: 'include', // Important: include cookies in the request
+      body: JSON.stringify(payload)
+    })
+
+    // Check if the response status is OK (status code in the range 200-299)
+    if (!response.ok) {
+      // Extract error message from the response
+      const errorData = await response.json()
+      throw new Error(errorData.error || 'Login failed. Please try again.')
+    }
+
+    // Parse the response data
+    const data = await response.json()
+    const { accessToken } = data
+
+    if (!accessToken) {
+      throw new Error('Access token not provided.')
+    }
+
+    // Store the accessToken in Vuex store or another state management solution
+    store.setAccessToken(accessToken)
+
     $q.notify({
       type: 'positive',
       message: 'Login successful!'
     })
-    
-    // Handle successful login here (e.g., redirect to dashboard)
+
+    // Redirect to the dashboard or desired page
+    router.push('/') // Adjust the route as needed
   } catch (error) {
+    console.error('Login error:', error)
     $q.notify({
       type: 'negative',
-      message: 'Login failed. Please try again.'
+      message: error.message || 'Login failed. Please try again.'
     })
   } finally {
     loading.value = false
