@@ -27,11 +27,13 @@
 		<div v-if=isMobile class="q-px-xs q-py-md full-width" style="padding-top:24px;">
 			<client-header></client-header>
 		</div>
+	
 	</q-toolbar>
+	
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
 
@@ -47,13 +49,6 @@ const closeBar = () => {
 const mainDisplayStore = useMainDisplayStore()
 
 const isMobile = computed(()=> mainDisplayStore.isMobile)
-
-const currentTab = ref('demo');
-const router = useRouter();
-
-const navigateTo = (page: string) => {
-	router.push(`/${page}`);
-};
 
 
 </script>

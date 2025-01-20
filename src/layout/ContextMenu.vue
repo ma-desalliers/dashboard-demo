@@ -1,21 +1,30 @@
 <template>
-  <BaseLayout :style="`--q-primary:${company.primaryColor}`">
-    <ContextMenu></ContextMenu>
-    <NuxtPage />
-    <GlobalPopup />
-  </BaseLayout>
-</template>
-
-<script lang="ts" setup>    
+   <q-tabs
+      v-if="currentTabs.length > 0"
+      v-model="currentTab"
+      color="primary"
+      :align="'left'"
+      active-color="primary"
+      active-class="c-bg-primary-lighten"
+      indicator-color="primary"
+      :class="{ 'q-pl-md': !isMobile }"
+    >
+      <q-tab
+        v-for="tab in currentTabs"
+        :key="tab.name"
+        :name="tab.name"
+        :label="tab.label"
+        @click="handleTabClick(tab.name)"
+        class="q-mr-md"
+      />
+    </q-tabs>
+  </template>
+  <script lang="ts" setup>    
 import { useQuasar } from 'quasar'
-import { useNotificationStore } from '@/src/stores/notificationStore';
 import { onMounted, onBeforeUnmount, ref, computed } from 'vue';
 import 'perfect-scrollbar/css/perfect-scrollbar.css'
-import BaseLayout from '@/src/layout/BaseLayout.vue';
-import ContextMenu from '@/src/layout/ContextMenu.vue';
 
-import company from './src/repository/client';
-import { useMainDisplayStore } from './src/stores/mainDisplayStore';
+import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
 
 const $q = useQuasar();
 const mainDisplayStore = useMainDisplayStore();
@@ -86,6 +95,5 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="scss">
-@import url('src/styles/style.css');
-@import "/node_modules/flag-icons/css/flag-icons.min.css";
+
 </style>
