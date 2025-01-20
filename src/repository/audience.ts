@@ -1,17 +1,17 @@
 const audience = [
   {
-    "uuid": "46ce2837-e775-46b0-aae1-a224dad1d533",
-    "clientUuid": "9a472c15-dd58-4cda-a6c4-fd805b48b9f4",
-    "title": "Propriétaires de résidences",
-    "description": "",
+    "uuid": "31ed3853-75f8-4991-94d6-fd21e93c538a",
+    "clientUuid": "f9bc84f4-e2e4-4398-8a3e-39e302ea9afa",
+    "title": "American manufacturers",
+    "description": "Manufacturing companies in the United States that purchase R&M wire rope hoists to optimize their production processes, improve operational efficiency and ensure safety when lifting heavy loads.",
     "subIndustryId": 20102010,
-    "countryId": null,
-    "stateId": null,
-    "cityId": null,
-    "revenue": null,
+    "countryId": 3,
+    "stateId": 634,
+    "cityId": 233,
+    "revenue": "5000000-10000000",
     "image": null,
     "score": null,
-    "createdAt": 1734015604218,
+    "createdAt": 1733842804500,
     "subIndustryName": "Building Products",
     "subIndustryDescription": "Manufacturers of building components and home improvement products and equipment. Excludes lumber and plywood classified under Forest Products and cement and other materials classified in the Construction Materials Sub-Industry.",
     "industryId": 201020,
@@ -20,7 +20,10 @@ const audience = [
     "industryGroupName": "Capital Goods",
     "sectorId": 20,
     "sectorName": "Industrials",
-    "pageCount": 16
+    "countryName": "Albania",
+    "stateName": "Vlorë County",
+    "cityName": "Orikum",
+    "pageCount": 6
   }
 ];
 export default audience
