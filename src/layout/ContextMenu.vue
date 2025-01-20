@@ -28,25 +28,23 @@ import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
 const $q = useQuasar();
 const mainDisplayStore = useMainDisplayStore();
 const route = useRoute();
-
-const currentTab = ref('products');
+const router = useRouter();
 const isMobile = computed(() => mainDisplayStore.isMobile);
 
 const tabConfigurations = computed(()=> mainDisplayStore.contextMenu)
 
 
-const currentTabs = computed(() => {
-  const baseRoute = route.path.split('/')[1];
-  const config = tabConfigurations.value?.find(config => config.route === baseRoute);
-  return config?.tabs || [];
+const currentTab = computed(() => {
+  const baseRoute = route.path.split('/');
+  return baseRoute[baseRoute.length -1]
 });
 
 const handleTabClick = async (tabName: string) => {
-  const tab = currentTabs.value.find(t => t.name === tabName);
+  const tab = tabConfigurations.value?.find((t:any) => t.name === tabName);
   if (tab) {
     try {
-      await navigateTo(tab.path);
-      currentTab.value = tabName;
+      console.log(tab)
+      await router.push(tab.path);
     } catch (error) {
       console.error('Navigation error:', error);
       $q.notify({
@@ -56,6 +54,7 @@ const handleTabClick = async (tabName: string) => {
     }
   }
 };
+
 
 // Function to check and update mobile state
 const checkMobileState = () => {
@@ -74,7 +73,6 @@ onMounted(() => {
   // Set initial tab based on route
   const pathParts = route.path.split('/');
   if (pathParts.length >= 3) {
-    currentTab.value = pathParts[2];
   }
 });
 

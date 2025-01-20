@@ -15,7 +15,7 @@
         <div class="row items-center q-mb-md cursor-pointer q-px-md q-mb-xs q-py-xs">
           <div class="">{{ $t("growth-plan") }}</div>
         </div>
-        <div class="row items-center q-mb-md cursor-pointer q-px-md q-mb-xs q-py-xs">
+        <div class="row items-center q-mb-md cursor-pointer q-px-md q-mb-xs q-py-xs" @click="goto('/marketing/calendar')">
           <div class="">{{ $t("content-calendar") }}</div>
         </div>
         <div class="row items-center q-mb-md cursor-pointer q-px-md q-mb-xs q-py-xs">
@@ -48,7 +48,7 @@
 
           <q-list padding class="sub-items">
             <q-item v-for="subItem in dept.subItems" :key="subItem.name" clickable v-ripple
-              :class="`sub-item ${getSubItemColor(dept, subItem.active)}`" @click="handleSubItemClick(dept, subItem)">
+              :class="`sub-item ${getSubItemColor(dept, subItem.active)}`" @click="handleSubItemClick( subItem)">
               <q-item-section class="q-py-sm">
                 {{ subItem.name }}
               </q-item-section>
@@ -98,7 +98,6 @@ const router = useRouter();
 const notificationStore = useNotificationStore();
 const mainDisplayStore = useMainDisplayStore();
 const { t } = useI18n();
-
 const isMobile = computed(() => mainDisplayStore.isMobile);
 
 const departments = reactive([
@@ -111,7 +110,7 @@ const departments = reactive([
     new: false,
     icon: `/${company.folder}/user/marketing.png`,
     subItems: [
-      { name: "SEO", active: true },
+      { name: "SEO", active: true, path: '/marketing/seo/keywords' },
       { name: "Email", active: false },
       { name: "Social Media", active: false },
       { name: "Leads magnets", active: false }
@@ -159,7 +158,7 @@ const knowledgeSection = reactive({
   name: t("knowledge"),
   expanded: true,
   items: [
-    { name: t("product"), active: false },
+    { name: t("product"), active: false, path:'/company/products' },
     { name: t("audience"), active: false },
     { name: t("branding"), active: false },
     { name: t("channels"), active: false, comingSoon: true }
@@ -167,6 +166,8 @@ const knowledgeSection = reactive({
 })
 
 const handleKnowledgeItemClick = (item: any) => {
+  if(item.path) goto(item.path)
+
   if (item.comingSoon) {
     notificationStore.showBasic({
       message: `${item.name} coming soon!`,
@@ -183,25 +184,25 @@ const handleKnowledgeItemClick = (item: any) => {
   item.active = true
 }
 
-const handleSubItemClick = async (dept: any, subItem: any) => {
-  if (dept.name === t("marketing")) {
-    // Reset all active states
-    departments.forEach(d => {
-      d.active = false
-      d.subItems.forEach(si => si.active = false)
-    })
-    // Set only the clicked sub-item as active
-    subItem.active = true
+const handleSubItemClick = async (subItem: any) => {
 
-    // Handle navigation or other actions here
-  } else {
-    notificationStore.showBasic({
-      message: `${dept.name} agents available soon!`,
-      color: "info",
-      position: "top-left",
-      timeout: 2000
-    })
+  // Reset all active states
+  departments.forEach(d => {
+    d.active = false
+    d.subItems.forEach(si => si.active = false)
+  })
+  
+  if(subItem.path){
+    goto(subItem.path)
   }
+  // Set only the clicked sub-item as active
+  subItem.active = true
+
+
+}
+
+const goto = (path:string) =>{
+  router.push(path)
 }
 
 const getSubItemColor = (dept: any, active: boolean) => {
