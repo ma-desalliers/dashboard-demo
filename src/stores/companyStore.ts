@@ -23,7 +23,7 @@ export const useCompanyStore = defineStore('useCompanyStore', {
         const response = await repository.getMyCompanies(page, limit);
 
         this.companies = response.data;
-        this.theCompany = this.companies[0];
+        this.theCompany = await repository.getCompany(response.data[0].uuid);
         this.pagination = response.pagination;
       } catch (error) {
         console.error(error);

@@ -48,10 +48,6 @@ const mainDisplayStore = useMainDisplayStore()
 
 const isMobile = computed(()=> mainDisplayStore.isMobile)
 
-onMounted( async () => {
-  await useCompanyStore().init();
-});
-
 </script>
 
 <style lang="scss">

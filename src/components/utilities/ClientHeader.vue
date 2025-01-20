@@ -72,10 +72,6 @@ const toggleMenu = () =>{
 	else showMenu()
 }
 
-onMounted( async () => {
-  await useCompanyStore().init();
-});
-
 const openCompany = async( company:any) =>{
 	window.location.href = company.link
 }
