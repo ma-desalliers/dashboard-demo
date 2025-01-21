@@ -8,6 +8,7 @@ export class CompanyRepository extends BaseRepository {
       const query = new URLSearchParams();
       query.append('page', page.toString());
       query.append('limit', limit.toString());
+      query.append('filters[includeStyle]', 'true');
       const response = await this.apiRequest<CompanyList[]>(`/clients?${query.toString()}`, {
         paginated: true,
         method: 'GET'

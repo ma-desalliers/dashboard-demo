@@ -1,6 +1,6 @@
 <!-- layouts/default.vue -->
 <template>
-  <BaseLayout :style="`--q-primary:${theCompany.primaryColor}`">
+  <BaseLayout :style="`--q-primary:${theCompany?.style?.primaryColor}`">
     <ContextMenu />
     <slot />
     <GlobalPopup />

@@ -4,8 +4,8 @@
 
     <div name="expand_more" class="row items-center cursor-pointer">
       <!-- Current company display -->
-      <q-avatar rounded v-if="theCompany?.favicon != null" size="24px" class="q-mr-sm">
-        <img :src="theCompany?.favicon" alt="Company logo" class="c-img-contain">
+      <q-avatar rounded v-if="theCompany?.style?.favicon != null" size="24px" class="q-mr-sm">
+        <img :src="theCompany?.style?.favicon" alt="Company logo" class="c-img-contain">
 
       </q-avatar>
       <div class="c-company-name">{{ theCompany?.name }}</div>
@@ -19,9 +19,9 @@
         <q-list style="min-width: 200px">
           <q-item v-for="item in companies" :key="item.name" clickable v-close-popup
             @click="openCompany(item)">
-            <q-item-section v-if="item.favicon != null" style="max-width: 40px">
+            <q-item-section v-if="item?.style?.favicon != null" style="max-width: 40px">
               <q-avatar rounded size="24px" class="q-mr-sm">
-                <img :src="item.favicon" alt="Company logo" class="c-img-contain">
+                <img :src="item?.style?.favicon" alt="Company logo" class="c-img-contain">
               </q-avatar>
             </q-item-section>
 
