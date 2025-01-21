@@ -5,6 +5,7 @@ import { AudienceRepository } from '@/src/repository/audiences/Repository';
 type DisplayType = 'card' | 'list';
 
 interface AudienceState {
+  companyUuid: string;
   currentAudience: Audience;
   audiences: Audience[];
   pageDisplayType: DisplayType;
@@ -16,6 +17,7 @@ interface AudienceState {
 // TODO: added page count
 export const useAudienceStore = defineStore('audienceStore', {
   state: (): AudienceState => ({
+    companyUuid: '',
     currentAudience: {} as Audience,
     audiences: [],
     pageDisplayType: 'card',
@@ -29,7 +31,8 @@ export const useAudienceStore = defineStore('audienceStore', {
   },
   actions: {
     async init(companyUuid: string) {
-      if (this.audiences.length > 0) return;
+      if (companyUuid === this.companyUuid && this.audiences.length > 0) return;
+      this.companyUuid = companyUuid
       this.loading = true;
       try {
         const repository = new AudienceRepository();

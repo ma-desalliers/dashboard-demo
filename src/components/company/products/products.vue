@@ -78,6 +78,10 @@ import columns from '~/src/asset/tablesColumn/products'
 import { useCompanyStore } from '~/src/stores/companyStore';
 import { useProductStore } from '~/src/stores/productStore'
 
+const getProducts = async () => {
+  await productStore.init(companyStore.theCompany.uuid);
+}
+
 interface Category {
   uuid: string
   name: string
@@ -140,7 +144,7 @@ const batchActions = computed(() => {
 })
 
 const products = computed(() => productStore.products);
-
+const company = computed(() => companyStore.theCompany);
 const fullColumns = computed(()=>{
   return columns.map((column)=>{
     if(column.name == 'category'){
@@ -162,13 +166,15 @@ const getScoreColor = (score: number): string => {
   return 'negative'
 }
 
+onMounted(async () => {
+  await getProducts();
+});
+
+watch(() => company.value.uuid, async () => {
+  await getProducts();
+});
+
 const updateCategory = (params:{item:any, value: any}) =>{
   console.log('updating Category' , params.item, params.value)
-
 }
-
-onMounted(async () => {
-  await productStore.init(companyStore.theCompany.uuid);
-})
-
 </script>

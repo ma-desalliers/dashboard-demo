@@ -42,8 +42,6 @@
 </template>
 
 <script setup lang="ts">
-import { useDemoCurrentPageStore } from '@/src/stores/demoCurrentPage';
-import { useNotificationStore } from '@/src/stores/notificationStore';
 import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
 import { useCompanyStore } from '@/src/stores/companyStore';
 

@@ -3,6 +3,7 @@ import type { Page } from '@/src/repository/pages/Interfaces';
 import { PageRepository, type PageFilters } from '@/src/repository/pages/Repository';
 
 interface PageState {
+  companyUuid: string;
   thePage: Page;
   pages: Page[];
   loading: boolean;
@@ -13,6 +14,7 @@ interface PageState {
 // TODO: handle pagination
 export const usePageStore = defineStore('usePageStore', {
   state: (): PageState => ({
+    companyUuid: '',
     thePage: {} as Page,
     pages: [],
     loading: false,
@@ -23,7 +25,8 @@ export const usePageStore = defineStore('usePageStore', {
   },
   actions: {
     async init(page: number = 1, limit: number = 10, fitlers: PageFilters) {
-      if (this.pages.length > 0) return;
+      if (this.companyUuid === fitlers.companyUuid && this.pages.length > 0) return;
+      this.companyUuid = fitlers.companyUuid;
       this.loading = true;
       try {
         const repository = new PageRepository();
