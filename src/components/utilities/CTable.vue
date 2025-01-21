@@ -83,6 +83,7 @@
                   :color="typeof col.badgeColor === 'function' ? col.badgeColor(props.row[col.name]) : 'primary'"
                   :label="props.row[col.name]"
                 />
+                {{ col.options }}
               </template>
 
               <template v-else-if="col.type === 'date'">
@@ -158,7 +159,8 @@ interface ButtonColumn extends BaseColumn {
 }
 
 interface BadgeColumn extends BaseColumn {
-  type: 'badge'
+  type: 'badge',
+  options:any[]
   badgeColor?: (val: any) => string
 }
 
@@ -194,7 +196,7 @@ interface Props {
   noDataLabel?: string
   pagination?: QTableProps['pagination']
   rowKey?: string
-  hoverBUttons: any[]
+  hoverButtons: any[]
   columnOptions:{columnName:string, options:any[]}[]
 }
 

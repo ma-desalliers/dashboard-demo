@@ -11,6 +11,10 @@ const columns = [
     label: 'Category',
     field: (row:any) => row.category?.name,
     align: 'left' as const,
+    type:'badge',
+    color:'primary',
+    options:[],
+    updateFn: () => {},
     sortable: true
   },
   {

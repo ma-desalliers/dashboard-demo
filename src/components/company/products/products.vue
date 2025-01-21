@@ -26,14 +26,14 @@
         </q-img>
       </template>
 
-      <template #cell-category="props">
+      <!--<template #cell-category="props">
         <q-chip
           dense
           color="primary"
           text-color="white"
           :label="props.row.category?.name || 'N/A'"
         />
-      </template>
+      </template>-->
 
       <template #cell-subcategory="props">
         <q-chip
