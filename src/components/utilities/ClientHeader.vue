@@ -17,8 +17,7 @@
 
       <q-menu transition-show="jump-down" transition-hide="jump-up" class="company-menu">
         <q-list style="min-width: 200px">
-          <q-item v-for="item in companies" :key="item.name" clickable v-close-popup
-            @click="openCompany(item)">
+          <q-item v-for="item in companies" :key="item.uuid" :to="`/company/${item.uuid}/products`" clickable v-close-popup>
             <q-item-section v-if="item?.style?.favicon != null" style="max-width: 40px">
               <q-avatar rounded size="24px" class="q-mr-sm">
                 <img :src="item?.style?.favicon" alt="Company logo" class="c-img-contain">
@@ -71,12 +70,6 @@ const toggleMenu = () =>{
 	if(menuVisible.value) closeMenu()
 	else showMenu()
 }
-
-const openCompany = async( company:any) =>{
-	window.location.href = company.link
-}
-
-
 
 const isPricingRoute = computed(() => route.path === '/pricing')
 

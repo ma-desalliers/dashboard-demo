@@ -5,18 +5,18 @@
 import products from '@/src/components/company/products/products.vue'
 import { useMainDisplayStore } from '~/src/stores/mainDisplayStore';
 import companyMenu from '~/src/asset/menu/company';
+import { useCompanyStore } from '~/src/stores/companyStore';
 
 definePageMeta({
-  middleware: ['auth']
+  middleware: ['auth', 'company']
 })
 
 const mainDisplayStore = useMainDisplayStore()
+const companyStore = useCompanyStore();
 
 onMounted(()=>{
-  const test=  companyMenu()
-  console.log(test)
-mainDisplayStore.setContextMenu(companyMenu())
-
+  const companyUuid = companyStore.theCompany.uuid
+  mainDisplayStore.setContextMenu(companyMenu(companyUuid))
 })
 
 </script>
