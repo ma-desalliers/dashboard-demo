@@ -22,8 +22,8 @@ export class CategoryRepository extends BaseRepository {
       const query = new URLSearchParams({
         page: page.toString(),
         limit: limit.toString(),
-        ...{ 'filters[clientUuid]': companyUuid },
-      })
+        'filters[clientUuid]': companyUuid,
+      });
       const response = await this.apiRequest<ProductCategory[]>(`/categories?${query.toString()}`, {
         paginated: true,
         method: 'GET',
