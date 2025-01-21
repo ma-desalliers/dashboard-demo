@@ -79,10 +79,6 @@ import columns from '~/src/asset/tablesColumn/products'
 import { useCompanyStore } from '~/src/stores/companyStore';
 import { useProductStore } from '~/src/stores/productStore'
 
-const getProducts = async () => {
-  await productStore.init(companyStore.theCompany.uuid);
-}
-
 interface Category {
   uuid: string
   name: string
@@ -192,6 +188,10 @@ const getScoreColor = (score: number): string => {
   if (score >= 8) return 'positive'
   if (score >= 5) return 'warning'
   return 'negative'
+}
+
+const getProducts = async () => {
+  await productStore.init(companyStore.theCompany.uuid);
 }
 
 const updateCategory = (params:{item:any, value: any}) =>{
