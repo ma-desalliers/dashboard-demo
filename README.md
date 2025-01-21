@@ -73,3 +73,16 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+
+### How to structure component : 
+  - import
+  - interface
+  - props / emit
+  - ref / reactive / variable
+  - define store 
+  - computed
+  - functions
+  - onMounted
+  - watch
+

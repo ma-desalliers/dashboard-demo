@@ -78,14 +78,6 @@ import columns from '~/src/asset/tablesColumn/products'
 import { useCompanyStore } from '~/src/stores/companyStore';
 import { useProductStore } from '~/src/stores/productStore'
 
-const companyStore = useCompanyStore();
-const productStore = useProductStore();
-const products = computed(() => productStore.products);
-
-onMounted(async () => {
-  await productStore.init(companyStore.theCompany.uuid);
-})
-
 interface Category {
   uuid: string
   name: string
@@ -129,6 +121,9 @@ const emit = defineEmits(['update:pagination'])
 
 const selectedProducts = ref<Product[]>([])
 
+const companyStore = useCompanyStore();
+const productStore = useProductStore();
+
 const batchActions = computed(() => {
   const actions = []
   
@@ -144,9 +139,30 @@ const batchActions = computed(() => {
   return actions
 })
 
+const products = computed(() => productStore.products);
+
+const fullColumn = computed(()=>{
+  return columns.map((column)=>{
+    if(column.field == 'category'){
+      return {
+        ...column,
+        options:['hello','hello2','hell1o']
+      }
+    }
+
+    return column
+  })
+
+})
+
 const getScoreColor = (score: number): string => {
   if (score >= 8) return 'positive'
   if (score >= 5) return 'warning'
   return 'negative'
 }
+
+onMounted(async () => {
+  await productStore.init(companyStore.theCompany.uuid);
+})
+
 </script>

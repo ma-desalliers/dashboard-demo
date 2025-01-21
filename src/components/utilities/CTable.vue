@@ -141,6 +141,7 @@ interface BaseColumn {
   sortable?: boolean
   sort?: (a: any, b: any) => number
   format?: (val: any) => string
+  updateFn?:any
 }
 
 interface TextColumn extends BaseColumn {

@@ -22,7 +22,6 @@
 import Header from './menu/Header.vue'
 import LeftColumn from './menu/LeftColumn.vue'
 
-import DefaultMeta from './DefaultMeta.vue';
 
 import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
 import ContextMenu from './menu/ContextMenu.vue';
