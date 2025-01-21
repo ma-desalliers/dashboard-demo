@@ -10,3 +10,12 @@ export interface Product {
   benefits?: string;
   createdAt?: number;
 }
+
+export interface ProductCategory {
+  uuid: string;
+  clientUuid: string;
+  parentUuid?: string;
+  name: string;
+  description?: string;
+  createdAt?: number;
+}

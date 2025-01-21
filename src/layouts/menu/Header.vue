@@ -36,7 +36,7 @@ import { useCompanyStore } from '@/src/stores/companyStore';
 
 const isVisible = ref(true)
 const companyStore = useCompanyStore();
-const theCompany = computed(() => companyStore.theCompany.company);
+const theCompany = computed(() => companyStore.theCompany);
 
 const emit = defineEmits(['state'])
 
@@ -46,8 +46,7 @@ const closeBar = () => {
 }
 const mainDisplayStore = useMainDisplayStore()
 
-const isMobile = computed(()=> mainDisplayStore.isMobile)
-
+const isMobile = computed(()=> mainDisplayStore.isMobile);
 </script>
 
 <style lang="scss">

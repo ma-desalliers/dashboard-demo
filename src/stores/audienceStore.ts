@@ -1,30 +1,57 @@
 import { defineStore } from 'pinia';
+import type { Audience } from '@/src/repository/audiences/Interfaces';
+import { AudienceRepository } from '@/src/repository/audiences/Repository';
 
 type DisplayType = 'card' | 'list';
 
 interface AudienceState {
-  currentAudience: any
+  currentAudience: Audience;
+  audiences: Audience[];
   pageDisplayType: DisplayType;
+  loading: boolean;
 }
 
+// TODO: added location
+// TODO: added gics
+// TODO: added page count
 export const useAudienceStore = defineStore('audienceStore', {
   state: (): AudienceState => ({
-    currentAudience: null,
+    currentAudience: {} as Audience,
+    audiences: [],
     pageDisplayType: 'card',
+    loading: false,
   }),
-
+  getters: {
+    getAudience: (state) => (audienceUuid: string) => state.audiences.find((audience) => audience.uuid === audienceUuid),
+    totalAudiences: (state) => state.audiences.length,
+    isCardDisplay: (state) => state.pageDisplayType === 'card',
+    isListDisplay: (state) => state.pageDisplayType === 'list'
+  },
   actions: {
+    async init(companyUuid: string) {
+      if (this.audiences.length > 0) return;
+      this.loading = true;
+      try {
+        const repository = new AudienceRepository();
+        const audiences = await repository.getAudiences(companyUuid);
+        this.audiences = audiences;
+      } catch (error) {
+        console.error(error);
+        throw error;
+      } finally {
+        this.loading = false;
+      }
+    },
     setAudience(audience: any) {
       this.currentAudience = audience;
     },
-
     setDisplayType(type: DisplayType) {
       this.pageDisplayType = type;
     },
-  },
-
-  getters: {
-    isCardDisplay: (state) => state.pageDisplayType === 'card',
-    isListDisplay: (state) => state.pageDisplayType === 'list'
+    async current(audienceUuid: string) {
+      const audience = this.getAudience(audienceUuid);
+      if (!audience) throw new Error('Audience not found');
+      this.currentAudience = audience;
+    }
   }
 });

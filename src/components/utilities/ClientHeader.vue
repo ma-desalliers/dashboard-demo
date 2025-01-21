@@ -56,7 +56,7 @@ const menuVisible = computed(() => mainDisplayStore.showMenu)
 
 const companyStore = useCompanyStore();
 
-const theCompany = computed(() => companyStore.theCompany.company);
+const theCompany = computed(() => companyStore.theCompany);
 const companies = computed(() => companyStore.companies);
 
 const closeMenu = () =>{
