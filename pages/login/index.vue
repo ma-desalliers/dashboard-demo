@@ -1,34 +1,16 @@
-# LoginScreen.vue
+
 <template>
-  <div class="row full-height">
+  <div class="row full-height full-width c-absolute">
     <!-- Left side - Carousel -->
-    <div class="col-12 col-md-7 bg-primary">
-      <q-carousel
-        v-model="slide"
-        animated
-        swipeable
-        infinite
-        autoplay
-        height="100vh"
-        transition-prev="slide-right"
-        transition-next="slide-left"
-        class="bg-primary text-white"
-      >
-        <q-carousel-slide v-for="(slide, index) in slides" :key="index" :name="index" class="column no-wrap flex-center">
-          <div class="q-pa-lg text-center">
-            <div class="text-h3 q-mb-md">{{ slide.title }}</div>
-            <img :src="slide.image" style="max-width: 400px; height: auto;">
-            <div class="text-h5 q-mt-md">{{ slide.description }}</div>
-          </div>
-        </q-carousel-slide>
-      </q-carousel>
+    <div class="col-12 col-md-7 bg-primary c-relative carousel-container">
+      <Carousel v-model="slide" :slides="slides"></Carousel>
     </div>
 
     <!-- Right side - Login Form -->
     <div class="col-12 col-md-5 flex flex-center">
       <div class="q-pa-xl" style="width: 400px;">
         <div class="text-center q-mb-xl">
-          <img src="" alt="Logo" style="max-width: 150px;">
+          <img src="/public/logo.png.jpg" alt="Logo" style="max-width: 150px;">
         </div>
 
         <div class="text-h4 text-weight-bold q-mb-md text-center">Welcome Back</div>
@@ -96,6 +78,7 @@ import { ref } from 'vue';
 import { useQuasar } from 'quasar';
 import { useRouter } from 'vue-router';
 import { useAuthStore } from '@/src/stores/authStore';
+import Carousel from '~/src/components/login/Carousel.vue';
 //TODO: set company color in local storage on login
 
 definePageMeta({
@@ -110,22 +93,12 @@ const config = useRuntimeConfig();
 // Carousel data
 const slide = ref(0)
 const slides = [
-  {
-    title: 'Welcome to Our Platform',
-    description: 'Discover amazing features and possibilities',
-    image: ''
-  },
-  {
-    title: 'Secure & Reliable',
-    description: 'Your data is safe with us',
-    image: ''
-  },
-  {
-    title: 'Start Your Journey',
-    description: 'Join thousands of satisfied users',
-    image: ''
-  }
-]
+        { id: 1, title: "Mountain View", image: "https://blocks.astratic.com/img/general-img-landscape.png" },
+        { id: 2, title: "Ocean Sunset", image: "https://blocks.astratic.com/img/general-img-landscape.png" },
+        { id: 3, title: "Forest Path", image: "https://blocks.astratic.com/img/general-img-landscape.png" },
+        { id: 4, title: "City Lights", image: "https://blocks.astratic.com/img/general-img-landscape.png" },
+        { id: 5, title: "Desert Dunes", image: "https://blocks.astratic.com/img/general-img-landscape.png" },
+      ]
 
 // Form data
 const email = ref('')
@@ -207,7 +180,17 @@ const onSubmit = async () => {
   padding: 2rem;
 }
 
+.carousel-container{
+  height:100%;
+}
+
 /* Add responsive adjustments */
+@media (max-width: 1023px) {
+  .carousel-container{
+    height:55%;
+  }
+}
+
 @media (max-width: 1023px) {
   .q-carousel {
     height: 50vh !important;

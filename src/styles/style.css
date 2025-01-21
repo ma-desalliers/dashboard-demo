@@ -113,6 +113,10 @@ html {
   position: relative;
 }
 
+.c-absolute {
+  position: absolute;
+}
+
 .clickable {
   cursor: pointer;
 }
