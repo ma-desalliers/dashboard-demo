@@ -10,7 +10,8 @@
         <LeftColumn class="c-left-column ":class="{'isOpen': showMenu}" />
         <!-- Right Content Area -->
         <div class="c-right-column">
-            <slot></slot>
+          <ContextMenu></ContextMenu>
+          <slot></slot>
         </div>
       </div>
     </div>
@@ -24,6 +25,7 @@ import LeftColumn from './menu/LeftColumn.vue'
 import DefaultMeta from './DefaultMeta.vue';
 
 import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
+import ContextMenu from './menu/ContextMenu.vue';
 
 const mainDisplayStore = useMainDisplayStore();
 
