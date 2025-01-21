@@ -166,6 +166,10 @@ const getScoreColor = (score: number): string => {
   return 'negative'
 }
 
+const updateCategory = (params:{item:any, value: any}) =>{
+  console.log('updating Category' , params.item, params.value)
+}
+
 onMounted(async () => {
   await getProducts();
 });
@@ -174,7 +178,4 @@ watch(() => company.value.uuid, async () => {
   await getProducts();
 });
 
-const updateCategory = (params:{item:any, value: any}) =>{
-  console.log('updating Category' , params.item, params.value)
-}
 </script>
