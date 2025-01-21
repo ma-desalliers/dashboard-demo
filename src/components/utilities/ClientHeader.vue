@@ -4,11 +4,11 @@
 
     <div name="expand_more" class="row items-center cursor-pointer">
       <!-- Current company display -->
-      <q-avatar rounded v-if="theCompany.favicon != null" size="24px" class="q-mr-sm">
-        <img :src="theCompany.favicon" alt="Company logo" class="c-img-contain">
+      <q-avatar rounded v-if="theCompany?.favicon != null" size="24px" class="q-mr-sm">
+        <img :src="theCompany?.favicon" alt="Company logo" class="c-img-contain">
 
       </q-avatar>
-      <div class="c-company-name">{{ theCompany.name }}</div>
+      <div class="c-company-name">{{ theCompany?.name }}</div>
 
       <!-- Menu trigger icon with menu -->
       <q-icon v-if="companies.length" name="expand_more" size="sm" class="q-ml-xs cursor-pointer">

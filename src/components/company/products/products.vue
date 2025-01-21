@@ -75,7 +75,17 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import columns from '~/src/asset/tablesColumn/products'
-import products from '~/src/repository/product'
+import { useCompanyStore } from '~/src/stores/companyStore';
+import { useProductStore } from '~/src/stores/productStore'
+
+const companyStore = useCompanyStore();
+const productStore = useProductStore();
+const products = computed(() => productStore.products);
+
+onMounted(async () => {
+  await productStore.init(companyStore.theCompany.uuid);
+})
+
 interface Category {
   uuid: string
   name: string
@@ -114,8 +124,6 @@ const props = defineProps<{
   onDelete?: (product: Product) => void
   onBatchDelete?: (products: Product[]) => void
 }>()
-
-
 
 const emit = defineEmits(['update:pagination'])
 

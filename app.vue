@@ -23,7 +23,6 @@ const layout = computed(() =>
 );
 
 const mainDisplayStore = useMainDisplayStore();
-const companyStore = useCompanyStore();
 const authStore = useAuthStore();
 
 // Function to check and update mobile state
@@ -42,11 +41,6 @@ $i18n.setLocale('fr');
 onMounted(async () => {
   checkMobileState();
   window.addEventListener('resize', handleResize);
-  
-  // Only initialize company data if authenticated
-  if (authStore.isAuthenticated) {
-    await companyStore.init();
-  }
 });
 
 onBeforeUnmount(() => {

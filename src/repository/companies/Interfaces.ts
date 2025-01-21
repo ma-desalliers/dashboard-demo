@@ -1,4 +1,4 @@
-export type CompanyAggregate = Company & Omit<CompanyStylePreferences, 'clientUuid' | 'createdAt'>;
+export type CompanyList = Company & Omit<CompanyStylePreferences, 'clientUuid' | 'createdAt'>;
 
 export interface Company {
   uuid: string;
