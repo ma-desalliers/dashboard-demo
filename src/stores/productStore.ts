@@ -29,10 +29,10 @@ export const useProductStore = defineStore('useProductStore', {
       this.loading = true;
       try {
         const productRepository = new ProductRepository();
-        const products = await productRepository.getProducts(companyUuid);
+        const products = await productRepository.list(companyUuid);
         this.products = products;
         const categoryRepository = new CategoryRepository();
-        const categories = await categoryRepository.getCategories(companyUuid);
+        const categories = await categoryRepository.list(companyUuid);
         this.categories = categories.data;
       } catch (error) {
         console.error(error);

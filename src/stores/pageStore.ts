@@ -30,7 +30,7 @@ export const usePageStore = defineStore('usePageStore', {
       this.loading = true;
       try {
         const repository = new PageRepository();
-        const pages = await repository.getPages(page, limit, fitlers);
+        const pages = await repository.list(page, limit, fitlers);
         this.pages = pages.data;
       } catch (error) {
         console.error(error);

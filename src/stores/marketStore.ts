@@ -27,7 +27,7 @@ export const useAudienceStore = defineStore('audienceStore', {
       this.loading = true;
       try {
         const repository = new MarketRepository();
-        const markets = await repository.getMarkets(companyUuid);
+        const markets = await repository.list(companyUuid);
         this.markets = markets;
       } catch (error) {
         console.error(error);

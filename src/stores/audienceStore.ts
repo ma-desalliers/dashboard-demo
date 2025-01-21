@@ -36,7 +36,7 @@ export const useAudienceStore = defineStore('audienceStore', {
       this.loading = true;
       try {
         const repository = new AudienceRepository();
-        const audiences = await repository.getAudiences(companyUuid);
+        const audiences = await repository.list(companyUuid);
         this.audiences = audiences;
       } catch (error) {
         console.error(error);
