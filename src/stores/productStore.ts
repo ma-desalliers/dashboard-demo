@@ -6,6 +6,7 @@ import type { PaginationMeta } from "@/src/repository/BaseRepository";
 // TODO: product page count
 export const useProductStore = defineStore('useProductStore', {
   state: () => ({
+    companyUuid: '',
     theProduct: {} as Product,
     products: [] as Product[],
     categories: [] as ProductCategory[],
@@ -23,14 +24,15 @@ export const useProductStore = defineStore('useProductStore', {
   },
   actions: {
     async init(companyUuid: string) {
-      if (this.products.length > 0) return;
+      if (companyUuid === this.companyUuid && this.products.length > 0) return;
+      this.companyUuid = companyUuid;
       this.loading = true;
       try {
         const productRepository = new ProductRepository();
-        const products = await productRepository.getProducts(companyUuid);
+        const products = await productRepository.list(companyUuid);
         this.products = products;
         const categoryRepository = new CategoryRepository();
-        const categories = await categoryRepository.getCategories(companyUuid);
+        const categories = await categoryRepository.list(companyUuid);
         this.categories = categories.data;
       } catch (error) {
         console.error(error);

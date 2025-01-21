@@ -24,7 +24,7 @@ export const useCompanyStore = defineStore('useCompanyStore', {
       this.loading = true;
       try {
         const repository = new CompanyRepository();
-        const response = await repository.getMyCompanies(page, limit);
+        const response = await repository.list(page, limit);
 
         this.companies = response.data;
         this.pagination = response.pagination;

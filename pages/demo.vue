@@ -9,7 +9,7 @@
 import MainPage from '~/src/components/demo/MainPage.vue';
 
 definePageMeta({
-  middleware: ['auth']
+  middleware: ['auth', 'company']
 })
 
 

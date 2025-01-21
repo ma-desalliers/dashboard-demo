@@ -8,7 +8,7 @@ export interface PageFilters {
 }
 
 export class PageRepository extends BaseRepository {
-  public async getPages(page: number = 1, limit: number = 10, filters: PageFilters): Promise<PaginatedResponse<Page[]>> {
+  public async list(page: number = 1, limit: number = 10, filters: PageFilters): Promise<PaginatedResponse<Page[]>> {
     try {
       const query = new URLSearchParams({
         page: page.toString(),
@@ -27,6 +27,22 @@ export class PageRepository extends BaseRepository {
       console.error(error);
       throw error;
     }
+  }
+
+  public async generate(pageUuid: string, language: string): Promise<void> {
+    try {
+      const response = await this.apiRequest<Page>(`/page/${pageUuid}/generate`, {
+        method: 'POST'
+      });
+      // TODO: handle jobId
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  }
+
+  public async update(page: Page): Promise<Page> {
+    throw new Error('Method not implemented.');
   }
 }
 

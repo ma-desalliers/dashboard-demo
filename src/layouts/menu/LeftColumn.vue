@@ -92,12 +92,14 @@
 <script setup lang="ts">
 import { useNotificationStore } from "@/src/stores/notificationStore";
 import { useMainDisplayStore } from "@/src/stores/mainDisplayStore";
+import { useCompanyStore } from "~/src/stores/companyStore";
 const route = useRoute();
 const router = useRouter();
 const notificationStore = useNotificationStore();
 const mainDisplayStore = useMainDisplayStore();
 const { t } = useI18n();
 const isMobile = computed(() => mainDisplayStore.isMobile);
+const companyStore = useCompanyStore();
 
 const departments = reactive([
   {
@@ -157,7 +159,7 @@ const knowledgeSection = reactive({
   name: t("knowledge"),
   expanded: true,
   items: [
-    { name: t("product"), active: false, path:'/company/products' },
+    { name: t("product"), active: false, path:`/company/${companyStore.theCompany.uuid}/products` },
     { name: t("audience"), active: false },
     { name: t("branding"), active: false },
     { name: t("channels"), active: false, comingSoon: true }

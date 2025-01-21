@@ -34,7 +34,7 @@ const showContent = computed(()=> mainDisplayStore.showContent)
 const headerState = ref(true)
 
 definePageMeta({
-  middleware: ['auth']
+  middleware: ['auth', 'company']
 })
 
 </script>
