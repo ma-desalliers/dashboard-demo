@@ -2,7 +2,7 @@
 <template>
   <div class="row full-height full-width c-absolute">
     <!-- Left side - Carousel -->
-    <div class="col-12 col-md-7 bg-primary c-relative carousel-container">
+    <div class="col-12 col-md-7 bg-primary c-relative carousel-container" style="overflow:hidden">
       <Carousel v-model="slide" :slides="slides"></Carousel>
     </div>
 
@@ -90,14 +90,14 @@ const router = useRouter();
 const store = useAuthStore();
 const config = useRuntimeConfig();
 
-// Carousel data
+// Carousel datap
 const slide = ref(0)
 const slides = [
-        { id: 1, title: "Mountain View", image: "https://blocks.astratic.com/img/general-img-landscape.png" },
-        { id: 2, title: "Ocean Sunset", image: "https://blocks.astratic.com/img/general-img-landscape.png" },
-        { id: 3, title: "Forest Path", image: "https://blocks.astratic.com/img/general-img-landscape.png" },
-        { id: 4, title: "City Lights", image: "https://blocks.astratic.com/img/general-img-landscape.png" },
-        { id: 5, title: "Desert Dunes", image: "https://blocks.astratic.com/img/general-img-landscape.png" },
+        { id: 1, title: "5 Essential Factors to Consider When Setting Up Blasting Equipment", image: "http://192.168.0.113:3001/_nuxt/public/images/image1.jpeg" },
+        { id: 2, title: "6 Common Mistakes to Avoid When Calibrating Blasting Equipment", image: "http://192.168.0.113:3001/_nuxt/public/images/image2.jpeg" },
+        { id: 3, title: "7 Best Practices for Maintaining Optimal Blasting Equipment Performance", image: "http://192.168.0.113:3001/_nuxt/public/images/image3.jpeg" },
+        { id: 4, title: "8 Tools You Need for Precise Blasting Equipment Calibration", image: "http://192.168.0.113:3001/_nuxt/public/images/image4.jpeg" },
+        { id: 5, title: "9 Steps to Achieve Consistent Results in Blasting Operations", image: "http://192.168.0.113:3001/_nuxt/public/images/image5.jpeg" },
       ]
 
 // Form data

@@ -168,6 +168,8 @@ const getScoreColor = (score: number): string => {
 
 const updateCategory = (params:{item:any, value: any}) =>{
   console.log('updating Category' , params.item, params.value)
+  params.item.category = params.value
+
 }
 
 onMounted(async () => {

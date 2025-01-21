@@ -15,11 +15,11 @@
         <q-card
           class="carousel-card"
           :style="{
-            transform: `scale(${getItemStyle(index).scale})`,
+            transform: `${getItemStyle(index)}`,
             opacity: getItemStyle(index).opacity,
           }"
         >
-          <q-img v-if="slide.image" :src="slide.image" />
+          <img v-if="slide.image" :src="slide.image" />
           <q-card-section class="text-center">
             <div class="text-h5 q-mb-sm">{{ slide.title }}</div>
           </q-card-section>
@@ -104,30 +104,30 @@ const getItemStyle = (itemIndex: number) => {
 
   switch (diff) {
     case -2: // left-most
-      transform = "translate(-200%,0) translateZ(-100px) rotateY(35deg)";
+      transform = "translate(-175%,0) translateZ(-100px) rotateY(35deg) scale(0.8)";
       zIndex = 3;
       opacity = 0.6;
       scale = 0.8;
       break;
     case -1: // left
-      transform = "translate(-110%,0) translateZ(100px) rotateY(25deg)";
+      transform = "translate(-100%,0) translateZ(100px) rotateY(25deg) scale(0.9)";
       zIndex = 4;
       opacity = 0.8;
       scale = 0.9;
       break;
     case 0: // center
-      transform = "translate(0%,0) translateZ(200px) rotateY(0deg)";
+      transform = "translate(0%,0) translateZ(200px) rotateY(0deg) scale(1)";
       zIndex = 5;
       scale = 1.1;
       break;
     case 1: // right
-      transform = "translate(110%,0) translateZ(100px) rotateY(-25deg)";
+      transform = "translate(100%,0) translateZ(100px) rotateY(-25deg) scale(0.9)";
       zIndex = 4;
       opacity = 0.8;
       scale = 0.9;
       break;
     case 2: // right-most
-      transform = "translate(200%,0) translateZ(-100px) rotateY(-35deg)";
+      transform = "translate(175%,0) translateZ(-100px) rotateY(-35deg) scale(0.8)";
       zIndex = 3;
       opacity = 0.6;
       scale = 0.8;
@@ -138,7 +138,7 @@ const getItemStyle = (itemIndex: number) => {
       zIndex = 1;
   }
 
-  return { transform, zIndex, opacity, scale };
+  return { transform, zIndex, opacity };
 };
 
 // Keyboard navigation
@@ -162,7 +162,7 @@ onBeforeUnmount(() => {
 <style scoped>
 .carousel-slide {
   width: 300px;
-  height: 400px;
+  height: 350px;
   transition: all 0.6s;
   cursor: pointer;
 }
@@ -188,12 +188,17 @@ onBeforeUnmount(() => {
 @media (max-width: 700px) {
   .carousel-slide {
     width: 175px;
-    height: 225px;
+    height: 200px;
   }.absolute-bottom{
     padding-bottom: 4px;
   }
   .carousel-container{
    
+  }
+
+  .text-h5{
+    font-size:14px;
+    line-height: 1.2;
   }
 
 }

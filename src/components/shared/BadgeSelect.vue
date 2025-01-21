@@ -4,12 +4,14 @@
     </div>
     <div class="column q-col-gutter-sm">
       <div v-for="option in currentItem?.options" :key="option.value" class="col-auto">
-        <q-badge
+        <q-chip
           :label="option"
-          :color="selectedOption === option.value ? 'primary' : 'grey-4'"
-          :text-color="selectedOption === option.value ? 'white' : 'grey-8'"
-          class="option-badge q-pa-sm cursor-pointer full-width row justify-center"
+          :color="selectedOption === option ? 'primary' : 'grey-4'"
+          :text-color="selectedOption === option ? 'white' : 'grey-8'"
+          class="option-badge full-width row justify-center"
           @click="handleSave(option)"
+          clickable
+          square
         />
       </div>
     </div>

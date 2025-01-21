@@ -79,12 +79,15 @@
               </template>
 
               <template v-else-if="col.type === 'badge'">
-                <q-badge
+                <q-chip
                   :color="typeof col.badgeColor === 'function' ? col.badgeColor(props.row[col.name]) : 'primary'"
+                  text-color="white"
                   :label="props.row[col.name]"
+                  clickable
                   @click="onBadgeClick(props.row, col, $event)"
+                  size="md"
+                  square
                 />
-                {{ col.options }}
               </template>
 
               <template v-else-if="col.type === 'date'">
