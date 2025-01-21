@@ -2,7 +2,7 @@
   <div>
     <CTable
       v-model="selectedProducts"
-      :columns="columns"
+      :columns="fullColumns"
       :rows="products"
       :loading="loading"
       :batch-actions="batchActions"
@@ -141,12 +141,13 @@ const batchActions = computed(() => {
 
 const products = computed(() => productStore.products);
 
-const fullColumn = computed(()=>{
+const fullColumns = computed(()=>{
   return columns.map((column)=>{
-    if(column.field == 'category'){
+    if(column.name == 'category'){
       return {
         ...column,
-        options:['hello','hello2','hell1o']
+        options:['hello','hello2','hell1o'],
+        updateFn:updateCategory
       }
     }
 
@@ -159,6 +160,11 @@ const getScoreColor = (score: number): string => {
   if (score >= 8) return 'positive'
   if (score >= 5) return 'warning'
   return 'negative'
+}
+
+const updateCategory = (params:{item:any, value: any}) =>{
+  console.log('updating Category' , params.item, params.value)
+
 }
 
 onMounted(async () => {

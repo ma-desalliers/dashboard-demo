@@ -82,6 +82,7 @@
                 <q-badge
                   :color="typeof col.badgeColor === 'function' ? col.badgeColor(props.row[col.name]) : 'primary'"
                   :label="props.row[col.name]"
+                  @click="onBadgeClick(props.row, col, $event)"
                 />
                 {{ col.options }}
               </template>
@@ -129,6 +130,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { date, type QTableProps } from 'quasar'
+import { useMainDisplayStore } from '../../stores/mainDisplayStore';
 
 type AlignValue = 'left' | 'right' | 'center'
 
@@ -222,6 +224,8 @@ const props = withDefaults(defineProps<Props>(), {
 
 const emit = defineEmits(['update:modelValue', 'update:pagination'])
 
+
+const mainDisplayStore = useMainDisplayStore()
 const innerSelected = computed({
   get: () => props.modelValue,
   set: (value) => emit('update:modelValue', value)
@@ -248,6 +252,22 @@ const computedColumns = computed(() => props.columns)
 const formatDate = (dateValue: string | Date) => {
   if (!dateValue) return ''
   return date.formatDate(dateValue, 'YYYY-MM-DD')
+}
+
+const onBadgeClick = (row: any, col: any, event:Event) =>{
+
+  const triggerRect = mainDisplayStore.getPopupTriggerElement(event.currentTarget as HTMLElement)
+console.log(col)
+mainDisplayStore.pushPopup({
+  triggerElement:triggerRect,
+  item:{
+    item: row,
+    options:col.options,
+    closeFn: col.updateFn,
+  },
+  view:'BadgeSelect',
+  isOpen:true
+})
 }
 </script>
 
