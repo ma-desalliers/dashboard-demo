@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  cameleon-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3001:8080"
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    environment:
+      - PORT=${PORT}
+      - NUXT_PUBLIC_API_BASE_URL=${NUXT_PUBLIC_API_BASE_URL}
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
