@@ -5,8 +5,8 @@
 				<span v-if="!isMobile" class='text-white' >New Functionality Available!</span>
 				
 				<div v-if="isMobile" class=row>
-					<q-avatar v-if="theCompany?.favicon != null" size="24px" class="q-mr-sm">
-						<img :src="theCompany?.favicon" alt="Company logo">
+					<q-avatar v-if="theCompany?.style?.favicon != null" size="24px" class="q-mr-sm">
+						<img :src="theCompany?.style?.favicon" alt="Company logo">
 					</q-avatar>
 					<div class="c-company-name">{{ theCompany?.name }}</div>
 				</div>

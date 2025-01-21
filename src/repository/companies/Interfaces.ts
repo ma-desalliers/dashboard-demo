@@ -1,4 +1,6 @@
-export type CompanyList = Company & Omit<CompanyStylePreferences, 'clientUuid' | 'createdAt'>;
+export type CompanyList = Company & {
+  style: CompanyStylePreferences;
+}
 
 export interface Company {
   uuid: string;
