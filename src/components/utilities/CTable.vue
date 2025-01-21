@@ -194,7 +194,12 @@ interface Props {
   noDataLabel?: string
   pagination?: QTableProps['pagination']
   rowKey?: string
+  hoverBUttons: any[]
+  columnOptions:{columnName:string, options:any[]}[]
 }
+
+//TODO : Implement hover buttons over the "title" column, 
+//TODO : Implement the columnOptions to show the GlobalPopup with the options for status, category, etc
 
 
 const props = withDefaults(defineProps<Props>(), {

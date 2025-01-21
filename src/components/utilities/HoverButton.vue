@@ -78,6 +78,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import DropdownBtn from './DropdownBtn.vue'
+import ToolEllipsis from './ToolEllipsis.vue'
+import ConfirmBtn from './ConfirmBtn.vue'
 
 interface BaseButtonOption {
   icon: string

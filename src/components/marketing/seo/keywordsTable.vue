@@ -95,6 +95,8 @@ import { ref } from 'vue'
 
 import columns from '@/src/asset/tablesColumn/keywords'
 
+//TODO: Add chart, maybe do a component
+
 interface SEOData {
   id: number
   page: string
