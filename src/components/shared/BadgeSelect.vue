@@ -5,9 +5,9 @@
     <div class="column q-col-gutter-sm">
       <div v-for="option in currentItem?.options" :key="option.value" class="col-auto">
         <q-chip
-          :label="option"
-          :color="selectedOption === option ? 'primary' : 'grey-4'"
-          :text-color="selectedOption === option ? 'white' : 'grey-8'"
+          :label="option.label"
+          color="primary"
+          text-color="white"
           class="option-badge full-width row justify-center"
           @click="handleSave(option)"
           clickable
@@ -30,7 +30,6 @@ const mainDisplayStore = useMainDisplayStore()
 const currentItem = computed(() => mainDisplayStore.popup.item)
 
 const selectedOption = ref<string | number | null>(null)
-
 
 const handleSave = async (value : any) => {
   currentItem.value.closeFn({item:currentItem.value.item, value:value})

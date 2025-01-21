@@ -145,12 +145,21 @@ const batchActions = computed(() => {
 
 const products = computed(() => productStore.products);
 const company = computed(() => companyStore.theCompany);
+const categories = computed(()=> productStore.categories);
+/*const productRows = computed(()=>{
+  return products.value.map(product=>{
+    return{
+      ...product,
+      categoryName:product.category.name
+    }
+  })
+})*/
 const fullColumns = computed(()=>{
   return columns.map((column)=>{
     if(column.name == 'category'){
       return {
         ...column,
-        options:['hello','hello2','hell1o'],
+        options: categories.value.map((category) => {return {value: category.uuid, label: category.name}}),
         updateFn:updateCategory
       }
     }
@@ -168,7 +177,7 @@ const getScoreColor = (score: number): string => {
 
 const updateCategory = (params:{item:any, value: any}) =>{
   console.log('updating Category' , params.item, params.value)
-  params.item.category = params.value
+  params.item.category = categories.value.find((category)=> category.uuid == params.value.value)
 
 }
 

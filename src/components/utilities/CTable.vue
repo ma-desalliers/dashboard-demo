@@ -82,7 +82,7 @@
                 <q-chip
                   :color="typeof col.badgeColor === 'function' ? col.badgeColor(props.row[col.name]) : 'primary'"
                   text-color="white"
-                  :label="props.row[col.name]"
+                   :label="getFieldValue(props.row, col)"
                   clickable
                   @click="onBadgeClick(props.row, col, $event)"
                   size="md"
@@ -255,6 +255,13 @@ const computedColumns = computed(() => props.columns)
 const formatDate = (dateValue: string | Date) => {
   if (!dateValue) return ''
   return date.formatDate(dateValue, 'YYYY-MM-DD')
+}
+
+const getFieldValue = (row: any, col: any) => {
+  if (typeof col.field === 'function') {
+    return col.field(row) ?? '-'
+  }
+  return row[col.field] ?? '-'
 }
 
 const onBadgeClick = (row: any, col: any, event:Event) =>{
