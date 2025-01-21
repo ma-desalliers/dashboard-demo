@@ -5,6 +5,11 @@
 import products from '@/src/components/company/products/products.vue'
 import { useMainDisplayStore } from '~/src/stores/mainDisplayStore';
 import companyMenu from '~/src/asset/menu/company';
+
+definePageMeta({
+  middleware: ['auth']
+})
+
 const mainDisplayStore = useMainDisplayStore()
 
 onMounted(()=>{

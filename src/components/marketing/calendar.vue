@@ -349,6 +349,11 @@
 import { ref, computed } from 'vue'
 import { date } from 'quasar'
 
+//TODO: styling for Month view 
+//TODO: implement Day View ? to validate
+//TODO: proper date change handling - show select calendar on mon click + fix display in between month, 
+
+
 // Interfaces
 interface Event {
   id: string

@@ -10,7 +10,7 @@
         <LeftColumn class="c-left-column ":class="{'isOpen': showMenu}" />
         <!-- Right Content Area -->
         <div class="c-right-column">
-          <slot></slot>
+            <slot></slot>
         </div>
       </div>
     </div>
@@ -18,8 +18,10 @@
 </template>
 
 <script setup lang="ts">
-import Header from './Header.vue'
-import LeftColumn from './LeftColumn.vue'
+import Header from './menu/Header.vue'
+import LeftColumn from './menu/LeftColumn.vue'
+
+import DefaultMeta from './DefaultMeta.vue';
 
 import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
 
@@ -29,6 +31,10 @@ const isMobile = computed(()=>mainDisplayStore.isMobile )
 const showMenu = computed(()=>mainDisplayStore.showMenu )
 const showContent = computed(()=> mainDisplayStore.showContent)
 const headerState = ref(true)
+
+definePageMeta({
+  middleware: ['auth']
+})
 
 </script>
 

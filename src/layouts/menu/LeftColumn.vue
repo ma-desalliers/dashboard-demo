@@ -90,8 +90,8 @@
 </template>
 
 <script setup lang="ts">
-import { useNotificationStore } from "../stores/notificationStore";
-import { useMainDisplayStore } from "../stores/mainDisplayStore";
+import { useNotificationStore } from "@/src/stores/notificationStore";
+import { useMainDisplayStore } from "@/src/stores/mainDisplayStore";
 const route = useRoute();
 const router = useRouter();
 const notificationStore = useNotificationStore();

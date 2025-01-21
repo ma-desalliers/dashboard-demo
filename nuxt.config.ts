@@ -46,10 +46,10 @@ export default defineNuxtConfig({
       },
     }
   },
-  router: {
-    rules: {
-      '/': { redirect: '/default-page-path' }
-    }
+  routeRules: {
+    '/login': { ssr:false },
+    '/register': { ssr:false },
+    '/': {  }
   },
   i18n: {
     vueI18n: '@/src/translation/config.ts',

@@ -96,6 +96,7 @@ import { ref } from 'vue';
 import { useQuasar } from 'quasar';
 import { useRouter } from 'vue-router';
 import { useAuthStore } from '@/src/stores/authStore';
+//TODO: set company color in local storage on login
 
 definePageMeta({
   middleware: 'guest',
@@ -185,7 +186,7 @@ const onSubmit = async () => {
 
     // Redirect to the dashboard or desired page
     router.push('/') // Adjust the route as needed
-  } catch (error) {
+  } catch (error:any) {
     console.error('Login error:', error)
     $q.notify({
       type: 'negative',
