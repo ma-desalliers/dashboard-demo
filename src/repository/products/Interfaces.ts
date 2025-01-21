@@ -1,3 +1,5 @@
+export type ProductList = Product & { category: ProductCategory; subcategory: ProductCategory; pageCount: number; };
+
 export interface Product {
   uuid: string;
   clientUuid: string;
