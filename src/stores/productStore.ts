@@ -16,7 +16,8 @@ export const useProductStore = defineStore('useProductStore', {
       totalItems: 0,
       itemsPerPage: 10
     } as PaginationMeta,
-    loading: false
+    loading: false,
+    currentRequest: null as AbortController | null
   }),
   getters: {
     getProduct: (state) => (productUuid: string) => state.products.find((product) => product.uuid === productUuid),
@@ -25,26 +26,37 @@ export const useProductStore = defineStore('useProductStore', {
   actions: {
     async init(companyUuid: string) {
       if (companyUuid === this.companyUuid && this.products.length > 0) return;
-      this.companyUuid = companyUuid;
       this.loading = true;
+      this.abortCurrentRequest();
+
+      const controller = new AbortController();
+      this.currentRequest = controller;
       try {
         const productRepository = new ProductRepository();
-        const products = await productRepository.list(companyUuid);
-        this.products = products;
+        const products = productRepository.list(companyUuid, controller.signal);
+        this.companyUuid = companyUuid;
         const categoryRepository = new CategoryRepository();
-        const categories = await categoryRepository.list(companyUuid);
-        this.categories = categories.data;
+        const categories = categoryRepository.list(companyUuid, controller.signal);
+        const [productsResponse, categoriesResponse] = await Promise.all([products, categories]);
+        this.products = productsResponse;
+        this.categories = categoriesResponse.data;
       } catch (error) {
         console.error(error);
         throw error;
       } finally {
         this.loading = false;
+        this.currentRequest = null;
       }
     },
     async current(productUuid: string) {
       const product = this.getProduct(productUuid);
       if (!product) throw new Error('Product not found');
       this.theProduct = product;
+    },
+    abortCurrentRequest() {
+      if (this.currentRequest == null) return;
+      this.currentRequest.abort();
+      this.currentRequest = null;
     }
   }
 });

@@ -3,7 +3,7 @@ import type { CompanyList } from "@/src/repository/companies/Interfaces";
 import type { PaginatedResponse } from '@/src/repository/BaseRepository';
 
 export class CompanyRepository extends BaseRepository {
-  public async list(page: number = 1, limit: number = 10): Promise<PaginatedResponse<CompanyList[]>> {
+  public async list(page: number = 1, limit: number = 10, signal: AbortSignal): Promise<PaginatedResponse<CompanyList[]>> {
     try {
       const query = new URLSearchParams();
       query.append('page', page.toString());
@@ -11,7 +11,8 @@ export class CompanyRepository extends BaseRepository {
       query.append('filters[includeStyle]', 'true');
       const response = await this.apiRequest<CompanyList[]>(`/clients?${query.toString()}`, {
         paginated: true,
-        method: 'GET'
+        method: 'GET',
+        signal: signal
       });
       return response as PaginatedResponse<CompanyList[]>;
     } catch (error) {

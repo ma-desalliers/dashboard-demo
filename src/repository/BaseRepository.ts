@@ -86,6 +86,7 @@ export class BaseRepository {
       body?: any;
       headers?: Record<string, string>;
       paginated?: boolean;
+      signal?: AbortSignal;
     } = {}
   ): Promise<ApiResponse<T> | PaginatedResponse<T>> {
     const { paginated = false, ...restOptions } = options;
@@ -111,6 +112,7 @@ export class BaseRepository {
           'Content-Type': 'application/json',
           ...headers,
         },
+        signal: restOptions.signal,
         ...(body && { body: JSON.stringify(body) }),
       };
 
