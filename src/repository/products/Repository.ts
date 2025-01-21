@@ -1,14 +1,18 @@
 import { BaseRepository } from "@/src/repository/BaseRepository";
-import type { ProductCategory, Product } from "@/src/repository/products/Interfaces";
+import type { ProductCategory, ProductList } from "@/src/repository/products/Interfaces";
 import type { PaginatedResponse } from "@/src/repository/BaseRepository";
 
 export class ProductRepository extends BaseRepository {
-  public async getProducts(companyUuid: string): Promise<Product[]> {
+  public async getProducts(companyUuid: string): Promise<ProductList[]> {
     try {
-      const response = await this.apiRequest<Product[]>(`/clients/${companyUuid}/products`, {
+      const query = new URLSearchParams({
+        'filters[includeCategory]': 'true',
+        'filters[includePageCount]': 'true'
+      });
+      const response = await this.apiRequest<ProductList[]>(`/clients/${companyUuid}/products?${query.toString()}`, {
         method: 'GET'
       });
-      return response.data as Product[];
+      return response.data as ProductList[];
     } catch (error) {
       console.error(error);
       throw error;
