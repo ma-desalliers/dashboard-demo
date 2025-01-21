@@ -83,7 +83,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import MarketingLayout from '@/src/layout/marketing/Marketing.vue'
+import MarketingLayout from '~/src/layouts/marketing/Marketing.vue'
 import ProductList from '@/src/components/demo/campaign/ProductList.vue'
 
 // Import your repositories/stores
