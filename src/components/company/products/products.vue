@@ -8,6 +8,7 @@
       :batch-actions="batchActions"
       :pagination="pagination"
       @update:pagination="$emit('update:pagination', $event)"
+      :hover-buttons="hoverButtonList"
       row-key="uuid"
     >
       <!-- Custom cell templates -->
@@ -168,6 +169,24 @@ const fullColumns = computed(()=>{
   })
 
 })
+
+const hoverButtonList = computed(()=>{
+  return [
+  {
+    icon: 'fa fa-eye',
+    action:  (e:Event, item:any)=>{window.open(item.ctaUrl, '_blank')},
+    color: 'white',
+    textColor:'#333333'
+  },
+  {
+    icon: 'fa fa-pen',
+    action:  ()=>{console.log('sup')},
+    color: 'white',
+    textColor:'#333333'
+  },
+]}) 
+
+
 
 const getScoreColor = (score: number): string => {
   if (score >= 8) return 'positive'

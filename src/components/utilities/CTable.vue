@@ -25,6 +25,7 @@
       flat
       separator="horizontal"
       table-header-class="bg-primary"
+      class="c-table"
       :pagination="pagination"
       @update:pagination="$emit('update:pagination', $event)"
       v-bind="$attrs"
@@ -64,7 +65,12 @@
           <!-- Data Columns -->
           <q-td v-for="col in columns" :key="col.name">
             <slot :name="`cell-${col.name}`" v-bind="{ ...props, value: props.row[col.name] }">
-              <template v-if="col.type === 'icon'">
+              <template v-if="col.type === 'hover'">
+                <hover-button :buttons="hoverButtons" hide-background :item="props.row">
+                  {{ props.row[col.name] }}
+                </hover-button>
+              </template>
+              <template v-else-if="col.type === 'icon'">
                 <q-icon :name="props.row[col.name]" />
               </template>
 
@@ -156,6 +162,9 @@ interface TextColumn extends BaseColumn {
 interface IconColumn extends BaseColumn {
   type: 'icon'
 }
+interface HoverColumn extends BaseColumn {
+  type: 'hover'
+}
 
 interface ButtonColumn extends BaseColumn {
   type: 'button'
@@ -184,7 +193,7 @@ interface ActionsColumn extends BaseColumn {
   }>
 }
 
-type Column = TextColumn | IconColumn | ButtonColumn | BadgeColumn | DateColumn | ActionsColumn
+type Column = TextColumn | IconColumn | ButtonColumn | BadgeColumn | DateColumn | ActionsColumn | HoverColumn
 
 interface BatchAction {
   label: string
@@ -202,8 +211,9 @@ interface Props {
   noDataLabel?: string
   pagination?: QTableProps['pagination']
   rowKey?: string
-  hoverButtons: any[]
-  columnOptions:{columnName:string, options:any[]}[]
+  hoverButtons?: any[] | undefined
+  hoverButtonsField?:string
+  columnOptions?:{columnName:string, options:any[]}[]
 }
 
 //TODO : Implement hover buttons over the "title" column, 
@@ -290,7 +300,9 @@ mainDisplayStore.pushPopup({
   border-bottom: 1px solid #e0e0e0;
 }
 
-.q-table tbody tr:hover {
-  background-color: #f5f5f5;
+.c-table .q-table tbody td:before  {
+  background-color: #fafafa;
 }
+
+
 </style>

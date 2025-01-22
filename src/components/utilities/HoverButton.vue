@@ -3,7 +3,7 @@
     class="c-relative inline-block c-hover-btn"
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"> 
-    <div class="c-hover-text-container row items-center" style="height:100%">
+    <div class="c-hover-text-container row items-center" style="">
       <slot></slot>
     </div>
     <div
@@ -14,10 +14,11 @@
         'c-hide-background': hideBackground
       }"
       ref="buttonContainer">
-      <template v-for="(option, index) in buttons.filter(button => validateCondition(button))" :key="index">
+      <template v-for="(option, index) in buttons?.filter(button => validateCondition(button))" :key="index">
         <template v-if="!option.isDropdown && !option.requireConfirm">
           <q-btn
             round
+            outline
             :size="option.size || 'sm'"
             @click.stop="simpleBtnClick($event, option.action)"
             :color="option.color"
@@ -30,6 +31,7 @@
 
         <template v-if="!option.isDropdown && option.requireConfirm">
           <ConfirmBtn 
+            outline
             @confirm="simpleBtnClick(null, option.action)"
             :icon="option.icon"
             :color="option.color"
@@ -115,7 +117,7 @@ interface DropdownButtonOption extends BaseButtonOption {
 type ButtonOption = RegularButtonOption | DropdownButtonOption
 
 const props = defineProps<{
-  buttons: any[]
+  buttons?: any[]
   item?: any
   showExtra?: Boolean
   hideBackground?: boolean
