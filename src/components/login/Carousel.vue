@@ -1,9 +1,10 @@
 <template>
-  <div class="full-width q-pa-md full-height  " :style="{ perspective: '1000px' }">
+  <div class="full-width q-pa-md full-height" :style="{ perspective: '1000px' }">
     <!-- Carousel Stage -->
     <div
       class="relative full-height full-width flex flex-center"
       :style="{ transformStyle: 'preserve-3d' }"
+      v-touch-swipe.mouse="handleswipe"
     >
       <div
         v-for="(slide, index) in slides"
@@ -44,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from "vue";
+import { ref, watch, onMounted, onBeforeUnmount } from "vue";
 
 interface Slide {
   title: string;
@@ -64,6 +65,8 @@ const emit = defineEmits<{
 
 // State
 const currentIndex = ref(props.modelValue || 0);
+const carouselInterval = ref<number | null>(null);
+const resumeTimeout = ref<number | null>(null);
 
 // Watch for v-model changes
 watch(
@@ -79,6 +82,46 @@ watch(
 watch(currentIndex, (newValue) => {
   emit("update:modelValue", newValue);
 });
+
+const startCarouselInterval = () => {
+  stopCarouselInterval(); // Clear any existing interval
+  carouselInterval.value = window.setInterval(() => rotateCarousel("next"), 2500);
+};
+
+const stopCarouselInterval = () => {
+  if (carouselInterval.value) {
+    window.clearInterval(carouselInterval.value);
+    carouselInterval.value = null;
+  }
+};
+
+const clearResumeTimeout = () => {
+  if (resumeTimeout.value) {
+    window.clearTimeout(resumeTimeout.value);
+    resumeTimeout.value = null;
+  }
+};
+
+const handleswipe = (params: any) => {
+  // Stop the carousel interval
+  stopCarouselInterval();
+  
+  // Clear any existing resume timeout
+  clearResumeTimeout();
+
+  // Handle the swipe
+  if (params.direction === "right") {
+    rotateCarousel("prev");
+  }
+  if (params.direction === "left") {
+    rotateCarousel("next");
+  }
+
+  // Set a new timeout to resume the carousel
+  resumeTimeout.value = window.setTimeout(() => {
+    startCarouselInterval();
+  }, 10000);
+};
 
 // Methods
 const rotateCarousel = (direction: "prev" | "next") => {
@@ -150,12 +193,13 @@ const handleKeyDown = (e: KeyboardEvent) => {
 // Lifecycle hooks
 onMounted(() => {
   window.addEventListener("keydown", handleKeyDown);
-
-  window.setInterval(() => rotateCarousel("next"), 2500);
+  startCarouselInterval();
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener("keydown", handleKeyDown);
+  stopCarouselInterval();
+  clearResumeTimeout();
 });
 </script>
 
@@ -172,11 +216,9 @@ onBeforeUnmount(() => {
   height: 100%;
 }
 
-.carousel-container{
-  height:100%;
-
+.carousel-container {
+  height: 100%;
 }
-
 
 @media (max-width: 1023px) {
   .carousel-slide {
@@ -189,17 +231,13 @@ onBeforeUnmount(() => {
   .carousel-slide {
     width: 175px;
     height: 200px;
-  }.absolute-bottom{
+  }
+  .absolute-bottom {
     padding-bottom: 4px;
   }
-  .carousel-container{
-   
-  }
-
-  .text-h5{
-    font-size:14px;
+  .text-h5 {
+    font-size: 14px;
     line-height: 1.2;
   }
-
 }
 </style>
