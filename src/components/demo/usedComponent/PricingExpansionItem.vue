@@ -7,7 +7,7 @@
   >
     <template v-slot:header>
       <div class="row full-width items-center justify-between q-px-md q-py-sm bg-grey-1">
-        <div class="row items-center q-gutter-x-md">
+        <div class="row col-6 items-center q-gutter-x-md">
           <q-icon
             :name="isExpanded ? 'expand_more' : 'expand_less'"
             size="24px"
@@ -15,69 +15,96 @@
           />
           <div class="row items-center q-gutter-x-sm">
             <div class="row">
-              <q-avatar size="32px" class="avatar-overlap">
-                <img src="https://s3-alpha-sig.figma.com/img/6681/9b78/606aa85d62ea6621249bbab802a3b6c3?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NBqOUgYA7ZAkAdER6TPWwdDcPvLHjijT8wy1n0YyDARJx9TS9mE9qgb5cFGaF836JC8vZA~Wnz4PVrr-jGnH1SOIZGVkMjvtxmyawC94-5vOZZ5Cztq~kHrmQFDuAi8Q36FeHcc8Jxlk~z8IxhPAuUD-Z0USNmNmcT0UD-NTYRD2zb2WUiuiK3x9pfU2FGvG9uk5Pw5budjN37ihuTMZvHhJ~7W~lKu~HPqkuiQFr8-SGs0WNvrLyC8pPPdXEAliDUJFLoEYqxwPbkZ0tgicLDuWmRyv1SBrYcYkv-oSIM4AkID-hSNelyw5OK23EIUMeWjFpM9LkHfz6JrlPu6LaQ__">
-              </q-avatar>
-              <q-avatar size="32px" class="avatar-overlap">
-                <img src="https://s3-alpha-sig.figma.com/img/6681/9b78/606aa85d62ea6621249bbab802a3b6c3?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NBqOUgYA7ZAkAdER6TPWwdDcPvLHjijT8wy1n0YyDARJx9TS9mE9qgb5cFGaF836JC8vZA~Wnz4PVrr-jGnH1SOIZGVkMjvtxmyawC94-5vOZZ5Cztq~kHrmQFDuAi8Q36FeHcc8Jxlk~z8IxhPAuUD-Z0USNmNmcT0UD-NTYRD2zb2WUiuiK3x9pfU2FGvG9uk5Pw5budjN37ihuTMZvHhJ~7W~lKu~HPqkuiQFr8-SGs0WNvrLyC8pPPdXEAliDUJFLoEYqxwPbkZ0tgicLDuWmRyv1SBrYcYkv-oSIM4AkID-hSNelyw5OK23EIUMeWjFpM9LkHfz6JrlPu6LaQ__">
-              </q-avatar>
-              <q-avatar size="32px" class="avatar-overlap">
-                <img src="https://s3-alpha-sig.figma.com/img/6681/9b78/606aa85d62ea6621249bbab802a3b6c3?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NBqOUgYA7ZAkAdER6TPWwdDcPvLHjijT8wy1n0YyDARJx9TS9mE9qgb5cFGaF836JC8vZA~Wnz4PVrr-jGnH1SOIZGVkMjvtxmyawC94-5vOZZ5Cztq~kHrmQFDuAi8Q36FeHcc8Jxlk~z8IxhPAuUD-Z0USNmNmcT0UD-NTYRD2zb2WUiuiK3x9pfU2FGvG9uk5Pw5budjN37ihuTMZvHhJ~7W~lKu~HPqkuiQFr8-SGs0WNvrLyC8pPPdXEAliDUJFLoEYqxwPbkZ0tgicLDuWmRyv1SBrYcYkv-oSIM4AkID-hSNelyw5OK23EIUMeWjFpM9LkHfz6JrlPu6LaQ__">
+              <q-avatar v-for="(member, index) in teamMembers" 
+                       :key="index"
+                       size="32px" 
+                       class="avatar-overlap">
+                <img :src="member.avatar">
               </q-avatar>
             </div>
             <span class="text-weight-medium">{{ teamName }}</span>
           </div>
         </div>
-
+				<div class="row items-center q-gutter-x-lg">
+          <div class="text-right" style="width: 96px">
+            <span class="text-weight-medium">{{totalCredit}}</span>
+          </div>
+        </div>
         <div class="row items-center q-gutter-x-lg">
           <div class="text-right" style="width: 96px">
-            <span class="text-weight-medium">${{ humanCost }}</span>
-          </div>
-          <div class="text-right" style="width: 96px">
-            <span class="text-weight-medium">${{aiCost}}</span>
-          </div>
-          <div class="text-right" style="width: 96px">
-            <q-chip
-              dense
-              class="bg-green-1 text-green-8"
-              text-color="green-8"
-            >
-              -{{ savingsPercentage }}%
-            </q-chip>
+            <span class="text-weight-medium">${{ totalCost.toLocaleString() }}</span>
           </div>
         </div>
       </div>
     </template>
 
-    <div class="q-pa-md">
-      <slot></slot>
+    <div class="q-py-md">
+      <q-table
+        :rows="tableData"
+        :columns="columns"
+        row-key="deliverable"
+        flat
+        bordered
+        :pagination="{ rowsPerPage: 0 }"
+      >
+        <template #body-cell-TaskCost="props">
+          <q-td :props="props">
+            <div class="text-weight-medium">
+              ${{ calculateTaskCost(props.row.credits) }}
+            </div>
+          </q-td>
+        </template>
+      </q-table>
     </div>
   </q-expansion-item>
 </template>
 
 <script setup lang="ts">
-import { mdiHumanGreetingVariant } from '@quasar/extras/mdi-v6';
-import { addImports } from 'nuxt/kit';
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+
+interface TableRow {
+  deliverable: string
+  credits: number
+}
+
+interface TeamMember {
+  avatar: string
+}
+
+interface Props {
+  teamName: string
+  costPerCredit: number
+  tableData: TableRow[]
+  teamMembers?: TeamMember[]
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  teamMembers: () => [{
+    avatar: 'https://s3-alpha-sig.figma.com/img/6681/9b78/606aa85d62ea6621249bbab802a3b6c3?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NBqOUgYA7ZAkAdER6TPWwdDcPvLHjijT8wy1n0YyDARJx9TS9mE9qgb5cFGaF836JC8vZA~Wnz4PVrr-jGnH1SOIZGVkMjvtxmyawC94-5vOZZ5Cztq~kHrmQFDuAi8Q36FeHcc8Jxlk~z8IxhPAuUD-Z0USNmNmcT0UD-NTYRD2zb2WUiuiK3x9pfU2FGvG9uk5Pw5budjN37ihuTMZvHhJ~7W~lKu~HPqkuiQFr8-SGs0WNvrLyC8pPPdXEAliDUJFLoEYqxwPbkZ0tgicLDuWmRyv1SBrYcYkv-oSIM4AkID-hSNelyw5OK23EIUMeWjFpM9LkHfz6JrlPu6LaQ__'
+  }]
+})
 
 const isExpanded = ref(true)
 
-const props = defineProps<{
-  teamName: string,
-  aiCost: number,
-  humanCostRatio?:number
-}>()
+const columns = [
+  { name: 'deliverable', label: 'Deliverable', field: 'deliverable', style: 'width: 575px', align: 'left' },
+  { name: 'credits', label: 'Credits', field: 'credits', align: 'left' },
+  { name: 'TaskCost', label: 'Task Costs', field: 'credits', align: 'right'}
+]
 
-const humanCost = computed(()=>{
-  if(!props.aiCost) return 0
+const calculateTaskCost = (credits: number) => {
+  return (credits * props.costPerCredit).toLocaleString(undefined, {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  })
+}
 
-  return props.aiCost * (props.humanCostRatio ||  3.8)
+const totalCost = computed(() => {
+  return props.tableData.reduce((sum, row) => sum + (row.credits * props.costPerCredit), 0)
 })
 
-const savingsPercentage = computed(() => {
-  if (humanCost.value === 0) return 0
-  // Calculate how much less the AI cost is compared to human cost
-  return Math.round(((humanCost.value - props.aiCost) / humanCost.value) * 100)
+const totalCredit = computed(() => {
+  return props.tableData.reduce((sum, row) => sum + row.credits, 0)
 })
 </script>
 
