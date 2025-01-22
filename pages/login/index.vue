@@ -1,6 +1,6 @@
 
 <template>
-  <div class="row full-height full-width c-absolute">
+  <div class="row full-height full-width c-absolute" :style="`--q-primary:${primaryColor}`">
     <!-- Left side - Carousel -->
     <div class="col-12 col-md-7 bg-primary c-relative carousel-container" style="overflow:hidden">
       <Carousel v-model="slide" :slides="slides"></Carousel>
@@ -10,7 +10,7 @@
     <div class="col-12 col-md-5 flex flex-center">
       <div class="q-pa-xl" style="width: 400px;">
         <div class="text-center q-mb-xl">
-          <img src="/public/logo.png.jpg" alt="Logo" style="max-width: 150px;">
+          <img :src=companyLogo alt="Logo" style="max-width: 150px;">
         </div>
 
         <div class="text-h4 text-weight-bold q-mb-md text-center">Welcome Back</div>
@@ -81,24 +81,35 @@ import { useAuthStore } from '@/src/stores/authStore';
 import Carousel from '~/src/components/login/Carousel.vue';
 //TODO: set company color in local storage on login
 
+interface Slide {
+  id: number;
+  title: string;
+  image: string;
+}
+
 definePageMeta({
   middleware: 'guest',
 });
 
 const $q = useQuasar();
 const router = useRouter();
+const route = useRoute();
 const store = useAuthStore();
 const config = useRuntimeConfig();
 
 // Carousel datap
 const slide = ref(0)
-const slides = [
-        { id: 1, title: "5 Essential Factors to Consider When Setting Up Blasting Equipment", image: "http://192.168.0.113:3001/_nuxt/public/images/image1.jpeg" },
-        { id: 2, title: "6 Common Mistakes to Avoid When Calibrating Blasting Equipment", image: "http://192.168.0.113:3001/_nuxt/public/images/image2.jpeg" },
-        { id: 3, title: "7 Best Practices for Maintaining Optimal Blasting Equipment Performance", image: "http://192.168.0.113:3001/_nuxt/public/images/image3.jpeg" },
-        { id: 4, title: "8 Tools You Need for Precise Blasting Equipment Calibration", image: "http://192.168.0.113:3001/_nuxt/public/images/image4.jpeg" },
-        { id: 5, title: "9 Steps to Achieve Consistent Results in Blasting Operations", image: "http://192.168.0.113:3001/_nuxt/public/images/image5.jpeg" },
-      ]
+const defaultSlides: Slide[] = [
+  { id: 1, title: "5 Essential Factors to Consider When Setting Up Blasting Equipment", image: "http://192.168.0.113:3001/_nuxt/public/images/image1.jpeg" },
+  { id: 2, title: "6 Common Mistakes to Avoid When Calibrating Blasting Equipment", image: "http://192.168.0.113:3001/_nuxt/public/images/image2.jpeg" },
+  { id: 3, title: "7 Best Practices for Maintaining Optimal Blasting Equipment Performance", image: "http://192.168.0.113:3001/_nuxt/public/images/image3.jpeg" },
+  { id: 4, title: "8 Tools You Need for Precise Blasting Equipment Calibration", image: "http://192.168.0.113:3001/_nuxt/public/images/image4.jpeg" },
+  { id: 5, title: "9 Steps to Achieve Consistent Results in Blasting Operations", image: "http://192.168.0.113:3001/_nuxt/public/images/image5.jpeg" },
+];
+const slides = ref<Slide[]>([]);
+const companyLogo = ref('/public/logo.png.jpg');
+const primaryColor = ref('#55B948');
+
 
 // Form data
 const email = ref('')
@@ -169,6 +180,40 @@ const onSubmit = async () => {
     loading.value = false
   }
 }
+
+onMounted(async () => {
+  const token = route.query.token as string;
+  try {
+    if (token == null) throw new Error('Token not provided');
+    const base64UrlPayload = token.split('.')[1];
+    const base64Payload = base64UrlPayload.replace('-', '+').replace('_', '/');
+    const decodedToken = JSON.parse(atob(base64Payload));
+
+    companyLogo.value = decodedToken.companyLogo;
+    primaryColor.value = decodedToken.primaryColor;
+    const response = await fetch(`${config.public.apiBase}/limited/signup?token=${token}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      credentials: 'include'
+    });
+    if (!response.ok) throw new Error('Invalid token');
+    const jsonResponse: any = await response.json();
+
+    let index = 1;
+    slides.value = jsonResponse.data.posts.map((item: any) => ({
+      id: index++,
+      title: item.title,
+      image: item.headerImage
+    }));
+    companyLogo.value = jsonResponse.data.companyLogo;
+    primaryColor.value = jsonResponse.data.primaryColor;
+  } catch {
+    slides.value = defaultSlides;
+    companyLogo.value = '/public/logo.png.jpg';
+  }
+});
 </script>
 
 <style scoped>
