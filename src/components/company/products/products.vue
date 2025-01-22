@@ -1,24 +1,11 @@
 <template>
   <div>
-    <CTable
-      v-model="selectedProducts"
-      :columns="fullColumns"
-      :rows="products"
-      :loading="loading"
-      :batch-actions="batchActions"
-      :pagination="pagination"
-      @update:pagination="$emit('update:pagination', $event)"
-      :hover-buttons="hoverButtonList"
-      row-key="uuid"
-    >
+    <CTable v-model="selectedProducts" :columns="fullColumns" :rows="products" :loading="loading"
+      :batch-actions="batchActions" :pagination="pagination" @update:pagination="$emit('update:pagination', $event)"
+      :hover-buttons="hoverButtonList" row-key="uuid">
       <!-- Custom cell templates -->
       <template #cell-image="props">
-        <q-img
-          :src="props.value"
-          :ratio="1"
-          class="rounded-borders"
-          style="height: 50px; width: 50px"
-        >
+        <q-img :src="props.value" :ratio="1" class="rounded-borders" style="height: 50px; width: 50px">
           <template #error>
             <div class="absolute-full flex flex-center bg-grey-3">
               <q-icon name="image" size="2em" color="grey-7" />
@@ -37,22 +24,15 @@
       </template>-->
 
       <template #cell-subcategory="props">
-        <q-chip
-          dense
-          color="secondary"
-          text-color="white"
-          :label="props.row.subcategory?.name || 'N/A'"
-        />
+        <div @click="getCurrentProductSubCategory(props.row.category?.uuid)">
+          <StatusPopup :current-item="props.row.subcategory" :options="availableSubCategory"
+            @update-value="(value) => updateSubCategory({ item: props.row, value })"></StatusPopup>
+        </div>
       </template>
 
       <template #cell-score="props">
         <div v-if="props.value !== null">
-          <q-chip
-            square
-            dense
-            :color="getScoreColor(props.value)"
-            text-color="white"
-          >
+          <q-chip square dense :color="getScoreColor(props.value)" text-color="white">
             {{ props.value }}
           </q-chip>
         </div>
@@ -60,12 +40,7 @@
       </template>
 
       <template #cell-pageCount="props">
-        <q-chip
-          outline
-          dense
-          color="grey"
-          class="q-px-sm"
-        >
+        <q-chip outline dense color="grey" class="q-px-sm">
           {{ props.value }}
         </q-chip>
       </template>
@@ -78,6 +53,7 @@ import { ref, computed } from 'vue'
 import columns from '~/src/asset/tablesColumn/products'
 import { useCompanyStore } from '~/src/stores/companyStore';
 import { useProductStore } from '~/src/stores/productStore'
+import StatusPopup from '../../globalPopup/popup/StatusPopup.vue';
 
 interface Category {
   uuid: string
@@ -124,10 +100,11 @@ const selectedProducts = ref<Product[]>([])
 
 const companyStore = useCompanyStore();
 const productStore = useProductStore();
+const availableSubCategory = ref<any[]>([])
 
 const batchActions = computed(() => {
   const actions = []
-  
+
   if (props.onBatchDelete) {
     actions.push({
       label: 'Delete Selected',
@@ -136,13 +113,14 @@ const batchActions = computed(() => {
       handler: (selected: Product[]) => props.onBatchDelete?.(selected)
     })
   }
-  
+
   return actions
 })
 
 const products = computed(() => productStore.products);
 const company = computed(() => companyStore.theCompany);
-const categories = computed(()=> productStore.categories);
+const categories = computed(() => productStore.categories);
+const subCategories = computed(() => categories.value.filter(category => !category?.parentUuid));
 /*const productRows = computed(()=>{
   return products.value.map(product=>{
     return{
@@ -151,38 +129,36 @@ const categories = computed(()=> productStore.categories);
     }
   })
 })*/
-const fullColumns = computed(()=>{
-  return columns.map((column)=>{
-    if(column.name == 'category'){
+const fullColumns = computed(() => {
+  return columns.map((column) => {
+    if (column.name == 'category') {
       return {
         ...column,
-        options: categories.value.map((category) => {return {value: category.uuid, label: category.name}}),
-        updateFn:updateCategory
+        options: categories.value.map((category) => { return { value: category.uuid, label: category.name } }),
+        updateFn: updateCategory
       }
     }
 
     return column
   })
-
 })
 
-const hoverButtonList = computed(()=>{
+const hoverButtonList = computed(() => {
   return [
-  {
-    icon: 'fa fa-eye',
-    action:  (e:Event, item:any)=>{window.open(item.ctaUrl, '_blank')},
-    color: 'white',
-    textColor:'#333333'
-  },
-  {
-    icon: 'fa fa-pen',
-    action:  ()=>{console.log('sup')},
-    color: 'white',
-    textColor:'#333333'
-  },
-]}) 
-
-
+    {
+      icon: 'fa fa-eye',
+      action: (e: Event, item: any) => { window.open(item.ctaUrl, '_blank') },
+      color: 'white',
+      textColor: '#333333'
+    },
+    {
+      icon: 'fa fa-pen',
+      action: () => { console.log('sup') },
+      color: 'white',
+      textColor: '#333333'
+    },
+  ]
+})
 
 const getScoreColor = (score: number): string => {
   if (score >= 8) return 'positive'
@@ -194,10 +170,22 @@ const getProducts = async () => {
   await productStore.init(companyStore.theCompany.uuid);
 }
 
-const updateCategory = (params:{item:any, value: any}) =>{
-  console.log('updating Category' , params.item, params.value)
-  params.item.category = categories.value.find((category)=> category.uuid == params.value.value)
+const getCurrentProductSubCategory = (categoryUuid: string) => {
+  if (!categoryUuid) {
+    availableSubCategory.value = []
+    return
+  }
+  availableSubCategory.value = subCategories.value.filter(sub => sub.parentUuid == categoryUuid).map(sub => { return { label: sub.name, value: sub.uuid } })
+}
 
+const updateCategory = (params: { item: any, value: any }) => {
+  console.log('updating Category', params.item, params.value)
+  params.item.category = categories.value.find((category) => category.uuid == params.value)
+}
+
+const updateSubCategory = (params: { item: any, value: any }) => {
+  console.log('updating Category', params.item, params.value)
+  params.item.category = categories.value.find((category) => category.uuid == params.value)
 }
 
 onMounted(async () => {

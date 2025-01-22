@@ -10,7 +10,7 @@ const columns = [
   {
     name: 'category',
     label: 'Category',
-    field: (row:any) => row.category?.name,
+    field: (row:any) => row.category,
     align: 'left' as const,
     type:'badge',
     color:'primary',

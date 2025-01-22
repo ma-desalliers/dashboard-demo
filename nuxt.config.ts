@@ -34,6 +34,10 @@ export default defineNuxtConfig({
       {
         path: 'src/components/utilities',
         global: true
+      },
+      {
+        path: 'src/components/globalPopup/popup',
+        global: true
       }
     ]
   },

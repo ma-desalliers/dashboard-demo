@@ -30,9 +30,9 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { useRouter } from 'vue-router';
 import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
 import { useCompanyStore } from '@/src/stores/companyStore';
+import ClientHeader from '~/src/components/shared/ClientHeader.vue';
 
 const isVisible = ref(true)
 const companyStore = useCompanyStore();

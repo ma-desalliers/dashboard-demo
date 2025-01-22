@@ -85,15 +85,7 @@
               </template>
 
               <template v-else-if="col.type === 'badge'">
-                <q-chip
-                  :color="typeof col.badgeColor === 'function' ? col.badgeColor(props.row[col.name]) : 'primary'"
-                  text-color="white"
-                   :label="getFieldValue(props.row, col)"
-                  clickable
-                  @click="onBadgeClick(props.row, col, $event)"
-                  size="md"
-                  square
-                />
+                <StatusPopup :current-item="getFieldValue(props.row, col)"  :options="col.options" @update-value="(value) => col.updateFn({item:props.row, value:value})"></StatusPopup>
               </template>
 
               <template v-else-if="col.type === 'date'">

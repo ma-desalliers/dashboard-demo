@@ -7,7 +7,7 @@
     <div class="c-main-content" :class="{'header-openned' : headerState}">
       <div class="row no-wrap">
         <!-- Left Column -->
-        <LeftColumn class="c-left-column ":class="{'isOpen': showMenu}" />
+        <Sidebar class="c-left-column ":class="{'isOpen': showMenu}" />
         <!-- Right Content Area -->
         <div class="c-right-column">
           <ContextMenu></ContextMenu>
@@ -20,7 +20,7 @@
 
 <script setup lang="ts">
 import Header from './menu/Header.vue'
-import LeftColumn from './menu/LeftColumn.vue'
+import Sidebar from './menu/Sidebar.vue'
 
 
 import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';

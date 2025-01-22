@@ -93,6 +93,7 @@
 import { useNotificationStore } from "@/src/stores/notificationStore";
 import { useMainDisplayStore } from "@/src/stores/mainDisplayStore";
 import { useCompanyStore } from "~/src/stores/companyStore";
+import ClientHeader from "~/src/components/shared/ClientHeader.vue";
 const route = useRoute();
 const router = useRouter();
 const notificationStore = useNotificationStore();
