@@ -3,14 +3,15 @@ import type { Product, ProductCategory, ProductList } from "@/src/repository/pro
 import type { PaginatedResponse } from "@/src/repository/BaseRepository";
 
 export class ProductRepository extends BaseRepository {
-  public async list(companyUuid: string): Promise<ProductList[]> {
+  public async list(companyUuid: string, signal: AbortSignal): Promise<ProductList[]> {
     try {
       const query = new URLSearchParams({
         'filters[includeCategory]': 'true',
         'filters[includePageCount]': 'true'
       });
       const response = await this.apiRequest<ProductList[]>(`/clients/${companyUuid}/products?${query.toString()}`, {
-        method: 'GET'
+        method: 'GET',
+        signal: signal
       });
       return response.data as ProductList[];
     } catch (error) {
@@ -69,7 +70,7 @@ export class ProductRepository extends BaseRepository {
 }
 
 export class CategoryRepository extends BaseRepository {
-  public async list(companyUuid: string, page: number = 1, limit: number = 100): Promise<PaginatedResponse<ProductCategory[]>> {
+  public async list(companyUuid: string, signal: AbortSignal, page: number = 1, limit: number = 100): Promise<PaginatedResponse<ProductCategory[]>> {
     try {
       const query = new URLSearchParams({
         page: page.toString(),
@@ -79,6 +80,7 @@ export class CategoryRepository extends BaseRepository {
       const response = await this.apiRequest<ProductCategory[]>(`/categories?${query.toString()}`, {
         paginated: true,
         method: 'GET',
+        signal: signal
       });
 
       return response as PaginatedResponse<ProductCategory[]>;

@@ -19,4 +19,8 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
       return navigateTo(`/404`);
     }
   }
+
+  if (to.path === `/company/${companyUuid}`) {
+    return navigateTo(`/company/${companyUuid}/products`);
+  }
 });

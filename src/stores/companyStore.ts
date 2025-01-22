@@ -12,7 +12,8 @@ export const useCompanyStore = defineStore('useCompanyStore', {
       totalItems: 0,
       itemsPerPage: 10
     } as PaginationMeta,
-    loading: false
+    loading: false,
+    currentRequest: null as AbortController | null
   }),
   getters: {
     getCompany: (state) => (companyUuid: string) => state.companies.find((company) => company.uuid === companyUuid),
@@ -22,9 +23,13 @@ export const useCompanyStore = defineStore('useCompanyStore', {
     async init(page: number = 1, limit: number = 10) {
       if (this.companies.length > 0) return;
       this.loading = true;
+      this.abortCurrentRequest();
+
+      const controller = new AbortController();
+      this.currentRequest = controller;
       try {
         const repository = new CompanyRepository();
-        const response = await repository.list(page, limit);
+        const response = await repository.list(page, limit, controller.signal);
 
         this.companies = response.data;
         this.pagination = response.pagination;
@@ -33,6 +38,7 @@ export const useCompanyStore = defineStore('useCompanyStore', {
         throw error;
       } finally {
         this.loading = false;
+        this.currentRequest = null;
       }
     },
     async current(companyUuid: string) {
@@ -40,6 +46,11 @@ export const useCompanyStore = defineStore('useCompanyStore', {
       const company = this.getCompany(companyUuid);
       if (!company) throw new Error('Company not found');
       this.theCompany = company;
+    },
+    abortCurrentRequest() {
+      if (this.currentRequest == null) return;
+      this.currentRequest.abort();
+      this.currentRequest = null;
     }
   }
 });

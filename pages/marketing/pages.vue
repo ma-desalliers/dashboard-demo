@@ -59,7 +59,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import MarketingLayout from '@/src/layout/marketing/Marketing.vue'
+import MarketingLayout from '~/src/layouts/marketing/Marketing.vue'
 import PageList from '@/src/components/demo/campaign/PageList.vue'
 import SinglePageDetail from '@/src/components/demo/campaign/SinglePageDetail.vue'
 

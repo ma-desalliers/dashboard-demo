@@ -95,7 +95,7 @@
 import { ref, provide } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useAudienceStore } from '~/src/stores/audienceStore'
-import MarketingLayout from '@/src/layout/marketing/Marketing.vue'
+import MarketingLayout from '~/src/layouts/marketing/Marketing.vue'
 import AudienceList from '@/src/components/demo/campaign/audience/AudienceList.vue'
 import AudiencePages from '@/src/components/demo/campaign/audience/AudiencePages.vue'
 

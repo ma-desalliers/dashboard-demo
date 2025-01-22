@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'dashboard',
-      port: '3001',
+      port: process.env.PORT,
       exec_mode: 'cluster',
       instances: '1',
       script: './.output/server/index.mjs',
