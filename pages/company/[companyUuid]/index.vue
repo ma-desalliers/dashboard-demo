@@ -5,5 +5,5 @@
 <script setup>
 definePageMeta({
   middleware: ['auth', 'company']
-})
+});
 </script>
