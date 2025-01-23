@@ -68,19 +68,15 @@
 					</div>
 				</q-card-section>
 			</q-card>
-
-
-
-
 		</div>
 
 		<div class="col-7 q-col-gutter-d">
-			<q-card flat bordered>
+	<!--	<q-card flat bordered>
 				<q-card-section class="row">
 					<div id="chart" class="col-6"></div>
 					<div id="chart2" class="col-6"></div>
 				</q-card-section>
-			</q-card>
+			</q-card>-->
 
 			<!-- Second Card -->
 			<q-card flat bordered>
@@ -109,43 +105,180 @@ import ApexCharts from 'apexcharts'
 import PricingExpansionItem from './usedComponent/PricingExpansionItem.vue';
 import company from '~/src/repository/client'; 
 
-interface Task {
-	name: string
-	department: string
-	team: string
-	creditsPerTask: number
-	tasks: string[]
-}
-
-
-const teamMembers = [
-{ 
-	name: 'John Doe', 
-	avatar: 'https://s3-alpha-sig.figma.com/img/6681/9b78/606aa85d62ea6621249bbab802a3b6c3?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NBqOUgYA7ZAkAdER6TPWwdDcPvLHjijT8wy1n0YyDARJx9TS9mE9qgb5cFGaF836JC8vZA~Wnz4PVrr-jGnH1SOIZGVkMjvtxmyawC94-5vOZZ5Cztq~kHrmQFDuAi8Q36FeHcc8Jxlk~z8IxhPAuUD-Z0USNmNmcT0UD-NTYRD2zb2WUiuiK3x9pfU2FGvG9uk5Pw5budjN37ihuTMZvHhJ~7W~lKu~HPqkuiQFr8-SGs0WNvrLyC8pPPdXEAliDUJFLoEYqxwPbkZ0tgicLDuWmRyv1SBrYcYkv-oSIM4AkID-hSNelyw5OK23EIUMeWjFpM9LkHfz6JrlPu6LaQ__' 
-},
-{ 
-	name: 'Jane Smith', 
-	avatar: 'https://s3-alpha-sig.figma.com/img/ca22/0be1/0900c3512764d10cb323649cee99e036?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pUpWY0WYxPxqt1s9sRy80Ha4lCBY8erHWK26t9eQGcS~7Dhk21DpQB-~nlNniYhdzCoRSzRGZV0PkFkz8-yMZV1sP3JhzTo0wZp-ZFllJzhk4so1IGxVq1wLju3l5wZbUdw7ZA8QBvqJe0sc8BG56dbmL4-k17XMQTp6lbU6wwwGQ~dVypQb6NcFtEz0N4lFoR1dWFquJ90iSHssiiDJ3OVtvWTCkJrue1cdkL-upf7Jjr34tNMJsiNuWgsSCOqpSMXJIikg-ZARR1NoSoC494hSKqZijVQxORfBmdl3WbKNhhgXVbN2BE~jtEi4onuU-cQOoVhuXuHHaPq6D5uXKQ__' 
-},
-{ 
-	name: 'John Smith', 
-	avatar: 'https://s3-alpha-sig.figma.com/img/cc65/eef8/a13492f5ddf5a8d78627e4b69abe8d9a?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iS~F9tOgeJX75do25JMrjg7dSs8XJR8WRWPfpxV4wFFFkqWsdr2GSDx75P1Oh0OGru~o5qq5EeSCF9r-J1uOGSh~Lxf-aEY2q~XaBkX6WfIbaTFcOGt51FTIPPrij78zflDaytPEI4S3aXWFuMKW8vXalPVevhHVFxfWIG9J99gmtrPPuHMVnMDi7k2bJm-qpNm7LVzDnqk88R7Ae9cVHFiXxe5jV9FAFeU5leF4LZ54OiWg~xZR4wQGeP-Y17jSKwLqE6akGFIcSAt6BChGEoE-n8Oua6FOxOZMQ0PzfjH-I6OdGMTGPyVRTZjYrqHHOv~vwSvMbXbms-gkqrx00w__' 
-}
-]
-
-const columns = [
-{ name: 'deliverable', label: 'Deliverable', field: 'deliverable', style: 'width: 575px', align: 'left' },
-{ name: 'credits', label: 'Credits', field: 'credits', align: 'left' },
-{ name: 'TaskCost', label: 'Task Costs', field: 'credits', align: 'left'}
-]
 
 const teams = [{
-	name: 'Data Team', table: [
-	{ deliverable: 'Data suggestions', credits: 2000 },
-	{ deliverable: 'Data scraping', credits: 1000 },
-	{ deliverable: 'Market suggestion', credits: 1000 },
-	{ deliverable: 'JTBD suggestions', credits: 1000 }
-	]}, { name : 'Content Team', table: [
+	name: 'marketing', table:  [
+      {
+        "Name": "Service page",
+        "AgentName": "Laura",
+        "AgentRole": "Content creator",
+        "AgentTeam": "Marketing",
+        "Type": "Page",
+        "DurationMinutes": 480,
+        "HumanCost": "800 $",
+        "AICredits": 1000
+      },
+      {
+        "Name": "Blog category",
+        "AgentName": "Laura",
+        "AgentRole": "Content creator",
+        "AgentTeam": "Marketing",
+        "Type": "Page",
+        "DurationMinutes": 480,
+        "HumanCost": "800 $",
+        "AICredits": 1000
+      },
+      {
+        "Name": "Product Hub",
+        "AgentName": "Laura",
+        "AgentRole": "Content creator",
+        "AgentTeam": "Marketing",
+        "Type": "Page",
+        "DurationMinutes": 480,
+        "HumanCost": "800 $",
+        "AICredits": 1000
+      },
+      {
+        "Name": "Blog Hub",
+        "AgentName": "Laura",
+        "AgentRole": "Content creator",
+        "AgentTeam": "Marketing",
+        "Type": "Page",
+        "DurationMinutes": 480,
+        "HumanCost": "800 $",
+        "AICredits": 1000
+      },
+      {
+        "Name": "Blog post",
+        "AgentName": "Laura",
+        "AgentRole": "Content creator",
+        "AgentTeam": "Marketing",
+        "Type": "Page",
+        "DurationMinutes": 480,
+        "HumanCost": "1080 $",
+        "AICredits": 1500
+      },
+      {
+        "Name": "Calculator",
+        "AgentName": "Laura",
+        "AgentRole": "Content creator",
+        "AgentTeam": "Marketing",
+        "Type": "Lead Magnet",
+        "DurationMinutes": 1920,
+        "HumanCost": "3200 $",
+        "AICredits": 5000
+      },
+      {
+        "Name": "Ebook",
+        "AgentName": "Laura",
+        "AgentRole": "Content creator",
+        "AgentTeam": "Marketing",
+        "Type": "Lead Magnet",
+        "DurationMinutes": 480,
+        "HumanCost": "800 $",
+        "AICredits": 1000
+      },
+      {
+        "Name": "Checklist",
+        "AgentName": "Laura",
+        "AgentRole": "Content creator",
+        "AgentTeam": "Marketing",
+        "Type": "Lead Magnet",
+        "DurationMinutes": 480,
+        "HumanCost": "800 $",
+        "AICredits": 1000
+      },
+      {
+        "Name": "Newsletter",
+        "AgentName": "Laura",
+        "AgentRole": "Content creator",
+        "AgentTeam": "Marketing",
+        "Type": "Email",
+        "DurationMinutes": 240,
+        "HumanCost": "400 $",
+        "AICredits": 250
+      },
+      {
+        "Name": "Social post",
+        "AgentName": "Laura",
+        "AgentRole": "Content creator",
+        "AgentTeam": "Marketing",
+        "Type": "Post",
+        "DurationMinutes": 120,
+        "HumanCost": "200 $",
+        "AICredits": 100
+      },
+      {
+        "Name": "Cold outreach",
+        "AgentName": "Noah",
+        "AgentRole": "SDR",
+        "AgentTeam": "Sales",
+        "Type": "Email",
+        "DurationMinutes": 60,
+        "HumanCost": "100 $",
+        "AICredits": 20
+      },
+      {
+        "Name": "Smart reply",
+        "AgentName": "Noah",
+        "AgentRole": "SDR",
+        "AgentTeam": "Sales",
+        "Type": "Email",
+        "DurationMinutes": 15,
+        "HumanCost": "25 $",
+        "AICredits": 5
+      },
+      {
+        "Name": "Qualification call",
+        "AgentName": "Noah",
+        "AgentRole": "SDR",
+        "AgentTeam": "Sales",
+        "Type": "Call",
+        "DurationMinutes": 30,
+        "HumanCost": "50 $",
+        "AICredits": 100
+      },
+      {
+        "Name": "Follow-up call",
+        "AgentName": "Noah",
+        "AgentRole": "SDR",
+        "AgentTeam": "Sales",
+        "Type": "Call",
+        "DurationMinutes": 30,
+        "HumanCost": "50 $",
+        "AICredits": 100
+      },
+      {
+        "Name": "Email response",
+        "AgentName": "Stella",
+        "AgentRole": "Customer Success (CS)",
+        "AgentTeam": "Support",
+        "Type": "Email",
+        "DurationMinutes": 15,
+        "HumanCost": "25 $",
+        "AICredits": 5
+      },
+      {
+        "Name": "Email follow-up",
+        "AgentName": "Stella",
+        "AgentRole": "Customer Success (CS)",
+        "AgentTeam": "Support",
+        "Type": "Email",
+        "DurationMinutes": 15,
+        "HumanCost": "25 $",
+        "AICredits": 5
+      },
+      {
+        "Name": "Follow-up call",
+        "AgentName": "Stella",
+        "AgentRole": "Customer Success (CS)",
+        "AgentTeam": "Support",
+        "Type": "Call",
+        "DurationMinutes": 50,
+        "HumanCost": "83 $",
+        "AICredits": 250
+      }
+    ]}]/*, { name : 'Content Team', table: [
 	{ deliverable: 'Branded Image', credits: 250 },
 	{ deliverable: 'Blog post suggestions', credits: 1000 },
 	{ deliverable: 'Blog Post', credits: 2500 }
@@ -167,7 +300,7 @@ const teams = [{
 	{ deliverable: 'Social media calendar', credits: 1000 },
 	{ deliverable: 'Social media schedules', credits: 2500 }
 	]}
-	]
+	]*/
 	
 	const revenue = ref(1000000)
 	const investment = ref(100000)
@@ -340,8 +473,8 @@ const teams = [{
 			}
 		};
 		// Initialize the cost chart
-		costChart.value = new ApexCharts(document.querySelector("#chart"), costChartOptions);
-		costChart.value.render();
+		/*costChart.value = new ApexCharts(document.querySelector("#chart"), costChartOptions);
+		costChart.value.render();*/
 		
 	})
 	

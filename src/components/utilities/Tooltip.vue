@@ -25,6 +25,7 @@
             
             <div class="text-h6 q-mb-sm c-text-dark">{{ title }}</div>
             <div class="text-body2 c-text-dark">{{ description }}</div>
+            <slot/>
             
             <template v-if="button">
               <div class="q-mt-md">
@@ -42,7 +43,7 @@
   <script setup lang="ts">
   interface Props {
     title: string;
-    description: string;
+    description?: string;
     image?: string | null;
     button?: string | null;
   }
