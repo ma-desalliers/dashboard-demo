@@ -58,7 +58,7 @@
           <div class="row q-mb-lg">
             <div class="col-10 col-sm-5  q-pr-sm" :class="{'c-border-right': !isMobile}">
               <div class="q-pb-sm">
-                  <img src="/public/seo-score.png"/>
+                  <img src="/seo-score.png"/>
                 </div>
               <div class="country-list">
                 <div v-if="pageData?.primaryKeyword?.countryRepartition[0]" class="row items-center q-mb-sm" style="min-width: 195px;">

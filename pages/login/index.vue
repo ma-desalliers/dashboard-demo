@@ -100,14 +100,14 @@ const config = useRuntimeConfig();
 // Carousel datap
 const slide = ref(0)
 const defaultSlides: Slide[] = [
-  { id: 1, title: "5 Essential Factors to Consider When Setting Up Blasting Equipment", image: "http://192.168.0.113:3001/_nuxt/public/images/image1.jpeg" },
-  { id: 2, title: "6 Common Mistakes to Avoid When Calibrating Blasting Equipment", image: "http://192.168.0.113:3001/_nuxt/public/images/image2.jpeg" },
-  { id: 3, title: "7 Best Practices for Maintaining Optimal Blasting Equipment Performance", image: "http://192.168.0.113:3001/_nuxt/public/images/image3.jpeg" },
-  { id: 4, title: "8 Tools You Need for Precise Blasting Equipment Calibration", image: "http://192.168.0.113:3001/_nuxt/public/images/image4.jpeg" },
-  { id: 5, title: "9 Steps to Achieve Consistent Results in Blasting Operations", image: "http://192.168.0.113:3001/_nuxt/public/images/image5.jpeg" },
+  { id: 1, title: "5 Essential Factors to Consider When Setting Up Blasting Equipment", image: "/images/image1.jpeg" },
+  { id: 2, title: "6 Common Mistakes to Avoid When Calibrating Blasting Equipment", image: "/images/image2.jpeg" },
+  { id: 3, title: "7 Best Practices for Maintaining Optimal Blasting Equipment Performance", image: "/images/image3.jpeg" },
+  { id: 4, title: "8 Tools You Need for Precise Blasting Equipment Calibration", image: "/images/image4.jpeg" },
+  { id: 5, title: "9 Steps to Achieve Consistent Results in Blasting Operations", image: "/images/image5.jpeg" },
 ];
 const slides = ref<Slide[]>([]);
-const companyLogo = ref('/public/logo.png.jpg');
+const companyLogo = ref('/logo.png.jpg');
 const primaryColor = ref('#55B948');
 
 
@@ -211,7 +211,7 @@ onMounted(async () => {
     primaryColor.value = jsonResponse.data.primaryColor;
   } catch {
     slides.value = defaultSlides;
-    companyLogo.value = '/public/logo.png.jpg';
+    companyLogo.value = '/logo.png.jpg';
   }
 });
 </script>
