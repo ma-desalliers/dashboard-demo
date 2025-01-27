@@ -1,20 +1,28 @@
 <template>
-  <BaseLayout :style="`--q-primary:${company.primaryColor}`">
+  <component :is="currentLayout">
     <NuxtPage />
-    <GlobalPopup></GlobalPopup>
-  </BaseLayout>
+    <GlobalPopup />
+  </component>
 </template>
 
-<script setup>    
+<script setup>
 import { useQuasar } from 'quasar'
 import { useNotificationStore } from '@/src/stores/notificationStore';
-import { onMounted, onBeforeUnmount } from 'vue';
+import { onMounted, onBeforeUnmount, computed } from 'vue';
+import { useRoute } from 'vue-router';
 import 'perfect-scrollbar/css/perfect-scrollbar.css'
 import BaseLayout from '@/src/layout/BaseLayout.vue';
+import CalculatorLayout from '@/src/layout/CalculatorLayout.vue';
 import company from './src/repository/client';
 import { useMainDisplayStore } from './src/stores/mainDisplayStore';
+
+const route = useRoute();
 const $q = useQuasar();
 const mainDisplayStore = useMainDisplayStore();
+
+const currentLayout = computed(() => {
+  return route.path.startsWith('/calculator') ? CalculatorLayout : BaseLayout;
+});
 
 const notifyUser = (message) => {
   $q.notify({
@@ -22,28 +30,21 @@ const notifyUser = (message) => {
   });
 }
 
-// Function to check and update mobile state
 const checkMobileState = () => {
   mainDisplayStore.setMobile(window.innerWidth < 1000);
 }
 
-// Handle window resize
 const handleResize = () => {
   checkMobileState();
 }
 
 onMounted(() => {
   const notificationStore = useNotificationStore();
-  
-  // Initial check for mobile state
   checkMobileState();
-  
-  // Add resize event listener
   window.addEventListener('resize', handleResize);
 });
 
 onBeforeUnmount(() => {
-  // Clean up event listener
   window.removeEventListener('resize', handleResize);
 });
 </script>

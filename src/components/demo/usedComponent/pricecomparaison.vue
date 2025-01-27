@@ -2,7 +2,7 @@ Here's the complete updated component code:
 
 ```vue
 <template>
-  <q-card class="full-width q-pa-md">
+  <q-card class="full-width q-pa-none" flat>
     <q-card-section class="q-px-none">
       <div class="text-h5 font-weight-bold">Compare Our Plan Families: Annual vs. Quarterly Savings</div>
       <p class="text-grey-7 q-mt-sm">
@@ -105,7 +105,7 @@ const PLAN_FAMILIES = {
 
 const formatters = {
   currency: (value) => `$${value.toLocaleString()}`,
-  creditCost: (value) => value.toFixed(3),
+ // creditCost: (value) => value.toFixed(3),
   credits: (value) => `${Math.floor(value / 1000000)}M`,
   yAxisCurrency: (value) => `$${(value/1000).toFixed(0)}k`
 }
@@ -132,23 +132,30 @@ const getBarColor = (index) => {
 }
 
 const tableData = computed(() => {
-  const data = []
+  const data = [];
   Object.entries(PLAN_FAMILIES).forEach(([family, details]) => {
     details.tiers.forEach((tier) => {
+      const contractValue = selectedFrequency.value === 'annual' 
+        ? Math.round(tier.contractValue * 0.75) 
+        : tier.contractValue;
+      
+      const costPerCredit = Number(contractValue) / Number(tier.credits);
+      const costPercreditFixed = Number.isFinite(costPerCredit) ? costPerCredit.toFixed(3) : '0.00'
+
       data.push({
         id: `${family}-${tier.contractValue}`,
         family,
-        contractValue: tier.contractValue,
+        contractValue,
         payment: selectedFrequency.value === 'annual' ? tier.annualPayment : tier.quarterlyPayment,
-        costPerCredit: tier.baseCredit,
+        costPerCredit: costPercreditFixed,
         credits: tier.credits,
         duration: tier.duration,
-        selected: `${family}-${tier.contractValue}` == selected.value.id
-      })
-    })
-  })
-  return data.sort((a, b) => b.contractValue - a.contractValue)
-})
+        selected: `${family}-${tier.contractValue}` === selected.value.id
+      });
+    });
+  });
+  return data.sort((a, b) => b.contractValue - a.contractValue);
+});
 
 const tableColumns = computed(() => [
   { name: 'select', label: 'Select', field: 'select', align: 'center' },

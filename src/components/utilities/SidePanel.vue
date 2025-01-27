@@ -6,8 +6,8 @@
         :side="position"
         :width="width"
         bordered
-        overlay
         :behavior="behavior"
+        elevated
         class="side-panel"
         @show="atShow"
       >
@@ -15,8 +15,8 @@
         <div class="drawer-header q-px-md q-py-sm row items-center justify-between">
           <div class="text-h6">{{ title }}</div>
           <div class="row q-gutter-sm">
-            <q-btn size="sm" color="primary" icon="save" @click="btnAction" label="Save">
-            </q-btn>
+           <!-- <q-btn size="sm" color="primary" icon="save" @click="btnAction" label="Save">
+            </q-btn>-->
             <q-btn flat dense color="grey" icon="close" @click="handleClose">
               <q-tooltip>Close</q-tooltip>
             </q-btn>
@@ -82,7 +82,7 @@ const atShow = () => {
 
 <style scoped>
 .side-panel {
-  background: #ffffff;
+
   height: 100vh;
 }
 

@@ -1,8 +1,8 @@
 <template>
-	<div class="q-pa-md row full-width q-col-gutter-md">
+	<div class="row full-width q-col-gutter-md q-ma-none">
 		<!-- First Card -->
-		<div class="col-4">
-			<q-card bordered class="pricing-card q-pa-md" flat>
+		<div class="col-4 q-pl-none calculator-sidebar c-grey-background">
+			<q-card class="pricing-card q-pa-md c-grey-background" flat>
 				<section>
 					<div class="text-h6 q-mb-md">Marketing investment</div>
 					<q-list>
@@ -22,7 +22,7 @@
 								<div class="text-caption">5 years</div>
 							</div>
 							<div class="text-right">
-								<div class="text-h5">0,067$<span class="text-caption">/credit</span></div>
+								<div class="text-h5">{{ costPerCredit }}<span class="text-caption">/credit</span></div>
 								<div class="text-green">Save 80%</div>
 							</div>
 						</div>
@@ -53,7 +53,7 @@
 			</q-card>
 		</div>
 
-		<div class="col-8" style="max-height:800px;overflow:auto">
+		<div class="col-8" style="max-height:calc(100% - 75-9px);overflow:auto; padding-top:60px">
 			<div class="column q-col-gutter-md">
 				<div class="row q-col-gutter-md q-pl-md q-pt-md ">
 					<div class="col-4 ">
@@ -90,20 +90,21 @@
 
 
 				<!-- Second Card -->
-				<q-card flat bordered class="q-ml-md">
-					<q-card-section>
+				<q-card flat bordered class="q-ml-md q-pa-xs">
+					<q-card-section class="q-pa-xs">
 
-						<div class="q-pt-md">
-							<q-tabs v-model="tab" class="text-primary" align="justify" narrow-indicator>
+						<div class="">
+							<q-tabs v-model="tab" class="" align="left" narrow-indicator>
 								<q-tab name="revenue" label="Revenue" />
 								<q-tab name="expenses" label="Expenses" />
 								<q-tab name="savings" label="Savings" />
+								<q-tab name="plans" label="Plans" />
 							</q-tabs>
 
 							<q-tab-panels v-model="tab" animated>
 								<q-tab-panel name="revenue">
-									<div class="text-h6">Revenue</div>
-									<RevenueChart></RevenueChart>
+									<!--<div class="text-h6">Revenue</div>-->
+									<RevenueChart @select-campaign="selectCampaign"></RevenueChart>
 									<!-- Revenue content -->
 								</q-tab-panel>
 
@@ -117,7 +118,7 @@
 									<CostsavingChart></CostsavingChart>
 
 									<div>
-										<div class="row full-width items-center justify-between q-pl-xl q-pr-sm q-py-sm">
+										<div class="row full-width items-center justify-between q-pl-xl q-pr-sm q-pt-lg">
 											<!-- Left Section: Team Info -->
 											<div class="row col-3 items-center q-gutter-x-md">
 												Team
@@ -146,6 +147,10 @@
 										</div>
 									</div>
 								</q-tab-panel>
+								<q-tab-panel name="plans">
+									<pricecomparaison @plan-selected="(selected) => handleSelectPlan(selected)"></pricecomparaison>
+
+								</q-tab-panel>
 							</q-tab-panels>
 						</div>
 
@@ -154,12 +159,8 @@
 			</div>
 		</div>
 
-		<SidePanel v-model="planSidePanel" :width="700">
-			<q-card flat bordered class="q-ml-md">
-				<q-card-section class="row">
-					<pricecomparaison @plan-selected="(selected) => handleSelectPlan(selected)"></pricecomparaison>
-				</q-card-section>
-			</q-card>
+		<SidePanel v-model="planSidePanel" :width="1000" :title="'Scenario Comparison'">
+			<CampaignCalculator :name="currentCampaign?.name"></CampaignCalculator>
 		</SidePanel>
 	</div>
 </template>
@@ -172,6 +173,8 @@ import company from "~/src/repository/client";
 import pricecomparaison from "./usedComponent/pricecomparaison.vue";
 import CostsavingChart from "./usedComponent/costsavingChart.vue";
 import RevenueChart from "./usedComponent/revenueChart.vue";
+import AiCostDialog from "./usedComponent/AiCostDialog.vue";
+import CampaignCalculator from "./usedComponent/CampaignCalculator.vue";
 
 
 const marketingItems = ref([
@@ -389,7 +392,7 @@ const revenue = ref(1000000);
 const investment = ref(100000);
 
 const costChart = ref();
-
+const currentCampaign = ref()
 
 // To this:
 const creditCalculation = computed(() => {
@@ -469,7 +472,13 @@ const adjustInvestment = (amount: number) => {
 };
 
 const showChangePlan = () => {
-	planSidePanel.value = true;
+	tab.value = 'plans'
+}
+
+const selectCampaign = (campaign:any) =>{
+	console.log('cam', campaign)
+currentCampaign.value = campaign
+planSidePanel.value = true;
 }
 
 onMounted(() => {
@@ -589,7 +598,7 @@ watch(investment, (newValue) => {
 });
 </script>
 
-<style scoped>
+<style >
 .q-slider {
 	min-width: 150px;
 }
@@ -628,5 +637,14 @@ watch(investment, (newValue) => {
 .calculator-card {
 	position: sticky;
 	top: 12px;
+}
+
+.q-tab__indicator{
+	background:green
+}
+
+.calculator-sidebar{
+	position:sticky;
+	top:79px;
 }
 </style>

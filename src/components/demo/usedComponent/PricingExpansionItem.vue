@@ -13,7 +13,17 @@
         <!-- Left Section: Team Info -->
         <div class="row col-3 items-center q-gutter-x-md">
           <div class="column items-center q-gutter-x-sm">
-            <span class="text-weight-medium">{{ teamName }}</span>
+            <span class="text-weight-medium">{{ teamName }}
+              <q-btn
+              flat
+              round
+              dense
+              icon="info"
+              size="xs"
+              color="grey"
+              @click="openAgentSidebar($event)"
+            />
+            </span>
             <div class="row">
               <q-avatar
                 v-for="(member, index) in uniqueTeamMembers"
@@ -101,7 +111,17 @@
 
         <!-- AI Cost Column -->
         <template #body-cell-aiCost="props">
-          <q-td :props="props"> ${{  getAICost(props.row).toLocaleString() }} </q-td>
+          <q-td :props="props">
+          <span>${{  getAICost(props.row).toLocaleString() }} </span>
+            <q-btn
+              flat
+              round
+              dense
+              icon="info"
+              size="xs"
+              color="grey"
+              @click="showAICostDialog(props.row)"
+            /></q-td>
         </template>
 
         <!-- Savings Column -->
@@ -119,11 +139,17 @@
     :opportunity-cost="humanCostDialog.opportunitycost"
     :hourly-rate="humanCostDialog.hourRate">
   </CostDialog>
+  <AiCostDialog v-model="showAIDialog" :ai-credit="currentAiCredit" :cost-per-credit="costPerCredit"></AiCostDialog>
+  <SidePanel v-model="showSideBar" :title="'Agents'">
+    <MarketingSideBar></MarketingSideBar>
+  </SidePanel>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import CostDialog from './HumanCost.vue';
+import AiCostDialog from "./AiCostDialog.vue";
+import MarketingSideBar from "./MarketingSideBar.vue";
 
 const costDialogRefs = ref<any>({});
 interface TaskData {
@@ -153,6 +179,9 @@ const props = withDefaults(defineProps<Props>(), {
 const emit = defineEmits(["update:tableData"]);
 const isExpanded = ref(true);
 const showDialog = ref(false)
+const showAIDialog = ref(false)
+const showSideBar = ref(false)
+const currentAiCredit = ref()
 
 const humanCostDialog = reactive({
   opportunitycost : 0,
@@ -280,6 +309,17 @@ const showCostDialog = (row:any) => {
   humanCostDialog.hourRate = hourCost * 0.33
   humanCostDialog.opportunitycost = hourCost * 0.67
 };
+
+const showAICostDialog = (row:any) =>{
+  showAIDialog.value = true
+  currentAiCredit.value = row.AICredits
+}
+
+const openAgentSidebar = (event:Event) =>{
+  event.stopImmediatePropagation()
+  event.preventDefault()
+  showSideBar.value = true
+}
 
 </script>
 
