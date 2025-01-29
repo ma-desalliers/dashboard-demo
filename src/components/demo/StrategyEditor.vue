@@ -39,7 +39,7 @@
         >
           <template #cell-acquisitionRate="props">
             <div 
-              class="cursor-pointer hover-highlight"
+              class="cursor-pointer hover-highlight c-border-primary"
               @click="handleAcquisitionRateClick(props.row)"
             >
               {{ formatPercentage(props.row.acquisitionRate) }}
@@ -49,7 +49,7 @@
           <template #cell-scenario="props">
             <div class="row items-center">
               <div 
-                class="scenario-indicator q-mr-sm" 
+                class="scenario-indicator q-mr-sm " 
                 :style="{
                   backgroundColor: getScenarioColor(props.row.scenario),
                   width: '4px',
