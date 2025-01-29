@@ -1,22 +1,7 @@
 <template>
-  <div class="row full-width full-height">
-    <div class="col-12 c-border-bottom" :class="{'c-bottom-shadow': isMobile}">
-      <q-tabs
-        v-model="listView"
-        color="primary"
-        :align="'left'"  
-        active-color="primary"
-        active-class="c-bg-primary-lighten"
-        indicator-color="primary"
-        :class="{'q-pl-md' : !isMobile}"
-      >
-        <q-tab disable name="Trends" label="Trends" class="q-mr-md" />
-        <q-tab active name="Roadmap" label="Roadmap" class="q-mr-md" />
-        <q-tab disable name="Ressources" label="Ressources" />
-      </q-tabs>
-    </div>
-    <div class="col-12" style="height:calc(100% - 50px); overflow:auto">
-      <div class="row q-col-gutter-md q-px-md q-pt-md ">
+  <div class="full-width" >
+    <div class="col-12" style="height:calc(100vh - 50px); overflow:auto">
+      <!--<div class="row q-col-gutter-md q-px-md q-pt-md ">
 					<div class="col-4 ">
 						<q-card flat bordered>
 							<q-card-section>
@@ -46,7 +31,7 @@
 						</q-card>
 					</div>
 
-				</div>
+				</div>-->
 
       <q-card bordered flat class="q-mx-md q-px-md q-mt-md q-pb-md">
         <q-card-section class="row justify-between items-end q-pb-none q-px-none">
@@ -65,10 +50,10 @@
         <Revenue v-if="selectedChart === 'Revenue'" :table-data="computedTableData"></Revenue>
       </q-card>
       <Stategies :table-data="computedTableData"
-      :initial-selected="computedTableData"
+      :initial-selected="selectedTableData"
         :editable="true"
         :show-hover-buttons="true"
-        @update:selected="handleSelectionUpdate"
+        @update-selected="handleSelectionUpdate"
         @scenario-change="handleScenarioChange"
         @edit="handleEdit"
         @delete="handleDelete"></Stategies>
@@ -89,18 +74,17 @@ const isMobile = computed(() => mainDisplayStore.isMobile)
 const listView = ref('Roadmap')
 
 // Chart selection
-const selectedChart = ref('Savings')
+const selectedChart = ref('Revenue')
 const chartOptions = [
-  'Savings',
   'Revenue',
+  'Savings',
   'LTV',
   'Customer'
 ]
 
-
-const tableData = reactive([
+const tableData = reactive( [
   {
-    name: 'SEO',
+    name: 'Search Engine Optimization (SEO)',
     icon: 'G',
     selected: true,
     irg: 9,
@@ -109,30 +93,30 @@ const tableData = reactive([
     startDate: '2025-01-15',
     scenarios: {
       optimistic: {
-        y2025: 50000,
-        y2026: 57500,
-        y2027: 66125,
-        y2028: 76044,
-        y2029: 87450
+        y2025: 35000,
+        y2026: 80000,
+        y2027: 175000,
+        y2028: 350000,
+        y2029: 700000
       },
       realistic: {
-        y2025: 42500,
-        y2026: 46750,
-        y2027: 51425,
-        y2028: 56568,
-        y2029: 62224
+        y2025: 29750,
+        y2026: 68000,
+        y2027: 148750,
+        y2028: 297500,
+        y2029: 595000
       },
       pessimistic: {
-        y2025: 35000,
-        y2026: 36750,
-        y2027: 38588,
-        y2028: 40517,
-        y2029: 42543
+        y2025: 24500,
+        y2026: 56000,
+        y2027: 122500,
+        y2028: 245000,
+        y2029: 490000
       }
     }
   },
   {
-    name: 'Google Ads',
+    name: 'Pay per click (PPC)',
     icon: 'A',
     color: '#86EFAC',
     selected: true,
@@ -141,25 +125,25 @@ const tableData = reactive([
     startDate: '2025-01-15',
     scenarios: {
       optimistic: {
-        y2025: 50000,
-        y2026: 57500,
-        y2027: 66125,
-        y2028: 76044,
-        y2029: 87450
+        y2025: 35000,
+        y2026: 80000,
+        y2027: 175000,
+        y2028: 350000,
+        y2029: 700000
       },
       realistic: {
-        y2025: 42500,
-        y2026: 46750,
-        y2027: 51425,
-        y2028: 56568,
-        y2029: 62224
+        y2025: 29750,
+        y2026: 68000,
+        y2027: 148750,
+        y2028: 297500,
+        y2029: 595000
       },
       pessimistic: {
-        y2025: 35000,
-        y2026: 36750,
-        y2027: 38588,
-        y2028: 40517,
-        y2029: 42543
+        y2025: 24500,
+        y2026: 56000,
+        y2027: 122500,
+        y2028: 245000,
+        y2029: 490000
       }
     }
   },
@@ -167,31 +151,31 @@ const tableData = reactive([
     name: 'Lead nurturing',
     icon: 'profile',
     color: '#BBF7D0',
-    selected: true,
+    selected: false,
     irg: 8,
     selectedScenario: 'optimistic',
     startDate: '2025-01-15',
     scenarios: {
       optimistic: {
-        y2025: 25000,
-        y2026: 28750,
-        y2027: 33063,
-        y2028: 38022,
-        y2029: 43725
+        y2025: 20000,
+        y2026: 45000,
+        y2027: 98000,
+        y2028: 196000,
+        y2029: 392000
       },
       realistic: {
-        y2025: 21250,
-        y2026: 23375,
-        y2027: 25713,
-        y2028: 28284,
-        y2029: 31112
+        y2025: 17000,
+        y2026: 38250,
+        y2027: 83300,
+        y2028: 166600,
+        y2029: 333200
       },
       pessimistic: {
-        y2025: 17500,
-        y2026: 18375,
-        y2027: 19294,
-        y2028: 20259,
-        y2029: 21272
+        y2025: 14000,
+        y2026: 31500,
+        y2027: 68600,
+        y2028: 137200,
+        y2029: 274400
       }
     }
   },
@@ -199,63 +183,31 @@ const tableData = reactive([
     name: 'Lead revival',
     icon: 'profile',
     color: '#34D399',
-    selected: true,
+    selected: false,
     irg: 8,
     selectedScenario: 'optimistic',
     startDate: '2025-01-15',
     scenarios: {
       optimistic: {
-        y2025: 25000,
-        y2026: 28750,
-        y2027: 33063,
-        y2028: 38022,
-        y2029: 43725
+        y2025: 20000,
+        y2026: 45000,
+        y2027: 98000,
+        y2028: 196000,
+        y2029: 392000
       },
       realistic: {
-        y2025: 21250,
-        y2026: 23375,
-        y2027: 25713,
-        y2028: 28284,
-        y2029: 31112
+        y2025: 17000,
+        y2026: 38250,
+        y2027: 83300,
+        y2028: 166600,
+        y2029: 333200
       },
       pessimistic: {
-        y2025: 17500,
-        y2026: 18375,
-        y2027: 19294,
-        y2028: 20259,
-        y2029: 21272
-      }
-    }
-  },
-  {
-    name: 'Cold emailing',
-    icon: 'profile',
-    color: '#6EE7B7',
-    selected: true,
-    irg: 8,
-    selectedScenario: 'optimistic',
-    startDate: '2025-01-15',
-    scenarios: {
-      optimistic: {
-        y2025: 25000,
-        y2026: 28750,
-        y2027: 33063,
-        y2028: 38022,
-        y2029: 43725
-      },
-      realistic: {
-        y2025: 21250,
-        y2026: 23375,
-        y2027: 25713,
-        y2028: 28284,
-        y2029: 31112
-      },
-      pessimistic: {
-        y2025: 17500,
-        y2026: 18375,
-        y2027: 19294,
-        y2028: 20259,
-        y2029: 21272
+        y2025: 14000,
+        y2026: 31500,
+        y2027: 68600,
+        y2028: 137200,
+        y2029: 274400
       }
     }
   },
@@ -263,31 +215,31 @@ const tableData = reactive([
     name: 'Lead research',
     icon: 'profile',
     color: '#A7F3D0',
-    selected: true,
+    selected: false,
     irg: 8,
     selectedScenario: 'optimistic',
     startDate: '2025-01-15',
     scenarios: {
       optimistic: {
-        y2025: 25000,
-        y2026: 28750,
-        y2027: 33063,
-        y2028: 38022,
-        y2029: 43725
+        y2025: 15000,
+        y2026: 34000,
+        y2027: 74000,
+        y2028: 148000,
+        y2029: 296000
       },
       realistic: {
-        y2025: 21250,
-        y2026: 23375,
-        y2027: 25713,
-        y2028: 28284,
-        y2029: 31112
+        y2025: 12750,
+        y2026: 28900,
+        y2027: 62900,
+        y2028: 125800,
+        y2029: 251600
       },
       pessimistic: {
-        y2025: 17500,
-        y2026: 18375,
-        y2027: 19294,
-        y2028: 20259,
-        y2029: 21272
+        y2025: 10500,
+        y2026: 23800,
+        y2027: 51800,
+        y2028: 103600,
+        y2029: 207200
       }
     }
   },
@@ -295,35 +247,99 @@ const tableData = reactive([
     name: 'Lead qualification',
     icon: 'profile',
     color: '#D1FAE5',
-    selected: true,
+    selected: false,
     irg: 8,
     selectedScenario: 'optimistic',
     startDate: '2025-01-15',
     scenarios: {
       optimistic: {
-        y2025: 25000,
-        y2026: 28750,
-        y2027: 33063,
-        y2028: 38022,
-        y2029: 43725
+        y2025: 15000,
+        y2026: 34000,
+        y2027: 74000,
+        y2028: 148000,
+        y2029: 296000
       },
       realistic: {
-        y2025: 21250,
-        y2026: 23375,
-        y2027: 25713,
-        y2028: 28284,
-        y2029: 31112
+        y2025: 12750,
+        y2026: 28900,
+        y2027: 62900,
+        y2028: 125800,
+        y2029: 251600
       },
       pessimistic: {
-        y2025: 17500,
-        y2026: 18375,
-        y2027: 19294,
-        y2028: 20259,
-        y2029: 21272
+        y2025: 10500,
+        y2026: 23800,
+        y2027: 51800,
+        y2028: 103600,
+        y2029: 207200
+      }
+    }
+  },
+  {
+    name: 'Client nurturing',
+    icon: 'profile',
+    color: '#6EE7B7',
+    selected: false,
+    irg: 8,
+    selectedScenario: 'optimistic',
+    startDate: '2025-01-15',
+    scenarios: {
+      optimistic: {
+        y2025: 15000,
+        y2026: 34000,
+        y2027: 74000,
+        y2028: 148000,
+        y2029: 296000
+      },
+      realistic: {
+        y2025: 12750,
+        y2026: 28900,
+        y2027: 62900,
+        y2028: 125800,
+        y2029: 251600
+      },
+      pessimistic: {
+        y2025: 10500,
+        y2026: 23800,
+        y2027: 51800,
+        y2028: 103600,
+        y2029: 207200
+      }
+    }
+  },
+  {
+    name: 'Cold emailing',
+    icon: 'profile',
+    color: '#6EE7B7',
+    selected: false,
+    irg: 7,
+    selectedScenario: 'optimistic',
+    startDate: '2025-01-15',
+    scenarios: {
+      optimistic: {
+        y2025: 10000,
+        y2026: 22000,
+        y2027: 48000,
+        y2028: 96000,
+        y2029: 192000
+      },
+      realistic: {
+        y2025: 8500,
+        y2026: 18700,
+        y2027: 40800,
+        y2028: 81600,
+        y2029: 163200
+      },
+      pessimistic: {
+        y2025: 7000,
+        y2026: 15400,
+        y2027: 33600,
+        y2028: 67200,
+        y2029: 134400
       }
     }
   }
-])
+]);
 
 const computedTableData = computed(() => {
   return tableData.map((item:any) => {
@@ -347,7 +363,12 @@ const computedTableData = computed(() => {
   })
 })
 
+const selectedTableData = computed(()=>{
+  return computedTableData.value.filter(data=> data.selected)
+})
+
 const handleSelectionUpdate = (newSelection:any) => {
+  console.log(newSelection)
   tableData.forEach((data:any) => {
     if(newSelection.find((selection : any) => selection.name == data.name )){
       data.selected = true;

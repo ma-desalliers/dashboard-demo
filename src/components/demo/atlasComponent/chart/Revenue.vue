@@ -97,7 +97,7 @@ const chartSeries = computed(() => {
       null,
       ...combinedStrategiesData
     ],
-    color: '#10B981' // Green color for combined strategies
+    color: 'var(--q-primary)' // Green color for combined strategies
   }
 
   return [baseRevenueSeries, strategySeries]
@@ -112,22 +112,24 @@ const chartOptions = computed(() => ({
     animations: {
       enabled: true,
       easing: 'linear',
-      speed: 150,
-      animationType: 'Y',      // Keep vertical animation
+      speed: 250,
+      animationType: 'Y',
       dynamicAnimation: {
         enabled: true,
-        speed: 150,
-        animationType: 'Y'     // Force vertical animation for updates too
+        speed: 250,
+        animationType: 'Y'
       },
       initialAnimation: {
-        enabled: false         // Disable initial animation
+        enabled: false,
+         animationType: 'Y'
       },
       updateAnimation: {
         enabled: true,
-        animationType: 'Y'     // Force vertical animation for updates
+        animationType: 'Y'
       },
       animateGradually: {
-        enabled: false         // Disable gradual animations
+        enabled: true,
+         animationType: 'Y'
       }
     }
   },
@@ -143,7 +145,6 @@ const chartOptions = computed(() => ({
   dataLabels: {
     enabled: true,
     formatter: function(value: number, { seriesIndex, dataPointIndex, w }: any) {
-      console.log(value,seriesIndex)
       if (seriesIndex === 0 && value > 0) {
         const baseValue = w.globals.series[1][dataPointIndex]
         const percentage = ((baseValue / value) * 100).toFixed(1)
@@ -159,17 +160,17 @@ const chartOptions = computed(() => ({
     offsetY: 0,
     textAnchor: 'middle',
     position:'top',
-    animationDuration: 0  // Disable data label animations
+    animationDuration: 0
   },
   states: {
     hover: {
       filter: {
-        type: 'none'  // Disable hover animations
+        type: 'none'
       }
     },
     active: {
       filter: {
-        type: 'none'  // Disable active state animations
+        type: 'none'
       }
     }
   },
@@ -221,11 +222,68 @@ const chartOptions = computed(() => ({
   },
   tooltip: {
     enabled: true,
+    shared: false,
+    intersect: true,
     animation: {
-      enabled: false  // Disable tooltip animations
+      enabled: false
     },
-    followCursor: false  // Disable cursor following animation
-  }
+    followCursor: false,
+    marker: {
+      show: false,
+    },
+    custom: undefined,
+    x: {
+      show: true,
+    },
+    y: {
+      title: {
+        formatter: (seriesName: string) => {
+          if(seriesName == 'Strategies') return ''
+          return seriesName
+        }
+      },
+      formatter: function(value: number, { seriesIndex, dataPointIndex, w }: any) {
+        if (seriesIndex === 1 && value > 0) {
+          const baseValue = w.globals.series[0][dataPointIndex]
+          const totalValue = value + baseValue
+          const percentage = ((value / baseValue) * 100).toFixed(1)
+          
+          return [
+            `<span style="font-weight:400">Strategies</span> $${value.toLocaleString('en-US', {
+              minimumFractionDigits: 1,
+              maximumFractionDigits: 1
+            })}`,
+            `<span style="font-weight:400">Total:</span> $${totalValue.toLocaleString('en-US', {
+              minimumFractionDigits: 1,
+              maximumFractionDigits: 1
+            })}`,
+            `<span style="font-weight:400">Increase:</span> +${percentage}%`
+          ].join('</br>')
+        }
+        return `$${value.toLocaleString('en-US', {
+                  minimumFractionDigits: 1,
+                  maximumFractionDigits: 1
+                })}` // Return empty string for non-strategy series
+      }
+    },
+    items: {
+      display: 'flex',
+    },
+    fixed: {
+      enabled: false,
+      position: 'topRight',
+      offsetX: 0,
+      offsetY: 0,
+    },
+    style: {
+      fontSize: '12px',
+      fontFamily: 'inherit',
+    },
+    theme: 'light',
+    onDatasetHover: {
+      highlightDataSeries: false,
+    }
+  },
 }))
 
 function formatYAxisCurrency(value: number) {

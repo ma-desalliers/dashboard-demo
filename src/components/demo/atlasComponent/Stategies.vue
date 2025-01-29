@@ -28,11 +28,16 @@
         </q-chip>
       </template>
     </c-table>
+    <SidePanel v-model="showStrategySidePanel" :width="500" :full-page="true">
+      <StrategyEditor></StrategyEditor>
+    </SidePanel>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import StrategyPanel from './sidePanel/StrategyPanel.vue'
+import StrategyEditor from '../StrategyEditor.vue'
 
 interface Scenario {
   y2025: number
@@ -72,7 +77,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 // Emits definition
 const emit = defineEmits<{
-  (e: 'update:selected', value: Strategy[]): void
+  (e: 'updateSelected', value: Strategy[]): void
   (e: 'scenario-change', strategy: Strategy, newScenario: string): void
   (e: 'edit', strategy: Strategy): void
   (e: 'delete', strategy: Strategy): void
@@ -86,6 +91,19 @@ const scenarioOptions = [
   { label: 'Realistic', value: 'realistic' },
   { label: 'Pessimistic', value: 'pessimistic' }
 ]
+
+const showStrategySidePanel = ref(false)
+const hoverButtons = computed(() => {
+  return [
+    {
+      icon: 'fa fa-pen',
+      action: (event:any, item:any) => { openStrategySidePanel(item) },
+      color: 'white',
+      textColor: '#333333'
+    },
+  ]
+})
+
 
 
 const rowKey = 'name'
@@ -102,13 +120,14 @@ const columns = computed(() => [
     name: 'irg',
     label: 'IRG',
     field: 'irg',
-    align: 'left'
+    align: 'center',
+    style: 'width:100px'
   },
   {
     name: 'selectedScenario',  // Changed from 'scenario' to match your data structure
     label: 'Scenario',
     field: 'selectedScenario',
-    align: 'left',
+    align: 'center',
     classed:'max-180',
     style:'max-width:150px;width:150px;',
     headerStyle:'max-width:150px;width:150px;'
@@ -117,58 +136,43 @@ const columns = computed(() => [
     name: 'y2025',  // Changed to match your data structure
     label: '2025',
     field: 'y2025',
-    align: 'left',
+    align: 'center',
+    style:'width:150px',
     format: (val: number) => formatCurrency(val)
   },
   {
     name: 'y2026',
     label: '2026',
     field: 'y2026',
-    align: 'left',
+    align: 'center',
+    style:'width:150px',
     format: (val: number) => formatCurrency(val)
   },
   {
     name: 'y2027',
     label: '2027',
     field: 'y2027',
-    align: 'left',
+    align: 'center',
+    style:'width:150px',
     format: (val: number) => formatCurrency(val)
   },
   {
     name: 'y2028',
     label: '2028',
     field: 'y2028',
-    align: 'left',
+    align: 'center',
+    style:'width:150px',
     format: (val: number) => formatCurrency(val)
   },
   {
     name: 'y2029',
     label: '2029',
     field: 'y2029',
-    align: 'left',
+    align: 'center',
+    style:'width:150px',
     format: (val: number) => formatCurrency(val)
   }
 ])
-
-// Hover buttons configuration
-const hoverButtons = computed(() => props.showHoverButtons ? [
-  {
-    icon: 'edit',
-    color: 'primary',
-    condition: { value: true, param: 'editable' },
-    action: (item: Strategy) => {
-      emit('edit', item)
-    }
-  },
-  {
-    icon: 'delete',
-    color: 'negative',
-    condition: { value: true, param: 'editable' },
-    action: (item: Strategy) => {
-      emit('delete', item)
-    }
-  }
-] : [])
 
 // Utility functions
 const getIRGColor = (irg: number) => {
@@ -193,15 +197,21 @@ const getYearValue = (row: any, year: number) => {
   return row[yearKey]
 }
 
+const openStrategySidePanel = (item:any) => {
+  showStrategySidePanel.value = true
+}
+
 // Event handlers
 const handleSelectionUpdate = (newSelection: Strategy[]) => {
   selectedRows.value = newSelection
-  emit('update:selected', newSelection)
+  emit('updateSelected', newSelection)
 }
 
 const handleScenarioUpdate = (strategy: Strategy, newScenario: string) => {
   emit('scenario-change', strategy, newScenario)
 }
+
+
 </script>
 
 <style>

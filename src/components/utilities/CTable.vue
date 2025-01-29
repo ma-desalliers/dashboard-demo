@@ -38,6 +38,7 @@
             <q-checkbox
               v-model="selectAll"
               :indeterminate="hasSelection && !allSelected"
+              class="header-checkbox"
             />
           </q-th>
           
@@ -57,14 +58,23 @@
 
       <!-- Custom Body -->
       <template #body="props">
-        <q-tr :props="props">
+        <q-tr :props="props" :class="{ 'selected': props.selected }">
           <!-- Selection Column -->
           <q-td auto-width>
-            <q-checkbox v-model="props.selected" />
+            <q-checkbox 
+              v-model="props.selected" 
+              class="row-checkbox"
+              :class="{
+                'checkbox-visible': props.selected
+              }"
+            />
           </q-td>
 
           <!-- Data Columns -->
-          <q-td v-for="col in columns" :key="col.name">
+          <q-td v-for="col in columns" :key="col.name"  :style="col.style"
+            :class="{
+              ['text-' + col.align]: col.align,
+            }">
             <slot :name="`cell-${col.name}`" v-bind="{ ...props, value: props.row[col.name] }">
               <template v-if="col.type === 'hover'">
                 <hover-button :buttons="hoverButtons" hide-background :item="props.row">
@@ -146,6 +156,7 @@ interface BaseColumn {
   sort?: (a: any, b: any) => number
   format?: (val: any) => string
   updateFn?:any
+  style:string
 }
 
 interface TextColumn extends BaseColumn {
@@ -284,7 +295,7 @@ mainDisplayStore.pushPopup({
 }
 </script>
 
-<style lang="scss" >
+<style lang="scss" scoped>
 
 .q-table tbody tr:not(:last-child) td {
   border-bottom: 1px solid #e0e0e0;
@@ -306,12 +317,34 @@ mainDisplayStore.pushPopup({
 }
 
 
-:deep(.selected){
+.selected{
   .q-td{
-    &::after{
+    &:after{
       display:none;
     }
   }
+}
+
+.row-checkbox {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.checkbox-visible {
+  opacity: 1 !important;
+}
+
+.q-tr {
+  &:hover {
+    .row-checkbox {
+      opacity: 1;
+    }
+  }
+}
+
+// Keep header checkbox always visible
+.header-checkbox {
+  opacity: 1 !important;
 }
 
 </style>

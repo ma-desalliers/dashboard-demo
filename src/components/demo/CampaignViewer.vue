@@ -12,10 +12,11 @@
 			>
 			<q-tab active name="products" label="Products" @click="setListView('products')"  class="q-mr-md"/>
 			<q-tab  name="audiences" label="Audiences" @click="setListView('audiences')" class="q-mr-md"/>
-			<q-tab  name="pages" label="Contents" @click="setListView('pages')"/>
+			<q-tab  name="pages" label="Contents" @click="setListView('pages')" class="q-mr-md"/>
+			<q-tab  name="roadmaps" label="Roadmaps" @click="setListView('roadmaps')"/>
 		</q-tabs>
 	</div>
-	<div class="c-content-marketing row  col-12" :class="{'isMobile': isMobile}">
+	<div v-if="listView!='roadmaps'" class="c-content-marketing row  col-12" :class="{'isMobile': isMobile}">
 		<!-- Header Section -->
 		<div class="row full-width col-12">
 			
@@ -82,6 +83,7 @@
 			</div>
 			
 		</div>
+		<GrowthPlan v-if="listView == 'roadmaps'"></GrowthPlan>
 	</div>
 </template>
 <script lang="ts" setup>
@@ -101,6 +103,7 @@ import AudienceList from './usedComponent/AudienceList.vue';
 
 import pages from '~/src/repository/pages';
 import PageDetail from './usedComponent/PageDetail.vue';
+import GrowthPlan from './GrowthPlan.vue';
 
 
 // Rest of your constants...

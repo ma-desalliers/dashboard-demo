@@ -1,16 +1,16 @@
 <template>
   <div class="column q-col-gutter-xs q-px-sm">
-    <span>Custom period</span>
     <div>
       <q-btn-dropdown
         outline
         class="full-width"
+        color="grey"
         :menu-anchor="menuPosition === 'top' ? 'top middle' : 'bottom middle'" 
         :menu-self="menuPosition === 'top' ? 'bottom middle' : 'top middle'"
         @show="onShow"
       >
         <template #label>
-          <div class="row items-center no-wrap">
+          <div class="row items-center no-wrap c-text-dark">
             <q-icon name="event" class="q-mr-sm" />
             <span>{{ displayLabel }}</span>
           </div>
