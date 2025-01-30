@@ -31,10 +31,10 @@ export interface ScenarioStore {
 }
 
 export const DEFAULT_METRICS: FunnelMetrics = {
-  reachRate: { value: 53, monthlyGrowth: 0.5, cap: 85 },
-  engagementRate: { value: 53, monthlyGrowth: 0.5, cap: 85 },
-  conversionRate: { value: 53, monthlyGrowth: 0.5, cap: 85 },
-  purchaseRate: { value: 53, monthlyGrowth: 0.5, cap: 85 }
+  reachRate: { value: 50, monthlyGrowth: 1, cap: 70 },
+  engagementRate: { value: 8, monthlyGrowth: 0.5, cap: 10 },
+  conversionRate: { value: 5, monthlyGrowth: 0.2, cap: 10 },
+  purchaseRate: { value: 5, monthlyGrowth: 0.5, cap: 10 }
 };
 
 export const calculateMonthlyProgression = (
@@ -72,7 +72,6 @@ export const calculateFunnelMetrics = (
     month + 1
   )[month];
 
-  console.log(reachRate)
 
   const engagementRate = calculateMonthlyProgression(
     metrics.engagementRate.value / 100,
@@ -104,20 +103,9 @@ export const calculateFunnelMetrics = (
   return { reach, microConversions, leads, sales };
 };
 
-export const calculateMonthlyAcquisitionRate = (metrics: FunnelMetrics, month: number): number => {
-  // Calculate the compound rate for each metric at the specified month
-  const rates = Object.values(metrics).map(metric => {
-    const monthlyRates = calculateMonthlyProgression(
-      metric.value / 100, // Convert initial percentage to decimal
-      metric.monthlyGrowth,
-      metric.cap / 100, // Convert cap percentage to decimal
-      month + 1
-    );
-    return monthlyRates[month];
-  });
-
-  // Multiply all rates together to get the acquisition rate
-  return rates.reduce((acc, rate) => acc * rate, 1);
+export const calculateMonthlyAcquisitionRate = (potentialReach: number,salesReach: number): number => {
+  console.log(salesReach, potentialReach)
+  return salesReach / potentialReach
 };
 
 export const calculateYearlyProjections = (
@@ -136,7 +124,7 @@ export const calculateYearlyProjections = (
     const monthlyRates = Array(monthsPerYear)
       .fill(0)
       .map((_, month) => 
-        calculateMonthlyAcquisitionRate(metrics, yearIndex * monthsPerYear + month)
+        calculateMonthlyAcquisitionRate(potentialReach,metrics.purchaseRate.value)
       );
 
     // Calculate average rate for the year
@@ -148,3 +136,59 @@ export const calculateYearlyProjections = (
     return acc;
   }, {} as YearlyProjections);
 };
+
+
+interface RevenueByYear {
+  [year: number]: number;
+}
+
+export function calculateRevenueProjection(
+  historicalRevenue: number[],
+  startYear: number,
+  futureYears: number[]
+): RevenueByYear {
+  // Input validation
+  if (!historicalRevenue.length || !futureYears.length) {
+    return {};
+  }
+
+  const result: RevenueByYear = {};
+  
+  // Add historical data to result
+  historicalRevenue.forEach((revenue, index) => {
+    result[startYear + index] = revenue;
+  });
+
+  if (historicalRevenue.length < 2) {
+    // If we only have one year of history, assume same revenue for future
+    futureYears.forEach(year => {
+      result[year] = historicalRevenue[0];
+    });
+    return result;
+  }
+
+  // Calculate year-over-year growth rates
+  const growthRates = [];
+  for (let i = 1; i < historicalRevenue.length; i++) {
+    const growthRate = (historicalRevenue[i] - historicalRevenue[i - 1]) / historicalRevenue[i - 1];
+    growthRates.push(growthRate);
+  }
+
+  // Calculate weighted growth rate (giving more weight to recent years)
+  const weightedGrowthRate = growthRates.reduce((sum, rate, index) => {
+    const weight = (index + 1) / growthRates.reduce((s, _, i) => s + i + 1, 0);
+    return sum + (rate * weight);
+  }, 0);
+
+  // Generate projections
+  let lastValue = historicalRevenue[historicalRevenue.length - 1];
+  let lastYear = startYear + historicalRevenue.length - 1;
+
+  futureYears.forEach(year => {
+    const yearsFromLastHistorical = year - lastYear;
+    const projectedRevenue = lastValue * Math.pow(1 + weightedGrowthRate, yearsFromLastHistorical);
+    result[year] = Math.round(projectedRevenue);
+  });
+
+  return result;
+}

@@ -134,6 +134,10 @@ html {
   border: none !important;
 }
 
+.c-grayscale {
+  filter: grayscale(100%);
+}
+
 .c-border-right {
   border-right: 1px solid #e7e7e7;
 }
@@ -209,6 +213,10 @@ html {
 .c-px-lg {
   padding-left: 24px !important;
   padding-right: 24px !important;
+}
+
+.c-pl-none {
+  padding-left: 0px !important;
 }
 
 .c-col-30 {

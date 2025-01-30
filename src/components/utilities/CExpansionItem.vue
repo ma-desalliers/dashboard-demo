@@ -5,6 +5,7 @@
     class="custom-expansion bg-white"
     switch-toggle-side
     expand-icon-toggle
+    expand-icon-class="expand-icon-class"
   >
     <template #header>
       <div class="row full-width items-center">
@@ -65,5 +66,11 @@ defineEmits<{
     padding: 16px;
     background-color: #ffffff;
   }
+  :deep(.expand-icon-class){
+  padding-right:8px ;
+  min-width:unset
 }
+}
+
+
 </style>

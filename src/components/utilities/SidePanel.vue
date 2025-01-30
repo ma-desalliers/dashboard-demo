@@ -13,7 +13,7 @@
       @show="atShow"
     >
       <!-- Header Section -->
-      <div class="drawer-header q-px-md q-py-sm row items-center justify-between">
+      <div v-if="!hideHeader" class="drawer-header q-px-md q-py-sm row items-center justify-between">
         <div class="text-h6">{{ title }}</div>
         <div class="row q-gutter-sm">
           <q-btn
@@ -56,6 +56,7 @@ interface Props {
   behavior?: 'default' | 'desktop' | 'mobile'
   title?: string
   fullPage?:boolean
+  hideHeader?:boolean
   btnAction?: ()=>{}
 }
 

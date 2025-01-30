@@ -28,8 +28,8 @@
         </q-chip>
       </template>
     </c-table>
-    <SidePanel v-model="showStrategySidePanel" :width="500" :full-page="true">
-      <StrategyEditor></StrategyEditor>
+    <SidePanel v-model="showStrategySidePanel" :width="500" :full-page="true" hide-header>
+      <StrategyEditor @close-panel="showStrategySidePanel = false"></StrategyEditor>
     </SidePanel>
   </div>
 </template>

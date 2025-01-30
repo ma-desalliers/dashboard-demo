@@ -1,20 +1,6 @@
 <template>
   <q-card flat class="">
     <q-card-section>
-      <div class="row q-col-gutter-md">
-        <div class="col-12 col-md-4">
-          <q-select
-            v-model="selectedScenario"
-            :options="scenarioOptions"
-            label="View Scenario"
-            outlined
-            dense
-          />
-        </div>
-      </div>
-    </q-card-section>
-
-    <q-card-section>
       <div style="height: 400px">
         <component 
           v-if="mounted"
@@ -40,6 +26,7 @@ interface TableRow {
   microConversions: number;
   leads: number;
   sales: number;
+  revenue: number; 
 }
 
 const props = defineProps<{
@@ -65,12 +52,11 @@ const months = [
 ]
 
 const generateSeriesData = (row: TableRow) => {
-  const baseValue = row.potentialReach * row.acquisitionRate;
+  const baseValue = row.revenue; // Changed from row.potentialReach * row.acquisitionRate
   return months.map((_, index) => {
     return Math.round(baseValue * Math.pow(1.03, index));
   })
 }
-
 const getScenarioColor = (scenario: string): string => {
   switch (scenario) {
     case 'Optimist':
@@ -133,6 +119,9 @@ const chartOptions = computed(() => ({
     }
   },
   yaxis: {
+    title: {
+      text: 'Revenue ($)'  // Add this to show what the y-axis represents
+    },
     labels: {
       formatter: (value: number) => {
         return new Intl.NumberFormat('en-US', {
@@ -150,6 +139,9 @@ const chartOptions = computed(() => ({
   },
   tooltip: {
     y: {
+      title: {
+        formatter: (seriesName: string) => 'Revenue:'
+      },
       formatter: (value: number) => {
         return new Intl.NumberFormat('en-US', {
           style: 'currency',

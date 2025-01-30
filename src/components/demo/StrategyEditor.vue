@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-3">
-      <StrategyPanel></StrategyPanel>
+      <StrategyPanel @close-panel="closePanel"></StrategyPanel>
     </div>
     <div class="col-9">
       <q-card bordered flat class="q-mx-md q-px-md q-mt-md q-pb-md">
@@ -15,18 +15,26 @@
               options-dense
               dropdown-icon="expand_more"
             />
-            <q-btn
-              flat
-              round
-              color="primary"
-              icon="edit"
-              class="q-ml-md"
-              @click="showFunnelDialog = true"
-            >
-              <q-tooltip>Edit Funnel Metrics</q-tooltip>
-            </q-btn>
           </div>
-          <CustomDateRange></CustomDateRange>
+          <div class="row items-end q-gutter-x-md">
+            <q-input
+              v-model.number="revenuePerSale"
+              type="number"
+              label="Revenue per Sale"
+              dense
+              outlined
+              :min="0"
+              prefix="$"
+              class="q-pb-none"
+              :rules="[val => val > 0 || 'Please enter a value greater than 0']"
+              style="width: 200px"
+            >
+              <template v-slot:append>
+                <q-icon name="paid" />
+              </template>
+            </q-input>
+            <CustomDateRange></CustomDateRange>
+          </div>
         </q-card-section>
         <StrategyChart :table-data="computedRows"></StrategyChart>
       </q-card>
@@ -37,28 +45,36 @@
           :rows="computedRows"
           v-model="selected"
         >
-          <template #cell-acquisitionRate="props">
-            <div 
-              class="cursor-pointer hover-highlight c-border-primary"
-              @click="handleAcquisitionRateClick(props.row)"
-            >
-              {{ formatPercentage(props.row.acquisitionRate) }}
+          <template #cell-scenario="props">
+            <div class="row items-center">
+              {{ props.row.scenario }}
             </div>
           </template>
 
-          <template #cell-scenario="props">
-            <div class="row items-center">
-              <div 
-                class="scenario-indicator q-mr-sm " 
-                :style="{
-                  backgroundColor: getScenarioColor(props.row.scenario),
-                  width: '4px',
-                  height: '20px',
-                  borderRadius: '2px'
-                }"
-              ></div>
-              {{ props.row.scenario }}
-            </div>
+          <template #cell-potentialReach="props">
+            <q-select
+              v-model="scenarioReach[props.row.scenario.toLowerCase()]"
+              :options="reachOptions"
+              dense
+              options-dense
+              @update:model-value="updateScenarioStore(props.row.scenario.toLowerCase())"
+              style="width: 150px"
+            >
+              <template #selected>
+                {{ formatNumber(props.row.potentialReach) }}
+              </template>
+            </q-select>
+          </template>
+
+          <template #cell-acquisitionRate="props">
+            <q-btn
+              class=""
+              dense
+              @click="handleAcquisitionRateClick(props.row)"
+              :label="formatPercentage(props.row.acquisitionRate) "
+              icon-right="fa fa-chevron-down"
+            >
+            </q-btn>
           </template>
         </CTable>
       </div>
@@ -74,7 +90,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, reactive } from 'vue'
 import StrategyChart from './atlasComponent/chart/StrategyChart.vue'
 import CustomDateRange from './atlasComponent/CustomDateRange.vue'
 import StrategyPanel from './atlasComponent/sidePanel/StrategyPanel.vue'
@@ -88,32 +104,40 @@ import {
   calculateMonthlyAcquisitionRate
 } from './strategy-type'
 
-const POTENTIAL_REACH = {
-  Optimist: 50000,
-  Realistic: 42500,
-  Pessimist: 35000
-}
+const scenarioReach = reactive({
+  optimist: 50000,
+  realistic: 42500,
+  pessimist: 35000
+})
 
-const selectedChart = ref('savings')
+const reachOptions = [
+  10000, 25000, 35000, 42500, 50000, 75000, 100000
+]
+
+const emit = defineEmits(['closePanel'])
+
+const selectedChart = ref('Revenue')
 const chartOptions = ['Revenue', 'Savings', 'LTV', 'Customer']
+const revenuePerSale = ref(5000)
 const showFunnelDialog = ref(false)
 const selectedRow = ref(null)
 const selected = ref([])
 
-// Initialize scenarios with metrics and projections
-// Initialize each scenario with proper default values
 const initializeScenario = (reach: number) => ({
   potentialReach: reach,
   metrics: { ...DEFAULT_METRICS },
   yearlyProjections: calculateYearlyProjections(reach, DEFAULT_METRICS)
 })
 
-// Instead of a simple ref
 const scenarioStore = reactive<ScenarioStore>({
-  optimist: initializeScenario(POTENTIAL_REACH.Optimist),
-  realistic: initializeScenario(POTENTIAL_REACH.Realistic),
-  pessimist: initializeScenario(POTENTIAL_REACH.Pessimist)
+  optimist: initializeScenario(scenarioReach.optimist),
+  realistic: initializeScenario(scenarioReach.realistic),
+  pessimist: initializeScenario(scenarioReach.pessimist)
 })
+
+const updateScenarioStore = (scenario: 'optimist' | 'realistic' | 'pessimist') => {
+  scenarioStore[scenario] = initializeScenario(scenarioReach[scenario])
+}
 
 const columns = [
   {
@@ -128,7 +152,7 @@ const columns = [
     label: 'Potential Reach',
     field: 'potentialReach',
     align: 'center',
-    style: 'min-width: 120px'
+    style: 'min-width: 150px'
   },
   {
     name: 'acquisitionRate',
@@ -142,6 +166,7 @@ const columns = [
     label: 'Reach',
     field: 'reach',
     align: 'center',
+    format: (val: number) => formatNumber(val),
     style: 'min-width: 100px'
   },
   {
@@ -149,6 +174,7 @@ const columns = [
     label: 'Micro Conversions',
     field: 'microConversions',
     align: 'center',
+    format: (val: number) => formatNumber(val),
     style: 'min-width: 150px'
   },
   {
@@ -156,6 +182,7 @@ const columns = [
     label: 'Leads',
     field: 'leads',
     align: 'center',
+    format: (val: number) => formatNumber(val),
     style: 'min-width: 100px'
   },
   {
@@ -163,7 +190,16 @@ const columns = [
     label: 'Sales',
     field: 'sales',
     align: 'center',
+    format: (val: number) => formatNumber(val),
     style: 'min-width: 100px'
+  },
+  {
+    name: 'revenue',
+    label: 'Revenue',
+    field: 'revenue',
+    align: 'center',
+    format: (val: number) => `$${formatNumber(val)}`,
+    style: 'min-width: 150px'
   }
 ]
 
@@ -172,34 +208,37 @@ const getCurrentMetrics = computed(() => {
   const scenarioKey = selectedRow.value.scenario.toLowerCase()
   return scenarioStore[scenarioKey].metrics
 })
-// Compute the rows based on current metrics and scenarios
-const computedRows = computed(() => {
-  return Object.entries(POTENTIAL_REACH).map(([scenario, reach]) => {
-    const scenarioKey = scenario.toLowerCase()
-    // Remove .value since scenarioStore is now reactive
-    const scenarioData = scenarioStore[scenarioKey]
 
-    console.log(scenarioData.metrics.reachRate)
+const computedRows = computed(() => {
+  return Object.entries(scenarioReach).map(([scenario, reach]) => {
+    const scenarioData = scenarioStore[scenario]
     
-    // Calculate the actual acquisition rate based on metrics
     const monthlyValues = Object.values(scenarioData?.metrics || {}).map(m => m.value / 100)
-    const acquisitionRate = calculateMonthlyAcquisitionRate(scenarioData?.metrics, 1) //  monthlyValues.length ? monthlyValues.reduce((acc, val) => acc * val, 1) : 0
+    const funnelMetrics = calculateFunnelMetrics(reach, scenarioData.metrics)
+    const acquisitionRate = calculateMonthlyAcquisitionRate(reach, funnelMetrics.sales)
     
-    // Get yearly projection with proper null checking
     const yearlyProjection = scenarioData?.yearlyProjections?.y2025 || 0
     
-    // Calculate funnel metrics using actual rates
-    const funnelMetrics = calculateFunnelMetrics(reach, scenarioData.metrics)
     return {
-      scenario,
+      scenario: scenario.charAt(0).toUpperCase() + scenario.slice(1),
       potentialReach: reach,
       acquisitionRate,
-      ...funnelMetrics
+      ...funnelMetrics,
+      revenue: funnelMetrics.sales * revenuePerSale.value,
+      borderColor:getScenarioColor(scenario.charAt(0).toUpperCase() + scenario.slice(1))
+
     }
   })
 })
+
 const formatPercentage = (value: number): string => {
-  return `${(value * 100).toFixed(1)}%`
+  return `${(value * 100).toFixed(3)}%`
+}
+
+const formatNumber = (value: number): string => {
+  return new Intl.NumberFormat('en-US', {
+    maximumFractionDigits: 0
+  }).format(value)
 }
 
 const getScenarioColor = (scenario: string): string => {
@@ -220,20 +259,19 @@ const handleMetricsUpdate = ({ metrics, yearlyProjections }) => {
   if (!selectedRow.value) return
   
   const scenarioKey = selectedRow.value.scenario.toLowerCase()
-  console.log(scenarioKey)
-  // Create a new scenario object with all the data
+  
   const updatedScenario = {
     ...scenarioStore[scenarioKey],
     metrics: { ...metrics },
     yearlyProjections: { ...yearlyProjections }
   }
   
-  // Update the store directly
   scenarioStore[scenarioKey] = updatedScenario
-
-
-  console.log(scenarioStore)
   showFunnelDialog.value = false
+}
+
+const closePanel = () => {
+  emit('closePanel')
 }
 </script>
 
@@ -246,5 +284,13 @@ const handleMetricsUpdate = ({ metrics, yearlyProjections }) => {
 .cursor-pointer {
   cursor: pointer;
   padding: 4px 8px;
+}
+
+:deep(.q-field__control) {
+  height: 32px;
+}
+
+:deep(.q-field__marginal) {
+  height: 32px;
 }
 </style>

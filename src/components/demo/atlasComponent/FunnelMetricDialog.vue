@@ -1,8 +1,8 @@
 <template>
-  <q-dialog v-model="isDialogOpen" persistent>
+  <q-dialog v-model="isDialogOpen" persistent @before-hide="saveMetrics" transition-duration="0">
     <q-card style="min-width: 700px">
       <q-card-section class="row items-center q-pb-none">
-        <div class="text-h6">{{ `Funnel Metrics Configuration - ${selectedRow?.scenario || ''}` }}</div>
+        <div class="text-h6">{{ `Funnel chart - ${selectedRow?.scenario || ''}` }}</div>
         <q-space />
         <q-btn icon="close" flat round dense v-close-popup />
       </q-card-section>
@@ -12,27 +12,30 @@
           <!-- Column headers -->
           <div class="col-12">
             <div class="row q-col-gutter-md">
-              <div class="col-4">Metric</div>
-              <div class="col-2">Current Value (%)</div>
-              <div class="col-3">Monthly Growth (%)</div>
-              <div class="col-3">Cap (%)</div>
+              <div class="col-4 text-right">Metric :</div>
+              <div class="col-2 text-center ">Current Value</div>
+              <div class="col-2 text-center" style="white-space: nowrap;">Monthly Growth</div>
+              <div class="col-2 text-center ">Cap</div>
             </div>
           </div>
           
           <!-- Metric rows -->
           <div class="col-12" v-for="row in metricRows" :key="row.key">
-            <div class="row q-col-gutter-md items-center q-mb-md">
+            <div class="row q-col-gutter-md items-center">
               <div class="col-4">
-                <div class="text-subtitle2">{{ row.label }}</div>
-                <div class="text-caption text-grey-7">{{ row.description }}</div>
+                <div class="text-subtitle2">{{ row.label }}<Tooltip  :title="row.label":description="row.description"></Tooltip></div>
+                
               </div>
               
               <div class="col-2">
                 <q-input
                   v-model.number="metrics[row.key].value"
                   type="number"
+                  suffix="%"
                   dense
                   outlined
+                      class="text-right"
+    input-class="text-right"
                   :rules="[
                     val => val >= 0 && val <= 100 || 'Value must be between 0-100',
                     val => !isNaN(val) || 'Must be a number'
@@ -41,13 +44,16 @@
                 />
               </div>
               
-              <div class="col-3">
+              <div class="col-2">
                 <q-input
                   v-model.number="metrics[row.key].monthlyGrowth"
                   type="number"
+                  suffix="%"
                   step="0.1"
                   dense
                   outlined
+                      class="text-right"
+    input-class="text-right"
                   :rules="[
                     val => val >= 0 && val <= 100 || 'Growth must be between 0-100',
                     val => !isNaN(val) || 'Must be a number'
@@ -56,12 +62,15 @@
                 />
               </div>
               
-              <div class="col-3">
+              <div class="col-2">
                 <q-input
                   v-model.number="metrics[row.key].cap"
                   type="number"
+                  suffix="%"
                   dense
                   outlined
+                      class="text-right"
+    input-class="text-right"
                   :rules="[
                     val => val >= 0 && val <= 100 || 'Cap must be between 0-100',
                     val => val >= metrics[row.key].value || 'Must be greater than current value',
@@ -75,7 +84,7 @@
         </div>
       </q-card-section>
 
-      <!-- Preview Section -->
+      <!-- Preview Section
       <q-card-section>
         <div class="text-subtitle2 q-mb-sm">Growth Projections</div>
         <div class="row q-col-gutter-md">
@@ -91,11 +100,10 @@
             </q-card>
           </div>
         </div>
-      </q-card-section>
+      </q-card-section> -->
 
       <q-card-actions align="right" class="bg-white">
-        <q-btn flat label="Cancel" color="grey-8" v-close-popup />
-        <q-btn flat label="Save" color="primary" @click="saveMetrics" />
+        <q-btn flat label="Close" color="primary" @click="saveMetrics" />
       </q-card-actions>
     </q-card>
   </q-dialog>
@@ -210,3 +218,13 @@ watch(() => props.selectedRow, () => {
   }
 }, { immediate: true })
 </script>
+<style scoped>
+/* Add these styles to ensure proper right alignment */
+:deep(.q-field__native) {
+  text-align: center !important;
+}
+
+:deep(.q-field__suffix) {
+  padding-left: 4px;
+}
+</style>

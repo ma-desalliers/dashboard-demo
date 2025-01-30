@@ -178,7 +178,10 @@ html {
   }
 
   
+}
 
+.c-grayscale {
+  filter: grayscale(100%);
 }
 
 .c-border-right{

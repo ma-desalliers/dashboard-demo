@@ -2,8 +2,19 @@
   <div class="seo-strategy q-pa-md">
     <!-- Strategy Header -->
     <div class="row items-center justify-between q-mb-md">
-      <div class="text-h6">Search Engine Optimization (SEO)</div>
-      <q-btn flat dense label="Actions" icon-right="expand_more">
+      <div class="col-12">
+        <q-btn
+          text-color="#333333"
+          label="Strategy"
+          dense
+          class="q-px-sm"
+          icon="chevron_left"
+          @click="ClosePanel"
+        >
+        </q-btn>
+      </div>
+      <div class="text-h6 q-px-md">Search Engine Optimization (SEO)</div>
+     <!-- <q-btn flat dense label="Actions" icon-right="expand_more">
         <q-menu>
           <q-list style="min-width: 100px">
             <q-item clickable v-close-popup>
@@ -14,15 +25,15 @@
             </q-item>
           </q-list>
         </q-menu>
-      </q-btn>
+      </q-btn>-->
     </div>
     
-    <div class="text-grey-7 q-mb-lg">
+    <div class="text-grey-7 q-mb-lg q-px-md">
       Boost your website's visibility in search engines to attract more organic traffic, leading to increased sales and revenue growth.
     </div>
 
     <!-- Search Engines -->
-    <div class="row q-gutter-sm q-mb-lg">
+    <div class="row q-gutter-sm q-mb-lg q-px-md c-grayscale">
       <q-chip outline>
         <q-avatar icon="img:https://www.google.com/favicon.ico" />
         Google
@@ -39,7 +50,7 @@
       title="Tactics"
       class="q-mb-md"
     >
-      <q-list padding>
+      <q-list >
         <q-item v-for="tactic in tactics" :key="tactic.title">
           <q-item-section avatar>
             <q-icon name="assistant" color="green" />
@@ -61,7 +72,7 @@
       title="AI Agents"
       class="q-mb-md"
     >
-      <q-list padding>
+      <q-list >
         <q-item v-for="agent in agents" :key="agent.name">
           <q-item-section avatar>
             <q-avatar>
@@ -69,8 +80,8 @@
             </q-avatar>
           </q-item-section>
           <q-item-section>
-            <q-item-label>{{ agent.name }}</q-item-label>
-            <q-item-label caption>{{ agent.role }}</q-item-label>
+            <q-item-label style="white-space:nowrap">{{ agent.name }} <span class="text-caption" style="white-space:nobreak">- {{ agent.role }}</span></q-item-label>
+            
             <q-item-label caption>{{ agent.tasks }} tasks</q-item-label>
           </q-item-section>
         </q-item>
@@ -95,7 +106,7 @@
         <q-btn color="green" label="Activer ma campagne" />
       </div>
 
-      <q-list padding>
+      <q-list >
         <q-item v-for="campaign in campaigns" :key="campaign.name">
           <q-item-section>
             <q-item-label>{{ campaign.name }}</q-item-label>
@@ -113,6 +124,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+
+const emit = defineEmits(['closePanel'])
 const tacticsExpanded = ref(true)
 const agentsExpanded = ref(true)
 const campaignsExpanded = ref(true)
@@ -133,6 +146,10 @@ const campaigns = ref([
   { name: 'USA_Manufacturers_EN', active: true },
   { name: 'CA_Manufacturers_FR', active: false }
 ])
+
+const ClosePanel = () =>{
+  emit('closePanel')
+}
 </script>
 
 <style scoped>

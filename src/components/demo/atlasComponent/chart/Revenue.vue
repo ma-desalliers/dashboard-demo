@@ -44,18 +44,10 @@ const mounted = ref(false)
 const chart = ref(null)
 
 // Combined historical and projected base revenue
-const baseRevenue = {
-  2020: 750000,
-  2021: 825000,
-  2022: 907500,
-  2023: 998250,
-  2024: 1098075,
-  2025: 1207882,
-  2026: 1328670,
-  2027: 1461537,
-  2028: 1607691,
-  2029: 1768460
-}
+const baseRevenue = computed(()=>{
+return calculateRevenueProjection([750000,825000,907500,998250,1098075],[2020,2021,2022,2023,2024,2025,2026,2027,2028,2029])
+
+})
 
 const chartSeries = computed(() => {
   if (!props.tableData) return []
@@ -66,16 +58,16 @@ const chartSeries = computed(() => {
   const baseRevenueSeries = {
     name: 'Revenue',
     data: [
-      baseRevenue[2020],
-      baseRevenue[2021],
-      baseRevenue[2022],
-      baseRevenue[2023],
-      baseRevenue[2024],
-      baseRevenue[2025],
-      baseRevenue[2026],
-      baseRevenue[2027],
-      baseRevenue[2028],
-      baseRevenue[2029]
+      baseRevenue.value[2020],
+      baseRevenue.value[2021],
+      baseRevenue.value[2022],
+      baseRevenue.value[2023],
+      baseRevenue.value[2024],
+      baseRevenue.value[2025],
+      baseRevenue.value[2026],
+      baseRevenue.value[2027],
+      baseRevenue.value[2028],
+      baseRevenue.value[2029]
     ],
     color: '#4B5563'
   }
@@ -197,6 +189,8 @@ const chartOptions = computed(() => ({
     }
   },
   yaxis: {
+    max: 6000000,
+    forceNiceScale: true,
     labels: {
       formatter: (value: number) => formatYAxisCurrency(value),
       style: {
@@ -287,8 +281,73 @@ const chartOptions = computed(() => ({
 }))
 
 function formatYAxisCurrency(value: number) {
+ // const chartValue = value ''
   return `$${(value / 1000000).toFixed(1)}M`
 }
+
+
+
+interface RevenueByYear {
+  [year: number]: number;
+}
+
+const calculateRevenueProjection = (
+  historicalRevenue: number[],
+  years: number[]
+): RevenueByYear => {
+  // Input validation
+  if (!historicalRevenue.length || !years.length) {
+    return {};
+  }
+
+  const result: RevenueByYear = {};
+
+  // Add historical data to result for the matching years
+  historicalRevenue.forEach((revenue, index) => {
+    if (index < years.length) {
+      result[years[index]] = revenue;
+    }
+  });
+
+  // If we don't have enough historical data for growth calculation
+  if (historicalRevenue.length < 2) {
+    // Use the last known revenue for all future years
+    years.forEach(year => {
+      if (!result[year]) {
+        result[year] = historicalRevenue[historicalRevenue.length - 1];
+      }
+    });
+    return result;
+  }
+
+  // Calculate year-over-year growth rates
+  const growthRates: number[] = [];
+  for (let i = 1; i < historicalRevenue.length; i++) {
+    const growthRate = (historicalRevenue[i] - historicalRevenue[i - 1]) / historicalRevenue[i - 1];
+    growthRates.push(growthRate);
+  }
+
+  // Calculate weighted average growth rate (more weight to recent years)
+  const weights = growthRates.map((_, index) => index + 1);
+  const weightSum = weights.reduce((sum, weight) => sum + weight, 0);
+  const weightedGrowthRate = growthRates.reduce((sum, rate, index) => {
+    return sum + (rate * weights[index] / weightSum);
+  }, 0);
+
+  // Generate projections
+  let lastValue = historicalRevenue[historicalRevenue.length - 1];
+  let lastHistoricalYear = years[historicalRevenue.length - 1];
+
+  // Project future values
+  years.slice(historicalRevenue.length).forEach(year => {
+    const yearsFromLastHistorical = year - lastHistoricalYear;
+    const projectedRevenue = lastValue * Math.pow(1 + weightedGrowthRate, yearsFromLastHistorical);
+    result[year] = Math.round(projectedRevenue);
+  });
+
+  return result;
+};
+
 
 watch(() => props.tableData, () => {
   // Chart will automatically update due to computed properties

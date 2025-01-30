@@ -44,7 +44,7 @@
             dropdown-icon="expand_more"
             :class="{'text-h6': !isMobile, 'text-subtitle1': isMobile}"
           />
-          <CustomDateRange></CustomDateRange>
+          <CustomDateRange range-type="year"></CustomDateRange>
         </q-card-section>
         <savings v-if="selectedChart === 'Savings'"></savings>
         <Revenue v-if="selectedChart === 'Revenue'" :table-data="computedTableData"></Revenue>
@@ -394,6 +394,11 @@ const handleDelete = (strategy:any) => {
   // Handle delete action
   console.log(`Delete strategy ${strategy.name}`)
 }
+
+
+
+
+
 
 </script>
 

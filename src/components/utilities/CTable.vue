@@ -58,7 +58,11 @@
 
       <!-- Custom Body -->
       <template #body="props">
-        <q-tr :props="props" :class="{ 'selected': props.selected }">
+        <q-tr 
+          :props="props" 
+          :class="{ 'selected': props.selected, 'table-row-border': props.row[borderColorField] }"
+          :style="props.row[borderColorField] ? { '--row-border-color': props.row[borderColorField] } : {}"
+        >
           <!-- Selection Column -->
           <q-td auto-width>
             <q-checkbox 
@@ -72,6 +76,7 @@
 
           <!-- Data Columns -->
           <q-td v-for="col in columns" :key="col.name"  :style="col.style"
+          
             :class="{
               ['text-' + col.align]: col.align,
             }">
@@ -218,11 +223,8 @@ interface Props {
   hoverButtons?: any[] | undefined
   hoverButtonsField?:string
   columnOptions?:{columnName:string, options:any[]}[]
+  borderColorField?: string
 }
-
-//TODO : Implement hover buttons over the "title" column, 
-//TODO : Implement the columnOptions to show the GlobalPopup with the options for status, category, etc
-
 
 const props = withDefaults(defineProps<Props>(), {
   loading: false,
@@ -236,11 +238,11 @@ const props = withDefaults(defineProps<Props>(), {
     rowsNumber: 0
   }),
   rowKey: 'id',
-  modelValue: () => []
+  modelValue: () => [],
+  borderColorField: 'borderColor'
 })
 
 const emit = defineEmits(['update:modelValue', 'update:pagination'])
-
 
 const mainDisplayStore = useMainDisplayStore()
 const innerSelected = computed({
@@ -265,6 +267,7 @@ const allSelected = computed(() => innerSelected.value.length === props.rows.len
 
 // Computed properties
 const computedColumns = computed(() => props.columns)
+
 // Helper functions
 const formatDate = (dateValue: string | Date) => {
   if (!dateValue) return ''
@@ -278,25 +281,23 @@ const getFieldValue = (row: any, col: any) => {
   return row[col.field] ?? '-'
 }
 
-const onBadgeClick = (row: any, col: any, event:Event) =>{
-
+const onBadgeClick = (row: any, col: any, event:Event) => {
   const triggerRect = mainDisplayStore.getPopupTriggerElement(event.currentTarget as HTMLElement)
-console.log(col)
-mainDisplayStore.pushPopup({
-  triggerElement:triggerRect,
-  item:{
-    item: row,
-    options:col.options,
-    closeFn: col.updateFn,
-  },
-  view:'BadgeSelect',
-  isOpen:true
-})
+  console.log(col)
+  mainDisplayStore.pushPopup({
+    triggerElement:triggerRect,
+    item:{
+      item: row,
+      options:col.options,
+      closeFn: col.updateFn,
+    },
+    view:'BadgeSelect',
+    isOpen:true
+  })
 }
 </script>
 
 <style lang="scss" scoped>
-
 .q-table tbody tr:not(:last-child) td {
   border-bottom: 1px solid #e0e0e0;
 }
@@ -304,6 +305,7 @@ mainDisplayStore.pushPopup({
 .c-table .q-table tbody td:before  {
   display:none;
 }
+
 .c-box-subtitle{
   font-size:16px;
 }
@@ -315,7 +317,6 @@ mainDisplayStore.pushPopup({
 .c-table .q-td {
   font-size:16px;
 }
-
 
 .selected{
   .q-td{
@@ -347,4 +348,13 @@ mainDisplayStore.pushPopup({
   opacity: 1 !important;
 }
 
+// New styles for row border
+.table-row-border {
+  position: relative;
+
+  td:first-child{
+    border-left: solid 2px var(--row-border-color) !important;
+
+  }
+}
 </style>
