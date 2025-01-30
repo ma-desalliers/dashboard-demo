@@ -76,15 +76,15 @@ const listView = ref('Roadmap')
 // Chart selection
 const selectedChart = ref('Revenue')
 const chartOptions = [
-  'Revenue',
-  'Savings',
-  'LTV',
-  'Customer'
+  'Revenu',
+  'Économies',
+  'Valeur à vie',
+  'Client'
 ]
 
 const tableData = reactive( [
   {
-    name: 'Search Engine Optimization (SEO)',
+    name: 'Optimisation pour les moteurs de recherche (SEO)',
     icon: 'G',
     selected: true,
     irg: 9,
@@ -116,7 +116,7 @@ const tableData = reactive( [
     }
   },
   {
-    name: 'Pay per click (PPC)',
+    name: 'Paiement par clic (PPC)',
     icon: 'A',
     color: '#86EFAC',
     selected: true,
@@ -148,7 +148,7 @@ const tableData = reactive( [
     }
   },
   {
-    name: 'Lead nurturing',
+    name: 'Nurturing de prospects',
     icon: 'profile',
     color: '#BBF7D0',
     selected: false,
@@ -180,7 +180,7 @@ const tableData = reactive( [
     }
   },
   {
-    name: 'Lead revival',
+    name: 'Relance de prospects',
     icon: 'profile',
     color: '#34D399',
     selected: false,
@@ -212,7 +212,7 @@ const tableData = reactive( [
     }
   },
   {
-    name: 'Lead research',
+    name: 'Recherche de prospects',
     icon: 'profile',
     color: '#A7F3D0',
     selected: false,
@@ -244,7 +244,7 @@ const tableData = reactive( [
     }
   },
   {
-    name: 'Lead qualification',
+    name: 'Qualification de prospects',
     icon: 'profile',
     color: '#D1FAE5',
     selected: false,
@@ -276,7 +276,7 @@ const tableData = reactive( [
     }
   },
   {
-    name: 'Client nurturing',
+    name: 'Nurturing de clients',
     icon: 'profile',
     color: '#6EE7B7',
     selected: false,
@@ -308,7 +308,7 @@ const tableData = reactive( [
     }
   },
   {
-    name: 'Cold emailing',
+    name: 'Emailing à froid',
     icon: 'profile',
     color: '#6EE7B7',
     selected: false,

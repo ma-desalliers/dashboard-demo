@@ -20,13 +20,13 @@
             <q-input
               v-model.number="revenuePerSale"
               type="number"
-              label="Revenue per Sale"
+label="Revenu par Vente"
               dense
               outlined
               :min="0"
               prefix="$"
               class="q-pb-none"
-              :rules="[val => val > 0 || 'Please enter a value greater than 0']"
+:rules="[val => val > 0 || 'Veuillez entrer une valeur supérieure à 0']"
               style="width: 200px"
             >
               <template v-slot:append>
@@ -142,28 +142,28 @@ const updateScenarioStore = (scenario: 'optimist' | 'realistic' | 'pessimist') =
 const columns = [
   {
     name: 'scenario',
-    label: 'Scenario',
+label: 'Scénario',
     field: 'scenario',
     align: 'left',
     style: 'min-width: 120px'
   },
   {
     name: 'potentialReach',
-    label: 'Potential Reach',
+label: 'Portée Potentielle',
     field: 'potentialReach',
     align: 'center',
     style: 'min-width: 150px'
   },
   {
     name: 'acquisitionRate',
-    label: 'Acquisition Rate (AR)',
+label: 'Taux d’Acquisition (TA)',
     field: 'acquisitionRate',
     align: 'center',
     style: 'min-width: 150px'
   },
   {
     name: 'reach',
-    label: 'Reach',
+label: 'Portée',
     field: 'reach',
     align: 'center',
     format: (val: number) => formatNumber(val),
@@ -171,7 +171,7 @@ const columns = [
   },
   {
     name: 'microConversions',
-    label: 'Micro Conversions',
+label: 'Micro Conversions',
     field: 'microConversions',
     align: 'center',
     format: (val: number) => formatNumber(val),
@@ -179,7 +179,7 @@ const columns = [
   },
   {
     name: 'leads',
-    label: 'Leads',
+label: 'Prospects',
     field: 'leads',
     align: 'center',
     format: (val: number) => formatNumber(val),
@@ -187,7 +187,7 @@ const columns = [
   },
   {
     name: 'sales',
-    label: 'Sales',
+label: 'Ventes',
     field: 'sales',
     align: 'center',
     format: (val: number) => formatNumber(val),
@@ -195,7 +195,7 @@ const columns = [
   },
   {
     name: 'revenue',
-    label: 'Revenue',
+label: 'Revenu',
     field: 'revenue',
     align: 'center',
     format: (val: number) => `$${formatNumber(val)}`,
