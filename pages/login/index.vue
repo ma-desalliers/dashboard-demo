@@ -78,7 +78,7 @@ import { ref } from 'vue';
 import { useQuasar } from 'quasar';
 import { useRouter } from 'vue-router';
 import { useAuthStore } from '@/src/stores/authStore';
-import Carousel from '~/src/components/login/Carousel.vue';
+import Carousel from '~/src/components/pages/login/Carousel.vue';
 //TODO: set company color in local storage on login
 
 interface Slide {

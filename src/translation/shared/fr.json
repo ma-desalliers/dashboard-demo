@@ -21,5 +21,18 @@
   "branding": "Image de marque",
   "channels": "Canaux",
   "dashboard": "Tableau de bord",
-  "pages": "Pages"
+  "pages": "Pages",
+  "advanced-mode": "Mode avancé",
+  "generate-content": "Générer du contenu",
+  "topics": "Sujets",
+  "blog-posts": "Articles de blog",
+  "social-posts": "Média sociaux",
+  "newsletter": "Infolettres",
+  "tooltip-create-content": "Créer divers types de contenu pour votre produit",
+  "tooltip-select-product": "Sélectionnez le produit pour lequel générer du contenu",
+  "tooltip-select-audience": "Sélectionnez votre public cible",
+  "tooltip-topics": "Nombre de sujets à générer",
+  "tooltip-blog-posts": "Nombre d'articles de blog à générer",
+  "tooltip-social-posts": "Nombre de publications sur les réseaux sociaux à générer",
+  "tooltip-newsletter": "Nombre de bulletins à générer"
 }

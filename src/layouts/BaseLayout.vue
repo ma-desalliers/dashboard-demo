@@ -9,7 +9,7 @@
         <!-- Left Column -->
         <Sidebar class="c-left-column ":class="{'isOpen': showMenu}" />
         <!-- Right Content Area -->
-        <div class="c-right-column">
+        <div class="c-right-column" :class="{'c-overlay': showOverlay == 'content' }">
           <ContextMenu></ContextMenu>
           <slot></slot>
         </div>
@@ -31,6 +31,7 @@ const mainDisplayStore = useMainDisplayStore();
 const isMobile = computed(()=>mainDisplayStore.isMobile )
 const showMenu = computed(()=>mainDisplayStore.showMenu )
 const showContent = computed(()=> mainDisplayStore.showContent)
+const showOverlay = computed(()=> mainDisplayStore.overlay)
 const headerState = ref(true)
 
 definePageMeta({
@@ -130,6 +131,16 @@ definePageMeta({
     }
 
 		
+  }
+}
+
+.c-overlay{
+  &::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background-color: rgba(0,0,0,0.1);
+    z-index: 1;
   }
 }
 </style>

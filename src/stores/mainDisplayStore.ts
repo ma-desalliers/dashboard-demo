@@ -22,7 +22,8 @@ interface MainDisplayState {
   isMobile:Boolean,
   showContent:Boolean,
   showMenu:Boolean,
-  contextMenu:any[] | null
+  contextMenu:any[] | null,
+  overlay:''|'full-page'|'content'
 }
 
 type DisplayUpdatePayload = Partial<DisplayState>;
@@ -40,7 +41,8 @@ export const useMainDisplayStore = defineStore('mainDisplayStore', {
     isMobile: false,
     showContent:false,
     showMenu:false,
-    contextMenu: null
+    contextMenu: null,
+    overlay:''
   }),
 
   actions: {
@@ -56,6 +58,10 @@ export const useMainDisplayStore = defineStore('mainDisplayStore', {
     },
     setContextMenu(value : any){
       this.contextMenu = value
+    },
+
+    setOverlay(value: ''| 'full-page'|'content'){
+      this.overlay = value
     },
     updateMainDisplay(payload: DisplayUpdatePayload) {
       this.main = { ...this.main, ...payload };

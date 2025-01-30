@@ -21,5 +21,18 @@
   "branding": "Branding",
   "channels": "Channels",
   "dashboard": "Dashboard",
-  "pages": "Pages"
+  "pages": "Pages",
+  "advanced-mode": "Advanced mode",
+  "generate-content": "Generate content",
+  "topics": "Topics",
+  "blog-posts": "Blog posts",
+  "social-posts": "Social posts",
+  "newsletter": "Newsletter",
+  "tooltip-create-content": "Create various types of content for your product",
+  "tooltip-select-product": "Select the product to generate content for",
+  "tooltip-select-audience": "Select your target audience",
+  "tooltip-topics": "Number of topics to generate",
+  "tooltip-blog-posts": "Number of blog posts to generate",
+  "tooltip-social-posts": "Number of social media posts to generate",
+  "tooltip-newsletter": "Number of newsletters to generate"
 }

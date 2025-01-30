@@ -5,8 +5,8 @@
       v-model="isOpen"
       position="standard"
       class="c-global-popup"
-      transition-show="fade"
-      transition-hide="fade"
+      :class="dialogClass"
+      transition-duration="0"
       @hide="handleHide"
     >
       <q-card
@@ -34,7 +34,8 @@ const props = defineProps<{
     width?: string,
     height?: string,
     maxHeight?: string
-  }
+  },
+  dialogClass?:string,
 }>()
 
 const emit = defineEmits<{
@@ -67,26 +68,41 @@ const calculatePosition = () => {
   const actualHeight = cardRef.value.$el.offsetHeight
   const viewportWidth = window.innerWidth
   const viewportHeight = window.innerHeight
+  const margin = 5 // Margin from viewport edges
   
-  // Calculate available space
-  const rightSpace = viewportWidth - (rect.x + rect.width)
-  const bottomSpace = viewportHeight - rect.y
-  
-  // Position horizontally
-  if (rightSpace >= popupWidth) {
-    popupStyle.left = `${rect.x + rect.width}px`
+  // Calculate horizontal position
+  let leftPosition
+  if (rect.x + rect.width + popupWidth + margin <= viewportWidth) {
+    // Fits to the right of trigger
+    leftPosition = rect.x + rect.width
+  } else if (rect.x - popupWidth - margin >= 0) {
+    // Fits to the left of trigger
+    leftPosition = rect.x - popupWidth
   } else {
-    popupStyle.left = `${rect.x - popupWidth}px`
+    // Doesn't fit either side - align to viewport edge with margin
+    leftPosition = viewportWidth - popupWidth - margin
   }
   
-  // Position vertically
-  if (bottomSpace >= actualHeight) {
-    popupStyle.top = `${rect.y}px`
+  // Calculate vertical position
+  let topPosition
+  if (rect.y + actualHeight + margin <= viewportHeight) {
+    // Fits below trigger
+    topPosition = rect.y
+  } else if (rect.y - actualHeight >= margin) {
+    // Fits above trigger
+    topPosition = rect.y - actualHeight
   } else {
-    popupStyle.top = `${rect.y + rect.height - actualHeight}px`
+    // Doesn't fit above or below - align to bottom of viewport with margin
+    topPosition = viewportHeight - actualHeight - margin
   }
+  
+  // Ensure left position doesn't go beyond left edge
+  leftPosition = Math.max(margin, leftPosition)
+  
+  // Apply the calculated positions
+  popupStyle.left = `${leftPosition}px`
+  popupStyle.top = `${topPosition}px`
 }
-
 const handleHide = () => {
   emit('hide')
   emit('update:modelValue', false)

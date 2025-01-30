@@ -7,10 +7,7 @@
 
     <!-- Growth Plan Section-->
     <div class="section-container c-light-border-bottom">
-      <div class="full-width q-mb-lg q-px-md">
-        <q-btn class="full-width" color="primary" :label="$t('create-content')"></q-btn>
-      </div>
-
+      <GenerateContentPopup></GenerateContentPopup>
       <div clas="section-header q-mb-sm q-px-md">
         <div class="row items-center q-mb-md cursor-pointer q-px-md q-mb-xs q-py-xs">
           <div class="">{{ $t("growth-plan") }}</div>

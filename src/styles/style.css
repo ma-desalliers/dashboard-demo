@@ -70,6 +70,10 @@ html {
   background-color: var(--main-gray);
 }
 
+.c-bg-main-gray {
+  background-color: var(--main-gray);
+}
+
 .c-text-dark {
   color: #213343;
 }
@@ -153,6 +157,10 @@ html {
 
 .c-border-orange {
   border: solid 1px orange;
+}
+
+.c-border-green {
+  border: solid 1px var(--q-green);
 }
 
 .c-border-primary {
@@ -273,6 +281,10 @@ html {
 
 .c-display-none {
   display: none;
+}
+
+.c-select-right .q-item__label {
+  text-align: right;
 }
 
 .custom-expansion {
