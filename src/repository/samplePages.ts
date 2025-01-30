@@ -1,31 +1,5 @@
-<template>
-  <div>
-    <page
-    :pages="samplePages"
-      :loading="loading"
-      :pagination="pagination"
-      @update:pagination="handlePaginationUpdate"
-      :onEdit="handleEdit"
-      :onDelete="handleDelete"
-      :onBatchDelete="handleBatchDelete"
-    />
-  </div>
-</template>
-<script lang="ts" setup>
-import products from '@/src/components/company/products/products.vue'
-import page from '~/src/components/company/page.vue';
-import { useMainDisplayStore } from '~/src/stores/mainDisplayStore';
-import companyMenu from '~/src/asset/menu/company';
-import { useCompanyStore } from '~/src/stores/companyStore';
-
-definePageMeta({
-  middleware: ['auth', 'company']
-})
-
-const mainDisplayStore = useMainDisplayStore()
-const companyStore = useCompanyStore();
-
-const samplePages = [
+// pages.ts
+export const samplePages = [
   {
     uuid: '1',
     title: 'How to improve product retention strategies',
@@ -117,7 +91,7 @@ const samplePages = [
 ]
 
 // Constants for reference and filtering
-const channels = [
+export const channels = [
   'Search Engine',
   'Newsletter',
   'LinkedIn',
@@ -126,14 +100,14 @@ const channels = [
   'Google Profile'
 ]
 
-const buyingStages = [
+export const buyingStages = [
   'Awareness',
   'Consideration',
   'Decision',
   'Retention'
 ]
 
- const formats = [
+export const formats = [
   'How-To-Guide',
   'Skyscraper',
   'Product page',
@@ -144,52 +118,8 @@ const buyingStages = [
   'Post'
 ]
 
-const relevancyLevels = [
+export const relevancyLevels = [
   'Excellent',
   'Good',
   'Average'
 ]
-
-const loading = ref(false)
-const pages = ref(samplePages)
-
-const pagination = ref({
-  sortBy: 'creationDate',
-  descending: true,
-  page: 1,
-  rowsPerPage: 10,
-  rowsNumber: samplePages.length
-})
-
-const handlePaginationUpdate = (newPagination: any) => {
-  pagination.value = newPagination
-}
-
-const handleEdit = (page: any) => {
-  console.log('Edit page:', page)
-  // Add your edit logic here
-}
-
-const handleDelete = (page: any) => {
-  console.log('Delete page:', page)
-  // Add your delete logic here
-}
-
-const handleBatchDelete = (selectedPages: any[]) => {
-  console.log('Batch delete pages:', selectedPages)
-  // Add your batch delete logic here
-}
-
-
-
-onMounted(()=>{
-  const companyUuid = companyStore.theCompany.uuid
-  mainDisplayStore.setContextMenu(companyMenu(companyUuid))
-
-  loading.value = true
-  setTimeout(() => {
-    pages.value = samplePages
-    loading.value = false
-  }, 1000)
-})
-</script>
