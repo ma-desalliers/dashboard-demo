@@ -6,6 +6,7 @@ const useCompanyMenu = (companyUuid: string) => {
 
   const contextMenu = [
     //{ name: 'company', label: t("company"), path: `/company/${companyUuid}/edit` },
+    { name: 'brands', label: 'brands', path: `/company/${companyUuid}/brands` },
     { name: 'page', label: 'pages', path: `/company/${companyUuid}/page` },
 
     { name: 'products', label: t("products"), path: `/company/${companyUuid}/products` },

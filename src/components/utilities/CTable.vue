@@ -104,6 +104,14 @@
                 <StatusPopup :current-item="getFieldValue(props.row, col)"  :options="col.options" @update-value="(value) => col.updateFn({item:props.row, value:value})"></StatusPopup>
               </template>
 
+              
+              <template v-else-if="col.type === 'checklist'">
+                <CheckListPopup :current-item="getFieldValue(props.row, col)"  :options="props.row.options" @update-value="(value) => col.updateFn({item:props.row, value:value})">
+                
+                  {{getFieldValue(props.row, col)}} 
+                  </CheckListPopup>
+              </template>
+
               <template v-else-if="col.type === 'date'">
                 {{ formatDate(props.row[col.name]) }}
               </template>
@@ -156,6 +164,7 @@ import { computed, ref, watch } from 'vue'
 import { date, type QTableProps } from 'quasar'
 import { useMainDisplayStore } from '../../stores/mainDisplayStore';
 
+
 type AlignValue = 'left' | 'right' | 'center'
 
 interface BaseColumn {
@@ -184,6 +193,10 @@ interface HoverColumn extends BaseColumn {
 
 interface ReviewColumn extends BaseColumn {
   type: 'review'
+}
+interface CheckListColumn extends BaseColumn {
+  type: 'checklist'
+  options:any[]
 }
 
 interface ButtonColumn extends BaseColumn {
@@ -216,7 +229,7 @@ interface ActionsColumn extends BaseColumn {
   }>
 }
 
-type Column = TextColumn | IconColumn | ButtonColumn | BadgeColumn | DateColumn | ActionsColumn | HoverColumn | BarColumn | ReviewColumn
+type Column = TextColumn | IconColumn | ButtonColumn | BadgeColumn | DateColumn | ActionsColumn | HoverColumn | BarColumn | ReviewColumn | CheckListColumn
 
 interface BatchAction {
   label: string
