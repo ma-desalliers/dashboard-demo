@@ -1,4 +1,43 @@
 <template>
+  <div class="row q-pa-md q-col-gutter-md">
+    <div class="col-12 col-sm-4">
+      <q-select
+        v-model="selectedAudience"
+        :options="audienceOptions"
+        label="Audience"
+        outlined
+        dense
+        clearable
+        emit-value
+        map-options
+      />
+    </div>
+    <div class="col-12 col-sm-4">
+      <q-select
+        v-model="selectedJob"
+        :options="jobOptions"
+        label="Job"
+        outlined
+        dense
+        clearable
+        emit-value
+        map-options
+      />
+    </div>
+    <div class="col-12 col-sm-4">
+      <q-select
+        v-model="selectedSubJob"
+        :options="subJobOptions"
+        label="Sub Job"
+        outlined
+        dense
+        clearable
+        emit-value
+        map-options
+        :disable="!selectedJob"
+      />
+    </div>
+  </div>
   <div>
     <CTable
       v-model="selectedPages"
@@ -89,6 +128,30 @@ const props = defineProps<{
 const emit = defineEmits(['update:pagination'])
 
 const selectedPages = ref<Page[]>([])
+
+
+const selectedAudience = ref<string | null>(null)
+const selectedJob = ref<string | null>(null)
+const selectedSubJob = ref<string | null>(null)
+
+// Temporary options (to be replaced with actual data)
+const audienceOptions = [
+  { label: 'Audience 1', value: 'audience1' },
+  { label: 'Audience 2', value: 'audience2' },
+  { label: 'Audience 3', value: 'audience3' }
+]
+
+const jobOptions = [
+  { label: 'Job 1', value: 'job1' },
+  { label: 'Job 2', value: 'job2' },
+  { label: 'Job 3', value: 'job3' }
+]
+
+const subJobOptions = [
+  { label: 'Sub Job 1', value: 'subjob1' },
+  { label: 'Sub Job 2', value: 'subjob2' },
+  { label: 'Sub Job 3', value: 'subjob3' }
+]
 
 const columns = [
   {

@@ -46,11 +46,13 @@
           <div class="row q-col-gutter-md">
             <div class="col-6">
               <div class="text-subtitle2 q-mb-sm">Primary</div>
-              <div 
-                class="color-box" 
-                :style="{ backgroundColor: brandData['brand_guide'].design['primary-color'] || '#000000' }"
-              ></div>
+              <c-color-picker v-model="brandData.brand_guide.design.primary_color"></c-color-picker>
             </div>
+            <div class="col-6">
+              <div class="text-subtitle2 q-mb-sm">Secondary</div>
+              <c-color-picker  v-model="brandData.brand_guide.design.secondary_color"></c-color-picker>
+            </div>
+
           </div>
         </q-card-section>
       </q-card>
@@ -207,7 +209,7 @@ const baseColumns = [
     label: 'Parameter',
     field: 'parameter',
     align: 'left' as const,
-    style: ''
+    style: '',
   },
   {
     name: 'values',
@@ -215,7 +217,8 @@ const baseColumns = [
     field: 'values',
     align: 'left' as const,
     style: '',
-    type:'checklist'
+    type:'checklist',
+    updateFn:(params:any) =>{ console.log(params)}
   }
 ];
 
