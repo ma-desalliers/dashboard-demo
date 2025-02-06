@@ -41,7 +41,7 @@
             option-value="uuid"
             align="right"
             dense 
-            emit-value
+            emit-value="false"
             map-options
           />
         </div>
@@ -60,7 +60,8 @@
             class="col text-right"
             v-model="selectedAudience" 
             :options="audienceList"
-             option-label="title"
+            option-value="uuid"
+            option-label="title"
             dense 
             emit-value 
             map-options 
@@ -126,6 +127,7 @@ import { useAudienceStore } from '~/src/stores/audienceStore'
 import { useCompanyStore } from '~/src/stores/companyStore'
 import { useMainDisplayStore } from '~/src/stores/mainDisplayStore'
 import AddCredit from '../../shared/AddCredit.vue'
+import { BaseRepository } from '~/src/repository/BaseRepository'
 interface ContentSlider {
   id: string
   label: string
@@ -141,18 +143,14 @@ const showPopup = ref(false)
 const triggerRef = ref<HTMLElement>()
 const showAddCredit = ref(false)
 const popupRef = ref()
-const selectedProduct = ref('vision-systems')
-const selectedAudience = ref('capital-goods')
-
-const productOptions = [
-  { label: 'Vision systems', value: 'vision-systems' },
-  { label: 'Other products', value: 'other' }
-]
-
-const audienceOptions = [
-  { label: 'Capital Good Manufacturers', value: 'capital-goods' },
-  { label: 'Other audiences', value: 'other' }
-]
+const selectedProduct = ref<{ uuid: string | null; name: string }>({
+  uuid: null,
+  name: 'Select a product'
+});
+const selectedAudience = ref<{ uuid: string | null; title: string }>({
+  uuid: null,
+  title: 'Select an audience'
+});
 
 const contentSliders = reactive<ContentSlider[]>([
   {
@@ -189,9 +187,15 @@ const productStore = useProductStore()
 const audienceStore = useAudienceStore()
 const companyStore = useCompanyStore()
 const mainDisplayStore = useMainDisplayStore()
+const config = useRuntimeConfig();
 
 const audienceList = computed(()=> audienceStore.audiences) 
 const productList = computed(()=> productStore.products) 
+const selectedProductUuid = computed(() => selectedProduct.value?.uuid);
+const selectedProductName = computed(() => selectedProduct.value?.name);
+
+const selectedAudienceUuid = computed(() => selectedAudience.value?.uuid);
+const selectedAudienceTitle = computed(() => selectedAudience.value?.title);
 
 // Methods
 const toggleAdvancedMode = () => {
@@ -201,17 +205,33 @@ const toggleAdvancedMode = () => {
 const generateContent = async () => {
   loading.value = true
   try {
-    await new Promise(resolve => setTimeout(resolve, 3000))
+    // await new Promise(resolve => setTimeout(resolve, 3000))
 
-    showAddCredit.value = true
+    // showAddCredit.value = true
 
-    nextTick(() => {
-      popupRef.value.setTriggerElement(triggerRef.value, {
-        width: '500px',
-        maxHeight: '1200px'
-      })
-    })
-
+    // nextTick(() => {
+    //   popupRef.value.setTriggerElement(triggerRef.value, {
+    //     width: '500px',
+    //     maxHeight: '1200px'
+    //   })
+    // })
+    if (!selectedProductUuid.value || !selectedAudienceUuid.value) {
+      console.error('Product and Audience must be selected');
+      return;
+    }
+    const payload = {
+      productUuid: selectedProductUuid.value,
+      audienceUuid: selectedAudienceUuid.value,
+      clientUuid: companyStore.theCompany.uuid,
+      subject: contentSliders.find(slider => slider.id === 'topics')?.value,
+      blogPost: contentSliders.find(slider => slider.id === 'blog-posts')?.value
+    };
+    const repository = new BaseRepository();
+    await repository.apiRequest<any>('/content/bulk', {
+      method: 'POST',
+      body: payload
+    });
+    handleHide();
   } catch (error) {
     console.error('Error generating content:', error)
   } finally {
