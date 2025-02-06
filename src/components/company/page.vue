@@ -306,7 +306,6 @@ const getChannelIcon = (channel: string): string => {
 }
 
 const fetchPages = async () => {
-  console.log(`Fetching pages for company`);
   await pageStore.list(pagination.value.page, pagination.value.rowsPerPage, {
     clientUuid: companyStore.theCompany.uuid,
     marketUuid: selectedAudience.value || undefined,
@@ -319,23 +318,26 @@ const fetchPages = async () => {
 };
 
 const onRequest = (props: { pagination: any }) => {
-  console.log(`Requesting pages`);
   pagination.value = { ...props.pagination };
   fetchPages();
 };
 
 const updatePagination = async (newPagination: any) => {
-  console.log(`Updating pagination`);
   if (Object.hasOwnProperty.call(newPagination, 'pagination')) {
     pagination.value = { ...newPagination.pagination };
   } else {
     pagination.value = { ...newPagination };
   }
-  console.log(pagination.value);
   await fetchPages();
 };
 
 onMounted(async () => {
   await audienceStore.init(companyStore.theCompany.uuid)
 })
+
+watch(selectedAudience, async (newValue) => {
+  console.log(`Selected audience changed`);
+  console.log(newValue);
+  await fetchPages();
+});
 </script>

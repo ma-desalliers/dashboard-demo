@@ -7,6 +7,7 @@ interface PageState {
   thePage: Page | null;
   pages: Page[];
   currentPage: number;
+  currentFilters: PageFilters;
   totalPages: number;
   totalRecords: number;
   perPage: number;
@@ -19,6 +20,9 @@ export const usePageStore = defineStore('usePageStore', {
     thePage: null,
     pages: [],
     currentPage: 1,
+    currentFilters: {
+      clientUuid: '',
+    },
     totalPages: 0,
     totalRecords: 0,
     perPage: 10,
@@ -32,17 +36,22 @@ export const usePageStore = defineStore('usePageStore', {
      * Fetch paginated pages with filters
      */
     async list(page: number = 1, limit: number = 10, filters: PageFilters) {
-      if (this.companyUuid === filters.clientUuid && this.currentPage === page && this.perPage === limit) {
+      if (this.companyUuid === filters.clientUuid && 
+          this.currentPage === page && 
+          this.perPage === limit &&
+          JSON.stringify(this.currentFilters) === JSON.stringify(filters)) {
         return;
       }
       this.loading = true;
       this.companyUuid = filters.clientUuid;
+      this.currentFilters = filters;
       this.currentPage = page;
       this.perPage = limit;
       
       try {
         const repository = new PageRepository();
         const result = await repository.list(page, limit, filters);
+        console.log(result);
         this.pages = result.data;
         this.totalRecords = result.pagination.totalItems;
         this.totalPages = result.pagination.totalPages;
