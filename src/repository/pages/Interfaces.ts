@@ -1,12 +1,39 @@
+
 export interface Page {
   uuid: string;
-  clientUuid: string;
-  marketUuid: string;
-  subjobUuid?: string;
+  type: string;
   language: string;
+  clientUuid: string;
+  marketUuid?: string;
+  subjobUuid?: string;
+  relevancyScore?: number;
   title: string;
-  score?: number;
-  isPublished: boolean;
-  updatedAt?: number;
-  createdAt?: number;
+  sections: PageSection[];
+  updatedAt: number;
+  createdAt: number;
+}
+
+export interface RawPage {
+  _uuid: string;
+  props: Omit<Page, 'uuid' | 'createdAt'>,
+  createdAt: string;
+}
+
+export interface PageSection {
+  uuid: string;
+  pageUuid: string;
+  type: string;
+  index: number;
+  elements: PageElement[];
+  createdAt: number;
+}
+
+export interface PageElement {
+  uuid: string;
+  pageUuid: string;
+  sectionUuid: string;
+  index: number;
+  type: string;
+  data: any;
+  createdAt: number;
 }

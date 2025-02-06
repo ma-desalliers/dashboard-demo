@@ -4,34 +4,48 @@ import { PageRepository, type PageFilters } from '@/src/repository/pages/Reposit
 
 interface PageState {
   companyUuid: string;
-  thePage: Page;
+  thePage: Page | null;
   pages: Page[];
+  currentPage: number;
+  totalPages: number;
+  totalRecords: number;
+  perPage: number;
   loading: boolean;
 }
 
-// TODO: Added jobs and subjobs
-// TODO: Added categories
-// TODO: handle pagination
 export const usePageStore = defineStore('usePageStore', {
   state: (): PageState => ({
     companyUuid: '',
-    thePage: {} as Page,
+    thePage: null,
     pages: [],
+    currentPage: 1,
+    totalPages: 0,
+    totalRecords: 0,
+    perPage: 10,
     loading: false,
   }),
   getters: {
     getPage: (state) => (pageUuid: string) => state.pages.find((page) => page.uuid === pageUuid),
-    totalPages: (state) => state.pages.length,
   },
   actions: {
-    async init(page: number = 1, limit: number = 10, fitlers: PageFilters) {
-      if (this.companyUuid === fitlers.companyUuid && this.pages.length > 0) return;
-      this.companyUuid = fitlers.companyUuid;
+    /**
+     * Fetch paginated pages with filters
+     */
+    async list(page: number = 1, limit: number = 10, filters: PageFilters) {
+      if (this.companyUuid === filters.clientUuid && this.currentPage === page && this.perPage === limit) {
+        return;
+      }
       this.loading = true;
+      this.companyUuid = filters.clientUuid;
+      this.currentPage = page;
+      this.perPage = limit;
+      
       try {
         const repository = new PageRepository();
-        const pages = await repository.list(page, limit, fitlers);
-        this.pages = pages.data;
+        const result = await repository.list(page, limit, filters);
+        this.pages = result.data;
+        this.totalRecords = result.pagination.totalItems;
+        this.totalPages = result.pagination.totalPages;
       } catch (error) {
         console.error(error);
         throw error;
@@ -39,10 +53,25 @@ export const usePageStore = defineStore('usePageStore', {
         this.loading = false;
       }
     },
+    /**
+     * Get the current page details and set it in state
+     */
     async current(pageUuid: string) {
       const page = this.getPage(pageUuid);
-      if (!page) throw new Error('Page not found');
-      this.thePage = page;
-    }
+      if (!page) {
+        this.loading = true;
+        try {
+          const repository = new PageRepository();
+          this.thePage = await repository.findByUuid(pageUuid);
+        } catch (error) {
+          console.error(error);
+          throw error;
+        } finally {
+          this.loading = false;
+        }
+      } else {
+        this.thePage = page;
+      }
+    },
   }
 });

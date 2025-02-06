@@ -10,6 +10,7 @@
         clearable
         emit-value
         map-options
+        update:model-value="fetchPages"
       />
     </div>
     <div class="col-12 col-sm-4">
@@ -35,6 +36,7 @@
         emit-value
         map-options
         :disable="!selectedJob"
+        update:model-value="fetchPages"
       />
     </div>
   </div>
@@ -42,13 +44,14 @@
     <CTable
       v-model="selectedPages"
       :columns="columns"
-      :rows="pages"
+      :rows="formattedPages"
       :loading="loading"
       :batch-actions="batchActions"
       :pagination="pagination"
       :hover-buttons="hoverButtonList"
       row-key="uuid"
-      @update:pagination="$emit('update:pagination', $event)"
+      @request="onRequest"
+      @update:pagination="updatePagination"
     >
       <!-- Custom cell templates -->
       <template #cell-review="props">
@@ -89,7 +92,7 @@
             size="sm"
             class="q-mr-xs"
           />
-          {{ props.value }}
+          {{ props.value ?? 'Search Engine' }}
         </div>
       </template>
     </CTable>
@@ -97,22 +100,26 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
+import type { Page } from '~/src/repository/pages/Interfaces';
+import { useAudienceStore } from '~/src/stores/audienceStore'
+import { useCompanyStore } from '~/src/stores/companyStore'
+import { usePageStore } from '~/src/stores/pageStore'
 
-interface Page {
-  uuid: string
-  title: string
-  review: boolean
-  relevancy: 'Excellent' | 'Good' | 'Average'
-  channel: string
-  buyingStage: string
-  format: string
-  creationDate: string
-}
+// interface Page {
+//   uuid: string
+//   title: string
+//   review: boolean
+//   relevancy: 'Excellent' | 'Good' | 'Average'
+//   channel: string
+//   buyingStage: string
+//   format: string
+//   creationDate: string
+// }
 
 const props = defineProps<{
   loading?: boolean
-  pages:any[]
+  pages: Page[]
   pagination?: {
     sortBy: string
     descending: boolean
@@ -128,18 +135,34 @@ const props = defineProps<{
 const emit = defineEmits(['update:pagination'])
 
 const selectedPages = ref<Page[]>([])
-
-
 const selectedAudience = ref<string | null>(null)
 const selectedJob = ref<string | null>(null)
 const selectedSubJob = ref<string | null>(null)
 
-// Temporary options (to be replaced with actual data)
-const audienceOptions = [
-  { label: 'Audience 1', value: 'audience1' },
-  { label: 'Audience 2', value: 'audience2' },
-  { label: 'Audience 3', value: 'audience3' }
-]
+const audienceStore = useAudienceStore()
+const companyStore = useCompanyStore()
+const pageStore = usePageStore();
+
+// Use audience data from store
+const audienceOptions = computed(() =>
+  audienceStore.audiences.map((audience) => ({
+    label: audience.title,
+    value: audience.uuid
+  }))
+)
+
+const formattedPages = computed(() => {
+  return pageStore.pages.map((page) => ({
+    uuid: page.uuid,
+    title: page.title,
+    review: false,
+    relevancy: getRelevancyText(page.relevancyScore || 0),
+    channel: 'Search Engine',
+    buyingStage: 'N/A',
+    format: page.type || 'Unknown',
+    creationDate: new Date(page.createdAt).toLocaleDateString()
+  }));
+});
 
 const jobOptions = [
   { label: 'Job 1', value: 'job1' },
@@ -152,6 +175,14 @@ const subJobOptions = [
   { label: 'Sub Job 2', value: 'subjob2' },
   { label: 'Sub Job 3', value: 'subjob3' }
 ]
+
+const pagination = ref({
+  page: 1,
+  rowsPerPage: 10,
+  sortBy: 'createdAt',
+  descending: true,
+  rowsNumber: 0
+});
 
 const columns = [
   {
@@ -244,11 +275,15 @@ const getRelevancyColor = (relevancy: string): string => {
       return 'positive'
     case 'Good':
       return 'warning'
-    case 'Average':
-      return 'negative'
     default:
-      return 'grey'
+      return 'negative'
   }
+}
+
+const getRelevancyText = (relevancy: number): string => {
+  if (relevancy >= 8) return 'Excellent'
+  if (relevancy >= 5) return 'Good'
+  return 'Average'
 }
 
 const getChannelIcon = (channel: string): string => {
@@ -266,7 +301,41 @@ const getChannelIcon = (channel: string): string => {
     case 'Google Profile':
       return 'fab fa-google'
     default:
-      return 'help'
+      return 'fab fa-google'
   }
 }
+
+const fetchPages = async () => {
+  console.log(`Fetching pages for company`);
+  await pageStore.list(pagination.value.page, pagination.value.rowsPerPage, {
+    clientUuid: companyStore.theCompany.uuid,
+    marketUuid: selectedAudience.value || undefined,
+    subjobUuid: selectedSubJob.value || undefined
+  });
+  pagination.value = {
+    ...pagination.value,
+    rowsNumber: pageStore.totalRecords
+  };
+};
+
+const onRequest = (props: { pagination: any }) => {
+  console.log(`Requesting pages`);
+  pagination.value = { ...props.pagination };
+  fetchPages();
+};
+
+const updatePagination = async (newPagination: any) => {
+  console.log(`Updating pagination`);
+  if (Object.hasOwnProperty.call(newPagination, 'pagination')) {
+    pagination.value = { ...newPagination.pagination };
+  } else {
+    pagination.value = { ...newPagination };
+  }
+  console.log(pagination.value);
+  await fetchPages();
+};
+
+onMounted(async () => {
+  await audienceStore.init(companyStore.theCompany.uuid)
+})
 </script>
