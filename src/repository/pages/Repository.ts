@@ -72,6 +72,7 @@ export interface PageFilters {
   clientUuid: string;
   language?: string;
   marketUuid?: string;
+  audienceUuid?: string;
   subjobUuid?: string;
 }
 

@@ -308,7 +308,7 @@ const getChannelIcon = (channel: string): string => {
 const fetchPages = async () => {
   await pageStore.list(pagination.value.page, pagination.value.rowsPerPage, {
     clientUuid: companyStore.theCompany.uuid,
-    marketUuid: selectedAudience.value || undefined,
+    audienceUuid: selectedAudience.value || undefined,
     subjobUuid: selectedSubJob.value || undefined
   });
   pagination.value = {
