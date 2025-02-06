@@ -41,6 +41,8 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import columns from '~/src/asset/tablesColumn/audience'
+import { useAudienceStore } from '~/src/stores/audienceStore'
+import { useCompanyStore } from '~/src/stores/companyStore'
 
 interface GICS {
   subIndustryId: number
@@ -86,51 +88,12 @@ const props = defineProps<{
 
 const emit = defineEmits(['update:pagination'])
 
+const companyStore = useCompanyStore()
+const audienceStore = useAudienceStore()
 const selectedAudiences = ref<Audience[]>([])
 
-// Sample data - in real implementation, this would come from a store or props
-const audiences = ref<Audience[]>([
-  {
-    "uuid": "f9b07457-3048-4d6f-b184-9eaf2f4515a3",
-    "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
-    "title": "The client",
-    "description": "that client want the product",
-    "subIndustryId": null,
-    "countryId": null,
-    "stateId": null,
-    "cityId": null,
-    "revenue": null,
-    "image": null,
-    "score": null,
-    "createdAt": 1731963721132,
-    "gics": null
-  },
-  {
-    "uuid": "c3c877f3-2dea-4b7d-b6a4-c8a709b9c1dc",
-    "clientUuid": "c0b33f0a-7c14-4842-9e91-638f677553e2",
-    "title": "Industrial metal Company",
-    "description": "The ideal client is a B2B metal industrial company...",
-    "subIndustryId": 55104010,
-    "countryId": 39,
-    "stateId": 873,
-    "cityId": 16709,
-    "revenue": "50000000-100000000",
-    "image": null,
-    "score": null,
-    "createdAt": 1731963231732,
-    "gics": {
-      "subIndustryId": 55104010,
-      "subIndustryName": "Water Utilities",
-      "subIndustryDescription": "Companies that purchase and redistribute water...",
-      "industryId": 551040,
-      "industryName": "Water Utilities",
-      "industryGroupId": 5510,
-      "industryGroupName": "Utilities",
-      "sectorId": 55,
-      "sectorName": "Utilities"
-    }
-  }
-])
+const audiences = computed(() => audienceStore.audiences)
+const loading = computed(() => audienceStore.loading)
 
 const batchActions = computed(() => {
   const actions = []
@@ -181,4 +144,8 @@ const editAudience = (audience: Audience) => {
   console.log('Edit audience:', audience)
   // Implement your logic here
 }
+
+onMounted(async () => {
+  audienceStore.init(companyStore.theCompany.uuid)
+})
 </script>
