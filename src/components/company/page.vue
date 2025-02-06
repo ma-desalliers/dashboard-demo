@@ -29,6 +29,7 @@
       <q-select
         v-model="selectedSubJob"
         :options="subJobOptions"
+        :loading="subJobsLoading"
         label="Sub Job"
         outlined
         dense
@@ -104,6 +105,7 @@ import { ref, computed, onMounted } from 'vue'
 import type { Page } from '~/src/repository/pages/Interfaces';
 import { useAudienceStore } from '~/src/stores/audienceStore'
 import { useCompanyStore } from '~/src/stores/companyStore'
+import { useJTBDStore } from '~/src/stores/JTBDStore';
 import { usePageStore } from '~/src/stores/pageStore'
 
 // interface Page {
@@ -138,10 +140,20 @@ const selectedPages = ref<Page[]>([])
 const selectedAudience = ref<string | null>(null)
 const selectedJob = ref<string | null>(null)
 const selectedSubJob = ref<string | null>(null)
+const subJobsLoading = ref<boolean>(false)
+const pagination = ref({
+  page: 1,
+  rowsPerPage: 10,
+  sortBy: 'createdAt',
+  descending: true,
+  rowsNumber: 0
+});
+
 
 const audienceStore = useAudienceStore()
 const companyStore = useCompanyStore()
-const pageStore = usePageStore();
+const pageStore = usePageStore()
+const jtbdStore = useJTBDStore()
 
 // Use audience data from store
 const audienceOptions = computed(() =>
@@ -164,25 +176,19 @@ const formattedPages = computed(() => {
   }));
 });
 
-const jobOptions = [
-  { label: 'Job 1', value: 'job1' },
-  { label: 'Job 2', value: 'job2' },
-  { label: 'Job 3', value: 'job3' }
-]
+const jobOptions = computed(() => 
+  jtbdStore.jobs.map((job) => ({
+    label: job.title,
+    value: job.uuid
+  }))
+)
 
-const subJobOptions = [
-  { label: 'Sub Job 1', value: 'subjob1' },
-  { label: 'Sub Job 2', value: 'subjob2' },
-  { label: 'Sub Job 3', value: 'subjob3' }
-]
-
-const pagination = ref({
-  page: 1,
-  rowsPerPage: 10,
-  sortBy: 'createdAt',
-  descending: true,
-  rowsNumber: 0
-});
+const subJobOptions = computed(() => 
+  jtbdStore.subjobs.map((job) => ({
+    label: job.title,
+    value: job.uuid
+  }))
+);
 
 const columns = [
   {
@@ -306,6 +312,7 @@ const getChannelIcon = (channel: string): string => {
 }
 
 const fetchPages = async () => {
+  console.log(selectedSubJob.value)
   await pageStore.list(pagination.value.page, pagination.value.rowsPerPage, {
     clientUuid: companyStore.theCompany.uuid,
     audienceUuid: selectedAudience.value || undefined,
@@ -333,11 +340,33 @@ const updatePagination = async (newPagination: any) => {
 
 onMounted(async () => {
   await audienceStore.init(companyStore.theCompany.uuid)
+  await jtbdStore.list(1, 100, {
+    clientUuid: companyStore.theCompany.uuid,
+    isChild: false
+  })
+})
+
+watch(selectedJob, async (newValue) => {
+  selectedSubJob.value = null
+  if (!newValue) return
+
+  try {
+    subJobsLoading.value = true
+    await jtbdStore.list(1, 100, {
+      clientUuid: companyStore.theCompany.uuid,
+      parentUuid: newValue,
+      isChild: true
+    })
+  } finally {
+    subJobsLoading.value = false
+  }
 })
 
 watch(selectedAudience, async (newValue) => {
-  console.log(`Selected audience changed`);
-  console.log(newValue);
+  await fetchPages();
+});
+
+watch(selectedSubJob, async (newValue) => {
   await fetchPages();
 });
 </script>

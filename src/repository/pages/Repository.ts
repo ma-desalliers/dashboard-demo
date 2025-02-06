@@ -31,7 +31,7 @@ export class PageRepository extends BaseRepository {
       const params = new URLSearchParams({ page: page.toString(), limit: limit.toString() });
       
       Object.entries(filters).forEach(([key, value]) => {
-        if (value) params.append(`filters[${key}]`, value);
+        if (value != null) params.append(`filters[${key}]`, value);
       });
       
       const response = await this.apiRequest<RawPage[]>(`/pages?${params.toString()}`, {
