@@ -1,6 +1,6 @@
 import type { PaginationMeta } from "@/src/repository/BaseRepository";
-import type { CompanyList } from "@/src/repository/companies/Interfaces";
-import { CompanyRepository } from "@/src/repository/companies/Repository";
+import { brandGuideSchema, type BrandGuide, type CompanyList } from "@/src/repository/companies/Interfaces";
+import { BrandGuideRepository, CompanyRepository } from "@/src/repository/companies/Repository";
 
 export const useCompanyStore = defineStore('useCompanyStore', {
   state: () => ({
@@ -13,7 +13,9 @@ export const useCompanyStore = defineStore('useCompanyStore', {
       itemsPerPage: 10
     } as PaginationMeta,
     loading: false,
-    currentRequest: null as AbortController | null
+    currentRequest: null as AbortController | null,
+    brandGuide: {} as BrandGuide | null,
+    brandGuideError: null as string | null
   }),
   getters: {
     getCompany: (state) => (companyUuid: string) => state.companies.find((company) => company.uuid === companyUuid),
@@ -33,6 +35,8 @@ export const useCompanyStore = defineStore('useCompanyStore', {
 
         this.companies = response.data;
         this.pagination = response.pagination;
+
+        this.fetchBrandGuide(this.companies[0].uuid);
       } catch (error) {
         console.error(error);
         throw error;
@@ -41,12 +45,37 @@ export const useCompanyStore = defineStore('useCompanyStore', {
         this.currentRequest = null;
       }
     },
+
     async current(companyUuid: string) {
       if (this.companies.length === 0) await this.init();
       const company = this.getCompany(companyUuid);
       if (!company) throw new Error('Company not found');
       this.theCompany = company;
+      await this.fetchBrandGuide(companyUuid);
     },
+
+    async fetchBrandGuide(clientUuid: string) {
+      try {
+        const brandGuideRepository = new BrandGuideRepository();
+        this.brandGuide = await brandGuideRepository.fetchBrandGuide(clientUuid);
+      } catch (error) {
+        this.brandGuideError = 'Failed to fetch Brand Guide';
+        console.error(error);
+      }
+    },
+
+    async saveBrandGuide(clientUuid: string, data: Partial<BrandGuide>) {
+      try {
+        const brandGuideRepository = new BrandGuideRepository();
+        brandGuideSchema.parse(data); 
+        const brandGuide = await brandGuideRepository.save({ ...data, clientUuid });
+        this.brandGuide = brandGuide
+      } catch (error) {
+        this.brandGuideError = 'Failed to save Brand Guide';
+        console.error(error);
+      }
+    },
+
     abortCurrentRequest() {
       if (this.currentRequest == null) return;
       this.currentRequest.abort();
