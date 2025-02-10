@@ -1,5 +1,5 @@
 import { BaseRepository } from "@/src/repository/BaseRepository";
-import type { CompanyList } from "@/src/repository/companies/Interfaces";
+import type { BrandGuide, CompanyList } from "@/src/repository/companies/Interfaces";
 import type { PaginatedResponse } from '@/src/repository/BaseRepository';
 
 export class CompanyRepository extends BaseRepository {
@@ -34,3 +34,29 @@ export class CompanyRepository extends BaseRepository {
   }
 }
 
+export class BrandGuideRepository extends BaseRepository {
+  public async fetchBrandGuide(clientUuid: string): Promise<BrandGuide> {
+    try {
+      const response = await this.apiRequest<BrandGuide>(`/clients/${clientUuid}/brand-guide`, {
+        method: 'GET'
+      });
+      return response.data;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  }
+
+  public async save(brandGuide: Partial<Omit<BrandGuide, 'createdAt'>> & Pick<BrandGuide, 'clientUuid'>): Promise<BrandGuide> {
+    try {
+      const response = await this.apiRequest<BrandGuide>(`/clients/${brandGuide.clientUuid}/brand-guide`, {
+        method: 'POST',
+        body: JSON.stringify(brandGuide)
+      });
+      return response.data;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  }
+}
