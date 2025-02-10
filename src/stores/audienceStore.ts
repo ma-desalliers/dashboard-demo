@@ -6,7 +6,7 @@ type DisplayType = 'card' | 'list';
 
 interface AudienceState {
   companyUuid: string;
-  currentAudience: Audience;
+  currentAudience: AudienceRepository;
   audiences: Audience[];
   pageDisplayType: DisplayType;
   loading: boolean;
@@ -18,7 +18,7 @@ interface AudienceState {
 export const useAudienceStore = defineStore('audienceStore', {
   state: (): AudienceState => ({
     companyUuid: '',
-    currentAudience: {} as Audience,
+    currentAudience:  new AudienceRepository (null),
     audiences: [],
     pageDisplayType: 'card',
     loading: false,
@@ -35,7 +35,7 @@ export const useAudienceStore = defineStore('audienceStore', {
       this.companyUuid = companyUuid
       this.loading = true;
       try {
-        const repository = new AudienceRepository();
+        const repository = new AudienceRepository(null);
         const audiences = await repository.list(companyUuid);
         this.audiences = audiences;
       } catch (error) {
@@ -46,7 +46,7 @@ export const useAudienceStore = defineStore('audienceStore', {
       }
     },
     setAudience(audience: any) {
-      this.currentAudience = audience;
+      this.currentAudience = new AudienceRepository(audience);
     },
     setDisplayType(type: DisplayType) {
       this.pageDisplayType = type;
@@ -54,7 +54,7 @@ export const useAudienceStore = defineStore('audienceStore', {
     async current(audienceUuid: string) {
       const audience = this.getAudience(audienceUuid);
       if (!audience) throw new Error('Audience not found');
-      this.currentAudience = audience;
+      this.currentAudience = new AudienceRepository(audience);
     }
   }
 });

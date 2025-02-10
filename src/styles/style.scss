@@ -14,6 +14,7 @@ $info      : #31CCEC;
 $warning   : #F2C037;
 
 $green : #0DB04B;
+$green-lighten : color-mix(in srgb, $green 16%, #ffffff);
 
 $primary-lighten : color-mix(in srgb, $primary 16%, #ffffff);
 
@@ -23,6 +24,7 @@ $primary-lighten : color-mix(in srgb, $primary 16%, #ffffff);
   --q-secondary: #{$secondary};
   --q-accent : #{$accent};
   --q-green: #{$green};
+  --q-green-lighten: #{$green-lighten};
   --main-gray : #F6F9FC;
 
   $primary-lighten: color-mix(in srgb, var(--q-primary) 16%, #ffffff);
@@ -204,6 +206,10 @@ html {
 
 .c-border-primary{
   border:solid 1px var(--q-primary)
+}
+
+.c-border-radius-none{
+  border-radius:0px !important;
 }
 
 .c-indicator-chip{

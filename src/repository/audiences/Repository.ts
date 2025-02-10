@@ -1,7 +1,18 @@
 import { BaseRepository } from "@/src/repository/BaseRepository";
 import type { Audience } from "@/src/repository/audiences/Interfaces";
+import type { JTBD } from '../jtbdjobs/Interfaces';
+import { JTBDRepository } from "../jtbdjobs/Repository";
 
 export class AudienceRepository extends BaseRepository {
+  Audience: Audience | null = null
+  JTBD:JTBD | null = null
+  
+  constructor(audience: Audience | null) {
+    super();
+    if (audience) {
+      this.Audience = audience
+    }
+  }
   public async list(companyUuid: string): Promise<Audience[]> {
     try {
       const response = await this.apiRequest<Audience[]>(`/clients/${companyUuid}/personas`, {

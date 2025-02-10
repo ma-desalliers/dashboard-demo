@@ -4,6 +4,7 @@
   --q-secondary: #26A69A;
   --q-accent: #1976D2;
   --q-green: #0DB04B;
+  --q-green-lighten: color-mix(in srgb, #0DB04B 16%, #ffffff);
   --main-gray: #F6F9FC;
 }
 
@@ -165,6 +166,10 @@ html {
 
 .c-border-primary {
   border: solid 1px var(--q-primary);
+}
+
+.c-border-radius-none {
+  border-radius: 0px !important;
 }
 
 .c-indicator-chip {

@@ -15,8 +15,8 @@
   "coming-soon": "À venir",
   "knowledge": "Connaissance",
   "product": "Produit",
-  "audience": "Audience",
   "products": "Produits",
+  "audience": "Audience",
   "audiences": "Audiences",
   "branding": "Image de marque",
   "channels": "Canaux",
@@ -34,5 +34,8 @@
   "tooltip-topics": "Nombre de sujets à générer",
   "tooltip-blog-posts": "Nombre d'articles de blog à générer",
   "tooltip-social-posts": "Nombre de publications sur les réseaux sociaux à générer",
-  "tooltip-newsletter": "Nombre de bulletins à générer"
+  "tooltip-newsletter": "Nombre de bulletins à générer",
+  "easy": "Facile",
+  "advanced": "Avancé",
+  "generating-content": "Génération de contenu"
 }

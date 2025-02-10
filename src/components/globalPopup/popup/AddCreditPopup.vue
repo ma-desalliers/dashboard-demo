@@ -1,9 +1,9 @@
 <template>
-  <div class="full-width q-mb-lg" ref="triggerRef" @click="ShowPopup()">
+  <div class="full-width q-mb-lg" ref="triggerRef" @click="showPopup()">
     <slot></slot>
   </div>
 
-  <PopupContainer v-model="showPopup" ref="popupRef" @hide="handleHide" dialog-class="generate-content-popup">
+  <PopupContainer v-model="isVisible" ref="popupRef" @hide="handleHide" dialog-class="generate-content-popup">
     <div class="credits-dialog q-pa-md" style="width: 500px">
       <!-- Header with back button -->
       <div class="row items-center q-mb-md">
@@ -139,7 +139,7 @@ interface ContentSlider {
 // State
 const loading = ref(false)
 const advancedMode = ref(false)
-const showPopup = ref(false)
+const isVisible = ref(false)
 const triggerRef = ref<HTMLElement>()
 const popupRef = ref()
 
@@ -184,11 +184,11 @@ const contactSales = () => {
 
 
 const handleHide = () => {
-  showPopup.value = false
+  isVisible.value = false
 }
 
-const ShowPopup = () => {
-  showPopup.value = true
+const showPopup = () => {
+  isVisible.value = true
   if (triggerRef.value && popupRef.value) {
     nextTick(() => {
       popupRef.value.setTriggerElement(triggerRef.value, {

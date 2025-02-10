@@ -34,5 +34,8 @@
   "tooltip-topics": "Number of topics to generate",
   "tooltip-blog-posts": "Number of blog posts to generate",
   "tooltip-social-posts": "Number of social media posts to generate",
-  "tooltip-newsletter": "Number of newsletters to generate"
+  "tooltip-newsletter": "Number of newsletters to generate",
+  "easy": "Easy",
+  "advanced": "Advanced",
+  "generating-content": "Generating content"
 }

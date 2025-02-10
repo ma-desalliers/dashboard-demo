@@ -8,113 +8,92 @@
       <!-- Header -->
       <div class="row justify-between items-center q-py-md q-px-lg  c-bg-main-gray">
         <div class="row items-center">
-          <div class="text-subtitle1 q-mr-sm">{{$t('create-content')}}</div>
+          <div class="text-subtitle1 q-mr-sm">{{ $t('create-content') }}</div>
           <q-icon name="help" size="xs" color="grey-6">
-            <q-tooltip>{{$t('tooltip-create-content')}}</q-tooltip>
+            <q-tooltip>{{ $t('tooltip-create-content') }}</q-tooltip>
           </q-icon>
         </div>
-        <q-btn flat dense color="green" :label="$t('advanced-mode')" class="text-caption" @click="toggleAdvancedMode" />
+        <q-tabs v-model="selectedMode" indicator-color="primary" class="c-box-title">
+          <q-tab :label="$t('easy')" name="easy" @click="selectMode('easy')"></q-tab>
+          <q-tab :label="$t('advanced')" name="advanced" @click="selectMode('advanced')"></q-tab>
+        </q-tabs>
       </div>
 
       <AddCredit v-if="showAddCredit" @close="ShowPopup"></AddCredit>
-      <q-card-section  v-else class="q-pa-lg relative">
+      <q-card-section v-else class="q-pa-lg relative">
 
-        <ContentLoader 
-        v-if="loading"
-          :showing="loading" 
-          :label="$t('generating-content')"
-        />
-      <!-- Product Selection -->
-      <div class="q-mb-lg">
-        <div class="row items-center justify-between">
-          <div class="row items-center q-mr-sm" style="width: 120px">
-            <div class="text-subtitle2 q-mr-sm">{{$t('products')}}</div>
-            <q-icon name="help" size="xs" color="grey-6">
-              <q-tooltip>{{$t('tooltip-select-product')}}</q-tooltip>
-            </q-icon>
-          </div>
-          <c-select 
-            class="col"
-            v-model="selectedProduct" 
-            :options="productList" 
-            option-label="name"
-            option-value="uuid"
-            align="right"
-            dense 
-            emit-value="false"
-            map-options
-          />
-        </div>
-      </div>
-
-      <!-- Audience Selection -->
-      <div class="q-mb-lg">
-        <div class="row items-center justify-between">
-          <div class="row items-center q-mr-sm" style="width: 120px">
-            <div class="text-subtitle2 q-mr-sm">{{$t('audience')}}</div>
-            <q-icon name="help" size="xs" color="grey-6">
-              <q-tooltip>{{$t('tooltip-select-audience')}}</q-tooltip>
-            </q-icon>
-          </div>
-          <c-select 
-            class="col text-right"
-            v-model="selectedAudience" 
-            :options="audienceList"
-            option-value="uuid"
-            option-label="title"
-            dense 
-            emit-value 
-            map-options 
-          />
-        </div>
-      </div>
-
-      <!-- Content Type Sliders -->
-      <div class="content-sliders q-mb-lg">
-        <div v-for="slider in contentSliders" :key="slider.id" class="q-mb-lg">
+        <ContentLoader v-if="loading" :showing="loading" :label="$t('generating-content')" />
+        <!-- Product Selection -->
+        <div class="q-mb-md">
           <div class="row items-center justify-between">
-            <div class="row items-center q-mr-sm" style="width: 140px">
-              <div class="text-subtitle2 q-mr-sm">{{$t(slider.id)}}</div>
+            <div class="row items-center q-mr-sm" style="width: 120px">
+              <div class="text-subtitle2 q-mr-sm">{{ $t('products') }}</div>
               <q-icon name="help" size="xs" color="grey-6">
-                <q-tooltip>{{$t(slider.tooltip)}}</q-tooltip>
+                <q-tooltip>{{ $t('tooltip-select-product') }}</q-tooltip>
               </q-icon>
             </div>
-            <div class="col row items-center">
-              <q-slider 
-                v-model="slider.value" 
-                :min="0" 
-                :max="slider.max" 
-                :step="1" 
-                color="green"
-                class="col"
-              />
-              <div class="q-ml-sm" style="width: 30px; text-align: right">
-                {{ slider.value }}
-              </div>
-            </div>
+            <c-select class="col" v-model="selectedProduct" :options="productList" option-label="name"
+              option-value="uuid" align="right" dense emit-value="false" map-options />
           </div>
         </div>
-      </div>
 
-      <!-- Generate Button -->
-      <div class="q-py-md q-px-sm bg-green-1 rounded-borders">
-        <q-btn 
-          color="green" 
-          :label="$t('generate-content')" 
-          class="full-width" 
-          :loading="loading" 
-          @click="generateContent" 
-        />
-
-        <!-- Footer -->
-        <div class="row justify-center items-center text-caption text-grey-7 q-mt-sm">
-          <q-avatar size="20px" class="q-mr-xs">
-            <img src="https://cdn.quasar.dev/img/avatar.png" />
-          </q-avatar>
-          <span>5 experts | 1% credit usage</span>
+        <!-- Audience Selection -->
+        <div class="q-mb-lg">
+          <div class="row items-center justify-between">
+            <div class="row items-center q-mr-sm" style="width: 120px">
+              <div class="text-subtitle2 q-mr-sm">{{ $t('audience') }}</div>
+              <q-icon name="help" size="xs" color="grey-6">
+                <q-tooltip>{{ $t('tooltip-select-audience') }}</q-tooltip>
+              </q-icon>
+            </div>
+            <c-select class="col text-right" v-model="selectedAudience" @update:model-value="onSelectAudience"
+              :options="audienceList" option-value="uuid" option-label="title" dense emit-value map-options />
+          </div>
         </div>
-      </div>
-    </q-card-section>
+        <div v-show="selectedMode == 'advanced'" class="q-mb-lg full-width">
+          <div class="row justify-between full-width">
+            <span class="text-subtitle2">Brand voice</span>
+            <BrandVoice>
+              <span class="cursor-pointer">Settings <i class="fa fa-chevron-right"></i></span>
+            </BrandVoice>
+          </div>
+        </div>
+
+        <!-- Content Type Sliders -->
+        <div v-show="selectedMode == 'easy'" class="content-sliders q-mb-lg">
+          <PostSelector v-model="contentSliders"></PostSelector>
+        </div>
+        <BigButtonOptions v-model="seoOption" class="q-mb-lg" :options="[
+          {
+            label: 'Basic SEO',
+            value: 'basic',
+            description: 'Technical optimization',
+            icon: 'search'
+          },
+          {
+            label: 'Advanced SEO',
+            value: 'advanced',
+            description: 'On-page optimization',
+            icon: 'tune'
+          }
+        ]" title="Search Engine Optimization"
+          tooltip="Choose between basic technical optimization or advanced on-page SEO features">
+        </BigButtonOptions>
+        <SeoForms v-show="seoOption == 'advanced' && selectedMode == 'advanced'" class="q-mb-md"></SeoForms>
+        <!-- Generate Button -->
+        <div class="q-py-md q-px-sm bg-green-1 rounded-borders">
+          <q-btn color="green" :label="$t('generate-content')" class="full-width" :loading="loading"
+            @click="generateContent" />
+
+          <!-- Footer -->
+          <div class="row justify-center items-center text-caption text-grey-7 q-mt-sm">
+            <q-avatar size="20px" class="q-mr-xs">
+              <img src="https://cdn.quasar.dev/img/avatar.png" />
+            </q-avatar>
+            <span>5 experts | 1% credit usage</span>
+          </div>
+        </div>
+      </q-card-section>
     </q-card>
   </PopupContainer>
 </template>
@@ -122,12 +101,18 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
 import PopupContainer from '../PopupContainer.vue'
+import BrandVoice from './BrandVoice.vue'
+import SeoForms from './components/generateContentComponents/SeoForms.vue'
 import { useProductStore } from '~/src/stores/productStore'
 import { useAudienceStore } from '~/src/stores/audienceStore'
 import { useCompanyStore } from '~/src/stores/companyStore'
 import { useMainDisplayStore } from '~/src/stores/mainDisplayStore'
 import AddCredit from '../../shared/AddCredit.vue'
 import { BaseRepository } from '~/src/repository/BaseRepository'
+import type { Audience } from '~/src/repository/audiences/Interfaces'
+import { AudienceRepository } from '~/src/repository/audiences/Repository'
+import PostSelector from './components/generateContentComponents/PostSelector.vue'
+
 interface ContentSlider {
   id: string
   label: string
@@ -143,6 +128,8 @@ const showPopup = ref(false)
 const triggerRef = ref<HTMLElement>()
 const showAddCredit = ref(false)
 const popupRef = ref()
+const seoOption = ref('basic')
+const selectedMode = ref('easy')
 const selectedProduct = ref<{ uuid: string | null; name: string }>({
   uuid: null,
   name: 'Select a product'
@@ -189,13 +176,15 @@ const companyStore = useCompanyStore()
 const mainDisplayStore = useMainDisplayStore()
 const config = useRuntimeConfig();
 
-const audienceList = computed(()=> audienceStore.audiences) 
-const productList = computed(()=> productStore.products) 
+const audienceList = computed(() => audienceStore.audiences)
+const productList = computed(() => productStore.products)
 const selectedProductUuid = computed(() => selectedProduct.value?.uuid);
 const selectedProductName = computed(() => selectedProduct.value?.name);
 
 const selectedAudienceUuid = computed(() => selectedAudience.value?.uuid);
 const selectedAudienceTitle = computed(() => selectedAudience.value?.title);
+
+const theAudience = computed<AudienceRepository>(() => audienceStore.currentAudience)
 
 // Methods
 const toggleAdvancedMode = () => {
@@ -242,7 +231,7 @@ const generateContent = async () => {
 const handleHide = () => {
   showPopup.value = false
   mainDisplayStore.setOverlay('')
-  loading.value= false
+  loading.value = false
 }
 
 const ShowPopup = () => {
@@ -252,24 +241,36 @@ const ShowPopup = () => {
     nextTick(() => {
       popupRef.value.setTriggerElement(triggerRef.value, {
         width: '500px',
-        maxHeight: '800px'
+        maxHeight: '820px'
       })
     })
-  } 
+  }
 
   mainDisplayStore.setOverlay('content')
   handleShow()
 }
 
-const handleShow = () =>{
+const handleShow = () => {
   productStore.init(companyStore.theCompany.uuid)
   audienceStore.init(companyStore.theCompany.uuid)
 
 }
 
+const onSelectAudience = (audience: Audience) => {
+  audienceStore.setAudience(audience)
+}
+
+const selectMode = (mode: 'easy' | 'advanced') => {
+  selectedMode.value = mode
+}
+
+const getJtbd = () => {
+
+}
+
 </script>
 
-<style >
+<style>
 .content-generator {
   max-width: 600px;
   margin: 0 auto;
@@ -283,7 +284,7 @@ const handleShow = () =>{
   border-radius: 8px;
 }
 
-.generate-content-popup{
-  transform: translateX(25px)
+.generate-content-popup {
+  transform: translateX(10px)
 }
 </style>
