@@ -104,12 +104,11 @@
                 <StatusPopup :current-item="getFieldValue(props.row, col)"  :options="col.options" @update-value="(value) => col.updateFn({item:props.row, value:value})"></StatusPopup>
               </template>
 
-              
               <template v-else-if="col.type === 'checklist'">
-                <CheckListPopup :current-item="getFieldValue(props.row, col)"  :options="props.row.options" @save="(value) => col.updateFn({item:props.row, value:value})">
-                
+                <CheckListPopup :current-item="props.row.items"  :options="props.row.options"
+                  @save="(value) => props.row.updateFn ? props.row.updateFn({item:props.row, value:value}) : col.updateFn({item:props.row, value:value})">
                   {{getFieldValue(props.row, col)}} 
-                  </CheckListPopup>
+                </CheckListPopup>
               </template>
 
               <template v-else-if="col.type === 'date'">

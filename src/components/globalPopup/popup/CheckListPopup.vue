@@ -1,4 +1,3 @@
-# StatusPopup.vue
 <template>
   <div class="status-trigger cursor-pointer" ref="triggerRef" @click="showPopup = true">
     <slot></slot>
@@ -27,13 +26,13 @@
       <div class="column">
         <div 
           v-for="option in options" 
-          :key="option.value"
+          :key="getOptionValue(option)"
           class="option-row q-py-sm"
         >
           <q-checkbox
             v-model="selectedValues"
-            :val="option.value"
-            :label="option.label"
+            :val="getOptionValue(option)"
+            :label="option[optionLabel]"
             @update:model-value="handleChange"
             dense
           />
@@ -46,16 +45,22 @@
 <script setup lang="ts">
 import { ref, watch, onMounted, nextTick, computed } from 'vue'
 import PopupContainer from '../PopupContainer.vue'
+import { useI18n } from 'vue-i18n'
+
+interface Option {
+  [key: string]: any;
+  label: string;
+}
 
 const props = withDefaults(defineProps<{
-  modelValue?: string[]
+  currentItem: string[] | string
   optionValue?: string
   optionLabel?: string
-  options: { value: string; label: string }[]
+  options: Option[]
 }>(), {
-  optionValue: 'uuid',
-  optionLabel: 'name',
-  modelValue: () => []
+  currentItem: () => [],
+  optionValue: 'value',
+  optionLabel: 'label'
 })
 
 const emit = defineEmits<{
@@ -66,37 +71,30 @@ const emit = defineEmits<{
 
 const { t } = useI18n()
 
-const triggerRef = ref<HTMLElement>()
+const triggerRef = ref<HTMLElement | null>(null)
 const popupRef = ref()
 const showPopup = ref(false)
 const selectAll = ref(false)
+const selectedValues = ref<string[]>([])
 
-const selectedValues = ref<string[]>(props.modelValue || [])
+const getOptionValue = (option: Option): string => {
+  return option[props.optionValue]
+}
 
 // Computed property for displaying selected labels
 const selectedLabels = computed(() => {
-  if (selectedValues.value?.length === 0) return t('none')
-  if (selectedValues.value?.length === props.options?.length) return 'All Selected'
-  return `${selectedValues.value?.length} selected`
+  if (selectedValues.value.length === 0) return t('none')
+  if (selectedValues.value.length === props.options.length) return t('All Selected')
+  return t('{count} selected', { count: selectedValues.value.length })
 })
-
-// Watch for external changes to modelValue
-watch(() => props.modelValue, (newValue) => {
-  selectedValues.value = newValue || []
-  updateSelectAllState()
-})
-
-// Watch selected values to update selectAll state
-watch(selectedValues, () => {
-  updateSelectAllState()
-})
-
 const updateSelectAllState = () => {
-  selectAll.value = selectedValues.value?.length === props.options?.length
+  selectAll.value = selectedValues.value.length === props.options.length
 }
 
 const handleSelectAll = (value: boolean) => {
-  selectedValues.value = value ? props.options.map(opt => opt.value) : []
+  selectedValues.value = value 
+    ? props.options.map(opt => getOptionValue(opt))
+    : []
   handleChange()
 }
 
@@ -110,6 +108,22 @@ const handleHide = () => {
   showPopup.value = false
 }
 
+onMounted(() => {
+  selectedValues.value = [...props.currentItem]
+  updateSelectAllState()
+})
+
+watch(() => props.currentItem, (newValue) => {
+  selectedValues.value = [...(newValue || [])]
+  updateSelectAllState()
+}, { immediate: true })
+
+// Watch selected values to update selectAll state
+watch(selectedValues, () => {
+  updateSelectAllState()
+})
+
+
 watch(showPopup, (isOpen) => {
   if (isOpen && triggerRef.value && popupRef.value) {
     nextTick(() => {
@@ -121,10 +135,6 @@ watch(showPopup, (isOpen) => {
   }
 })
 
-onMounted(() => {
-  selectedValues.value = props.modelValue || []
-  updateSelectAllState()
-})
 </script>
 
 <style scoped lang="scss">

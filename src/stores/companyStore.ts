@@ -76,6 +76,9 @@ export const useCompanyStore = defineStore('useCompanyStore', {
       }
     },
 
+    setBrandGuide(data: BrandGuide){
+      this.brandGuide = data
+    },
     abortCurrentRequest() {
       if (this.currentRequest == null) return;
       this.currentRequest.abort();

@@ -97,6 +97,7 @@
         </div>
       </template>
     </CTable>
+    <PageViewer v-model="sidePanelVisible"></PageViewer>
   </div>
 </template>
 
@@ -107,6 +108,8 @@ import { useAudienceStore } from '~/src/stores/audienceStore'
 import { useCompanyStore } from '~/src/stores/companyStore'
 import { useJTBDStore } from '~/src/stores/JTBDStore';
 import { usePageStore } from '~/src/stores/pageStore'
+import PageViewer from '~/src/components/shared/PageViewer.vue';
+import page from '~/src/components/company/page.vue';
 
 // interface Page {
 //   uuid: string
@@ -141,6 +144,7 @@ const selectedAudience = ref<string | null>(null)
 const selectedJob = ref<string | null>(null)
 const selectedSubJob = ref<string | null>(null)
 const subJobsLoading = ref<boolean>(false)
+const sidePanelVisible = ref<boolean>(false)
 const pagination = ref({
   page: 1,
   rowsPerPage: 10,
@@ -262,7 +266,7 @@ const hoverButtonList = computed(() => {
   return [
     {
       icon: 'fa fa-eye',
-      action: (e: Event, item: any) => { window.open(item.url, '_blank') },
+      action: (e: Event, item: any) => { openPageViewer(item) },
       color: 'white',
       textColor: '#333333'
     },
@@ -337,6 +341,12 @@ const updatePagination = async (newPagination: any) => {
   }
   await fetchPages();
 };
+
+const openPageViewer = async (page:Page)=>{
+  console.log('sup', page)
+  await pageStore.current(page.uuid)
+  sidePanelVisible.value = true
+}
 
 onMounted(async () => {
   await audienceStore.init(companyStore.theCompany.uuid)

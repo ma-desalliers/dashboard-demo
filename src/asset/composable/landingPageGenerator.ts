@@ -3,14 +3,23 @@ import section1 from '@/src/asset/html/section1'
 import faqSection from '@/src/asset/html/faqSection'
 import faqBlock from '@/src/asset/html/faqBlock'
 
-interface SectionMetadata {
-  link: string
-  image: string
+interface Section {
+  uuid: string
+  pageUuid: string
+  type: string
+  index: number
+  elements: Element[]
+  createdAt: number
 }
 
-interface FAQ {
-  question: string
-  answer: string
+interface Element {
+  uuid: string
+  pageUuid: string
+  sectionUuid: string
+  index: number
+  type: string
+  data: any
+  createdAt: number
 }
 
 interface GeneratorConfig {
@@ -19,8 +28,8 @@ interface GeneratorConfig {
 }
 
 export function useHtmlGenerator() {
-  const processedHtml: Ref<string> = ref('')
-  const faqs: Ref<FAQ[]> = ref([])
+  const processedHtml = ref('')
+  const faqs = ref<{ question: string; answer: string }[]>([])
 
   const minifyHTML = (html: string): string => {
     return html
@@ -45,145 +54,79 @@ export function useHtmlGenerator() {
       .replace(/<li>/g, '<li class="list-item">')
   }
 
-  const setSectionContent = (sectionLines: string, title: string, index: number) => {
-    let sectionLink = ''
-    let sectionimg = ''
-    let sectionContent = ''
-    let hasContent = false
-    
-    const lines = sectionLines.match(/<(h3|p|a|img|strong|ul|ol|li)[^>]*>[\s\S]*?<\/\1>|<(img|br)[^>]*>/g) || []
-    
-    for (const line of lines) {
-      if (line.startsWith('<a')) {
-        const linkMatch = line.match(/href="([^"]*)"/);
-        sectionLink = linkMatch?.[1] || '';
-        continue;
+  const processFaqElements = (elements: Element[]) => {
+    elements.forEach((element) => {
+      if (element.type === 'faq') {
+        faqs.value.push({
+          question: element.data.question || '',
+          answer: processLine(element.data.answer || '')
+        })
       }
-      if (line.startsWith('<img')) {
-        const imgMatch = line.match(/src="([^"]*)"/);
-        sectionimg = imgMatch?.[1] || '';
-        continue;
+    })
+  }
+
+  const processHeroSection = (elements: Element[]): { title: string; subtitle: string; content: string } => {
+    let title = ''
+    let subtitle = ''
+    let content = ''
+  
+    elements.forEach((element) => {
+      switch (element.type) {
+        case 'h1':
+          title = element.data.content || ''
+          break
+        case 'h2':
+          subtitle = element.data.content || ''
+          break
+        case 'p':
+          content = processLine(element.data.content || '')
+          break
       }
-      
-      sectionContent += processLine(line)
-      hasContent = true
-    }
-    
-    return {
-      content: sectionContent,
-      hasContent,
-      metadata: {
-        link: sectionLink,
-        image: sectionimg
+    })
+  
+    return { title, subtitle, content }
+  }
+
+  const processTextSection = (elements: Element[]): { title: string; content: string } => {
+    let title = ''
+    let content = ''
+  
+    elements.forEach((element) => {
+      switch (element.type) {
+        case 'h2':
+          title = element.data.content || ''
+          break
+        case 'p':
+          content += processLine(element.data.content || '')
+          break
       }
-    }
+    })
+  
+    return { title, content }
   }
 
   const setSectionTemplate = (
-    content: string,
-    title: string,
-    metadata: SectionMetadata,
+    sectionData: { title: string; content: string },
     visibleIndex: number,
-    index: number,
+    isHero: boolean,
     config: GeneratorConfig
   ): string => {
     const isEven = visibleIndex % 2 === 0
-    
+
     let processedSection = section1
-      .replace('{{title}}', title)
-      .replaceAll('{{titleH}}', index === 0 ? '1' : '2')
-      .replace('{{sectionContent}}', content)
-      .replace('{{button}}', `<a target="_blank" href="${metadata.link || config.buttonLink}" class="btn btn-primary br-xxs">Get In Touch</a>`)
-      .replace('{{img}}', metadata.image)
-    
+      .replace('{{title}}', sectionData.title)
+      .replaceAll('{{titleH}}', isHero ? '1' : '2')
+      .replace('{{sectionContent}}', sectionData.content)
+      .replace('{{button}}', `<a target="_blank" href="${config.buttonLink}" class="btn btn-primary br-xxs">Get In Touch</a>`)
+      .replace('{{img}}', '')
+
     if (!isEven) {
       processedSection = processedSection
         .replace('section-3', 'section-3-reverse')
         .replaceAll('c-white', '')
     }
-    
+
     return processedSection
-  }
-
-  const processFaqGroup = (h2Title: string, html: string) => {
-    const hasH3 = /<h3/i.test(html)
-    
-    if (!hasH3) {
-      faqs.value.push({
-        question: h2Title,
-        answer: processLine(html.trim())
-      })
-      return
-    }
-
-    const h3Pattern = /<h3[^>]*>.*?<\/h3>.*?(?=<h3|$)/gis
-    const h3Matches = Array.from(html.matchAll(h3Pattern))
-
-    if (h3Matches.length === 0) {
-      faqs.value.push({
-        question: h2Title,
-        answer: processLine(html.trim())
-      })
-      return
-    }
-
-    // Process first H3 section as answer to H2 question
-    const firstH3Section = h3Matches[0][0]
-    const firstH3TitleMatch = firstH3Section.match(/<h3[^>]*>(.*?)<\/h3>/s)
-    const firstH3Content = firstH3Section.replace(firstH3TitleMatch?.[0] || '', '')
-
-    faqs.value.push({
-      question: h2Title,
-      answer: processLine(firstH3Content.trim())
-    })
-
-    // Process remaining H3s as separate FAQs
-    for (let i = 1; i < h3Matches.length; i++) {
-      const section = h3Matches[i][0]
-      const titleMatch = section.match(/<h3[^>]*>(.*?)<\/h3>/s)
-      const question = titleMatch?.[1] || ''
-      const answer = section.replace(titleMatch?.[0] || '', '')
-
-      faqs.value.push({
-        question,
-        answer: processLine(answer.trim())
-      })
-    }
-  }
-
-  const processSection = (html: string, index: number, visibleIndex: number, config: GeneratorConfig) => {
-    const htmlWithoutP = html.replace(/<p>.*?<\/p>/gs, '')
-    const htmlWithoutImg = htmlWithoutP.replace(/<img.*?>/gs, '')
-    
-    const tagPattern = index === 0 
-      ? /<h1[^>]*>(.*?)<\/h1>/s 
-      : /<h2[^>]*>(.*?)<\/h2>/s
-    
-    const match = htmlWithoutImg.match(tagPattern)
-    const title = match?.[1] || ''
-    const cleanHtml = html.replace(match?.[0] || '', '')
-    
-    const isH2Question = index > 0 && title.includes('?')
-    const h3Count = (cleanHtml.match(/<h3/gi) || []).length
-    
-    if (isH2Question && h3Count > 0) {
-      processFaqGroup(title, cleanHtml)
-      return ''
-    }
-    
-    const sectionResult = setSectionContent(cleanHtml, title, index)
-    if (!sectionResult.hasContent) {
-      return ''
-    }
-    
-    return setSectionTemplate(
-      sectionResult.content,
-      title,
-      sectionResult.metadata,
-      visibleIndex,
-      index,
-      config
-    )
   }
 
   const handleFaqs = () => {
@@ -209,33 +152,46 @@ export function useHtmlGenerator() {
     return fullSection
   }
 
-  const generateHtml = (htmlContent: string, config: GeneratorConfig): string => {
-    if (!htmlContent) {
+  const generateHtml = (sections: Section[], config: GeneratorConfig): string => {
+    console.log(sections)
+    if (!sections.length) {
       processedHtml.value = ''
       return ''
     }
 
     faqs.value = []
-    
-    const sections = htmlContent.split(/<h2/i)
     let visibleSectionCount = 0
-    
-    const result = sections.map((section, index) => {
-      const processedSection = processSection(
-        `${index > 0 ? '<h2' : ''}${section}`,
-        index,
-        visibleSectionCount,
-        config
-      )
-      if (processedSection) visibleSectionCount++
-      return processedSection || ''
-    }).join('')
-    
+    let result = ''
+
+    // Sort sections by index
+    const sortedSections = [...sections].sort((a, b) => a.index - b.index)
+
+    sortedSections.forEach((section) => {
+      switch (section.type) {
+        case 'hero': {
+          const heroData = processHeroSection(section.elements)
+          result += setSectionTemplate(heroData, visibleSectionCount, true, config)
+          visibleSectionCount++
+          break
+        }
+        case 'text': {
+          const textData = processTextSection(section.elements)
+          result += setSectionTemplate(textData, visibleSectionCount, false, config)
+          visibleSectionCount++
+          break
+        }
+        case 'faq': {
+          processFaqElements(section.elements)
+          break
+        }
+      }
+    })
+
     let faqHtml = ''
     if (faqs.value.length > 0) {
       faqHtml = handleFaqs()
     }
-    
+
     const finalHtml = minifyHTML(
       `<div class="c-scroll" id="cameleon-landing-page" style="--primary-color:${config.mainColor}">
         ${result}${faqHtml}
@@ -246,7 +202,6 @@ export function useHtmlGenerator() {
     return finalHtml
   }
 
-  // Return the composable's public API
   return {
     generateHtml,
     processedHtml,

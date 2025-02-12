@@ -15,7 +15,7 @@ definePageMeta({
 const mainDisplayStore = useMainDisplayStore()
 const companyStore = useCompanyStore();
 
-const brand = {
+const brand = reactive({
   "brand_guide": {
     "design": {
       "primary_color": "#1976D2",
@@ -175,7 +175,7 @@ const brand = {
       }
     }
   }
-}
+})
 
 
 onMounted(()=>{

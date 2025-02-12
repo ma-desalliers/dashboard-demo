@@ -1,5 +1,6 @@
 import { useNotificationStore } from '@/src/stores/notificationStore';
 import { useAuthStore } from '@/src/stores/authStore';
+import { useCompanyStore } from '@/src/stores/companyStore'; 
 
 interface ApiResponse<T> {
   data: T;
@@ -91,6 +92,7 @@ export class BaseRepository {
   ): Promise<ApiResponse<T> | PaginatedResponse<T>> {
     const { paginated = false, ...restOptions } = options;
     const notificationStore = useNotificationStore();
+    const companyStore = useCompanyStore(); // Add this line
     const {
       method = 'GET',
       version = this.version,
@@ -101,6 +103,28 @@ export class BaseRepository {
     try {
       const authStore = useAuthStore();
       const url = `${this.baseUrl}/api/v${version}/${endpoint.replace(/^\//, '')}`;
+      
+      // Add client UUID check and injection logic
+      const hasClientUuid = (
+        endpoint.includes('clientUuid=') || 
+        endpoint.includes('filters[clientUuid]=') ||
+        (body && body.clientUuid)
+      );
+
+      let modifiedBody = body;
+      let modifiedEndpoint = endpoint;
+
+      if (!hasClientUuid && companyStore.theCompany?.uuid) {
+        if (method === 'GET') {
+          const separator = endpoint.includes('?') ? '&' : '?';
+          modifiedEndpoint = `${endpoint}${separator}clientUuid=${companyStore.theCompany.uuid}`;
+        } else {
+          modifiedBody = {
+            ...body,
+            clientUuid: companyStore.theCompany.uuid
+          };
+        }
+      }
       
       if (authStore != null && authStore.token != null) {
         headers['Authorization'] = `Bearer ${authStore.token}`;
@@ -113,12 +137,13 @@ export class BaseRepository {
           ...headers,
         },
         signal: restOptions.signal,
-        ...(body && { body: JSON.stringify(body) }),
+        ...(modifiedBody && { body: JSON.stringify(modifiedBody) }),
       };
 
-      const response = await fetch(url, requestOptions);
+      const response = await fetch(url.replace(endpoint, modifiedEndpoint), requestOptions);
       const result = await response.json();
 
+      // Rest of the function remains the same...
       if (!response.ok) {
         notificationStore.showError(`ERROR : ${response.status}`)
         throw new Error(result.error || `HTTP error! status: ${response.status}`);
@@ -133,7 +158,7 @@ export class BaseRepository {
             totalItems: result.pagination.totalItems,
             itemsPerPage: result.pagination.itemsPerPage
           },
-          status:result.status
+          status: result.status
         };
       }
   
