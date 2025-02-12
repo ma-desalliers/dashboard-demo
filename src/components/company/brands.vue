@@ -154,6 +154,7 @@ const baseColumns = [
     align: 'left' as const,
     style: '',
     type: 'checklist',
+
     updateFn: (params: any) => { console.log(params) }
   }
 ];
@@ -173,6 +174,7 @@ const personalityColumns = computed(() => [
     align: 'left' as const,
     style: '',
     type: 'checklist',
+    max:2,
     updateFn: (params: any) => { updatePersonality(params) }
   }
 ]);
@@ -181,23 +183,24 @@ const personalityRows = computed(() => {
   return [
     {
       parameter: 'Values',
-      labels:brandData.value?.props?.props?.values.length ? brandData.value?.props?.props?.values.join(', ') : t('unselected') ,
-      items: brandData.value?.props?.props?.values,
+      labels:brandData.value?.values.length ? brandData.value?.values.join(', ') : t('unselected') ,
+      items: brandData.value?.values,
       options: valueOptions.map(option => ({
           ...option,
           label: t(option.label)
       })),
+      max:2,
       updateFn: updatePersonality
     },
     {
-      parameter: 'Qualities',
-      labels:brandData.value?.props?.props?.qualities?.length ? brandData.value?.props?.props?.qualities.join(', ') : t('unselected') ,
-      items: brandData.value?.props?.props?.qualities,
+      parameter: 'Emotional Tone',
+      labels:brandData.value?.emotional_tone?.length ? brandData.value?.emotional_tone.join(', ') : t('unselected') ,
+      items: brandData.value?.emotional_tone,
       options: qualityOptions.map(option => ({
         ...option,
         label: t(option.label)
       })),
-      updateFn:  updateQualities
+      updateFn:  updateEmotionalTone
     },
     {
       parameter: 'Humanness',
@@ -580,19 +583,19 @@ const rulesRows = computed(() => {
 const updatePersonality = (options: any) =>{
 console.log('update Personality', options)
 if(brandData.value)
-  brandData.value.props.props.values = options.value
+  brandData.value.values = options.value
 companyStore.setBrandGuide(brandData.value)
  // emit('update:brandData', brandData.value)
 }
 
-const updateQualities = (options: any) =>{
+const updateEmotionalTone = (options: any) =>{
 console.log('update quality', options)
 if(brandData.value)
-  brandData.value.props.props.qualities = options.value
+  brandData.value.emotional_tone = options.value
 
 companyStore.setBrandGuide(brandData.value)
- // emit('update:brandData', brandData.value)
 }
+
 const formatLabel = (key: string): string => {
   return key
     .split('_')

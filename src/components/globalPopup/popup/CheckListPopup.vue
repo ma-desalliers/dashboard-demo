@@ -9,10 +9,15 @@
     @hide="handleHide"
   >
     <div class="badge-selector q-pa-md">
+    <div class="row justify-between">
       <div class="text-subtitle1 q-mb-sm">Select Options</div>
-      
-      <!-- Select All Option -->
-      <div class="q-mb-md">
+      <div v-if="props.max" 
+          class="text-caption q-mb-sm">
+       {{ max }} {{$t('items can be selected')}}
+      </div>
+    </div>
+      <!-- Select All Option - Hidden when max is set -->
+      <div v-if="!props.max" class="q-mb-md">
         <q-checkbox
           v-model="selectAll"
           :label="$t('Select All')"
@@ -22,6 +27,9 @@
       </div>
 
       <q-separator class="q-mb-sm" />
+
+      <!-- Selection limit warning -->
+     
 
       <div class="column">
         <div 
@@ -34,6 +42,7 @@
             :val="getOptionValue(option)"
             :label="option[optionLabel]"
             @update:model-value="handleChange"
+            :disable="isOptionDisabled(option)"
             dense
           />
         </div>
@@ -41,6 +50,7 @@
     </div>
   </PopupContainer>
 </template>
+
 
 <script setup lang="ts">
 import { ref, watch, onMounted, nextTick, computed } from 'vue'
@@ -57,11 +67,13 @@ const props = withDefaults(defineProps<{
   optionValue?: string
   optionLabel?: string
   options: Option[]
+  max?: number
 }>(), {
   currentItem: () => [],
   optionValue: 'value',
   optionLabel: 'label'
 })
+
 
 const emit = defineEmits<{
   (e: 'update:modelValue', values: string[]): void
@@ -87,6 +99,12 @@ const selectedLabels = computed(() => {
   if (selectedValues.value.length === props.options.length) return t('All Selected')
   return t('{count} selected', { count: selectedValues.value.length })
 })
+
+const isOptionDisabled = (option: Option): boolean => {
+  if (!props.max) return false
+  return selectedValues.value.length >= props.max && 
+        !selectedValues.value.includes(getOptionValue(option))
+}
 const updateSelectAllState = () => {
   selectAll.value = selectedValues.value.length === props.options.length
 }
@@ -99,6 +117,10 @@ const handleSelectAll = (value: boolean) => {
 }
 
 const handleChange = () => {
+  // Ensure we don't exceed the maximum selection limit
+  if (props.max && selectedValues.value.length > props.max) {
+    selectedValues.value = selectedValues.value.slice(0, props.max)
+  }
   emit('update:modelValue', selectedValues.value)
   emit('change', selectedValues.value)
 }
@@ -128,7 +150,7 @@ watch(showPopup, (isOpen) => {
   if (isOpen && triggerRef.value && popupRef.value) {
     nextTick(() => {
       popupRef.value.setTriggerElement(triggerRef.value, {
-        width: '300px',
+        width: '250px',
         maxHeight: '500px'
       })
     })

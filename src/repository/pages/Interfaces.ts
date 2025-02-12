@@ -37,3 +37,20 @@ export interface PageElement {
   data: any;
   createdAt: number;
 }
+
+
+export interface GeneratePageRequestBody {
+  clientUuid: string;
+  productUuid: string;
+  audienceUuid: string;
+  pageTitle: string;
+  pageFormat: string;
+  language: string;
+  metadata?: {
+    headingCount?: string;
+    wordCount?: string;
+    imageCount?: string;
+    terms?: string[];
+    faq?: string[];
+  }
+}

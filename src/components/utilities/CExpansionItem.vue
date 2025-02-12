@@ -10,7 +10,7 @@
     <template #header>
       <div class="row full-width items-center">
         <div class="row items-center">
-          <div class="text-subtitle1">{{ title }}</div>
+          <div class="text-subtitle2">{{ title }}</div>
           <CustomTooltip
             v-if="tooltip"
             :title="tooltip.title"
@@ -63,7 +63,7 @@ defineEmits<{
   }
 
   :deep(.q-expansion-item__content) {
-    padding: 16px;
+    padding: 0 16px 16px 16px;
     background-color: #ffffff;
   }
   :deep(.expand-icon-class){

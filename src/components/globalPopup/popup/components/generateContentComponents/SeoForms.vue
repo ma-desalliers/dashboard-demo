@@ -1,40 +1,10 @@
 <template>
   <div class="">
-    <!-- Keywords Section -->
-    <CExpansionItem
-      v-model="expandedSections.keywords"
-      class="c-border-bottom c-border-radius-none"
-      title="Keywords (7)"
-      :tooltip="{ 
-        title: 'Keywords Info',
-        description: 'Information about keywords and their usage'
-      }"
-    >
-      <template #header-right>
-        <q-btn
-          outline
-          rounded
-          color="green"
-          class="ai-button"
-          size="sm"
-        >
-          <q-icon name="autoAwesome" class="q-mr-xs" />
-          AI
-        </q-btn>
-      </template>
-      
-      <div class="keywords-list ">
-        <div v-for="keyword in keywords" :key="keyword" class="q-py-xs">
-          {{ keyword }}
-        </div>
-      </div>
-    </CExpansionItem>
-
     <!-- Terms Section -->
     <CExpansionItem
       v-model="expandedSections.terms"
-      title="Terms (0)"
-      class="q-mt-sm c-border-bottom c-border-radius-none"
+      :title="`Terms (${formData.terms?.length || 0})`"
+      class="c-border-bottom c-border-radius-none"
       :tooltip="{ 
         title: 'Terms Info',
         description: 'Information about terms and definitions'
@@ -52,12 +22,17 @@
           AI
         </q-btn>
       </template>
+      
+      <CondensedList 
+        v-model="formData.terms"
+        @update:model-value="updateForm({ terms: $event })"
+      />
     </CExpansionItem>
 
     <!-- FAQ Section -->
     <CExpansionItem
       v-model="expandedSections.faq"
-      title="FAQ (0)"
+      :title="`FAQ (${formData.faq?.length || 0})`"
       class="q-mt-md c-border-bottom c-border-radius-none"
       :tooltip="{ 
         title: 'FAQ Info',
@@ -76,11 +51,16 @@
           AI
         </q-btn>
       </template>
+      
+      <CondensedList 
+        v-model="formData.faq"
+        @update:model-value="updateForm({ faq: $event })"
+      />
     </CExpansionItem>
 
     <!-- Metrics Section -->
     <div class="row q-col-gutter-md q-mt-lg">
-      <div class="col-6">
+      <div class="col-4">
         <div class="row items-center q-mb-sm">
           <div class="text-subtitle2">Headings</div>
           <q-icon 
@@ -93,12 +73,12 @@
           </q-icon>
         </div>
         <q-input
-          v-model="metrics.headings"
+          v-model="formData.headingCount"
           dense
         />
       </div>
       
-      <div class="col-6">
+      <div class="col-4">
         <div class="row items-center q-mb-sm">
           <div class="text-subtitle2">Words</div>
           <q-icon 
@@ -111,7 +91,25 @@
           </q-icon>
         </div>
         <q-input
-          v-model="metrics.words"
+          v-model="formData.wordCount"
+          dense
+        />
+      </div>
+
+      <div class="col-4">
+        <div class="row items-center q-mb-sm">
+          <div class="text-subtitle2">Images</div>
+          <q-icon 
+            name="info"
+            size="xs"
+            color="grey-6"
+            class="q-ml-sm"
+          >
+            <q-tooltip>Information about image count</q-tooltip>
+          </q-icon>
+        </div>
+        <q-input
+          v-model="formData.imageCount"
           dense
         />
       </div>
@@ -120,23 +118,54 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive } from 'vue'
+import { reactive, watch } from 'vue'
+
+interface Metrics {
+  headingCount?: string
+  wordCount?: string
+  imageCount?: string
+  terms?: string[]
+  faq?: string[]
+}
+
+const props = withDefaults(defineProps<{
+  modelValue?: Metrics
+}>(), {
+  modelValue: () => ({
+    headingCount: '0',
+    wordCount: '0',
+    imageCount: '0',
+    terms: [],
+    faq: []
+  })
+})
+
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: Metrics): void
+}>()
+
 const expandedSections = reactive({
-  keywords: true,
-  terms: false,
+  terms: true,
   faq: false
 })
 
-const keywords = ref([
-  'top agence web',
-  'meilleur web agency',
-  'agence meilleurs'
-])
+// Single reactive form data object
+const formData = reactive<Metrics>({...props.modelValue})
 
-const metrics = reactive({
-  headings: '1600',
-  words: '1600'
-})
+// Watch for changes in props
+watch(() => props.modelValue, (newValue) => {
+  Object.assign(formData, newValue)
+}, { deep: true })
+
+// Watch for changes in form data
+watch(formData, (newValue) => {
+  emit('update:modelValue', {...newValue})
+}, { deep: true })
+
+// Single update function for form updates
+const updateForm = (updates: Partial<Metrics>) => {
+  Object.assign(formData, updates)
+}
 </script>
 
 <style scoped lang="scss">
@@ -146,24 +175,9 @@ const metrics = reactive({
   font-size: 12px;
   padding: 0 12px;
   
-  &:hover {
-   // background-color: darken(#0C9A3E, 5%);
-  }
-  
   .q-icon {
     font-size: 14px;
   }
-}
-
-.keywords-list {
-  color: #4A4A4A;
-  font-size: 13px;
-}
-
-.text-subtitle1 {
-  color: #222F3E;
-  font-weight: bold;
-  font-size: 14px;
 }
 
 :deep(.q-icon) {

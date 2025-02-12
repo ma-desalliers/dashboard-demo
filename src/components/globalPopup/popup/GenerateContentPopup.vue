@@ -52,10 +52,44 @@
         </div>
         <div v-show="selectedMode == 'advanced'" class="q-mb-lg full-width">
           <div class="row justify-between full-width">
+            <span class="text-subtitle2">Targeting</span>
+            <BrandVoice>
+              <span class="cursor-pointer">Settings <i class="fa fa-chevron-right"></i></span>
+            </BrandVoice>
+          </div>
+        </div>
+        <div v-show="selectedMode == 'advanced'" class="q-mb-lg full-width">
+          <div class="row justify-between full-width">
             <span class="text-subtitle2">Brand voice</span>
             <BrandVoice>
               <span class="cursor-pointer">Settings <i class="fa fa-chevron-right"></i></span>
             </BrandVoice>
+          </div>
+        </div>
+        <div v-show="selectedMode == 'advanced'" class="q-mb-lg full-width">
+          <div class="full-width">
+            <div class="row justify-between">
+              <span class="text-subtitle2">Page format</span>
+              <span>ai</span>
+            </div>
+            <q-select
+              v-model="theGeneratePage.pageFormat"
+              :options="['Blog posts']"
+              dense
+              emitValue
+              mapOptions
+            >
+            </q-select>
+          </div>
+        </div>
+        <div v-show="selectedMode == 'advanced'" class="q-mb-lg full-width">
+          <div class="full-width">
+            <span class="text-subtitle2">Page title</span>
+            <q-input
+              v-model="theGeneratePage.pageTitle"
+              dense
+            >
+            </q-input>
           </div>
         </div>
 
@@ -79,7 +113,7 @@
         ]" title="Search Engine Optimization"
           tooltip="Choose between basic technical optimization or advanced on-page SEO features">
         </BigButtonOptions>
-        <SeoForms v-show="seoOption == 'advanced' && selectedMode == 'advanced'" class="q-mb-md"></SeoForms>
+        <SeoForms v-model="theGeneratePage.metadata" v-show="seoOption == 'advanced' && selectedMode == 'advanced'" class="q-mb-md"></SeoForms>
         <!-- Generate Button -->
         <div class="q-py-md q-px-sm bg-green-1 rounded-borders">
           <q-btn color="green" :label="$t('generate-content')" class="full-width" :loading="loading"
@@ -112,6 +146,7 @@ import { BaseRepository } from '~/src/repository/BaseRepository'
 import type { Audience } from '~/src/repository/audiences/Interfaces'
 import { AudienceRepository } from '~/src/repository/audiences/Repository'
 import PostSelector from './components/generateContentComponents/PostSelector.vue'
+import type { GeneratePageRequestBody } from '~/src/repository/pages/Interfaces'
 
 interface ContentSlider {
   id: string
@@ -121,6 +156,26 @@ interface ContentSlider {
   tooltip: string
 }
 
+const productStore = useProductStore()
+const audienceStore = useAudienceStore()
+const companyStore = useCompanyStore()
+const mainDisplayStore = useMainDisplayStore()
+const config = useRuntimeConfig();
+
+const audienceList = computed(() => audienceStore.audiences)
+const productList = computed(() => productStore.products)
+const theCompany = computed(()=> companyStore.theCompany)
+const selectedProductUuid = computed(() => selectedProduct.value?.uuid);
+const selectedProductName = computed(() => selectedProduct.value?.name);
+
+const selectedAudienceUuid = computed(() => selectedAudience.value?.uuid);
+const selectedAudienceTitle = computed(() => selectedAudience.value?.title);
+
+const theAudience = computed<AudienceRepository>(() => audienceStore.currentAudience)
+
+// Met
+
+
 // State
 const loading = ref(false)
 const advancedMode = ref(false)
@@ -129,7 +184,24 @@ const triggerRef = ref<HTMLElement>()
 const showAddCredit = ref(false)
 const popupRef = ref()
 const seoOption = ref('basic')
-const selectedMode = ref('easy')
+const selectedMode = ref('advanced')
+
+const theGeneratePage: GeneratePageRequestBody = reactive({
+  clientUuid: theCompany.value.uuid,
+  productUuid: '',
+  audienceUuid: '',
+  pageTitle: '',
+  pageFormat: 'Blog posts',
+  language: 'en',
+  metadata: {
+    headingCount: '10',
+    wordCount: '1500',
+    imageCount: '8',
+    terms: [],
+    faq: [],
+  }
+})
+
 const selectedProduct = ref<{ uuid: string | null; name: string }>({
   uuid: null,
   name: 'Select a product'
@@ -170,23 +242,6 @@ const contentSliders = reactive<ContentSlider[]>([
   }
 ])
 
-const productStore = useProductStore()
-const audienceStore = useAudienceStore()
-const companyStore = useCompanyStore()
-const mainDisplayStore = useMainDisplayStore()
-const config = useRuntimeConfig();
-
-const audienceList = computed(() => audienceStore.audiences)
-const productList = computed(() => productStore.products)
-const selectedProductUuid = computed(() => selectedProduct.value?.uuid);
-const selectedProductName = computed(() => selectedProduct.value?.name);
-
-const selectedAudienceUuid = computed(() => selectedAudience.value?.uuid);
-const selectedAudienceTitle = computed(() => selectedAudience.value?.title);
-
-const theAudience = computed<AudienceRepository>(() => audienceStore.currentAudience)
-
-// Methods
 const toggleAdvancedMode = () => {
   advancedMode.value = !advancedMode.value
 }
@@ -208,15 +263,13 @@ const generateContent = async () => {
       console.error('Product and Audience must be selected');
       return;
     }
-    const payload = {
-      productUuid: selectedProductUuid.value,
-      audienceUuid: selectedAudienceUuid.value,
-      clientUuid: companyStore.theCompany.uuid,
-      subject: contentSliders.find(slider => slider.id === 'topics')?.value,
-      blogPost: contentSliders.find(slider => slider.id === 'blog-posts')?.value
-    };
+    const payload = theGeneratePage 
+
+    payload.audienceUuid = selectedAudience.value.uuid || ''
+    payload.productUuid = selectedProduct.value.uuid || ''
+
     const repository = new BaseRepository();
-    await repository.apiRequest<any>('/content/bulk', {
+    await repository.apiRequest<any>('/pages/generate', {
       method: 'POST',
       body: payload
     });

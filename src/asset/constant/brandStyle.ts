@@ -91,6 +91,7 @@ export const detailLevelOptions: Option[] = [
   { label:'Targeted', value: "targeted" }
 ];
 
+
 export const preferredApproachOptions: Option[] = [
   { label:'Comprehensive', value: "comprehensive" },
   { label:'Focused', value: "focused" },

@@ -105,7 +105,7 @@
               </template>
 
               <template v-else-if="col.type === 'checklist'">
-                <CheckListPopup :current-item="props.row.items"  :options="props.row.options"
+                <CheckListPopup :current-item="props.row.items" :max="props.row.max?? col.max"  :options="props.row.options"
                   @save="(value) => props.row.updateFn ? props.row.updateFn({item:props.row, value:value}) : col.updateFn({item:props.row, value:value})">
                   {{getFieldValue(props.row, col)}} 
                 </CheckListPopup>

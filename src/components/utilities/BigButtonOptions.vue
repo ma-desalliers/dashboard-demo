@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div v-if="title" class="row items-center q-mb-md">
-      <div class="text-subtitle1">{{ title }}</div>
+      <div class="text-subtitle2">{{ title }}</div>
       <q-icon 
         v-if="tooltip" 
         name="info" 
