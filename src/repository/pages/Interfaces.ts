@@ -15,7 +15,7 @@ export interface Page {
 
 export interface RawPage {
   _uuid: string;
-  props: Omit<Page, 'uuid' | 'createdAt'>,
+ // props: Omit<Page, 'uuid' | 'createdAt'>,
   createdAt: string;
 }
 

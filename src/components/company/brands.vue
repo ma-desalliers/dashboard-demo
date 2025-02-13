@@ -53,12 +53,22 @@
     <!-- Right Panel -->
     <div class="col-12 col-md-8" style="height:100vh; overflow:auto">
       <!-- Brand Personality Section -->
-      <c-expansion-item v-model="personalityExpanded" title="Brand Personality" class="q-mb-md">
+      <c-expansion-item v-model="personalityExpanded" title="Brand Personality" class="q-mb-md" default-opened>
         <div class="personality-table">
           <c-table :columns="personalityColumns" :rows="personalityRows" :pagination="{ rowsPerPage: 0 }" />
         </div>
-      </c-expansion-item>
+        <div class="row q-col-gutter-md">
+          <div class="col-6">
+            <span class="text-subtitle2">Voice</span>
+            <q-select v-model="brandData.voice" :options="['active', 'passive']"></q-select>
+          </div>
+          <div class="col-6">
+            <span class="text-subtitle2">Capitalisation</span>
+            <q-select v-model="brandData.capitalization" :options="['title case', 'sentence case', 'all caps', 'lowercase']"></q-select>
+          </div>
+        </div>
 
+      </c-expansion-item>
       <q-btn color="green" label="save" @click="save">
       </q-btn>
     </div>

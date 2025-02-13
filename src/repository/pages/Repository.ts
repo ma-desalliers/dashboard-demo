@@ -1,5 +1,6 @@
 import { BaseRepository, type PaginatedResponse } from "@/src/repository/BaseRepository";
 import type { Page, RawPage } from "@/src/repository/pages/Interfaces";
+import page from '~/src/components/company/page.vue';
 
 export class PageRepository extends BaseRepository {
   /**
@@ -34,22 +35,22 @@ export class PageRepository extends BaseRepository {
         if (value != null) params.append(`filters[${key}]`, value);
       });
       
-      const response = await this.apiRequest<RawPage[]>(`/pages?${params.toString()}`, {
+      const response = await this.apiRequest<Page[]>(`/pages?${params.toString()}`, {
         method: "GET",
         paginated: true
-      }) as PaginatedResponse<RawPage[]>;
+      }) as PaginatedResponse<Page[]>;
 
-      const pages = response.data.map((page) => {
+      /*const pages = response.data.map((page) => {
         const createdAt = new Date(page.createdAt);
         return {
           uuid: page._uuid,
-          ...page.props,
+          .,
           createdAt: createdAt.getTime(),
         };
-      });
+      });*/
       return {
         status: response.status,
-        data: pages,
+        data: response.data,
         pagination: response.pagination
       } as PaginatedResponse<Page[]>;
     } catch (error) {
