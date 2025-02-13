@@ -49,9 +49,11 @@ export class BrandGuideRepository extends BaseRepository {
 
   public async save(brandGuide: Partial<Omit<BrandGuide, 'createdAt'>> & Pick<BrandGuide, 'clientUuid'>): Promise<BrandGuide> {
     try {
+
+      console.log(JSON.stringify(brandGuide))
       const response = await this.apiRequest<BrandGuide>(`/clients/${brandGuide.clientUuid}/brand-guide`, {
         method: 'POST',
-        body: JSON.stringify(brandGuide)
+        body: brandGuide
       });
       return response.data;
     } catch (error) {

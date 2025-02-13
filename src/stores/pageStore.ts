@@ -72,7 +72,7 @@ export const usePageStore = defineStore('usePageStore', {
         this.loading = true;
         try {
           const repository = new PageRepository();
-          this.thePage = await repository.findByUuid('8d8547d6-567d-498d-9c8b-0a97a1a4c326');
+          this.thePage = await repository.findByUuid(pageUuid);
         } catch (error) {
           console.error(error);
           throw error;

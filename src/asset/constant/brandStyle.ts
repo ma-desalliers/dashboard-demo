@@ -145,7 +145,7 @@ export const emotionalToneOptions: Option[] = [
   { label:'Sincere', value: "sincere" },
   { label:'Passionate', value: "passionate" },
   { label:'Engaging', value: "engaging" },
-  { label:'Reassuring', value: "reassuring" }
+  { label:'Reassuring', value: "reassuring" },
 ];
 
 export const humorOptions: Option[] = [

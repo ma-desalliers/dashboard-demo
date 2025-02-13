@@ -32,6 +32,7 @@ import { QCard } from 'quasar'
 interface Position {
   top?: string | number
   left?: string | number
+  bottom ?:string | number
 }
 
 interface Size {
@@ -58,6 +59,7 @@ const triggerElement = ref<DOMRect | null>(null)
 const popupStyle = reactive({
   position: 'absolute' as const,
   top: '0',
+  bottom:'',
   left: '0',
   width: props.size?.width || '600px',
   maxHeight: props.size?.maxHeight || '90vh',
@@ -137,6 +139,8 @@ const calculatePosition = () => {
     popupStyle.top = `${topPosition}px`
   } else {
     popupStyle.top = manualTop
+    popupStyle.bottom = props.position?.bottom ? `${props.position?.bottom}px`:''
+    if(props.position?.bottom) popupStyle.maxHeight = ''
   }
 }
 

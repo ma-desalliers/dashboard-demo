@@ -54,13 +54,13 @@
     <div class="col-12 col-md-8" style="height:100vh; overflow:auto">
       <!-- Brand Personality Section -->
       <c-expansion-item v-model="personalityExpanded" title="Brand Personality" class="q-mb-md">
-
         <div class="personality-table">
           <c-table :columns="personalityColumns" :rows="personalityRows" :pagination="{ rowsPerPage: 0 }" />
         </div>
-
       </c-expansion-item>
 
+      <q-btn color="green" label="save" @click="save">
+      </q-btn>
     </div>
   </div>
 </template>
@@ -69,6 +69,7 @@
 import { ref, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useCompanyStore } from '~/src/stores/companyStore';
+import {BrandGuideRepository} from '@/src/repository/companies/Repository'
 import {
   valueOptions,
   qualityOptions,
@@ -196,7 +197,7 @@ const personalityRows = computed(() => {
       parameter: 'Emotional Tone',
       labels:brandData.value?.emotional_tone?.length ? brandData.value?.emotional_tone.join(', ') : t('unselected') ,
       items: brandData.value?.emotional_tone,
-      options: qualityOptions.map(option => ({
+      options: emotionalToneOptions.map(option => ({
         ...option,
         label: t(option.label)
       })),
@@ -204,19 +205,23 @@ const personalityRows = computed(() => {
     },
     {
       parameter: 'Humanness',
-      values: brandData.value?.humanness,
+      labels:brandData.value?.humanness?.length ? brandData.value?.humanness.join(', ') : t('unselected') ,
+      items: brandData.value?.humanness,
       options: humannessOptions.map(option => ({
         ...option,
         label: t(option.label)
-      }))
+      })),
+      updateFn:  updateHumaness
     },
     {
-      parameter: 'Distinctiveness',
-      values: brandData.value?.distinctiveness,
-      options: distinctivenessOptions.map(option => ({
+      parameter: 'Clarity',
+      labels:brandData.value?.clarity?.length ? brandData.value?.clarity.join(', ') : t('unselected') ,
+      items: brandData.value?.clarity,
+      options: clarityOptions.map(option => ({
         ...option,
         label: t(option.label)
-      }))
+      })),
+      updateFn:  updateClarity
     },
     /*{
       parameter: 'Style - Detail Level',
@@ -596,6 +601,29 @@ if(brandData.value)
 companyStore.setBrandGuide(brandData.value)
 }
 
+const updateHumaness = (options:any) =>{
+  console.log('update quality', options)
+if(brandData.value)
+  brandData.value.humanness = options.value
+
+companyStore.setBrandGuide(brandData.value)
+}
+
+const updateClarity = (options:any) =>{
+  console.log('update quality', options)
+if(brandData.value)
+  brandData.value.clarity = options.value
+
+companyStore.setBrandGuide(brandData.value)
+}
+
+const save = () => {
+  const companyRepository = new BrandGuideRepository()
+  console.log('save',JSON.stringify(brandData.value))
+  companyRepository.save(brandData.value)
+
+}
+
 const formatLabel = (key: string): string => {
   return key
     .split('_')
@@ -605,6 +633,12 @@ const formatLabel = (key: string): string => {
 
 
 
+
+onMounted(()=>{
+
+  companyStore.fetchBrandGuide(theCompany.value.uuid)
+
+})
 
 /*
 

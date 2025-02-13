@@ -3,7 +3,7 @@
     <q-btn class="full-width" color="primary" :label="$t('create-content')" @click="ShowPopup()"></q-btn>
   </div>
 
-  <PopupContainer v-model="showPopup" ref="popupRef" @hide="handleHide" dialog-class="generate-content-popup">
+  <PopupContainer v-model="showPopup" ref="popupRef" @hide="handleHide" dialog-class="generate-content-popup" :position="{top:10, bottom:10}">
     <q-card flat class="content-generator ">
       <!-- Header -->
       <div class="row justify-between items-center q-py-md q-px-lg  c-bg-main-gray">
@@ -191,7 +191,7 @@ const theGeneratePage: GeneratePageRequestBody = reactive({
   productUuid: '',
   audienceUuid: '',
   pageTitle: '',
-  pageFormat: 'Blog posts',
+  pageFormat: 'blog-post',
   language: 'en',
   metadata: {
     headingCount: '10',
@@ -266,7 +266,7 @@ const generateContent = async () => {
     const payload = theGeneratePage 
 
     payload.audienceUuid = selectedAudience.value.uuid || ''
-    payload.productUuid = selectedProduct.value.uuid || ''
+    payload.productUuid = 'f396096c-d84e-4bf4-9cd0-bb93b4255528'//selectedProduct.value.uuid || ''
 
     const repository = new BaseRepository();
     await repository.apiRequest<any>('/pages/generate', {
@@ -294,7 +294,6 @@ const ShowPopup = () => {
     nextTick(() => {
       popupRef.value.setTriggerElement(triggerRef.value, {
         width: '500px',
-        maxHeight: '820px'
       })
     })
   }

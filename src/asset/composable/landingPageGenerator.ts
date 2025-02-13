@@ -4,22 +4,18 @@ import faqSection from '@/src/asset/html/faqSection'
 import faqBlock from '@/src/asset/html/faqBlock'
 
 interface Section {
-  uuid: string
-  pageUuid: string
   type: string
-  index: number
   elements: Element[]
-  createdAt: number
 }
 
 interface Element {
-  uuid: string
   pageUuid: string
   sectionUuid: string
   index: number
   type: string
-  data: any
-  createdAt: number
+  content?: string
+  question?: string
+  answer?: string
 }
 
 interface GeneratorConfig {
@@ -58,8 +54,8 @@ export function useHtmlGenerator() {
     elements.forEach((element) => {
       if (element.type === 'faq') {
         faqs.value.push({
-          question: element.data.question || '',
-          answer: processLine(element.data.answer || '')
+          question: element.question || '',
+          answer: processLine(element.answer || '')
         })
       }
     })
@@ -73,13 +69,13 @@ export function useHtmlGenerator() {
     elements.forEach((element) => {
       switch (element.type) {
         case 'h1':
-          title = element.data.content || ''
+          title = element.content || ''
           break
         case 'h2':
-          subtitle = element.data.content || ''
+          subtitle = element.content || ''
           break
         case 'p':
-          content = processLine(element.data.content || '')
+          content = processLine(element.content || '')
           break
       }
     })
@@ -94,10 +90,10 @@ export function useHtmlGenerator() {
     elements.forEach((element) => {
       switch (element.type) {
         case 'h2':
-          title = element.data.content || ''
+          title = element.content || ''
           break
         case 'p':
-          content += processLine(element.data.content || '')
+          content += processLine(element.content || '')
           break
       }
     })
@@ -116,7 +112,7 @@ export function useHtmlGenerator() {
     let processedSection = section1
       .replace('{{title}}', sectionData.title)
       .replaceAll('{{titleH}}', isHero ? '1' : '2')
-      .replace('{{sectionContent}}', sectionData.content)
+      .replace('{{sectionContent}}', sectionData?.content)
       .replace('{{button}}', `<a target="_blank" href="${config.buttonLink}" class="btn btn-primary br-xxs">Get In Touch</a>`)
       .replace('{{img}}', '')
 
@@ -132,8 +128,8 @@ export function useHtmlGenerator() {
   const handleFaqs = () => {
     const blocks = faqs.value.map((faq, index) => {
       const section = faqBlock
-        .replace('{{blockTitle}}', faq.question)
-        .replace('{{sectionContent}}', faq.answer)
+        .replace('{{blockTitle}}', faq?.question)
+        .replace('{{sectionContent}}', faq?.answer)
       
       if (index > 3) return section.replace('class="cc-block"', 'class="cc-block hidden"')
       return section
@@ -153,7 +149,6 @@ export function useHtmlGenerator() {
   }
 
   const generateHtml = (sections: Section[], config: GeneratorConfig): string => {
-    console.log(sections)
     if (!sections.length) {
       processedHtml.value = ''
       return ''
@@ -163,25 +158,32 @@ export function useHtmlGenerator() {
     let visibleSectionCount = 0
     let result = ''
 
-    // Sort sections by index
-    const sortedSections = [...sections].sort((a, b) => a.index - b.index)
+    // Sort sections based on their first element's index
+    const sortedSections = [...sections].sort((a, b) => {
+      const aIndex = a.elements[0]?.index || 0
+      const bIndex = b.elements[0]?.index || 0
+      return aIndex - bIndex
+    })
 
     sortedSections.forEach((section) => {
+      // Sort elements within each section
+      const sortedElements = [...section.elements].sort((a, b) => a.index - b.index)
+      
       switch (section.type) {
         case 'hero': {
-          const heroData = processHeroSection(section.elements)
+          const heroData = processHeroSection(sortedElements)
           result += setSectionTemplate(heroData, visibleSectionCount, true, config)
           visibleSectionCount++
           break
         }
         case 'text': {
-          const textData = processTextSection(section.elements)
+          const textData = processTextSection(sortedElements)
           result += setSectionTemplate(textData, visibleSectionCount, false, config)
           visibleSectionCount++
           break
         }
         case 'faq': {
-          processFaqElements(section.elements)
+          processFaqElements(sortedElements)
           break
         }
       }
