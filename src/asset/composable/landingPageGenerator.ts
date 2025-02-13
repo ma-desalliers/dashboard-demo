@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import section1 from '@/src/asset/html/section1'
+import section1 from '@/src/asset/html/textSection'
 import faqSection from '@/src/asset/html/faqSection'
 import faqBlock from '@/src/asset/html/faqBlock'
 

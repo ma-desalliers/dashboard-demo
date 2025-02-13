@@ -255,7 +255,7 @@ q:before {
 #cameleon-landing-page .section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /*align-items: center;*/
   --background-color: var(--secondary-color);
   --text-color: #ffffff;
   background-color: var(--background-color);
