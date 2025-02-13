@@ -36,7 +36,6 @@ export const useCompanyStore = defineStore('useCompanyStore', {
         this.companies = response.data;
         this.pagination = response.pagination;
 
-        this.fetchBrandGuide(this.companies[0].uuid);
       } catch (error) {
         console.error(error);
         throw error;
@@ -58,6 +57,16 @@ export const useCompanyStore = defineStore('useCompanyStore', {
       try {
         const brandGuideRepository = new BrandGuideRepository();
         this.brandGuide = await brandGuideRepository.fetchBrandGuide(clientUuid);
+        if (this.brandGuide == null) {
+          this.brandGuide = {
+            values: [],
+            humanness: [],
+            clarity: [],
+            emotional_tone: [],
+            voice: 'active',
+            capitalization: 'sentence case'
+          }
+        }
       } catch (error) {
         this.brandGuideError = 'Failed to fetch Brand Guide';
         console.error(error);
