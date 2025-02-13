@@ -121,6 +121,7 @@ const emit = defineEmits(['update:brandData'])
 
 const companyStore = useCompanyStore()
 const brandData = computed({get:()=>{
+  console.log('brandData', companyStore.brandGuide)
   return companyStore.brandGuide
 }, 
 set:(value)=>{
@@ -617,11 +618,8 @@ if(brandData.value)
 companyStore.setBrandGuide(brandData.value)
 }
 
-const save = () => {
-  const companyRepository = new BrandGuideRepository()
-  console.log('save',JSON.stringify(brandData.value))
-  companyRepository.save(brandData.value)
-
+const save = async () => {
+  await companyStore.saveBrandGuide(theCompany.value.uuid, brandData.value);
 }
 
 const formatLabel = (key: string): string => {
@@ -634,10 +632,9 @@ const formatLabel = (key: string): string => {
 
 
 
-onMounted(()=>{
-
-  companyStore.fetchBrandGuide(theCompany.value.uuid)
-
+onMounted(async ()=>{
+  await companyStore.init();
+  await companyStore.fetchBrandGuide(theCompany.value.uuid)
 })
 
 /*
