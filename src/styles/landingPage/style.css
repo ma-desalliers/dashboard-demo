@@ -252,6 +252,13 @@ q:before {
   gap: var(--spacing-sm)
 }
 
+#cameleon-landing-page .section.full-text-section{
+  --background-color: #ffffff;
+  --text-color: #333333;
+  background-color: var(--background-color);
+  color: var(--text-color)
+}
+
 #cameleon-landing-page .section {
   display: flex;
   flex-direction: column;

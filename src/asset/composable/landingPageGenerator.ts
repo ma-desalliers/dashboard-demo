@@ -118,8 +118,8 @@ export function useHtmlGenerator() {
 
     if (!isEven) {
       processedSection = processedSection
-        .replace('section-3', 'section-3-reverse')
-        .replaceAll('c-white', '')
+      //  .replace('section-3', 'section-3-reverse')
+       // .replaceAll('c-white', '')
     }
 
     return processedSection
