@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'dashboard',
+      name: 'dashboard-demo',
       port: process.env.PORT,
       exec_mode: 'cluster',
       instances: '1',
