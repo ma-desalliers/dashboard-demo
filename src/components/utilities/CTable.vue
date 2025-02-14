@@ -305,7 +305,7 @@ const getFieldValue = (row: any, col: any) => {
     return col.field(row) ?? '-'
   }
   return row[col.field] ?? '-'
-}
+}  
 
 const onBadgeClick = (row: any, col: any, event:Event) => {
   const triggerRect = mainDisplayStore.getPopupTriggerElement(event.currentTarget as HTMLElement)

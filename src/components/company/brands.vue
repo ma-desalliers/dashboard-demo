@@ -66,7 +66,23 @@
             <span class="text-subtitle2">Capitalisation</span>
             <q-select v-model="brandData.capitalization" :options="['title case', 'sentence case', 'all caps', 'lowercase']"></q-select>
           </div>
+          <div class="col-6">
+            <span class="text-subtitle2">Nuancy</span>
+            <CSlider
+              v-model="brandData.nuancy"
+              :min="0"
+              :max="100"
+              :step="5"
+              label
+              label-always
+              color="primary"
+              class="q-mt-md"
+              dense
+            />
+          </div>
         </div>
+
+
 
       </c-expansion-item>
       <q-btn color="green" label="save" @click="save">
