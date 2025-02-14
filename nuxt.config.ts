@@ -42,6 +42,9 @@ export default defineNuxtConfig({
     ]
   },
   vite: {
+    server: {
+      allowedHosts: ['cameleon-server']
+    },
     css: {
       preprocessorOptions: {
         scss: {
