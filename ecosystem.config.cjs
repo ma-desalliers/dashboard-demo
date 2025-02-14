@@ -1,8 +1,9 @@
+
 module.exports = {
   apps: [
     {
       name: 'dashboard-demo',
-      port: process.env.PORT,
+      node_args: "-r dotenv/config",
       exec_mode: 'cluster',
       instances: '1',
       script: './.output/server/index.mjs',
