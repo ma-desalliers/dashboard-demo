@@ -1,7 +1,7 @@
 <template>
   <div class="thumbs-review">
-    <button @click="toggleThumbs('up')" :class="{ active: value === true }">👍</button>
-    <button @click="toggleThumbs('down')" :class="{ active: value === false }">👎</button>
+    <button @click="toggleThumbs('up')" :class="{ active: value === true }"><i class="fa-regular fa-thumbs-up"></i></button>
+    <button @click="toggleThumbs('down')" :class="{ active: value === false }"><i class="fa-regular fa-thumbs-down"></i></button>
   </div>
 </template>
 
@@ -24,9 +24,9 @@ watch(() => props.modelValue, (newValue) => {
 
 function toggleThumbs(direction: 'up' | 'down') {
   if (direction === 'up') {
-    value.value = value.value === true ? null : true;
+    value.value =  true;
   } else if (direction === 'down') {
-    value.value = value.value === false ? null : false;
+    value.value =  false;
   }
   emit('update:modelValue', value.value);
 }
@@ -42,7 +42,11 @@ function toggleThumbs(direction: 'up' | 'down') {
   margin: 0 5px;
 }
 
-.thumbs-review button.active {
-  color: blue;
+.thumbs-review button.active .fa-thumbs-up{
+  color: var(--q-green);
+}
+
+.thumbs-review button.active .fa-thumbs-down{
+  color: var(--q-negative);
 }
 </style>

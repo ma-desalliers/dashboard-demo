@@ -12,13 +12,13 @@
     <div class="col">
     <q-slider
       v-model="sliderValue"
-      :min="0"
-      :max="100"
-      :step="5"
+      :min="min"
+      :max="max"
+      :step="step"
       label
-      label-always
+      :label-always="labelAlways"
       color="primary"
-      class="q-mt-md"
+      class="q-mt-sm"
       dense
     />
   </div>
@@ -39,10 +39,19 @@ import { ref, computed } from 'vue'
 
 const props = withDefaults(defineProps<{
   modelValue?: number,
-  showIcons?: boolean
+  showIcons?: boolean,
+  max:number,
+  min:number,
+  step:number,
+  labelAlways:boolean
+
 }>(), {
   modelValue: 0,
-  showIcons: true
+  showIcons: true,
+  max:100,
+  min:0,
+  step:5,
+  labelAlways:false
 })
 
 const emit = defineEmits<{

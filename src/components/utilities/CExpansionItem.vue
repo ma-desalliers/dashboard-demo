@@ -8,9 +8,9 @@
     expand-icon-class="expand-icon-class"
   >
     <template #header>
-      <div class="row full-width items-center">
+      <div class="row full-width items-center q-px-none">
         <div class="row items-center">
-          <div class="text-subtitle2">{{ title }}</div>
+          <div :class="titleClass ?? 'text-subtitle2'">{{ title }}</div>
           <CustomTooltip
             v-if="tooltip"
             :title="tooltip.title"
@@ -43,6 +43,7 @@ interface Props {
   modelValue?: boolean;
   title: string;
   tooltip?: TooltipProps;
+  titleClass?:string;
 }
 
 defineProps<Props>();
@@ -58,7 +59,7 @@ defineEmits<{
 
   :deep(.q-expansion-item__container) {
     .q-item {
-      padding: 16px;
+      padding: 0px;
     }
   }
 

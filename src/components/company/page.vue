@@ -57,14 +57,7 @@
       <!-- Custom cell templates -->
       <template #cell-review="props">
         <div class="row items-center q-gutter-x-sm">
-          <q-btn
-            :icon="props.row.review ? 'thumb_up' : 'thumb_down'"
-            :color="props.row.review ? 'positive' : 'negative'"
-            dense
-            flat
-            round
-            size="sm"
-          />
+         <ThumbsReview v-model="props.row.review"></ThumbsReview>
         </div>
       </template>
 

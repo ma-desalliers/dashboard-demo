@@ -42,7 +42,7 @@
               <div>
                 <div class="row items-center q-gutter-x-lg q-mb-sm">
                   <div class="text-caption text-grey-8" style="width: 80px">Frequency</div>
-                  <q-slider
+                  <c-slider
                     v-model="settings[attribute.name].frequency"
                     :min="0"
                     :max="100"
@@ -64,7 +64,7 @@
               <div>
                 <div class="row items-center q-gutter-x-lg q-mb-sm">
                   <div class="text-caption text-grey-8" style="width: 80px">Explicitness</div>
-                  <q-slider
+                  <c-slider
                     v-model="settings[attribute.name].explicitness"
                     :min="1"
                     :max="10"
