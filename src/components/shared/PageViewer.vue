@@ -36,17 +36,7 @@
           <q-separator vertical />
 
           <!-- Progress Indicator -->
-          <div class="row items-center q-gutter-x-md">
-            <span class="text-grey-8 text-caption">{{$t('awareness')}}</span>
-            <div class="row q-gutter-x-xs">
-              <div
-                v-for="n in 4"
-                :key="n"
-                class="bg-green-5"
-                style="width: 16px; height: 8px; border-radius: 2px"
-              />
-            </div>
-          </div>
+          <SectionBar :active-count="1"></SectionBar>
         </div>
 
         <!-- Tab Navigation -->
@@ -89,7 +79,6 @@
 import { ref } from "vue";
 import { usePageStore } from "~/src/stores/pageStore";
 import ContentViewer from "./components/PageViewer.vue/ContentViewer.vue";
-import SocialPostCard from "./SocialPostCard.vue";
 import PageOverview from "./components/PageViewer.vue/PageOverview.vue";
 import PageDistribution from "./components/PageViewer.vue/PageDistribution.vue";
 
@@ -109,7 +98,7 @@ const isVisible = computed({
   set: (value) => emit("update:modelValue", value),
 });
 
-const thePage = computed(() => pageStore.thePage);
+const thePage = computed(() => pageStore.thePage || {});
 
 const activeTab = ref("overview");
 

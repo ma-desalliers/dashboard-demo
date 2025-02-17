@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
@@ -8,6 +9,10 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/i18n',
   ],
+  devServer: {
+    port: 3001, // Set the port to 3001
+    host: '0.0.0.0' // This allows external access to the server
+  },
   app: {
     head: {
       link: [
@@ -21,12 +26,12 @@ export default defineNuxtConfig({
   quasar: {
     plugins: ['Notify'],
     config: {
-      notify: {  position: 'top' }
+      notify: { position: 'top' }
     }
   },
-  runtimeConfig:{
+  runtimeConfig: {
     public: {
-      apiBase: process.env.NUXT_PUBLIC_API_BASE_URL || 'http://cameleon-server:3000' 
+      apiBase: process.env.NUXT_PUBLIC_API_BASE_URL || 'http://cameleon-server:3000'
     }
   },
   components: {
@@ -54,9 +59,9 @@ export default defineNuxtConfig({
     }
   },
   routeRules: {
-    '/login': { ssr:false },
-    '/register': { ssr:false },
-    '/': {  }
+    '/login': { ssr: false },
+    '/register': { ssr: false },
+    '/': {}
   },
   i18n: {
     vueI18n: '@/src/translation/config.ts',

@@ -82,7 +82,7 @@
             }">
             <slot :name="`cell-${col.name}`" v-bind="{ ...props, value: props.row[col.name] }">
               <template v-if="col.type === 'hover'">
-                <hover-button :buttons="hoverButtons" hide-background :item="props.row">
+                <hover-button :buttons="hoverButtons"  :item="props.row">
                   {{ getFieldValue(props.row, col) }}
                 </hover-button>
               </template>
@@ -193,9 +193,11 @@ interface HoverColumn extends BaseColumn {
 interface ReviewColumn extends BaseColumn {
   type: 'review'
 }
+
 interface CheckListColumn extends BaseColumn {
   type: 'checklist'
   options:any[]
+  max:number
 }
 
 interface ButtonColumn extends BaseColumn {
@@ -216,6 +218,9 @@ interface DateColumn extends BaseColumn {
 }
 interface BarColumn extends BaseColumn {
   type: 'bar'
+  totalSection:number,
+  activeCount:number
+  labels:string[]
 }
 
 interface ActionsColumn extends BaseColumn {

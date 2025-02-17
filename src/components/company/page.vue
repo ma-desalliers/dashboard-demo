@@ -1,4 +1,7 @@
 <template>
+  <div class="q-px-md q-pt-md">
+    <ProgressSteps :steps="progressStep"></ProgressSteps>
+  </div>
   <div class="row q-pa-md q-col-gutter-md">
     <div class="col-12 col-sm-4">
       <q-select
@@ -103,6 +106,7 @@ import { useJTBDStore } from '~/src/stores/JTBDStore';
 import { usePageStore } from '~/src/stores/pageStore'
 import PageViewer from '~/src/components/shared/PageViewer.vue';
 import page from '~/src/components/company/page.vue';
+import ProgressSteps from '../shared/ProgressSteps.vue';
 
 // interface Page {
 //   uuid: string
@@ -145,6 +149,8 @@ const pagination = ref({
   descending: true,
   rowsNumber: 0
 });
+
+const progressStep = [{label:"selecion", value: 1},{label:"production", value: 2},{label:"r/vision", value: 3},{label:"r/vision", value: 3},{label:"r/vision", value: 3}]
 
 
 const audienceStore = useAudienceStore()
