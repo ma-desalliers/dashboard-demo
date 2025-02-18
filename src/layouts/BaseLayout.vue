@@ -4,14 +4,16 @@
     <Header class="c-header-container" v-if="!showContent"  @state="(currentState : boolean  ) =>  headerState = currentState" />
     
     <!-- Main Content Section -->
-    <div class="c-main-content" :class="{'header-openned' : headerState}">
+    <div class="c-main" :class="{'header-openned' : headerState}">
       <div class="row no-wrap">
         <!-- Left Column -->
         <Sidebar class="c-left-column ":class="{'isOpen': showMenu}" />
         <!-- Right Content Area -->
         <div class="c-right-column" :class="{'c-overlay': showOverlay == 'content' }">
           <ContextMenu></ContextMenu>
-          <slot></slot>
+          <div class="c-main-content">
+            <slot></slot>
+          </div>
         </div>
       </div>
     </div>
@@ -48,7 +50,7 @@ definePageMeta({
   z-index: 2;
 }
 
-.c-main-content {
+.c-main {
   flex: 1;
   overflow: hidden;
 
@@ -81,7 +83,7 @@ definePageMeta({
   left:300px;
   right:0;
   height: 100%;
-  //overflow-y: auto;
+  overflow-y: auto;
 }
 
 // Ensure clean scrolling on iOS devices
@@ -127,7 +129,14 @@ definePageMeta({
       left:0;
       right:0;
       height: 100%;
-      overflow-y: auto;
+      .c-main-content{
+        position:absolute;
+        top:50px;
+        left:0;
+        right:0;
+        bottom:0;
+        overflow: auto;
+      }
     }
 
 		

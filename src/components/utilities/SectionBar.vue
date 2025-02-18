@@ -29,7 +29,7 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 const stages =  computed(()=>{
- return  props.labels ?? [
+  return  props.labels ?? [
     t('awareness'),
     t('consideration'),
     t('decision'),
@@ -43,8 +43,8 @@ const getStageLabel = (stageNumber: number): string => {
 
 <style scoped>
 .section {
-  width: 10px;
-  height: 12px;
+  width: 6px;
+  height:10px;
   margin-left:2px;
   transition: background-color 0.3s ease;
 }

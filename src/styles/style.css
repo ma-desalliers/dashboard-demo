@@ -58,6 +58,9 @@ html {
 .c-box-subtitle.c-smaller {
   font-size: 0.8rem;
 }
+.c-box-subtitle.c-thin {
+  font-weight: 400;
+}
 
 .c-small-text {
   font-size: 14px !important;
@@ -264,6 +267,11 @@ html {
 
 .c-rounded {
   border-radius: 4px;
+}
+
+.c-custom-chips {
+  border: none !important;
+  background-color: color-mix(in srgb, currentColor 12%, #ffffff) !important;
 }
 
 .c-text-truncate {

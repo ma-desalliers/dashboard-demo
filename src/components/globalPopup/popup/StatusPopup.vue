@@ -144,7 +144,7 @@ onMounted(() => {
 }
 
 .q-chip {
-  border-radius: 0;
+  border-radius: 4px 0 0 4px;
   margin-right: 2px;
 }
 
@@ -179,6 +179,7 @@ onMounted(() => {
   margin-top:4px;
   padding-top:2px;
   padding-left:3px;
+  text-align: left;
   clip-path: polygon(0 0, 0 100%, 80% 100%, 100% 50%, 80% 0);
   &:hover{
     background:  #cecece;

@@ -1,0 +1,268 @@
+<template>
+
+  <div>
+    <CTable
+      v-model="selectedPages"
+      :columns="columns"
+      :rows="formattedPages"
+      :loading="loading"
+      :batch-actions="batchActions"
+      :pagination="pagination"
+      :hover-buttons="hoverButtonList"
+      row-key="uuid"
+      @request="onRequest"
+      @update:pagination="updatePagination"
+    >
+      <!-- Custom cell templates -->
+      <template #cell-review="props">
+        <div class="row items-center q-gutter-x-sm">
+          <ThumbsReview v-model="props.row.review"></ThumbsReview>
+        </div>
+      </template>
+
+      <template #cell-relevancy="props">
+        <q-chip
+        square
+          dense
+          outline
+          class="c-custom-chips"
+          :color="getRelevancyColor(props.value)"
+          :label="props.value"
+        />
+      </template>
+
+      <template #cell-channel="props">
+        <div class="row items-center">
+          <SocialMediaIcon :name="'search engine'" size="24px" ></SocialMediaIcon>
+          <span class="q-pl-sm"> {{ props.value ?? 'Search Engine' }}</span>
+        </div>
+      </template>
+    </CTable>
+    
+  </div>
+  <Teleport to="body">
+    <PageViewer v-model="sidePanelVisible"></PageViewer>
+  </Teleport>
+</template>
+
+<script setup lang="ts">
+import { ref, computed, onMounted, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { usePageStore } from '@/src/stores/pageStore'
+import { useCompanyStore } from '@/src/stores/companyStore'
+import type { Page } from '@/src/repository/pages/Interfaces'
+import PageViewer from '@/src/components/shared/PageViewer.vue'
+
+const props = defineProps<{
+  audienceUuid?: string
+  subjobUuid?: string
+  onEdit?: (page: Page) => void
+  onDelete?: (page: Page) => void
+  onBatchDelete?: (pages: Page[]) => void
+}>()
+
+const emit = defineEmits(['update:pagination'])
+
+const selectedPages = ref<Page[]>([])
+const sidePanelVisible = ref<boolean>(false)
+const loading = ref<boolean>(false)
+
+const { t } = useI18n()
+const pageStore = usePageStore()
+const companyStore = useCompanyStore()
+
+const pagination = ref({
+  page: 1,
+  rowsPerPage: 10,
+  sortBy: 'createdAt',
+  descending: true,
+  rowsNumber: 0
+})
+
+const formattedPages = computed(() => {
+  return pageStore.pages.map((page) => ({
+    uuid: page.uuid,
+    title: page.title,
+    status: 'selection',
+    relevancy: getRelevancyText(page.relevancyScore || 8),
+    channel: 'Search Engine',
+    buyingStage: 1,
+    format: page.type || 'Unknown',
+    creationDate: new Date(page.createdAt).toLocaleDateString()
+  }))
+})
+
+const columns = [
+  {
+    name: 'title',
+    label: t('content'),
+    field: 'title',
+    align: 'left' as const,
+    type: 'hover',
+    sortable: true
+  },
+  {
+    name: 'status',
+    label: t('status'),
+    field: 'status',
+    type: 'badge',
+    options: [
+      { label: 'test', uuid: 'test' },
+      { label: 'selection', uuid: 'selection' },
+      { label: 'hello', uuid: 'hello' }
+    ],
+    align: 'center' as const,
+    sortable: true
+  },
+  {
+    name: 'relevancy',
+    label: t('relevancy'),
+    field: 'relevancy',
+    align: 'center' as const,
+    sortable: true
+  },
+  {
+    name: 'channel',
+    label: t('channel'),
+    field: 'channel',
+    align: 'left' as const,
+    sortable: true
+  },
+  {
+    name: 'buyingStage',
+    label: t('buying-stage'),
+    field: 'buyingStage',
+    align: 'left' as const,
+    type: 'bar',
+    sortable: true
+  },
+  {
+    name: 'format',
+    label: t('format'),
+    field: 'format',
+    align: 'left' as const,
+    sortable: true
+  },
+  {
+    name: 'creationDate',
+    label: t('creation-date'),
+    field: 'creationDate',
+    align: 'left' as const,
+    sortable: true
+  }
+]
+
+const batchActions = computed(() => {
+  const actions = []
+  if (props.onBatchDelete) {
+    actions.push({
+      label: 'Delete Selected',
+      icon: 'delete',
+      color: 'negative',
+      handler: (selected: Page[]) => props.onBatchDelete?.(selected)
+    })
+  }
+  return actions
+})
+
+const hoverButtonList = computed(() => {
+  return [
+    {
+      icon: 'fa fa-eye',
+      action: (e: Event, item: any) => { openPageViewer(item) },
+      color: 'white',
+      textColor: '#333333'
+    },
+    {
+      icon: 'fa fa-pen',
+      action: (e: Event, item: any) => props.onEdit?.(item),
+      color: 'white',
+      textColor: '#333333'
+    }
+  ]
+})
+
+const getRelevancyColor = (relevancy: string): string => {
+  switch (relevancy) {
+    case 'Excellent':
+      return 'positive'
+    case 'Good':
+      return 'warning'
+    default:
+      return 'negative'
+  }
+}
+
+const getRelevancyText = (relevancy: number): string => {
+  if (relevancy >= 8) return 'Excellent'
+  if (relevancy >= 5) return 'Good'
+  return 'Average'
+}
+
+const getChannelIcon = (channel: string): string => {
+  switch (channel) {
+    case 'Search Engine':
+      return 'fab fa-google'
+    case 'LinkedIn':
+      return 'fab fa-linkedin'
+    case 'Facebook':
+      return 'fab fa-facebook'
+    case 'X':
+      return 'fab fa-x-twitter'
+    case 'Newsletter':
+      return 'mail'
+    case 'Google Profile':
+      return 'fab fa-google'
+    default:
+      return 'fab fa-google'
+  }
+}
+
+const fetchPages = async () => {
+  loading.value = true
+  try {
+    await pageStore.list(pagination.value.page, pagination.value.rowsPerPage, {
+      clientUuid: companyStore.theCompany.uuid,
+      audienceUuid: props.audienceUuid,
+      subjobUuid:props.subjobUuid
+    })
+    pagination.value = {
+      ...pagination.value,
+      rowsNumber: pageStore.totalRecords
+    }
+  } finally {
+    loading.value = false
+  }
+}
+
+const onRequest = (props: { pagination: any }) => {
+  pagination.value = { ...props.pagination }
+  fetchPages()
+}
+
+const updatePagination = async (newPagination: any) => {
+  if (Object.hasOwnProperty.call(newPagination, 'pagination')) {
+    pagination.value = { ...newPagination.pagination }
+  } else {
+    pagination.value = { ...newPagination }
+  }
+  await fetchPages()
+}
+
+const openPageViewer = async (page: Page) => {
+  await pageStore.current(page.uuid)
+  sidePanelVisible.value = true
+}
+
+onMounted(() => {
+  fetchPages()
+})
+
+watch(() => props.audienceUuid, () => {
+  fetchPages()
+})
+
+watch(() => props.subjobUuid, () => {
+  fetchPages()
+})
+</script>

@@ -47,7 +47,7 @@
             v-for="col in columns"
             :key="col.name"
             :props="props"
-            class="c-box-subtitle"
+            class="c-box-subtitle c-thin c-smaller"
           >
             <slot :name="`header-${col.name}`" v-bind="props">
               {{ col.label }}
@@ -116,7 +116,7 @@
               </template>
 
               <template v-else-if="col.type === 'bar'">
-                <SectionBar :active-count="props.row[col.name]"></SectionBar>
+                <SectionBar :active-count="getFieldValue(props.row, col)"></SectionBar>
               </template>
               <template v-else-if="col.type === 'review'">
                 <ThumbsReview v-model="props.row[col.name]"></ThumbsReview>
@@ -338,12 +338,9 @@ const onBadgeClick = (row: any, col: any, event:Event) => {
 }
 
 .c-box-subtitle{
-  font-size:16px;
+  font-size:14px;
 }
 
-.c-table .c-box-subtitle {
-  font-size:16px;
-}
 
 .c-table .q-td {
   font-size:16px;

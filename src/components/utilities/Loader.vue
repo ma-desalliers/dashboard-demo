@@ -17,9 +17,11 @@ import { computed } from 'vue'
 const props = withDefaults(defineProps<{
   size?: string;
   color?: string;
+  showStats?: boolean;
 }>(), {
   size: '40px',
-  color: 'var(--q-primary)'
+  color: 'var(--q-green)',
+  showStats:false
 })
 
 const containerStyle = computed(() => ({

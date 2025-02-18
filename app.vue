@@ -11,20 +11,24 @@ import { onMounted, onBeforeUnmount, computed } from 'vue';
 import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
 import { useCompanyStore } from '@/src/stores/companyStore';
 import { useAuthStore } from '@/src/stores/authStore';
-
 // Import layouts from src/layouts
 // At the top of your App.vue
 import DefaultLayout from '@/src/layouts/Default.vue'
 import GuestLayout from '@/src/layouts/Guest.vue'
 
+const mainDisplayStore = useMainDisplayStore();
+const companyStore = useCompanyStore()
+const authStore = useAuthStore();
+
+
 // Then instead of defineNuxtLayout, use defineComponent with <component>
-const layout = computed(() => 
+  const layout = computed(() => 
   authStore.isAuthenticated ? DefaultLayout : GuestLayout
 );
 
-const mainDisplayStore = useMainDisplayStore();
-const authStore = useAuthStore();
+const theCompany = computed(()=> companyStore.theCompany)
 
+provide<string>('companyUuid', theCompany.value.uuid)
 // Function to check and update mobile state
 const checkMobileState = () => {
   mainDisplayStore.setMobile(window.innerWidth < 1000);

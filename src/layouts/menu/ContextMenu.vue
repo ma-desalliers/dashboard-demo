@@ -1,4 +1,5 @@
 <template>
+  <div class="context-menu-container">
   <q-tabs
       v-if="tabConfigurations"
       v-model="currentTab"
@@ -18,6 +19,7 @@
         class="q-mr-md"
       />
     </q-tabs>
+  </div>
   </template>
   <script lang="ts" setup>    
 import { useQuasar } from 'quasar'
@@ -81,6 +83,16 @@ onBeforeUnmount(() => {
 });
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
+.q-tabs{
+ 
+}
 
+.context-menu-container{
+  position:sticky;
+  top:0;
+  z-index: 10;
+  background-color: #ffffff;
+
+}
 </style>

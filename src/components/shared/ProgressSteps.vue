@@ -6,11 +6,11 @@
       class="c-step relative-position"
       :class="{
         'c-step-active': index === activeStep,
-        'c-step-completed': index < activeStep
+       // 'c-step-completed': index < activeStep
       }"
     >
     <div class="c-step-end-arrow" v-if="index > 0"></div>
-      <div class="c-step-content row items-center justify-between no-wrap q-px-md">
+      <div class="c-step-content row items-center justify-between no-wrap q-px-md" @click="selectStep(index)">
         <div class="c-step-label">{{ step.label }}</div>
         <div class="c-step-value q-ml-sm">{{ step.value }}</div>
       </div>
@@ -33,6 +33,12 @@ interface Props {
 withDefaults(defineProps<Props>(), {
   activeStep: 0
 });
+
+const emit = defineEmits(['updateActiveStep'])
+
+const selectStep = (step:number)=>{
+  emit('updateActiveStep', step)
+}
 </script>
 
 <style scoped lang="scss">
@@ -126,7 +132,7 @@ withDefaults(defineProps<Props>(), {
 }
 
 .c-step-active {
-  background-color: #4CAF50;
+  background-color: var(--q-green);
 
   .c-step-label,
   .c-step-value {
@@ -135,7 +141,7 @@ withDefaults(defineProps<Props>(), {
 }
 
 .c-step-completed {
-  background-color: #4CAF50;
+  background-color: var(--q-green);
 
   .c-step-label,
   .c-step-value {

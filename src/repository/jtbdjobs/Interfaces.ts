@@ -14,5 +14,7 @@ export interface JTBDFilters {
   clientUuid: string
   marketUuid?: string
   parentUuid?: string
+  audienceUuid? : string
   isChild?: boolean
+  withPage?: boolean
 }

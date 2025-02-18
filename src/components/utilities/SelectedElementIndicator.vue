@@ -1,31 +1,47 @@
 <template>
-    <div v-if="show" :class="getClass()" class="c-selected-indicator"></div>
+  <div v-if="show" :class="getClass()" class="c-selected-indicator"></div>
 </template>
 <script lang="ts" setup>
 const props = defineProps({
-    color:String,
-    show:Boolean,
-    rounded:Boolean
-})
+  color: String,
+  show: Boolean,
+  rounded: Boolean,
+  showLeft: Boolean,
+});
 
-const getClass = () =>{
-  if(props.rounded){
-    return `c-indicator-rounded ${props.color}`
+const getClass = () => {
+  const classes = [];
+
+  classes.push(props.color);
+
+  if (props.rounded) {
+    classes.push(`c-indicator-rounded`);
   }
-  return props.color
-}
+
+  if (props.showLeft) classes.push("c-indicator-left");
+
+  return classes.join(" ");
+};
 </script>
-<style>
-.c-selected-indicator{
-    position:absolute;
-    right:0;
-    top:0;
-    bottom:0;
-    width:5px;
-}
+<style lang="scss">
+.c-selected-indicator {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
 
-.c-indicator-rounded{
-  border-radius: 0 4px 4px 0;
+  &.c-indicator-rounded {
+    border-radius: 0 4px 4px 0;
+  }
+  
+  &.c-indicator-left {
+    right: unset;
+    left: 0;
 
+    &.c-indicator-rounded {
+      border-radius: 4px 0 0 4px;
+    }
+  }
 }
 </style>
