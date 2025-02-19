@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
 
-$primary   : #55B948;
+$primary   : #0DB04B;
 $secondary : #26A69A;
 $accent    : #1976D2;
 
@@ -16,6 +16,8 @@ $warning   : #F2C037;
 $green : #0DB04B;
 $green-lighten : color-mix(in srgb, $green 16%, #ffffff);
 
+$black: #213343;
+
 $primary-lighten : color-mix(in srgb, $primary 16%, #ffffff);
 
 // You can also create custom CSS variables for use throughout your app
@@ -23,8 +25,11 @@ $primary-lighten : color-mix(in srgb, $primary 16%, #ffffff);
   --q-primary: #{$primary};
   --q-secondary: #{$secondary};
   --q-accent : #{$accent};
+
+  --q-company-color: var(--q-primary);
   --q-green: #{$green};
   --q-green-lighten: #{$green-lighten};
+  --q-black: #{$black};
   --main-gray : #F6F9FC;
 
   $primary-lighten: color-mix(in srgb, var(--q-primary) 16%, #ffffff);
@@ -37,12 +42,12 @@ body {
   scrollbar-gutter: stable;  /* Prevents layout shift */
   
   font-family: Lexend Deca;
-  color: #213343;
+  color: var(--q-black);
 
 }
 
 .text-black{
-  color:#213343
+  color:var(--q-black)
 
 }
 

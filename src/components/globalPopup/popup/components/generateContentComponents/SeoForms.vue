@@ -40,16 +40,7 @@
       }"
     >
       <template #header-right>
-        <q-btn
-          outline
-          rounded
-          color="green"
-          class="ai-button"
-          size="sm"
-        >
-          <q-icon name="magic" class="q-mr-xs" />
-          AI
-        </q-btn>
+        <AiBtn></AiBtn>
       </template>
       
       <CondensedList 

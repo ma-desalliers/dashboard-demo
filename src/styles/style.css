@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 :root {
-  --q-primary: #55B948;
+  --q-primary: #0DB04B;
   --q-secondary: #26A69A;
   --q-accent: #1976D2;
+  --q-company-color: var(--q-primary);
   --q-green: #0DB04B;
   --q-green-lighten: color-mix(in srgb, #0DB04B 16%, #ffffff);
+  --q-black: #213343;
   --main-gray: #F6F9FC;
 }
 
@@ -14,11 +16,11 @@ body {
   padding: 0;
   scrollbar-gutter: stable; /* Prevents layout shift */
   font-family: Lexend Deca;
-  color: #213343;
+  color: var(--q-black);
 }
 
 .text-black {
-  color: #213343;
+  color: var(--q-black);
 }
 
 html {
@@ -137,7 +139,7 @@ html {
   min-height: unset;
 }
 .c-select:hover .q-field__control:before {
-  border-color: #55B948;
+  border-color: #0DB04B;
 }
 
 .c-select-item {

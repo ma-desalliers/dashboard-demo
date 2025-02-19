@@ -116,7 +116,7 @@
         <SeoForms v-model="theGeneratePage.metadata" v-show="seoOption == 'advanced' && selectedMode == 'advanced'" class="q-mb-md"></SeoForms>
         <!-- Generate Button -->
         <div class="q-py-md q-px-sm bg-green-1 rounded-borders">
-          <q-btn color="green" :label="$t('generate-content')" class="full-width" :loading="loading"
+          <q-btn color="green" :label="$t('generate-content')" class="full-width c-shine" :loading="loading"
             @click="generateContent" />
 
           <!-- Footer -->

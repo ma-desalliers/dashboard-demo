@@ -1,6 +1,8 @@
 <template>
 
-  <div>
+  <div class="c-relative">
+    <Loading v-if="isLoading" size="75px"></Loading>
+
     <CTable
       v-model="selectedPages"
       :columns="columns"
@@ -80,7 +82,7 @@ const pagination = ref({
 })
 
 const formattedPages = computed(() => {
-  return pageStore.pages.map((page) => ({
+  return isLoading.value ? [] : pageStore.pages.map((page) => ({
     uuid: page.uuid,
     title: page.title,
     status: 'selection',
@@ -91,6 +93,8 @@ const formattedPages = computed(() => {
     creationDate: new Date(page.createdAt).toLocaleDateString()
   }))
 })
+
+const isLoading = computed(()=> pageStore.loading)
 
 const columns = [
   {
@@ -219,7 +223,6 @@ const getChannelIcon = (channel: string): string => {
 }
 
 const fetchPages = async () => {
-  loading.value = true
   try {
     await pageStore.list(pagination.value.page, pagination.value.rowsPerPage, {
       clientUuid: companyStore.theCompany.uuid,
@@ -231,7 +234,7 @@ const fetchPages = async () => {
       rowsNumber: pageStore.totalRecords
     }
   } finally {
-    loading.value = false
+   
   }
 }
 
