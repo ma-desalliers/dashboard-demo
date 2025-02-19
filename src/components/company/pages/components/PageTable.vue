@@ -227,7 +227,8 @@ const fetchPages = async () => {
     await pageStore.list(pagination.value.page, pagination.value.rowsPerPage, {
       clientUuid: companyStore.theCompany.uuid,
       audienceUuid: props.audienceUuid,
-      subjobUuid:props.subjobUuid
+      subjobUuid:props.subjobUuid,
+      withContent: true
     })
     pagination.value = {
       ...pagination.value,

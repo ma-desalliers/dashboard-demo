@@ -59,7 +59,7 @@ interface GICS {
 interface Audience {
   uuid: string
   clientUuid: string
-  title: string
+  name: string
   description: string
   subIndustryId: number | null
   countryId: number | null

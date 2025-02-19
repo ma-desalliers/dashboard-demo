@@ -1,7 +1,7 @@
 export interface Audience {
   uuid: string;
   clientUuid: string;
-  title: string;
+  name: string;
   description?: string;
   subIndustryId?: number;
   countryId?: number;

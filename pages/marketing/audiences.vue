@@ -63,7 +63,7 @@
             <EditBox
               :uuid="selectedAudience.uuid"
               box-title="Audience Details"
-              :title="selectedAudience.title"
+              :title="selectedAudience.name"
               :description="selectedAudience.description"
               @update:title="updateAudienceTitle"
               @update:description="updateAudienceDescription"
@@ -110,7 +110,7 @@ const selectedAudience = ref<any>(null)
 // Methods for audience management
 const updateAudienceTitle = (title: string) => {
   if (selectedAudience.value) {
-    selectedAudience.value.title = title
+    selectedAudience.value.name = title
   }
 }
 

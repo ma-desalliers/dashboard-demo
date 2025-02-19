@@ -147,7 +147,7 @@ const {t} = useI18n()
 // Use audience data from store
 const audienceOptions = computed({get:() =>{
    return audienceStore.audiences.map((audience) => ({
-    label: audience.title,
+    label: audience.name,
     value: audience.uuid,
     isOpen:false
   }))},
@@ -176,7 +176,8 @@ const fetchPages = async () => {
   await pageStore.list(pagination.value.page, pagination.value.rowsPerPage, {
     clientUuid: companyStore.theCompany.uuid,
     audienceUuid: selectedAudience.value || undefined,
-    subjobUuid: selectedSubJob.value || undefined
+    subjobUuid: selectedSubJob.value || undefined,
+    withContent: true
   });
   pagination.value = {
     ...pagination.value,

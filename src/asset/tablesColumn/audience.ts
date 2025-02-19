@@ -1,8 +1,8 @@
 const columns = [
   {
-    name: 'title',
+    name: 'name',
     label: 'Title',
-    field: 'title',
+    field: 'name',
     align: 'left' as const,
     type: 'hover',
     sortable: true
