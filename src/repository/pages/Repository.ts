@@ -75,5 +75,6 @@ export interface PageFilters {
   marketUuid?: string;
   audienceUuid?: string;
   subjobUuid?: string;
+  withContent?: boolean;
 }
 

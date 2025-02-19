@@ -26,7 +26,7 @@
           <MultiSelect
             v-model="audienceFilter"
             :options="audience"
-            label-name="title"
+            label-name="name"
             label="Filter by Audience"
             :display-selected="'number'"
             dense

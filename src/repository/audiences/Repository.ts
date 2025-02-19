@@ -15,7 +15,7 @@ export class AudienceRepository extends BaseRepository {
   }
   public async list(companyUuid: string): Promise<Audience[]> {
     try {
-      const response = await this.apiRequest<Audience[]>(`/clients/${companyUuid}/personas`, {
+      const response = await this.apiRequest<Audience[]>(`/clients/${companyUuid}/audiences`, {
         method: 'GET'
       });
       return response.data as Audience[];
@@ -27,7 +27,7 @@ export class AudienceRepository extends BaseRepository {
 
   public async create(audience: Omit<Audience, 'uuid' | 'score' | 'createdAt'>): Promise<Audience> {
     try {
-      const response = await this.apiRequest<Audience>('/personas', {
+      const response = await this.apiRequest<Audience>('/audiences', {
         method: 'POST',
         body: JSON.stringify(audience)
       });
@@ -40,7 +40,7 @@ export class AudienceRepository extends BaseRepository {
 
   public async update(audience: Audience): Promise<Audience> {
     try {
-      const response = await this.apiRequest<Audience>(`/personas/${audience.uuid}`, {
+      const response = await this.apiRequest<Audience>(`/audiences/${audience.uuid}`, {
         method: 'PUT',
         body: JSON.stringify(audience)
       });
