@@ -1,7 +1,7 @@
 <template>
 
     <Teleport to="body">
-      <q-layout view="hhh LpR fFf" class="side-panel-layout">
+      <q-layout v-if="isOpen" class="side-panel-layout" >
     <q-drawer
       v-model="isOpen"
       :side="position"
@@ -111,5 +111,9 @@ const atShow = () =>{
 .drawer-content {
   height: calc(100vh - 0px); /* 56px header + 1px border */
   overflow-y: auto;
+}
+
+.side-panel-layout{
+
 }
 </style>
