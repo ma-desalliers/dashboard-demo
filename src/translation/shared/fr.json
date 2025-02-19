@@ -56,5 +56,7 @@
   "buying-stage": "Étape d'achat",
   "format": "Format",
   "creation-date": "Date de création",
-  "none":"Aucun"
+  "none":"Aucun",
+  "strategies": "Stratégies",
+  "premium": "Premium"
 }

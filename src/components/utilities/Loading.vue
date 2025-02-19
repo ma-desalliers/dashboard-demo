@@ -6,7 +6,7 @@
 <script lang="ts" setup>
 withDefaults(defineProps<{
   size?: string,
-  position:'left' | 'center' | 'right'
+  position?:'left' | 'center' | 'right'
 }>(), {
   size: '100px',
   position:'center'

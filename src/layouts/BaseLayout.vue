@@ -10,7 +10,7 @@
         <Sidebar class="c-left-column ":class="{'isOpen': showMenu}" />
         <!-- Right Content Area -->
         <div class="c-right-column" :class="{'c-overlay': showOverlay == 'content' }">
-          <ContextMenu></ContextMenu>
+          <ContextMenu v-if="false"></ContextMenu>
           <div class="c-main-content">
             <slot></slot>
           </div>
@@ -34,7 +34,7 @@ const isMobile = computed(()=>mainDisplayStore.isMobile )
 const showMenu = computed(()=>mainDisplayStore.showMenu )
 const showContent = computed(()=> mainDisplayStore.showContent)
 const showOverlay = computed(()=> mainDisplayStore.overlay)
-const headerState = ref(true)
+const headerState = ref(false)
 
 definePageMeta({
   middleware: ['auth', 'company']

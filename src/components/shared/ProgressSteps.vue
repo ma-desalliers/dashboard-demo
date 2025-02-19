@@ -44,7 +44,7 @@ const selectStep = (step:number)=>{
 <style scoped lang="scss">
 .c-progress-steps {
   width: 100%;
-  min-height: 40px;
+  min-height: 50px;
 }
 
 .c-step {
@@ -93,7 +93,7 @@ const selectStep = (step:number)=>{
     position: absolute;
     left: -0px;
     width: 20px;
-    height: 40px;
+    height: 50px;
     clip-path: polygon(0 0, 0% 100%, 80% 50%);
     background-color: white;
     z-index: 1;
@@ -114,7 +114,7 @@ const selectStep = (step:number)=>{
     position: absolute;
     right: -20px;
     width: 20px;
-    height: 40px;
+    height: 50px;
     clip-path: polygon(0 0, 0% 100%, 80% 50%);
     background-color: inherit;
     z-index: 2;

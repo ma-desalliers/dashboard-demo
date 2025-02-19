@@ -44,6 +44,7 @@ body {
   font-family: Lexend Deca;
   color: var(--q-black);
 
+//  filter: grayscale(100%);
 }
 
 .text-black{
@@ -59,7 +60,10 @@ html {
 
 .c-pointer{
   cursor: pointer;
+}
 
+.c-no-pointer-event{
+  pointer-events: none;
 }
 
 .right-column-container{
@@ -133,9 +137,14 @@ html {
   .fa{
     font-size: 1.4em ;
   }
-  span{
-    text-transform: capitalize;
+  span {
+    text-transform: lowercase;
   }
+  
+  span::first-letter {
+    text-transform: uppercase;
+  }
+  
 }
 
 .c-btn-outline{
@@ -331,6 +340,10 @@ html {
   max-width: 300px;
 }
 
+
+.c-text-nowrap{
+  white-space: nowrap;
+}
 
 .c-sticky{
   position: sticky;

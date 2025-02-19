@@ -146,13 +146,13 @@ const fullColumns = computed(() => {
 const hoverButtonList = computed(() => {
   return [
     {
-      icon: 'fa fa-eye',
+      icon: 'o_visibility',
       action: (e: Event, item: any) => { window.open(item.ctaUrl, '_blank') },
       color: 'white',
       textColor: '#333333'
     },
     {
-      icon: 'fa fa-pen',
+      icon: 'o_edit',
       action: () => { console.log('sup') },
       color: 'white',
       textColor: '#333333'

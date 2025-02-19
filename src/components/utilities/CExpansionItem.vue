@@ -81,12 +81,27 @@ defineEmits<{
     padding: 16px 24px;
     border: solid 1px #e0e0e0;
     transition: 0.25s;
+    position: relative;
+
     :deep(.q-expansion-item__content) {
       padding: 0;
       background-color: #ffffff;
     }
+
+    &:after {
+      content: "";
+      width: 0px;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: var(--q-green);
+      transition: 0.25s;
+    }
     &.q-expansion-item--expanded {
-      border-left: solid 3px var(--q-green);
+      &:after {
+        width: 6px;
+      }
     }
   }
 }

@@ -32,7 +32,7 @@
     >
       <!-- Custom Header -->
       <template #header="props">
-        <q-tr :props="props">
+        <q-tr :props="props" clickable >
           <!-- Selection Header -->
           <q-th auto-width>
             <q-checkbox
@@ -62,6 +62,7 @@
           :props="props" 
           :class="{ 'selected': props.selected, 'table-row-border': props.row[borderColorField] }"
           :style="props.row[borderColorField] ? { '--row-border-color': props.row[borderColorField] } : {}"
+          @click.prevent="rowClicked()"
         >
           <!-- Selection Column -->
           <q-td auto-width>
@@ -311,6 +312,10 @@ const getFieldValue = (row: any, col: any) => {
   }
   return row[col.field] ?? '-'
 }  
+
+const  rowClicked = () =>{
+  console.log('hello')
+}
 
 const onBadgeClick = (row: any, col: any, event:Event) => {
   const triggerRect = mainDisplayStore.getPopupTriggerElement(event.currentTarget as HTMLElement)

@@ -31,7 +31,7 @@
           Selected Content:  
         </span>
         <q-btn-group>
-          <q-btn ><i class="fa fa-edit"></i></q-btn>
+          <q-btn  icon="o_edit"></q-btn>
           <q-btn @click="">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 20 220 180" style="width:26px">
                   <!-- Large star - left (moved up) -->

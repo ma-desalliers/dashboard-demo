@@ -2,7 +2,7 @@
   <div class="q-px-md q-pt-md">
     <ProgressSteps :steps="progressStep" :active-step="activeStep" @update-active-step="(step) => activeStep = step"></ProgressSteps>
   </div>
-  <div class="row q-pa-md q-col-gutter-md">
+  <div class="row q-px-md q-py-lg q-col-gutter-lg">
     <div >
       <ToggleButtons v-model="currentView" :options="toggleBtnOptions"></ToggleButtons>
     </div>

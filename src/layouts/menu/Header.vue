@@ -34,7 +34,7 @@ import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
 import { useCompanyStore } from '@/src/stores/companyStore';
 import ClientHeader from '~/src/components/shared/ClientHeader.vue';
 
-const isVisible = ref(true)
+const isVisible = ref(false)
 const companyStore = useCompanyStore();
 const theCompany = computed(() => companyStore.theCompany);
 

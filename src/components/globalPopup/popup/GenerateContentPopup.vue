@@ -54,7 +54,7 @@
           <div class="row justify-between full-width">
             <span class="text-subtitle2">Targeting</span>
             <BrandVoice>
-              <span class="cursor-pointer">Settings <i class="fa fa-chevron-right"></i></span>
+              <span class="cursor-pointer">Settings <q-icon name="o_chevron_right" /></span>
             </BrandVoice>
           </div>
         </div>
@@ -62,7 +62,7 @@
           <div class="row justify-between full-width">
             <span class="text-subtitle2">Brand voice</span>
             <BrandVoice>
-              <span class="cursor-pointer">Settings <i class="fa fa-chevron-right"></i></span>
+              <span class="cursor-pointer">Settings <q-icon name="o_chevron_right" /></span>
             </BrandVoice>
           </div>
         </div>

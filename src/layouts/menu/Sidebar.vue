@@ -5,7 +5,7 @@
       <ClientHeader></ClientHeader>
     </div>
 
-    <!-- Growth Plan Section-->
+    <!-- Growth Plan Section
     <div class="section-container c-light-border-bottom">
       <GenerateContentPopup></GenerateContentPopup>
       <div clas="section-header q-mb-sm q-px-md">
@@ -19,9 +19,39 @@
           <div class="">{{ $t("opportunity") }}</div>
         </div>
       </div>
-    </div>
+    </div>-->
 
-    <!-- Departments Section -->
+    <div class="section-container q-mb-md">
+			<div class="section-header q-mb-sm q-px-md">
+				<div class="row items-center q-pb-md">
+					<div class="c-box-subtitle q-pr-sm">AI Departments</div>
+					<Tooltip :title="'Content Marketing'" :description="'this is a description '"></Tooltip>
+				</div>
+			</div>
+			<div class="departments c-light-border-bottom q-pb-md">
+				<q-item v-for="dept in departments" :key="dept.name" clickable @click="goto(dept.path)" v-ripple
+					class="q-px-md q-mb-xs q-py-xs"
+					:class="dept.active ? `bg-${dept.color}-1 text-${dept.color}` : `bg-${dept.color}-hover`">
+					<q-item-section avatar>
+						<q-avatar rounded size="32px">
+							<img class="c-img-cover" :src="dept.icon" :alt="dept.name" :style="{backgroundColor: dept.color}">
+						</q-avatar>
+					</q-item-section>
+					<q-item-section>
+						{{ dept.name }}
+					</q-item-section>
+					<q-item-section side v-if="dept.new">
+						<q-chip :color="dept.color" text-color="white" class="text-caption" style="border-radius: 4px">
+							New
+						</q-chip>
+					</q-item-section>
+					<selected-element-indicator rounded :color="`bg-${dept.color}`"
+						:show="dept.active"></selected-element-indicator>
+				</q-item>
+			</div>
+		</div>
+
+    <!-- Departments Section 
     <div class="section-container c-light-border-bottom q-pb-md q-pt-md">
       <div class="departments ">
         <q-expansion-item v-for="dept in departments" :key="dept.name" v-model="dept.expanded" :class="[
@@ -54,15 +84,18 @@
           </q-list>
         </q-expansion-item>
       </div>
-    </div>
+    </div>-->
 
     <!-- Knowledge Base Section -->
     <div class="section-container q-mt-md">
-      <q-expansion-item v-model="knowledgeSection.expanded" class="knowledge-section q-mb-xs">
+      <q-expansion-item v-model="knowledgeSection.expanded"  class="knowledge-section q-mb-xs">
         <template v-slot:header>
-          <q-item-section>
-            {{ knowledgeSection.name }}
-          </q-item-section>
+          <div class="section-header  c-no-pointer-event" >
+				<div class="row q-pt-xs">
+					<div class="c-box-subtitle q-pr-sm c-text-nowrap">Business intelligence</div>
+					<Tooltip :title="'Content Marketing'" :description="'this is a description '"></Tooltip>
+				</div>
+			</div>
         </template>
 
         <q-list padding class="sub-items">
@@ -70,11 +103,14 @@
             'q-py-sm sub-item',
             { 'active-sub-item': item.active }
           ]" @click="handleKnowledgeItemClick(item)">
-            <q-item-section class="q-pl-md">
+            <q-item-section class="">
               {{ item.name }}
             </q-item-section>
             <q-item-section side v-if="item.comingSoon">
               <span class="text-grey-6 text-caption">{{ $t('coming-soon') }}</span>
+            </q-item-section>
+            <q-item-section class="q-px-none" side v-if="item.premium">
+              <q-chip square color="primary" text-color="white" class="text-caption">{{ $t('premium') }}</q-chip>
             </q-item-section>
           </q-item>
         </q-list>
@@ -108,6 +144,7 @@ const departments = reactive([
     color: "green",
     new: false,
     icon: `/user/marketing.png`,
+    path:`/company/${companyStore.theCompany.uuid}/pages`,
     subItems: [
       { name: "SEO", active: true, path: '/marketing/seo/keywords' },
       { name: "Email", active: false },
@@ -115,13 +152,13 @@ const departments = reactive([
       { name: "Leads magnets", active: false }
     ]
   },
-  /* {
+   {
      name: t("sales"),
      active: false,
      expanded: false,
      page: "sales",
      color: "blue",
-     icon: `/${company.folder}/user/sale.png`,
+     icon: `/user/sale.png`,
      subItems: [
        { name: "Leads", active: false },
        { name: "Opportunities", active: false }
@@ -133,7 +170,7 @@ const departments = reactive([
      expanded: false,
      color: "purple",
      page: "SupportDisplay",
-     icon: `/${company.folder}/user/support.png`,
+     icon: `/user/support.png`,
      subItems: [
        { name: "Tickets", active: false },
        { name: "Knowledge Base", active: false }
@@ -145,12 +182,12 @@ const departments = reactive([
      expanded: false,
      color: "yellow",
      page: "HrDisplay",
-     icon: `/${company.folder}/user/hr.png`,
+     icon: `/user/hr.png`,
      subItems: [
        { name: "Recruitment", active: false },
        { name: "Training", active: false }
      ]
-   }*/
+   }
 ])
 
 const knowledgeSection = reactive({
@@ -158,9 +195,10 @@ const knowledgeSection = reactive({
   expanded: true,
   items: [
     { name: t("product"), active: false, path:`/company/${companyStore.theCompany.uuid}/products` },
-    { name: t("audience"), active: false },
-    { name: t("branding"), active: false },
-    { name: t("channels"), active: false, comingSoon: true }
+    { name: t("audience"), active: false,  path:`/company/${companyStore.theCompany.uuid}/audiences` },
+    { name: t("branding"), active: false,  path:`/company/${companyStore.theCompany.uuid}/brands` },
+    { name: t("strategies"), active: false,  path:`/company/${companyStore.theCompany.uuid}/strategies`, premium:true },
+    //{ name: t("channels"), active: false, comingSoon: true }
   ]
 })
 

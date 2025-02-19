@@ -2,8 +2,7 @@
 <teleport to="body" :disabled="!isMobile" >
   <div class="tabbed-viewer" :class="{'isFixed': isMobile, 'isOpen': showContent}">
     <div class="row q-pa-sm clickable" style="background-color: white;" @click="closeContent" v-if="isMobile">
-      <q-icon size="20px" class="q-pt-xs q-pr-sm">
-        <i class="fa fa-times"></i>
+      <q-icon size="20px" class="q-pt-xs q-pr-sm" name="o_close">
       </q-icon>
       <span  style="font-size:16px;padding-top:2px">Close</span>
   </div>

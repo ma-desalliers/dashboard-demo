@@ -42,9 +42,9 @@
     </CTable>
     
   </div>
-  <Teleport to="body">
+
     <PageViewer v-model="sidePanelVisible"></PageViewer>
-  </Teleport>
+
 </template>
 
 <script setup lang="ts">
@@ -94,7 +94,7 @@ const formattedPages = computed(() => {
   }))
 })
 
-const isLoading = computed(()=> pageStore.loading)
+const isLoading = computed(()=> pageStore.listLoading)
 
 const columns = [
   {
@@ -172,13 +172,13 @@ const batchActions = computed(() => {
 const hoverButtonList = computed(() => {
   return [
     {
-      icon: 'fa fa-eye',
+      icon: 'o_visibility',
       action: (e: Event, item: any) => { openPageViewer(item) },
       color: 'white',
       textColor: '#333333'
     },
     {
-      icon: 'fa fa-pen',
+      icon: 'o_edit',
       action: (e: Event, item: any) => props.onEdit?.(item),
       color: 'white',
       textColor: '#333333'

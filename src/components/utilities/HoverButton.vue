@@ -24,8 +24,8 @@
             :color="option.color"
             :text-color="option.textColor"
             :title="option.title"
+            :icon="option.icon"
           >
-            <i :class="option.icon" :style="{ color: option.textColor }"></i>
           </q-btn>
         </template>
 

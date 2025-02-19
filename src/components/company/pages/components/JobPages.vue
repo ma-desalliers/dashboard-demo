@@ -3,7 +3,7 @@
     <Loading size="50px" position="left"></Loading>
   </div>
   <CExpansionItem
-  v-if="!isLoading"
+    v-if="!isLoading"
     v-for="subjob in subJobs"
     :key="subjob.uuid"
     :title="subjob.title"

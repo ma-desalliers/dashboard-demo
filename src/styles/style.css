@@ -32,6 +32,10 @@ html {
   cursor: pointer;
 }
 
+.c-no-pointer-event {
+  pointer-events: none;
+}
+
 .c-box-title {
   font-size: 1.1rem;
   color: #666666;
@@ -95,7 +99,10 @@ html {
   font-size: 1.4em;
 }
 .q-btn span {
-  text-transform: capitalize;
+  text-transform: lowercase;
+}
+.q-btn span::first-letter {
+  text-transform: uppercase;
 }
 
 .c-btn-outline {
@@ -281,6 +288,10 @@ html {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 300px;
+}
+
+.c-text-nowrap {
+  white-space: nowrap;
 }
 
 .c-sticky {

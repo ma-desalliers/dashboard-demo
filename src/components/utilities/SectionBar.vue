@@ -6,7 +6,7 @@
       class="section"
       :class="{ 
         'bg-green': index < activeCount,
-        'bg-grey-7': index >= activeCount 
+        'bg-grey-4': index >= activeCount 
       }"
     />
     <span class="text-grey-8 c-section-subtitle q-pl-sm">{{ getStageLabel(activeCount) }}</span>

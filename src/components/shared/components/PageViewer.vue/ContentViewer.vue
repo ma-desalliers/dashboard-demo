@@ -17,7 +17,7 @@ const pageContent = computed(() => {
 });
 </script>
 <style lang="scss">
-@import url('src/styles/landingPage/style.css');
+@import url('/src/styles/landingPage/style.css');
 
 #cameleon-landing-page .section .section-content {
   width:unset;

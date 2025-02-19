@@ -115,13 +115,13 @@ const fullColumns = computed(() => columns)
 const hoverButtonList = computed(() => {
   return [
     {
-      icon: 'fa fa-eye',
+      icon: 'o_visibility',
       action: (e: Event, item: Audience) => showAudienceDetails(item),
       color: 'white',
       textColor: '#333333'
     },
     {
-      icon: 'fa fa-pen',
+      icon: 'o_edit',
       action: (e: Event, item: Audience) => editAudience(item),
       color: 'white',
       textColor: '#333333'

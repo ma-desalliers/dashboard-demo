@@ -5,7 +5,7 @@
     @update:model-value="handleModelUpdate"
     class="c-custom-select"
     :class="{ 'c-select-right': align === 'right' }"
-    dropdown-icon="fa fa-chevron-down"
+    dropdown-icon="chevron-down"
     borderless
     :popup-content-class="align === 'right' ? 'c-select-right' : ''"
     :multiple="multiple"

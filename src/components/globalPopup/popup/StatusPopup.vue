@@ -1,4 +1,3 @@
-// StatusPopup.vue
 <template>
   <div class="status-trigger" ref="triggerRef">
     <div class="row d-flex align-items-center">
@@ -13,7 +12,7 @@
         {{ currentItem?.[optionLabel] || $t('none') }}
       </q-chip>
       <div class="next-status cursor-pointer" @click="handleQuickNext">
-        <i class="fa fa-play"></i>
+        <q-icon name="o_play_arrow"/>
       </div>
       <!--<q-btn
         v-if="quickNext"
@@ -177,12 +176,17 @@ onMounted(() => {
   width:30px;
   height:28px;
   margin-top:4px;
-  padding-top:2px;
-  padding-left:3px;
+  padding-left:1px;
   text-align: left;
+  
   clip-path: polygon(0 0, 0 100%, 80% 100%, 100% 50%, 80% 0);
   &:hover{
     background:  #cecece;
   }
+}
+
+.q-icon{
+  font-size:22px;
+  
 }
 </style>

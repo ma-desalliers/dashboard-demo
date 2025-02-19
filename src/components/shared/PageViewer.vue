@@ -1,5 +1,5 @@
 <template>
-  <SidePanel v-model="isVisible" :width="1000" hide-header>
+  <SidePanel v-model="isVisible" :width="1000">
     <div class="bg-white w-full">
       <!-- Header Navigation Bar -->
       <q-header class="bg-white text-black" bordered>
@@ -15,15 +15,14 @@
       <div class="q-pa-md">
         <!-- Title Section -->
         <div class="c-section-bigtitle text-grey-9 q-pb-md">
-          {{thePage.title}}
+          {{thePage?.title}}
         </div>
 
         <!-- Meta Tags Section -->
-        <div class="row items-center q-gutter-md q-mb-lg">
+        <div class="row items-center q-gutter-md q-mb-lg" v-if="thePage">
           <!-- Approbation Dropdown -->
-          <q-btn outline dense color="grey-7" label="Approbation" class="bg-grey-3">
-            <q-icon name="expand_more" class="q-ml-sm" />
-          </q-btn>
+          <StatusPopup :current-item="thePage.status"  :options="[]"></StatusPopup>
+            
 
           <q-separator vertical />
 
@@ -48,10 +47,10 @@
           indicator-color="green-5"
           active-color="green-5"
         >
+          <!--<q-tab name="content" :label="$t('content')" />
           <q-tab name="overview" :label="$t('overview')" />
-          <q-tab name="content" :label="$t('content')" />
           <q-tab name="monetization" :label="$t('monetization')" />
-          <q-tab name="distribution" :label="$t('distribution')" />
+          <q-tab name="distribution" :label="$t('distribution')" />-->
         </q-tabs>
 
         <q-tab-panels
@@ -63,7 +62,7 @@
           </q-tab-panel>
 
           <!-- Preview Panel -->
-          <q-tab-panel name="content">
+          <q-tab-panel name="content" class="q-pa-none">
             <ContentViewer></ContentViewer>
           </q-tab-panel>
           <q-tab-panel name="distribution">
@@ -98,10 +97,9 @@ const isVisible = computed({
   set: (value) => emit("update:modelValue", value),
 });
 
-const thePage = computed(() => pageStore.thePage || {});
+const thePage = computed(() => pageStore.thePage);
 
-const activeTab = ref("overview");
-
+const activeTab = ref("content");
 
 const closeSidePanel = () => {
   isVisible.value = false;

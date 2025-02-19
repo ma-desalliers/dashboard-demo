@@ -33,7 +33,7 @@ export function useEntityInteractions(entityType: string) {
 
   const getDefaultHoverButtons = (editComponent: string) => {
     return computed<HoverButton[]>(() => [{
-      icon: 'fa fa-pen',
+      icon: 'o_pen',
       action: (event: Event, item: EditableEntity) => openEditPopup(event, item, editComponent),
       color: 'default',
       textColor: '#333333'

@@ -1,6 +1,7 @@
 <template>
-  <q-layout view="hHh LpR fFf" class="side-panel-layout">
+
     <Teleport to="body">
+      <q-layout view="hhh LpR fFf" class="side-panel-layout">
     <q-drawer
       v-model="isOpen"
       :side="position"
@@ -41,8 +42,9 @@
         <slot></slot>
       </div>
     </q-drawer>
-  </Teleport>
   </q-layout>
+  </Teleport>
+
 </template>
 
 <script setup lang="ts">
@@ -90,10 +92,15 @@ const atShow = () =>{
 }
 </script>
 
-<style scoped>
+<style >
 .side-panel {
   background: #ffffff;
   height: 100vh;
+}
+
+.q-drawer {
+  top: 0 !important;
+  transform: translateX(0) !important;
 }
 
 .drawer-header {
@@ -102,7 +109,7 @@ const atShow = () =>{
 }
 
 .drawer-content {
-  height: calc(100vh - 57px); /* 56px header + 1px border */
+  height: calc(100vh - 0px); /* 56px header + 1px border */
   overflow-y: auto;
 }
 </style>

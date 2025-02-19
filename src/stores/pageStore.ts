@@ -11,6 +11,7 @@ interface PageState {
   totalPages: number;
   totalRecords: number;
   perPage: number;
+  listLoading:boolean;
   loading: boolean;
 }
 
@@ -26,6 +27,7 @@ export const usePageStore = defineStore('usePageStore', {
     totalPages: 0,
     totalRecords: 0,
     perPage: 10,
+    listLoading:false,
     loading: false,
   }),
   getters: {
@@ -42,7 +44,7 @@ export const usePageStore = defineStore('usePageStore', {
           JSON.stringify(this.currentFilters) === JSON.stringify(filters)) {
         return;
       }
-      this.loading = true;
+      this.listLoading = true;
       this.companyUuid = filters.clientUuid;
       this.currentFilters = filters;
       this.currentPage = page;
@@ -59,7 +61,7 @@ export const usePageStore = defineStore('usePageStore', {
         console.error(error);
         throw error;
       } finally {
-        this.loading = false;
+        this.listLoading = false;
       }
     },
     /**
