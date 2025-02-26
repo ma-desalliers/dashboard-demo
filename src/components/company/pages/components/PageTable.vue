@@ -115,21 +115,10 @@ const columns = [
       { label: 'selection', uuid: 'selection' },
       { label: 'hello', uuid: 'hello' }
     ],
+    style:{
+      minWidth:'150px'
+    },
     align: 'center' as const,
-    sortable: true
-  },
-  {
-    name: 'relevancy',
-    label: t('relevancy'),
-    field: 'relevancy',
-    align: 'center' as const,
-    sortable: true
-  },
-  {
-    name: 'channel',
-    label: t('channel'),
-    field: 'channel',
-    align: 'left' as const,
     sortable: true
   },
   {
@@ -138,8 +127,22 @@ const columns = [
     field: 'buyingStage',
     align: 'left' as const,
     type: 'bar',
+    style:{
+      minWidth:'200px'
+    },
     sortable: true
   },
+  {
+    name: 'channel',
+    label: t('channel'),
+    field: 'channel',
+    align: 'left' as const,
+    style:{
+      minWidth:'200px'
+    },
+    sortable: true
+  },
+
   {
     name: 'format',
     label: t('format'),
@@ -174,14 +177,10 @@ const hoverButtonList = computed(() => {
     {
       icon: 'o_visibility',
       action: (e: Event, item: any) => { openPageViewer(item) },
-      color: 'white',
-      textColor: '#333333'
     },
     {
       icon: 'o_edit',
       action: (e: Event, item: any) => props.onEdit?.(item),
-      color: 'white',
-      textColor: '#333333'
     }
   ]
 })
@@ -201,25 +200,6 @@ const getRelevancyText = (relevancy: number): string => {
   if (relevancy >= 8) return 'Excellent'
   if (relevancy >= 5) return 'Good'
   return 'Average'
-}
-
-const getChannelIcon = (channel: string): string => {
-  switch (channel) {
-    case 'Search Engine':
-      return 'fab fa-google'
-    case 'LinkedIn':
-      return 'fab fa-linkedin'
-    case 'Facebook':
-      return 'fab fa-facebook'
-    case 'X':
-      return 'fab fa-x-twitter'
-    case 'Newsletter':
-      return 'mail'
-    case 'Google Profile':
-      return 'fab fa-google'
-    default:
-      return 'fab fa-google'
-  }
 }
 
 const fetchPages = async () => {

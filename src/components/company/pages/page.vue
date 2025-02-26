@@ -4,7 +4,7 @@
   </div>
   <div class="row q-px-md q-py-lg q-col-gutter-lg">
     <div >
-      <ToggleButtons v-model="currentView" :options="toggleBtnOptions"></ToggleButtons>
+      <ToggleButtons v-model="currentView" :options="toggleBtnOptions" @update-selection="(value:any ) => currentView = value"> </ToggleButtons>
     </div>
     <div class="col-12 col-sm-2">
       <q-select
@@ -97,6 +97,7 @@ const selectedSubJob = ref<string | null>(null)
 const subJobsLoading = ref<boolean>(false)
 const sidePanelVisible = ref<boolean>(false)
 const currentView = ref<string>('list')
+
 const expandedStates = ref<Record<string, boolean>>({})
 const activeStep = ref(1)
 const toggleBtnOptions = ref([{
@@ -126,7 +127,6 @@ const handleExpansion = (uuid: string, isExpanded: boolean) => {
   expandedStates.value[uuid] = isExpanded
 }
 
-
 const pagination = ref({
   page: 1,
   rowsPerPage: 10,
@@ -137,7 +137,7 @@ const pagination = ref({
 
 const progressStep = [{label:"selection", value: 1},{label:"production", value: 2},{label:"révision", value: 3},{label:"publication", value: 3},{label:"monetisation", value: 3}]
 
-
+provide('currentView', currentView)
 const audienceStore = useAudienceStore()
 const companyStore = useCompanyStore()
 const pageStore = usePageStore()

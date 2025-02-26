@@ -34,8 +34,6 @@
         </div>
       </div>
 
-      <!-- Divider -->
-      <q-separator />
 
       <!-- Content Section -->
       <div class="drawer-content">
@@ -109,11 +107,11 @@ const atShow = () =>{
 }
 
 .drawer-content {
-  height: calc(100vh - 0px); /* 56px header + 1px border */
+  height: calc(100vh - 56px); /* 56px header + 1px border */
   overflow-y: auto;
 }
 
-.side-panel-layout{
+.side-panel-layout {
 
 }
 </style>

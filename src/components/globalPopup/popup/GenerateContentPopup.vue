@@ -1,6 +1,6 @@
 <template>
   <div class="full-width q-mb-lg" ref="triggerRef">
-    <q-btn class="full-width" color="primary" :label="$t('create-content')" @click="ShowPopup()"></q-btn>
+    <q-btn class="full-width c-shine loop c-step-transition" color="primary" :label="$t('create-content')" @click="ShowPopup()"></q-btn>
   </div>
 
   <PopupContainer v-model="showPopup" ref="popupRef" @hide="handleHide" dialog-class="generate-content-popup" :position="{top:10, bottom:10}">

@@ -95,7 +95,7 @@ const formatFollowerCount = (count: number): string => {
 }
 
 .platform-icon {
-  background-color: var(--q-primary);
+  //background-color: var(--q-primary);
   
   :deep(.q-icon) {
     color: white;

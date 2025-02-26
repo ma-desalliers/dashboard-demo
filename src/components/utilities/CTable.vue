@@ -4,51 +4,24 @@
     <div v-if="modelValue.length > 0 && batchActions.length > 0" class="row items-center q-mb-md">
       <div class="text-subtitle1 q-mr-md">{{ modelValue.length }} items selected</div>
       <template v-for="action in batchActions" :key="action.label">
-        <q-btn
-          :color="action.color || 'primary'"
-          :icon="action.icon"
-          :label="action.label"
-          dense
-          @click="() => action.handler(modelValue)"
-          class="q-mr-sm"
-        />
+        <q-btn :color="action.color || 'primary'" :icon="action.icon" :label="action.label" dense
+          @click="() => action.handler(modelValue)" class="q-mr-sm" />
       </template>
     </div>
 
-    <q-table
-      :rows="rows"
-      :columns="computedColumns"
-      v-model:selected="innerSelected"
-      selection="multiple"
-      :loading="loading"
-      :row-key="rowKey"
-      flat
-      separator="horizontal"
-      table-header-class="bg-primary"
-      class="c-table"
-      :pagination="pagination"
-      @update:pagination="$emit('update:pagination', $event)"
-      v-bind="$attrs"
-    >
+    <q-table :rows="rows" :columns="computedColumns" v-model:selected="innerSelected" selection="multiple"
+      :loading="loading" :row-key="rowKey" flat separator="horizontal" table-header-class="bg-primary" class="c-table"
+      :pagination="pagination" @update:pagination="$emit('update:pagination', $event)" v-bind="$attrs">
       <!-- Custom Header -->
       <template #header="props">
-        <q-tr :props="props" clickable >
+        <q-tr :props="props" clickable>
           <!-- Selection Header -->
-          <q-th auto-width>
-            <q-checkbox
-              v-model="selectAll"
-              :indeterminate="hasSelection && !allSelected"
-              class="header-checkbox"
-            />
+          <q-th class="c-checkbox-container">
+            <q-checkbox v-model="selectAll" :indeterminate="hasSelection && !allSelected" class="header-checkbox" />
           </q-th>
-          
+
           <!-- Regular Headers -->
-          <q-th
-            v-for="col in columns"
-            :key="col.name"
-            :props="props"
-            class="c-box-subtitle c-thin c-smaller"
-          >
+          <q-th v-for="col in columns" :key="col.name" :props="props" class="c-box-subtitle c-thin c-smaller">
             <slot :name="`header-${col.name}`" v-bind="props">
               {{ col.label }}
             </slot>
@@ -58,32 +31,22 @@
 
       <!-- Custom Body -->
       <template #body="props">
-        <q-tr 
-          :props="props" 
-          :class="{ 'selected': props.selected, 'table-row-border': props.row[borderColorField] }"
-          :style="props.row[borderColorField] ? { '--row-border-color': props.row[borderColorField] } : {}"
-          @click.prevent="rowClicked()"
-        >
+        <q-tr :props="props" :class="{ 'selected': props.selected, 'table-row-border': props.row[borderColorField] }"
+          @click.prevent="rowClicked()" class="c-table-row">
           <!-- Selection Column -->
-          <q-td auto-width>
-            <q-checkbox 
-              v-model="props.selected" 
-              class="row-checkbox"
-              :class="{
-                'checkbox-visible': props.selected
-              }"
-            />
+          <q-td class="c-checkbox-container">
+            <q-checkbox v-model="props.selected" class="row-checkbox" :class="{
+              'checkbox-visible': props.selected
+            }" />
           </q-td>
 
           <!-- Data Columns -->
-          <q-td v-for="col in columns" :key="col.name"  :style="col.style"
-          
-            :class="{
-              ['text-' + col.align]: col.align,
-            }">
+          <q-td v-for="col in columns" :key="col.name" :style="col.style" :class="{
+            ['text-' + col.align]: col.align,
+          }">
             <slot :name="`cell-${col.name}`" v-bind="{ ...props, value: props.row[col.name] }">
               <template v-if="col.type === 'hover'">
-                <hover-button :buttons="hoverButtons"  :item="props.row">
+                <hover-button :buttons="hoverButtons" :item="props.row">
                   {{ getFieldValue(props.row, col) }}
                 </hover-button>
               </template>
@@ -92,23 +55,20 @@
               </template>
 
               <template v-else-if="col.type === 'button'">
-                <q-btn
-                  :label="col.buttonLabel || props.row[col.name]"
-                  :color="col.buttonColor || 'primary'"
-                  dense
-                  outline
-                  @click="() => col.onClick?.(props.row)"
-                />
+                <q-btn :label="col.buttonLabel || props.row[col.name]" :color="col.buttonColor || 'primary'" dense
+                  outline @click="() => col.onClick?.(props.row)" />
               </template>
 
               <template v-else-if="col.type === 'badge'">
-                <StatusPopup :current-item="getFieldValue(props.row, col)"  :options="col.options" @update-value="(value) => col.updateFn({item:props.row, value:value})"></StatusPopup>
+                <StatusPopup :current-item="getFieldValue(props.row, col)" :options="col.options"
+                  @update-value="(value) => col.updateFn({ item: props.row, value: value })"></StatusPopup>
               </template>
 
               <template v-else-if="col.type === 'checklist'">
-                <CheckListPopup :current-item="props.row.items" :max="props.row.max?? col.max"  :options="props.row.options"
-                  @save="(value) => props.row.updateFn ? props.row.updateFn({item:props.row, value:value}) : col.updateFn({item:props.row, value:value})">
-                  {{getFieldValue(props.row, col)}} 
+                <CheckListPopup :current-item="props.row.items" :max="props.row.max ?? col.max"
+                  :options="props.row.options"
+                  @save="(value) => props.row.updateFn ? props.row.updateFn({ item: props.row, value: value }) : col.updateFn({ item: props.row, value: value })">
+                  {{ getFieldValue(props.row, col) }}
                 </CheckListPopup>
               </template>
 
@@ -126,15 +86,8 @@
               <template v-else-if="col.type === 'actions'">
                 <div class="row items-center q-gutter-x-sm">
                   <template v-for="action in col.actions" :key="action.label">
-                    <q-btn
-                      :icon="action.icon"
-                      :color="action.color || 'grey'"
-                      dense
-                      flat
-                      round
-                      size="sm"
-                      @click="() => action.handler(props.row)"
-                    >
+                    <q-btn :icon="action.icon" :color="action.color || 'grey'" dense flat round size="sm"
+                      @click="() => action.handler(props.row)">
                       <q-tooltip>{{ action.label }}</q-tooltip>
                     </q-btn>
                   </template>
@@ -142,7 +95,7 @@
               </template>
 
               <template v-else>
-                {{ col.format ? col.format(props.row[col.name]) :getFieldValue(props.row, col) }}
+                {{ col.format ? col.format(props.row[col.name]) : getFieldValue(props.row, col) }}
               </template>
             </slot>
           </q-td>
@@ -176,8 +129,8 @@ interface BaseColumn {
   sortable?: boolean
   sort?: (a: any, b: any) => number
   format?: (val: any) => string
-  updateFn?:any
-  style:string
+  updateFn?: any
+  style: string
 }
 
 interface TextColumn extends BaseColumn {
@@ -197,8 +150,8 @@ interface ReviewColumn extends BaseColumn {
 
 interface CheckListColumn extends BaseColumn {
   type: 'checklist'
-  options:any[]
-  max:number
+  options: any[]
+  max: number
 }
 
 interface ButtonColumn extends BaseColumn {
@@ -210,7 +163,7 @@ interface ButtonColumn extends BaseColumn {
 
 interface BadgeColumn extends BaseColumn {
   type: 'badge',
-  options:any[]
+  options: any[]
   badgeColor?: (val: any) => string
 }
 
@@ -219,9 +172,9 @@ interface DateColumn extends BaseColumn {
 }
 interface BarColumn extends BaseColumn {
   type: 'bar'
-  totalSection:number,
-  activeCount:number
-  labels:string[]
+  totalSection: number,
+  activeCount: number
+  labels: string[]
 }
 
 interface ActionsColumn extends BaseColumn {
@@ -253,8 +206,8 @@ interface Props {
   pagination?: QTableProps['pagination']
   rowKey?: string
   hoverButtons?: any[] | undefined
-  hoverButtonsField?:string
-  columnOptions?:{columnName:string, options:any[]}[]
+  hoverButtonsField?: string
+  columnOptions?: { columnName: string, options: any[] }[]
   borderColorField?: string
 }
 
@@ -311,50 +264,78 @@ const getFieldValue = (row: any, col: any) => {
     return col.field(row) ?? '-'
   }
   return row[col.field] ?? '-'
-}  
+}
 
-const  rowClicked = () =>{
+const rowClicked = () => {
   console.log('hello')
 }
 
-const onBadgeClick = (row: any, col: any, event:Event) => {
+const onBadgeClick = (row: any, col: any, event: Event) => {
   const triggerRect = mainDisplayStore.getPopupTriggerElement(event.currentTarget as HTMLElement)
   console.log(col)
   mainDisplayStore.pushPopup({
-    triggerElement:triggerRect,
-    item:{
+    triggerElement: triggerRect,
+    item: {
       item: row,
-      options:col.options,
+      options: col.options,
       closeFn: col.updateFn,
     },
-    view:'BadgeSelect',
-    isOpen:true
+    view: 'BadgeSelect',
+    isOpen: true
   })
 }
 </script>
 
 <style lang="scss" scoped>
 .q-table tbody tr:not(:last-child) td {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e7e7e7;
 }
 
-.c-table .q-table tbody td:before  {
-  display:none;
+.c-table .q-table tbody td:before {
+  display: none;
 }
 
-.c-box-subtitle{
-  font-size:14px;
+.c-box-subtitle {
+  font-size: 14px;
 }
 
 
 .c-table .q-td {
-  font-size:16px;
+  font-size: 14px;
 }
 
-.selected{
-  .q-td{
-    &:after{
-      display:none;
+.c-table-row {
+  background: #ffffff;
+  position: relative;
+  transition: 0.25s;
+
+  &:hover {
+    z-index: 2;
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 4px #888888;
+  }
+}
+
+.selected {
+  .q-td {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.c-checkbox-container {
+  max-width: 30px !important;
+  width: 30px !important;
+  padding: 7px 0px;
+
+  :deep(.q-checkbox__bg) {
+    border-color: #aaaaaa;
+    left: 2px;
+  }
+  :deep(.q-checkbox__inner) {
+    &::before {
+     display:none;
     }
   }
 }
@@ -385,7 +366,7 @@ const onBadgeClick = (row: any, col: any, event:Event) => {
 .table-row-border {
   position: relative;
 
-  td:first-child{
+  td:first-child {
     border-left: solid 2px var(--row-border-color) !important;
 
   }

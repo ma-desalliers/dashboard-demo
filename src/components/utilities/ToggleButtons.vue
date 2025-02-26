@@ -31,10 +31,10 @@ interface Props {
 }
 
 const props = defineProps<Props>();
-const emit = defineEmits(['update:modelValue']);
+const emit = defineEmits(['updateSelection']);
 
 const updateValue = (value: string) => {
-  emit('update:modelValue', value);
+  emit('updateSelection', value);
 };
 </script>
 

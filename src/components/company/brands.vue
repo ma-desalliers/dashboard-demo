@@ -38,11 +38,11 @@
           <div class="row q-col-gutter-md">
             <div class="col-6">
               <div class="text-subtitle2 q-mb-sm">Primary</div>
-              <!--<c-color-picker v-model="brandData.design.primary_color"></c-color-picker>-->
+              <c-color-picker v-model="primary_color"></c-color-picker>
             </div>
             <div class="col-6">
               <div class="text-subtitle2 q-mb-sm">Secondary</div>
-              <!--<c-color-picker v-model="brandData.design.secondary_color"></c-color-picker>-->
+              <c-color-picker v-model="secondary_color"></c-color-picker>
             </div>
 
           </div>
@@ -53,7 +53,7 @@
     <!-- Right Panel -->
     <div class="col-12 col-md-8" style="height:100vh; overflow:auto">
       <!-- Brand Personality Section -->
-      <c-expansion-item v-model="personalityExpanded" title="Brand Personality" class="q-mb-md" default-opened>
+      <c-expansion-item v-model="personalityExpanded" title="Brand Personality" class="q-mb-md"  :default-opened="true" :mainElement="true" title-class="c-section-title">
         <div class="personality-table">
           <c-table :columns="personalityColumns" :rows="personalityRows" :pagination="{ rowsPerPage: 0 }" />
         </div>
@@ -74,7 +74,7 @@
               :max="100"
               :step="5"
               label
-              label-always
+              :label-always="false"
               color="primary"
               class="q-mt-md"
               dense
@@ -160,9 +160,11 @@ set:(value)=>{
 const theCompany = computed(()=>companyStore.theCompany)
 
 // Expansion states
-const personalityExpanded = ref(false);
+const personalityExpanded = ref(true);
 const toneExpanded = ref(false);
 const rulesExpanded = ref(false);
+const primary_color = ref('#333333');
+const secondary_color = ref('#ff9900')
 
 const {t} = useI18n()
 

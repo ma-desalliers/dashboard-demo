@@ -38,7 +38,10 @@ export function useHtmlGenerator() {
       .trim()
   }
 
-  const processLine = (line: string): string => {
+  const processLine = (element: Element): string => {
+    const line = `<${element.type}>${element.content}</${element.type}>`
+
+
     return line
       .replace(/<p>/g, '<p class="paragraph c-secondary">')
       .replace(/<strong>/g, '<strong class="fw-bold">')
@@ -55,7 +58,7 @@ export function useHtmlGenerator() {
       if (element.type === 'faq') {
         faqs.value.push({
           question: element.question || '',
-          answer: processLine(element.answer || '')
+          answer: processLine(element)
         })
       }
     })
@@ -75,7 +78,7 @@ export function useHtmlGenerator() {
           subtitle = element.content || ''
           break
         case 'p':
-          content = processLine(element.content || '')
+          content = processLine(element)
           break
       }
     })
@@ -93,7 +96,7 @@ export function useHtmlGenerator() {
           title = element.content || ''
           break
         case 'p':
-          content += processLine(element.content || '')
+          content += processLine(element)
           break
       }
     })

@@ -1,13 +1,15 @@
 <template>
   <div class="sidebar-menu q-px-md q-py-lg">
     <!-- Company Header -->
-    <div class="q-mb-md q-pb-md c-light-border-bottom">
+    <div class="q-mb-md q-pb-md">
       <ClientHeader></ClientHeader>
     </div>
 
-    <!-- Growth Plan Section
     <div class="section-container c-light-border-bottom">
       <GenerateContentPopup></GenerateContentPopup>
+      </div>
+
+    <!-- Growth Plan Sectio
       <div clas="section-header q-mb-sm q-px-md">
         <div class="row items-center q-mb-md cursor-pointer q-px-md q-mb-xs q-py-xs">
           <div class="">{{ $t("growth-plan") }}</div>
@@ -23,7 +25,7 @@
 
     <div class="section-container q-mb-md">
 			<div class="section-header q-mb-sm q-px-md">
-				<div class="row items-center q-pb-md">
+				<div class="row items-center q-pb-md q-pt-lg">
 					<div class="c-box-subtitle q-pr-sm">AI Departments</div>
 					<Tooltip :title="'Content Marketing'" :description="'this is a description '"></Tooltip>
 				</div>
@@ -38,7 +40,13 @@
 						</q-avatar>
 					</q-item-section>
 					<q-item-section>
-						{{ dept.name }}
+          <ComingSoonTooltip v-if="dept.comingSoon">
+            {{ dept.name }}
+          </ComingSoonTooltip>
+            <div v-else>
+              {{ dept.name }}
+            </div>
+						
 					</q-item-section>
 					<q-item-section side v-if="dept.new">
 						<q-chip :color="dept.color" text-color="white" class="text-caption" style="border-radius: 4px">
@@ -119,6 +127,14 @@
       <q-btn v-if="false" class="full-width q-mt-md" :class="{ 'shine-effect': !isPricingRoute }" color="primary"
         text-color="white" :label="isPricingRoute ? 'Demo' : 'Pricing'" @click="handleButtonClick" />
     </div>
+    <div class="powered-by c-border-top column items-center">
+        <span>
+          Atlas is powered by
+        </span>
+        <a href="https://www.cameleonmedia.com/fr/" target="_blank">
+          <img src="/cameleon-logo.png">
+        </a>
+    </div>
   </div>
 </template>
 
@@ -152,42 +168,45 @@ const departments = reactive([
       { name: "Leads magnets", active: false }
     ]
   },
-   {
-     name: t("sales"),
-     active: false,
-     expanded: false,
-     page: "sales",
-     color: "blue",
-     icon: `/user/sale.png`,
-     subItems: [
-       { name: "Leads", active: false },
-       { name: "Opportunities", active: false }
-     ]
-   },
-   {
-     name: t("support"),
-     active: false,
-     expanded: false,
-     color: "purple",
-     page: "SupportDisplay",
-     icon: `/user/support.png`,
-     subItems: [
-       { name: "Tickets", active: false },
-       { name: "Knowledge Base", active: false }
-     ]
-   },
-   {
-     name: t("hr"),
-     active: false,
-     expanded: false,
-     color: "yellow",
-     page: "HrDisplay",
-     icon: `/user/hr.png`,
-     subItems: [
-       { name: "Recruitment", active: false },
-       { name: "Training", active: false }
-     ]
-   }
+  {
+    name: t("sales"),
+    active: false,
+    expanded: false,
+    page: "sales",
+    color: "blue",
+    icon: `/user/sale.png`,
+    comingSoon:true,
+    subItems: [
+      { name: "Leads", active: false },
+      { name: "Opportunities", active: false }
+    ]
+  },
+  {
+    name: t("support"),
+    active: false,
+    expanded: false,
+    color: "purple",
+    page: "SupportDisplay",
+    icon: `/user/support.png`,
+    comingSoon:true,
+    subItems: [
+      { name: "Tickets", active: false },
+      { name: "Knowledge Base", active: false }
+    ]
+  },
+  {
+    name: t("hr"),
+    active: false,
+    expanded: false,
+    color: "yellow",
+    page: "HrDisplay",
+    icon: `/user/hr.png`,
+    comingSoon:true,
+    subItems: [
+      { name: "Recruitment", active: false },
+      { name: "Training", active: false }
+    ]
+  }
 ])
 
 const knowledgeSection = reactive({
@@ -267,10 +286,25 @@ const handleButtonClick = async () => {
 <style scoped lang="scss">
 .sidebar-menu {
   width: 300px;
-  height: 100%;
+  height: 100vh;
   border-right: 1px solid #e7e7e7;
   background: var(--main-gray);
   overflow: hidden;
+  position:sticky;
+  top:0;
+
+  .powered-by{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:20px 0; 
+    img{
+      height:18px;
+      width:100%;
+      object-fit: contain;
+    }
+  }
 }
 
 .section-header {

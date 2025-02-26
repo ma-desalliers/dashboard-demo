@@ -16,12 +16,19 @@
     <template #option>
       <span class="c-box-subtitle c-smaller">&nbsp;-&nbsp;{{ subjob.pageCount }} </span>
     </template>
-    <div>
+    <div v-if="currentView == 'list'">
       <PageTable
         v-if="expandedStates[subjob.uuid]"
         :audience-uuid="audienceUuid"
         :subjob-uuid="subjob.uuid"
       ></PageTable>
+    </div>
+    <div v-if="currentView == 'card'">
+      <PageCards
+        v-if="expandedStates[subjob.uuid]"
+        :audience-uuid="audienceUuid"
+        :subjob-uuid="subjob.uuid"
+      ></PageCards>
     </div>
   </CExpansionItem>
 </template>
@@ -29,6 +36,7 @@
 <script lang="ts" setup>
 import { useJTBDStore } from "~/src/stores/JTBDStore";
 import PageTable from "./PageTable.vue";
+import PageCards from "./PageCards.vue";
 
 const props = defineProps<{
   audienceUuid: string;
@@ -37,6 +45,8 @@ const props = defineProps<{
 const companyUuid: string | undefined = inject<string>("companyUuid");
 
 const jtbdStore = useJTBDStore();
+const currentView = inject('currentView')
+
 const selectedJob = ref<string | null>(null);
 const expandedStates = ref<Record<string, boolean>>({});
 

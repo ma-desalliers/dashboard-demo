@@ -1,10 +1,10 @@
 <template>
-  <SidePanel v-model="isVisible" :width="1000">
+  <SidePanel v-model="isVisible" :width="700">
     <div class="bg-white w-full">
       <!-- Header Navigation Bar -->
-      <q-header class="bg-white text-black" bordered>
+      <q-header class="bg-white text-grey" >
         <q-toolbar class="q-px-md">
-          <q-btn flat round dense icon="arrow_back" @click="closeSidePanel" />
+          <q-btn flat round dense text-color="#666666" icon="chevron_left" :label="$t('close')" @click="closeSidePanel" />
           <q-space />
           <q-btn flat round dense icon="refresh" />
           <q-btn flat round dense icon="more_vert" />
@@ -12,9 +12,10 @@
       </q-header>
 
       <!-- Main Content -->
-      <div class="q-pa-md">
+      <div class="">
+        <div class="c-sticky q-px-lg" style="--c-top:0px;">
         <!-- Title Section -->
-        <div class="c-section-bigtitle text-grey-9 q-pb-md">
+        <div class="c-section-bigtitle q-pb-md">
           {{thePage?.title}}
         </div>
 
@@ -23,7 +24,6 @@
           <!-- Approbation Dropdown -->
           <StatusPopup :current-item="thePage.status"  :options="[]"></StatusPopup>
             
-
           <q-separator vertical />
 
           <!-- How-To-Guide Tag -->
@@ -41,29 +41,32 @@
         <!-- Tab Navigation -->
         <q-tabs
           v-model="activeTab"
-          class="text-grey-7"
+          class="text-grey-7 c-tabs"
           dense
           align="left"
           indicator-color="green-5"
           active-color="green-5"
         >
-          <!--<q-tab name="content" :label="$t('content')" />
+          <q-tab name="content" :label="$t('content')" />
           <q-tab name="overview" :label="$t('overview')" />
           <q-tab name="monetization" :label="$t('monetization')" />
-          <q-tab name="distribution" :label="$t('distribution')" />-->
+          <q-tab name="distribution" :label="$t('distribution')" />
         </q-tabs>
-
+      </div>
         <q-tab-panels
           v-model="activeTab"
           :class="{ 'c-scroll': activeTab == 'keywords' }"
+          class="q-pa-lg"
         >
           <q-tab-panel name="overview">
             <PageOverview></PageOverview>
           </q-tab-panel>
-
           <!-- Preview Panel -->
           <q-tab-panel name="content" class="q-pa-none">
             <ContentViewer></ContentViewer>
+          </q-tab-panel>
+          <q-tab-panel name="monetization" class="q-pa-none">
+            <PageMonetization></PageMonetization>
           </q-tab-panel>
           <q-tab-panel name="distribution">
             <PageDistribution></PageDistribution>
@@ -80,6 +83,7 @@ import { usePageStore } from "~/src/stores/pageStore";
 import ContentViewer from "./components/PageViewer.vue/ContentViewer.vue";
 import PageOverview from "./components/PageViewer.vue/PageOverview.vue";
 import PageDistribution from "./components/PageViewer.vue/PageDistribution.vue";
+import PageMonetization from "./components/PageViewer.vue/PageMonetization.vue";
 
 interface Props {
   modelValue: boolean;
@@ -118,5 +122,9 @@ const closeSidePanel = () => {
 /* Override Quasar's default header shadow */
 .q-header {
   box-shadow: none;
+}
+
+.c-sticky{
+  box-shadow:0 2px 12px #aaaaaa;
 }
 </style>

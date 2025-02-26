@@ -38,12 +38,12 @@
   "easy": "Facile",
   "advanced": "Avancé",
   "generating-content": "Génération de contenu",
-  "awareness": "Sensibilisation",
+  "awareness": "Découverte",
   "consideration": "Considération",
   "decision": "Décision",
-  "retention": "Rétention",
+  "retention": "Fidélisation",
   "how-to-guide": "Guide pratique",
-  "overview": "Aperçu",
+  "overview": "Détail",
   "monetization": "Monétisation",
   "distribution": "Distribution",
   "specifications": "Spécifications",
@@ -58,5 +58,6 @@
   "creation-date": "Date de création",
   "none":"Aucun",
   "strategies": "Stratégies",
-  "premium": "Premium"
+  "premium": "Premium",
+  "close": "Fermer"
 }

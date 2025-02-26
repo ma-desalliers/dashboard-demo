@@ -11,7 +11,7 @@
       >
         {{ currentItem?.[optionLabel] || $t('none') }}
       </q-chip>
-      <div class="next-status cursor-pointer" @click="handleQuickNext">
+      <div class="next-status cursor-pointer row items-center" @click="handleQuickNext">
         <q-icon name="o_play_arrow"/>
       </div>
       <!--<q-btn
@@ -145,6 +145,7 @@ onMounted(() => {
 .q-chip {
   border-radius: 4px 0 0 4px;
   margin-right: 2px;
+  margin-left:0px;
 }
 
 .status-trigger {

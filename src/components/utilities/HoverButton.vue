@@ -3,7 +3,7 @@
     class="c-relative inline-block c-hover-btn"
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"> 
-    <div class="c-hover-text-container row items-center" style="">
+    <div class="c-hover-text-container row items-center full-height cursor-pointer" style="" @click="handleTitleClick($event)">
       <slot></slot>
     </div>
     <div
@@ -21,8 +21,8 @@
             outline
             :size="option.size || 'sm'"
             @click.stop="simpleBtnClick($event, option.action)"
-            :color="option.color"
-            :text-color="option.textColor"
+            :color="option.color ??' grey-1'"
+            :text-color="option.textColor ?? 'grey-7'"
             :title="option.title"
             :icon="option.icon"
           >
@@ -169,6 +169,14 @@ const handleDropdownClick = (event:Event) =>{
   event.preventDefault()
 }
 
+const handleTitleClick = (event: Event) =>{
+  const firstbtn = props.buttons? props.buttons[0] : undefined
+ 
+  if(firstbtn){
+    firstbtn.action(event, props.item)
+  }
+}
+
 const simpleBtnClick = (event: Event | null, optionAction: any) => {
   optionAction(event, props.item)
 }
@@ -193,6 +201,14 @@ const validateCondition = (option:BaseButtonOption)=>{
   padding: 0 0.5rem;
   z-index:10;
   background-color: #ffffff;
+  .q-btn{
+  &::before{
+  border-color:#aaaaaa;
+  }
+}
+  :deep(.q-icon){
+    fill:#999999;
+  }
   &.c-hovered {
     opacity: 1;
   }

@@ -1,5 +1,5 @@
 <template>
-  <div class="column q-col-gutter-sm q-py-sm">
+  <div class="column q-col-gutter-sm q-py-sm full-width">
     <div class="row">
       <div class="col-6">
         <div class="c-section-title">
@@ -9,8 +9,10 @@
           {{ $t("increase-content-visibility") }}
         </div>
       </div>
-      <div class="col-6">
-        <q-btn color="green" :label="$t('generate-content')"></q-btn>
+      <div class="col-6 row justify-end">
+        <div>
+          <q-btn color="green" :label="$t('generate-content')"></q-btn>
+        </div>
       </div>
     </div>
     <CExpansionItem v-model="seoExpansion" title="Search Engine Optimization SEO" title-class="c-section-title">

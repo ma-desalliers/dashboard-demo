@@ -1,3 +1,7 @@
+.c-shine {
+  position: relative;
+  overflow: hidden;
+}
 .c-shine::after {
   content: "";
   position: absolute;
@@ -5,11 +9,16 @@
   left: -100%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(to left, transparent 0%, rgba(255, 255, 255, 0.8) 50%, transparent 100%);
+  background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+  filter: blur(5px);
+  transform: skewX(-25deg);
   animation: none;
 }
 .c-shine:hover:after {
-  animation: shine 0.5s ease-in-out;
+  animation: shine 3s ease-in-out;
+}
+.c-shine.loop:after {
+  animation: shine 3s infinite;
 }
 
 @keyframes shine {
@@ -17,6 +26,15 @@
     left: -100%;
   }
   100% {
-    left: 100%;
+    left: 350%;
   }
+}
+.c-step-transition {
+  transform: translateY(0);
+  box-shadow: 0 0 0 #888888;
+  transition: 0.25s ease-in-out;
+}
+.c-step-transition:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 6px #888888;
 }/*# sourceMappingURL=style-animation.css.map */

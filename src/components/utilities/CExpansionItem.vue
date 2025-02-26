@@ -5,7 +5,7 @@
     class="custom-expansion bg-white"
     :class="{ 'main-expansion': mainElement }"
     switch-toggle-side
-    expand-icon-toggle
+    :default-opened="defaultOpened"
     expand-icon-class="expand-icon-class"
   >
     <template #header>
@@ -49,6 +49,7 @@ interface Props {
   tooltip?: TooltipProps;
   titleClass?: string;
   mainElement?: boolean;
+  defaultOpened:boolean;
 }
 
 defineProps<Props>();
@@ -59,7 +60,7 @@ defineEmits<{
 
 <style scoped lang="scss">
 .custom-expansion {
-  border-radius: 8px;
+  border-radius: 4px;
   overflow: hidden;
 
   :deep(.q-expansion-item__container) {
@@ -72,10 +73,22 @@ defineEmits<{
     padding: 0 16px 16px 16px;
     background-color: #ffffff;
   }
+
+  &.q-expansion-item--collapsed{
   :deep(.expand-icon-class) {
-    padding-right: 8px;
+    padding-right: 0px;
     min-width: unset;
+    transform: rotate(90deg);
   }
+}
+
+  &.q-expansion-item--expanded {
+      :deep(.expand-icon-class) {
+        padding-right: 0px;
+        min-width: unset;
+      // transform: rotate(0deg);
+      }
+    }
 
   &.main-expansion {
     padding: 16px 24px;

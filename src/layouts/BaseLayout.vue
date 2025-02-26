@@ -5,7 +5,7 @@
     
     <!-- Main Content Section -->
     <div class="c-main" :class="{'header-openned' : headerState}">
-      <div class="row no-wrap">
+      <div class="row no-wrap full-height">
         <!-- Left Column -->
         <Sidebar class="c-left-column ":class="{'isOpen': showMenu}" />
         <!-- Right Content Area -->
@@ -149,7 +149,7 @@ definePageMeta({
     position:absolute;
     inset:0;
     background-color: rgba(0,0,0,0.1);
-    z-index: 1;
+    z-index: 100;
   }
 }
 </style>

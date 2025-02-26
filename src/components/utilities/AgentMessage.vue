@@ -1,5 +1,5 @@
 <template>
-  <div class="agent-message q-pa-md">
+  <div class="agent-message q-px-none">
     <q-card flat class="bg-green-1">
       <!-- Header Section -->
       <q-card-section class="q-pb-none">
@@ -121,7 +121,7 @@ const expanded = ref(true)
 <style scoped lang="scss">
 .agent-message {
   :deep(.q-card) {
-    border-radius: 8px;
+    border-radius: 4px;
   }
 }
 </style>
