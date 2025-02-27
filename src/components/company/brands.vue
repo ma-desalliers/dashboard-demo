@@ -661,7 +661,7 @@ const formatLabel = (key: string): string => {
 
 
 onMounted(async ()=>{
-  await companyStore.init();
+  // await companyStore.init();
   await companyStore.fetchBrandGuide(theCompany.value.uuid)
 })
 
