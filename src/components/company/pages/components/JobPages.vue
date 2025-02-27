@@ -69,8 +69,8 @@ const handleExpansion = (uuid: string, isExpanded: boolean) => {
 
 const jobs = computed(() => jtbdStore.jobs);
 
-const loadJobs = () => {
-  jtbdStore.list(1, 10, {
+const loadJobs = async () => {
+  await jtbdStore.list(1, 10, {
     audienceUuid: props.audienceUuid,
     isChild: false,
     clientUuid: companyUuid ?? "",
@@ -78,7 +78,18 @@ const loadJobs = () => {
   });
 };
 
-onMounted(() => {
-  loadJobs();
+const initExpandedItem = () => {
+ // if(selectedGroup.value == 'audience'){
+  console.log('init', jobs.value)
+    handleExpansion(jobs.value[0].uuid, true)
+  //}
+}
+
+
+onMounted(async() => {
+  await loadJobs();
+  nextTick(()=>{
+    initExpandedItem()
+  })
 });
 </script>

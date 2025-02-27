@@ -12,7 +12,7 @@
         {{ currentItem?.[optionLabel] || $t('none') }}
       </q-chip>
       <div class="next-status cursor-pointer row items-center" @click="handleQuickNext">
-        <q-icon name="o_play_arrow"/>
+        <q-icon name="play_arrow"/>
       </div>
       <!--<q-btn
         v-if="quickNext"

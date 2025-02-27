@@ -49,7 +49,7 @@ interface Props {
   tooltip?: TooltipProps;
   titleClass?: string;
   mainElement?: boolean;
-  defaultOpened:boolean;
+  defaultOpened?:boolean;
 }
 
 defineProps<Props>();

@@ -59,5 +59,15 @@
   "none":"Aucun",
   "strategies": "Stratégies",
   "premium": "Premium",
-  "close": "Fermer"
+  "close": "Fermer",
+  "ai-team":"Équipe AI",
+  "content-phase":"Phase de contenu",
+  "business-inteligence":"Info d'entreprise",
+  "powered-by":"Atlas est propulsé par :",
+  "selection":"Sélection",
+  "production":"Production",
+  "revision":"Révision",
+  "publication":"Publication",
+  "monetisation":"Monétisation",
+  "group-by":"Groupé par"
 }

@@ -1,18 +1,7 @@
 <template>
   <div class="row q-col-gutter-md">
     <AgentMessage></AgentMessage>
-    <CExpansionItem 
-      v-model="specifications" 
-      class="c-border-bottom full-width" 
-      :title="$t('specifications')"
-    >
-    </CExpansionItem>
-    <CExpansionItem 
-      v-model="brandVoice" 
-      class="c-border-bottom full-width" 
-      :title="$t('brand-voice')"
-    >
-    </CExpansionItem>
+
     <CExpansionItem 
       v-model="audience" 
       class="c-border-bottom full-width" 
@@ -23,6 +12,12 @@
       v-model="products" 
       class="c-border-bottom full-width" 
       :title="$t('products')"
+    >
+    </CExpansionItem>
+    <CExpansionItem 
+      v-model="brandVoice" 
+      class="c-border-bottom full-width" 
+      :title="$t('brand-voice')"
     >
     </CExpansionItem>
     <CExpansionItem 
@@ -38,9 +33,8 @@
 import { ref } from 'vue'
 
 // Define reactive variables for each expansion item
-const specifications = ref(false)
-const brandVoice = ref(false)
-const audience = ref(false)
-const products = ref(false)
-const pageOutline = ref(false)
+const brandVoice = ref(true)
+const audience = ref(true)
+const products = ref(true)
+const pageOutline = ref(true)
 </script>

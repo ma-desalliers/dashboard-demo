@@ -61,7 +61,7 @@
     </div>
   </div>
   <div class="">
-    <CExpansionItem v-for="(audience, index) in audienceOptions" v-model="expandedStates[audience.value]"
+    <CExpansionItem v-for="(audience, index) in audienceOptions" v-model="expandedStates[audience.value]" 
       :key="audience.value" :title="audience.label" title-class="c-section-bigtitle" main-element class="q-mb-lg"
       @update:model-value="handleExpansion(audience.value, $event)">
       <JobPages v-if="expandedStates[audience.value]" :audience-uuid="audience.value"></JobPages>
@@ -80,7 +80,7 @@ import { useI18n } from 'vue-i18n';
 import PageViewer from '~/src/components/shared/PageViewer.vue';
 import ProgressSteps from '@/src/components/shared/ProgressSteps.vue';
 import JobPages from './components/JobPages.vue';
-
+import audience from '~/src/repository/audience';
 // interface Page {
 //   uuid: string
 //   title: string
@@ -115,14 +115,11 @@ const selectedSubJob = ref<string | null>(null)
 const subJobsLoading = ref<boolean>(false)
 const sidePanelVisible = ref<boolean>(false)
 const currentView = ref<string>('list')
-
-
 // Group by options
 const groupOptions = [
   { label: 'Audience', value: 'audience' },
-  { label: 'Job', value: 'job' },
-  { label: 'Sub Job', value: 'subjob' },
-  { label: 'Date', value: 'date' }
+  { label: 'Produit', value: 'product' },
+  { label: 'Motivation', value: 'job' },
 ];
 const selectedGroup = ref('Audience');
 
@@ -171,7 +168,6 @@ const pagination = ref({
   rowsNumber: 0
 });
 
-const progressStep = [{ label: "selection", value: 1 }, { label: "production", value: 2 }, { label: "révision", value: 3 }, { label: "publication", value: 3 }, { label: "monetisation", value: 3 }]
 
 provide('currentView', currentView)
 const audienceStore = useAudienceStore()
@@ -179,6 +175,9 @@ const companyStore = useCompanyStore()
 const pageStore = usePageStore()
 const jtbdStore = useJTBDStore()
 const { t } = useI18n()
+
+const progressStep = [{ label: t("selection"), value: 1 }, { label: t("production"), value: 2 }, { label: t("revision"), value: 3 }, { label: t("publication"), value: 3 }, { label: t("monetisation"), value: 3 }]
+
 
 // Use audience data from store
 const audienceOptions = computed({
@@ -224,12 +223,21 @@ const fetchPages = async () => {
   };
 };
 
+const initExpandedItem = () => {
+ // if(selectedGroup.value == 'audience'){
+  console.log('init', audienceOptions.value)
+    handleExpansion(audienceOptions.value[0].value, true)
+  //}
+}
+
 onMounted(async () => {
   await audienceStore.init(companyStore.theCompany.uuid)
   await jtbdStore.list(1, 100, {
     clientUuid: companyStore.theCompany.uuid,
     isChild: false
   })
+
+  initExpandedItem()
 })
 
 watch(selectedJob, async (newValue) => {

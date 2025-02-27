@@ -56,7 +56,7 @@
         <q-tab-panels
           v-model="activeTab"
           :class="{ 'c-scroll': activeTab == 'keywords' }"
-          class="q-pa-lg"
+          class="q-pa-lg "
         >
           <q-tab-panel name="overview">
             <PageOverview></PageOverview>

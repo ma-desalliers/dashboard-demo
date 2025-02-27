@@ -1,5 +1,5 @@
 <template>
-  <div class="content-monetization q-pa-md" style="background-color: #F8F9FA">
+  <div class="content-monetization">
     <!-- Header Section -->
     <div class="row justify-between q-mb-md">
       <div>
@@ -38,15 +38,15 @@
       </template>
 
       <q-card flat style="background-color: #EAF7E4" class="q-mt-sm q-pa-md">
-        <div class="row no-wrap overflow-auto q-gutter-md">
+        <div class="row no-wrap overflow-auto q-gutter-md" style="overflow-x:auto">
           <!-- Product 1 -->
-          <q-card class="product-card" style="min-width: 240px">
+          <q-card v-for="product in products" class="product-card" style="min-width: 240px">
             <q-img
-              src="https://placehold.co/400x300/e9a8a8/352323?text=Garnet"
+              src="https://placehold.co/400x300/e7e7e7/352323?text=placeholder"
               style="height: 180px"
             />
             <q-card-section>
-              <div class="text-h6" style="font-size: 16px">Garnet</div>
+              <div class="text-h6" style="font-size: 16px">{{ product.name }}</div>
               <div class="row q-mt-sm items-center">
                 <q-rating
                   v-model="product1Rating"
@@ -196,11 +196,27 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useProductStore } from '~/src/stores/productStore';
 
 // Product ratings
 const product1Rating = ref(4.5)
 const product2Rating = ref(4.5)
 const product3Rating = ref(4.5)
+
+const companyUuid:string | undefined = inject('companyUuid')
+const productStore = useProductStore()
+
+const products = computed(()=> productStore.products)
+
+const fetchProduct = () => {
+  if(!companyUuid) return
+  productStore.init(companyUuid)
+}
+
+onMounted(()=>{
+  fetchProduct()
+})
+
 </script>
 
 <style scoped>
