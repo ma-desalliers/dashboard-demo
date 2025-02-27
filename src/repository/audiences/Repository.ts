@@ -2,6 +2,32 @@ import { BaseRepository } from "@/src/repository/BaseRepository";
 import type { Audience } from "@/src/repository/audiences/Interfaces";
 import type { JTBD } from '../jtbdjobs/Interfaces';
 import { JTBDRepository } from "../jtbdjobs/Repository";
+import { useRepository } from '@/src/asset/composable/repository'
+
+
+export class StaticAudienceReposotory {
+    private static _repository: ReturnType<typeof useRepository> | null = null;
+    
+    // Lazy initialization of the repository
+    private static get repository() {
+      if (!this._repository) {
+        this._repository = useRepository();
+      }
+      return this._repository;
+    }
+  
+    static async findByUuid(uuid: string): Promise<Audience | null> {
+      try {
+        const response = await this.repository.apiRequest<Audience>(`/audiences/${uuid}`, {
+          method: "GET"
+        });
+        return response.data as Audience;
+      } catch (error) {
+        console.error(error);
+        return null;
+      }
+    }
+}
 
 export class AudienceRepository extends BaseRepository {
   Audience: Audience | null = null

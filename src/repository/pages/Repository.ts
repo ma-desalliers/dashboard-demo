@@ -1,6 +1,34 @@
 import { BaseRepository, type PaginatedResponse } from "@/src/repository/BaseRepository";
 import type { Page, RawPage } from "@/src/repository/pages/Interfaces";
 import page from '~/src/components/company/page.vue';
+import { useRepository } from "~/src/asset/composable/repository";
+
+
+export class StaticPageRepository{
+  private static _repository: ReturnType<typeof useRepository> | null = null;
+  
+  // Lazy initialization of the repository
+  private static get repository() {
+    if (!this._repository) {
+      this._repository = useRepository();
+    }
+    return this._repository;
+  }
+
+  static async findByUuid(uuid: string): Promise<Page | null> {
+    try {
+      const response = await this.repository.apiRequest<Page>(`/pages/${uuid}`, {
+        method: "GET"
+      });
+      return response.data as Page;
+    } catch (error) {
+      console.error(error);
+      return null;
+    }
+  }
+}
+
+
 
 export class PageRepository extends BaseRepository {
   /**

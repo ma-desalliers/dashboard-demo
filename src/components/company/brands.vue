@@ -1,5 +1,8 @@
 <template>
-  <div class="row q-pa-md q-col-gutter-md">
+  <div class="q-pb-md">
+    <span class="c-main-title">{{ $t('brand-voice') }}</span>
+  </div>
+  <div class="row q-col-gutter-md">
     <!-- Left Panel -->
     <div class="col-12 col-md-4">
       <!-- Logos Section -->

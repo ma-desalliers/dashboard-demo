@@ -1,4 +1,7 @@
 <template>
+  <div class="q-pb-md">
+    <span class="c-main-title">{{ $t('products') }}</span>
+  </div>
   <div>
     <CTable v-model="selectedProducts" :columns="fullColumns" :rows="products" :loading="loading"
       :batch-actions="batchActions" :pagination="pagination" @update:pagination="$emit('update:pagination', $event)"

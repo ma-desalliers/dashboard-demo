@@ -31,6 +31,9 @@ export const useJTBDStore = defineStore('jtbdStore', {
 
   actions: {
     async list(page: number, pageSize: number, filters: JTBDFilters) {
+      if (this.currentPage == page && JSON.stringify(this.currentFilters) === JSON.stringify(filters)) {
+        return;
+      }
       this.loading = true
       try {
         const repository = new JTBDRepository()
@@ -46,6 +49,7 @@ export const useJTBDStore = defineStore('jtbdStore', {
         console.error(error)
         throw error
       } finally {
+        this.currentFilters = filters
         this.loading = false
       }
     }

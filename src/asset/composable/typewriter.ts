@@ -19,7 +19,7 @@ const typeWriter = (
       currentIndex++;
       
       // Schedule the next character addition
-      timerId = window.setTimeout(addNextCharacter, 20);
+      timerId = window.setTimeout(addNextCharacter, 15);
     } else {
       // Typing is complete
       if (onComplete) {

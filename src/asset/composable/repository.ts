@@ -42,7 +42,6 @@ export function useRepository(version: string = '1') {
   const notificationStore = useNotificationStore();
   const companyStore = useCompanyStore();
   const authStore = useAuthStore();
-
   const createRequest = async <T>(
     endpoint: string, 
     data: Partial<T>, 
@@ -141,7 +140,7 @@ export function useRepository(version: string = '1') {
       }
 
       // Prepare URL and request options
-      const url = `${baseUrl}/api/v${requestVersion}/${modifiedEndpoint.replace(/^\//, '')}`;
+      const url = `${baseUrl}/api/v${requestVersion}/demo/${modifiedEndpoint.replace(/^\//, '')}`;
       const requestOptions: RequestInit = {
         method,
         headers: requestHeaders,

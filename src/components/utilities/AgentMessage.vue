@@ -12,14 +12,6 @@
             <div class="text-subtitle1 text-dark">Message de Mike</div>
             <div class="text-caption text-grey-8">Directeur marketing chez Surfaceprep</div>
           </div>
-          
-          <q-btn
-            flat
-            round
-            dense
-            :icon="expanded ? 'expand_less' : 'expand_more'"
-            @click="expanded = !expanded"
-          />
         </div>
       </q-card-section>
 
@@ -31,7 +23,7 @@
               <q-card-section>
                 <!-- Greeting -->
                 <div class="text-body1 q-mb-md">
-                  Salut Marc-André, voici les faits saillants de cet article :
+                  Voici les faits saillants de cet article :
                 </div>
 
                 <!-- Message Content -->

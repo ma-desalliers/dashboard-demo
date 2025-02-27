@@ -1,4 +1,7 @@
 <template>
+  <div class="q-pb-md">
+    <span class="c-main-title">{{ $t('audiences') }}</span>
+  </div>
   <div>
     <CTable 
       v-model="selectedAudiences" 

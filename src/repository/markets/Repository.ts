@@ -1,5 +1,32 @@
 import { BaseRepository } from "@/src/repository/BaseRepository";
 import type { Market } from "@/src/repository/markets/Interfaces";
+import { useRepository } from "~/src/asset/composable/repository";
+
+export class StaticMarketRepository {
+    private static _repository: ReturnType<typeof useRepository> | null = null;
+    
+    // Lazy initialization of the repository
+    private static get repository() {
+      if (!this._repository) {
+        this._repository = useRepository();
+      }
+      return this._repository;
+    }
+  
+    static async findByUuid(uuid: string): Promise<Market | null> {
+      try {
+        const response = await this.repository.apiRequest<Market>(`/markets/${uuid}`, {
+          method: "GET"
+        });
+        return response.data as Market;
+      } catch (error) {
+        console.error(error);
+        return null;
+      }
+    }
+}
+
+
 
 export class MarketRepository extends BaseRepository {
   public async list(companyUuid: string): Promise<Market[]> {

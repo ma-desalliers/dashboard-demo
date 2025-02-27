@@ -47,7 +47,7 @@
   "monetization": "Monétisation",
   "distribution": "Distribution",
   "specifications": "Spécifications",
-  "brand-voice": "Voix de la marque",
+  "brand-voice": "Image de la marque",
   "page-outline": "Plan de la page",
   "content": "Contenu",
   "status": "Statut",
@@ -69,5 +69,7 @@
   "revision":"Révision",
   "publication":"Publication",
   "monetisation":"Monétisation",
-  "group-by":"Groupé par"
+  "group-by":"Groupé par",
+  "marketing-content":"Contenu de marketing",
+  "search-engine":"Moteur de recherche"
 }
