@@ -7,6 +7,7 @@ export interface Page {
   language: string;
   clientUuid: string;
   marketUuid?: string;
+  jobUuid?: string;
   subjobUuid?: string;
   relevancyScore?: number;
   title: string;
