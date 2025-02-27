@@ -86,3 +86,8 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
   - onMounted
   - watch
 
+### How to deploy to google bucket
+
+- docker build --no-cache -t atlas-dashboard:latest .
+- docker tag atlas-dashboard:latest northamerica-northeast1-docker.pkg.dev/cameleon-production/cameleon/atlas-dashboard:latest
+- docker push northamerica-northeast1-docker.pkg.dev/cameleon-production/cameleon/atlas-dashboard:latest

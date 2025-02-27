@@ -33,7 +33,7 @@ link: [
   },
   runtimeConfig: {
     public: {
-      apiBase: process.env.NUXT_PUBLIC_API_BASE_URL || 'http://cameleon-server:3000'
+      apiBase: process.env.NUXT_PUBLIC_API_BASE_URL || 'https://api.cameleonmedia.com'
     }
   },
   components: {
@@ -50,7 +50,7 @@ link: [
   },
   vite: {
     server: {
-      allowedHosts: ['cameleon-server']
+      allowedHosts: ['api.cameleonmedia.com']
     },
     css: {
       preprocessorOptions: {

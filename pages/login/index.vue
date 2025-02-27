@@ -107,7 +107,7 @@ const defaultSlides: Slide[] = [
   { id: 5, title: "9 Steps to Achieve Consistent Results in Blasting Operations", image: "/images/image5.jpeg" },
 ];
 const slides = ref<Slide[]>([]);
-const companyLogo = ref('/public/logo.png.jpg');
+const companyLogo = ref('/logo.png.jpg');
 const primaryColor = ref('#55B948');
 
 
