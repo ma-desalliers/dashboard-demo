@@ -1,51 +1,69 @@
 <template>
-  <div class="q-px-md q-pt-md">
-    <ProgressSteps :steps="progressStep" :active-step="activeStep" @update-active-step="(step) => activeStep = step"></ProgressSteps>
+  <div class="">
+    <span class="c-main-title">{{ $t('marketing-content') }}</span>
   </div>
-  <div class="row q-px-md q-py-lg q-col-gutter-lg">
-    <div >
-      <ToggleButtons v-model="currentView" :options="toggleBtnOptions" @update-selection="(value:any ) => currentView = value"> </ToggleButtons>
+  <div class="q-pt-md">
+    <ProgressSteps :steps="progressStep" :title="$t('content-phase')" :active-step="activeStep"
+      @update-active-step="(step) => activeStep = step"></ProgressSteps>
+  </div>
+  <div class="row q-py-lg q-col-gutter-lg">
+    <div>
+      <ToggleButtons v-model="currentView" :options="toggleBtnOptions"
+        @update-selection="(value: any) => currentView = value"> </ToggleButtons>
     </div>
-    <div class="col-12 col-sm-2">
-      <q-select
-        v-model="selectedAudience"
-        :options="audienceOptions"
-        label="Audience"
-        dense
-        clearable
-        emit-value
-        map-options
-        update:model-value="fetchPages"
-      />
+    <div class="col-12 col-md-2">
+      <q-input v-model="searchQuery" dense placeholder="Rechercher" clearable @update:model-value="onSearch">
+        <template v-slot:prepend>
+          <q-icon name="search" />
+        </template>
+      </q-input>
     </div>
-    <div class="col-12 col-sm-2">
-      <q-select
-        v-model="selectedJob"
-        :options="jobOptions"
-        label="Job"
-        dense
-        clearable
-        emit-value
-        map-options
-      />
+
+    <!-- Group By Dropdown -->
+    <div class="col-12 col-md-2">
+      <q-input v-model="selectedGroup" dense readonly placeholder="Group by" @click="toggleDropdown"
+        class="cursor-pointer">
+        <template v-slot:prepend>
+          <q-icon name="o_layers" @click="toggleDropdown" />
+          <span class="c-box-subtitle c-smaller" @click="toggleDropdown">{{ $t('group-by') }}: </span>
+        </template>
+        <template v-slot:append>
+          <q-btn-dropdown ref="dropdownRef" flat dense dropdown-icon="arrow_drop_down" aria-label="Group by"
+            class="no-padding">
+            <q-list>
+              <q-item v-for="option in groupOptions" :key="option.value" clickable v-close-popup
+                @click="selectedGroup = option.label">
+                <q-item-section>{{ option.label }}</q-item-section>
+              </q-item>
+            </q-list>
+          </q-btn-dropdown>
+        </template>
+      </q-input>
     </div>
-    <div class="col-12 col-sm-2">
-      <q-select
-        v-model="selectedSubJob"
-        :options="subJobOptions"
-        :loading="subJobsLoading"
-        label="Sub Job"
-        dense
-        clearable
-        emit-value
-        map-options
-        :disable="!selectedJob"
-        update:model-value="fetchPages"
-      />
+
+    <!-- Date Period Selector -->
+    <div class="col-12 col-md-2">
+      <q-input v-model="selectedDate" dense readonly placeholder="Période">
+        <template v-slot:prepend>
+          <q-icon name="event" />
+        </template>
+        <template v-slot:append>
+          <q-btn-dropdown flat dense dropdown-icon="arrow_drop_down" aria-label="Select period" class="no-padding">
+            <q-list>
+              <q-item v-for="option in dateOptions" :key="option.value" clickable v-close-popup
+                @click="selectedDate = option.label">
+                <q-item-section>{{ option.label }}</q-item-section>
+              </q-item>
+            </q-list>
+          </q-btn-dropdown>
+        </template>
+      </q-input>
     </div>
   </div>
-  <div class="q-px-md">
-    <CExpansionItem v-for="(audience, index) in audienceOptions" v-model="expandedStates[audience.value]" :key="audience.value" :title="audience.label" title-class="c-section-bigtitle" main-element class="q-mb-lg"  @update:model-value="handleExpansion(audience.value, $event)">
+  <div class="">
+    <CExpansionItem v-for="(audience, index) in audienceOptions" v-model="expandedStates[audience.value]"
+      :key="audience.value" :title="audience.label" title-class="c-section-bigtitle" main-element class="q-mb-lg"
+      @update:model-value="handleExpansion(audience.value, $event)">
       <JobPages v-if="expandedStates[audience.value]" :audience-uuid="audience.value"></JobPages>
     </CExpansionItem>
   </div>
@@ -98,22 +116,40 @@ const subJobsLoading = ref<boolean>(false)
 const sidePanelVisible = ref<boolean>(false)
 const currentView = ref<string>('list')
 
+
+// Group by options
+const groupOptions = [
+  { label: 'Audience', value: 'audience' },
+  { label: 'Job', value: 'job' },
+  { label: 'Sub Job', value: 'subjob' },
+  { label: 'Date', value: 'date' }
+];
+const selectedGroup = ref('Audience');
+
 const expandedStates = ref<Record<string, boolean>>({})
+
+const dropdownRef = ref(null)
+
+const toggleDropdown = () => {
+  // Access the q-btn-dropdown component and toggle it
+  dropdownRef.value?.toggle()
+}
+
 const activeStep = ref(1)
 const toggleBtnOptions = ref([{
-  value:'list',
-  icon:'list'
+  value: 'list',
+  icon: 'list'
 },
 {
-  value:'card',
-  icon:'o_style'
+  value: 'card',
+  icon: 'o_style'
 },
 {
-  value:'calendar',
-  icon:'calendar_today'
+  value: 'calendar',
+  icon: 'calendar_today'
 }])
 
-  const SINGLE_EXPANSION = true
+const SINGLE_EXPANSION = true
 
 const handleExpansion = (uuid: string, isExpanded: boolean) => {
   if (SINGLE_EXPANSION && isExpanded) {
@@ -135,36 +171,38 @@ const pagination = ref({
   rowsNumber: 0
 });
 
-const progressStep = [{label:"selection", value: 1},{label:"production", value: 2},{label:"révision", value: 3},{label:"publication", value: 3},{label:"monetisation", value: 3}]
+const progressStep = [{ label: "selection", value: 1 }, { label: "production", value: 2 }, { label: "révision", value: 3 }, { label: "publication", value: 3 }, { label: "monetisation", value: 3 }]
 
 provide('currentView', currentView)
 const audienceStore = useAudienceStore()
 const companyStore = useCompanyStore()
 const pageStore = usePageStore()
 const jtbdStore = useJTBDStore()
-const {t} = useI18n() 
+const { t } = useI18n()
 
 // Use audience data from store
-const audienceOptions = computed({get:() =>{
-   return audienceStore.audiences.map((audience) => ({
-    label: audience.name,
-    value: audience.uuid,
-    isOpen:false
-  }))},
-  set: (value )=>{
+const audienceOptions = computed({
+  get: () => {
+    return audienceStore.audiences.map((audience) => ({
+      label: audience.name,
+      value: audience.uuid,
+      isOpen: false
+    }))
+  },
+  set: (value) => {
     audienceOptions.value = value
   }
 }
 )
 
-const jobOptions = computed(() => 
+const jobOptions = computed(() =>
   jtbdStore.jobs.map((job) => ({
     label: job.title,
     value: job.uuid
   }))
 )
 
-const subJobOptions = computed(() => 
+const subJobOptions = computed(() =>
   jtbdStore.subjobs.map((job) => ({
     label: job.title,
     value: job.uuid

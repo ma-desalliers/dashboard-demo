@@ -15,7 +15,7 @@
       <div class="">
         <div class="c-sticky q-px-lg" style="--c-top:0px;">
         <!-- Title Section -->
-        <div class="c-section-bigtitle q-pb-md">
+        <div class="c-main-title q-pb-md">
           {{thePage?.title}}
         </div>
 

@@ -52,9 +52,9 @@ html {
   color: var(--q-black);
 }
 
-.c-box-title {
-  font-size: 1.1rem;
-  color: #666666;
+.c-main-title{
+  font-size:24px;
+  font-weight: 500;
 }
 
 .c-section-bigtitle {
@@ -70,6 +70,11 @@ html {
 .c-section-subtitle {
   font-size: 16px;
   font-weight: 400;
+}
+
+.c-box-title {
+  font-size: 1.1rem;
+  color: #666666;
 }
 
 .c-box-subtitle {

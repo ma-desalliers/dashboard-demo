@@ -17,7 +17,7 @@
 
       <q-menu transition-show="jump-down" transition-hide="jump-up" class="company-menu">
         <q-list style="min-width: 200px">
-          <q-item v-for="item in companies" :key="item.uuid" :to="`/company/${item.uuid}/products`" clickable v-close-popup>
+          <q-item v-for="item in companies" :key="item.uuid" @click="selectCompany(item.uuid)"clickable v-close-popup>
             <q-item-section v-if="item?.style?.favicon != null" style="max-width: 40px">
               <q-avatar rounded size="24px" class="q-mr-sm">
                 <img :src="item?.style?.favicon" alt="Company logo" class="c-img-contain">
@@ -46,6 +46,7 @@ import { useMainDisplayStore } from '@/src/stores/mainDisplayStore';
 import { useCompanyStore } from '@/src/stores/companyStore';
 
 const route = useRoute()
+const router = useRouter()
 const mainDisplayStore = useMainDisplayStore()
 
 const isMobile = computed(() => mainDisplayStore.isMobile)
@@ -67,6 +68,12 @@ const showMenu = () =>{
 const toggleMenu = () =>{
 	if(menuVisible.value) closeMenu()
 	else showMenu()
+}
+
+const selectCompany = (uuid:string) =>{
+  companyStore.current(uuid)
+
+  router.push(`/company/${uuid}/pages`)
 }
 
 const isPricingRoute = computed(() => route.path === '/pricing')

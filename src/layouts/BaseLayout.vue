@@ -11,7 +11,7 @@
         <!-- Right Content Area -->
         <div class="c-right-column" :class="{'c-overlay': showOverlay == 'content' }">
           <ContextMenu v-if="false"></ContextMenu>
-          <div class="c-main-content">
+          <div class="c-main-content q-pa-lg">
             <slot></slot>
           </div>
         </div>

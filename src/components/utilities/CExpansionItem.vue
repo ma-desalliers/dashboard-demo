@@ -69,6 +69,10 @@ defineEmits<{
     }
   }
 
+  :deep(.q-focus-helper){
+    display:none;
+  }
+
   :deep(.q-expansion-item__content) {
     padding: 0 16px 16px 16px;
     background-color: #ffffff;

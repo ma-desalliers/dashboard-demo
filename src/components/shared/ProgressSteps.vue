@@ -1,5 +1,9 @@
 <template>
+    <div v-if="title" class="q-pb-md c-box-title">
+    {{ title }}
+  </div>
   <div class="c-progress-steps row no-wrap">
+
     <div
       v-for="(step, index) in steps"
       :key="index"
@@ -28,6 +32,7 @@ interface Step {
 interface Props {
   steps: Step[];
   activeStep?: number;
+  title?:string;
 }
 
 withDefaults(defineProps<Props>(), {
@@ -49,7 +54,7 @@ const selectStep = (step:number)=>{
 
 .c-step {
   background-color: #E0E0E0;
-  height: px;
+  height: 50px;
   flex: 1;
   display: flex;
   align-items: center;

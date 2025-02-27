@@ -26,7 +26,7 @@
     <div class="section-container q-mb-md">
 			<div class="section-header q-mb-sm q-px-md">
 				<div class="row items-center q-pb-md q-pt-lg">
-					<div class="c-box-subtitle q-pr-sm">AI Departments</div>
+					<div class="c-box-subtitle q-pr-sm">{{ $t('ai-team') }}</div>
 					<Tooltip :title="'Content Marketing'" :description="'this is a description '"></Tooltip>
 				</div>
 			</div>
@@ -40,17 +40,16 @@
 						</q-avatar>
 					</q-item-section>
 					<q-item-section>
-          <ComingSoonTooltip v-if="dept.comingSoon">
-            {{ dept.name }}
-          </ComingSoonTooltip>
-            <div v-else>
               {{ dept.name }}
-            </div>
-						
 					</q-item-section>
 					<q-item-section side v-if="dept.new">
 						<q-chip :color="dept.color" text-color="white" class="text-caption" style="border-radius: 4px">
-							New
+							{{ $t('new')}} 
+						</q-chip>
+					</q-item-section>
+          <q-item-section side v-if="dept.comingSoon" class="coming-soon">
+						<q-chip :color="dept.color" text-color="white" class="text-caption" style="border-radius: 4px">
+							{{ $t('coming-soon')}} 
 						</q-chip>
 					</q-item-section>
 					<selected-element-indicator rounded :color="`bg-${dept.color}`"
@@ -100,16 +99,16 @@
         <template v-slot:header>
           <div class="section-header  c-no-pointer-event" >
 				<div class="row q-pt-xs">
-					<div class="c-box-subtitle q-pr-sm c-text-nowrap">Business intelligence</div>
+					<div class="c-box-subtitle q-pr-sm c-text-nowrap">{{ $t('business-inteligence') }}</div>
 					<Tooltip :title="'Content Marketing'" :description="'this is a description '"></Tooltip>
 				</div>
 			</div>
         </template>
 
-        <q-list padding class="sub-items">
+        <q-list padding class="sub-items departments">
           <q-item v-for="item in knowledgeSection.items" :key="item.name" clickable v-ripple :class="[
-            'q-py-sm sub-item',
-            { 'active-sub-item': item.active }
+            'q-py-sm sub-item q-mb-xs ',
+            { 'bg-green-1': item.active }
           ]" @click="handleKnowledgeItemClick(item)">
             <q-item-section class="">
               {{ item.name }}
@@ -120,6 +119,8 @@
             <q-item-section class="q-px-none" side v-if="item.premium">
               <q-chip square color="primary" text-color="white" class="text-caption">{{ $t('premium') }}</q-chip>
             </q-item-section>
+            <selected-element-indicator rounded :color="`bg-green`"
+						:show="item.active"></selected-element-indicator>
           </q-item>
         </q-list>
       </q-expansion-item>
@@ -129,7 +130,7 @@
     </div>
     <div class="powered-by c-border-top column items-center">
         <span>
-          Atlas is powered by
+          {{$t('powered-by')}}
         </span>
         <a href="https://www.cameleonmedia.com/fr/" target="_blank">
           <img src="/cameleon-logo.png">
@@ -143,6 +144,7 @@ import { useNotificationStore } from "@/src/stores/notificationStore";
 import { useMainDisplayStore } from "@/src/stores/mainDisplayStore";
 import { useCompanyStore } from "~/src/stores/companyStore";
 import ClientHeader from "~/src/components/shared/ClientHeader.vue";
+
 const route = useRoute();
 const router = useRouter();
 const notificationStore = useNotificationStore();
@@ -154,12 +156,13 @@ const companyStore = useCompanyStore();
 const departments = reactive([
   {
     name: t("marketing"),
-    active: true,
+    active: false,
     expanded: true,
     page: "demo",
     color: "green",
-    new: false,
+    new: true,
     icon: `/user/marketing.png`,
+    pathName:'pages',
     path:`/company/${companyStore.theCompany.uuid}/pages`,
     subItems: [
       { name: "SEO", active: true, path: '/marketing/seo/keywords' },
@@ -213,13 +216,22 @@ const knowledgeSection = reactive({
   name: t("knowledge"),
   expanded: true,
   items: [
-    { name: t("product"), active: false, path:`/company/${companyStore.theCompany.uuid}/products` },
-    { name: t("audience"), active: false,  path:`/company/${companyStore.theCompany.uuid}/audiences` },
-    { name: t("branding"), active: false,  path:`/company/${companyStore.theCompany.uuid}/brands` },
-    { name: t("strategies"), active: false,  path:`/company/${companyStore.theCompany.uuid}/strategies`, premium:true },
+    { name: t("product"), active: false, path:`/company/${companyStore.theCompany.uuid}/products`, pathName:'products' },
+    { name: t("audience"), active: false,  path:`/company/${companyStore.theCompany.uuid}/audiences`, pathName:'audiences'},
+    { name: t("branding"), active: false,  path:`/company/${companyStore.theCompany.uuid}/brands`, pathName:'brands'},
+    { name: t("strategies"), active: false, /* path:`/company/${companyStore.theCompany.uuid}/strategies`,*/comingSoon:true, premium:false },
     //{ name: t("channels"), active: false, comingSoon: true }
   ]
 })
+
+
+const lastUrlSegment = () => {
+  const pathname = window.location.pathname
+  const segments = pathname.split('/').filter(segment => segment)
+  console.log(segments)
+  return segments.length > 0 ? segments[segments.length - 1] : ''
+}
+
 
 const handleKnowledgeItemClick = (item: any) => {
   if(item.path) goto(item.path)
@@ -280,7 +292,27 @@ const handleButtonClick = async () => {
   } else {
     await router.push("/pricing");
   }
-};
+}; 
+
+const handleRouteChange = () =>{
+  const pathname = lastUrlSegment()
+
+  departments.forEach(dep => {
+    if(dep.pathName == pathname) dep.active = true
+    else dep.active = false
+  })
+
+  knowledgeSection.items.forEach(dep => {
+    if(dep.pathName == pathname) dep.active = true
+    else dep.active = false
+  })
+
+} 
+
+watch(()=>route.fullPath,()=>{
+  console.log('changed')
+  handleRouteChange()
+})
 </script>
 
 <style scoped lang="scss">
@@ -320,6 +352,16 @@ const handleButtonClick = async () => {
     padding-bottom: 4px !important;
     min-height: unset;
     border-radius: 4px;
+
+    .coming-soon{
+      opacity:0;
+      transition: 0.25s;
+    }
+    &:hover{
+      .coming-soon{
+        opacity: 1;
+      }
+    }
   }
 }
 
