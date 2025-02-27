@@ -57,7 +57,7 @@ import PageViewer from '@/src/components/shared/PageViewer.vue'
 
 const props = defineProps<{
   audienceUuid?: string
-  subjobUuid?: string
+  jobUuid?: string
   onEdit?: (page: Page) => void
   onDelete?: (page: Page) => void
   onBatchDelete?: (pages: Page[]) => void
@@ -207,7 +207,7 @@ const fetchPages = async () => {
     await pageStore.list(pagination.value.page, pagination.value.rowsPerPage, {
       clientUuid: companyStore.theCompany.uuid,
       audienceUuid: props.audienceUuid,
-      subjobUuid:props.subjobUuid,
+      jobUuid: props.jobUuid,
       withContent: true
     })
     pagination.value = {
@@ -246,7 +246,7 @@ watch(() => props.audienceUuid, () => {
   fetchPages()
 })
 
-watch(() => props.subjobUuid, () => {
+watch(() => props.jobUuid, () => {
   fetchPages()
 })
 </script>

@@ -4,30 +4,30 @@
   </div>
   <CExpansionItem
     v-if="!isLoading"
-    v-for="subjob in subJobs"
-    :key="subjob.uuid"
-    :title="subjob.title"
-    v-model="expandedStates[subjob.uuid]"
-    @update:model-value="handleExpansion(subjob.uuid, $event)"
+    v-for="job in jobs"
+    :key="job.uuid"
+    :title="job.title"
+    v-model="expandedStates[job.uuid]"
+    @update:model-value="handleExpansion(job.uuid, $event)"
   >
     <template #icon>
       <q-icon name="flag" color="green" size="24px" class="q-pr-xs"></q-icon>
     </template>
     <template #option>
-      <span class="c-box-subtitle c-smaller">&nbsp;-&nbsp;{{ subjob.pageCount }} </span>
+      <span class="c-box-subtitle c-smaller">&nbsp;-&nbsp;{{ job.pageCount }} </span>
     </template>
     <div v-if="currentView == 'list'">
       <PageTable
-        v-if="expandedStates[subjob.uuid]"
+        v-if="expandedStates[job.uuid]"
         :audience-uuid="audienceUuid"
-        :subjob-uuid="subjob.uuid"
+        :job-uuid="job.uuid"
       ></PageTable>
     </div>
     <div v-if="currentView == 'card'">
       <PageCards
-        v-if="expandedStates[subjob.uuid]"
+        v-if="expandedStates[job.uuid]"
         :audience-uuid="audienceUuid"
-        :subjob-uuid="subjob.uuid"
+        :job-uuid="job.uuid"
       ></PageCards>
     </div>
   </CExpansionItem>
@@ -67,18 +67,18 @@ const handleExpansion = (uuid: string, isExpanded: boolean) => {
   expandedStates.value[uuid] = isExpanded;
 };
 
-const subJobs = computed(() => jtbdStore.subjobs);
+const jobs = computed(() => jtbdStore.jobs);
 
-const loadSubJobs = () => {
+const loadJobs = () => {
   jtbdStore.list(1, 10, {
     audienceUuid: props.audienceUuid,
-    isChild: true,
+    isChild: false,
     clientUuid: companyUuid ?? "",
     withPage: true,
   });
 };
 
 onMounted(() => {
-  loadSubJobs();
+  loadJobs();
 });
 </script>
