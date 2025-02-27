@@ -176,6 +176,7 @@ const fetchPages = async () => {
   await pageStore.list(pagination.value.page, pagination.value.rowsPerPage, {
     clientUuid: companyStore.theCompany.uuid,
     audienceUuid: selectedAudience.value || undefined,
+    jobUuid: selectedJob.value || undefined,
     subjobUuid: selectedSubJob.value || undefined,
     withContent: true
   });
