@@ -47,7 +47,7 @@
               </q-icon>
             </div>
             <c-select class="col text-right" v-model="selectedAudience" @update:model-value="onSelectAudience"
-              :options="audienceList" option-value="uuid" option-label="title" dense emit-value map-options />
+              :options="audienceList" option-value="uuid" option-label="name" dense emit-value map-options />
           </div>
         </div>
         <div v-show="selectedMode == 'advanced'" class="q-mb-lg full-width">
