@@ -2,6 +2,8 @@
 export interface Page {
   uuid: string;
   type: string;
+  channel: string;
+  status: string;
   language: string;
   clientUuid: string;
   marketUuid?: string;

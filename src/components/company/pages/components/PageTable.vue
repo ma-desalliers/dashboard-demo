@@ -85,9 +85,9 @@ const formattedPages = computed(() => {
   return isLoading.value ? [] : pageStore.pages.map((page) => ({
     uuid: page.uuid,
     title: page.title,
-    status: 'selection',
+    status: page.status,
     relevancy: getRelevancyText(page.relevancyScore || 8),
-    channel: 'Search Engine',
+    channel: page.channel,
     buyingStage: 1,
     format: page.type || 'Unknown',
     creationDate: new Date(page.createdAt).toLocaleDateString()
@@ -111,9 +111,11 @@ const columns = [
     field: 'status',
     type: 'badge',
     options: [
-      { label: 'test', uuid: 'test' },
       { label: 'selection', uuid: 'selection' },
-      { label: 'hello', uuid: 'hello' }
+      { label: 'production', uuid: 'production' },
+      { label: 'revision', uuid: 'revision' },
+      { label: 'publication', uuid: 'publication' },
+      { label: 'monetisation', uuid: 'monetisation' }
     ],
     style:{
       minWidth:'150px'
@@ -200,6 +202,13 @@ const getRelevancyText = (relevancy: number): string => {
   if (relevancy >= 8) return 'Excellent'
   if (relevancy >= 5) return 'Good'
   return 'Average'
+}
+
+const getChannelText = (channel: string): string => {
+  switch (channel) {
+    case 'search engine':
+      return 'Search Engine';
+  }
 }
 
 const fetchPages = async () => {
