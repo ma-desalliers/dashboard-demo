@@ -44,10 +44,13 @@ export const useCompanyStore = defineStore('useCompanyStore', {
         this.currentRequest = null;
       }
     },
-
+    async fetchCompany(companyUuid: string) {
+      const repository = new CompanyRepository();
+      return repository.fetchCompany(companyUuid);
+    },
     async current(companyUuid: string) {
-      if (this.companies.length === 0) await this.init();
-      const company = this.getCompany(companyUuid);
+      // if (this.companies.length === 0) await this.init();
+      const company = await this.fetchCompany(companyUuid);
       if (!company) throw new Error('Company not found');
       this.theCompany = company;
       await this.fetchBrandGuide(companyUuid);

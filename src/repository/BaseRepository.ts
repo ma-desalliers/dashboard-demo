@@ -102,7 +102,7 @@ export class BaseRepository {
 
     try {
       const authStore = useAuthStore();
-      const url = `${this.baseUrl}/api/v${version}/${endpoint.replace(/^\//, '')}`;
+      const url = `${this.baseUrl}/api/v${version}/demo/${endpoint.replace(/^\//, '')}`;
       
       // Add client UUID check and injection logic
       const hasClientUuid = (
