@@ -30,8 +30,9 @@ export const useJTBDStore = defineStore('jtbdStore', {
   }),
 
   actions: {
-    async list(page: number, pageSize: number, filters: JTBDFilters) {
-      if (this.currentPage == page && JSON.stringify(this.currentFilters) === JSON.stringify(filters)) {
+    async list(page: number, pageSize: number, filters: JTBDFilters, forceReload = false ) {
+      console.log('here',forceReload )
+      if (this.currentPage == page && JSON.stringify(this.currentFilters) === JSON.stringify(filters) && !forceReload) {
         return;
       }
       this.loading = true

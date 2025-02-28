@@ -5,13 +5,13 @@
     <q-card-section class="q-pa-md">
       <div class="row items-center">
         <!-- Platform Icon -->
-        <q-avatar size="40px" class="platform-icon">
-          <q-icon :name="platformIcon" :color="platformColor" size="24px" />
+        <q-avatar square size="40px" class="platform-icon">
+          <social-media-icon :name="platformIcon" size="40"></social-media-icon>
         </q-avatar>
 
         <div class="q-ml-sm">
           <!-- Platform Name -->
-          <div class="text-subtitle1 text-weight-bold">{{ platformName }} post</div>
+          <div class="text-subtitle1 text-weight-bold">{{ platformName }}</div>
           <!-- Followers Count -->
           <div class="text-caption text-grey-7">
             {{ formatFollowerCount(followerCount) }} Followers
@@ -26,10 +26,10 @@
       <div class="text-subtitle1 text-weight-bold q-mb-sm">{{ title }}</div>
       
       <!-- Description -->
-      <div class="text-body2 q-mb-md">{{ description }}</div>
+      <div class="text-body2">{{ description }}</div>
       
-      <!-- Call to Action -->
-      <div class="text-body2 text-weight-medium">{{ callToAction }}</div>
+      <!-- Call to Action 
+      <div class="text-body2 text-weight-medium">{{ callToAction }}</div>-->
     </q-card-section>
 
     <q-separator class="q-mt-md" />

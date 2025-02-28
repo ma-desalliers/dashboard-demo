@@ -1,13 +1,5 @@
 <template>
-  <div class="coming-soon-tooltip-wrapper">
-    <div 
-      class="c-tooltip-content"
-      @mouseenter="showTooltip = true"
-      @mouseleave="showTooltip = false"
-    >
-      <slot></slot>
-    </div>
-    <q-tooltip
+  <q-tooltip
       v-model="showTooltip"
       :delay="delay"
       :max-width="maxWidth"
@@ -24,15 +16,14 @@
         class="q-mr-xs q-mb-xs"
       />
       <span class="c-box-title" style="color:white">
-      {{ message }}
+      {{ $t('coming-soon') }}
     </span>
     </q-tooltip>
-  </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
-
+import { useI18n } from 'vue-i18n'
 interface Props {
   message?: string
   delay?: number
@@ -54,7 +45,7 @@ const props = withDefaults(defineProps<Props>(), {
   anchor: 'top middle',
   self: 'top middle',
   offset: () => [0, 8],
-  tooltipClass: 'bg-amber-8',
+  tooltipClass: 'bg-green',
   showIcon: true,
   icon: 'construction',
   iconSize: '22px',
@@ -62,6 +53,7 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 const showTooltip = ref(false)
+const { t } = useI18n
 
 const tooltipStyle = computed(() => {
   if (props.color) {

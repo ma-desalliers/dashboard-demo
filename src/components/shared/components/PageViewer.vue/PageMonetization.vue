@@ -21,8 +21,11 @@
     </div>
 
     <!-- Product Placement Section -->
-    <q-expansion-item
+    <c-expansion-item
+      v-model="productExpansion"
       label="Product placement"
+      :title="$t(`products`)"
+      title-class="c-section-title"
       header-class="text-weight-bold"
       expand-icon-class="expand-icon"
       :default-opened="true"
@@ -37,10 +40,11 @@
         />
       </template>
 
-      <q-card flat style="background-color: #EAF7E4" class="q-mt-sm q-pa-md">
+      <q-card flat style="background-color: #EAF7E4" class="q-py-md c-rounded">
         <div class="row no-wrap overflow-auto q-gutter-md" style="overflow-x:auto">
           <!-- Product 1 -->
-          <q-card v-for="product in products" class="product-card" style="min-width: 240px">
+          <Carousel>
+          <q-card v-for="product in products" class="product-card q-mt-md" style="min-width: 240px">
             <q-img
               src="https://placehold.co/400x300/e7e7e7/352323?text=placeholder"
               style="height: 180px"
@@ -59,73 +63,22 @@
               </div>
               <q-btn
                 color="positive"
-                label="Product details"
+                :label="$t('product-details')"
                 class="full-width q-mt-sm"
                 style="border-radius: 6px"
               />
             </q-card-section>
           </q-card>
-
-          <!-- Product 2 -->
-          <q-card class="product-card" style="min-width: 240px">
-            <q-img
-              src="https://placehold.co/400x300/e9a8a8/352323?text=Garnet"
-              style="height: 180px"
-            />
-            <q-card-section>
-              <div class="text-h6" style="font-size: 16px">Garnet</div>
-              <div class="row q-mt-sm items-center">
-                <q-rating
-                  v-model="product2Rating"
-                  size="1em"
-                  color="amber"
-                  :max="5"
-                  readonly
-                />
-                <span class="q-ml-sm text-grey-7">790</span>
-              </div>
-              <q-btn
-                color="positive"
-                label="Product details"
-                class="full-width q-mt-sm"
-                style="border-radius: 6px"
-              />
-            </q-card-section>
-          </q-card>
-
-          <!-- Product 3 (partially visible) -->
-          <q-card class="product-card" style="min-width: 240px">
-            <q-img
-              src="https://placehold.co/400x300/e9a8a8/352323?text=Garnet"
-              style="height: 180px"
-            />
-            <q-card-section>
-              <div class="text-h6" style="font-size: 16px">Garnet</div>
-              <div class="row q-mt-sm items-center">
-                <q-rating
-                  v-model="product3Rating"
-                  size="1em"
-                  color="amber"
-                  :max="5"
-                  readonly
-                />
-                <span class="q-ml-sm text-grey-7">790</span>
-              </div>
-              <q-btn
-                color="positive"
-                label="Product details"
-                class="full-width q-mt-sm"
-                style="border-radius: 6px"
-              />
-            </q-card-section>
-          </q-card>
+        </Carousel>
         </div>
       </q-card>
-    </q-expansion-item>
+    </c-expansion-item>
 
     <!-- Lead Magnets Section -->
-    <q-expansion-item
-      label="Lead Magnets"
+    <c-expansion-item
+    v-model="leadMagnetExpansion"
+      :title="$t('lead-magnets')"
+      title-class="c-section-title "
       header-class="text-weight-bold"
       expand-icon-class="expand-icon"
       class="q-mt-md"
@@ -143,7 +96,7 @@
 
       <q-card flat style="background-color: #EAF7E4" class="q-mt-sm">
         <q-card-section>
-          <div class="row">
+          <div class="row q-col-gutter-md">
             <div class="col-12 col-sm-3 flex flex-center">
               <q-img
                 src="https://placehold.co/300x400/ccc/333?text=FREE+STEEL+GRIT"
@@ -190,7 +143,7 @@
           </div>
         </q-card-section>
       </q-card>
-    </q-expansion-item>
+    </c-expansion-item>
   </div>
 </template>
 
@@ -202,6 +155,9 @@ import { useProductStore } from '~/src/stores/productStore';
 const product1Rating = ref(4.5)
 const product2Rating = ref(4.5)
 const product3Rating = ref(4.5)
+
+const productExpansion = ref(true)
+const leadMagnetExpansion = ref(true)
 
 const companyUuid:string | undefined = inject('companyUuid')
 const productStore = useProductStore()

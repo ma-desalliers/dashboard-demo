@@ -71,5 +71,18 @@
   "monetisation":"Monétisation",
   "group-by":"Groupé par",
   "marketing-content":"Contenu de marketing",
-  "search-engine":"Moteur de recherche"
+  "search-engine":"Moteur de recherche",
+  "product-details":"Détail du produit",
+  "blog-post":"Article de blogue",
+  "basic-seo":"SEO de base",
+  "advance-seo":"Advanced SEO",
+  "technical-optimization":"Optimisation technique",
+  "on-page-optimization":"Optimisation par page",
+  "content-distribution":"Publication du contenu",
+  "increase-content-visibility":"Augmenter la visibilité",
+  "page-description":"Description de la page pour les moteurs de recherche",
+  "social-media-content":"Contenu publié sur vos média sociaux",
+  "mailing-description":"Description du contenu de votre Infolettres",
+  "social-media":"Média sociaux",
+  "email":"Courriel"
 }

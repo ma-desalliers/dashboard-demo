@@ -1,6 +1,6 @@
 <template>
   <div class="full-width q-mb-lg" ref="triggerRef">
-    <q-btn class="full-width c-shine loop c-step-transition" color="primary" :label="$t('create-content')" @click="ShowPopup()"></q-btn>
+    <q-btn class="full-width c-shine loop c-step-transition" color="primary" :label="$t('create-content')" @click="generateContent()"></q-btn>
   </div>
 
   <PopupContainer v-model="showPopup" ref="popupRef" @hide="handleHide" dialog-class="generate-content-popup" :position="{top:10, bottom:10}">
@@ -15,7 +15,9 @@
         </div>
         <q-tabs v-model="selectedMode" indicator-color="primary" class="c-box-title">
           <q-tab :label="$t('easy')" name="easy" @click="selectMode('easy')"></q-tab>
-          <q-tab :label="$t('advanced')" name="advanced" @click="selectMode('advanced')"></q-tab>
+          <q-tab :label="$t('advanced')" name="advanced" :disable="true" @click="selectMode('advanced')">
+            <ComingSoonTooltip></ComingSoonTooltip>
+          </q-tab>
         </q-tabs>
       </div>
 
@@ -99,16 +101,17 @@
         </div>
         <BigButtonOptions v-model="seoOption" class="q-mb-lg" :options="[
           {
-            label: 'Basic SEO',
+            label: $t('basic-seo'),
             value: 'basic',
-            description: 'Technical optimization',
+            description: $t('technical-optimization'),
             icon: 'search'
           },
           {
-            label: 'Advanced SEO',
+            label: $t('advance-seo'),
             value: 'advanced',
-            description: 'On-page optimization',
-            icon: 'tune'
+            description: $t('on-page-optimization'),
+            icon: 'tune',
+            comingSoon:true
           }
         ]" title="Search Engine Optimization"
           tooltip="Choose between basic technical optimization or advanced on-page SEO features">
@@ -141,12 +144,14 @@ import { useProductStore } from '~/src/stores/productStore'
 import { useAudienceStore } from '~/src/stores/audienceStore'
 import { useCompanyStore } from '~/src/stores/companyStore'
 import { useMainDisplayStore } from '~/src/stores/mainDisplayStore'
+import { useLocalStorage } from '~/src/asset/composable/localStore'
 import AddCredit from '../../shared/AddCredit.vue'
 import { BaseRepository } from '~/src/repository/BaseRepository'
 import type { Audience } from '~/src/repository/audiences/Interfaces'
 import { AudienceRepository } from '~/src/repository/audiences/Repository'
 import PostSelector from './components/generateContentComponents/PostSelector.vue'
 import type { GeneratePageRequestBody } from '~/src/repository/pages/Interfaces'
+import { GenerateContentPopup } from '#components'
 
 interface ContentSlider {
   id: string
@@ -160,6 +165,7 @@ const productStore = useProductStore()
 const audienceStore = useAudienceStore()
 const companyStore = useCompanyStore()
 const mainDisplayStore = useMainDisplayStore()
+const localStore = useLocalStorage('motivation-number', 0)
 const config = useRuntimeConfig();
 
 const audienceList = computed(() => audienceStore.audiences)
@@ -172,10 +178,6 @@ const selectedAudienceUuid = computed(() => selectedAudience.value?.uuid);
 const selectedAudienceTitle = computed(() => selectedAudience.value?.title);
 
 const theAudience = computed<AudienceRepository>(() => audienceStore.currentAudience)
-
-// Met
-
-
 // State
 const loading = ref(false)
 const advancedMode = ref(false)
@@ -184,7 +186,7 @@ const triggerRef = ref<HTMLElement>()
 const showAddCredit = ref(false)
 const popupRef = ref()
 const seoOption = ref('basic')
-const selectedMode = ref('advanced')
+const selectedMode = ref('easy')
 
 const theGeneratePage: GeneratePageRequestBody = reactive({
   clientUuid: theCompany.value.uuid,
@@ -249,17 +251,21 @@ const toggleAdvancedMode = () => {
 const generateContent = async () => {
   loading.value = true
   try {
-    // await new Promise(resolve => setTimeout(resolve, 3000))
+   // await new Promise(resolve => setTimeout(resolve, 3000))
 
-    // showAddCredit.value = true
+    showAddCredit.value = true
 
-    // nextTick(() => {
-    //   popupRef.value.setTriggerElement(triggerRef.value, {
-    //     width: '500px',
-    //     maxHeight: '1200px'
-    //   })
-    // })
-    if (!selectedProductUuid.value || !selectedAudienceUuid.value) {
+    localStore.setValue(localStore.data.value + 1)
+
+    mainDisplayStore.setElementReload()
+
+    nextTick(() => {
+      popupRef.value.setTriggerElement(triggerRef.value, {
+        width: '500px',
+        maxHeight: '1200px'
+      })
+    })
+    /*if (!selectedProductUuid.value || !selectedAudienceUuid.value) {
       console.error('Product and Audience must be selected');
       return;
     }
@@ -272,7 +278,7 @@ const generateContent = async () => {
     await repository.apiRequest<any>('/pages/generate', {
       method: 'POST',
       body: payload
-    });
+    });*/
     handleHide();
   } catch (error) {
     console.error('Error generating content:', error)
@@ -302,10 +308,11 @@ const ShowPopup = () => {
   handleShow()
 }
 
-const handleShow = () => {
-  productStore.init(companyStore.theCompany.uuid)
-  audienceStore.init(companyStore.theCompany.uuid)
-
+const handleShow = async () => {
+  await productStore.init(companyStore.theCompany.uuid)
+  await audienceStore.init(companyStore.theCompany.uuid)
+  selectedProduct.value = productList.value[0]
+  selectedAudience.value = audienceList.value[0]
 }
 
 const onSelectAudience = (audience: Audience) => {
@@ -319,6 +326,10 @@ const selectMode = (mode: 'easy' | 'advanced') => {
 const getJtbd = () => {
 
 }
+
+onMounted(()=>{
+
+})
 
 </script>
 

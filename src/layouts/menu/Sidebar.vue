@@ -309,6 +309,11 @@ const handleRouteChange = () =>{
 
 } 
 
+onMounted(()=>{
+  handleRouteChange()
+
+})
+
 watch(()=>route.fullPath,()=>{
   console.log('changed')
   handleRouteChange()

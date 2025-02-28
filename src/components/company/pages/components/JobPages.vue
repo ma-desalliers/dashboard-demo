@@ -3,8 +3,8 @@
     <Loading size="50px" position="left"></Loading>
   </div>
   <CExpansionItem
+    v-for="(job, index) in jobs.slice(0, motivationNumber + 1)"    
     v-if="!isLoading"
-    v-for="job in jobs"
     :key="job.uuid"
     :title="job.title"
     v-model="expandedStates[job.uuid]"
@@ -15,6 +15,7 @@
     </template>
     <template #option>
       <span class="c-box-subtitle c-smaller">&nbsp;-&nbsp;{{ job.pageCount }} </span>
+      <q-chip v-if="index == motivationNumber" square color="green" text-color="white" size="sm" >{{ $t('new') }}</q-chip>
     </template>
     <div v-if="currentView == 'list'">
       <PageTable
@@ -37,6 +38,8 @@
 import { useJTBDStore } from "~/src/stores/JTBDStore";
 import PageTable from "./PageTable.vue";
 import PageCards from "./PageCards.vue";
+import { useLocalStorage } from "~/src/asset/composable/localStore";
+import { useMainDisplayStore } from "~/src/stores/mainDisplayStore";
 
 const props = defineProps<{
   audienceUuid: string;
@@ -45,12 +48,16 @@ const props = defineProps<{
 const companyUuid: string | undefined = inject<string>("companyUuid");
 
 const jtbdStore = useJTBDStore();
+const mainDisplayStore = useMainDisplayStore()
+const localStore = useLocalStorage('motivation-number', 0)
+const motivationNumber = ref( localStore.data.value)
 const currentView = inject('currentView')
 
 const selectedJob = ref<string | null>(null);
 const expandedStates = ref<Record<string, boolean>>({});
 
 const isLoading = computed(() => jtbdStore.loading);
+const elementReload = computed(()=> mainDisplayStore.elementReload)
 
 // Toggle this constant to switch between single and multiple expansion
 const SINGLE_EXPANSION = true;
@@ -69,19 +76,20 @@ const handleExpansion = (uuid: string, isExpanded: boolean) => {
 
 const jobs = computed(() => jtbdStore.jobs);
 
-const loadJobs = async () => {
+const loadJobs = async (forceReload = false) => {
+  console.log('loadingJbos')
   await jtbdStore.list(1, 10, {
     audienceUuid: props.audienceUuid,
     isChild: false,
     clientUuid: companyUuid ?? "",
     withPage: true,
-  });
+  }, forceReload);
 };
 
 const initExpandedItem = () => {
  // if(selectedGroup.value == 'audience'){
   console.log('init', jobs.value)
-    handleExpansion(jobs.value[0].uuid, true)
+    handleExpansion(jobs.value[jobs.value.length -1].uuid, true)
   //}
 }
 
@@ -92,4 +100,9 @@ onMounted(async() => {
     initExpandedItem()
   })
 });
+
+watch(()=> elementReload.value, ()=> {
+  loadJobs(true)
+  motivationNumber.value = localStore.getStoredValue()
+})
 </script>

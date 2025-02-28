@@ -18,13 +18,17 @@
         :key="option.value"
         :class="[`col-12 col-sm-${12/columns}`]"
       >
+       
         <q-btn
           class="option-selector full-width"
           :class="{ 'selected': modelValue === option.value }"
           flat
           align="left"
+          :disable="option.comingSoon"
           @click="updateValue(option.value)"
         >
+
+        <coming-soon-tooltip v-if="option.comingSoon"></coming-soon-tooltip>
           <div class="full-width column q-col-gutter-sm items-center no-wrap">
             <q-icon
               v-if="option.icon"
@@ -35,7 +39,7 @@
             />
             <div class="full-width">
               <div 
-                class="text-weight-medium" 
+                class="text-weight-medium text-transform-unset" 
                 :class="modelValue === option.value ? 'text-primary' : 'text-dark'"
               >
                 {{ option.label }}
@@ -60,6 +64,7 @@ interface SelectOption {
   value: string
   description?: string
   icon?: string
+  comingSoon?:boolean
 }
 
 interface Props {
@@ -103,7 +108,13 @@ const updateValue = (value: string) => {
     &:hover {
     }
   }
+
 }
+
+.text-transform-unset{
+  text-transform: unset !important;
+}
+
 
 .text-dark {
   color: #222F3E;

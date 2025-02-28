@@ -87,9 +87,9 @@ const formattedPages = computed(() => {
     title: page.title,
     status: page.status,
     relevancy: getRelevancyText(page.relevancyScore || 8),
-    channel: page.channel,
+    channel: t(page.channel),
     buyingStage: 1,
-    format: page.type || 'Unknown',
+    format: t(page.type) || 'Unknown',
     creationDate: new Date(page.createdAt).toLocaleDateString()
   }))
 })
@@ -202,13 +202,6 @@ const getRelevancyText = (relevancy: number): string => {
   if (relevancy >= 8) return 'Excellent'
   if (relevancy >= 5) return 'Good'
   return 'Average'
-}
-
-const getChannelText = (channel: string): string => {
-  switch (channel) {
-    case 'search engine':
-      return 'Search Engine';
-  }
 }
 
 const fetchPages = async () => {

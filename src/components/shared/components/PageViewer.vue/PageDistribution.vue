@@ -1,5 +1,5 @@
 <template>
-  <div class="column q-col-gutter-sm q-py-sm full-width">
+  <div class="column q-pt-sm full-width">
     <div class="row">
       <div class="col-6">
         <div class="c-section-title">
@@ -11,28 +11,30 @@
       </div>
       <div class="col-6 row justify-end">
         <div>
-          <q-btn color="green" :label="$t('generate-content')"></q-btn>
+          <q-btn color="green" :label="$t('generate-content')">
+            <ComingSoonTooltip ></ComingSoonTooltip>
+          </q-btn>
         </div>
       </div>
     </div>
-    <CExpansionItem v-model="seoExpansion" title="Search Engine Optimization SEO" title-class="c-section-title">
-      <SocialPostCard v-if="thePage" :title="thePage.title" description="This is the meta description ">
+    <CExpansionItem v-model="seoExpansion" title="Search Engine Optimization SEO" title-class="c-section-title" :default-opened="true">
+      <SocialPostCard v-if="thePage" class="q-pb-sm" :platform-icon="'search engine'" :title="thePage.title" :description="$t('page-description')">
       </SocialPostCard>
     </CExpansionItem>
 
-    <CExpansionItem v-model="socialmediaExpansion" :title="$t('social-media')" title-class="c-section-title">
-      <div class="row  q-col-gutter-md">
+    <CExpansionItem v-model="socialmediaExpansion" :title="$t('social-media')" title-class="c-section-title" :default-opened="true">
+      <div class="row  q-col-gutter-md q-pb-sm">
         <div class="col-6" v-for="i in [1, 2, 3, 4]">
-          <SocialPostCard v-if="thePage" :title="thePage.title" description="This is the meta description ">
+          <SocialPostCard v-if="thePage" :title="thePage.title" :platform-icon="getPlatform(i).toLowerCase()" :platform-name="getPlatform(i)" :description="$t('social-media-content')">
           </SocialPostCard>
         </div>
       </div>
     </CExpansionItem>
 
-    <CExpansionItem v-model="emailExpansion" :title="$t('email')" title-class="c-section-title">
-      <div class="row  q-col-gutter-md">
+    <CExpansionItem v-model="emailExpansion" :title="$t('email')" title-class="c-section-title" :default-opened="true">
+      <div class="row  q-col-gutter-md q-pb-sm">
         <div class="col-6" v-for="i in [1, 2]">
-          <SocialPostCard v-if="thePage" :title="thePage.title" description="this is the mailing content">
+          <SocialPostCard v-if="thePage" :title="thePage.title" :platform-icon="'newsletter'" :description="$t('mailing-description')">
           </SocialPostCard>
         </div>
       </div>
@@ -43,13 +45,17 @@
 import { ref } from "vue";
 import { usePageStore } from "~/src/stores/pageStore";
 import SocialPostCard from "../../SocialPostCard.vue";
-const seoExpansion = ref(false)
-const socialmediaExpansion = ref(false)
-const emailExpansion = ref(false)
+const seoExpansion = ref(true)
+const socialmediaExpansion = ref(true)
+const emailExpansion = ref(true)
 
 const pageStore = usePageStore();
 
 
 const thePage = computed(() => pageStore.thePage);
+
+const getPlatform = (index:number) =>{
+  return ['LinkedIn','Facebook','X','Business'][index-1]
+}
 
 </script>

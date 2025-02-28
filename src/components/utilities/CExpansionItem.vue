@@ -74,7 +74,7 @@ defineEmits<{
   }
 
   :deep(.q-expansion-item__content) {
-    padding: 0 16px 16px 16px;
+    padding: 0;
     background-color: #ffffff;
   }
 
